@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  8 FEB 2022 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  8 FEB 2022 16:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -604,7 +604,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Here is how much of TeX's memory you used:
  23314 strings out of 480031
  591564 string characters out of 5884517
- 1007671 words of memory out of 5000000
+ 1008671 words of memory out of 5000000
  40268 multiletter control sequences out of 15000+600000
  413465 words of font info for 52 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
@@ -615,7 +615,7 @@ super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb><
 /usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fon
 ts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
 uper/sfrm1728.pfb>
-Output written on template_Article.pdf (1 page, 77947 bytes).
+Output written on template_Article.pdf (1 page, 93842 bytes).
 PDF statistics:
  36 PDF objects out of 1000 (max. 8388607)
  26 compressed objects within 1 object stream

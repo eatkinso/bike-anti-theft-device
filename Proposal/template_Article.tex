@@ -27,16 +27,33 @@
 
 \subsection{High-Level Requirements}
 
+\begin{enumerate}
+	\item If a user tries to remove the bike from a stationary location without the electronic key (RFID tag), the alarm will sound. 
+	
+	\item The device receives GPS data and records its own position over time. The device also performs rudimentary processing to record its distance traveled and speed. 
+	
+	\item The device transmits its GPS location data and additional data over LoRa to be received by a base station. 
+	
+\end{enumerate}
 
 \section{Design}
 \subsection{Top-Level Block Diagram}
 
 \subsection{Subsystem Overview}
-\subsubsection{Subsystem 1}
+\subsubsection{Control Subsystem}
+
+Subsystem requirements: 
+
+\begin{enumerate}
+	\item The microcontroller buffers GPS data and packetizes it to be sent over LoRa. 
+	\item The microcontroller sends appropriate control signals to the GPS module, RFID reader, and the alarm subsystem. 
+\end{enumerate}
 
 \subsection{Tolerance Analysis}
 
 \section{Ethics and Safety}
+
+
 
 
 

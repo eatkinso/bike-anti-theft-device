@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  10 FEB 2022 19:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  10 FEB 2022 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**template_Article.tex
-(./template_Article.tex
+**proposal_latex.tex
+(./proposal_latex.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (/usr/share/texmf/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -508,8 +508,8 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count297
 \l__pdf_internal_box=\box63
 )
-(./template_Article.aux)
-\openout1 = `template_Article.aux'.
+(./proposal_latex.aux)
+\openout1 = `proposal_latex.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
@@ -597,29 +597,95 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 19.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+<visual_aid.JPG, id=4, 493.0922pt x 283.81032pt>
+File: visual_aid.JPG Graphic file (type jpg)
+<use visual_aid.JPG>
+Package pdftex.def Info: visual_aid.JPG  used on input line 38.
+(pdftex.def)             Requested size: 469.75502pt x 270.39343pt.
+ [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./template_Article.au
-x) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<block_diagram_full.png, id=15, 2474.24374pt x 1481.535pt>
+File: block_diagram_full.png Graphic file (type png)
+<use block_diagram_full.png>
+Package pdftex.def Info: block_diagram_full.png  used on input line 46.
+(pdftex.def)             Requested size: 469.75502pt x 281.26851pt.
+ [2 <./visual_aid.JPG>] [3 <./block_diagram_full.png>]
+<bike_reflector.jpg, id=24, 822.272pt x 616.704pt>
+File: bike_reflector.jpg Graphic file (type jpg)
+<use bike_reflector.jpg>
+Package pdftex.def Info: bike_reflector.jpg  used on input line 106.
+(pdftex.def)             Requested size: 117.43875pt x 88.07884pt.
+
+[4]
+<buzzer_ckt.png, id=32, 676.02562pt x 510.40688pt>
+File: buzzer_ckt.png Graphic file (type png)
+<use buzzer_ckt.png>
+Package pdftex.def Info: buzzer_ckt.png  used on input line 161.
+(pdftex.def)             Requested size: 117.43875pt x 88.66054pt.
+ [5 <./bike_reflector.jpg>] [6 <./buzzer_ckt.png (PNG copy)>]
+Overfull \hbox (19.96991pt too wide) in paragraph at lines 285--286
+[]\T1/cmr/m/n/10 IEEE, "IEEE Code of Ethics," \T1/cmr/m/it/10 IEEE\T1/cmr/m/n/1
+0 , 2022. Avail-able: https://www.ieee.org/about/corporate/governance/p7-
+ []
+
+[7]
+Underfull \hbox (badness 4713) in paragraph at lines 288--289
+[]\T1/cmr/m/n/10 GlobalSat. "Glob-al-Sat GPS Mod-ule Hard-ware Data Sheet." Pro
+d-uct No: EM-506. 2013.
+ []
+
+
+Underfull \hbox (badness 7344) in paragraph at lines 290--291
+[]\T1/cmr/m/n/10 ID-innovations. "ID-3LA, ID-12LA, ID-20LA Low Volt-age Se-ries
+ Reader Mod-ules." 2015.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--293
+[]\T1/cmr/m/n/10 Photograph by Julo, pub-lic do-main, Wiki-me-dia Com-mons Avai
+l-able:
+ []
+
+
+Underfull \hbox (badness 5711) in paragraph at lines 292--293
+\T1/cmr/m/n/10 https://upload.wikimedia.org/wikipedia/commons/b/b1/BicycleRetro
+reflectors.JPG. [Ac-cessed: Feb
+ []
+
+
+Overfull \hbox (44.73167pt too wide) in paragraph at lines 298--299
+[]\T1/cmr/m/n/10 Wikipedia, "List of Bat-tery Sizes", 2022. [On-line]. Avail-ab
+le: https://en.wikipedia.org/wiki/List_of_battery_sizes.
+ []
+
+[8] (./proposal_latex.aux) ) 
 Here is how much of TeX's memory you used:
- 23316 strings out of 480031
- 591586 string characters out of 5884517
- 1012671 words of memory out of 5000000
- 40269 multiletter control sequences out of 15000+600000
- 414151 words of font info for 53 fonts, out of 8000000 for 9000
+ 23378 strings out of 480031
+ 592426 string characters out of 5884517
+ 1017669 words of memory out of 5000000
+ 40316 multiletter control sequences out of 15000+600000
+ 419950 words of font info for 67 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 87i,6n,89p,887b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texm
-f/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public
-/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.p
-fb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf
-/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/
-cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pf
-b>
-Output written on template_Article.pdf (2 pages, 115111 bytes).
+ 87i,10n,89p,885b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super
+-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share
+/texmf/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf/fonts/type1/
+public/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/c
+msy10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbi1000.pfb></usr/shar
+e/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/
+public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx
+1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></usr/share
+/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/fonts/type1/p
+ublic/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1
+000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/
+texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/pu
+blic/cm-super/sfti1000.pfb>
+Output written on proposal_latex.pdf (8 pages, 2425552 bytes).
 PDF statistics:
- 43 PDF objects out of 1000 (max. 8388607)
- 31 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

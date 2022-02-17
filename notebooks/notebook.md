@@ -61,3 +61,50 @@ GOAL: finish these tasks by midnight wednesday, so we can all review the proposa
 
 - research how to write a python backend for the data display GUI
 - research how to implement a LoRa mesh network 
+
+# 2/16/22 Design Document Planning Meeting [Elizabeth]
+
+## Agenda: 
+- Sketched HW block diagram (physical configuration)
+- Sketched firmware state machine
+- Discussed division of labor 
+- 
+## Physical configuration block diagram: 
+
+![physical config](physical_config_block_diagram.jpeg
+)
+
+## State diagram: 
+
+![state_diagram](state_diagram.jpeg)
+
+## Hardware tasks: 
+
+- Design main board 
+   - RF section: E, N
+   - Power section: A
+   - MCU support, connectors, etc: E
+
+- Design Alarm driver board: A 
+- Design RFID carrier board: N 
+
+
+## Goal: 
+
+Finish schematic design tasks by evening Saturday
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

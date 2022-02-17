@@ -21,16 +21,25 @@
 \section{Introduction}
 \subsection{Problem}
 
+College students frequently face the issue of bikes being stolen on campus. Even with the strongest of protections, they are not completely capable of deterring thieves who have various equipment. Our own member, Elizabeth, had her bike secured with a substantial solid steel U-lock, but was stolen regardless last fall, when someone apparently sawed through the u-lock at night. 
+
 \subsection{Solution Overview}
+We propose a concealed bike anti-theft device that helps bikers prevent their bike from being stolen by unlocking to a specific key that is difficult to mimic using RFID, and providing GPS tracking so the user has the ability to track down the bike if stolen.
+
+The device will receive GPS coordinates and periodically transmit the coordinates over LoRa to be received by the user. The device will also have an alarm system to scare away potential thieves. The owner of the bike will have an RFID tag such that while the user is on the bike, the RFID tag can be detected. If the bicycle is moved when the RFID tag is not nearby, it will trigger a loud and annoying alarm to scare away the potential thief.
+
+The device will be designed in a manner such that it is difficult to find and remove, discouraging potential bike thieves from removing the bike. Additionally, the device will be designed to fit a relatively universal bike structure, which will allow the device to be attached to any bike. A standardized device will be more convenient for users as bikes with integrated tracking systems tend to be very expensive.
+
+Our device will be small, rechargeable, battery-powered, and enclosed in a weatherproof enclosure that can easily be attached to most bikes.
 
 \subsection{Diagrams}
 
 \subsection{High-Level Requirements}
 
 \begin{enumerate}
-	\item If a user tries to remove the bike from a stationary location without the electronic key (RFID tag), the alarm will sound. 
+	\item If a user tries to remove the bike from a stationary location without the RFID tag, the alarm will sound. 
 	
-	\item The device receives GPS data and records its own position over time. The device also performs rudimentary processing to record its distance traveled and speed. 
+	\item The device receives GPS data \textit{at least} once per minute, and records its own position over time.  
 	
 	\item The device transmits its GPS location data and additional data over LoRa to be received by a base station. 
 	
@@ -42,12 +51,24 @@
 \subsection{Subsystem Overview}
 \subsubsection{Control Subsystem}
 
-Subsystem requirements: 
+\paragraph{}
+ We will use the STM32WL55CC, an SoC that includes both a dual-core ARM microcontroller and a wireless transceiver. The microcontroller will be responsible for buffering data from the GPS receiver, packetizing the data to send over LoRa, and internally transferring the data to the integrated RF transceiver. The microcontroller will also manage the control signals for the alarm subsystem, RFID subsystem, and GPS module. 
+
+ Since this is a battery-powered device, the microcontroller will also be responsible for implementing power-saving measures. For example, the microcontroller will vary the number of GPS data transmissions depending on the bike state: while the bike is in a “idle/safe” state (stationary in one location) it will only transmit its location over LoRa once per hour. If the device is in the “stolen” state, it will transmit its location over LoRa once per minute. The microcontroller will also cut off power to the Alarm when it is not in use, and as a stretch goal, the microcontroller will selectively cut power to the RFID/GPS subsystems in an intelligent manner (ie, the RFID transmitter will not continuously transmit/listen for the RFID tag if the GPS module detects that the bike is in motion, and the motion was initiated by the correct user). 
+
+
+\textbf{Control Subsystem Requirements:}
 
 \begin{enumerate}
-	\item The microcontroller buffers GPS data and packetizes it to be sent over LoRa. 
-	\item The microcontroller sends appropriate control signals to the GPS module, RFID reader, and the alarm subsystem. 
+	\item The microcontroller implements a state-based control system with power-saving measures in the idle/safe states. 
+	\item The microcontroller packetizes data to be sent over LoRa at an update rate of \textit{at least }once per hour in “idle” states, and \textit{at least} once every two minutes in “active” states. 
+	\item \textit{Stretch goal:} The microcontroller manages multi-unit mesh networking by re-transmitting received data within 1 second of receiving the data. (See the \textbf{LoRa Subsystem} section for more detail on mesh networking). 
 \end{enumerate}
+
+
+\subsubsection{LoRa Subsystem}
+
+
 
 \subsection{Tolerance Analysis}
 

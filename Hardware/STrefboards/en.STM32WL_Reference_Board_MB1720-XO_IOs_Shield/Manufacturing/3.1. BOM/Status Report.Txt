@@ -1,0 +1,13 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 2:02:30 AM On 21-Dec-20
+
+Output: Bill of Materials External
+Type  : BOM
+From  : Variant [+22dBm_490MHz] of Project [STM32WL_UFQFPN48_Reference_Design.PrjPcb]
+
+
+Files Generated   : 0
+Documents Printed : 0
+
+Finished Output Generation At 2:02:48 AM On 21-Dec-20

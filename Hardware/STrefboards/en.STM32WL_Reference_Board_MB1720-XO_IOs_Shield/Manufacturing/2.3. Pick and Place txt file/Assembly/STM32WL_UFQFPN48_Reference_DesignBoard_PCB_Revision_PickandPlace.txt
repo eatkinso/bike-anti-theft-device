@@ -1,0 +1,83 @@
+Altium Designer Pick and Place Locations
+C:\Users\h carvalho\OneDrive - STMicroelectronics\Bee\FAE Sharing\STMWL32 RefBoards\QFN-48\Based_on_MB1720-XO_IOs_Shield\Manufacturing\2.3. Pick and Place txt file\Assembly\STM32WL_UFQFPN48_Reference_DesignBoard_PCB_Revision_PickandPlace.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       21-12-20
+Time:       02:06
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+Designator Comment         Layer       Footprint                            Center-X(mm) Center-Y(mm) Rotation Description                                                                   
+SB11       Close           TopLayer    SB_0402                              37.3230      -6.3491      180      "Solder Bridge 0R [0402] (Populated with 0 Ohm)"                              
+C37        Capa_0402       TopLayer    CAPC1005X06N                         48.6671      2.0307       180      "10pF ±1% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"                  
+C36        Capa_0402       TopLayer    CAPC1005X06N                         48.9014      -1.5004      180      "10pF ±1% 50V Ceramic Capacitor C0G, NP0 0402 (1005 Metric)"                  
+C35        ""              TopLayer    CAPC1608X09N                         50.1713      -11.9185     360      "Capacitor, MLCC, 4.7uF, 16V, X5R, 10%, 0603, T=0.8mm"                        
+C4         ""              TopLayer    CAPC1005X06N                         21.4493      -3.2413      360      "Capacitor, MLCC, 100nF, 16V, X7R, 10%, 0402, T=0,5mm"                        
+L8         ""              TopLayer    IND_MURATA_LQW15A                    33.4748      -1.8349      90       ""                                                                            
+SB8        Close           TopLayer    SB_0402                              32.8869      5.8083       270      "Solder Bridge 0R [0402] (Populated with 0 Ohm)"                              
+C32        ""              TopLayer    CAPC1005X06N                         28.5000      4.7000       360      "Capacitor, MLCC, 33pF, 50V, NPO, 2%, 0402, T=0,5mm"                          
+U4         STM32WLxx_QFN48 TopLayer    STM32WLXX_QFN48                      27.9396      -2.4791      90       "HQDC : Verified April, 25 2019"                                              
+SB1        Close           TopLayer    SB_0402                              17.4932      0.3616       180      "Solder Bridge 0R [0402] (Populated with 0 Ohm)"                              
+SB2        Close           TopLayer    SB_0402                              17.4932      -1.0387      180      "Solder Bridge 0R [0402] (Populated with 0 Ohm)"                              
+SB3        Close           TopLayer    SB_0402                              46.6030      -5.9988      360      "Solder Bridge 0R [0402] (Populated with 0 Ohm)"                              
+SB4        Open            TopLayer    SB_0402                              46.6030      -4.6986      360      "Solder Bridge Open [0402] (Unpopulated)"                                     
+SB5        Open            TopLayer    SB_0402                              46.6030      -7.3476      360      "Solder Bridge Open [0402] (Unpopulated)"                                     
+SB9        Open            TopLayer    SB_0402                              46.4540      7.8264       360      "Solder Bridge Open [0402] (Unpopulated)"                                     
+SB7        Open            TopLayer    SB_0402                              25.4650      8.8850       180      "Solder Bridge Open [0402] (Unpopulated)"                                     
+SB6        Close           TopLayer    SB_0402                              46.4540      6.4262       360      "Solder Bridge 0R [0402] (Populated with 0 Ohm)"                              
+SB10       SB_3Pads        TopLayer    SB3PADS_0402                         33.2063      0.2667       90       "Solder Bridge"                                                               
+SB13       Close           TopLayer    SB_0402                              29.7250      7.2750       90       "Solder Bridge 0R [0402] (Populated with 0 Ohm)"                              
+SB14       Close           TopLayer    SB_0402                              28.5750      7.2750       90       "Solder Bridge 0R [0402] (Populated with 0 Ohm)"                              
+U3         BGS12SN6        TopLayer    SON40P70X40-6N                       47.4000      0.1000       360      "DC switch - Ultra-Low  SPDT analog switch"                                   
+C1         ""              TopLayer    CAPC1608X09N                         21.4000      1.1750       270      "Capacitor, MLCC, 4.7uF, 16V, X5R, 10%, 0603, T=0.8mm"                        
+C2         ""              TopLayer    CAPC1005X06N                         29.6000      -8.0900      90       "Capacitor, MLCC, 100nF, 16V, X7R, 10%, 0402, T=0,5mm"                        
+C3         ""              TopLayer    CAPC1005X06N                         31.0003      -8.0900      90       "Capacitor, MLCC, 100nF, 16V, X7R, 10%, 0402, T=0,5mm"                        
+C5         ""              TopLayer    CAPC1005X06N                         23.2505      0.9500       270      "Capacitor, MLCC, 100nF, 16V, X7R, 10%, 0402, T=0,5mm"                        
+C6         ""              TopLayer    CAPC1608X09N                         18.2488      -3.1389      270      "Capacitor, MLCC, 4.7uF, 16V, X5R, 10%, 0603, T=0.8mm"                        
+C7         ""              TopLayer    CAPC1005X06N                         19.7490      -2.4876      270      "Capacitor, MLCC, 100nF, 16V, X7R, 10%, 0402, T=0,5mm"                        
+C8         Capacitor       TopLayer    CAPC1005X06N                         14.7983      1.8616       180      "Capacitor, MLCC, 5.1 pF, 50V, NPO, +-0.1pF, 0402, T=0.5mm"                   
+C9         Capacitor       TopLayer    CAPC1005X06N                         14.7983      -2.5889      180      "Capacitor, MLCC, 5.1 pF, 50V, NPO, +-0.1pF, 0402, T=0.5mm"                   
+C10        ""              TopLayer    CAPC1608X09N                         20.4106      -6.1343      270      "Capacitor, MLCC, 4.7uF, 16V, X5R, 10%, 0603, T=0.8mm"                        
+C11        ""              TopLayer    CAPC1005X06N                         21.9108      -5.8325      270      "Capacitor, MLCC, 100nF, 16V, X7R, 10%, 0402, T=0,5mm"                        
+C12        ""              TopLayer    CAPC1005X06N                         34.4132      -7.5488      270      "Capacitor, MLCC, 100nF, 16V, X7R, 10%, 0402, T=0,5mm"                        
+C13        ""              TopLayer    CAPC1005X06N                         48.8473      -2.9727      180      "Capacitor, MLCC, 1nF, 16V, X7R, 10%, 0402, T=0.5mm"                          
+C14        ""              BottomLayer CAPC1608X09N                         21.2431      -6.1360      360      "Capacitor, MLCC, 4.7 uF, 16V, X5R, 10%, 0603, T=0.8mm"                       
+C15        ""              TopLayer    CAPC1005X06N                         33.8233      2.4500       90       ""                                                                            
+C17        ""              TopLayer    CAPC1005X06N                         38.5810      1.3450       360      ""                                                                            
+C18        ""              TopLayer    CAPC1005X06N                         32.4231      2.4500       270      ""                                                                            
+C19        ""              TopLayer    CAPC1005X06N                         43.9803      0.0250       180      ""                                                                            
+C20        ""              TopLayer    CAPC1005X06N                         37.0000      -0.4500      270      ""                                                                            
+C21        ""              TopLayer    CAPC1005X06N                         40.2990      -0.4500      90       ""                                                                            
+C22        ""              TopLayer    CAPC1005X06N                         45.4998      -0.4500      90       ""                                                                            
+C23        ""              TopLayer    CAPC1005X06N                         46.5000      2.9257       360      "Capacitor, MLCC, 1nF, 16V, X7R, 10%, 0402, T=0.5mm"                          
+C24        ""              TopLayer    CAPC1005X06N                         35.3250      -3.0351      360      ""                                                                            
+C25        ""              TopLayer    CAPC1005X06N                         49.6250      0.0250       360      ""                                                                            
+C26        Capacitor       TopLayer    CAPC1005X06N                         31.3750      9.2750       270      "Capacitor, MLCC, 6.8pF, 50V, NPO, +-0.1pF, 0402, T=0.5mm"                    
+C27        ""              TopLayer    CAPC1005X06N                         37.0253      -2.6860      270      ""                                                                            
+C28        ""              TopLayer    CAPC1005X06N_-_DUPLICATE_-_DUPLICATE 57.3250      -0.5000      270      ""                                                                            
+C29        ""              TopLayer    CAPC1005X06N_-_DUPLICATE_-_DUPLICATE 51.3500      -0.5000      270      ""                                                                            
+C30        ""              TopLayer    CAPC1005X06N                         35.1000      -1.6349      180      ""                                                                            
+C31        Capacitor       TopLayer    CAPC1005X06N                         27.6250      9.2750       90       "Capacitor, MLCC, 6.8pF, 50V, NPO, +-0.1pF, 0402, T=0.5mm"                    
+C33        ""              TopLayer    CAPC1005X06N                         31.3750      4.1003       180      "Capacitor, MLCC, 33pF, 50V, NPO, 2%, 0402, T=0,5mm"                          
+C34        ""              TopLayer    CAPC1005X06N                         27.5500      2.7000       360      "Capacitor, MLCC, 33pF, 50V, NPO, 2%, 0402, T=0,5mm"                          
+CN1        CON20           BottomLayer CO_SAMTEC_TSW-120-07-X-S             30.0000      14.0000      180      "Connector right-angle, pitch 2.54mm, 20 contacts"                            
+CN2        CON20           BottomLayer CO_SAMTEC_TSW-120-07-X-S             30.0000      -14.0000     180      "Connector right-angle, pitch 2.54mm, 20 contacts"                            
+J2         HEADER_1X2_L    TopLayer    CO_MOLEX_22-03-2021                  5.0000       -8.5000      270      "Header 1x2 Through hole 2.54mm"                                              
+J4         SMA_T_9.52_NF   TopLayer    CO_SAMTEC_SMA-J-P-ST-EMI             60.3700      0.0250       90       "SMA Jack, Edge Mount, 50 Ohms"                                               
+L1         ""              TopLayer    INDC1608X95N                         16.6235      -4.2858      90       "SMD Chip ferrite bead, 600R@100MHz +/-25%, 350mA, 500mohm DC, 0603, T=0.8mm" 
+L2         ""              BottomLayer INDC2012X13N                         21.9848      -8.0613      360      "MLZ2012 Multilayer Shielded Inductor 15µH, ±5%"                              
+L3         ""              TopLayer    IND_MURATA_LQW15A                    35.3884      1.5446       90       ""                                                                            
+L4         ""              TopLayer    IND_MURATA_LQW15A                    38.5813      0.0200       0        ""                                                                            
+L5         ""              TopLayer    IND_MURATA_LQW15A                    41.8070      0.0250       0        ""                                                                            
+L6         ""              TopLayer    IND_MURATA_LQW15A                    35.2982      0.0193       180      ""                                                                            
+L7         ""              TopLayer    IND_MURATA_LQW15A                    55.5250      0.0250       0        ""                                                                            
+R1         ""              TopLayer    RESC1608X05N                         39.7232      -6.3733      180      Resistor,10K,0603,1%,1/10W                                                    
+R2         ""              TopLayer    RESC1005X04N                         48.3033      -4.7230      270      Resistor,100R,0402,1%,1/16W                                                   
+R3         ""              TopLayer    RESC1005X04N                         46.9000      4.6759       90       Resistor,100R,0402,1%,1/16W                                                   
+U2         ""              TopLayer    DIOM0603X03N                         35.5634      -7.3818      270      "ESD protection 6V1"                                                          
+X1         XTAL_2_PINS     TopLayer    OSC_NDK_NX2012SA                     15.3682      -0.3637      90       "Crystal 32.768kHz, 6pF, -+20PPM, R=80K, SMD"                                 
+X2         ""              TopLayer    OSC_NDK_NX2016SA                     29.4750      9.2750       180      "Crystal 32 MHz, 8pF, -+10 PPM, R=60O, SMD"                                   
+J1         HEADER_1X2_L    TopLayer    CO_MOLEX_22-03-2021                  5.0000       8.5000       270      "Header 1x2 Through hole 2.54mm"                                              

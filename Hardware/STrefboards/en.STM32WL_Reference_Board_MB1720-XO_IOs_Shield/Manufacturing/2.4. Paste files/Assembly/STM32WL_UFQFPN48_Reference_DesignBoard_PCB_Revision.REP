@@ -1,0 +1,60 @@
+*************************************************************
+FileName = STM32WL_UFQFPN48_Reference_DesignBoard_PCB_Revision.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Paste
+      File : STM32WL_UFQFPN48_Reference_DesignBoard_PCB_Revision.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : M1-Board Shape
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D12
+    D19
+    D25
+    D29
+    D30
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : STM32WL_UFQFPN48_Reference_DesignBoard_PCB_Revision.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : M1-Board Shape
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+

@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\h carvalho\OneDrive - STMicroelectronics\Bee\FAE Sharing\STMWL32 RefBoards\QFN-48\Based_on_MB1720-XO_IOs_Shield\Sharing\Project Altium Designer 2020\MB1720.PcbDoc
+LayersSetName=Top_Bot_Plated_Thru_Holes|DrillFile=mb1720-plated.txt|DrillLayers=gtl,g1,g2,gbl
+LayersSetName=Top_Mid1_Blind_Vias|DrillFile=|DrillLayers=gtl,g1

@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 2:06:30 AM On 21-Dec-20
+
+Output: Pick and place
+Type  : Pick Place
+From  : PCB Document [MB1720.PcbDoc]
+   Generated File[STM32WL_UFQFPN48_Reference_DesignBoard_PCB_Revision_PickandPlace.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 2:06:31 AM On 21-Dec-20

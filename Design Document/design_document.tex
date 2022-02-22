@@ -43,6 +43,32 @@ Our device will be small, rechargeable, battery-powered, and enclosed in a weath
 \end{enumerate}
 
 \section{Design}
+\subsection{Overall System Block Diagram}
+\begin{figure}[H]
+	\includegraphics[width=\textwidth]{block_diagram_full.png}
+	\caption{Full Block Diagram}
+\end{figure}
+
+
+\subsection{Physical Design}
+
+\subsection{Subsystem Designs} 
+\subsubsection{On-Bike Control System}
+
+\paragraph{}
+We will use the STM32WL55CC, an SoC that includes both a dual-core ARM microcontroller and a wireless transceiver \cite{stm_datasheet}. The microcontroller will be responsible for buffering data from the GPS receiver, packetizing the data to send over LoRa, and internally transferring the data to the integrated RF transceiver. The microcontroller will also manage the control signals for the alarm subsystem, RFID subsystem, and GPS module. 
+
+Since this is a battery-powered device, the microcontroller will also be responsible for implementing power-saving measures. For example, the microcontroller will vary the number of GPS data transmissions depending on the bike state: while the bike is in a “idle/safe” state (stationary in one location) it will only transmit its location over LoRa once per hour. If the device is in the “stolen” state, it will transmit its location over LoRa once per minute. The microcontroller will also cut off power to the Alarm when it is not in use, and as a stretch goal, the microcontroller will selectively cut power to the RFID/GPS subsystems in an intelligent manner (ie, the RFID transmitter will not continuously transmit/listen for the RFID tag if the GPS module detects that the bike is in motion, and the motion was initiated by the correct user). 
+\paragraph{} 
+
+\textit{\textbf{Control Subsystem Requirements:}}
+
+\begin{enumerate}
+	\item The microcontroller implements a state-based control system with power-saving measures in the idle/safe states. 
+	\item The microcontroller packetizes data to be sent over LoRa at an update rate of \textit{at least }once per hour in “idle” states, and \textit{at least} once every two minutes in “active” states. 
+	\item \textit{Stretch goal:} The microcontroller manages multi-unit mesh networking by re-transmitting received data within 1 second of receiving the data. (See the \textbf{LoRa Subsystem} section for more detail on mesh networking). 
+\end{enumerate}
+
 
 
 \begin{thebibliography}{}

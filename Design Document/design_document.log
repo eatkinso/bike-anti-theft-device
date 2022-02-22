@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  20 FEB 2022 17:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  21 FEB 2022 18:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -587,62 +587,68 @@ your preamble.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+<block_diagram_full.png, id=4, 2474.24374pt x 1481.535pt>
+File: block_diagram_full.png Graphic file (type png)
+<use block_diagram_full.png>
+Package pdftex.def Info: block_diagram_full.png  used on input line 48.
+(pdftex.def)             Requested size: 469.75502pt x 281.26851pt.
+[1
 
-Overfull \hbox (19.96991pt too wide) in paragraph at lines 49--50
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (19.96991pt too wide) in paragraph at lines 53--54
 []\T1/cmr/m/n/10 IEEE, "IEEE Code of Ethics," \T1/cmr/m/it/10 IEEE\T1/cmr/m/n/1
 0 , 2022. Avail-able: https://www.ieee.org/about/corporate/governance/p7-
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 52--53
+Underfull \hbox (badness 4713) in paragraph at lines 56--57
 []\T1/cmr/m/n/10 GlobalSat. "Glob-al-Sat GPS Mod-ule Hard-ware Data Sheet." Pro
 d-uct No: EM-506. 2013.
  []
 
 
-Underfull \hbox (badness 7344) in paragraph at lines 54--55
+Underfull \hbox (badness 7344) in paragraph at lines 58--59
 []\T1/cmr/m/n/10 ID-innovations. "ID-3LA, ID-12LA, ID-20LA Low Volt-age Se-ries
  Reader Mod-ules." 2015.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
 []\T1/cmr/m/n/10 Photograph by Julo, pub-lic do-main, Wiki-me-dia Com-mons Avai
 l-able:
  []
 
 
-Underfull \hbox (badness 5711) in paragraph at lines 56--57
+Underfull \hbox (badness 5711) in paragraph at lines 60--61
 \T1/cmr/m/n/10 https://upload.wikimedia.org/wikipedia/commons/b/b1/BicycleRetro
 reflectors.JPG. [Ac-cessed: Feb
  []
 
-[1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (44.73167pt too wide) in paragraph at lines 62--63
+Overfull \hbox (44.73167pt too wide) in paragraph at lines 66--67
 []\T1/cmr/m/n/10 Wikipedia, "List of Bat-tery Sizes", 2022. [On-line]. Avail-ab
 le: https://en.wikipedia.org/wiki/List_of_battery_sizes.
  []
 
-[2] (./design_document.aux) ) 
+[2 <./block_diagram_full.png>] (./design_document.aux) ) 
 Here is how much of TeX's memory you used:
- 23279 strings out of 480031
- 591071 string characters out of 5884517
- 1013670 words of memory out of 5000000
- 40252 multiletter control sequences out of 15000+600000
+ 23288 strings out of 480031
+ 591251 string characters out of 5884517
+ 1011670 words of memory out of 5000000
+ 40259 multiletter control sequences out of 15000+600000
  409073 words of font info for 35 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 87i,5n,89p,757b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-supe
-r-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/shar
-e/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/
-public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm
-1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on design_document.pdf (2 pages, 70688 bytes).
+ 87i,6n,89p,757b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts
+/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super
+/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfti1000.pfb>
+Output written on design_document.pdf (2 pages, 215570 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 35 PDF objects out of 1000 (max. 8388607)
  25 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

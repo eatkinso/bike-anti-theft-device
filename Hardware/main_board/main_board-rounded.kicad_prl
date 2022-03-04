@@ -1,8 +1,8 @@
 {
   "board": {
-    "active_layer": 31,
+    "active_layer": 0,
     "active_layer_preset": "",
-    "auto_track_width": true,
+    "auto_track_width": false,
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
@@ -62,11 +62,11 @@
       35,
       36
     ],
-    "visible_layers": "ffdfeff_ffffffff",
+    "visible_layers": "ff9bfff_ffffffff",
     "zone_display_mode": 1
   },
   "meta": {
-    "filename": "main_board.kicad_prl",
+    "filename": "main_board-rounded.kicad_prl",
     "version": 3
   },
   "project": {

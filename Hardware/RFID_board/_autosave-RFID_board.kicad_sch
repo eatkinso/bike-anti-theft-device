@@ -1106,6 +1106,13 @@
     (uuid d78bd2f0-f023-4fce-b4a8-e59dab7752ef)
   )
 
+  (global_label "+3V3_RFID" (shape input) (at 160.02 60.96 90) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid 2bb5e11e-1b13-4797-92a2-446481e3af75)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 159.9406 48.2659 90)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
+  )
   (global_label "RFID_LED" (shape input) (at 96.52 60.96 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
     (uuid 45d88ce2-a582-460a-9032-50a1a9fa8352)
@@ -1126,22 +1133,6 @@
     (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 33.3888 82.4706 0)
       (effects (font (size 1.27 1.27)) (justify right) hide)
     )
-  )
-
-  (symbol (lib_id "power:+3V3") (at 160.02 60.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 09bbea88-8bd7-48ec-baae-1b4a9a11a40e)
-    (property "Reference" "#PWR05" (id 0) (at 160.02 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3" (id 1) (at 160.02 57.3555 0))
-    (property "Footprint" "" (id 2) (at 160.02 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 160.02 60.96 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 41c18011-40db-4384-9ba4-c0158d0d9d6a))
   )
 
   (symbol (lib_id "Device:R_Small_US") (at 182.88 64.77 90) (unit 1)
@@ -1494,9 +1485,6 @@
     )
     (path "/9e2492fd-e074-42db-8129-fe39460dc1e0"
       (reference "#PWR04") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/09bbea88-8bd7-48ec-baae-1b4a9a11a40e"
-      (reference "#PWR05") (unit 1) (value "+3V3") (footprint "")
     )
     (path "/e86e4fae-9ca7-4857-a93c-bc6a3048f887"
       (reference "#PWR06") (unit 1) (value "GND") (footprint "")

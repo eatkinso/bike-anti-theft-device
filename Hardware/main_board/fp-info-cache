@@ -1,4 +1,4 @@
-19844769171873564
+19848062367105288
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -84602,12 +84602,26 @@ SOT25
 5
 5
 new_footprints
+SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm
+SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open
+solder jumper open
+0
+2
+2
+new_footprints
 mm6
 
 
 0
 6
 6
+new_footprints
+tinyjumper
+SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open
+solder jumper open
+0
+2
+2
 silkscreen
 3v3
 

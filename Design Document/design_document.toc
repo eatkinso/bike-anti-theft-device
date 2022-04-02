@@ -1,0 +1,42 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Problem}{1}{subsection.1.1}%
+\contentsline {paragraph}{}{1}{section*.2}%
+\contentsline {subsection}{\numberline {1.2}Solution Overview}{2}{subsection.1.2}%
+\contentsline {paragraph}{}{2}{section*.3}%
+\contentsline {subsection}{\numberline {1.3}High-Level Requirements}{2}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Design}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Conceptual Visual Aid}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Overall System Block Diagram}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Physical Design}{4}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Subsystem Designs}{4}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}On-Bike Control System}{4}{subsubsection.2.4.1}%
+\contentsline {paragraph}{}{4}{section*.4}%
+\contentsline {paragraph}{}{5}{figure.4}%
+\contentsline {subsubsection}{\numberline {2.4.2}LoRa Subsystem}{6}{subsubsection.2.4.2}%
+\contentsline {paragraph}{}{6}{section*.6}%
+\contentsline {paragraph}{}{7}{figure.6}%
+\contentsline {subsubsection}{\numberline {2.4.3}GPS Module}{7}{subsubsection.2.4.3}%
+\contentsline {paragraph}{}{7}{section*.8}%
+\contentsline {paragraph}{}{7}{section*.9}%
+\contentsline {subsubsection}{\numberline {2.4.4}RFID Subsystem}{8}{subsubsection.2.4.4}%
+\contentsline {paragraph}{}{8}{section*.10}%
+\contentsline {paragraph}{}{9}{section*.11}%
+\contentsline {subsubsection}{\numberline {2.4.5}Power Subsystem}{9}{subsubsection.2.4.5}%
+\contentsline {paragraph}{}{9}{section*.12}%
+\contentsline {paragraph}{}{9}{section*.13}%
+\contentsline {subsubsection}{\numberline {2.4.6}Alarm Subsystem}{11}{subsubsection.2.4.6}%
+\contentsline {paragraph}{}{11}{section*.14}%
+\contentsline {subsubsection}{\numberline {2.4.7}Base Station Subsystem}{11}{subsubsection.2.4.7}%
+\contentsline {paragraph}{}{11}{section*.15}%
+\contentsline {paragraph}{}{12}{section*.16}%
+\contentsline {subsection}{\numberline {2.5}Tolerance Analysis}{13}{subsection.2.5}%
+\contentsline {paragraph}{}{13}{section*.17}%
+\contentsline {section}{\numberline {3}Cost and Schedule}{15}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Cost Analysis}{15}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.1}Materials}{15}{subsubsection.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.1.2}Labor}{15}{subsubsection.3.1.2}%
+\contentsline {section}{\numberline {4}Ethics and Safety}{15}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Calendar}{16}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Appendix A: Derivation of Power Budget Calculation Shortcut}{17}{section.5}%
+\contentsline {paragraph}{}{17}{section*.18}%
+\contentsline {paragraph}{}{18}{section*.19}%

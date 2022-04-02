@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  21 FEB 2022 18:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  27 MAR 2022 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -503,40 +503,179 @@ Package: iftex 2020/03/06 v1.0d TeX engine tests
 \Gm@layoutvoffset=\dimen277
 \Gm@dimlist=\toks41
 )
+(/usr/share/texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+
+(/usr/share/texmf/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/share/texmf/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texmf/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/share/texmf/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)
+(/usr/share/texmf/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/usr/share/texmf/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+)
+(/usr/share/texmf/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texmf/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+)
+(/usr/share/texmf/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+(/usr/share/texmf/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+)
+\@linkdim=\dimen278
+\Hy@linkcounter=\count297
+\Hy@pagecounter=\count298
+
+(/usr/share/texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
+nguages
+)
+(/usr/share/texmf/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+(/usr/share/texmf/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count299
+
+(/usr/share/texmf/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count300
+
+(/usr/share/texmf/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen279
+
+(/usr/share/texmf/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/usr/share/texmf/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count301
+\Field@Width=\dimen280
+\Fld@charsize=\dimen281
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+
+(/usr/share/texmf/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi packa
+ge
+with kernel methods
+)
+\Hy@abspage=\count302
+\c@Item=\count303
+\c@Hfootnote=\count304
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+(/usr/share/texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+
+(/usr/share/texmf/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery packag
+e
+with kernel methods
+)
+\Fld@listcount=\count305
+\c@bookmark@seq@number=\count306
+
+(/usr/share/texmf/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+
+(/usr/share/texmf/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+86.
+)
+\Hy@SectionHShift=\skip52
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 20.
+
 (/usr/share/texmf/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count297
+\l__color_backend_stack_int=\count307
 \l__pdf_internal_box=\box63
 )
 (./design_document.aux)
 \openout1 = `design_document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
  (/usr/share/texmf/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count298
-\scratchdimen=\dimen278
+\scratchcounter=\count308
+\scratchdimen=\dimen282
 \scratchbox=\box64
-\nofMPsegments=\count299
-\nofMParguments=\count300
+\nofMPsegments=\count309
+\nofMParguments=\count310
 \everyMPshowfont=\toks42
-\MPscratchCnt=\count301
-\MPscratchDim=\dimen279
-\MPnumerator=\count302
-\makeMPintoPDFobject=\count303
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen283
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
 \everyMPtoPDFconversion=\toks43
 ) (/usr/share/texmf/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -551,7 +690,7 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 15.
+ on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -587,68 +726,265 @@ your preamble.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<block_diagram_full.png, id=4, 2474.24374pt x 1481.535pt>
-File: block_diagram_full.png Graphic file (type png)
-<use block_diagram_full.png>
-Package pdftex.def Info: block_diagram_full.png  used on input line 48.
-(pdftex.def)             Requested size: 469.75502pt x 281.26851pt.
-[1
+Package hyperref Info: Link coloring ON on input line 23.
+(/usr/share/texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+
+(/usr/share/texmf/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/usr/share/texmf/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count314
+)
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
+
+(./design_document.out) (./design_document.out)
+\@outlinefile=\write4
+\openout4 = `design_document.out'.
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
+
+
+(/usr/share/texmf/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
+
+
+(/usr/share/texmf/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (./design_document.toc)
+\tf@toc=\write5
+\openout5 = `design_document.toc'.
+
+ [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (19.96991pt too wide) in paragraph at lines 53--54
-[]\T1/cmr/m/n/10 IEEE, "IEEE Code of Ethics," \T1/cmr/m/it/10 IEEE\T1/cmr/m/n/1
-0 , 2022. Avail-able: https://www.ieee.org/about/corporate/governance/p7-
+<visual_aid.JPG, id=140, 493.0922pt x 283.81032pt>
+File: visual_aid.JPG Graphic file (type jpg)
+<use visual_aid.JPG>
+Package pdftex.def Info: visual_aid.JPG  used on input line 72.
+(pdftex.def)             Requested size: 469.75502pt x 270.39343pt.
+ [2]
+<block_diagram_full.png, id=151, 2474.24374pt x 1481.535pt>
+File: block_diagram_full.png Graphic file (type png)
+<use block_diagram_full.png>
+Package pdftex.def Info: block_diagram_full.png  used on input line 79.
+(pdftex.def)             Requested size: 469.75502pt x 281.26851pt.
+ [3 <./visual_aid.JPG>]
+<state.png, id=158, 882.29625pt x 446.41782pt>
+File: state.png Graphic file (type png)
+<use state.png>
+Package pdftex.def Info: state.png  used on input line 97.
+(pdftex.def)             Requested size: 469.75502pt x 237.68338pt.
+
+[4 <./block_diagram_full.png>]
+<mcu_schematic.png, id=167, 511.15968pt x 625.58719pt>
+File: mcu_schematic.png Graphic file (type png)
+<use mcu_schematic.png>
+Package pdftex.def Info: mcu_schematic.png  used on input line 104.
+(pdftex.def)             Requested size: 234.8775pt x 287.44905pt.
+
+Underfull \hbox (badness 1342) in paragraph at lines 119--120
+\T1/cmr/m/n/10 trol sys-tem with power-
  []
 
 
-Underfull \hbox (badness 4713) in paragraph at lines 56--57
+Underfull \hbox (badness 3838) in paragraph at lines 119--120
+\T1/cmr/m/n/10 saving mea-sures in the
+ []
+
+[5 <./state.png (PNG copy)> <./mcu_schematic.png (PNG copy)>]
+<rf-ckt.png, id=180, 975.645pt x 309.40594pt>
+File: rf-ckt.png Graphic file (type png)
+<use rf-ckt.png>
+Package pdftex.def Info: rf-ckt.png  used on input line 151.
+(pdftex.def)             Requested size: 469.75502pt x 148.97583pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
+[]\T1/cmr/m/n/10 The LoRa sub-sys-tem
+ []
+
+[6 <./rf-ckt.png (PNG copy)>]
+<bike_reflector.jpg, id=198, 822.272pt x 616.704pt>
+File: bike_reflector.jpg Graphic file (type jpg)
+<use bike_reflector.jpg>
+Package pdftex.def Info: bike_reflector.jpg  used on input line 195.
+(pdftex.def)             Requested size: 117.43875pt x 88.07884pt.
+ [7 <./bike_reflector.jpg>]
+<rfid_sch.png, id=222, 654.19406pt x 358.33875pt>
+File: rfid_sch.png Graphic file (type png)
+<use rfid_sch.png>
+Package pdftex.def Info: rfid_sch.png  used on input line 245.
+(pdftex.def)             Requested size: 469.75502pt x 257.3093pt.
+
+Underfull \hbox (badness 1616) in paragraph at lines 270--271
+\T1/cmr/m/n/10 that the RFID tag has
+ []
+
+
+Underfull \hbox (badness 1077) in paragraph at lines 277--278
+\T1/cmr/m/n/10 gers the alarm if move-
+ []
+
+[8 <./rfid_sch.png (PNG copy)>]
+<pwr_sch.png, id=236, 575.14874pt x 597.73312pt>
+File: pwr_sch.png Graphic file (type png)
+<use pwr_sch.png>
+Package pdftex.def Info: pwr_sch.png  used on input line 304.
+(pdftex.def)             Requested size: 187.89914pt x 195.27335pt.
+<loadsw_sch.png, id=237, 489.32813pt x 481.8pt>
+File: loadsw_sch.png Graphic file (type png)
+<use loadsw_sch.png>
+Package pdftex.def Info: loadsw_sch.png  used on input line 305.
+(pdftex.def)             Requested size: 187.89914pt x 185.01202pt.
+ [9]
+Underfull \hbox (badness 4266) in paragraph at lines 327--328
+[]\T1/cmr/m/n/10 The power sys-tem will
+ []
+
+
+Underfull \hbox (badness 3460) in paragraph at lines 335--336
+[]\T1/cmr/m/n/10 The mi-cro-con-troller can
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 335--336
+\T1/cmr/m/n/10 and RFID sub-sys-tems
+ []
+
+[10 <./pwr_sch.png (PNG copy)> <./loadsw_sch.png (PNG copy)>]
+<buzzer_ckt.png, id=275, 676.02562pt x 510.40688pt>
+File: buzzer_ckt.png Graphic file (type png)
+<use buzzer_ckt.png>
+Package pdftex.def Info: buzzer_ckt.png  used on input line 356.
+(pdftex.def)             Requested size: 117.43875pt x 88.66054pt.
+
+Underfull \hbox (badness 2837) in paragraph at lines 374--375
+[]\T1/cmr/m/n/10 The alarm makes noise
+ []
+
+
+Underfull \hbox (badness 6188) in paragraph at lines 374--375
+\T1/cmr/m/n/10 when trig-gered by the
+ []
+
+<usb_interface.png, id=276, 737.75626pt x 442.65375pt>
+File: usb_interface.png Graphic file (type png)
+<use usb_interface.png>
+Package pdftex.def Info: usb_interface.png  used on input line 403.
+(pdftex.def)             Requested size: 469.75502pt x 281.85199pt.
+[11 <./buzzer_ckt.png (PNG copy)>]
+Underfull \hbox (badness 1210) in paragraph at lines 436--437
+\T1/cmr/m/n/10 data over the past day,
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 444--445
+[]\T1/cmr/m/n/10 The GUI will al-low the
+ []
+
+[12 <./usb_interface.png (PNG copy)>] [13]
+Overfull \hbox (19.6723pt too wide) in paragraph at lines 546--566
+ [] 
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 643--644
+[]\T1/cmr/m/n/10 Elizabeth,
+ []
+
+[15] [16]
+<linear_reg_diagram.png, id=380, 299.61937pt x 216.81pt>
+File: linear_reg_diagram.png Graphic file (type png)
+<use linear_reg_diagram.png>
+Package pdftex.def Info: linear_reg_diagram.png  used on input line 679.
+(pdftex.def)             Requested size: 117.43875pt x 84.979pt.
+ [17 <./linear_reg_diagram.png (PNG copy)>]
+Overfull \hbox (17.19281pt too wide) in paragraph at lines 757--758
+[]\T1/cmr/m/n/10 IEEE, "IEEE Code of Ethics," \T1/cmr/m/it/10 IEEE\T1/cmr/m/n/1
+0 , 2022 Avail-able: https://www.ieee.org/about/corporate/governance/p7-
+ []
+
+
+Underfull \hbox (badness 4713) in paragraph at lines 760--761
 []\T1/cmr/m/n/10 GlobalSat. "Glob-al-Sat GPS Mod-ule Hard-ware Data Sheet." Pro
 d-uct No: EM-506. 2013.
  []
 
 
-Underfull \hbox (badness 7344) in paragraph at lines 58--59
+Overfull \hbox (78.72337pt too wide) in paragraph at lines 762--763
+[]\T1/cmr/m/n/10 Ablic. "S-1135 Se-ries Volt-age Reg-u-la-tor". 2018. https://w
+ww.ablic.com/en/doc/datasheet/voltage_regulator/S1135_E.pdf 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 767--768
+[]\T1/cmr/m/n/10 ON Semi-con-duc-tor. "NCP114/D Volt-age Reg-u-la-tor - CMOS Lo
+w Dropout". 2020.
+ []
+
+
+Underfull \hbox (badness 7344) in paragraph at lines 769--770
 []\T1/cmr/m/n/10 ID-innovations. "ID-3LA, ID-12LA, ID-20LA Low Volt-age Se-ries
  Reader Mod-ules." 2015.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 771--772
 []\T1/cmr/m/n/10 Photograph by Julo, pub-lic do-main, Wiki-me-dia Com-mons Avai
 l-able:
  []
 
 
-Underfull \hbox (badness 5711) in paragraph at lines 60--61
+Underfull \hbox (badness 5711) in paragraph at lines 771--772
 \T1/cmr/m/n/10 https://upload.wikimedia.org/wikipedia/commons/b/b1/BicycleRetro
 reflectors.JPG. [Ac-cessed: Feb
  []
 
 
-Overfull \hbox (44.73167pt too wide) in paragraph at lines 66--67
+Underfull \hbox (badness 10000) in paragraph at lines 777--778
 []\T1/cmr/m/n/10 Wikipedia, "List of Bat-tery Sizes", 2022. [On-line]. Avail-ab
-le: https://en.wikipedia.org/wiki/List_of_battery_sizes.
+le:
  []
 
-[2 <./block_diagram_full.png>] (./design_document.aux) ) 
+[18] [19] (./design_document.aux)
+Package rerunfilecheck Info: File `design_document.out' has not changed.
+(rerunfilecheck)             Checksum: D78BDBDB0977830456389272E02F85C1;3516.
+ ) 
 Here is how much of TeX's memory you used:
- 23288 strings out of 480031
- 591251 string characters out of 5884517
- 1011670 words of memory out of 5000000
- 40259 multiletter control sequences out of 15000+600000
- 409073 words of font info for 35 fonts, out of 8000000 for 9000
+ 30067 strings out of 480031
+ 689914 string characters out of 5884517
+ 1076476 words of memory out of 5000000
+ 46699 multiletter control sequences out of 15000+600000
+ 421491 words of font info for 69 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 87i,6n,89p,757b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts
-/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf/fonts/enc/dvips/cm-super
-/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfti1000.pfb>
-Output written on design_document.pdf (2 pages, 215570 bytes).
+ 87i,12n,89p,899b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/share/texmf
+/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texmf/fonts/type1/public/
+amsfonts/cm/cmex10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texm
+f/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmr7.pf
+b></usr/share/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texmf/fonts/type1/public/
+cm-super/sfbi1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pf
+b></usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/
+fonts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/c
+m-super/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb
+></usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/f
+onts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+</usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfti1000.pfb>
+Output written on design_document.pdf (19 pages, 2785222 bytes).
 PDF statistics:
- 35 PDF objects out of 1000 (max. 8388607)
- 25 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 523 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
+ 189 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 

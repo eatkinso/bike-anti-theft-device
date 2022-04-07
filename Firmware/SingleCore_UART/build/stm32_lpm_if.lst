@@ -1,0 +1,290 @@
+ARM GAS  /tmp/cc5QULfE.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stm32_lpm_if.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.PWR_EnterOffMode,"ax",%progbits
+  16              		.align	1
+  17              		.global	PWR_EnterOffMode
+  18              		.arch armv7e-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	PWR_EnterOffMode:
+  25              	.LFB0:
+  26              		.file 1 "Core/Src/stm32_lpm_if.c"
+   1:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/stm32_lpm_if.c **** /**
+   3:Core/Src/stm32_lpm_if.c ****   ******************************************************************************
+   4:Core/Src/stm32_lpm_if.c ****   * @file    stm32_lpm_if.c
+   5:Core/Src/stm32_lpm_if.c ****   * @author  MCD Application Team
+   6:Core/Src/stm32_lpm_if.c ****   * @brief   Low layer function to enter/exit low power modes (stop, sleep)
+   7:Core/Src/stm32_lpm_if.c ****   ******************************************************************************
+   8:Core/Src/stm32_lpm_if.c ****   * @attention
+   9:Core/Src/stm32_lpm_if.c ****   *
+  10:Core/Src/stm32_lpm_if.c ****   * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
+  11:Core/Src/stm32_lpm_if.c ****   * All rights reserved.</center></h2>
+  12:Core/Src/stm32_lpm_if.c ****   *
+  13:Core/Src/stm32_lpm_if.c ****   * This software component is licensed by ST under Ultimate Liberty license
+  14:Core/Src/stm32_lpm_if.c ****   * SLA0044, the "License"; You may not use this file except in compliance with
+  15:Core/Src/stm32_lpm_if.c ****   * the License. You may obtain a copy of the License at:
+  16:Core/Src/stm32_lpm_if.c ****   *                             www.st.com/SLA0044
+  17:Core/Src/stm32_lpm_if.c ****   *
+  18:Core/Src/stm32_lpm_if.c ****   ******************************************************************************
+  19:Core/Src/stm32_lpm_if.c ****   */
+  20:Core/Src/stm32_lpm_if.c **** /* USER CODE END Header */
+  21:Core/Src/stm32_lpm_if.c **** 
+  22:Core/Src/stm32_lpm_if.c **** /* Includes ------------------------------------------------------------------*/
+  23:Core/Src/stm32_lpm_if.c **** #include "stm32_lpm.h"
+  24:Core/Src/stm32_lpm_if.c **** #include "stm32_lpm_if.h"
+  25:Core/Src/stm32_lpm_if.c **** 
+  26:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN Includes */
+  27:Core/Src/stm32_lpm_if.c **** 
+  28:Core/Src/stm32_lpm_if.c **** /* USER CODE END Includes */
+  29:Core/Src/stm32_lpm_if.c **** 
+  30:Core/Src/stm32_lpm_if.c **** /* External variables ---------------------------------------------------------*/
+  31:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN EV */
+  32:Core/Src/stm32_lpm_if.c **** 
+ARM GAS  /tmp/cc5QULfE.s 			page 2
+
+
+  33:Core/Src/stm32_lpm_if.c **** /* USER CODE END EV */
+  34:Core/Src/stm32_lpm_if.c **** 
+  35:Core/Src/stm32_lpm_if.c **** /* Private typedef -----------------------------------------------------------*/
+  36:Core/Src/stm32_lpm_if.c **** /**
+  37:Core/Src/stm32_lpm_if.c ****   * @brief Power driver callbacks handler
+  38:Core/Src/stm32_lpm_if.c ****   */
+  39:Core/Src/stm32_lpm_if.c **** const struct UTIL_LPM_Driver_s UTIL_PowerDriver =
+  40:Core/Src/stm32_lpm_if.c **** {
+  41:Core/Src/stm32_lpm_if.c ****   PWR_EnterSleepMode,
+  42:Core/Src/stm32_lpm_if.c ****   PWR_ExitSleepMode,
+  43:Core/Src/stm32_lpm_if.c **** 
+  44:Core/Src/stm32_lpm_if.c ****   PWR_EnterStopMode,
+  45:Core/Src/stm32_lpm_if.c ****   PWR_ExitStopMode,
+  46:Core/Src/stm32_lpm_if.c **** 
+  47:Core/Src/stm32_lpm_if.c ****   PWR_EnterOffMode,
+  48:Core/Src/stm32_lpm_if.c ****   PWR_ExitOffMode,
+  49:Core/Src/stm32_lpm_if.c **** };
+  50:Core/Src/stm32_lpm_if.c **** 
+  51:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN PTD */
+  52:Core/Src/stm32_lpm_if.c **** 
+  53:Core/Src/stm32_lpm_if.c **** /* USER CODE END PTD */
+  54:Core/Src/stm32_lpm_if.c **** 
+  55:Core/Src/stm32_lpm_if.c **** /* Private define ------------------------------------------------------------*/
+  56:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN PD */
+  57:Core/Src/stm32_lpm_if.c **** 
+  58:Core/Src/stm32_lpm_if.c **** /* USER CODE END PD */
+  59:Core/Src/stm32_lpm_if.c **** 
+  60:Core/Src/stm32_lpm_if.c **** /* Private macro -------------------------------------------------------------*/
+  61:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN PM */
+  62:Core/Src/stm32_lpm_if.c **** 
+  63:Core/Src/stm32_lpm_if.c **** /* USER CODE END PM */
+  64:Core/Src/stm32_lpm_if.c **** 
+  65:Core/Src/stm32_lpm_if.c **** /* Private variables ---------------------------------------------------------*/
+  66:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN PV */
+  67:Core/Src/stm32_lpm_if.c **** 
+  68:Core/Src/stm32_lpm_if.c **** /* USER CODE END PV */
+  69:Core/Src/stm32_lpm_if.c **** 
+  70:Core/Src/stm32_lpm_if.c **** /* Private function prototypes -----------------------------------------------*/
+  71:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN PFP */
+  72:Core/Src/stm32_lpm_if.c **** 
+  73:Core/Src/stm32_lpm_if.c **** /* USER CODE END PFP */
+  74:Core/Src/stm32_lpm_if.c **** 
+  75:Core/Src/stm32_lpm_if.c **** /* Exported functions --------------------------------------------------------*/
+  76:Core/Src/stm32_lpm_if.c **** 
+  77:Core/Src/stm32_lpm_if.c **** void PWR_EnterOffMode(void)
+  78:Core/Src/stm32_lpm_if.c **** {
+  27              		.loc 1 78 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  79:Core/Src/stm32_lpm_if.c ****   /* USER CODE BEGIN EnterOffMode_1 */
+  80:Core/Src/stm32_lpm_if.c **** 
+  81:Core/Src/stm32_lpm_if.c ****   /* USER CODE END EnterOffMode_1 */
+  82:Core/Src/stm32_lpm_if.c **** }
+  32              		.loc 1 82 1 view .LVU1
+  33 0000 7047     		bx	lr
+ARM GAS  /tmp/cc5QULfE.s 			page 3
+
+
+  34              		.cfi_endproc
+  35              	.LFE0:
+  37              		.section	.text.PWR_ExitOffMode,"ax",%progbits
+  38              		.align	1
+  39              		.global	PWR_ExitOffMode
+  40              		.syntax unified
+  41              		.thumb
+  42              		.thumb_func
+  43              		.fpu softvfp
+  45              	PWR_ExitOffMode:
+  46              	.LFB1:
+  83:Core/Src/stm32_lpm_if.c **** 
+  84:Core/Src/stm32_lpm_if.c **** void PWR_ExitOffMode(void)
+  85:Core/Src/stm32_lpm_if.c **** {
+  47              		.loc 1 85 1 view -0
+  48              		.cfi_startproc
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51              		@ link register save eliminated.
+  86:Core/Src/stm32_lpm_if.c ****   /* USER CODE BEGIN ExitOffMode_1 */
+  87:Core/Src/stm32_lpm_if.c **** 
+  88:Core/Src/stm32_lpm_if.c ****   /* USER CODE END ExitOffMode_1 */
+  89:Core/Src/stm32_lpm_if.c **** }
+  52              		.loc 1 89 1 view .LVU3
+  53 0000 7047     		bx	lr
+  54              		.cfi_endproc
+  55              	.LFE1:
+  57              		.section	.text.PWR_EnterStopMode,"ax",%progbits
+  58              		.align	1
+  59              		.global	PWR_EnterStopMode
+  60              		.syntax unified
+  61              		.thumb
+  62              		.thumb_func
+  63              		.fpu softvfp
+  65              	PWR_EnterStopMode:
+  66              	.LFB2:
+  90:Core/Src/stm32_lpm_if.c **** 
+  91:Core/Src/stm32_lpm_if.c **** void PWR_EnterStopMode(void)
+  92:Core/Src/stm32_lpm_if.c **** {
+  67              		.loc 1 92 1 view -0
+  68              		.cfi_startproc
+  69              		@ args = 0, pretend = 0, frame = 0
+  70              		@ frame_needed = 0, uses_anonymous_args = 0
+  71              		@ link register save eliminated.
+  93:Core/Src/stm32_lpm_if.c ****   /* USER CODE BEGIN EnterStopMode_1 */
+  94:Core/Src/stm32_lpm_if.c **** 
+  95:Core/Src/stm32_lpm_if.c ****   /* USER CODE END EnterStopMode_1 */
+  96:Core/Src/stm32_lpm_if.c **** }
+  72              		.loc 1 96 1 view .LVU5
+  73 0000 7047     		bx	lr
+  74              		.cfi_endproc
+  75              	.LFE2:
+  77              		.section	.text.PWR_ExitStopMode,"ax",%progbits
+  78              		.align	1
+  79              		.global	PWR_ExitStopMode
+  80              		.syntax unified
+  81              		.thumb
+ARM GAS  /tmp/cc5QULfE.s 			page 4
+
+
+  82              		.thumb_func
+  83              		.fpu softvfp
+  85              	PWR_ExitStopMode:
+  86              	.LFB3:
+  97:Core/Src/stm32_lpm_if.c **** 
+  98:Core/Src/stm32_lpm_if.c **** void PWR_ExitStopMode(void)
+  99:Core/Src/stm32_lpm_if.c **** {
+  87              		.loc 1 99 1 view -0
+  88              		.cfi_startproc
+  89              		@ args = 0, pretend = 0, frame = 0
+  90              		@ frame_needed = 0, uses_anonymous_args = 0
+  91              		@ link register save eliminated.
+ 100:Core/Src/stm32_lpm_if.c ****   /* USER CODE BEGIN ExitStopMode_1 */
+ 101:Core/Src/stm32_lpm_if.c **** 
+ 102:Core/Src/stm32_lpm_if.c ****   /* USER CODE END ExitStopMode_1 */
+ 103:Core/Src/stm32_lpm_if.c **** }
+  92              		.loc 1 103 1 view .LVU7
+  93 0000 7047     		bx	lr
+  94              		.cfi_endproc
+  95              	.LFE3:
+  97              		.section	.text.PWR_EnterSleepMode,"ax",%progbits
+  98              		.align	1
+  99              		.global	PWR_EnterSleepMode
+ 100              		.syntax unified
+ 101              		.thumb
+ 102              		.thumb_func
+ 103              		.fpu softvfp
+ 105              	PWR_EnterSleepMode:
+ 106              	.LFB4:
+ 104:Core/Src/stm32_lpm_if.c **** 
+ 105:Core/Src/stm32_lpm_if.c **** void PWR_EnterSleepMode(void)
+ 106:Core/Src/stm32_lpm_if.c **** {
+ 107              		.loc 1 106 1 view -0
+ 108              		.cfi_startproc
+ 109              		@ args = 0, pretend = 0, frame = 0
+ 110              		@ frame_needed = 0, uses_anonymous_args = 0
+ 111              		@ link register save eliminated.
+ 107:Core/Src/stm32_lpm_if.c ****   /* USER CODE BEGIN EnterSleepMode_1 */
+ 108:Core/Src/stm32_lpm_if.c **** 
+ 109:Core/Src/stm32_lpm_if.c ****   /* USER CODE END EnterSleepMode_1 */
+ 110:Core/Src/stm32_lpm_if.c **** }
+ 112              		.loc 1 110 1 view .LVU9
+ 113 0000 7047     		bx	lr
+ 114              		.cfi_endproc
+ 115              	.LFE4:
+ 117              		.section	.text.PWR_ExitSleepMode,"ax",%progbits
+ 118              		.align	1
+ 119              		.global	PWR_ExitSleepMode
+ 120              		.syntax unified
+ 121              		.thumb
+ 122              		.thumb_func
+ 123              		.fpu softvfp
+ 125              	PWR_ExitSleepMode:
+ 126              	.LFB5:
+ 111:Core/Src/stm32_lpm_if.c **** 
+ 112:Core/Src/stm32_lpm_if.c **** void PWR_ExitSleepMode(void)
+ 113:Core/Src/stm32_lpm_if.c **** {
+ARM GAS  /tmp/cc5QULfE.s 			page 5
+
+
+ 127              		.loc 1 113 1 view -0
+ 128              		.cfi_startproc
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131              		@ link register save eliminated.
+ 114:Core/Src/stm32_lpm_if.c ****   /* USER CODE BEGIN ExitSleepMode_1 */
+ 115:Core/Src/stm32_lpm_if.c **** 
+ 116:Core/Src/stm32_lpm_if.c ****   /* USER CODE END ExitSleepMode_1 */
+ 117:Core/Src/stm32_lpm_if.c **** }
+ 132              		.loc 1 117 1 view .LVU11
+ 133 0000 7047     		bx	lr
+ 134              		.cfi_endproc
+ 135              	.LFE5:
+ 137              		.global	UTIL_PowerDriver
+ 138              		.section	.rodata.UTIL_PowerDriver,"a"
+ 139              		.align	2
+ 142              	UTIL_PowerDriver:
+ 143 0000 00000000 		.word	PWR_EnterSleepMode
+ 144 0004 00000000 		.word	PWR_ExitSleepMode
+ 145 0008 00000000 		.word	PWR_EnterStopMode
+ 146 000c 00000000 		.word	PWR_ExitStopMode
+ 147 0010 00000000 		.word	PWR_EnterOffMode
+ 148 0014 00000000 		.word	PWR_ExitOffMode
+ 149              		.text
+ 150              	.Letext0:
+ 151              		.file 2 "Utilities/lpm/tiny_lpm/stm32_lpm.h"
+ARM GAS  /tmp/cc5QULfE.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32_lpm_if.c
+     /tmp/cc5QULfE.s:16     .text.PWR_EnterOffMode:0000000000000000 $t
+     /tmp/cc5QULfE.s:24     .text.PWR_EnterOffMode:0000000000000000 PWR_EnterOffMode
+     /tmp/cc5QULfE.s:38     .text.PWR_ExitOffMode:0000000000000000 $t
+     /tmp/cc5QULfE.s:45     .text.PWR_ExitOffMode:0000000000000000 PWR_ExitOffMode
+     /tmp/cc5QULfE.s:58     .text.PWR_EnterStopMode:0000000000000000 $t
+     /tmp/cc5QULfE.s:65     .text.PWR_EnterStopMode:0000000000000000 PWR_EnterStopMode
+     /tmp/cc5QULfE.s:78     .text.PWR_ExitStopMode:0000000000000000 $t
+     /tmp/cc5QULfE.s:85     .text.PWR_ExitStopMode:0000000000000000 PWR_ExitStopMode
+     /tmp/cc5QULfE.s:98     .text.PWR_EnterSleepMode:0000000000000000 $t
+     /tmp/cc5QULfE.s:105    .text.PWR_EnterSleepMode:0000000000000000 PWR_EnterSleepMode
+     /tmp/cc5QULfE.s:118    .text.PWR_ExitSleepMode:0000000000000000 $t
+     /tmp/cc5QULfE.s:125    .text.PWR_ExitSleepMode:0000000000000000 PWR_ExitSleepMode
+     /tmp/cc5QULfE.s:142    .rodata.UTIL_PowerDriver:0000000000000000 UTIL_PowerDriver
+     /tmp/cc5QULfE.s:139    .rodata.UTIL_PowerDriver:0000000000000000 $d
+
+NO UNDEFINED SYMBOLS

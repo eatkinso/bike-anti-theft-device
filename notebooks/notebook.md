@@ -143,3 +143,63 @@ set serial to 9600 baud, 8 bit data, no parity, 1 stop bit: `stty -F /dev/ttyACM
 
 
 Successfully ran RF test at 400-500 MHz. Next time, populate board, work on porting LoRa example to our HW. 
+
+# 4/6/2022 -- More firmware (Elizabeth)
+
+Upgraded BMP debugger to latest firmware which supports STM32WLs. Note that the latest version of arm-none-eabi-gdb is borked on linux, so you need to run v10.3. Source at https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads. 
+
+## Goal today: talk to GPS over UART. 
+
+- reconfigured the STM32 pinout.. whoops. 
+- Testing just UART peripheral. Using single core to allow use of a Makefile (not supported by CubeMx for dual-core)
+
+- NOTE: pinout given in EM-506 datasheet is pinout looking IN to the GPS module board (pin 1 on the RH side; grey wire is pin 6.)
+
+First try didn't work. Probed with scope; GPS module clearly sending some data, it is just not being received by the STM32. Next step: try "loop" UART (ie, send from STM32 TX pin -> STM32 RX pin) to make sure I'm implementing the peripheral correctly.
+
+Tutorial for loopback test: 
+https://stackoverflow.com/questions/43263467/nucleo-stm32f103rb-f4-discovery/43411114#43411114
+
+https://stackoverflow.com/questions/47574416/uart-loopback-test-using-hal-for-stm32l0
+
+
+Loopback test code: 
+
+`MX_GPIO_Init();
+
+  MX_USART1_UART_Init();
+
+  // MX_LoRaWAN_Init();
+
+  /* USER CODE BEGIN 2 */
+
+  uint8_t txdata[2] = {0xEC, 0xEB};
+
+  uint8_t rxdata[2] = {0,0};
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+
+  {
+
+    HAL_UART_Receive_IT(&huart1, rxdata, 2);
+
+    HAL_UART_Transmit(&huart1, txdata, 2, 10);
+
+    /* USER CODE END WHILE */
+
+    // MX_LoRaWAN_Process();
+
+    /* USER CODE BEGIN 3 */
+  }`
+
+
+The default communication parameters for PORT B are 9600Baud, 8data bits, 0 stop bits, and no
+parity.
+
+EM-506 can be configured to use NMEA messages: 
+
+https://en.wikipedia.org/wiki/NMEA_0183

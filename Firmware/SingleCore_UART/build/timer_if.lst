@@ -1,0 +1,713 @@
+ARM GAS  /tmp/ccYGcMSI.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"timer_if.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.TIMER_IF_Init,"ax",%progbits
+  16              		.align	1
+  17              		.global	TIMER_IF_Init
+  18              		.arch armv7e-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	TIMER_IF_Init:
+  25              	.LFB104:
+  26              		.file 1 "Core/Src/timer_if.c"
+   1:Core/Src/timer_if.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/timer_if.c **** /**
+   3:Core/Src/timer_if.c ****   ******************************************************************************
+   4:Core/Src/timer_if.c ****   * @file    timer_if.c
+   5:Core/Src/timer_if.c ****   * @author  MCD Application Team
+   6:Core/Src/timer_if.c ****   * @brief   Configure RTC Alarm, Tick and Calendar manager
+   7:Core/Src/timer_if.c ****   ******************************************************************************
+   8:Core/Src/timer_if.c ****   * @attention
+   9:Core/Src/timer_if.c ****   *
+  10:Core/Src/timer_if.c ****   * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
+  11:Core/Src/timer_if.c ****   * All rights reserved.</center></h2>
+  12:Core/Src/timer_if.c ****   *
+  13:Core/Src/timer_if.c ****   * This software component is licensed by ST under Ultimate Liberty license
+  14:Core/Src/timer_if.c ****   * SLA0044, the "License"; You may not use this file except in compliance with
+  15:Core/Src/timer_if.c ****   * the License. You may obtain a copy of the License at:
+  16:Core/Src/timer_if.c ****   *                             www.st.com/SLA0044
+  17:Core/Src/timer_if.c ****   *
+  18:Core/Src/timer_if.c ****   ******************************************************************************
+  19:Core/Src/timer_if.c ****   */
+  20:Core/Src/timer_if.c **** /* USER CODE END Header */
+  21:Core/Src/timer_if.c **** 
+  22:Core/Src/timer_if.c **** /* Includes ------------------------------------------------------------------*/
+  23:Core/Src/timer_if.c **** #include <math.h>
+  24:Core/Src/timer_if.c **** #include "timer_if.h"
+  25:Core/Src/timer_if.c **** 
+  26:Core/Src/timer_if.c **** /* USER CODE BEGIN Includes */
+  27:Core/Src/timer_if.c **** 
+  28:Core/Src/timer_if.c **** /* USER CODE END Includes */
+  29:Core/Src/timer_if.c **** 
+  30:Core/Src/timer_if.c **** /* External variables ---------------------------------------------------------*/
+  31:Core/Src/timer_if.c **** 
+  32:Core/Src/timer_if.c **** /**
+ARM GAS  /tmp/ccYGcMSI.s 			page 2
+
+
+  33:Core/Src/timer_if.c ****   * @brief Timer driver callbacks handler
+  34:Core/Src/timer_if.c ****   */
+  35:Core/Src/timer_if.c **** const UTIL_TIMER_Driver_s UTIL_TimerDriver =
+  36:Core/Src/timer_if.c **** {
+  37:Core/Src/timer_if.c ****   TIMER_IF_Init,
+  38:Core/Src/timer_if.c ****   NULL,
+  39:Core/Src/timer_if.c **** 
+  40:Core/Src/timer_if.c ****   TIMER_IF_StartTimer,
+  41:Core/Src/timer_if.c ****   TIMER_IF_StopTimer,
+  42:Core/Src/timer_if.c **** 
+  43:Core/Src/timer_if.c ****   TIMER_IF_SetTimerContext,
+  44:Core/Src/timer_if.c ****   TIMER_IF_GetTimerContext,
+  45:Core/Src/timer_if.c **** 
+  46:Core/Src/timer_if.c ****   TIMER_IF_GetTimerElapsedTime,
+  47:Core/Src/timer_if.c ****   TIMER_IF_GetTimerValue,
+  48:Core/Src/timer_if.c ****   TIMER_IF_GetMinimumTimeout,
+  49:Core/Src/timer_if.c **** 
+  50:Core/Src/timer_if.c ****   TIMER_IF_Convert_ms2Tick,
+  51:Core/Src/timer_if.c ****   TIMER_IF_Convert_Tick2ms,
+  52:Core/Src/timer_if.c **** };
+  53:Core/Src/timer_if.c **** 
+  54:Core/Src/timer_if.c **** /**
+  55:Core/Src/timer_if.c ****   * @brief SysTime driver callbacks handler
+  56:Core/Src/timer_if.c ****   */
+  57:Core/Src/timer_if.c **** const UTIL_SYSTIM_Driver_s UTIL_SYSTIMDriver =
+  58:Core/Src/timer_if.c **** {
+  59:Core/Src/timer_if.c ****   TIMER_IF_BkUp_Write_Seconds,
+  60:Core/Src/timer_if.c ****   TIMER_IF_BkUp_Read_Seconds,
+  61:Core/Src/timer_if.c ****   TIMER_IF_BkUp_Write_SubSeconds,
+  62:Core/Src/timer_if.c ****   TIMER_IF_BkUp_Read_SubSeconds,
+  63:Core/Src/timer_if.c ****   TIMER_IF_GetTime,
+  64:Core/Src/timer_if.c **** };
+  65:Core/Src/timer_if.c **** 
+  66:Core/Src/timer_if.c **** /* USER CODE BEGIN EV */
+  67:Core/Src/timer_if.c **** 
+  68:Core/Src/timer_if.c **** /* USER CODE END EV */
+  69:Core/Src/timer_if.c **** 
+  70:Core/Src/timer_if.c **** /* Private typedef -----------------------------------------------------------*/
+  71:Core/Src/timer_if.c **** /* USER CODE BEGIN PTD */
+  72:Core/Src/timer_if.c **** 
+  73:Core/Src/timer_if.c **** /* USER CODE END PTD */
+  74:Core/Src/timer_if.c **** 
+  75:Core/Src/timer_if.c **** /* Private define ------------------------------------------------------------*/
+  76:Core/Src/timer_if.c **** /* USER CODE BEGIN PD */
+  77:Core/Src/timer_if.c **** 
+  78:Core/Src/timer_if.c **** /* USER CODE END PD */
+  79:Core/Src/timer_if.c **** 
+  80:Core/Src/timer_if.c **** /* Private macro -------------------------------------------------------------*/
+  81:Core/Src/timer_if.c **** /* USER CODE BEGIN PM */
+  82:Core/Src/timer_if.c **** 
+  83:Core/Src/timer_if.c **** /* USER CODE END PM */
+  84:Core/Src/timer_if.c **** 
+  85:Core/Src/timer_if.c **** /* Private variables ---------------------------------------------------------*/
+  86:Core/Src/timer_if.c **** /**
+  87:Core/Src/timer_if.c ****   * @brief RtcTimerContext
+  88:Core/Src/timer_if.c ****   */
+  89:Core/Src/timer_if.c **** static uint32_t RtcTimerContext = 0;
+ARM GAS  /tmp/ccYGcMSI.s 			page 3
+
+
+  90:Core/Src/timer_if.c **** 
+  91:Core/Src/timer_if.c **** /* USER CODE BEGIN PV */
+  92:Core/Src/timer_if.c **** 
+  93:Core/Src/timer_if.c **** /* USER CODE END PV */
+  94:Core/Src/timer_if.c **** 
+  95:Core/Src/timer_if.c **** /* Private function prototypes -----------------------------------------------*/
+  96:Core/Src/timer_if.c **** /* USER CODE BEGIN PFP */
+  97:Core/Src/timer_if.c **** 
+  98:Core/Src/timer_if.c **** /* USER CODE END PFP */
+  99:Core/Src/timer_if.c **** 
+ 100:Core/Src/timer_if.c **** /* Exported functions ---------------------------------------------------------*/
+ 101:Core/Src/timer_if.c **** UTIL_TIMER_Status_t TIMER_IF_Init(void)
+ 102:Core/Src/timer_if.c **** {
+  27              		.loc 1 102 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+ 103:Core/Src/timer_if.c ****   UTIL_TIMER_Status_t ret = UTIL_TIMER_OK;
+  32              		.loc 1 103 3 view .LVU1
+  33              	.LVL0:
+ 104:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_Init */
+ 105:Core/Src/timer_if.c **** 
+ 106:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_Init */
+ 107:Core/Src/timer_if.c ****   return ret;
+  34              		.loc 1 107 3 view .LVU2
+ 108:Core/Src/timer_if.c **** }
+  35              		.loc 1 108 1 is_stmt 0 view .LVU3
+  36 0000 0020     		movs	r0, #0
+  37 0002 7047     		bx	lr
+  38              		.cfi_endproc
+  39              	.LFE104:
+  41              		.section	.text.TIMER_IF_StartTimer,"ax",%progbits
+  42              		.align	1
+  43              		.global	TIMER_IF_StartTimer
+  44              		.syntax unified
+  45              		.thumb
+  46              		.thumb_func
+  47              		.fpu softvfp
+  49              	TIMER_IF_StartTimer:
+  50              	.LVL1:
+  51              	.LFB105:
+ 109:Core/Src/timer_if.c **** 
+ 110:Core/Src/timer_if.c **** UTIL_TIMER_Status_t TIMER_IF_StartTimer(uint32_t timeout)
+ 111:Core/Src/timer_if.c **** {
+  52              		.loc 1 111 1 is_stmt 1 view -0
+  53              		.cfi_startproc
+  54              		@ args = 0, pretend = 0, frame = 0
+  55              		@ frame_needed = 0, uses_anonymous_args = 0
+  56              		@ link register save eliminated.
+ 112:Core/Src/timer_if.c ****   UTIL_TIMER_Status_t ret = UTIL_TIMER_OK;
+  57              		.loc 1 112 3 view .LVU5
+ 113:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_StartTimer */
+ 114:Core/Src/timer_if.c **** 
+ 115:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_StartTimer */
+ 116:Core/Src/timer_if.c ****   return ret;
+  58              		.loc 1 116 3 view .LVU6
+ARM GAS  /tmp/ccYGcMSI.s 			page 4
+
+
+ 117:Core/Src/timer_if.c **** }
+  59              		.loc 1 117 1 is_stmt 0 view .LVU7
+  60 0000 0020     		movs	r0, #0
+  61              	.LVL2:
+  62              		.loc 1 117 1 view .LVU8
+  63 0002 7047     		bx	lr
+  64              		.cfi_endproc
+  65              	.LFE105:
+  67              		.section	.text.TIMER_IF_StopTimer,"ax",%progbits
+  68              		.align	1
+  69              		.global	TIMER_IF_StopTimer
+  70              		.syntax unified
+  71              		.thumb
+  72              		.thumb_func
+  73              		.fpu softvfp
+  75              	TIMER_IF_StopTimer:
+  76              	.LFB106:
+ 118:Core/Src/timer_if.c **** 
+ 119:Core/Src/timer_if.c **** UTIL_TIMER_Status_t TIMER_IF_StopTimer(void)
+ 120:Core/Src/timer_if.c **** {
+  77              		.loc 1 120 1 is_stmt 1 view -0
+  78              		.cfi_startproc
+  79              		@ args = 0, pretend = 0, frame = 0
+  80              		@ frame_needed = 0, uses_anonymous_args = 0
+  81              		@ link register save eliminated.
+ 121:Core/Src/timer_if.c ****   UTIL_TIMER_Status_t ret = UTIL_TIMER_OK;
+  82              		.loc 1 121 3 view .LVU10
+  83              	.LVL3:
+ 122:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_StopTimer */
+ 123:Core/Src/timer_if.c **** 
+ 124:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_StopTimer */
+ 125:Core/Src/timer_if.c ****   return ret;
+  84              		.loc 1 125 3 view .LVU11
+ 126:Core/Src/timer_if.c **** }
+  85              		.loc 1 126 1 is_stmt 0 view .LVU12
+  86 0000 0020     		movs	r0, #0
+  87 0002 7047     		bx	lr
+  88              		.cfi_endproc
+  89              	.LFE106:
+  91              		.section	.text.TIMER_IF_SetTimerContext,"ax",%progbits
+  92              		.align	1
+  93              		.global	TIMER_IF_SetTimerContext
+  94              		.syntax unified
+  95              		.thumb
+  96              		.thumb_func
+  97              		.fpu softvfp
+  99              	TIMER_IF_SetTimerContext:
+ 100              	.LFB107:
+ 127:Core/Src/timer_if.c **** 
+ 128:Core/Src/timer_if.c **** uint32_t TIMER_IF_SetTimerContext(void)
+ 129:Core/Src/timer_if.c **** {
+ 101              		.loc 1 129 1 is_stmt 1 view -0
+ 102              		.cfi_startproc
+ 103              		@ args = 0, pretend = 0, frame = 0
+ 104              		@ frame_needed = 0, uses_anonymous_args = 0
+ 105              		@ link register save eliminated.
+ 130:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_SetTimerContext */
+ARM GAS  /tmp/ccYGcMSI.s 			page 5
+
+
+ 131:Core/Src/timer_if.c **** 
+ 132:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_SetTimerContext */
+ 133:Core/Src/timer_if.c **** 
+ 134:Core/Src/timer_if.c ****   /*return time context*/
+ 135:Core/Src/timer_if.c ****   return RtcTimerContext;
+ 106              		.loc 1 135 3 view .LVU14
+ 136:Core/Src/timer_if.c **** }
+ 107              		.loc 1 136 1 is_stmt 0 view .LVU15
+ 108 0000 0020     		movs	r0, #0
+ 109 0002 7047     		bx	lr
+ 110              		.cfi_endproc
+ 111              	.LFE107:
+ 113              		.section	.text.TIMER_IF_GetTimerContext,"ax",%progbits
+ 114              		.align	1
+ 115              		.global	TIMER_IF_GetTimerContext
+ 116              		.syntax unified
+ 117              		.thumb
+ 118              		.thumb_func
+ 119              		.fpu softvfp
+ 121              	TIMER_IF_GetTimerContext:
+ 122              	.LFB108:
+ 137:Core/Src/timer_if.c **** 
+ 138:Core/Src/timer_if.c **** uint32_t TIMER_IF_GetTimerContext(void)
+ 139:Core/Src/timer_if.c **** {
+ 123              		.loc 1 139 1 is_stmt 1 view -0
+ 124              		.cfi_startproc
+ 125              		@ args = 0, pretend = 0, frame = 0
+ 126              		@ frame_needed = 0, uses_anonymous_args = 0
+ 127              		@ link register save eliminated.
+ 140:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_GetTimerContext */
+ 141:Core/Src/timer_if.c **** 
+ 142:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_GetTimerContext */
+ 143:Core/Src/timer_if.c **** 
+ 144:Core/Src/timer_if.c ****   /*return time context*/
+ 145:Core/Src/timer_if.c ****   return RtcTimerContext;
+ 128              		.loc 1 145 3 view .LVU17
+ 146:Core/Src/timer_if.c **** }
+ 129              		.loc 1 146 1 is_stmt 0 view .LVU18
+ 130 0000 0020     		movs	r0, #0
+ 131 0002 7047     		bx	lr
+ 132              		.cfi_endproc
+ 133              	.LFE108:
+ 135              		.section	.text.TIMER_IF_GetTimerElapsedTime,"ax",%progbits
+ 136              		.align	1
+ 137              		.global	TIMER_IF_GetTimerElapsedTime
+ 138              		.syntax unified
+ 139              		.thumb
+ 140              		.thumb_func
+ 141              		.fpu softvfp
+ 143              	TIMER_IF_GetTimerElapsedTime:
+ 144              	.LFB109:
+ 147:Core/Src/timer_if.c **** 
+ 148:Core/Src/timer_if.c **** uint32_t TIMER_IF_GetTimerElapsedTime(void)
+ 149:Core/Src/timer_if.c **** {
+ 145              		.loc 1 149 1 is_stmt 1 view -0
+ 146              		.cfi_startproc
+ 147              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  /tmp/ccYGcMSI.s 			page 6
+
+
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              		@ link register save eliminated.
+ 150:Core/Src/timer_if.c ****   uint32_t ret = 0;
+ 150              		.loc 1 150 3 view .LVU20
+ 151              	.LVL4:
+ 151:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_GetTimerElapsedTime */
+ 152:Core/Src/timer_if.c **** 
+ 153:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_GetTimerElapsedTime */
+ 154:Core/Src/timer_if.c ****   return ret;
+ 152              		.loc 1 154 3 view .LVU21
+ 155:Core/Src/timer_if.c **** }
+ 153              		.loc 1 155 1 is_stmt 0 view .LVU22
+ 154 0000 0020     		movs	r0, #0
+ 155 0002 7047     		bx	lr
+ 156              		.cfi_endproc
+ 157              	.LFE109:
+ 159              		.section	.text.TIMER_IF_GetTimerValue,"ax",%progbits
+ 160              		.align	1
+ 161              		.global	TIMER_IF_GetTimerValue
+ 162              		.syntax unified
+ 163              		.thumb
+ 164              		.thumb_func
+ 165              		.fpu softvfp
+ 167              	TIMER_IF_GetTimerValue:
+ 168              	.LFB110:
+ 156:Core/Src/timer_if.c **** 
+ 157:Core/Src/timer_if.c **** uint32_t TIMER_IF_GetTimerValue(void)
+ 158:Core/Src/timer_if.c **** {
+ 169              		.loc 1 158 1 is_stmt 1 view -0
+ 170              		.cfi_startproc
+ 171              		@ args = 0, pretend = 0, frame = 0
+ 172              		@ frame_needed = 0, uses_anonymous_args = 0
+ 173              		@ link register save eliminated.
+ 159:Core/Src/timer_if.c ****   uint32_t ret = 0;
+ 174              		.loc 1 159 3 view .LVU24
+ 175              	.LVL5:
+ 160:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_GetTimerValue */
+ 161:Core/Src/timer_if.c **** 
+ 162:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_GetTimerValue */
+ 163:Core/Src/timer_if.c ****   return ret;
+ 176              		.loc 1 163 3 view .LVU25
+ 164:Core/Src/timer_if.c **** }
+ 177              		.loc 1 164 1 is_stmt 0 view .LVU26
+ 178 0000 0020     		movs	r0, #0
+ 179 0002 7047     		bx	lr
+ 180              		.cfi_endproc
+ 181              	.LFE110:
+ 183              		.section	.text.TIMER_IF_GetMinimumTimeout,"ax",%progbits
+ 184              		.align	1
+ 185              		.global	TIMER_IF_GetMinimumTimeout
+ 186              		.syntax unified
+ 187              		.thumb
+ 188              		.thumb_func
+ 189              		.fpu softvfp
+ 191              	TIMER_IF_GetMinimumTimeout:
+ 192              	.LFB111:
+ 165:Core/Src/timer_if.c **** 
+ARM GAS  /tmp/ccYGcMSI.s 			page 7
+
+
+ 166:Core/Src/timer_if.c **** uint32_t TIMER_IF_GetMinimumTimeout(void)
+ 167:Core/Src/timer_if.c **** {
+ 193              		.loc 1 167 1 is_stmt 1 view -0
+ 194              		.cfi_startproc
+ 195              		@ args = 0, pretend = 0, frame = 0
+ 196              		@ frame_needed = 0, uses_anonymous_args = 0
+ 197              		@ link register save eliminated.
+ 168:Core/Src/timer_if.c ****   uint32_t ret = 0;
+ 198              		.loc 1 168 3 view .LVU28
+ 199              	.LVL6:
+ 169:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_GetMinimumTimeout */
+ 170:Core/Src/timer_if.c **** 
+ 171:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_GetMinimumTimeout */
+ 172:Core/Src/timer_if.c ****   return ret;
+ 200              		.loc 1 172 3 view .LVU29
+ 173:Core/Src/timer_if.c **** }
+ 201              		.loc 1 173 1 is_stmt 0 view .LVU30
+ 202 0000 0020     		movs	r0, #0
+ 203 0002 7047     		bx	lr
+ 204              		.cfi_endproc
+ 205              	.LFE111:
+ 207              		.section	.text.TIMER_IF_Convert_ms2Tick,"ax",%progbits
+ 208              		.align	1
+ 209              		.global	TIMER_IF_Convert_ms2Tick
+ 210              		.syntax unified
+ 211              		.thumb
+ 212              		.thumb_func
+ 213              		.fpu softvfp
+ 215              	TIMER_IF_Convert_ms2Tick:
+ 216              	.LVL7:
+ 217              	.LFB112:
+ 174:Core/Src/timer_if.c **** 
+ 175:Core/Src/timer_if.c **** uint32_t TIMER_IF_Convert_ms2Tick(uint32_t timeMilliSec)
+ 176:Core/Src/timer_if.c **** {
+ 218              		.loc 1 176 1 is_stmt 1 view -0
+ 219              		.cfi_startproc
+ 220              		@ args = 0, pretend = 0, frame = 0
+ 221              		@ frame_needed = 0, uses_anonymous_args = 0
+ 222              		@ link register save eliminated.
+ 177:Core/Src/timer_if.c ****   uint32_t ret = 0;
+ 223              		.loc 1 177 3 view .LVU32
+ 178:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_Convert_ms2Tick */
+ 179:Core/Src/timer_if.c **** 
+ 180:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_Convert_ms2Tick */
+ 181:Core/Src/timer_if.c ****   return ret;
+ 224              		.loc 1 181 3 view .LVU33
+ 182:Core/Src/timer_if.c **** }
+ 225              		.loc 1 182 1 is_stmt 0 view .LVU34
+ 226 0000 0020     		movs	r0, #0
+ 227              	.LVL8:
+ 228              		.loc 1 182 1 view .LVU35
+ 229 0002 7047     		bx	lr
+ 230              		.cfi_endproc
+ 231              	.LFE112:
+ 233              		.section	.text.TIMER_IF_Convert_Tick2ms,"ax",%progbits
+ 234              		.align	1
+ 235              		.global	TIMER_IF_Convert_Tick2ms
+ARM GAS  /tmp/ccYGcMSI.s 			page 8
+
+
+ 236              		.syntax unified
+ 237              		.thumb
+ 238              		.thumb_func
+ 239              		.fpu softvfp
+ 241              	TIMER_IF_Convert_Tick2ms:
+ 242              	.LVL9:
+ 243              	.LFB113:
+ 183:Core/Src/timer_if.c **** 
+ 184:Core/Src/timer_if.c **** uint32_t TIMER_IF_Convert_Tick2ms(uint32_t tick)
+ 185:Core/Src/timer_if.c **** {
+ 244              		.loc 1 185 1 is_stmt 1 view -0
+ 245              		.cfi_startproc
+ 246              		@ args = 0, pretend = 0, frame = 0
+ 247              		@ frame_needed = 0, uses_anonymous_args = 0
+ 248              		@ link register save eliminated.
+ 186:Core/Src/timer_if.c ****   uint32_t ret = 0;
+ 249              		.loc 1 186 3 view .LVU37
+ 187:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_Convert_Tick2ms */
+ 188:Core/Src/timer_if.c **** 
+ 189:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_Convert_Tick2ms */
+ 190:Core/Src/timer_if.c ****   return ret;
+ 250              		.loc 1 190 3 view .LVU38
+ 191:Core/Src/timer_if.c **** }
+ 251              		.loc 1 191 1 is_stmt 0 view .LVU39
+ 252 0000 0020     		movs	r0, #0
+ 253              	.LVL10:
+ 254              		.loc 1 191 1 view .LVU40
+ 255 0002 7047     		bx	lr
+ 256              		.cfi_endproc
+ 257              	.LFE113:
+ 259              		.section	.text.TIMER_IF_GetTime,"ax",%progbits
+ 260              		.align	1
+ 261              		.global	TIMER_IF_GetTime
+ 262              		.syntax unified
+ 263              		.thumb
+ 264              		.thumb_func
+ 265              		.fpu softvfp
+ 267              	TIMER_IF_GetTime:
+ 268              	.LVL11:
+ 269              	.LFB115:
+ 192:Core/Src/timer_if.c **** 
+ 193:Core/Src/timer_if.c **** void TIMER_IF_DelayMs(uint32_t delay)
+ 194:Core/Src/timer_if.c **** {
+ 195:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_DelayMs */
+ 196:Core/Src/timer_if.c **** 
+ 197:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_DelayMs */
+ 198:Core/Src/timer_if.c **** }
+ 199:Core/Src/timer_if.c **** 
+ 200:Core/Src/timer_if.c **** uint32_t TIMER_IF_GetTime(uint16_t *mSeconds)
+ 201:Core/Src/timer_if.c **** {
+ 270              		.loc 1 201 1 is_stmt 1 view -0
+ 271              		.cfi_startproc
+ 272              		@ args = 0, pretend = 0, frame = 0
+ 273              		@ frame_needed = 0, uses_anonymous_args = 0
+ 274              		@ link register save eliminated.
+ 202:Core/Src/timer_if.c ****   uint32_t seconds = 0;
+ 275              		.loc 1 202 3 view .LVU42
+ARM GAS  /tmp/ccYGcMSI.s 			page 9
+
+
+ 203:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_GetTime */
+ 204:Core/Src/timer_if.c **** 
+ 205:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_GetTime */
+ 206:Core/Src/timer_if.c ****   return seconds;
+ 276              		.loc 1 206 3 view .LVU43
+ 207:Core/Src/timer_if.c **** }
+ 277              		.loc 1 207 1 is_stmt 0 view .LVU44
+ 278 0000 0020     		movs	r0, #0
+ 279              	.LVL12:
+ 280              		.loc 1 207 1 view .LVU45
+ 281 0002 7047     		bx	lr
+ 282              		.cfi_endproc
+ 283              	.LFE115:
+ 285              		.section	.text.TIMER_IF_BkUp_Write_Seconds,"ax",%progbits
+ 286              		.align	1
+ 287              		.global	TIMER_IF_BkUp_Write_Seconds
+ 288              		.syntax unified
+ 289              		.thumb
+ 290              		.thumb_func
+ 291              		.fpu softvfp
+ 293              	TIMER_IF_BkUp_Write_Seconds:
+ 294              	.LVL13:
+ 295              	.LFB116:
+ 208:Core/Src/timer_if.c **** 
+ 209:Core/Src/timer_if.c **** void TIMER_IF_BkUp_Write_Seconds(uint32_t Seconds)
+ 210:Core/Src/timer_if.c **** {
+ 296              		.loc 1 210 1 is_stmt 1 view -0
+ 297              		.cfi_startproc
+ 298              		@ args = 0, pretend = 0, frame = 0
+ 299              		@ frame_needed = 0, uses_anonymous_args = 0
+ 300              		@ link register save eliminated.
+ 211:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_BkUp_Write_Seconds */
+ 212:Core/Src/timer_if.c **** 
+ 213:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_BkUp_Write_Seconds */
+ 214:Core/Src/timer_if.c **** }
+ 301              		.loc 1 214 1 view .LVU47
+ 302 0000 7047     		bx	lr
+ 303              		.cfi_endproc
+ 304              	.LFE116:
+ 306              		.section	.text.TIMER_IF_BkUp_Write_SubSeconds,"ax",%progbits
+ 307              		.align	1
+ 308              		.global	TIMER_IF_BkUp_Write_SubSeconds
+ 309              		.syntax unified
+ 310              		.thumb
+ 311              		.thumb_func
+ 312              		.fpu softvfp
+ 314              	TIMER_IF_BkUp_Write_SubSeconds:
+ 315              	.LVL14:
+ 316              	.LFB117:
+ 215:Core/Src/timer_if.c **** 
+ 216:Core/Src/timer_if.c **** void TIMER_IF_BkUp_Write_SubSeconds(uint32_t SubSeconds)
+ 217:Core/Src/timer_if.c **** {
+ 317              		.loc 1 217 1 view -0
+ 318              		.cfi_startproc
+ 319              		@ args = 0, pretend = 0, frame = 0
+ 320              		@ frame_needed = 0, uses_anonymous_args = 0
+ 321              		@ link register save eliminated.
+ARM GAS  /tmp/ccYGcMSI.s 			page 10
+
+
+ 218:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_BkUp_Write_SubSeconds */
+ 219:Core/Src/timer_if.c **** 
+ 220:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_BkUp_Write_SubSeconds */
+ 221:Core/Src/timer_if.c **** }
+ 322              		.loc 1 221 1 view .LVU49
+ 323 0000 7047     		bx	lr
+ 324              		.cfi_endproc
+ 325              	.LFE117:
+ 327              		.section	.text.TIMER_IF_BkUp_Read_Seconds,"ax",%progbits
+ 328              		.align	1
+ 329              		.global	TIMER_IF_BkUp_Read_Seconds
+ 330              		.syntax unified
+ 331              		.thumb
+ 332              		.thumb_func
+ 333              		.fpu softvfp
+ 335              	TIMER_IF_BkUp_Read_Seconds:
+ 336              	.LFB118:
+ 222:Core/Src/timer_if.c **** 
+ 223:Core/Src/timer_if.c **** uint32_t TIMER_IF_BkUp_Read_Seconds(void)
+ 224:Core/Src/timer_if.c **** {
+ 337              		.loc 1 224 1 view -0
+ 338              		.cfi_startproc
+ 339              		@ args = 0, pretend = 0, frame = 0
+ 340              		@ frame_needed = 0, uses_anonymous_args = 0
+ 341              		@ link register save eliminated.
+ 225:Core/Src/timer_if.c ****   uint32_t ret = 0;
+ 342              		.loc 1 225 3 view .LVU51
+ 343              	.LVL15:
+ 226:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_BkUp_Read_Seconds */
+ 227:Core/Src/timer_if.c **** 
+ 228:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_BkUp_Read_Seconds */
+ 229:Core/Src/timer_if.c ****   return ret;
+ 344              		.loc 1 229 3 view .LVU52
+ 230:Core/Src/timer_if.c **** }
+ 345              		.loc 1 230 1 is_stmt 0 view .LVU53
+ 346 0000 0020     		movs	r0, #0
+ 347 0002 7047     		bx	lr
+ 348              		.cfi_endproc
+ 349              	.LFE118:
+ 351              		.section	.text.TIMER_IF_BkUp_Read_SubSeconds,"ax",%progbits
+ 352              		.align	1
+ 353              		.global	TIMER_IF_BkUp_Read_SubSeconds
+ 354              		.syntax unified
+ 355              		.thumb
+ 356              		.thumb_func
+ 357              		.fpu softvfp
+ 359              	TIMER_IF_BkUp_Read_SubSeconds:
+ 360              	.LFB119:
+ 231:Core/Src/timer_if.c **** 
+ 232:Core/Src/timer_if.c **** uint32_t TIMER_IF_BkUp_Read_SubSeconds(void)
+ 233:Core/Src/timer_if.c **** {
+ 361              		.loc 1 233 1 is_stmt 1 view -0
+ 362              		.cfi_startproc
+ 363              		@ args = 0, pretend = 0, frame = 0
+ 364              		@ frame_needed = 0, uses_anonymous_args = 0
+ 365              		@ link register save eliminated.
+ 234:Core/Src/timer_if.c ****   uint32_t ret = 0;
+ARM GAS  /tmp/ccYGcMSI.s 			page 11
+
+
+ 366              		.loc 1 234 3 view .LVU55
+ 367              	.LVL16:
+ 235:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_BkUp_Read_SubSeconds */
+ 236:Core/Src/timer_if.c **** 
+ 237:Core/Src/timer_if.c ****   /* USER CODE END TIMER_IF_BkUp_Read_SubSeconds */
+ 238:Core/Src/timer_if.c ****   return ret;
+ 368              		.loc 1 238 3 view .LVU56
+ 239:Core/Src/timer_if.c **** }
+ 369              		.loc 1 239 1 is_stmt 0 view .LVU57
+ 370 0000 0020     		movs	r0, #0
+ 371 0002 7047     		bx	lr
+ 372              		.cfi_endproc
+ 373              	.LFE119:
+ 375              		.section	.text.TIMER_IF_DelayMs,"ax",%progbits
+ 376              		.align	1
+ 377              		.global	TIMER_IF_DelayMs
+ 378              		.syntax unified
+ 379              		.thumb
+ 380              		.thumb_func
+ 381              		.fpu softvfp
+ 383              	TIMER_IF_DelayMs:
+ 384              	.LVL17:
+ 385              	.LFB114:
+ 194:Core/Src/timer_if.c ****   /* USER CODE BEGIN TIMER_IF_DelayMs */
+ 386              		.loc 1 194 1 is_stmt 1 view -0
+ 387              		.cfi_startproc
+ 388              		@ args = 0, pretend = 0, frame = 0
+ 389              		@ frame_needed = 0, uses_anonymous_args = 0
+ 390              		@ link register save eliminated.
+ 198:Core/Src/timer_if.c **** 
+ 391              		.loc 1 198 1 view .LVU59
+ 392 0000 7047     		bx	lr
+ 393              		.cfi_endproc
+ 394              	.LFE114:
+ 396              		.global	UTIL_SYSTIMDriver
+ 397              		.global	UTIL_TimerDriver
+ 398              		.section	.rodata.UTIL_SYSTIMDriver,"a"
+ 399              		.align	2
+ 402              	UTIL_SYSTIMDriver:
+ 403 0000 00000000 		.word	TIMER_IF_BkUp_Write_Seconds
+ 404 0004 00000000 		.word	TIMER_IF_BkUp_Read_Seconds
+ 405 0008 00000000 		.word	TIMER_IF_BkUp_Write_SubSeconds
+ 406 000c 00000000 		.word	TIMER_IF_BkUp_Read_SubSeconds
+ 407 0010 00000000 		.word	TIMER_IF_GetTime
+ 408              		.section	.rodata.UTIL_TimerDriver,"a"
+ 409              		.align	2
+ 412              	UTIL_TimerDriver:
+ 413 0000 00000000 		.word	TIMER_IF_Init
+ 414 0004 00000000 		.word	0
+ 415 0008 00000000 		.word	TIMER_IF_StartTimer
+ 416 000c 00000000 		.word	TIMER_IF_StopTimer
+ 417 0010 00000000 		.word	TIMER_IF_SetTimerContext
+ 418 0014 00000000 		.word	TIMER_IF_GetTimerContext
+ 419 0018 00000000 		.word	TIMER_IF_GetTimerElapsedTime
+ 420 001c 00000000 		.word	TIMER_IF_GetTimerValue
+ 421 0020 00000000 		.word	TIMER_IF_GetMinimumTimeout
+ 422 0024 00000000 		.word	TIMER_IF_Convert_ms2Tick
+ARM GAS  /tmp/ccYGcMSI.s 			page 12
+
+
+ 423 0028 00000000 		.word	TIMER_IF_Convert_Tick2ms
+ 424              		.text
+ 425              	.Letext0:
+ 426              		.file 2 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 427              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 428              		.file 4 "Utilities/timer/stm32_timer.h"
+ 429              		.file 5 "Utilities/misc/stm32_systime.h"
+ARM GAS  /tmp/ccYGcMSI.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 timer_if.c
+     /tmp/ccYGcMSI.s:16     .text.TIMER_IF_Init:0000000000000000 $t
+     /tmp/ccYGcMSI.s:24     .text.TIMER_IF_Init:0000000000000000 TIMER_IF_Init
+     /tmp/ccYGcMSI.s:42     .text.TIMER_IF_StartTimer:0000000000000000 $t
+     /tmp/ccYGcMSI.s:49     .text.TIMER_IF_StartTimer:0000000000000000 TIMER_IF_StartTimer
+     /tmp/ccYGcMSI.s:68     .text.TIMER_IF_StopTimer:0000000000000000 $t
+     /tmp/ccYGcMSI.s:75     .text.TIMER_IF_StopTimer:0000000000000000 TIMER_IF_StopTimer
+     /tmp/ccYGcMSI.s:92     .text.TIMER_IF_SetTimerContext:0000000000000000 $t
+     /tmp/ccYGcMSI.s:99     .text.TIMER_IF_SetTimerContext:0000000000000000 TIMER_IF_SetTimerContext
+     /tmp/ccYGcMSI.s:114    .text.TIMER_IF_GetTimerContext:0000000000000000 $t
+     /tmp/ccYGcMSI.s:121    .text.TIMER_IF_GetTimerContext:0000000000000000 TIMER_IF_GetTimerContext
+     /tmp/ccYGcMSI.s:136    .text.TIMER_IF_GetTimerElapsedTime:0000000000000000 $t
+     /tmp/ccYGcMSI.s:143    .text.TIMER_IF_GetTimerElapsedTime:0000000000000000 TIMER_IF_GetTimerElapsedTime
+     /tmp/ccYGcMSI.s:160    .text.TIMER_IF_GetTimerValue:0000000000000000 $t
+     /tmp/ccYGcMSI.s:167    .text.TIMER_IF_GetTimerValue:0000000000000000 TIMER_IF_GetTimerValue
+     /tmp/ccYGcMSI.s:184    .text.TIMER_IF_GetMinimumTimeout:0000000000000000 $t
+     /tmp/ccYGcMSI.s:191    .text.TIMER_IF_GetMinimumTimeout:0000000000000000 TIMER_IF_GetMinimumTimeout
+     /tmp/ccYGcMSI.s:208    .text.TIMER_IF_Convert_ms2Tick:0000000000000000 $t
+     /tmp/ccYGcMSI.s:215    .text.TIMER_IF_Convert_ms2Tick:0000000000000000 TIMER_IF_Convert_ms2Tick
+     /tmp/ccYGcMSI.s:234    .text.TIMER_IF_Convert_Tick2ms:0000000000000000 $t
+     /tmp/ccYGcMSI.s:241    .text.TIMER_IF_Convert_Tick2ms:0000000000000000 TIMER_IF_Convert_Tick2ms
+     /tmp/ccYGcMSI.s:260    .text.TIMER_IF_GetTime:0000000000000000 $t
+     /tmp/ccYGcMSI.s:267    .text.TIMER_IF_GetTime:0000000000000000 TIMER_IF_GetTime
+     /tmp/ccYGcMSI.s:286    .text.TIMER_IF_BkUp_Write_Seconds:0000000000000000 $t
+     /tmp/ccYGcMSI.s:293    .text.TIMER_IF_BkUp_Write_Seconds:0000000000000000 TIMER_IF_BkUp_Write_Seconds
+     /tmp/ccYGcMSI.s:307    .text.TIMER_IF_BkUp_Write_SubSeconds:0000000000000000 $t
+     /tmp/ccYGcMSI.s:314    .text.TIMER_IF_BkUp_Write_SubSeconds:0000000000000000 TIMER_IF_BkUp_Write_SubSeconds
+     /tmp/ccYGcMSI.s:328    .text.TIMER_IF_BkUp_Read_Seconds:0000000000000000 $t
+     /tmp/ccYGcMSI.s:335    .text.TIMER_IF_BkUp_Read_Seconds:0000000000000000 TIMER_IF_BkUp_Read_Seconds
+     /tmp/ccYGcMSI.s:352    .text.TIMER_IF_BkUp_Read_SubSeconds:0000000000000000 $t
+     /tmp/ccYGcMSI.s:359    .text.TIMER_IF_BkUp_Read_SubSeconds:0000000000000000 TIMER_IF_BkUp_Read_SubSeconds
+     /tmp/ccYGcMSI.s:376    .text.TIMER_IF_DelayMs:0000000000000000 $t
+     /tmp/ccYGcMSI.s:383    .text.TIMER_IF_DelayMs:0000000000000000 TIMER_IF_DelayMs
+     /tmp/ccYGcMSI.s:402    .rodata.UTIL_SYSTIMDriver:0000000000000000 UTIL_SYSTIMDriver
+     /tmp/ccYGcMSI.s:412    .rodata.UTIL_TimerDriver:0000000000000000 UTIL_TimerDriver
+     /tmp/ccYGcMSI.s:399    .rodata.UTIL_SYSTIMDriver:0000000000000000 $d
+     /tmp/ccYGcMSI.s:409    .rodata.UTIL_TimerDriver:0000000000000000 $d
+
+NO UNDEFINED SYMBOLS

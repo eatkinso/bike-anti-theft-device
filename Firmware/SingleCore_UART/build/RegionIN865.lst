@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccDFNwMy.s 			page 1
+ARM GAS  /tmp/cczU7UTq.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
   29:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****  * \author    Daniel Jaeckle ( STACKFORCE )
   30:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** */
   31:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** /**
-ARM GAS  /tmp/ccDFNwMy.s 			page 2
+ARM GAS  /tmp/cczU7UTq.s 			page 2
 
 
   32:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****   ******************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
   86:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     return timeOnAir;
   87:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** }
   88:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** #endif /* REGION_IN865 */
-ARM GAS  /tmp/ccDFNwMy.s 			page 3
+ARM GAS  /tmp/cczU7UTq.s 			page 3
 
 
   89:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  128:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             phyParam.Value = IN865_MAX_TX_POWER;
  129:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             break;
  130:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         }
-ARM GAS  /tmp/ccDFNwMy.s 			page 4
+ARM GAS  /tmp/cczU7UTq.s 			page 4
 
 
  131:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         case PHY_DEF_TX_POWER:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  185:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             phyParam.Value = REGION_COMMON_DEFAULT_JOIN_ACCEPT_DELAY2;
  186:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             break;
  187:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         }
-ARM GAS  /tmp/ccDFNwMy.s 			page 5
+ARM GAS  /tmp/cczU7UTq.s 			page 5
 
 
  188:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         case PHY_MAX_FCNT_GAP:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  242:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         }
  243:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         case PHY_DEF_MAX_EIRP:
  244:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         {
-ARM GAS  /tmp/ccDFNwMy.s 			page 6
+ARM GAS  /tmp/cczU7UTq.s 			page 6
 
 
  245:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             phyParam.fValue = IN865_DEFAULT_MAX_EIRP;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
   44              		.loc 1 297 12 is_stmt 0 view .LVU6
   45 0006 0190     		str	r0, [sp, #4]
  298:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** }
-ARM GAS  /tmp/ccDFNwMy.s 			page 7
+ARM GAS  /tmp/cczU7UTq.s 			page 7
 
 
   46              		.loc 1 298 1 view .LVU7
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  311:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     Band_t bands[IN865_MAX_NB_BANDS] =
  312:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     {
  313:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         IN865_BAND0
-ARM GAS  /tmp/ccDFNwMy.s 			page 8
+ARM GAS  /tmp/cczU7UTq.s 			page 8
 
 
  314:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     };
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
   94              		.cfi_endproc
   95              	.LFE106:
   97              		.section	.text.RegionIN865Verify,"ax",%progbits
-ARM GAS  /tmp/ccDFNwMy.s 			page 9
+ARM GAS  /tmp/cczU7UTq.s 			page 9
 
 
   98              		.align	1
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  406:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             return RegionCommonValueInRange( verify->TxPower, IN865_MAX_TX_POWER, IN865_MIN_TX_POWE
  407:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         }
  408:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         case PHY_DUTY_CYCLE:
-ARM GAS  /tmp/ccDFNwMy.s 			page 10
+ARM GAS  /tmp/cczU7UTq.s 			page 10
 
 
  409:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         {
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  440:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     }
  441:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** 
  442:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     // Last byte is RFU, don't take it into account
-ARM GAS  /tmp/ccDFNwMy.s 			page 11
+ARM GAS  /tmp/cczU7UTq.s 			page 11
 
 
  443:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     for( uint8_t i = 0, chanIdx = IN865_NUMB_DEFAULT_CHANNELS; chanIdx < IN865_MAX_NB_CHANNELS; i+=
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  154              		.loc 1 482 1 view -0
  155              		.cfi_startproc
  156              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccDFNwMy.s 			page 12
+ARM GAS  /tmp/cczU7UTq.s 			page 12
 
 
  157              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  512:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     rxConfigParams->Bandwidth = RegionCommonGetBandwidth( rxConfigParams->Datarate, BandwidthsIN865
  513:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** 
  514:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     if( rxConfigParams->Datarate == DR_7 )
-ARM GAS  /tmp/ccDFNwMy.s 			page 13
+ARM GAS  /tmp/cczU7UTq.s 			page 13
 
 
  515:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     { // FSK
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  550:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     }
  551:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** 
  552:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     // Read the physical datarate from the datarates table
-ARM GAS  /tmp/ccDFNwMy.s 			page 14
+ARM GAS  /tmp/cczU7UTq.s 			page 14
 
 
  553:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     phyDr = DataratesIN865[dr];
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  223              	.LVL12:
  224              	.LFB112:
  591:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** 
-ARM GAS  /tmp/ccDFNwMy.s 			page 15
+ARM GAS  /tmp/cczU7UTq.s 			page 15
 
 
  592:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** bool RegionIN865TxConfig( TxConfigParams_t* txConfig, int8_t* txPower, TimerTime_t* txTimeOnAir )
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  239              		.section	.text.RegionIN865LinkAdrReq,"ax",%progbits
  240              		.align	1
  241              		.global	RegionIN865LinkAdrReq
-ARM GAS  /tmp/ccDFNwMy.s 			page 16
+ARM GAS  /tmp/cczU7UTq.s 			page 16
 
 
  242              		.syntax unified
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  674:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         else
  675:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         {
  676:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             for( uint8_t i = 0; i < IN865_MAX_NB_CHANNELS; i++ )
-ARM GAS  /tmp/ccDFNwMy.s 			page 17
+ARM GAS  /tmp/cczU7UTq.s 			page 17
 
 
  677:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             {
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  731:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     {
  732:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         // Set the channels mask to a default value
  733:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         memset1( ( uint8_t* ) RegionNvmGroup2->ChannelsMask, 0, sizeof( RegionNvmGroup2->ChannelsMa
-ARM GAS  /tmp/ccDFNwMy.s 			page 18
+ARM GAS  /tmp/cczU7UTq.s 			page 18
 
 
  734:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         // Update the channels mask
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  764:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         status &= 0xFD; // Datarate KO
  765:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     }
  766:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** 
-ARM GAS  /tmp/ccDFNwMy.s 			page 19
+ARM GAS  /tmp/cczU7UTq.s 			page 19
 
 
  767:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     // Verify datarate offset
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  803:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             }
  804:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             case LORAMAC_STATUS_FREQUENCY_INVALID:
  805:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****             {
-ARM GAS  /tmp/ccDFNwMy.s 			page 20
+ARM GAS  /tmp/cczU7UTq.s 			page 20
 
 
  806:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****                 status &= 0xFE;
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  837:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** {
  327              		.loc 1 837 1 is_stmt 1 view -0
  328              		.cfi_startproc
-ARM GAS  /tmp/ccDFNwMy.s 			page 21
+ARM GAS  /tmp/cczU7UTq.s 			page 21
 
 
  329              		@ args = 0, pretend = 0, frame = 0
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  865:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** #if defined( REGION_IN865 )
  866:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     return currentDr;
  867:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** #else
-ARM GAS  /tmp/ccDFNwMy.s 			page 22
+ARM GAS  /tmp/cczU7UTq.s 			page 22
 
 
  868:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     return -1;
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  899:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     identifyChannelsParam.DutyCycleEnabled = nextChanParams->DutyCycleEnabled;
  900:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     identifyChannelsParam.MaxBands = IN865_MAX_NB_BANDS;
  901:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** 
-ARM GAS  /tmp/ccDFNwMy.s 			page 23
+ARM GAS  /tmp/cczU7UTq.s 			page 23
 
 
  902:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     identifyChannelsParam.ElapsedTimeSinceStartUp = nextChanParams->ElapsedTimeSinceStartUp;
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  933:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** 
  934:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     if( id < IN865_NUMB_DEFAULT_CHANNELS )
  935:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     {
-ARM GAS  /tmp/ccDFNwMy.s 			page 24
+ARM GAS  /tmp/cczU7UTq.s 			page 24
 
 
  936:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****         return LORAMAC_STATUS_FREQ_AND_DR_INVALID;
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  409              		.loc 1 988 1 is_stmt 0 view .LVU61
  410 0000 0C20     		movs	r0, #12
  411              	.LVL27:
-ARM GAS  /tmp/ccDFNwMy.s 			page 25
+ARM GAS  /tmp/cczU7UTq.s 			page 25
 
 
  412              		.loc 1 988 1 view .LVU62
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  451              	.LVL30:
  452              	.LFB115:
  778:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****     uint8_t status = 0x03;
-ARM GAS  /tmp/ccDFNwMy.s 			page 26
+ARM GAS  /tmp/cczU7UTq.s 			page 26
 
 
  453              		.loc 1 778 1 is_stmt 1 view -0
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  491 0018 0320     		movs	r0, #3
  492              	.LVL34:
  493              	.L21:
-ARM GAS  /tmp/ccDFNwMy.s 			page 27
+ARM GAS  /tmp/cczU7UTq.s 			page 27
 
 
  827:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** }
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  537              	.L25:
  811:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c ****                 break;
  538              		.loc 1 811 17 is_stmt 1 view .LVU95
-ARM GAS  /tmp/ccDFNwMy.s 			page 28
+ARM GAS  /tmp/cczU7UTq.s 			page 28
 
 
  539              	.LVL38:
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  582              	.LVL42:
  583              	.LFB122:
 1008:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** 
-ARM GAS  /tmp/ccDFNwMy.s 			page 29
+ARM GAS  /tmp/cczU7UTq.s 			page 29
 
 
 1009:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.c **** void RegionIN865SetContinuousWave( ContinuousWaveParams_t* continuousWave )
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  617              	.LFE123:
  619              		.section	.text.RegionIN865RxBeaconSetup,"ax",%progbits
  620              		.align	1
-ARM GAS  /tmp/ccDFNwMy.s 			page 30
+ARM GAS  /tmp/cczU7UTq.s 			page 30
 
 
  621              		.global	RegionIN865RxBeaconSetup
@@ -1789,55 +1789,55 @@ ARM GAS  /tmp/ccDFNwMy.s 			page 1
  648              		.file 8 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h"
  649              		.file 9 "Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.h"
  650              		.file 10 "Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionIN865.h"
-ARM GAS  /tmp/ccDFNwMy.s 			page 31
+ARM GAS  /tmp/cczU7UTq.s 			page 31
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 RegionIN865.c
-     /tmp/ccDFNwMy.s:16     .text.RegionIN865GetPhyParam:0000000000000000 $t
-     /tmp/ccDFNwMy.s:24     .text.RegionIN865GetPhyParam:0000000000000000 RegionIN865GetPhyParam
-     /tmp/ccDFNwMy.s:56     .text.RegionIN865SetBandTxDone:0000000000000000 $t
-     /tmp/ccDFNwMy.s:63     .text.RegionIN865SetBandTxDone:0000000000000000 RegionIN865SetBandTxDone
-     /tmp/ccDFNwMy.s:77     .text.RegionIN865InitDefaults:0000000000000000 $t
-     /tmp/ccDFNwMy.s:84     .text.RegionIN865InitDefaults:0000000000000000 RegionIN865InitDefaults
-     /tmp/ccDFNwMy.s:98     .text.RegionIN865Verify:0000000000000000 $t
-     /tmp/ccDFNwMy.s:105    .text.RegionIN865Verify:0000000000000000 RegionIN865Verify
-     /tmp/ccDFNwMy.s:123    .text.RegionIN865ApplyCFList:0000000000000000 $t
-     /tmp/ccDFNwMy.s:130    .text.RegionIN865ApplyCFList:0000000000000000 RegionIN865ApplyCFList
-     /tmp/ccDFNwMy.s:144    .text.RegionIN865ChanMaskSet:0000000000000000 $t
-     /tmp/ccDFNwMy.s:151    .text.RegionIN865ChanMaskSet:0000000000000000 RegionIN865ChanMaskSet
-     /tmp/ccDFNwMy.s:169    .text.RegionIN865ComputeRxWindowParameters:0000000000000000 $t
-     /tmp/ccDFNwMy.s:176    .text.RegionIN865ComputeRxWindowParameters:0000000000000000 RegionIN865ComputeRxWindowParameters
-     /tmp/ccDFNwMy.s:190    .text.RegionIN865RxConfig:0000000000000000 $t
-     /tmp/ccDFNwMy.s:197    .text.RegionIN865RxConfig:0000000000000000 RegionIN865RxConfig
-     /tmp/ccDFNwMy.s:215    .text.RegionIN865TxConfig:0000000000000000 $t
-     /tmp/ccDFNwMy.s:222    .text.RegionIN865TxConfig:0000000000000000 RegionIN865TxConfig
-     /tmp/ccDFNwMy.s:240    .text.RegionIN865LinkAdrReq:0000000000000000 $t
-     /tmp/ccDFNwMy.s:247    .text.RegionIN865LinkAdrReq:0000000000000000 RegionIN865LinkAdrReq
-     /tmp/ccDFNwMy.s:266    .text.RegionIN865RxParamSetupReq:0000000000000000 $t
-     /tmp/ccDFNwMy.s:273    .text.RegionIN865RxParamSetupReq:0000000000000000 RegionIN865RxParamSetupReq
-     /tmp/ccDFNwMy.s:292    .text.RegionIN865TxParamSetupReq:0000000000000000 $t
-     /tmp/ccDFNwMy.s:299    .text.RegionIN865TxParamSetupReq:0000000000000000 RegionIN865TxParamSetupReq
-     /tmp/ccDFNwMy.s:317    .text.RegionIN865DlChannelReq:0000000000000000 $t
-     /tmp/ccDFNwMy.s:324    .text.RegionIN865DlChannelReq:0000000000000000 RegionIN865DlChannelReq
-     /tmp/ccDFNwMy.s:343    .text.RegionIN865AlternateDr:0000000000000000 $t
-     /tmp/ccDFNwMy.s:350    .text.RegionIN865AlternateDr:0000000000000000 RegionIN865AlternateDr
-     /tmp/ccDFNwMy.s:368    .text.RegionIN865NextChannel:0000000000000000 $t
-     /tmp/ccDFNwMy.s:375    .text.RegionIN865NextChannel:0000000000000000 RegionIN865NextChannel
-     /tmp/ccDFNwMy.s:393    .text.RegionIN865ChannelAdd:0000000000000000 $t
-     /tmp/ccDFNwMy.s:400    .text.RegionIN865ChannelAdd:0000000000000000 RegionIN865ChannelAdd
-     /tmp/ccDFNwMy.s:418    .text.RegionIN865ChannelsRemove:0000000000000000 $t
-     /tmp/ccDFNwMy.s:425    .text.RegionIN865ChannelsRemove:0000000000000000 RegionIN865ChannelsRemove
-     /tmp/ccDFNwMy.s:443    .text.RegionIN865NewChannelReq:0000000000000000 $t
-     /tmp/ccDFNwMy.s:450    .text.RegionIN865NewChannelReq:0000000000000000 RegionIN865NewChannelReq
-     /tmp/ccDFNwMy.s:526    .text.RegionIN865NewChannelReq:0000000000000036 $d
-     /tmp/ccDFNwMy.s:574    .text.RegionIN865SetContinuousWave:0000000000000000 $t
-     /tmp/ccDFNwMy.s:581    .text.RegionIN865SetContinuousWave:0000000000000000 RegionIN865SetContinuousWave
-     /tmp/ccDFNwMy.s:595    .text.RegionIN865ApplyDrOffset:0000000000000000 $t
-     /tmp/ccDFNwMy.s:602    .text.RegionIN865ApplyDrOffset:0000000000000000 RegionIN865ApplyDrOffset
-     /tmp/ccDFNwMy.s:620    .text.RegionIN865RxBeaconSetup:0000000000000000 $t
-     /tmp/ccDFNwMy.s:627    .text.RegionIN865RxBeaconSetup:0000000000000000 RegionIN865RxBeaconSetup
-     /tmp/ccDFNwMy.s:533    .text.RegionIN865NewChannelReq:000000000000003d $d
-     /tmp/ccDFNwMy.s:533    .text.RegionIN865NewChannelReq:000000000000003e $t
+     /tmp/cczU7UTq.s:16     .text.RegionIN865GetPhyParam:0000000000000000 $t
+     /tmp/cczU7UTq.s:24     .text.RegionIN865GetPhyParam:0000000000000000 RegionIN865GetPhyParam
+     /tmp/cczU7UTq.s:56     .text.RegionIN865SetBandTxDone:0000000000000000 $t
+     /tmp/cczU7UTq.s:63     .text.RegionIN865SetBandTxDone:0000000000000000 RegionIN865SetBandTxDone
+     /tmp/cczU7UTq.s:77     .text.RegionIN865InitDefaults:0000000000000000 $t
+     /tmp/cczU7UTq.s:84     .text.RegionIN865InitDefaults:0000000000000000 RegionIN865InitDefaults
+     /tmp/cczU7UTq.s:98     .text.RegionIN865Verify:0000000000000000 $t
+     /tmp/cczU7UTq.s:105    .text.RegionIN865Verify:0000000000000000 RegionIN865Verify
+     /tmp/cczU7UTq.s:123    .text.RegionIN865ApplyCFList:0000000000000000 $t
+     /tmp/cczU7UTq.s:130    .text.RegionIN865ApplyCFList:0000000000000000 RegionIN865ApplyCFList
+     /tmp/cczU7UTq.s:144    .text.RegionIN865ChanMaskSet:0000000000000000 $t
+     /tmp/cczU7UTq.s:151    .text.RegionIN865ChanMaskSet:0000000000000000 RegionIN865ChanMaskSet
+     /tmp/cczU7UTq.s:169    .text.RegionIN865ComputeRxWindowParameters:0000000000000000 $t
+     /tmp/cczU7UTq.s:176    .text.RegionIN865ComputeRxWindowParameters:0000000000000000 RegionIN865ComputeRxWindowParameters
+     /tmp/cczU7UTq.s:190    .text.RegionIN865RxConfig:0000000000000000 $t
+     /tmp/cczU7UTq.s:197    .text.RegionIN865RxConfig:0000000000000000 RegionIN865RxConfig
+     /tmp/cczU7UTq.s:215    .text.RegionIN865TxConfig:0000000000000000 $t
+     /tmp/cczU7UTq.s:222    .text.RegionIN865TxConfig:0000000000000000 RegionIN865TxConfig
+     /tmp/cczU7UTq.s:240    .text.RegionIN865LinkAdrReq:0000000000000000 $t
+     /tmp/cczU7UTq.s:247    .text.RegionIN865LinkAdrReq:0000000000000000 RegionIN865LinkAdrReq
+     /tmp/cczU7UTq.s:266    .text.RegionIN865RxParamSetupReq:0000000000000000 $t
+     /tmp/cczU7UTq.s:273    .text.RegionIN865RxParamSetupReq:0000000000000000 RegionIN865RxParamSetupReq
+     /tmp/cczU7UTq.s:292    .text.RegionIN865TxParamSetupReq:0000000000000000 $t
+     /tmp/cczU7UTq.s:299    .text.RegionIN865TxParamSetupReq:0000000000000000 RegionIN865TxParamSetupReq
+     /tmp/cczU7UTq.s:317    .text.RegionIN865DlChannelReq:0000000000000000 $t
+     /tmp/cczU7UTq.s:324    .text.RegionIN865DlChannelReq:0000000000000000 RegionIN865DlChannelReq
+     /tmp/cczU7UTq.s:343    .text.RegionIN865AlternateDr:0000000000000000 $t
+     /tmp/cczU7UTq.s:350    .text.RegionIN865AlternateDr:0000000000000000 RegionIN865AlternateDr
+     /tmp/cczU7UTq.s:368    .text.RegionIN865NextChannel:0000000000000000 $t
+     /tmp/cczU7UTq.s:375    .text.RegionIN865NextChannel:0000000000000000 RegionIN865NextChannel
+     /tmp/cczU7UTq.s:393    .text.RegionIN865ChannelAdd:0000000000000000 $t
+     /tmp/cczU7UTq.s:400    .text.RegionIN865ChannelAdd:0000000000000000 RegionIN865ChannelAdd
+     /tmp/cczU7UTq.s:418    .text.RegionIN865ChannelsRemove:0000000000000000 $t
+     /tmp/cczU7UTq.s:425    .text.RegionIN865ChannelsRemove:0000000000000000 RegionIN865ChannelsRemove
+     /tmp/cczU7UTq.s:443    .text.RegionIN865NewChannelReq:0000000000000000 $t
+     /tmp/cczU7UTq.s:450    .text.RegionIN865NewChannelReq:0000000000000000 RegionIN865NewChannelReq
+     /tmp/cczU7UTq.s:526    .text.RegionIN865NewChannelReq:0000000000000036 $d
+     /tmp/cczU7UTq.s:574    .text.RegionIN865SetContinuousWave:0000000000000000 $t
+     /tmp/cczU7UTq.s:581    .text.RegionIN865SetContinuousWave:0000000000000000 RegionIN865SetContinuousWave
+     /tmp/cczU7UTq.s:595    .text.RegionIN865ApplyDrOffset:0000000000000000 $t
+     /tmp/cczU7UTq.s:602    .text.RegionIN865ApplyDrOffset:0000000000000000 RegionIN865ApplyDrOffset
+     /tmp/cczU7UTq.s:620    .text.RegionIN865RxBeaconSetup:0000000000000000 $t
+     /tmp/cczU7UTq.s:627    .text.RegionIN865RxBeaconSetup:0000000000000000 RegionIN865RxBeaconSetup
+     /tmp/cczU7UTq.s:533    .text.RegionIN865NewChannelReq:000000000000003d $d
+     /tmp/cczU7UTq.s:533    .text.RegionIN865NewChannelReq:000000000000003e $t
 
 NO UNDEFINED SYMBOLS

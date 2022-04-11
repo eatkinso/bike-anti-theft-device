@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccAHlSKq.s 			page 1
+ARM GAS  /tmp/cc4wDL5K.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
   30:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   * @attention
   31:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   *
   32:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
-ARM GAS  /tmp/ccAHlSKq.s 			page 2
+ARM GAS  /tmp/cc4wDL5K.s 			page 2
 
 
   33:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   * All rights reserved.</center></h2>
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
   87:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   */
   88:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
   89:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** /** @defgroup UARTEx_Exported_Functions_Group1 Initialization and de-initialization functions
-ARM GAS  /tmp/ccAHlSKq.s 			page 3
+ARM GAS  /tmp/cc4wDL5K.s 			page 3
 
 
   90:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   * @brief    Extended Initialization and Configuration Functions
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  144:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   * @{
  145:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   */
  146:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 4
+ARM GAS  /tmp/cc4wDL5K.s 			page 4
 
 
  147:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** /**
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  201:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     /* Init the low level hardware */
  202:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     huart->MspInitCallback(huart);
  203:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** #else
-ARM GAS  /tmp/ccAHlSKq.s 			page 5
+ARM GAS  /tmp/cc4wDL5K.s 			page 5
 
 
  204:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     /* Init the low level hardware : GPIO, CLOCK, CORTEX */
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  258:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  259:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     (#) TX/RX Fifos Callbacks:
  260:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****         (+) HAL_UARTEx_RxFifoFullCallback()
-ARM GAS  /tmp/ccAHlSKq.s 			page 6
+ARM GAS  /tmp/cc4wDL5K.s 			page 6
 
 
  261:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****         (+) HAL_UARTEx_TxFifoEmptyCallback()
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  315:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  316:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** /** @defgroup UARTEx_Exported_Functions_Group3 Peripheral Control functions
  317:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   * @brief    Extended Peripheral Control functions
-ARM GAS  /tmp/ccAHlSKq.s 			page 7
+ARM GAS  /tmp/cc4wDL5K.s 			page 7
 
 
  318:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   *
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  372:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   */
  373:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  374:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** /**
-ARM GAS  /tmp/ccAHlSKq.s 			page 8
+ARM GAS  /tmp/cc4wDL5K.s 			page 8
 
 
  375:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   * @brief By default in multiprocessor mode, when the wake up method is set
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  429:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  430:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   /* check the wake-up from stop mode UART instance */
  431:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   assert_param(IS_UART_WAKEUP_FROMSTOP_INSTANCE(huart->Instance));
-ARM GAS  /tmp/ccAHlSKq.s 			page 9
+ARM GAS  /tmp/cc4wDL5K.s 			page 9
 
 
  432:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   /* check the wake-up selection parameter */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  486:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   ATOMIC_SET_BIT(huart->Instance->CR1, USART_CR1_UESM);
  487:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  488:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   /* Process Unlocked */
-ARM GAS  /tmp/ccAHlSKq.s 			page 10
+ARM GAS  /tmp/cc4wDL5K.s 			page 10
 
 
  489:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   __HAL_UNLOCK(huart);
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  543:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   /* Determine the number of data to process during RX/TX ISR execution */
  544:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   UARTEx_SetNbDataToProcess(huart);
  545:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 11
+ARM GAS  /tmp/cc4wDL5K.s 			page 11
 
 
  546:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   huart->gState = HAL_UART_STATE_READY;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  600:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   *            @arg @ref UART_TXFIFO_THRESHOLD_3_4
  601:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   *            @arg @ref UART_TXFIFO_THRESHOLD_7_8
  602:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   *            @arg @ref UART_TXFIFO_THRESHOLD_8_8
-ARM GAS  /tmp/ccAHlSKq.s 			page 12
+ARM GAS  /tmp/cc4wDL5K.s 			page 12
 
 
  603:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   * @retval HAL status
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  657:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  658:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   /* Check the parameters */
  659:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   assert_param(IS_UART_FIFO_INSTANCE(huart->Instance));
-ARM GAS  /tmp/ccAHlSKq.s 			page 13
+ARM GAS  /tmp/cc4wDL5K.s 			page 13
 
 
  660:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   assert_param(IS_UART_RXFIFO_THRESHOLD(Threshold));
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  714:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** HAL_StatusTypeDef HAL_UARTEx_ReceiveToIdle(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size
  715:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** {
  716:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   uint8_t  *pdata8bits;
-ARM GAS  /tmp/ccAHlSKq.s 			page 14
+ARM GAS  /tmp/cc4wDL5K.s 			page 14
 
 
  717:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   uint16_t *pdata16bits;
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  771:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  772:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     /* Initialize output number of received elements */
  773:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     *RxLen = 0U;
-ARM GAS  /tmp/ccAHlSKq.s 			page 15
+ARM GAS  /tmp/cc4wDL5K.s 			page 15
 
 
  774:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  828:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  829:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     return HAL_OK;
  830:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   }
-ARM GAS  /tmp/ccAHlSKq.s 			page 16
+ARM GAS  /tmp/cc4wDL5K.s 			page 16
 
 
  831:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   else
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  885:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     status =  UART_Start_Receive_IT(huart, pData, Size);
  886:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  887:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     /* Check Rx process has been successfully started */
-ARM GAS  /tmp/ccAHlSKq.s 			page 17
+ARM GAS  /tmp/cc4wDL5K.s 			page 17
 
 
  888:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     if (status == HAL_OK)
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  942:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     {
  943:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****       return HAL_ERROR;
  944:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     }
-ARM GAS  /tmp/ccAHlSKq.s 			page 18
+ARM GAS  /tmp/cc4wDL5K.s 			page 18
 
 
  945:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  999:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
 1000:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** /** @addtogroup UARTEx_Private_Functions
 1001:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   * @{
-ARM GAS  /tmp/ccAHlSKq.s 			page 19
+ARM GAS  /tmp/cc4wDL5K.s 			page 19
 
 
 1002:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   */
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
   64              		.syntax unified
   65              		.thumb
   66              		.thumb_func
-ARM GAS  /tmp/ccAHlSKq.s 			page 20
+ARM GAS  /tmp/cc4wDL5K.s 			page 20
 
 
   67              		.fpu softvfp
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  100              		.cfi_def_cfa_offset 8
  101              		.cfi_offset 4, -8
  102              		.cfi_offset 5, -4
-ARM GAS  /tmp/ccAHlSKq.s 			page 21
+ARM GAS  /tmp/cc4wDL5K.s 			page 21
 
 
 1041:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   }
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
 1050:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     huart->NbRxDataToProcess = ((uint16_t)rx_fifo_depth * numerator[rx_fifo_threshold]) /
  143              		.loc 1 1050 30 view .LVU40
  144 003a A0F86830 		strh	r3, [r0, #104]	@ movhi
-ARM GAS  /tmp/ccAHlSKq.s 			page 22
+ARM GAS  /tmp/cc4wDL5K.s 			page 22
 
 
 1052:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   }
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  177:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  194              		.loc 1 177 3 is_stmt 1 view .LVU47
  180:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 23
+ARM GAS  /tmp/cc4wDL5K.s 			page 23
 
 
  195              		.loc 1 180 3 view .LVU48
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  229:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  234              		.loc 1 229 3 view .LVU64
  235 003c 2268     		ldr	r2, [r4]
-ARM GAS  /tmp/ccAHlSKq.s 			page 24
+ARM GAS  /tmp/cc4wDL5K.s 			page 24
 
 
  236 003e 9368     		ldr	r3, [r2, #8]
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  277              		.loc 1 205 5 is_stmt 0 view .LVU77
  278 0078 CCE7     		b	.L13
  279              	.L21:
-ARM GAS  /tmp/ccAHlSKq.s 			page 25
+ARM GAS  /tmp/cc4wDL5K.s 			page 25
 
 
  222:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   }
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  331              		.fpu softvfp
  333              	HAL_UARTEx_RxFifoFullCallback:
  334              	.LVL21:
-ARM GAS  /tmp/ccAHlSKq.s 			page 26
+ARM GAS  /tmp/cc4wDL5K.s 			page 26
 
 
  335              	.LFB963:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  390:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   {
  385              		.loc 1 390 6 is_stmt 0 view .LVU92
  386 0000 C0B1     		cbz	r0, .L27
-ARM GAS  /tmp/ccAHlSKq.s 			page 27
+ARM GAS  /tmp/cc4wDL5K.s 			page 27
 
 
  388:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   /* Check the UART handle allocation */
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  429              		.cfi_def_cfa_offset 0
  430              		.cfi_restore 3
  431              		.cfi_restore 14
-ARM GAS  /tmp/ccAHlSKq.s 			page 28
+ARM GAS  /tmp/cc4wDL5K.s 			page 28
 
 
  392:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   }
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  477              		.loc 1 436 3 discriminator 2 view .LVU115
  478 0014 0123     		movs	r3, #1
  479 0016 80F88030 		strb	r3, [r0, #128]
-ARM GAS  /tmp/ccAHlSKq.s 			page 29
+ARM GAS  /tmp/cc4wDL5K.s 			page 29
 
 
  436:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  521              		.loc 1 458 7 view .LVU128
  522 0058 FFF7FEFF 		bl	UART_WaitOnFlagUntilTimeout
  523              	.LVL35:
-ARM GAS  /tmp/ccAHlSKq.s 			page 30
+ARM GAS  /tmp/cc4wDL5K.s 			page 30
 
 
  458:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   {
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  566              	.LVL41:
  436:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  567              		.loc 1 436 3 view .LVU141
-ARM GAS  /tmp/ccAHlSKq.s 			page 31
+ARM GAS  /tmp/cc4wDL5K.s 			page 31
 
 
  568 0080 FBE7     		b	.L33
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
    8:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Copyright (c) 2009-2019 Arm Limited. All rights reserved.
    9:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
   10:Drivers/CMSIS/Include/cmsis_gcc.h ****  * SPDX-License-Identifier: Apache-2.0
-ARM GAS  /tmp/ccAHlSKq.s 			page 32
+ARM GAS  /tmp/cc4wDL5K.s 			page 32
 
 
   11:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
   65:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_STRUCT                        struct __attribute__((packed, aligned(1)))
   66:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   67:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_UNION
-ARM GAS  /tmp/ccAHlSKq.s 			page 33
+ARM GAS  /tmp/cc4wDL5K.s 			page 33
 
 
   68:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_UNION                         union __attribute__((packed, aligned(1)))
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  122:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __PROGRAM_START
  123:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  124:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /tmp/ccAHlSKq.s 			page 34
+ARM GAS  /tmp/cc4wDL5K.s 			page 34
 
 
  125:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Initializes data and bss sections
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  179:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  180:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  181:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE_ATTRIBUTE
-ARM GAS  /tmp/ccAHlSKq.s 			page 35
+ARM GAS  /tmp/cc4wDL5K.s 			page 35
 
 
  182:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE_ATTRIBUTE  __attribute((used, section(".vectors")))
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  236:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  237:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, control_ns" : "=r" (result) );
  238:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  /tmp/ccAHlSKq.s 			page 36
+ARM GAS  /tmp/cc4wDL5K.s 			page 36
 
 
  239:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  293:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  294:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  295:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /tmp/ccAHlSKq.s 			page 37
+ARM GAS  /tmp/cc4wDL5K.s 			page 37
 
 
  296:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get xPSR Register
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  350:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  351:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  352:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Process Stack Pointer (non-secure)
-ARM GAS  /tmp/ccAHlSKq.s 			page 38
+ARM GAS  /tmp/cc4wDL5K.s 			page 38
 
 
  353:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Process Stack Pointer (PSP) when in secure sta
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  407:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Main Stack Pointer (MSP) when in secure state.
  408:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfMainStack  Main Stack Pointer value to set
  409:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  /tmp/ccAHlSKq.s 			page 39
+ARM GAS  /tmp/cc4wDL5K.s 			page 39
 
 
  410:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_MSP_NS(uint32_t topOfMainStack)
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  464:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_PRIMASK_NS(void)
  465:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  466:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  /tmp/ccAHlSKq.s 			page 40
+ARM GAS  /tmp/cc4wDL5K.s 			page 40
 
 
  467:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  521:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  522:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  523:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /tmp/ccAHlSKq.s 			page 41
+ARM GAS  /tmp/cc4wDL5K.s 			page 41
 
 
  524:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Base Priority
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  578:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Base Priority with condition
  579:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the Base Priority register only if BASEPRI masking is disable
  580:Drivers/CMSIS/Include/cmsis_gcc.h ****            or the new value increases the BASEPRI priority level.
-ARM GAS  /tmp/ccAHlSKq.s 			page 42
+ARM GAS  /tmp/cc4wDL5K.s 			page 42
 
 
  581:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    basePri  Base Priority value to set
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  635:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  636:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_FAULTMASK_NS(uint32_t faultMask)
  637:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /tmp/ccAHlSKq.s 			page 43
+ARM GAS  /tmp/cc4wDL5K.s 			page 43
 
 
  638:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR faultmask_ns, %0" : : "r" (faultMask) : "memory");
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  692:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  693:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  694:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 44
+ARM GAS  /tmp/cc4wDL5K.s 			page 44
 
 
  695:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  749:Drivers/CMSIS/Include/cmsis_gcc.h ****     (!defined (__ARM_FEATURE_CMSE) || (__ARM_FEATURE_CMSE < 3)))
  750:Drivers/CMSIS/Include/cmsis_gcc.h ****   // without main extensions, the non-secure MSPLIM is RAZ/WI
  751:Drivers/CMSIS/Include/cmsis_gcc.h ****   return 0U;
-ARM GAS  /tmp/ccAHlSKq.s 			page 45
+ARM GAS  /tmp/cc4wDL5K.s 			page 45
 
 
  752:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  806:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer Limit (non-secure)
  807:Drivers/CMSIS/Include/cmsis_gcc.h ****   Devices without ARMv8-M Main Extensions (i.e. Cortex-M23) lack the non-secure
  808:Drivers/CMSIS/Include/cmsis_gcc.h ****   Stack Pointer Limit register hence the write is silently ignored.
-ARM GAS  /tmp/ccAHlSKq.s 			page 46
+ARM GAS  /tmp/cc4wDL5K.s 			page 46
 
 
  809:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  863:Drivers/CMSIS/Include/cmsis_gcc.h **** #if __has_builtin(__builtin_arm_set_fpscr)
  864:Drivers/CMSIS/Include/cmsis_gcc.h **** // Re-enable using built-in when GCC has been fixed
  865:Drivers/CMSIS/Include/cmsis_gcc.h **** // || (__GNUC__ > 7) || (__GNUC__ == 7 && __GNUC_MINOR__ >= 2)
-ARM GAS  /tmp/ccAHlSKq.s 			page 47
+ARM GAS  /tmp/cc4wDL5K.s 			page 47
 
 
  866:Drivers/CMSIS/Include/cmsis_gcc.h ****   /* see https://gcc.gnu.org/ml/gcc-patches/2017-04/msg00443.html */
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  920:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  921:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Send Event
  922:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Send Event is a hint instruction. It causes an event to be signaled to the CPU.
-ARM GAS  /tmp/ccAHlSKq.s 			page 48
+ARM GAS  /tmp/cc4wDL5K.s 			page 48
 
 
  923:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  977:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  978:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  979:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 49
+ARM GAS  /tmp/cc4wDL5K.s 			page 49
 
 
  980:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
 1034:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Causes the processor to enter Debug state.
 1035:Drivers/CMSIS/Include/cmsis_gcc.h ****            Debug tools can use this to investigate system state when the instruction at a particula
 1036:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  is ignored by the processor.
-ARM GAS  /tmp/ccAHlSKq.s 			page 50
+ARM GAS  /tmp/cc4wDL5K.s 			page 50
 
 
 1037:Drivers/CMSIS/Include/cmsis_gcc.h ****                  If required, a debugger can use it to store additional information about the break
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
 1091:Drivers/CMSIS/Include/cmsis_gcc.h ****     return 32U;
 1092:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
 1093:Drivers/CMSIS/Include/cmsis_gcc.h ****   return __builtin_clz(value);
-ARM GAS  /tmp/ccAHlSKq.s 			page 51
+ARM GAS  /tmp/cc4wDL5K.s 			page 51
 
 
 1094:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
 1148:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    ptr  Pointer to data
 1149:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return        value of type uint32_t at (*ptr)
 1150:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  /tmp/ccAHlSKq.s 			page 52
+ARM GAS  /tmp/cc4wDL5K.s 			page 52
 
 
 1151:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __LDREXW(volatile uint32_t *addr)
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
 1182:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return          0  Function succeeded
 1183:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return          1  Function failed
 1184:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  /tmp/ccAHlSKq.s 			page 53
+ARM GAS  /tmp/cc4wDL5K.s 			page 53
 
 
 1185:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __STREXH(uint16_t value, volatile uint16_t *addr)
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  489:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  655              		.loc 1 489 3 is_stmt 1 discriminator 2 view .LVU168
  491:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** }
-ARM GAS  /tmp/ccAHlSKq.s 			page 54
+ARM GAS  /tmp/cc4wDL5K.s 			page 54
 
 
  656              		.loc 1 491 3 discriminator 2 view .LVU169
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  505:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  701              		.loc 1 505 3 discriminator 1 view .LVU181
  505:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 55
+ARM GAS  /tmp/cc4wDL5K.s 			page 55
 
 
  702              		.loc 1 505 3 discriminator 1 view .LVU182
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  745 001e F6D1     		bne	.L46
  746              	.LBE27:
  505:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 56
+ARM GAS  /tmp/cc4wDL5K.s 			page 56
 
 
  747              		.loc 1 505 3 is_stmt 1 discriminator 2 view .LVU196
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  789              		.loc 1 526 3 view .LVU210
  790 0000 90F88030 		ldrb	r3, [r0, #128]	@ zero_extendqisi2
  791 0004 012B     		cmp	r3, #1
-ARM GAS  /tmp/ccAHlSKq.s 			page 57
+ARM GAS  /tmp/cc4wDL5K.s 			page 57
 
 
  792 0006 1DD0     		beq	.L50
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  831              		.loc 1 546 3 discriminator 2 view .LVU225
  546:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  832              		.loc 1 546 17 is_stmt 0 discriminator 2 view .LVU226
-ARM GAS  /tmp/ccAHlSKq.s 			page 58
+ARM GAS  /tmp/cc4wDL5K.s 			page 58
 
 
  833 0036 2023     		movs	r3, #32
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  877 0000 90F88030 		ldrb	r3, [r0, #128]	@ zero_extendqisi2
  878 0004 012B     		cmp	r3, #1
  879 0006 18D0     		beq	.L57
-ARM GAS  /tmp/ccAHlSKq.s 			page 59
+ARM GAS  /tmp/cc4wDL5K.s 			page 59
 
 
  567:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  917 0032 80F88030 		strb	r3, [r0, #128]
  587:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  918              		.loc 1 587 3 discriminator 2 view .LVU256
-ARM GAS  /tmp/ccAHlSKq.s 			page 60
+ARM GAS  /tmp/cc4wDL5K.s 			page 60
 
 
  589:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** }
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  963 0002 90F88030 		ldrb	r3, [r0, #128]	@ zero_extendqisi2
  964 0006 012B     		cmp	r3, #1
  965 0008 1DD0     		beq	.L60
-ARM GAS  /tmp/ccAHlSKq.s 			page 61
+ARM GAS  /tmp/cc4wDL5K.s 			page 61
 
 
  966 000a 0446     		mov	r4, r0
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1004              		.loc 1 636 3 discriminator 2 view .LVU284
  1005 003e 0020     		movs	r0, #0
  1006 0040 84F88000 		strb	r0, [r4, #128]
-ARM GAS  /tmp/ccAHlSKq.s 			page 62
+ARM GAS  /tmp/cc4wDL5K.s 			page 62
 
 
  636:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1051 0002 90F88030 		ldrb	r3, [r0, #128]	@ zero_extendqisi2
  1052 0006 012B     		cmp	r3, #1
  1053 0008 1DD0     		beq	.L64
-ARM GAS  /tmp/ccAHlSKq.s 			page 63
+ARM GAS  /tmp/cc4wDL5K.s 			page 63
 
 
  1054 000a 0446     		mov	r4, r0
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1092              		.loc 1 685 3 discriminator 2 view .LVU312
  1093 003e 0020     		movs	r0, #0
  1094 0040 84F88000 		strb	r0, [r4, #128]
-ARM GAS  /tmp/ccAHlSKq.s 			page 64
+ARM GAS  /tmp/cc4wDL5K.s 			page 64
 
 
  685:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  718:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   uint32_t tickstart;
  1142              		.loc 1 718 3 view .LVU322
  719:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 65
+ARM GAS  /tmp/cc4wDL5K.s 			page 65
 
 
  1143              		.loc 1 719 3 view .LVU323
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  746:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  1181              		.loc 1 746 26 is_stmt 0 discriminator 2 view .LVU340
  1182 0040 C366     		str	r3, [r0, #108]
-ARM GAS  /tmp/ccAHlSKq.s 			page 66
+ARM GAS  /tmp/cc4wDL5K.s 			page 66
 
 
  749:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1222 007a 09E0     		b	.L70
  1223              	.L72:
  755:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     uhMask = huart->Mask;
-ARM GAS  /tmp/ccAHlSKq.s 			page 67
+ARM GAS  /tmp/cc4wDL5K.s 			page 67
 
 
  1224              		.loc 1 755 5 discriminator 8 view .LVU356
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1262              		.loc 1 755 5 is_stmt 1 discriminator 9 view .LVU372
  1263 00a8 2269     		ldr	r2, [r4, #16]
  1264 00aa 1AB9     		cbnz	r2, .L74
-ARM GAS  /tmp/ccAHlSKq.s 			page 68
+ARM GAS  /tmp/cc4wDL5K.s 			page 68
 
 
  755:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****     uhMask = huart->Mask;
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  799:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****           pdata16bits++;
  1305              		.loc 1 799 26 view .LVU387
  1306 00d8 09EA0303 		and	r3, r9, r3
-ARM GAS  /tmp/ccAHlSKq.s 			page 69
+ARM GAS  /tmp/cc4wDL5K.s 			page 69
 
 
  799:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****           pdata16bits++;
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1345 010c 1022     		movs	r2, #16
  1346 010e 1A62     		str	r2, [r3, #32]
  786:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****         {
-ARM GAS  /tmp/ccAHlSKq.s 			page 70
+ARM GAS  /tmp/cc4wDL5K.s 			page 70
 
 
  1347              		.loc 1 786 9 view .LVU404
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1384 0136 A0EB0800 		sub	r0, r0, r8
  815:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****         {
  1385              		.loc 1 815 12 view .LVU422
-ARM GAS  /tmp/ccAHlSKq.s 			page 71
+ARM GAS  /tmp/cc4wDL5K.s 			page 71
 
 
  1386 013a B042     		cmp	r0, r6
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  835:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  1425              		.loc 1 835 1 view .LVU438
  1426 0166 BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
-ARM GAS  /tmp/ccAHlSKq.s 			page 72
+ARM GAS  /tmp/cc4wDL5K.s 			page 72
 
 
  1427              	.LVL104:
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1472 0006 20D1     		bne	.L102
  856:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   HAL_StatusTypeDef status;
  1473              		.loc 1 856 1 view .LVU450
-ARM GAS  /tmp/ccAHlSKq.s 			page 73
+ARM GAS  /tmp/cc4wDL5K.s 			page 73
 
 
  1474 0008 10B5     		push	{r4, lr}
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1511 002c 0120     		movs	r0, #1
  1512              	.LVL112:
  905:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****   }
-ARM GAS  /tmp/ccAHlSKq.s 			page 74
+ARM GAS  /tmp/cc4wDL5K.s 			page 74
 
 
  1513              		.loc 1 905 5 is_stmt 1 view .LVU468
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1553              		.loc 2 1202 31 discriminator 1 view .LVU482
  1554              	.LBB36:
 1204:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 75
+ARM GAS  /tmp/cc4wDL5K.s 			page 75
 
 
  1555              		.loc 2 1204 4 discriminator 1 view .LVU483
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1601              	.L99:
  911:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  1602              		.loc 1 911 1 view .LVU494
-ARM GAS  /tmp/ccAHlSKq.s 			page 76
+ARM GAS  /tmp/cc4wDL5K.s 			page 76
 
 
  1603 0054 10BD     		pop	{r4, pc}
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  959:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
  1648              		.loc 1 959 5 is_stmt 1 view .LVU506
  959:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c **** 
-ARM GAS  /tmp/ccAHlSKq.s 			page 77
+ARM GAS  /tmp/cc4wDL5K.s 			page 77
 
 
  1649              		.loc 1 959 5 view .LVU507
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1687              	.LBB37:
  972:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****       }
  1688              		.loc 1 972 9 discriminator 1 view .LVU524
-ARM GAS  /tmp/ccAHlSKq.s 			page 78
+ARM GAS  /tmp/cc4wDL5K.s 			page 78
 
 
  972:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****       }
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  972:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c ****       }
  1731              		.loc 1 972 9 discriminator 1 view .LVU539
  1732 0044 0029     		cmp	r1, #0
-ARM GAS  /tmp/ccAHlSKq.s 			page 79
+ARM GAS  /tmp/cc4wDL5K.s 			page 79
 
 
  1733 0046 F6D1     		bne	.L115
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1779              		.set	.LANCHOR1,. + 0
  1782              	denominator.0:
  1783 0000 08040204 		.ascii	"\010\004\002\004\010\001\001\001"
-ARM GAS  /tmp/ccAHlSKq.s 			page 80
+ARM GAS  /tmp/cc4wDL5K.s 			page 80
 
 
  1783      08010101 
@@ -4760,50 +4760,50 @@ ARM GAS  /tmp/ccAHlSKq.s 			page 1
  1800              		.file 10 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h"
  1801              		.file 11 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
  1802              		.file 12 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h"
-ARM GAS  /tmp/ccAHlSKq.s 			page 81
+ARM GAS  /tmp/cc4wDL5K.s 			page 81
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32wlxx_hal_uart_ex.c
-     /tmp/ccAHlSKq.s:16     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
-     /tmp/ccAHlSKq.s:23     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
-     /tmp/ccAHlSKq.s:63     .text.UARTEx_SetNbDataToProcess:0000000000000000 $t
-     /tmp/ccAHlSKq.s:69     .text.UARTEx_SetNbDataToProcess:0000000000000000 UARTEx_SetNbDataToProcess
-     /tmp/ccAHlSKq.s:155    .text.UARTEx_SetNbDataToProcess:0000000000000044 $d
-     /tmp/ccAHlSKq.s:161    .text.HAL_RS485Ex_Init:0000000000000000 $t
-     /tmp/ccAHlSKq.s:168    .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
-     /tmp/ccAHlSKq.s:304    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
-     /tmp/ccAHlSKq.s:311    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
-     /tmp/ccAHlSKq.s:326    .text.HAL_UARTEx_RxFifoFullCallback:0000000000000000 $t
-     /tmp/ccAHlSKq.s:333    .text.HAL_UARTEx_RxFifoFullCallback:0000000000000000 HAL_UARTEx_RxFifoFullCallback
-     /tmp/ccAHlSKq.s:348    .text.HAL_UARTEx_TxFifoEmptyCallback:0000000000000000 $t
-     /tmp/ccAHlSKq.s:355    .text.HAL_UARTEx_TxFifoEmptyCallback:0000000000000000 HAL_UARTEx_TxFifoEmptyCallback
-     /tmp/ccAHlSKq.s:370    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
-     /tmp/ccAHlSKq.s:377    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
-     /tmp/ccAHlSKq.s:441    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
-     /tmp/ccAHlSKq.s:448    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
-     /tmp/ccAHlSKq.s:573    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
-     /tmp/ccAHlSKq.s:580    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
-     /tmp/ccAHlSKq.s:673    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
-     /tmp/ccAHlSKq.s:680    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
-     /tmp/ccAHlSKq.s:772    .text.HAL_UARTEx_EnableFifoMode:0000000000000000 $t
-     /tmp/ccAHlSKq.s:779    .text.HAL_UARTEx_EnableFifoMode:0000000000000000 HAL_UARTEx_EnableFifoMode
-     /tmp/ccAHlSKq.s:858    .text.HAL_UARTEx_DisableFifoMode:0000000000000000 $t
-     /tmp/ccAHlSKq.s:865    .text.HAL_UARTEx_DisableFifoMode:0000000000000000 HAL_UARTEx_DisableFifoMode
-     /tmp/ccAHlSKq.s:936    .text.HAL_UARTEx_SetTxFifoThreshold:0000000000000000 $t
-     /tmp/ccAHlSKq.s:943    .text.HAL_UARTEx_SetTxFifoThreshold:0000000000000000 HAL_UARTEx_SetTxFifoThreshold
-     /tmp/ccAHlSKq.s:1024   .text.HAL_UARTEx_SetRxFifoThreshold:0000000000000000 $t
-     /tmp/ccAHlSKq.s:1031   .text.HAL_UARTEx_SetRxFifoThreshold:0000000000000000 HAL_UARTEx_SetRxFifoThreshold
-     /tmp/ccAHlSKq.s:1112   .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 $t
-     /tmp/ccAHlSKq.s:1119   .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 HAL_UARTEx_ReceiveToIdle
-     /tmp/ccAHlSKq.s:1452   .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 $t
-     /tmp/ccAHlSKq.s:1459   .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 HAL_UARTEx_ReceiveToIdle_IT
-     /tmp/ccAHlSKq.s:1615   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 $t
-     /tmp/ccAHlSKq.s:1622   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 HAL_UARTEx_ReceiveToIdle_DMA
-     /tmp/ccAHlSKq.s:1778   .rodata.denominator.0:0000000000000000 $d
-     /tmp/ccAHlSKq.s:1782   .rodata.denominator.0:0000000000000000 denominator.0
-     /tmp/ccAHlSKq.s:1785   .rodata.numerator.1:0000000000000000 $d
-     /tmp/ccAHlSKq.s:1789   .rodata.numerator.1:0000000000000000 numerator.1
+     /tmp/cc4wDL5K.s:16     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 $t
+     /tmp/cc4wDL5K.s:23     .text.UARTEx_Wakeup_AddressConfig:0000000000000000 UARTEx_Wakeup_AddressConfig
+     /tmp/cc4wDL5K.s:63     .text.UARTEx_SetNbDataToProcess:0000000000000000 $t
+     /tmp/cc4wDL5K.s:69     .text.UARTEx_SetNbDataToProcess:0000000000000000 UARTEx_SetNbDataToProcess
+     /tmp/cc4wDL5K.s:155    .text.UARTEx_SetNbDataToProcess:0000000000000044 $d
+     /tmp/cc4wDL5K.s:161    .text.HAL_RS485Ex_Init:0000000000000000 $t
+     /tmp/cc4wDL5K.s:168    .text.HAL_RS485Ex_Init:0000000000000000 HAL_RS485Ex_Init
+     /tmp/cc4wDL5K.s:304    .text.HAL_UARTEx_WakeupCallback:0000000000000000 $t
+     /tmp/cc4wDL5K.s:311    .text.HAL_UARTEx_WakeupCallback:0000000000000000 HAL_UARTEx_WakeupCallback
+     /tmp/cc4wDL5K.s:326    .text.HAL_UARTEx_RxFifoFullCallback:0000000000000000 $t
+     /tmp/cc4wDL5K.s:333    .text.HAL_UARTEx_RxFifoFullCallback:0000000000000000 HAL_UARTEx_RxFifoFullCallback
+     /tmp/cc4wDL5K.s:348    .text.HAL_UARTEx_TxFifoEmptyCallback:0000000000000000 $t
+     /tmp/cc4wDL5K.s:355    .text.HAL_UARTEx_TxFifoEmptyCallback:0000000000000000 HAL_UARTEx_TxFifoEmptyCallback
+     /tmp/cc4wDL5K.s:370    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 $t
+     /tmp/cc4wDL5K.s:377    .text.HAL_MultiProcessorEx_AddressLength_Set:0000000000000000 HAL_MultiProcessorEx_AddressLength_Set
+     /tmp/cc4wDL5K.s:441    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 $t
+     /tmp/cc4wDL5K.s:448    .text.HAL_UARTEx_StopModeWakeUpSourceConfig:0000000000000000 HAL_UARTEx_StopModeWakeUpSourceConfig
+     /tmp/cc4wDL5K.s:573    .text.HAL_UARTEx_EnableStopMode:0000000000000000 $t
+     /tmp/cc4wDL5K.s:580    .text.HAL_UARTEx_EnableStopMode:0000000000000000 HAL_UARTEx_EnableStopMode
+     /tmp/cc4wDL5K.s:673    .text.HAL_UARTEx_DisableStopMode:0000000000000000 $t
+     /tmp/cc4wDL5K.s:680    .text.HAL_UARTEx_DisableStopMode:0000000000000000 HAL_UARTEx_DisableStopMode
+     /tmp/cc4wDL5K.s:772    .text.HAL_UARTEx_EnableFifoMode:0000000000000000 $t
+     /tmp/cc4wDL5K.s:779    .text.HAL_UARTEx_EnableFifoMode:0000000000000000 HAL_UARTEx_EnableFifoMode
+     /tmp/cc4wDL5K.s:858    .text.HAL_UARTEx_DisableFifoMode:0000000000000000 $t
+     /tmp/cc4wDL5K.s:865    .text.HAL_UARTEx_DisableFifoMode:0000000000000000 HAL_UARTEx_DisableFifoMode
+     /tmp/cc4wDL5K.s:936    .text.HAL_UARTEx_SetTxFifoThreshold:0000000000000000 $t
+     /tmp/cc4wDL5K.s:943    .text.HAL_UARTEx_SetTxFifoThreshold:0000000000000000 HAL_UARTEx_SetTxFifoThreshold
+     /tmp/cc4wDL5K.s:1024   .text.HAL_UARTEx_SetRxFifoThreshold:0000000000000000 $t
+     /tmp/cc4wDL5K.s:1031   .text.HAL_UARTEx_SetRxFifoThreshold:0000000000000000 HAL_UARTEx_SetRxFifoThreshold
+     /tmp/cc4wDL5K.s:1112   .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 $t
+     /tmp/cc4wDL5K.s:1119   .text.HAL_UARTEx_ReceiveToIdle:0000000000000000 HAL_UARTEx_ReceiveToIdle
+     /tmp/cc4wDL5K.s:1452   .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 $t
+     /tmp/cc4wDL5K.s:1459   .text.HAL_UARTEx_ReceiveToIdle_IT:0000000000000000 HAL_UARTEx_ReceiveToIdle_IT
+     /tmp/cc4wDL5K.s:1615   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 $t
+     /tmp/cc4wDL5K.s:1622   .text.HAL_UARTEx_ReceiveToIdle_DMA:0000000000000000 HAL_UARTEx_ReceiveToIdle_DMA
+     /tmp/cc4wDL5K.s:1778   .rodata.denominator.0:0000000000000000 $d
+     /tmp/cc4wDL5K.s:1782   .rodata.denominator.0:0000000000000000 denominator.0
+     /tmp/cc4wDL5K.s:1785   .rodata.numerator.1:0000000000000000 $d
+     /tmp/cc4wDL5K.s:1789   .rodata.numerator.1:0000000000000000 numerator.1
 
 UNDEFINED SYMBOLS
 UART_SetConfig

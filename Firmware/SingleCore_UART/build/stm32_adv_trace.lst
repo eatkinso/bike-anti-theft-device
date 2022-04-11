@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccDAvyEp.s 			page 1
+ARM GAS  /tmp/cc3p3SHF.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
   30:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
   31:Utilities/trace/adv_trace/stm32_adv_trace.c **** /** @defgroup ADV_TRACE_Private_defines ADV_TRACE Privates defines
   32:Utilities/trace/adv_trace/stm32_adv_trace.c ****  *  @{
-ARM GAS  /tmp/ccDAvyEp.s 			page 2
+ARM GAS  /tmp/cc3p3SHF.s 			page 2
 
 
   33:Utilities/trace/adv_trace/stm32_adv_trace.c ****  */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
   87:Utilities/trace/adv_trace/stm32_adv_trace.c ****  */
   88:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
   89:Utilities/trace/adv_trace/stm32_adv_trace.c **** /**
-ARM GAS  /tmp/ccDAvyEp.s 			page 3
+ARM GAS  /tmp/cc3p3SHF.s 			page 3
 
 
   90:Utilities/trace/adv_trace/stm32_adv_trace.c ****  *  @brief  ADV_TRACE_Context.
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  144:Utilities/trace/adv_trace/stm32_adv_trace.c **** /* Private function prototypes -----------------------------------------------*/
  145:Utilities/trace/adv_trace/stm32_adv_trace.c **** /** @defgroup ADV_TRACE_private_function ADV_TRACE private function
  146:Utilities/trace/adv_trace/stm32_adv_trace.c ****  *
-ARM GAS  /tmp/ccDAvyEp.s 			page 4
+ARM GAS  /tmp/cc3p3SHF.s 			page 4
 
 
  147:Utilities/trace/adv_trace/stm32_adv_trace.c ****  *  @{
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  201:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  202:Utilities/trace/adv_trace/stm32_adv_trace.c **** #if defined(UTIL_ADV_TRACE_CONDITIONNAL)
  203:Utilities/trace/adv_trace/stm32_adv_trace.c **** UTIL_ADV_TRACE_Status_t UTIL_ADV_TRACE_COND_FSend(uint32_t VerboseLevel, uint32_t Region, uint32_t 
-ARM GAS  /tmp/ccDAvyEp.s 			page 5
+ARM GAS  /tmp/cc3p3SHF.s 			page 5
 
 
  204:Utilities/trace/adv_trace/stm32_adv_trace.c **** {
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  258:Utilities/trace/adv_trace/stm32_adv_trace.c ****     /* copy the data */
  259:Utilities/trace/adv_trace/stm32_adv_trace.c ****     (void)UTIL_ADV_TRACE_VSNPRINTF((char *)(&ADV_TRACE_Buffer[writepos]), UTIL_ADV_TRACE_TMP_BUF_SI
  260:Utilities/trace/adv_trace/stm32_adv_trace.c ****     va_end(vaArgs);
-ARM GAS  /tmp/ccDAvyEp.s 			page 6
+ARM GAS  /tmp/cc3p3SHF.s 			page 6
 
 
  261:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  315:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  316:Utilities/trace/adv_trace/stm32_adv_trace.c ****   /* check verbose level */
  317:Utilities/trace/adv_trace/stm32_adv_trace.c ****   if(!(ADV_TRACE_Ctx.CurrentVerboseLevel >= VerboseLevel))
-ARM GAS  /tmp/ccDAvyEp.s 			page 7
+ARM GAS  /tmp/cc3p3SHF.s 			page 7
 
 
  318:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  372:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
  373:Utilities/trace/adv_trace/stm32_adv_trace.c ****     /*user fill */
  374:Utilities/trace/adv_trace/stm32_adv_trace.c ****     *pData = ADV_TRACE_Buffer;
-ARM GAS  /tmp/ccDAvyEp.s 			page 8
+ARM GAS  /tmp/cc3p3SHF.s 			page 8
 
 
  375:Utilities/trace/adv_trace/stm32_adv_trace.c ****     *FifoSize = UTIL_ADV_TRACE_FIFO_SIZE;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  429:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  430:Utilities/trace/adv_trace/stm32_adv_trace.c ****     for (idx = 0u; idx < Length; idx++)
  431:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
-ARM GAS  /tmp/ccDAvyEp.s 			page 9
+ARM GAS  /tmp/cc3p3SHF.s 			page 9
 
 
  432:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Buffer[writepos] = pData[idx];
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  486:Utilities/trace/adv_trace/stm32_adv_trace.c **** #if defined(UTIL_ADV_TRACE_CONDITIONNAL)
  487:Utilities/trace/adv_trace/stm32_adv_trace.c **** void UTIL_ADV_TRACE_RegisterTimeStampFunction(cb_timestamp *cb)
  488:Utilities/trace/adv_trace/stm32_adv_trace.c **** {
-ARM GAS  /tmp/ccDAvyEp.s 			page 10
+ARM GAS  /tmp/cc3p3SHF.s 			page 10
 
 
  489:Utilities/trace/adv_trace/stm32_adv_trace.c ****   ADV_TRACE_Ctx.timestamp_func = *cb;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  543:Utilities/trace/adv_trace/stm32_adv_trace.c ****   UTIL_ADV_TRACE_ENTER_CRITICAL_SECTION();
  544:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  545:Utilities/trace/adv_trace/stm32_adv_trace.c ****   if(TRACE_IsLocked() == 0u)
-ARM GAS  /tmp/ccDAvyEp.s 			page 11
+ARM GAS  /tmp/cc3p3SHF.s 			page 11
 
 
  546:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  600:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  601:Utilities/trace/adv_trace/stm32_adv_trace.c ****   return ret;
  602:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
-ARM GAS  /tmp/ccDAvyEp.s 			page 12
+ARM GAS  /tmp/cc3p3SHF.s 			page 12
 
 
  603:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  657:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Ctx.unchunk_status = TRACE_UNCHUNK_TRANSFER;
  658:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Ctx.unchunk_enabled = 0;
  659:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
-ARM GAS  /tmp/ccDAvyEp.s 			page 13
+ARM GAS  /tmp/cc3p3SHF.s 			page 13
 
 
  660:Utilities/trace/adv_trace/stm32_adv_trace.c ****       UTIL_ADV_TRACE_DEBUG("\nTRACE_TxCpltCallback::unchunk start(%d,%d)\n", ADV_TRACE_Ctx.unchunk_
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
   35              		.cfi_offset 4, -8
   36              		.cfi_offset 14, -4
  706:Utilities/trace/adv_trace/stm32_adv_trace.c ****   uint16_t freesize;
-ARM GAS  /tmp/ccDAvyEp.s 			page 14
+ARM GAS  /tmp/cc3p3SHF.s 			page 14
 
 
   37              		.loc 1 706 3 is_stmt 1 view .LVU2
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
   45:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   46:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __STATIC_INLINE
   47:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __STATIC_INLINE                        static inline
-ARM GAS  /tmp/ccDAvyEp.s 			page 15
+ARM GAS  /tmp/cc3p3SHF.s 			page 15
 
 
   48:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  102:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32_READ
  103:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
  104:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
-ARM GAS  /tmp/ccDAvyEp.s 			page 16
+ARM GAS  /tmp/cc3p3SHF.s 			page 16
 
 
  105:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  159:Drivers/CMSIS/Include/cmsis_gcc.h ****       pTable->dest[i] = 0u;
  160:Drivers/CMSIS/Include/cmsis_gcc.h ****     }
  161:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
-ARM GAS  /tmp/ccDAvyEp.s 			page 17
+ARM GAS  /tmp/cc3p3SHF.s 			page 17
 
 
  162:Drivers/CMSIS/Include/cmsis_gcc.h ****  
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  216:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Control Register value
  217:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  218:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
-ARM GAS  /tmp/ccDAvyEp.s 			page 18
+ARM GAS  /tmp/cc3p3SHF.s 			page 18
 
 
  219:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  273:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  274:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  275:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccDAvyEp.s 			page 19
+ARM GAS  /tmp/cc3p3SHF.s 			page 19
 
 
  276:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, ipsr" : "=r" (result) );
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  330:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  331:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  332:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccDAvyEp.s 			page 20
+ARM GAS  /tmp/cc3p3SHF.s 			page 20
 
 
  333:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, psp_ns"  : "=r" (result) );
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  387:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp_ns" : "=r" (result) );
  388:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  389:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /tmp/ccDAvyEp.s 			page 21
+ARM GAS  /tmp/cc3p3SHF.s 			page 21
 
 
  390:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  444:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  445:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Priority Mask
  446:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current state of the priority mask bit from the Priority Mask Register.
-ARM GAS  /tmp/ccDAvyEp.s 			page 22
+ARM GAS  /tmp/cc3p3SHF.s 			page 22
 
 
  447:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Priority Mask value
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  716:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
  717:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Ctx.unchunk_status = TRACE_UNCHUNK_DETECTED;
  718:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Ctx.unchunk_enabled = ADV_TRACE_Ctx.TraceWrPtr;
-ARM GAS  /tmp/ccDAvyEp.s 			page 23
+ARM GAS  /tmp/cc3p3SHF.s 			page 23
 
 
  719:Utilities/trace/adv_trace/stm32_adv_trace.c ****       freesize = ADV_TRACE_Ctx.TraceRdPtr;
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  115 0034 1346     		mov	r3, r2
  116 0036 14E0     		b	.L3
  117              	.LVL6:
-ARM GAS  /tmp/ccDAvyEp.s 			page 24
+ARM GAS  /tmp/cc3p3SHF.s 			page 24
 
 
  118              	.L8:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  153              		.loc 1 743 16 is_stmt 0 view .LVU48
  154 005c A2EB0C03 		sub	r3, r2, ip
  155 0060 9BB2     		uxth	r3, r3
-ARM GAS  /tmp/ccDAvyEp.s 			page 25
+ARM GAS  /tmp/cc3p3SHF.s 			page 25
 
 
  156              	.LVL11:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  182              		.loc 1 771 179 is_stmt 1 view .LVU60
  772:Utilities/trace/adv_trace/stm32_adv_trace.c **** #else
  773:Utilities/trace/adv_trace/stm32_adv_trace.c ****     UTIL_ADV_TRACE_DEBUG("\n--TRACE_AllocateBufer(%d-%d::%d-%d)--\n",freesize - Size, Size, ADV_TRA
-ARM GAS  /tmp/ccDAvyEp.s 			page 26
+ARM GAS  /tmp/cc3p3SHF.s 			page 26
 
 
  774:Utilities/trace/adv_trace/stm32_adv_trace.c **** #endif
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  196              		.syntax unified
  197              	.LBE43:
  198              	.LBE42:
-ARM GAS  /tmp/ccDAvyEp.s 			page 27
+ARM GAS  /tmp/cc3p3SHF.s 			page 27
 
 
  788:Utilities/trace/adv_trace/stm32_adv_trace.c ****   return ret;
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  240              	@ 0 "" 2
  241              	.LVL18:
  454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /tmp/ccDAvyEp.s 			page 28
+ARM GAS  /tmp/cc3p3SHF.s 			page 28
 
 
  242              		.loc 2 454 3 view .LVU74
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  289              		.align	2
  290              	.L12:
  291 0014 00000000 		.word	.LANCHOR0
-ARM GAS  /tmp/ccDAvyEp.s 			page 29
+ARM GAS  /tmp/cc3p3SHF.s 			page 29
 
 
  292              		.cfi_endproc
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  333              		.syntax unified
  334              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  335 0004 72B6     		cpsid i
-ARM GAS  /tmp/ccDAvyEp.s 			page 30
+ARM GAS  /tmp/cc3p3SHF.s 			page 30
 
 
  336              	@ 0 "" 2
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  817:Utilities/trace/adv_trace/stm32_adv_trace.c **** static uint32_t TRACE_IsLocked(void)
  818:Utilities/trace/adv_trace/stm32_adv_trace.c **** {
  383              		.loc 1 818 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccDAvyEp.s 			page 31
+ARM GAS  /tmp/cc3p3SHF.s 			page 31
 
 
  384              		.cfi_startproc
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  173:Utilities/trace/adv_trace/stm32_adv_trace.c **** #endif
  435              		.loc 1 173 43 view .LVU112
  176:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
-ARM GAS  /tmp/ccDAvyEp.s 			page 32
+ARM GAS  /tmp/cc3p3SHF.s 			page 32
 
 
  436              		.loc 1 176 41 view .LVU113
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  483              		.loc 1 186 1 view .LVU122
  484 0008 08BD     		pop	{r3, pc}
  485              	.L27:
-ARM GAS  /tmp/ccDAvyEp.s 			page 33
+ARM GAS  /tmp/cc3p3SHF.s 			page 33
 
 
  486 000a 00BF     		.align	2
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  535              		.thumb
  536              		.thumb_func
  537              		.fpu softvfp
-ARM GAS  /tmp/ccDAvyEp.s 			page 34
+ARM GAS  /tmp/cc3p3SHF.s 			page 34
 
 
  539              	UTIL_ADV_TRACE_StartRxProcess:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  587              		.cfi_offset 4, -12
  588              		.cfi_offset 5, -8
  589              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccDAvyEp.s 			page 35
+ARM GAS  /tmp/cc3p3SHF.s 			page 35
 
 
  590 0002 87B0     		sub	sp, sp, #28
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  627 0026 0DF10201 		add	r1, sp, #2
  628              	.LVL33:
  329:Utilities/trace/adv_trace/stm32_adv_trace.c ****   }
-ARM GAS  /tmp/ccDAvyEp.s 			page 36
+ARM GAS  /tmp/cc3p3SHF.s 			page 36
 
 
  629              		.loc 1 329 5 is_stmt 0 view .LVU156
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  670              		.loc 1 341 16 discriminator 3 view .LVU169
  671 0064 ADF81630 		strh	r3, [sp, #22]	@ movhi
  338:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
-ARM GAS  /tmp/ccDAvyEp.s 			page 37
+ARM GAS  /tmp/cc3p3SHF.s 			page 37
 
 
  672              		.loc 1 338 55 is_stmt 1 discriminator 3 view .LVU170
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  712              		.cfi_def_cfa_offset 12
  713              		@ sp needed
  714 008e 30BD     		pop	{r4, r5, pc}
-ARM GAS  /tmp/ccDAvyEp.s 			page 38
+ARM GAS  /tmp/cc3p3SHF.s 			page 38
 
 
  715              	.LVL43:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  364:Utilities/trace/adv_trace/stm32_adv_trace.c ****   UTIL_ADV_TRACE_Status_t ret = UTIL_ADV_TRACE_OK;
  763              		.loc 1 364 1 is_stmt 0 view .LVU193
  764 0000 F0B5     		push	{r4, r5, r6, r7, lr}
-ARM GAS  /tmp/ccDAvyEp.s 			page 39
+ARM GAS  /tmp/cc3p3SHF.s 			page 39
 
 
  765              	.LCFI8:
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  806              		.loc 1 365 27 view .LVU206
  807 0030 0020     		movs	r0, #0
  808              	.LVL53:
-ARM GAS  /tmp/ccDAvyEp.s 			page 40
+ARM GAS  /tmp/cc3p3SHF.s 			page 40
 
 
  809              	.L53:
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  856              		.loc 1 490 1 view .LVU215
  857 0004 7047     		bx	lr
  858              	.L59:
-ARM GAS  /tmp/ccDAvyEp.s 			page 41
+ARM GAS  /tmp/cc3p3SHF.s 			page 41
 
 
  859 0006 00BF     		.align	2
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  910              		.loc 1 500 1 is_stmt 0 view .LVU222
  911 0000 014B     		ldr	r3, .L64
  912 0002 187A     		ldrb	r0, [r3, #8]	@ zero_extendqisi2
-ARM GAS  /tmp/ccDAvyEp.s 			page 42
+ARM GAS  /tmp/cc3p3SHF.s 			page 42
 
 
  913 0004 7047     		bx	lr
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  966              		@ link register save eliminated.
  509:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
  967              		.loc 1 509 3 view .LVU228
-ARM GAS  /tmp/ccDAvyEp.s 			page 43
+ARM GAS  /tmp/cc3p3SHF.s 			page 43
 
 
  510:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1020              		.loc 1 519 1 is_stmt 1 view -0
  1021              		.cfi_startproc
  1022              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccDAvyEp.s 			page 44
+ARM GAS  /tmp/cc3p3SHF.s 			page 44
 
 
  1023              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1069              	.LBE58:
  1070              	.LBE57:
  543:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
-ARM GAS  /tmp/ccDAvyEp.s 			page 45
+ARM GAS  /tmp/cc3p3SHF.s 			page 45
 
 
  1071              		.loc 1 543 3 is_stmt 1 view .LVU245
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  547:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  1115              		.loc 1 547 5 is_stmt 1 view .LVU257
  1116 0016 FFF7FEFF 		bl	TRACE_Lock
-ARM GAS  /tmp/ccDAvyEp.s 			page 46
+ARM GAS  /tmp/cc3p3SHF.s 			page 46
 
 
  1117              	.LVL66:
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  582:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  1155              		.loc 1 582 7 is_stmt 1 view .LVU274
  582:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
-ARM GAS  /tmp/ccDAvyEp.s 			page 47
+ARM GAS  /tmp/cc3p3SHF.s 			page 47
 
 
  1156              		.loc 1 582 44 is_stmt 0 view .LVU275
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1199 005e 0188     		ldrh	r1, [r0]
  554:Utilities/trace/adv_trace/stm32_adv_trace.c ****         ADV_TRACE_Ctx.unchunk_status = TRACE_UNCHUNK_TRANSFER;
  1200              		.loc 1 554 39 view .LVU289
-ARM GAS  /tmp/ccDAvyEp.s 			page 48
+ARM GAS  /tmp/cc3p3SHF.s 			page 48
 
 
  1201 0060 8A1A     		subs	r2, r1, r2
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1238              	.LBB65:
  1239              	.LBI65:
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /tmp/ccDAvyEp.s 			page 49
+ARM GAS  /tmp/cc3p3SHF.s 			page 49
 
 
  1240              		.loc 2 479 27 view .LVU307
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1292              		.cfi_offset 5, -12
  1293              		.cfi_offset 14, -8
  1294 0004 86B0     		sub	sp, sp, #24
-ARM GAS  /tmp/ccDAvyEp.s 			page 50
+ARM GAS  /tmp/cc3p3SHF.s 			page 50
 
 
  1295              	.LCFI15:
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1331 0028 0DF10201 		add	r1, sp, #2
  1332 002c 01A8     		add	r0, sp, #4
  1333 002e 9847     		blx	r3
-ARM GAS  /tmp/ccDAvyEp.s 			page 51
+ARM GAS  /tmp/cc3p3SHF.s 			page 51
 
 
  1334              	.LVL75:
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1375              		.loc 1 254 34 discriminator 3 view .LVU343
  1376 006c 1649     		ldr	r1, .L100+8
  1377 006e 8854     		strb	r0, [r1, r2]
-ARM GAS  /tmp/ccDAvyEp.s 			page 52
+ARM GAS  /tmp/cc3p3SHF.s 			page 52
 
 
  255:Utilities/trace/adv_trace/stm32_adv_trace.c ****     }
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1416              	.LVL86:
  1417              	.L89:
  293:Utilities/trace/adv_trace/stm32_adv_trace.c **** #endif
-ARM GAS  /tmp/ccDAvyEp.s 			page 53
+ARM GAS  /tmp/cc3p3SHF.s 			page 53
 
 
  1418              		.loc 1 293 1 view .LVU360
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1464 00c0 00000000 		.word	.LANCHOR0
  1465 00c4 00000000 		.word	.LANCHOR2
  1466 00c8 00000000 		.word	.LANCHOR1
-ARM GAS  /tmp/ccDAvyEp.s 			page 54
+ARM GAS  /tmp/cc3p3SHF.s 			page 54
 
 
  1467              		.cfi_endproc
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1519              		.cfi_offset 14, -4
  359:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
  1520              		.loc 1 359 3 view .LVU375
-ARM GAS  /tmp/ccDAvyEp.s 			page 55
+ARM GAS  /tmp/cc3p3SHF.s 			page 55
 
 
  359:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  403:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
  1566              		.loc 1 403 3 is_stmt 1 view .LVU387
  403:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
-ARM GAS  /tmp/ccDAvyEp.s 			page 56
+ARM GAS  /tmp/cc3p3SHF.s 			page 56
 
 
  1567              		.loc 1 403 21 is_stmt 0 view .LVU388
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1607 0042 FFF7FEFF 		bl	TRACE_AllocateBufer
  1608              	.LVL102:
  421:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
-ARM GAS  /tmp/ccDAvyEp.s 			page 57
+ARM GAS  /tmp/cc3p3SHF.s 			page 57
 
 
  1609              		.loc 1 421 6 view .LVU403
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1648 0078 0AE0     		b	.L112
  1649              	.LVL106:
  1650              	.L113:
-ARM GAS  /tmp/ccDAvyEp.s 			page 58
+ARM GAS  /tmp/cc3p3SHF.s 			page 58
 
 
  432:Utilities/trace/adv_trace/stm32_adv_trace.c ****       writepos = (uint16_t) ((writepos + 1u) % UTIL_ADV_TRACE_FIFO_SIZE);
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1690              	.L119:
  1691              	.LCFI25:
  1692              		.cfi_restore_state
-ARM GAS  /tmp/ccDAvyEp.s 			page 59
+ARM GAS  /tmp/cc3p3SHF.s 			page 59
 
 
  441:Utilities/trace/adv_trace/stm32_adv_trace.c ****     ret = UTIL_ADV_TRACE_MEM_FULL;
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1740              		.cfi_def_cfa_offset 16
  1741              		.cfi_offset 4, -16
  1742              		.cfi_offset 5, -12
-ARM GAS  /tmp/ccDAvyEp.s 			page 60
+ARM GAS  /tmp/cc3p3SHF.s 			page 60
 
 
  1743              		.cfi_offset 6, -8
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1782              		.loc 1 464 16 discriminator 3 view .LVU457
  1783 0034 ADF80630 		strh	r3, [sp, #6]	@ movhi
  461:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
-ARM GAS  /tmp/ccDAvyEp.s 			page 61
+ARM GAS  /tmp/cc3p3SHF.s 			page 61
 
 
  1784              		.loc 1 461 34 is_stmt 1 discriminator 3 view .LVU458
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1828              		.align	1
  1829              		.global	UTIL_ADV_TRACE_FSend
  1830              		.syntax unified
-ARM GAS  /tmp/ccDAvyEp.s 			page 62
+ARM GAS  /tmp/cc3p3SHF.s 			page 62
 
 
  1831              		.thumb
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  306:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  1876              		.loc 1 306 1 view .LVU480
  1877 0020 43B0     		add	sp, sp, #268
-ARM GAS  /tmp/ccDAvyEp.s 			page 63
+ARM GAS  /tmp/cc3p3SHF.s 			page 63
 
 
  1878              	.LCFI33:
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1932              	.LCFI36:
  1933              		.cfi_def_cfa_offset 8
  1934              		.cfi_offset 4, -8
-ARM GAS  /tmp/ccDAvyEp.s 			page 64
+ARM GAS  /tmp/cc3p3SHF.s 			page 64
 
 
  1935              		.cfi_offset 14, -4
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  1976 000e 16D0     		beq	.L145
  632:Utilities/trace/adv_trace/stm32_adv_trace.c ****   }
  1977              		.loc 1 632 5 is_stmt 1 view .LVU498
-ARM GAS  /tmp/ccDAvyEp.s 			page 65
+ARM GAS  /tmp/cc3p3SHF.s 			page 65
 
 
  632:Utilities/trace/adv_trace/stm32_adv_trace.c ****   }
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  2018              	.LVL133:
  481:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  2019              		.loc 2 481 3 is_stmt 0 view .LVU513
-ARM GAS  /tmp/ccDAvyEp.s 			page 66
+ARM GAS  /tmp/cc3p3SHF.s 			page 66
 
 
  2020              		.thumb
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  2060 0054 32B9     		cbnz	r2, .L141
  674:Utilities/trace/adv_trace/stm32_adv_trace.c ****       {
  2061              		.loc 1 674 7 is_stmt 1 view .LVU528
-ARM GAS  /tmp/ccDAvyEp.s 			page 67
+ARM GAS  /tmp/cc3p3SHF.s 			page 67
 
 
  674:Utilities/trace/adv_trace/stm32_adv_trace.c ****       {
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  2101              		.loc 1 688 21 is_stmt 0 view .LVU543
  2102 0070 0D4A     		ldr	r2, .L148+8
  2103 0072 D268     		ldr	r2, [r2, #12]
-ARM GAS  /tmp/ccDAvyEp.s 			page 68
+ARM GAS  /tmp/cc3p3SHF.s 			page 68
 
 
  688:Utilities/trace/adv_trace/stm32_adv_trace.c ****   }
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  2140              		.loc 1 667 34 is_stmt 0 view .LVU561
  2141 0092 2082     		strh	r0, [r4, #16]	@ movhi
  2142 0094 DCE7     		b	.L140
-ARM GAS  /tmp/ccDAvyEp.s 			page 69
+ARM GAS  /tmp/cc3p3SHF.s 			page 69
 
 
  2143              	.L142:
@@ -4136,93 +4136,93 @@ ARM GAS  /tmp/ccDAvyEp.s 			page 1
  2187              		.file 7 "Utilities/misc/stm32_tiny_vsnprintf.h"
  2188              		.file 8 "Utilities/misc/stm32_mem.h"
  2189              		.file 9 "<built-in>"
-ARM GAS  /tmp/ccDAvyEp.s 			page 70
+ARM GAS  /tmp/cc3p3SHF.s 			page 70
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_adv_trace.c
-     /tmp/ccDAvyEp.s:16     .text.TRACE_AllocateBufer:0000000000000000 $t
-     /tmp/ccDAvyEp.s:23     .text.TRACE_AllocateBufer:0000000000000000 TRACE_AllocateBufer
-     /tmp/ccDAvyEp.s:212    .text.TRACE_AllocateBufer:0000000000000084 $d
-     /tmp/ccDAvyEp.s:217    .text.TRACE_Lock:0000000000000000 $t
-     /tmp/ccDAvyEp.s:223    .text.TRACE_Lock:0000000000000000 TRACE_Lock
-     /tmp/ccDAvyEp.s:291    .text.TRACE_Lock:0000000000000014 $d
-     /tmp/ccDAvyEp.s:296    .text.TRACE_UnLock:0000000000000000 $t
-     /tmp/ccDAvyEp.s:302    .text.TRACE_UnLock:0000000000000000 TRACE_UnLock
-     /tmp/ccDAvyEp.s:370    .text.TRACE_UnLock:0000000000000014 $d
-     /tmp/ccDAvyEp.s:375    .text.TRACE_IsLocked:0000000000000000 $t
-     /tmp/ccDAvyEp.s:381    .text.TRACE_IsLocked:0000000000000000 TRACE_IsLocked
-     /tmp/ccDAvyEp.s:400    .text.TRACE_IsLocked:000000000000000c $d
-     /tmp/ccDAvyEp.s:405    .text.UTIL_ADV_TRACE_Init:0000000000000000 $t
-     /tmp/ccDAvyEp.s:412    .text.UTIL_ADV_TRACE_Init:0000000000000000 UTIL_ADV_TRACE_Init
-     /tmp/ccDAvyEp.s:450    .text.UTIL_ADV_TRACE_Init:0000000000000024 $d
-     /tmp/ccDAvyEp.s:1923   .text.TRACE_TxCpltCallback:0000000000000000 TRACE_TxCpltCallback
-     /tmp/ccDAvyEp.s:458    .text.UTIL_ADV_TRACE_DeInit:0000000000000000 $t
-     /tmp/ccDAvyEp.s:465    .text.UTIL_ADV_TRACE_DeInit:0000000000000000 UTIL_ADV_TRACE_DeInit
-     /tmp/ccDAvyEp.s:488    .text.UTIL_ADV_TRACE_DeInit:000000000000000c $d
-     /tmp/ccDAvyEp.s:493    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000000 $t
-     /tmp/ccDAvyEp.s:500    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000000 UTIL_ADV_TRACE_IsBufferEmpty
-     /tmp/ccDAvyEp.s:527    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000014 $d
-     /tmp/ccDAvyEp.s:532    .text.UTIL_ADV_TRACE_StartRxProcess:0000000000000000 $t
-     /tmp/ccDAvyEp.s:539    .text.UTIL_ADV_TRACE_StartRxProcess:0000000000000000 UTIL_ADV_TRACE_StartRxProcess
-     /tmp/ccDAvyEp.s:564    .text.UTIL_ADV_TRACE_StartRxProcess:000000000000000c $d
-     /tmp/ccDAvyEp.s:569    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:0000000000000000 $t
-     /tmp/ccDAvyEp.s:576    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:0000000000000000 UTIL_ADV_TRACE_COND_ZCSend_Allocation
-     /tmp/ccDAvyEp.s:743    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:00000000000000a8 $d
-     /tmp/ccDAvyEp.s:749    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000000 $t
-     /tmp/ccDAvyEp.s:756    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000000 UTIL_ADV_TRACE_ZCSend_Allocation
-     /tmp/ccDAvyEp.s:832    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000040 $d
-     /tmp/ccDAvyEp.s:837    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000000 $t
-     /tmp/ccDAvyEp.s:844    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000000 UTIL_ADV_TRACE_RegisterTimeStampFunction
-     /tmp/ccDAvyEp.s:861    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000008 $d
-     /tmp/ccDAvyEp.s:866    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000000 $t
-     /tmp/ccDAvyEp.s:873    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000000 UTIL_ADV_TRACE_SetVerboseLevel
-     /tmp/ccDAvyEp.s:890    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000008 $d
-     /tmp/ccDAvyEp.s:895    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000000 $t
-     /tmp/ccDAvyEp.s:902    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000000 UTIL_ADV_TRACE_GetVerboseLevel
-     /tmp/ccDAvyEp.s:917    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000008 $d
-     /tmp/ccDAvyEp.s:922    .text.UTIL_ADV_TRACE_SetRegion:0000000000000000 $t
-     /tmp/ccDAvyEp.s:929    .text.UTIL_ADV_TRACE_SetRegion:0000000000000000 UTIL_ADV_TRACE_SetRegion
-     /tmp/ccDAvyEp.s:948    .text.UTIL_ADV_TRACE_SetRegion:000000000000000c $d
-     /tmp/ccDAvyEp.s:953    .text.UTIL_ADV_TRACE_GetRegion:0000000000000000 $t
-     /tmp/ccDAvyEp.s:960    .text.UTIL_ADV_TRACE_GetRegion:0000000000000000 UTIL_ADV_TRACE_GetRegion
-     /tmp/ccDAvyEp.s:975    .text.UTIL_ADV_TRACE_GetRegion:0000000000000008 $d
-     /tmp/ccDAvyEp.s:980    .text.UTIL_ADV_TRACE_ResetRegion:0000000000000000 $t
-     /tmp/ccDAvyEp.s:987    .text.UTIL_ADV_TRACE_ResetRegion:0000000000000000 UTIL_ADV_TRACE_ResetRegion
-     /tmp/ccDAvyEp.s:1006   .text.UTIL_ADV_TRACE_ResetRegion:000000000000000c $d
-     /tmp/ccDAvyEp.s:1011   .text.UTIL_ADV_TRACE_PreSendHook:0000000000000000 $t
-     /tmp/ccDAvyEp.s:1018   .text.UTIL_ADV_TRACE_PreSendHook:0000000000000000 UTIL_ADV_TRACE_PreSendHook
-     /tmp/ccDAvyEp.s:1031   .text.TRACE_Send:0000000000000000 $t
-     /tmp/ccDAvyEp.s:1037   .text.TRACE_Send:0000000000000000 TRACE_Send
-     /tmp/ccDAvyEp.s:1260   .text.TRACE_Send:0000000000000090 $d
-     /tmp/ccDAvyEp.s:1269   .text.UTIL_ADV_TRACE_COND_FSend:0000000000000000 $t
-ARM GAS  /tmp/ccDAvyEp.s 			page 71
+     /tmp/cc3p3SHF.s:16     .text.TRACE_AllocateBufer:0000000000000000 $t
+     /tmp/cc3p3SHF.s:23     .text.TRACE_AllocateBufer:0000000000000000 TRACE_AllocateBufer
+     /tmp/cc3p3SHF.s:212    .text.TRACE_AllocateBufer:0000000000000084 $d
+     /tmp/cc3p3SHF.s:217    .text.TRACE_Lock:0000000000000000 $t
+     /tmp/cc3p3SHF.s:223    .text.TRACE_Lock:0000000000000000 TRACE_Lock
+     /tmp/cc3p3SHF.s:291    .text.TRACE_Lock:0000000000000014 $d
+     /tmp/cc3p3SHF.s:296    .text.TRACE_UnLock:0000000000000000 $t
+     /tmp/cc3p3SHF.s:302    .text.TRACE_UnLock:0000000000000000 TRACE_UnLock
+     /tmp/cc3p3SHF.s:370    .text.TRACE_UnLock:0000000000000014 $d
+     /tmp/cc3p3SHF.s:375    .text.TRACE_IsLocked:0000000000000000 $t
+     /tmp/cc3p3SHF.s:381    .text.TRACE_IsLocked:0000000000000000 TRACE_IsLocked
+     /tmp/cc3p3SHF.s:400    .text.TRACE_IsLocked:000000000000000c $d
+     /tmp/cc3p3SHF.s:405    .text.UTIL_ADV_TRACE_Init:0000000000000000 $t
+     /tmp/cc3p3SHF.s:412    .text.UTIL_ADV_TRACE_Init:0000000000000000 UTIL_ADV_TRACE_Init
+     /tmp/cc3p3SHF.s:450    .text.UTIL_ADV_TRACE_Init:0000000000000024 $d
+     /tmp/cc3p3SHF.s:1923   .text.TRACE_TxCpltCallback:0000000000000000 TRACE_TxCpltCallback
+     /tmp/cc3p3SHF.s:458    .text.UTIL_ADV_TRACE_DeInit:0000000000000000 $t
+     /tmp/cc3p3SHF.s:465    .text.UTIL_ADV_TRACE_DeInit:0000000000000000 UTIL_ADV_TRACE_DeInit
+     /tmp/cc3p3SHF.s:488    .text.UTIL_ADV_TRACE_DeInit:000000000000000c $d
+     /tmp/cc3p3SHF.s:493    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000000 $t
+     /tmp/cc3p3SHF.s:500    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000000 UTIL_ADV_TRACE_IsBufferEmpty
+     /tmp/cc3p3SHF.s:527    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000014 $d
+     /tmp/cc3p3SHF.s:532    .text.UTIL_ADV_TRACE_StartRxProcess:0000000000000000 $t
+     /tmp/cc3p3SHF.s:539    .text.UTIL_ADV_TRACE_StartRxProcess:0000000000000000 UTIL_ADV_TRACE_StartRxProcess
+     /tmp/cc3p3SHF.s:564    .text.UTIL_ADV_TRACE_StartRxProcess:000000000000000c $d
+     /tmp/cc3p3SHF.s:569    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:0000000000000000 $t
+     /tmp/cc3p3SHF.s:576    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:0000000000000000 UTIL_ADV_TRACE_COND_ZCSend_Allocation
+     /tmp/cc3p3SHF.s:743    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:00000000000000a8 $d
+     /tmp/cc3p3SHF.s:749    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000000 $t
+     /tmp/cc3p3SHF.s:756    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000000 UTIL_ADV_TRACE_ZCSend_Allocation
+     /tmp/cc3p3SHF.s:832    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000040 $d
+     /tmp/cc3p3SHF.s:837    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000000 $t
+     /tmp/cc3p3SHF.s:844    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000000 UTIL_ADV_TRACE_RegisterTimeStampFunction
+     /tmp/cc3p3SHF.s:861    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000008 $d
+     /tmp/cc3p3SHF.s:866    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000000 $t
+     /tmp/cc3p3SHF.s:873    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000000 UTIL_ADV_TRACE_SetVerboseLevel
+     /tmp/cc3p3SHF.s:890    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000008 $d
+     /tmp/cc3p3SHF.s:895    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000000 $t
+     /tmp/cc3p3SHF.s:902    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000000 UTIL_ADV_TRACE_GetVerboseLevel
+     /tmp/cc3p3SHF.s:917    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000008 $d
+     /tmp/cc3p3SHF.s:922    .text.UTIL_ADV_TRACE_SetRegion:0000000000000000 $t
+     /tmp/cc3p3SHF.s:929    .text.UTIL_ADV_TRACE_SetRegion:0000000000000000 UTIL_ADV_TRACE_SetRegion
+     /tmp/cc3p3SHF.s:948    .text.UTIL_ADV_TRACE_SetRegion:000000000000000c $d
+     /tmp/cc3p3SHF.s:953    .text.UTIL_ADV_TRACE_GetRegion:0000000000000000 $t
+     /tmp/cc3p3SHF.s:960    .text.UTIL_ADV_TRACE_GetRegion:0000000000000000 UTIL_ADV_TRACE_GetRegion
+     /tmp/cc3p3SHF.s:975    .text.UTIL_ADV_TRACE_GetRegion:0000000000000008 $d
+     /tmp/cc3p3SHF.s:980    .text.UTIL_ADV_TRACE_ResetRegion:0000000000000000 $t
+     /tmp/cc3p3SHF.s:987    .text.UTIL_ADV_TRACE_ResetRegion:0000000000000000 UTIL_ADV_TRACE_ResetRegion
+     /tmp/cc3p3SHF.s:1006   .text.UTIL_ADV_TRACE_ResetRegion:000000000000000c $d
+     /tmp/cc3p3SHF.s:1011   .text.UTIL_ADV_TRACE_PreSendHook:0000000000000000 $t
+     /tmp/cc3p3SHF.s:1018   .text.UTIL_ADV_TRACE_PreSendHook:0000000000000000 UTIL_ADV_TRACE_PreSendHook
+     /tmp/cc3p3SHF.s:1031   .text.TRACE_Send:0000000000000000 $t
+     /tmp/cc3p3SHF.s:1037   .text.TRACE_Send:0000000000000000 TRACE_Send
+     /tmp/cc3p3SHF.s:1260   .text.TRACE_Send:0000000000000090 $d
+     /tmp/cc3p3SHF.s:1269   .text.UTIL_ADV_TRACE_COND_FSend:0000000000000000 $t
+ARM GAS  /tmp/cc3p3SHF.s 			page 71
 
 
-     /tmp/ccDAvyEp.s:1276   .text.UTIL_ADV_TRACE_COND_FSend:0000000000000000 UTIL_ADV_TRACE_COND_FSend
-     /tmp/ccDAvyEp.s:1464   .text.UTIL_ADV_TRACE_COND_FSend:00000000000000c0 $d
-     /tmp/ccDAvyEp.s:1471   .text.UTIL_ADV_TRACE_ZCSend_Finalize:0000000000000000 $t
-     /tmp/ccDAvyEp.s:1478   .text.UTIL_ADV_TRACE_ZCSend_Finalize:0000000000000000 UTIL_ADV_TRACE_ZCSend_Finalize
-     /tmp/ccDAvyEp.s:1502   .text.UTIL_ADV_TRACE_COND_ZCSend_Finalize:0000000000000000 $t
-     /tmp/ccDAvyEp.s:1509   .text.UTIL_ADV_TRACE_COND_ZCSend_Finalize:0000000000000000 UTIL_ADV_TRACE_COND_ZCSend_Finalize
-     /tmp/ccDAvyEp.s:1530   .text.UTIL_ADV_TRACE_COND_Send:0000000000000000 $t
-     /tmp/ccDAvyEp.s:1537   .text.UTIL_ADV_TRACE_COND_Send:0000000000000000 UTIL_ADV_TRACE_COND_Send
-     /tmp/ccDAvyEp.s:1717   .text.UTIL_ADV_TRACE_COND_Send:00000000000000b8 $d
-     /tmp/ccDAvyEp.s:1723   .text.UTIL_ADV_TRACE_Send:0000000000000000 $t
-     /tmp/ccDAvyEp.s:1730   .text.UTIL_ADV_TRACE_Send:0000000000000000 UTIL_ADV_TRACE_Send
-     /tmp/ccDAvyEp.s:1823   .text.UTIL_ADV_TRACE_Send:0000000000000054 $d
-     /tmp/ccDAvyEp.s:1828   .text.UTIL_ADV_TRACE_FSend:0000000000000000 $t
-     /tmp/ccDAvyEp.s:1835   .text.UTIL_ADV_TRACE_FSend:0000000000000000 UTIL_ADV_TRACE_FSend
-     /tmp/ccDAvyEp.s:1897   .text.UTIL_ADV_TRACE_PostSendHook:0000000000000000 $t
-     /tmp/ccDAvyEp.s:1904   .text.UTIL_ADV_TRACE_PostSendHook:0000000000000000 UTIL_ADV_TRACE_PostSendHook
-     /tmp/ccDAvyEp.s:1917   .text.TRACE_TxCpltCallback:0000000000000000 $t
-     /tmp/ccDAvyEp.s:2154   .text.TRACE_TxCpltCallback:00000000000000a0 $d
-     /tmp/ccDAvyEp.s:2161   .bss.ADV_TRACE_Buffer:0000000000000000 $d
-     /tmp/ccDAvyEp.s:2165   .bss.ADV_TRACE_Buffer:0000000000000000 ADV_TRACE_Buffer
-     /tmp/ccDAvyEp.s:2168   .bss.ADV_TRACE_Ctx:0000000000000000 $d
-     /tmp/ccDAvyEp.s:2172   .bss.ADV_TRACE_Ctx:0000000000000000 ADV_TRACE_Ctx
-     /tmp/ccDAvyEp.s:2175   .bss.sztmp:0000000000000000 $d
-     /tmp/ccDAvyEp.s:2179   .bss.sztmp:0000000000000000 sztmp
+     /tmp/cc3p3SHF.s:1276   .text.UTIL_ADV_TRACE_COND_FSend:0000000000000000 UTIL_ADV_TRACE_COND_FSend
+     /tmp/cc3p3SHF.s:1464   .text.UTIL_ADV_TRACE_COND_FSend:00000000000000c0 $d
+     /tmp/cc3p3SHF.s:1471   .text.UTIL_ADV_TRACE_ZCSend_Finalize:0000000000000000 $t
+     /tmp/cc3p3SHF.s:1478   .text.UTIL_ADV_TRACE_ZCSend_Finalize:0000000000000000 UTIL_ADV_TRACE_ZCSend_Finalize
+     /tmp/cc3p3SHF.s:1502   .text.UTIL_ADV_TRACE_COND_ZCSend_Finalize:0000000000000000 $t
+     /tmp/cc3p3SHF.s:1509   .text.UTIL_ADV_TRACE_COND_ZCSend_Finalize:0000000000000000 UTIL_ADV_TRACE_COND_ZCSend_Finalize
+     /tmp/cc3p3SHF.s:1530   .text.UTIL_ADV_TRACE_COND_Send:0000000000000000 $t
+     /tmp/cc3p3SHF.s:1537   .text.UTIL_ADV_TRACE_COND_Send:0000000000000000 UTIL_ADV_TRACE_COND_Send
+     /tmp/cc3p3SHF.s:1717   .text.UTIL_ADV_TRACE_COND_Send:00000000000000b8 $d
+     /tmp/cc3p3SHF.s:1723   .text.UTIL_ADV_TRACE_Send:0000000000000000 $t
+     /tmp/cc3p3SHF.s:1730   .text.UTIL_ADV_TRACE_Send:0000000000000000 UTIL_ADV_TRACE_Send
+     /tmp/cc3p3SHF.s:1823   .text.UTIL_ADV_TRACE_Send:0000000000000054 $d
+     /tmp/cc3p3SHF.s:1828   .text.UTIL_ADV_TRACE_FSend:0000000000000000 $t
+     /tmp/cc3p3SHF.s:1835   .text.UTIL_ADV_TRACE_FSend:0000000000000000 UTIL_ADV_TRACE_FSend
+     /tmp/cc3p3SHF.s:1897   .text.UTIL_ADV_TRACE_PostSendHook:0000000000000000 $t
+     /tmp/cc3p3SHF.s:1904   .text.UTIL_ADV_TRACE_PostSendHook:0000000000000000 UTIL_ADV_TRACE_PostSendHook
+     /tmp/cc3p3SHF.s:1917   .text.TRACE_TxCpltCallback:0000000000000000 $t
+     /tmp/cc3p3SHF.s:2154   .text.TRACE_TxCpltCallback:00000000000000a0 $d
+     /tmp/cc3p3SHF.s:2161   .bss.ADV_TRACE_Buffer:0000000000000000 $d
+     /tmp/cc3p3SHF.s:2165   .bss.ADV_TRACE_Buffer:0000000000000000 ADV_TRACE_Buffer
+     /tmp/cc3p3SHF.s:2168   .bss.ADV_TRACE_Ctx:0000000000000000 $d
+     /tmp/cc3p3SHF.s:2172   .bss.ADV_TRACE_Ctx:0000000000000000 ADV_TRACE_Ctx
+     /tmp/cc3p3SHF.s:2175   .bss.sztmp:0000000000000000 $d
+     /tmp/cc3p3SHF.s:2179   .bss.sztmp:0000000000000000 sztmp
 
 UNDEFINED SYMBOLS
 UTIL_MEM_set_8

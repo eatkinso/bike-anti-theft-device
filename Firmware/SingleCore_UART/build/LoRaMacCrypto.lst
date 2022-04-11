@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccgjJaEg.s 			page 1
+ARM GAS  /tmp/cc95fnCJ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
   30:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****  *
   31:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****  * \author    Johannes Bruder ( STACKFORCE )
   32:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****  */
-ARM GAS  /tmp/ccgjJaEg.s 			page 2
+ARM GAS  /tmp/cc95fnCJ.s 			page 2
 
 
   33:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** /**
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
   87:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****  * Key-Address item
   88:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****  */
   89:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** typedef struct sKeyAddr
-ARM GAS  /tmp/ccgjJaEg.s 			page 3
+ARM GAS  /tmp/cc95fnCJ.s 			page 3
 
 
   90:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** {
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  144:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** #endif /* USE_LRWAN_1_1_X_CRYPTO */
  145:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     };
  146:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
-ARM GAS  /tmp/ccgjJaEg.s 			page 4
+ARM GAS  /tmp/cc95fnCJ.s 			page 4
 
 
  147:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** /*
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  201:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     return LORAMAC_CRYPTO_SUCCESS;
  202:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** }
  203:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
-ARM GAS  /tmp/ccgjJaEg.s 			page 5
+ARM GAS  /tmp/cc95fnCJ.s 			page 5
 
 
  204:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** #if( USE_LRWAN_1_1_X_CRYPTO == 1 )
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  258:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     aBlock[8] = ( address >> 16 ) & 0xFF;
  259:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     aBlock[9] = ( address >> 24 ) & 0xFF;
  260:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
-ARM GAS  /tmp/ccgjJaEg.s 			page 6
+ARM GAS  /tmp/cc95fnCJ.s 			page 6
 
 
  261:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     aBlock[10] = frameCounter & 0xFF;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
   40              		.loc 1 301 1 view .LVU2
   41 0006 039A     		ldr	r2, [sp, #12]
   42              	.LVL2:
-ARM GAS  /tmp/ccgjJaEg.s 			page 7
+ARM GAS  /tmp/cc95fnCJ.s 			page 7
 
 
  302:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( b0 == 0 )
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
   67              		.loc 1 331 11 is_stmt 0 view .LVU17
   68 001a 5371     		strb	r3, [r2, #5]
  332:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
-ARM GAS  /tmp/ccgjJaEg.s 			page 8
+ARM GAS  /tmp/cc95fnCJ.s 			page 8
 
 
  333:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     b0[6] = devAddr & 0xFF;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  110              		.loc 1 345 12 is_stmt 0 view .LVU43
  111 003a 82F80FC0 		strb	ip, [r2, #15]
  346:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
-ARM GAS  /tmp/ccgjJaEg.s 			page 9
+ARM GAS  /tmp/cc95fnCJ.s 			page 9
 
 
  347:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     return LORAMAC_CRYPTO_SUCCESS;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  367:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( ( msg == 0 ) || ( cmac == 0 ) )
  368:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
  369:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         return LORAMAC_CRYPTO_ERROR_NPE;
-ARM GAS  /tmp/ccgjJaEg.s 			page 10
+ARM GAS  /tmp/cc95fnCJ.s 			page 10
 
 
  370:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  424:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( retval == SECURE_ELEMENT_SUCCESS )
  425:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
  426:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         return LORAMAC_CRYPTO_SUCCESS;
-ARM GAS  /tmp/ccgjJaEg.s 			page 11
+ARM GAS  /tmp/cc95fnCJ.s 			page 11
 
 
  427:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  481:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     b1[10] = fCntUp & 0xFF;
  482:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     b1[11] = ( fCntUp >> 8 ) & 0xFF;
  483:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     b1[12] = ( fCntUp >> 16 ) & 0xFF;
-ARM GAS  /tmp/ccgjJaEg.s 			page 12
+ARM GAS  /tmp/cc95fnCJ.s 			page 12
 
 
  484:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     b1[13] = ( fCntUp >> 24 ) & 0xFF;
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  538:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****  * \retval                    - Status of the operation
  539:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****  */
  540:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** static LoRaMacCryptoStatus_t GetKeyAddrItem( AddressIdentifier_t addrID, KeyAddr_t** item )
-ARM GAS  /tmp/ccgjJaEg.s 			page 13
+ARM GAS  /tmp/cc95fnCJ.s 			page 13
 
 
  541:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** {
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  189              		.loc 1 547 20 is_stmt 0 view .LVU67
  190 0020 0020     		movs	r0, #0
  191              	.LVL14:
-ARM GAS  /tmp/ccgjJaEg.s 			page 14
+ARM GAS  /tmp/cc95fnCJ.s 			page 14
 
 
  192              		.loc 1 547 20 view .LVU68
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  576:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             compBase[0] = 0x01;
  577:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             break;
  578:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         case APP_S_KEY:
-ARM GAS  /tmp/ccgjJaEg.s 			page 15
+ARM GAS  /tmp/cc95fnCJ.s 			page 15
 
 
  579:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             compBase[0] = 0x02;
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  633:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         case NWK_S_ENC_KEY:
  634:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             compBase[0] = 0x04;
  635:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             break;
-ARM GAS  /tmp/ccgjJaEg.s 			page 16
+ARM GAS  /tmp/cc95fnCJ.s 			page 16
 
 
  636:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         case APP_S_KEY:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  690:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
  691:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( SecureElementDeriveAndStoreKey( compBase, NWK_KEY, keyID ) != SECURE_ELEMENT_SUCCESS )
  692:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
-ARM GAS  /tmp/ccgjJaEg.s 			page 17
+ARM GAS  /tmp/cc95fnCJ.s 			page 17
 
 
  693:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         return LORAMAC_CRYPTO_ERROR_SECURE_ELEMENT_FUNC;
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  249 0018 1169     		ldr	r1, [r2, #16]
  250              	.LVL19:
  251              		.loc 1 717 23 view .LVU80
-ARM GAS  /tmp/ccgjJaEg.s 			page 18
+ARM GAS  /tmp/cc95fnCJ.s 			page 18
 
 
  252 001a 1960     		str	r1, [r3]
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  269 0026 1268     		ldr	r2, [r2]
  721:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             CryptoNvm->LastDownFCnt = CryptoNvm->FCntList.AFCntDown;
  270              		.loc 1 721 44 view .LVU89
-ARM GAS  /tmp/ccgjJaEg.s 			page 19
+ARM GAS  /tmp/cc95fnCJ.s 			page 19
 
 
  271 0028 5169     		ldr	r1, [r2, #20]
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  730:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             break;
  310              		.loc 1 730 13 is_stmt 1 view .LVU107
  730:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             break;
-ARM GAS  /tmp/ccgjJaEg.s 			page 20
+ARM GAS  /tmp/cc95fnCJ.s 			page 20
 
 
  311              		.loc 1 730 34 is_stmt 0 view .LVU108
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  760:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****  * \retval                     - Status of the operation
  761:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****  */
  762:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** static bool CheckFCntDown( FCntIdentifier_t fCntID, uint32_t currentDown )
-ARM GAS  /tmp/ccgjJaEg.s 			page 21
+ARM GAS  /tmp/cc95fnCJ.s 			page 21
 
 
  763:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** {
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  391              	.L31:
  773:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
  392              		.loc 1 773 16 view .LVU131
-ARM GAS  /tmp/ccgjJaEg.s 			page 22
+ARM GAS  /tmp/cc95fnCJ.s 			page 22
 
 
  393 0022 0120     		movs	r0, #1
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  433              	.LVL35:
  434              		.loc 1 791 5 is_stmt 0 view .LVU137
  435 0002 0328     		cmp	r0, #3
-ARM GAS  /tmp/ccgjJaEg.s 			page 23
+ARM GAS  /tmp/cc95fnCJ.s 			page 23
 
 
  436 0004 12D8     		bhi	.L32
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  477 002a D961     		str	r1, [r3, #28]
  805:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             break;
  478              		.loc 1 805 13 is_stmt 1 view .LVU153
-ARM GAS  /tmp/ccgjJaEg.s 			page 24
+ARM GAS  /tmp/cc95fnCJ.s 			page 24
 
 
  479              	.L32:
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  508 0004 0023     		movs	r3, #0
  509 0006 D360     		str	r3, [r2, #12]
  833:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     CryptoNvm->FCntList.NFCntDown = FCNT_DOWN_INITAL_VALUE;
-ARM GAS  /tmp/ccgjJaEg.s 			page 25
+ARM GAS  /tmp/cc95fnCJ.s 			page 25
 
 
  510              		.loc 1 833 5 is_stmt 1 view .LVU159
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  550 002a 00BF     		.align	2
  551              	.L44:
  552 002c 00000000 		.word	.LANCHOR1
-ARM GAS  /tmp/ccgjJaEg.s 			page 26
+ARM GAS  /tmp/cc95fnCJ.s 			page 26
 
 
  553              	.LBE4:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  600              		.loc 1 376 5 is_stmt 1 view .LVU185
  379:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
  601              		.loc 1 379 5 view .LVU186
-ARM GAS  /tmp/ccgjJaEg.s 			page 27
+ARM GAS  /tmp/cc95fnCJ.s 			page 27
 
 
  602 001a 04AF     		add	r7, sp, #16
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  647 004a FAE7     		b	.L47
  648              	.LVL48:
  649              	.L49:
-ARM GAS  /tmp/ccgjJaEg.s 			page 28
+ARM GAS  /tmp/cc95fnCJ.s 			page 28
 
 
  369:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  697 0008 0194     		str	r4, [sp, #4]
  698 000a 0294     		str	r4, [sp, #8]
  699 000c 0394     		str	r4, [sp, #12]
-ARM GAS  /tmp/ccgjJaEg.s 			page 29
+ARM GAS  /tmp/cc95fnCJ.s 			page 29
 
 
  567:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  591:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     compBase[6] = ( uint8_t )( ( netID >> 16 ) & 0xFF );
  737              		.loc 1 591 17 view .LVU222
  738 003c 8DF80510 		strb	r1, [sp, #5]
-ARM GAS  /tmp/ccgjJaEg.s 			page 30
+ARM GAS  /tmp/cc95fnCJ.s 			page 30
 
 
  592:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  778              		.loc 1 579 25 is_stmt 0 view .LVU237
  779 0062 0224     		movs	r4, #2
  780 0064 8DF80040 		strb	r4, [sp]
-ARM GAS  /tmp/ccgjJaEg.s 			page 31
+ARM GAS  /tmp/cc95fnCJ.s 			page 31
 
 
  580:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         default:
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  829              		.loc 1 166 5 view .LVU245
  167:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     uint8_t aBlock[16] = { 0 };
  830              		.loc 1 167 5 view .LVU246
-ARM GAS  /tmp/ccgjJaEg.s 			page 32
+ARM GAS  /tmp/cc95fnCJ.s 			page 32
 
 
  167:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     uint8_t aBlock[16] = { 0 };
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  867              		.loc 1 177 27 is_stmt 0 view .LVU264
  868 0042 1B0E     		lsrs	r3, r3, #24
  869              	.LVL67:
-ARM GAS  /tmp/ccgjJaEg.s 			page 33
+ARM GAS  /tmp/cc95fnCJ.s 			page 33
 
 
  177:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  905              		.loc 1 195 37 discriminator 3 view .LVU283
  906 006e 4840     		eors	r0, r0, r1
  907 0070 A054     		strb	r0, [r4, r2]
-ARM GAS  /tmp/ccgjJaEg.s 			page 34
+ARM GAS  /tmp/cc95fnCJ.s 			page 34
 
 
  193:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         {
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  187:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         if( SecureElementAesEncrypt( aBlock, 16, keyID, sBlock ) != SECURE_ELEMENT_SUCCESS )
  947              		.loc 1 187 9 is_stmt 1 view .LVU299
  187:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         if( SecureElementAesEncrypt( aBlock, 16, keyID, sBlock ) != SECURE_ELEMENT_SUCCESS )
-ARM GAS  /tmp/ccgjJaEg.s 			page 35
+ARM GAS  /tmp/cc95fnCJ.s 			page 35
 
 
  948              		.loc 1 187 12 is_stmt 0 view .LVU300
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  994              		.align	1
  995              		.syntax unified
  996              		.thumb
-ARM GAS  /tmp/ccgjJaEg.s 			page 36
+ARM GAS  /tmp/cc95fnCJ.s 			page 36
 
 
  997              		.thumb_func
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  413:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
  1042              		.loc 1 413 5 view .LVU320
  1043 0020 FFF7FEFF 		bl	memset1
-ARM GAS  /tmp/ccgjJaEg.s 			page 37
+ARM GAS  /tmp/cc95fnCJ.s 			page 37
 
 
  1044              	.LVL85:
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1087              	.LCFI21:
  1088              		.cfi_def_cfa_offset 0
  1089              		.cfi_restore 4
-ARM GAS  /tmp/ccgjJaEg.s 			page 38
+ARM GAS  /tmp/cc95fnCJ.s 			page 38
 
 
  1090              		.cfi_restore 5
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1135              		.loc 1 848 1 is_stmt 1 view -0
  1136              		.cfi_startproc
  1137              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccgjJaEg.s 			page 39
+ARM GAS  /tmp/cc95fnCJ.s 			page 39
 
 
  1138              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  867:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     ResetFCnts( );
  1173              		.loc 1 867 5 is_stmt 1 view .LVU353
  1174 001e FFF7FEFF 		bl	ResetFCnts
-ARM GAS  /tmp/ccgjJaEg.s 			page 40
+ARM GAS  /tmp/cc95fnCJ.s 			page 40
 
 
  1175              	.LVL96:
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  876:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** }
  1222              		.loc 1 876 1 is_stmt 0 view .LVU364
  1223 0006 0020     		movs	r0, #0
-ARM GAS  /tmp/ccgjJaEg.s 			page 41
+ARM GAS  /tmp/cc95fnCJ.s 			page 41
 
 
  1224              	.LVL100:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1269              	.LVL103:
  1270              	.L94:
  882:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
-ARM GAS  /tmp/ccgjJaEg.s 			page 42
+ARM GAS  /tmp/cc95fnCJ.s 			page 42
 
 
  1271              		.loc 1 882 16 view .LVU377
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  896:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( currentDown == NULL )
  1319              		.loc 1 896 5 view .LVU386
  1320              		.loc 1 896 7 is_stmt 0 view .LVU387
-ARM GAS  /tmp/ccgjJaEg.s 			page 43
+ARM GAS  /tmp/cc95fnCJ.s 			page 43
 
 
  1321 000a 63B3     		cbz	r3, .L103
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1352 0028 1344     		add	r3, r3, r2
  1353              		.loc 1 919 26 view .LVU403
  1354 002a 3360     		str	r3, [r6]
-ARM GAS  /tmp/ccgjJaEg.s 			page 44
+ARM GAS  /tmp/cc95fnCJ.s 			page 44
 
 
  1355              	.LVL111:
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1386              		@ sp needed
  1387 004a 70BD     		pop	{r4, r5, r6, pc}
  1388              	.LVL113:
-ARM GAS  /tmp/ccgjJaEg.s 			page 45
+ARM GAS  /tmp/cc95fnCJ.s 			page 45
 
 
  1389              	.L106:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1428              	.LVL118:
  1429              	.L104:
  937:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         }
-ARM GAS  /tmp/ccgjJaEg.s 			page 46
+ARM GAS  /tmp/cc95fnCJ.s 			page 46
 
 
  1430              		.loc 1 937 20 view .LVU430
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1459              		.loc 1 968 7 is_stmt 0 view .LVU434
  1460 0000 0146     		mov	r1, r0
  1461 0002 08B9     		cbnz	r0, .L115
-ARM GAS  /tmp/ccgjJaEg.s 			page 47
+ARM GAS  /tmp/cc95fnCJ.s 			page 47
 
 
  969:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1496 0026 0262     		str	r2, [r0, #32]
  973:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
  1497              		.loc 1 973 49 is_stmt 1 discriminator 3 view .LVU446
-ARM GAS  /tmp/ccgjJaEg.s 			page 48
+ARM GAS  /tmp/cc95fnCJ.s 			page 48
 
 
  973:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1527              		.loc 1 1004 7 is_stmt 0 view .LVU451
  1528 0000 00B3     		cbz	r0, .L120
 1003:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( macMsg == 0 )
-ARM GAS  /tmp/ccgjJaEg.s 			page 49
+ARM GAS  /tmp/cc95fnCJ.s 			page 49
 
 
  1529              		.loc 1 1003 1 view .LVU452
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1027:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
 1028:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         return LORAMAC_CRYPTO_ERROR;
 1029:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
-ARM GAS  /tmp/ccgjJaEg.s 			page 50
+ARM GAS  /tmp/cc95fnCJ.s 			page 50
 
 
 1030:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** #endif /* USE_LRWAN_1_1_X_CRYPTO == 1 */
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1596 0044 0A20     		movs	r0, #10
  1597              	.LVL133:
 1048:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
-ARM GAS  /tmp/ccgjJaEg.s 			page 51
+ARM GAS  /tmp/cc95fnCJ.s 			page 51
 
 
 1049:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1060:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
 1061:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     // Check for RJcount1 overflow
 1062:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( CryptoNvm->FCntList.RJcount1 == 65535 )
-ARM GAS  /tmp/ccgjJaEg.s 			page 52
+ARM GAS  /tmp/cc95fnCJ.s 			page 52
 
 
 1063:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1117:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
 1118:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     // Re-serialize message to add the MIC
 1119:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( LoRaMacSerializerReJoinType0or2( macMsg ) != LORAMAC_SERIALIZER_SUCCESS )
-ARM GAS  /tmp/ccgjJaEg.s 			page 53
+ARM GAS  /tmp/cc95fnCJ.s 			page 53
 
 
 1120:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1174:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     memcpy1( macMsg->Buffer, decJoinAccept, macMsg->BufSize );
 1175:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
 1176:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     // Parse the message
-ARM GAS  /tmp/ccgjJaEg.s 			page 54
+ARM GAS  /tmp/cc95fnCJ.s 			page 54
 
 
 1177:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( LoRaMacParserJoinAccept( macMsg ) != LORAMAC_PARSER_SUCCESS )
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1231:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         }
 1232:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
 1233:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         retval = DeriveSessionKey11x( NWK_S_ENC_KEY, currentJoinNonce, joinEUI, nonce );
-ARM GAS  /tmp/ccgjJaEg.s 			page 55
+ARM GAS  /tmp/cc95fnCJ.s 			page 55
 
 
 1234:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         if( retval != LORAMAC_CRYPTO_SUCCESS )
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1288:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     // Save LoRaWAN specification version
 1289:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     CryptoNvm->LrWanVersion.Fields.Minor = versionMinor;
 1290:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
-ARM GAS  /tmp/ccgjJaEg.s 			page 56
+ARM GAS  /tmp/cc95fnCJ.s 			page 56
 
 
 1291:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     // Reset frame counters
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1671              		.loc 1 1313 7 view .LVU488
  1672 0012 8342     		cmp	r3, r0
  1673 0014 2FD8     		bhi	.L135
-ARM GAS  /tmp/ccgjJaEg.s 			page 57
+ARM GAS  /tmp/cc95fnCJ.s 			page 57
 
 
 1314:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1706              	.L133:
 1335:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         {
 1336:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****             return retval;
-ARM GAS  /tmp/ccgjJaEg.s 			page 58
+ARM GAS  /tmp/cc95fnCJ.s 			page 58
 
 
 1337:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         }
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1384:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         /* ST_WORKAROUND_BEGIN: integrate 1.1.x keys only if required */
 1385:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** #if ( USE_LRWAN_1_1_X_CRYPTO == 1 )
 1386:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         payloadDecryptionKeyID = NWK_S_ENC_KEY;
-ARM GAS  /tmp/ccgjJaEg.s 			page 59
+ARM GAS  /tmp/cc95fnCJ.s 			page 59
 
 
 1387:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** #else /* USE_LRWAN_1_1_X_CRYPTO == 0 */
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1748 0068 1B68     		ldr	r3, [r3]
  1749              		.loc 1 1406 32 view .LVU516
  1750 006a DC60     		str	r4, [r3, #12]
-ARM GAS  /tmp/ccgjJaEg.s 			page 60
+ARM GAS  /tmp/cc95fnCJ.s 			page 60
 
 
 1407:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1797              	.LCFI41:
  1798              		.cfi_restore_state
 1403:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
-ARM GAS  /tmp/ccgjJaEg.s 			page 61
+ARM GAS  /tmp/cc95fnCJ.s 			page 61
 
 
  1799              		.loc 1 1403 16 view .LVU526
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1418:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( CheckFCntDown( fCntID, fCntDown ) == false )
  1847              		.loc 1 1418 5 is_stmt 1 view .LVU531
  1848              		.loc 1 1418 9 is_stmt 0 view .LVU532
-ARM GAS  /tmp/ccgjJaEg.s 			page 62
+ARM GAS  /tmp/cc95fnCJ.s 			page 62
 
 
  1849 0014 1946     		mov	r1, r3
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1879              		.loc 1 1442 5 is_stmt 1 view .LVU545
  1880              		.loc 1 1442 7 is_stmt 0 view .LVU546
  1881 0032 0546     		mov	r5, r0
-ARM GAS  /tmp/ccgjJaEg.s 			page 63
+ARM GAS  /tmp/cc95fnCJ.s 			page 63
 
 
  1882 0034 0028     		cmp	r0, #0
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1462:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
 1463:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
 1464:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     // Verify mic
-ARM GAS  /tmp/ccgjJaEg.s 			page 64
+ARM GAS  /tmp/cc95fnCJ.s 			page 64
 
 
 1465:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     retval = VerifyCmacB0( macMsg->Buffer, ( macMsg->BufSize - LORAMAC_MIC_FIELD_SIZE ), micComputa
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1952 0084 4346     		mov	r3, r8
  1953 0086 4A46     		mov	r2, r9
  1954 0088 96F82810 		ldrb	r1, [r6, #40]	@ zero_extendqisi2
-ARM GAS  /tmp/ccgjJaEg.s 			page 65
+ARM GAS  /tmp/cc95fnCJ.s 			page 65
 
 
  1955 008c 706A     		ldr	r0, [r6, #36]
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  1984              	.L146:
 1507:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** }
  1985              		.loc 1 1507 1 view .LVU583
-ARM GAS  /tmp/ccgjJaEg.s 			page 66
+ARM GAS  /tmp/cc95fnCJ.s 			page 66
 
 
  1986 00a6 2846     		mov	r0, r5
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2034              		.cfi_offset 14, -4
  2035 0004 85B0     		sub	sp, sp, #20
  2036              	.LCFI47:
-ARM GAS  /tmp/ccgjJaEg.s 			page 67
+ARM GAS  /tmp/cc95fnCJ.s 			page 67
 
 
  2037              		.cfi_def_cfa_offset 24
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2075              		.cfi_restore_state
 1520:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
  2076              		.loc 1 1520 9 is_stmt 1 view .LVU600
-ARM GAS  /tmp/ccgjJaEg.s 			page 68
+ARM GAS  /tmp/cc95fnCJ.s 			page 68
 
 
 1520:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1536:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
 1537:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     uint8_t compBase[16] = { 0 };
 1538:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
-ARM GAS  /tmp/ccgjJaEg.s 			page 69
+ARM GAS  /tmp/cc95fnCJ.s 			page 69
 
 
 1539:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( SecureElementDeriveAndStoreKey( compBase, keyID, MC_KE_KEY ) != SECURE_ELEMENT_SUCCESS )
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2163              		.cfi_restore_state
 1541:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
  2164              		.loc 1 1541 16 view .LVU618
-ARM GAS  /tmp/ccgjJaEg.s 			page 70
+ARM GAS  /tmp/cc95fnCJ.s 			page 70
 
 
  2165 0028 0F20     		movs	r0, #15
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2210 0012 2146     		mov	r1, r4
  2211 0014 9878     		ldrb	r0, [r3, #2]	@ zero_extendqisi2
  2212 0016 FFF7FEFF 		bl	LoRaMacCryptoDeriveMcRootKey
-ARM GAS  /tmp/ccgjJaEg.s 			page 71
+ARM GAS  /tmp/cc95fnCJ.s 			page 71
 
 
  2213              	.LVL193:
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2259 0000 002A     		cmp	r2, #0
  2260 0002 64D0     		beq	.L190
 1132:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     if( ( macMsg == 0 ) || ( joinEUI == 0 ) )
-ARM GAS  /tmp/ccgjJaEg.s 			page 72
+ARM GAS  /tmp/cc95fnCJ.s 			page 72
 
 
  2261              		.loc 1 1132 1 discriminator 1 view .LVU640
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2303              		.loc 1 1141 14 view .LVU652
  2304 0028 9E88     		ldrh	r6, [r3, #4]
  2305              	.LVL201:
-ARM GAS  /tmp/ccgjJaEg.s 			page 73
+ARM GAS  /tmp/cc95fnCJ.s 			page 73
 
 
 1148:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2346 005e E379     		ldrb	r3, [r4, #7]	@ zero_extendqisi2
 1185:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     currentJoinNonce |= ( ( uint32_t )macMsg->JoinNonce[2] << 16 );
  2347              		.loc 1 1185 22 view .LVU667
-ARM GAS  /tmp/ccgjJaEg.s 			page 74
+ARM GAS  /tmp/cc95fnCJ.s 			page 74
 
 
  2348 0060 45EA0325 		orr	r5, r5, r3, lsl #8
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2385 0088 30BB     		cbnz	r0, .L189
  2386              	.LBB8:
 1250:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
-ARM GAS  /tmp/ccgjJaEg.s 			page 75
+ARM GAS  /tmp/cc95fnCJ.s 			page 75
 
 
  2387              		.loc 1 1250 9 is_stmt 1 view .LVU685
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2425              		.loc 1 1278 18 view .LVU701
  2426 00ae FFF7FEFF 		bl	DeriveSessionKey10x
  2427              	.LVL218:
-ARM GAS  /tmp/ccgjJaEg.s 			page 76
+ARM GAS  /tmp/cc95fnCJ.s 			page 76
 
 
 1281:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         {
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2466 00ce 0A20     		movs	r0, #10
  2467              	.LVL220:
 1301:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
-ARM GAS  /tmp/ccgjJaEg.s 			page 77
+ARM GAS  /tmp/cc95fnCJ.s 			page 77
 
 
  2468              		.loc 1 1301 1 view .LVU718
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2517              		.align	1
  2518              		.global	LoRaMacCryptoDeriveMcSessionKeyPair
  2519              		.syntax unified
-ARM GAS  /tmp/ccgjJaEg.s 			page 78
+ARM GAS  /tmp/cc95fnCJ.s 			page 78
 
 
  2520              		.thumb
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
 1560:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     {
 1561:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****         return retval;
 1562:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     }
-ARM GAS  /tmp/ccgjJaEg.s 			page 79
+ARM GAS  /tmp/cc95fnCJ.s 			page 79
 
 
 1563:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c **** 
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2579 001e 0190     		str	r0, [sp, #4]
  2580 0020 0290     		str	r0, [sp, #8]
  2581 0022 0390     		str	r0, [sp, #12]
-ARM GAS  /tmp/ccgjJaEg.s 			page 80
+ARM GAS  /tmp/cc95fnCJ.s 			page 80
 
 
  2582 0024 0490     		str	r0, [sp, #16]
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2617              		.loc 1 1579 5 is_stmt 1 view .LVU759
 1579:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCrypto.c ****     compBaseNwkS[4] = ( mcAddr >> 24 ) & 0xFF;
  2618              		.loc 1 1579 21 is_stmt 0 view .LVU760
-ARM GAS  /tmp/ccgjJaEg.s 			page 81
+ARM GAS  /tmp/cc95fnCJ.s 			page 81
 
 
  2619 0056 8DF80730 		strb	r3, [sp, #7]
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2661              	.L204:
  2662              	.LCFI68:
  2663              		.cfi_def_cfa_offset 48
-ARM GAS  /tmp/ccgjJaEg.s 			page 82
+ARM GAS  /tmp/cc95fnCJ.s 			page 82
 
 
  2664              		.cfi_offset 4, -8
@@ -4900,82 +4900,82 @@ ARM GAS  /tmp/ccgjJaEg.s 			page 1
  2704              		.file 11 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacParser.h"
  2705              		.file 12 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacSerializer.h"
  2706              		.file 13 "<built-in>"
-ARM GAS  /tmp/ccgjJaEg.s 			page 83
+ARM GAS  /tmp/cc95fnCJ.s 			page 83
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 LoRaMacCrypto.c
-     /tmp/ccgjJaEg.s:16     .text.PrepareB0:0000000000000000 $t
-     /tmp/ccgjJaEg.s:23     .text.PrepareB0:0000000000000000 PrepareB0
-     /tmp/ccgjJaEg.s:137    .text.GetKeyAddrItem:0000000000000000 $t
-     /tmp/ccgjJaEg.s:143    .text.GetKeyAddrItem:0000000000000000 GetKeyAddrItem
-     /tmp/ccgjJaEg.s:206    .text.GetKeyAddrItem:0000000000000028 $d
-     /tmp/ccgjJaEg.s:211    .text.GetLastFcntDown:0000000000000000 $t
-     /tmp/ccgjJaEg.s:217    .text.GetLastFcntDown:0000000000000000 GetLastFcntDown
-     /tmp/ccgjJaEg.s:238    .text.GetLastFcntDown:0000000000000010 $d
-     /tmp/ccgjJaEg.s:242    .text.GetLastFcntDown:0000000000000014 $t
-     /tmp/ccgjJaEg.s:338    .text.GetLastFcntDown:0000000000000058 $d
-     /tmp/ccgjJaEg.s:343    .text.CheckFCntDown:0000000000000000 $t
-     /tmp/ccgjJaEg.s:349    .text.CheckFCntDown:0000000000000000 CheckFCntDown
-     /tmp/ccgjJaEg.s:417    .text.UpdateFCntDown:0000000000000000 $t
-     /tmp/ccgjJaEg.s:423    .text.UpdateFCntDown:0000000000000000 UpdateFCntDown
-     /tmp/ccgjJaEg.s:439    .text.UpdateFCntDown:000000000000000a $d
-     /tmp/ccgjJaEg.s:443    .text.UpdateFCntDown:000000000000000e $t
-     /tmp/ccgjJaEg.s:485    .text.UpdateFCntDown:0000000000000030 $d
-     /tmp/ccgjJaEg.s:490    .text.ResetFCnts:0000000000000000 $t
-     /tmp/ccgjJaEg.s:496    .text.ResetFCnts:0000000000000000 ResetFCnts
-     /tmp/ccgjJaEg.s:552    .text.ResetFCnts:000000000000002c $d
-     /tmp/ccgjJaEg.s:558    .text.ComputeCmacB0:0000000000000000 $t
-     /tmp/ccgjJaEg.s:564    .text.ComputeCmacB0:0000000000000000 ComputeCmacB0
-     /tmp/ccgjJaEg.s:671    .text.DeriveSessionKey10x:0000000000000000 $t
-     /tmp/ccgjJaEg.s:677    .text.DeriveSessionKey10x:0000000000000000 DeriveSessionKey10x
-     /tmp/ccgjJaEg.s:792    .text.PayloadEncrypt:0000000000000000 $t
-     /tmp/ccgjJaEg.s:798    .text.PayloadEncrypt:0000000000000000 PayloadEncrypt
-     /tmp/ccgjJaEg.s:994    .text.VerifyCmacB0:0000000000000000 $t
-     /tmp/ccgjJaEg.s:1000   .text.VerifyCmacB0:0000000000000000 VerifyCmacB0
-     /tmp/ccgjJaEg.s:1125   .text.LoRaMacCryptoInit:0000000000000000 $t
-     /tmp/ccgjJaEg.s:1132   .text.LoRaMacCryptoInit:0000000000000000 LoRaMacCryptoInit
-     /tmp/ccgjJaEg.s:1195   .text.LoRaMacCryptoInit:000000000000002c $d
-     /tmp/ccgjJaEg.s:1200   .text.LoRaMacCryptoSetLrWanVersion:0000000000000000 $t
-     /tmp/ccgjJaEg.s:1207   .text.LoRaMacCryptoSetLrWanVersion:0000000000000000 LoRaMacCryptoSetLrWanVersion
-     /tmp/ccgjJaEg.s:1230   .text.LoRaMacCryptoSetLrWanVersion:000000000000000c $d
-     /tmp/ccgjJaEg.s:1235   .text.LoRaMacCryptoGetFCntUp:0000000000000000 $t
-     /tmp/ccgjJaEg.s:1242   .text.LoRaMacCryptoGetFCntUp:0000000000000000 LoRaMacCryptoGetFCntUp
-     /tmp/ccgjJaEg.s:1279   .text.LoRaMacCryptoGetFCntUp:0000000000000014 $d
-     /tmp/ccgjJaEg.s:1284   .text.LoRaMacCryptoGetFCntDown:0000000000000000 $t
-     /tmp/ccgjJaEg.s:1291   .text.LoRaMacCryptoGetFCntDown:0000000000000000 LoRaMacCryptoGetFCntDown
-     /tmp/ccgjJaEg.s:1438   .text.LoRaMacCryptoGetFCntDown:0000000000000070 $d
-     /tmp/ccgjJaEg.s:1443   .text.LoRaMacCryptoSetMulticastReference:0000000000000000 $t
-     /tmp/ccgjJaEg.s:1450   .text.LoRaMacCryptoSetMulticastReference:0000000000000000 LoRaMacCryptoSetMulticastReference
-     /tmp/ccgjJaEg.s:1506   .text.LoRaMacCryptoSetMulticastReference:000000000000002c $d
-     /tmp/ccgjJaEg.s:1512   .text.LoRaMacCryptoPrepareJoinRequest:0000000000000000 $t
-     /tmp/ccgjJaEg.s:1519   .text.LoRaMacCryptoPrepareJoinRequest:0000000000000000 LoRaMacCryptoPrepareJoinRequest
-     /tmp/ccgjJaEg.s:1626   .text.LoRaMacCryptoPrepareJoinRequest:0000000000000054 $d
-     /tmp/ccgjJaEg.s:1631   .text.LoRaMacCryptoSecureMessage:0000000000000000 $t
-     /tmp/ccgjJaEg.s:1638   .text.LoRaMacCryptoSecureMessage:0000000000000000 LoRaMacCryptoSecureMessage
-     /tmp/ccgjJaEg.s:1805   .text.LoRaMacCryptoSecureMessage:0000000000000084 $d
-     /tmp/ccgjJaEg.s:1810   .text.LoRaMacCryptoUnsecureMessage:0000000000000000 $t
-     /tmp/ccgjJaEg.s:1817   .text.LoRaMacCryptoUnsecureMessage:0000000000000000 LoRaMacCryptoUnsecureMessage
-     /tmp/ccgjJaEg.s:2008   .text.LoRaMacCryptoUnsecureMessage:00000000000000b8 $d
-     /tmp/ccgjJaEg.s:2013   .text.LoRaMacCryptoDeriveMcRootKey:0000000000000000 $t
-     /tmp/ccgjJaEg.s:2020   .text.LoRaMacCryptoDeriveMcRootKey:0000000000000000 LoRaMacCryptoDeriveMcRootKey
-     /tmp/ccgjJaEg.s:2102   .text.LoRaMacCryptoDeriveMcKEKey:0000000000000000 $t
-ARM GAS  /tmp/ccgjJaEg.s 			page 84
+     /tmp/cc95fnCJ.s:16     .text.PrepareB0:0000000000000000 $t
+     /tmp/cc95fnCJ.s:23     .text.PrepareB0:0000000000000000 PrepareB0
+     /tmp/cc95fnCJ.s:137    .text.GetKeyAddrItem:0000000000000000 $t
+     /tmp/cc95fnCJ.s:143    .text.GetKeyAddrItem:0000000000000000 GetKeyAddrItem
+     /tmp/cc95fnCJ.s:206    .text.GetKeyAddrItem:0000000000000028 $d
+     /tmp/cc95fnCJ.s:211    .text.GetLastFcntDown:0000000000000000 $t
+     /tmp/cc95fnCJ.s:217    .text.GetLastFcntDown:0000000000000000 GetLastFcntDown
+     /tmp/cc95fnCJ.s:238    .text.GetLastFcntDown:0000000000000010 $d
+     /tmp/cc95fnCJ.s:242    .text.GetLastFcntDown:0000000000000014 $t
+     /tmp/cc95fnCJ.s:338    .text.GetLastFcntDown:0000000000000058 $d
+     /tmp/cc95fnCJ.s:343    .text.CheckFCntDown:0000000000000000 $t
+     /tmp/cc95fnCJ.s:349    .text.CheckFCntDown:0000000000000000 CheckFCntDown
+     /tmp/cc95fnCJ.s:417    .text.UpdateFCntDown:0000000000000000 $t
+     /tmp/cc95fnCJ.s:423    .text.UpdateFCntDown:0000000000000000 UpdateFCntDown
+     /tmp/cc95fnCJ.s:439    .text.UpdateFCntDown:000000000000000a $d
+     /tmp/cc95fnCJ.s:443    .text.UpdateFCntDown:000000000000000e $t
+     /tmp/cc95fnCJ.s:485    .text.UpdateFCntDown:0000000000000030 $d
+     /tmp/cc95fnCJ.s:490    .text.ResetFCnts:0000000000000000 $t
+     /tmp/cc95fnCJ.s:496    .text.ResetFCnts:0000000000000000 ResetFCnts
+     /tmp/cc95fnCJ.s:552    .text.ResetFCnts:000000000000002c $d
+     /tmp/cc95fnCJ.s:558    .text.ComputeCmacB0:0000000000000000 $t
+     /tmp/cc95fnCJ.s:564    .text.ComputeCmacB0:0000000000000000 ComputeCmacB0
+     /tmp/cc95fnCJ.s:671    .text.DeriveSessionKey10x:0000000000000000 $t
+     /tmp/cc95fnCJ.s:677    .text.DeriveSessionKey10x:0000000000000000 DeriveSessionKey10x
+     /tmp/cc95fnCJ.s:792    .text.PayloadEncrypt:0000000000000000 $t
+     /tmp/cc95fnCJ.s:798    .text.PayloadEncrypt:0000000000000000 PayloadEncrypt
+     /tmp/cc95fnCJ.s:994    .text.VerifyCmacB0:0000000000000000 $t
+     /tmp/cc95fnCJ.s:1000   .text.VerifyCmacB0:0000000000000000 VerifyCmacB0
+     /tmp/cc95fnCJ.s:1125   .text.LoRaMacCryptoInit:0000000000000000 $t
+     /tmp/cc95fnCJ.s:1132   .text.LoRaMacCryptoInit:0000000000000000 LoRaMacCryptoInit
+     /tmp/cc95fnCJ.s:1195   .text.LoRaMacCryptoInit:000000000000002c $d
+     /tmp/cc95fnCJ.s:1200   .text.LoRaMacCryptoSetLrWanVersion:0000000000000000 $t
+     /tmp/cc95fnCJ.s:1207   .text.LoRaMacCryptoSetLrWanVersion:0000000000000000 LoRaMacCryptoSetLrWanVersion
+     /tmp/cc95fnCJ.s:1230   .text.LoRaMacCryptoSetLrWanVersion:000000000000000c $d
+     /tmp/cc95fnCJ.s:1235   .text.LoRaMacCryptoGetFCntUp:0000000000000000 $t
+     /tmp/cc95fnCJ.s:1242   .text.LoRaMacCryptoGetFCntUp:0000000000000000 LoRaMacCryptoGetFCntUp
+     /tmp/cc95fnCJ.s:1279   .text.LoRaMacCryptoGetFCntUp:0000000000000014 $d
+     /tmp/cc95fnCJ.s:1284   .text.LoRaMacCryptoGetFCntDown:0000000000000000 $t
+     /tmp/cc95fnCJ.s:1291   .text.LoRaMacCryptoGetFCntDown:0000000000000000 LoRaMacCryptoGetFCntDown
+     /tmp/cc95fnCJ.s:1438   .text.LoRaMacCryptoGetFCntDown:0000000000000070 $d
+     /tmp/cc95fnCJ.s:1443   .text.LoRaMacCryptoSetMulticastReference:0000000000000000 $t
+     /tmp/cc95fnCJ.s:1450   .text.LoRaMacCryptoSetMulticastReference:0000000000000000 LoRaMacCryptoSetMulticastReference
+     /tmp/cc95fnCJ.s:1506   .text.LoRaMacCryptoSetMulticastReference:000000000000002c $d
+     /tmp/cc95fnCJ.s:1512   .text.LoRaMacCryptoPrepareJoinRequest:0000000000000000 $t
+     /tmp/cc95fnCJ.s:1519   .text.LoRaMacCryptoPrepareJoinRequest:0000000000000000 LoRaMacCryptoPrepareJoinRequest
+     /tmp/cc95fnCJ.s:1626   .text.LoRaMacCryptoPrepareJoinRequest:0000000000000054 $d
+     /tmp/cc95fnCJ.s:1631   .text.LoRaMacCryptoSecureMessage:0000000000000000 $t
+     /tmp/cc95fnCJ.s:1638   .text.LoRaMacCryptoSecureMessage:0000000000000000 LoRaMacCryptoSecureMessage
+     /tmp/cc95fnCJ.s:1805   .text.LoRaMacCryptoSecureMessage:0000000000000084 $d
+     /tmp/cc95fnCJ.s:1810   .text.LoRaMacCryptoUnsecureMessage:0000000000000000 $t
+     /tmp/cc95fnCJ.s:1817   .text.LoRaMacCryptoUnsecureMessage:0000000000000000 LoRaMacCryptoUnsecureMessage
+     /tmp/cc95fnCJ.s:2008   .text.LoRaMacCryptoUnsecureMessage:00000000000000b8 $d
+     /tmp/cc95fnCJ.s:2013   .text.LoRaMacCryptoDeriveMcRootKey:0000000000000000 $t
+     /tmp/cc95fnCJ.s:2020   .text.LoRaMacCryptoDeriveMcRootKey:0000000000000000 LoRaMacCryptoDeriveMcRootKey
+     /tmp/cc95fnCJ.s:2102   .text.LoRaMacCryptoDeriveMcKEKey:0000000000000000 $t
+ARM GAS  /tmp/cc95fnCJ.s 			page 84
 
 
-     /tmp/ccgjJaEg.s:2109   .text.LoRaMacCryptoDeriveMcKEKey:0000000000000000 LoRaMacCryptoDeriveMcKEKey
-     /tmp/ccgjJaEg.s:2171   .text.LoRaMacCryptoSetKey:0000000000000000 $t
-     /tmp/ccgjJaEg.s:2178   .text.LoRaMacCryptoSetKey:0000000000000000 LoRaMacCryptoSetKey
-     /tmp/ccgjJaEg.s:2238   .text.LoRaMacCryptoSetKey:0000000000000034 $d
-     /tmp/ccgjJaEg.s:2243   .text.LoRaMacCryptoHandleJoinAccept:0000000000000000 $t
-     /tmp/ccgjJaEg.s:2250   .text.LoRaMacCryptoHandleJoinAccept:0000000000000000 LoRaMacCryptoHandleJoinAccept
-     /tmp/ccgjJaEg.s:2512   .text.LoRaMacCryptoHandleJoinAccept:00000000000000e4 $d
-     /tmp/ccgjJaEg.s:2517   .text.LoRaMacCryptoDeriveMcSessionKeyPair:0000000000000000 $t
-     /tmp/ccgjJaEg.s:2524   .text.LoRaMacCryptoDeriveMcSessionKeyPair:0000000000000000 LoRaMacCryptoDeriveMcSessionKeyPair
-     /tmp/ccgjJaEg.s:2673   .bss.CryptoNvm:0000000000000000 $d
-     /tmp/ccgjJaEg.s:2677   .bss.CryptoNvm:0000000000000000 CryptoNvm
-     /tmp/ccgjJaEg.s:2680   .data.KeyAddrList:0000000000000000 $d
-     /tmp/ccgjJaEg.s:2684   .data.KeyAddrList:0000000000000000 KeyAddrList
+     /tmp/cc95fnCJ.s:2109   .text.LoRaMacCryptoDeriveMcKEKey:0000000000000000 LoRaMacCryptoDeriveMcKEKey
+     /tmp/cc95fnCJ.s:2171   .text.LoRaMacCryptoSetKey:0000000000000000 $t
+     /tmp/cc95fnCJ.s:2178   .text.LoRaMacCryptoSetKey:0000000000000000 LoRaMacCryptoSetKey
+     /tmp/cc95fnCJ.s:2238   .text.LoRaMacCryptoSetKey:0000000000000034 $d
+     /tmp/cc95fnCJ.s:2243   .text.LoRaMacCryptoHandleJoinAccept:0000000000000000 $t
+     /tmp/cc95fnCJ.s:2250   .text.LoRaMacCryptoHandleJoinAccept:0000000000000000 LoRaMacCryptoHandleJoinAccept
+     /tmp/cc95fnCJ.s:2512   .text.LoRaMacCryptoHandleJoinAccept:00000000000000e4 $d
+     /tmp/cc95fnCJ.s:2517   .text.LoRaMacCryptoDeriveMcSessionKeyPair:0000000000000000 $t
+     /tmp/cc95fnCJ.s:2524   .text.LoRaMacCryptoDeriveMcSessionKeyPair:0000000000000000 LoRaMacCryptoDeriveMcSessionKeyPair
+     /tmp/cc95fnCJ.s:2673   .bss.CryptoNvm:0000000000000000 $d
+     /tmp/cc95fnCJ.s:2677   .bss.CryptoNvm:0000000000000000 CryptoNvm
+     /tmp/cc95fnCJ.s:2680   .data.KeyAddrList:0000000000000000 $d
+     /tmp/cc95fnCJ.s:2684   .data.KeyAddrList:0000000000000000 KeyAddrList
 
 UNDEFINED SYMBOLS
 SecureElementComputeAesCmac

@@ -203,3 +203,63 @@ parity.
 EM-506 can be configured to use NMEA messages: 
 
 https://en.wikipedia.org/wiki/NMEA_0183
+
+Ugh. Verified *manually* via oscilloscope that the UART messages have no stop bit -- this means they are *actually* impossible to use, since stty and STM32s do not support UART with no stop bit. 
+
+# 4/10/2022 Second try- new GPS module
+
+Adafruit Ultimate GPS breakout v3
+
+https://learn.adafruit.com/adafruit-ultimate-gps/direct-computer-wiring
+
+
+Ok, clearly, all of these GPS modules are "meant" to be used with arduino, and all of the arduino serial libraries don't let you specify uart parameters like stop bit, word length and parity... so none of the documentation for the modules specify uart parameters and I can't figure out what the arduino serial libraries are assuming. Goal: figure out default Arduino UART config. 
+
+https://www.engineersgarage.com/articles-arduino-serial-communication-uart/
+
+Default Arduino UART config (`SoftwareSerial.begin()`) is 8N1 (8 bit word, no parity, 1 stop bit.)
+
+
+Ok, so now it gets the first character ($) and nothing else. Thinking maybe the clock is off since there is no external oscillator... trying STM32 auto baud rate to see if that helps. 
+
+auto baud rate did not help. RIP. 
+
+Going back to the terminal with the IDP . RX LED flashing, clearly the module is sending *something*... but cannot recieve it with Screen. 
+
+
+Scoped the UART trace. Apparently UART idles low??? bizarre. Trying to invert the polarity w cubeMX next. Does look like 9600 baud tho. 
+
+![](uart_inverted_scope.jpeg)
+
+
+Decoding binary by hand :cry: .. clearly inverted with 1 start bit, 1 stop bit, 8 bits of data tho
+![](bin_rip.jpeg)
+
+
+ugh. strategy.... do a loopback test while probing the UART from TX/RX on the STM32. adjust settings until it matches the waveform from the GPS module. 
+
+With both TX and RX invert, no Data invert: idles high
+
+only TX invert: also idles high, received data is wrong as to be expected
+
+ok, data invert + software NOT-ing the data reproduces the waveform. Problem: the STM32 still can't rx data from the GPS. 
+
+
+Loopback: 
+
+Hi: 3.16 V
+Lo: -40mV
+Period: 108 uS
+Idle high
+bits: 0 00100100 10 11100010 10 00001010 10
+
+
+GPS: 
+
+Hi: 3.24 V
+Lo: -120 mV 
+Period: 108 uS
+Idle HIGH 
+same bits 
+AGHH!!!
+

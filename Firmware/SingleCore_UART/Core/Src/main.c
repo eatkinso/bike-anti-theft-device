@@ -20,7 +20,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "app_lorawan.h"
-#include "string.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -96,6 +95,32 @@ int main(void)
   MX_USART1_UART_Init();
   // MX_LoRaWAN_Init();
   /* USER CODE BEGIN 2 */
+
+  uint8_t txdata[75] = {
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+    0b00100100, 0b01000111, 0b01010000, 0b01000111,0b00100100,
+  };
+  
+  uint8_t ntxdata[75];
+
+  for (int i =0; i<75; i=i+1){
+        ntxdata[i] = ~txdata[i];
+      }
+
+
   // checksum for the NMEA messages:
   int checksum(const char *string) {
     int csum = 0;
@@ -104,12 +129,12 @@ int main(void)
     }
 
     return csum;
-}
+};
 
 
-
+  uint8_t rxdata1;
  
-  uint8_t rxdata[75]={
+  uint8_t rxdata75[75]={
     0,0,0,0,0,0,0,0,0,0,
     0,0,0,0,0,0,0,0,0,0,
     0,0,0,0,0,0,0,0,0,0,
@@ -119,15 +144,27 @@ int main(void)
     0,0,0,0,0,0,0,0,0,0,
     0,0,0,0,0};
 
-  char settingsraw[]="PSRF100,1,9600,8,1,0";
-  char csum_settings= checksum(settingsraw);
-  strncat(settingsraw, &csum_settings,1);
+
+  uint8_t nrxdata75[75]={
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0};
 
 
-
-  char zda_q[]="$PSRF103,08,01,00,01*2D";
-
-  
+ uint8_t dum75[75]={
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0,0,0,0,0,0,
+    0,0,0,0,0};
   // $PSRF100,1,9600,8,1,0
   /* USER CODE END 2 */
 
@@ -135,11 +172,21 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    HAL_UART_Receive_IT(&huart1, rxdata, 75);
-    HAL_UART_Transmit(&huart1,(uint8_t *)settingsraw, 2, 75);
-    HAL_UART_Receive_IT(&huart1, rxdata, 75);
+    volatile HAL_StatusTypeDef rx_stat;
+    HAL_UART_Receive_IT(&huart1, rxdata75, 75);
+    //HAL_UART_Transmit(&huart1, txdata, 75, 10);
+    /* for (int j =0; j<75; j=j+1){
+      rx_stat=HAL_UART_Receive(&huart1, rxdata75[j], 1,100000);
+    } */
+
+
+
+    /*
+    for (int i =0; i<75; i=i+1){
+      nrxdata75[i] = ~rxdata75[i];
+    } */
     /* USER CODE END WHILE */
-   // MX_LoRaWAN_Process();
+   //  MX_LoRaWAN_Process();
 
     /* USER CODE BEGIN 3 */
   }
@@ -228,7 +275,7 @@ static void MX_USART1_UART_Init(void)
 
   /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 9600;
+  huart1.Init.BaudRate = 115200;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;
@@ -237,7 +284,9 @@ static void MX_USART1_UART_Init(void)
   huart1.Init.OverSampling = UART_OVERSAMPLING_16;
   huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
   huart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
-  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_AUTOBAUDRATE_INIT;
+  huart1.AdvancedInit.AutoBaudRateEnable = UART_ADVFEATURE_AUTOBAUDRATE_ENABLE;
+  huart1.AdvancedInit.AutoBaudRateMode = UART_ADVFEATURE_AUTOBAUDRATE_ONSTARTBIT;
   if (HAL_UART_Init(&huart1) != HAL_OK)
   {
     Error_Handler();

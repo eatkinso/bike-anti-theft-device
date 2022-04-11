@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc9xAmwL.s 			page 1
+ARM GAS  /tmp/cc1L9RAu.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
   29:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****  * \author    Daniel Jaeckle ( STACKFORCE )
   30:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****  */
   31:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #include "LoRaMac.h"
-ARM GAS  /tmp/cc9xAmwL.s 			page 2
+ARM GAS  /tmp/cc1L9RAu.s 			page 2
 
 
   32:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
   86:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #include "RegionAU915.h"
   87:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define AU915_CASE                                 case LORAMAC_REGION_AU915:
   88:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define AU915_IS_ACTIVE( )                         AU915_CASE { return true; }
-ARM GAS  /tmp/cc9xAmwL.s 			page 3
+ARM GAS  /tmp/cc1L9RAu.s 			page 3
 
 
   89:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define AU915_GET_PHY_PARAM( )                     AU915_CASE { return RegionAU915GetPhyParam( getP
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  143:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define CN470_VERIFY( )                            CN470_CASE { return RegionCN470Verify( verify, p
  144:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define CN470_APPLY_CF_LIST( )                     CN470_CASE { RegionCN470ApplyCFList( applyCFList
  145:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define CN470_CHAN_MASK_SET( )                     CN470_CASE { return RegionCN470ChanMaskSet( chan
-ARM GAS  /tmp/cc9xAmwL.s 			page 4
+ARM GAS  /tmp/cc1L9RAu.s 			page 4
 
 
  146:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define CN470_COMPUTE_RX_WINDOW_PARAMETERS( )      CN470_CASE { RegionCN470ComputeRxWindowParameter
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  200:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define CN779_LINK_ADR_REQ( )                      CN779_CASE { return RegionCN779LinkAdrReq( linkA
  201:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define CN779_RX_PARAM_SETUP_REQ( )                CN779_CASE { return RegionCN779RxParamSetupReq( 
  202:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define CN779_NEW_CHANNEL_REQ( )                   CN779_CASE { return RegionCN779NewChannelReq( ne
-ARM GAS  /tmp/cc9xAmwL.s 			page 5
+ARM GAS  /tmp/cc1L9RAu.s 			page 5
 
 
  203:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define CN779_TX_PARAM_SETUP_REQ( )                CN779_CASE { return RegionCN779TxParamSetupReq( 
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  257:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define EU433_NEXT_CHANNEL( )                      EU433_CASE { return RegionEU433NextChannel( next
  258:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define EU433_CHANNEL_ADD( )                       EU433_CASE { return RegionEU433ChannelAdd( chann
  259:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define EU433_CHANNEL_REMOVE( )                    EU433_CASE { return RegionEU433ChannelsRemove( c
-ARM GAS  /tmp/cc9xAmwL.s 			page 6
+ARM GAS  /tmp/cc1L9RAu.s 			page 6
 
 
  260:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define EU433_SET_CONTINUOUS_WAVE( )               EU433_CASE { RegionEU433SetContinuousWave( conti
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  314:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #else
  315:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define EU868_IS_ACTIVE( )
  316:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define EU868_GET_PHY_PARAM( )
-ARM GAS  /tmp/cc9xAmwL.s 			page 7
+ARM GAS  /tmp/cc1L9RAu.s 			page 7
 
 
  317:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define EU868_SET_BAND_TX_DONE( )
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  371:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define KR920_VERIFY( )
  372:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define KR920_APPLY_CF_LIST( )
  373:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define KR920_CHAN_MASK_SET( )
-ARM GAS  /tmp/cc9xAmwL.s 			page 8
+ARM GAS  /tmp/cc1L9RAu.s 			page 8
 
 
  374:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define KR920_COMPUTE_RX_WINDOW_PARAMETERS( )
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  428:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define IN865_LINK_ADR_REQ( )
  429:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define IN865_RX_PARAM_SETUP_REQ( )
  430:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define IN865_NEW_CHANNEL_REQ( )
-ARM GAS  /tmp/cc9xAmwL.s 			page 9
+ARM GAS  /tmp/cc1L9RAu.s 			page 9
 
 
  431:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define IN865_TX_PARAM_SETUP_REQ( )
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  485:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define US915_NEXT_CHANNEL( )
  486:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define US915_CHANNEL_ADD( )
  487:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define US915_CHANNEL_REMOVE( )
-ARM GAS  /tmp/cc9xAmwL.s 			page 10
+ARM GAS  /tmp/cc1L9RAu.s 			page 10
 
 
  488:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #define US915_SET_CONTINUOUS_WAVE( )
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  542:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** #endif
  543:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** 
  544:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** bool RegionIsActive( LoRaMacRegion_t region )
-ARM GAS  /tmp/cc9xAmwL.s 			page 11
+ARM GAS  /tmp/cc1L9RAu.s 			page 11
 
 
  545:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** {
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
   60              		.section	.text.RegionGetPhyParam,"ax",%progbits
   61              		.align	1
   62              		.global	RegionGetPhyParam
-ARM GAS  /tmp/cc9xAmwL.s 			page 12
+ARM GAS  /tmp/cc1L9RAu.s 			page 12
 
 
   63              		.syntax unified
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
   99 0014 009B     		ldr	r3, [sp]
  100 0016 0193     		str	r3, [sp, #4]
  101 0018 02E0     		b	.L10
-ARM GAS  /tmp/cc9xAmwL.s 			page 13
+ARM GAS  /tmp/cc1L9RAu.s 			page 13
 
 
  102              	.L7:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  142              		.thumb
  143              		.thumb_func
  144              		.fpu softvfp
-ARM GAS  /tmp/cc9xAmwL.s 			page 14
+ARM GAS  /tmp/cc1L9RAu.s 			page 14
 
 
  146              	RegionSetBandTxDone:
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  594:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU433_SET_BAND_TX_DONE( );
  176              		.loc 1 594 34 view .LVU37
  595:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU868_SET_BAND_TX_DONE( );
-ARM GAS  /tmp/cc9xAmwL.s 			page 15
+ARM GAS  /tmp/cc1L9RAu.s 			page 15
 
 
  177              		.loc 1 595 34 view .LVU38
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  222 0008 02D0     		beq	.L19
  223 000a 082B     		cmp	r3, #8
  224 000c 03D0     		beq	.L20
-ARM GAS  /tmp/cc9xAmwL.s 			page 16
+ARM GAS  /tmp/cc1L9RAu.s 			page 16
 
 
  225              	.LVL20:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  250              		.loc 1 627 1 is_stmt 0 view .LVU62
  251 001a F8E7     		b	.L18
  252              		.cfi_endproc
-ARM GAS  /tmp/cc9xAmwL.s 			page 17
+ARM GAS  /tmp/cc1L9RAu.s 			page 17
 
 
  253              	.LFE107:
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  647:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****     }
  648:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** }
  290              		.loc 1 648 1 is_stmt 0 view .LVU67
-ARM GAS  /tmp/cc9xAmwL.s 			page 18
+ARM GAS  /tmp/cc1L9RAu.s 			page 18
 
 
  291 0012 08BD     		pop	{r3, pc}
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  332              		.loc 1 651 1 is_stmt 0 view .LVU81
  333 0000 08B5     		push	{r3, lr}
  334              	.LCFI7:
-ARM GAS  /tmp/cc9xAmwL.s 			page 19
+ARM GAS  /tmp/cc1L9RAu.s 			page 19
 
 
  335              		.cfi_def_cfa_offset 8
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  659:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         KR920_APPLY_CF_LIST( );
  364              		.loc 1 659 31 view .LVU91
  660:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         IN865_APPLY_CF_LIST( );
-ARM GAS  /tmp/cc9xAmwL.s 			page 20
+ARM GAS  /tmp/cc1L9RAu.s 			page 20
 
 
  365              		.loc 1 660 31 view .LVU92
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  680:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU868_CHAN_MASK_SET( );
  681:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         KR920_CHAN_MASK_SET( );
  682:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         IN865_CHAN_MASK_SET( );
-ARM GAS  /tmp/cc9xAmwL.s 			page 21
+ARM GAS  /tmp/cc1L9RAu.s 			page 21
 
 
  683:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         US915_CHAN_MASK_SET( );
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  444              	.LVL47:
  445              	.LFB111:
  691:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** 
-ARM GAS  /tmp/cc9xAmwL.s 			page 22
+ARM GAS  /tmp/cc1L9RAu.s 			page 22
 
 
  692:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** void RegionComputeRxWindowParameters( LoRaMacRegion_t region, int8_t datarate, uint8_t minRxSymbols
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  698:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         CN779_COMPUTE_RX_WINDOW_PARAMETERS( );
  478              		.loc 1 698 46 view .LVU121
  699:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU433_COMPUTE_RX_WINDOW_PARAMETERS( );
-ARM GAS  /tmp/cc9xAmwL.s 			page 23
+ARM GAS  /tmp/cc1L9RAu.s 			page 23
 
 
  479              		.loc 1 699 46 view .LVU122
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  524 0004 0846     		mov	r0, r1
  525              	.LVL57:
  526              		.loc 1 714 1 view .LVU134
-ARM GAS  /tmp/cc9xAmwL.s 			page 24
+ARM GAS  /tmp/cc1L9RAu.s 			page 24
 
 
  527 0006 1146     		mov	r1, r2
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  554              		.loc 1 723 27 view .LVU145
  724:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         US915_RX_CONFIG( );
  555              		.loc 1 724 27 view .LVU146
-ARM GAS  /tmp/cc9xAmwL.s 			page 25
+ARM GAS  /tmp/cc1L9RAu.s 			page 25
 
 
  725:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         RU864_RX_CONFIG( );
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  741:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         CN779_TX_CONFIG( );
  742:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU433_TX_CONFIG( );
  743:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU868_TX_CONFIG( );
-ARM GAS  /tmp/cc9xAmwL.s 			page 26
+ARM GAS  /tmp/cc1L9RAu.s 			page 26
 
 
  744:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         KR920_TX_CONFIG( );
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  635              		.fpu softvfp
  637              	RegionLinkAdrReq:
  638              	.LVL73:
-ARM GAS  /tmp/cc9xAmwL.s 			page 27
+ARM GAS  /tmp/cc1L9RAu.s 			page 27
 
 
  639              	.LFB114:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  672              		.cfi_remember_state
  673              		.cfi_def_cfa_offset 4
  674              		@ sp needed
-ARM GAS  /tmp/cc9xAmwL.s 			page 28
+ARM GAS  /tmp/cc1L9RAu.s 			page 28
 
 
  675 001c 5DF804FB 		ldr	pc, [sp], #4
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  719              	.LFB115:
  775:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** 
  776:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** uint8_t RegionRxParamSetupReq( LoRaMacRegion_t region, RxParamSetupReqParams_t* rxParamSetupReq )
-ARM GAS  /tmp/cc9xAmwL.s 			page 29
+ARM GAS  /tmp/cc1L9RAu.s 			page 29
 
 
  777:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** {
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  785:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         KR920_RX_PARAM_SETUP_REQ( );
  750              		.loc 1 785 9 view .LVU194
  751 0012 FFF7FEFF 		bl	RegionEU868RxParamSetupReq
-ARM GAS  /tmp/cc9xAmwL.s 			page 30
+ARM GAS  /tmp/cc1L9RAu.s 			page 30
 
 
  752              	.LVL86:
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  798              	.LVL91:
  799              	.L66:
  800:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****     {
-ARM GAS  /tmp/cc9xAmwL.s 			page 31
+ARM GAS  /tmp/cc1L9RAu.s 			page 31
 
 
  801:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         AS923_NEW_CHANNEL_REQ( );
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  827              		.section	.text.RegionTxParamSetupReq,"ax",%progbits
  828              		.align	1
  829              		.global	RegionTxParamSetupReq
-ARM GAS  /tmp/cc9xAmwL.s 			page 32
+ARM GAS  /tmp/cc1L9RAu.s 			page 32
 
 
  830              		.syntax unified
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  863              		.loc 1 822 36 is_stmt 1 view .LVU221
  823:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         CN470_TX_PARAM_SETUP_REQ( );
  864              		.loc 1 823 36 view .LVU222
-ARM GAS  /tmp/cc9xAmwL.s 			page 33
+ARM GAS  /tmp/cc1L9RAu.s 			page 33
 
 
  824:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         CN779_TX_PARAM_SETUP_REQ( );
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  908 0004 0846     		mov	r0, r1
  909              	.LVL104:
  841:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****     switch( region )
-ARM GAS  /tmp/cc9xAmwL.s 			page 34
+ARM GAS  /tmp/cc1L9RAu.s 			page 34
 
 
  910              		.loc 1 841 5 is_stmt 1 view .LVU235
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  851:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         RU864_DL_CHANNEL_REQ( );
  937              		.loc 1 851 9 view .LVU247
  938 0018 FFF7FEFF 		bl	RegionUS915DlChannelReq
-ARM GAS  /tmp/cc9xAmwL.s 			page 35
+ARM GAS  /tmp/cc1L9RAu.s 			page 35
 
 
  939              	.LVL109:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  873:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         RU864_ALTERNATE_DR( );
  874:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         default:
  875:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         {
-ARM GAS  /tmp/cc9xAmwL.s 			page 36
+ARM GAS  /tmp/cc1L9RAu.s 			page 36
 
 
  876:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****             return 0;
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  882:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** {
  1018              		.loc 1 882 1 is_stmt 1 view -0
  1019              		.cfi_startproc
-ARM GAS  /tmp/cc9xAmwL.s 			page 37
+ARM GAS  /tmp/cc1L9RAu.s 			page 37
 
 
  1020              		@ args = 4, pretend = 0, frame = 0
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  1052              		.loc 1 888 30 view .LVU275
  889:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU868_NEXT_CHANNEL( );
  1053              		.loc 1 889 30 view .LVU276
-ARM GAS  /tmp/cc9xAmwL.s 			page 38
+ARM GAS  /tmp/cc1L9RAu.s 			page 38
 
 
  890:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         KR920_NEXT_CHANNEL( );
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  1099 0006 052B     		cmp	r3, #5
  1100 0008 03D0     		beq	.L89
  1101 000a 082B     		cmp	r3, #8
-ARM GAS  /tmp/cc9xAmwL.s 			page 39
+ARM GAS  /tmp/cc1L9RAu.s 			page 39
 
 
  1102 000c 04D0     		beq	.L90
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  914:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         RU864_CHANNEL_ADD( );
  1128              		.loc 1 914 9 is_stmt 0 view .LVU299
  1129 001c F8E7     		b	.L91
-ARM GAS  /tmp/cc9xAmwL.s 			page 40
+ARM GAS  /tmp/cc1L9RAu.s 			page 40
 
 
  1130              		.cfi_endproc
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  1165              		.loc 1 942 1 is_stmt 0 view .LVU303
  1166 0010 08BD     		pop	{r3, pc}
  1167              	.LVL137:
-ARM GAS  /tmp/cc9xAmwL.s 			page 41
+ARM GAS  /tmp/cc1L9RAu.s 			page 41
 
 
  1168              	.L94:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  1209              	.LCFI24:
  1210              		.cfi_def_cfa_offset 8
  1211              		.cfi_offset 3, -8
-ARM GAS  /tmp/cc9xAmwL.s 			page 42
+ARM GAS  /tmp/cc1L9RAu.s 			page 42
 
 
  1212              		.cfi_offset 14, -4
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  954:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         IN865_SET_CONTINUOUS_WAVE( );
  1240              		.loc 1 954 37 view .LVU328
  955:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         US915_SET_CONTINUOUS_WAVE( );
-ARM GAS  /tmp/cc9xAmwL.s 			page 43
+ARM GAS  /tmp/cc1L9RAu.s 			page 43
 
 
  1241              		.loc 1 955 37 view .LVU329
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  973:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU433_APPLY_DR_OFFSET( );
  974:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU868_APPLY_DR_OFFSET( );
  975:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         KR920_APPLY_DR_OFFSET( );
-ARM GAS  /tmp/cc9xAmwL.s 			page 44
+ARM GAS  /tmp/cc1L9RAu.s 			page 44
 
 
  976:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         IN865_APPLY_DR_OFFSET( );
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  1321              		.thumb
  1322              		.thumb_func
  1323              		.fpu softvfp
-ARM GAS  /tmp/cc9xAmwL.s 			page 45
+ARM GAS  /tmp/cc1L9RAu.s 			page 45
 
 
  1325              	RegionRxBeaconSetup:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  1356              		.loc 1 991 33 view .LVU360
  992:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         CN779_RX_BEACON_SETUP( );
  1357              		.loc 1 992 33 view .LVU361
-ARM GAS  /tmp/cc9xAmwL.s 			page 46
+ARM GAS  /tmp/cc1L9RAu.s 			page 46
 
 
  993:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c ****         EU433_RX_BEACON_SETUP( );
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
 1014:Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.c **** }
  1397              		.loc 1 1014 1 is_stmt 0 view .LVU376
  1398 0000 0048     		ldr	r0, .L116
-ARM GAS  /tmp/cc9xAmwL.s 			page 47
+ARM GAS  /tmp/cc1L9RAu.s 			page 47
 
 
  1399 0002 7047     		bx	lr
@@ -2780,58 +2780,58 @@ ARM GAS  /tmp/cc9xAmwL.s 			page 1
  1416              		.file 9 "Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.h"
  1417              		.file 10 "Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionEU868.h"
  1418              		.file 11 "Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionUS915.h"
-ARM GAS  /tmp/cc9xAmwL.s 			page 48
+ARM GAS  /tmp/cc1L9RAu.s 			page 48
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 Region.c
-     /tmp/cc9xAmwL.s:16     .text.RegionIsActive:0000000000000000 $t
-     /tmp/cc9xAmwL.s:24     .text.RegionIsActive:0000000000000000 RegionIsActive
-     /tmp/cc9xAmwL.s:61     .text.RegionGetPhyParam:0000000000000000 $t
-     /tmp/cc9xAmwL.s:68     .text.RegionGetPhyParam:0000000000000000 RegionGetPhyParam
-     /tmp/cc9xAmwL.s:139    .text.RegionSetBandTxDone:0000000000000000 $t
-     /tmp/cc9xAmwL.s:146    .text.RegionSetBandTxDone:0000000000000000 RegionSetBandTxDone
-     /tmp/cc9xAmwL.s:197    .text.RegionInitDefaults:0000000000000000 $t
-     /tmp/cc9xAmwL.s:204    .text.RegionInitDefaults:0000000000000000 RegionInitDefaults
-     /tmp/cc9xAmwL.s:256    .text.RegionVerify:0000000000000000 $t
-     /tmp/cc9xAmwL.s:263    .text.RegionVerify:0000000000000000 RegionVerify
-     /tmp/cc9xAmwL.s:318    .text.RegionApplyCFList:0000000000000000 $t
-     /tmp/cc9xAmwL.s:325    .text.RegionApplyCFList:0000000000000000 RegionApplyCFList
-     /tmp/cc9xAmwL.s:377    .text.RegionChanMaskSet:0000000000000000 $t
-     /tmp/cc9xAmwL.s:384    .text.RegionChanMaskSet:0000000000000000 RegionChanMaskSet
-     /tmp/cc9xAmwL.s:436    .text.RegionComputeRxWindowParameters:0000000000000000 $t
-     /tmp/cc9xAmwL.s:443    .text.RegionComputeRxWindowParameters:0000000000000000 RegionComputeRxWindowParameters
-     /tmp/cc9xAmwL.s:503    .text.RegionRxConfig:0000000000000000 $t
-     /tmp/cc9xAmwL.s:510    .text.RegionRxConfig:0000000000000000 RegionRxConfig
-     /tmp/cc9xAmwL.s:565    .text.RegionTxConfig:0000000000000000 $t
-     /tmp/cc9xAmwL.s:572    .text.RegionTxConfig:0000000000000000 RegionTxConfig
-     /tmp/cc9xAmwL.s:630    .text.RegionLinkAdrReq:0000000000000000 $t
-     /tmp/cc9xAmwL.s:637    .text.RegionLinkAdrReq:0000000000000000 RegionLinkAdrReq
-     /tmp/cc9xAmwL.s:710    .text.RegionRxParamSetupReq:0000000000000000 $t
-     /tmp/cc9xAmwL.s:717    .text.RegionRxParamSetupReq:0000000000000000 RegionRxParamSetupReq
-     /tmp/cc9xAmwL.s:769    .text.RegionNewChannelReq:0000000000000000 $t
-     /tmp/cc9xAmwL.s:776    .text.RegionNewChannelReq:0000000000000000 RegionNewChannelReq
-     /tmp/cc9xAmwL.s:828    .text.RegionTxParamSetupReq:0000000000000000 $t
-     /tmp/cc9xAmwL.s:835    .text.RegionTxParamSetupReq:0000000000000000 RegionTxParamSetupReq
-     /tmp/cc9xAmwL.s:887    .text.RegionDlChannelReq:0000000000000000 $t
-     /tmp/cc9xAmwL.s:894    .text.RegionDlChannelReq:0000000000000000 RegionDlChannelReq
-     /tmp/cc9xAmwL.s:946    .text.RegionAlternateDr:0000000000000000 $t
-     /tmp/cc9xAmwL.s:953    .text.RegionAlternateDr:0000000000000000 RegionAlternateDr
-     /tmp/cc9xAmwL.s:1008   .text.RegionNextChannel:0000000000000000 $t
-     /tmp/cc9xAmwL.s:1015   .text.RegionNextChannel:0000000000000000 RegionNextChannel
-     /tmp/cc9xAmwL.s:1075   .text.RegionChannelAdd:0000000000000000 $t
-     /tmp/cc9xAmwL.s:1082   .text.RegionChannelAdd:0000000000000000 RegionChannelAdd
-     /tmp/cc9xAmwL.s:1134   .text.RegionChannelsRemove:0000000000000000 $t
-     /tmp/cc9xAmwL.s:1141   .text.RegionChannelsRemove:0000000000000000 RegionChannelsRemove
-     /tmp/cc9xAmwL.s:1193   .text.RegionSetContinuousWave:0000000000000000 $t
-     /tmp/cc9xAmwL.s:1200   .text.RegionSetContinuousWave:0000000000000000 RegionSetContinuousWave
-     /tmp/cc9xAmwL.s:1252   .text.RegionApplyDrOffset:0000000000000000 $t
-     /tmp/cc9xAmwL.s:1259   .text.RegionApplyDrOffset:0000000000000000 RegionApplyDrOffset
-     /tmp/cc9xAmwL.s:1318   .text.RegionRxBeaconSetup:0000000000000000 $t
-     /tmp/cc9xAmwL.s:1325   .text.RegionRxBeaconSetup:0000000000000000 RegionRxBeaconSetup
-     /tmp/cc9xAmwL.s:1380   .text.RegionGetVersion:0000000000000000 $t
-     /tmp/cc9xAmwL.s:1387   .text.RegionGetVersion:0000000000000000 RegionGetVersion
-     /tmp/cc9xAmwL.s:1403   .text.RegionGetVersion:0000000000000004 $d
+     /tmp/cc1L9RAu.s:16     .text.RegionIsActive:0000000000000000 $t
+     /tmp/cc1L9RAu.s:24     .text.RegionIsActive:0000000000000000 RegionIsActive
+     /tmp/cc1L9RAu.s:61     .text.RegionGetPhyParam:0000000000000000 $t
+     /tmp/cc1L9RAu.s:68     .text.RegionGetPhyParam:0000000000000000 RegionGetPhyParam
+     /tmp/cc1L9RAu.s:139    .text.RegionSetBandTxDone:0000000000000000 $t
+     /tmp/cc1L9RAu.s:146    .text.RegionSetBandTxDone:0000000000000000 RegionSetBandTxDone
+     /tmp/cc1L9RAu.s:197    .text.RegionInitDefaults:0000000000000000 $t
+     /tmp/cc1L9RAu.s:204    .text.RegionInitDefaults:0000000000000000 RegionInitDefaults
+     /tmp/cc1L9RAu.s:256    .text.RegionVerify:0000000000000000 $t
+     /tmp/cc1L9RAu.s:263    .text.RegionVerify:0000000000000000 RegionVerify
+     /tmp/cc1L9RAu.s:318    .text.RegionApplyCFList:0000000000000000 $t
+     /tmp/cc1L9RAu.s:325    .text.RegionApplyCFList:0000000000000000 RegionApplyCFList
+     /tmp/cc1L9RAu.s:377    .text.RegionChanMaskSet:0000000000000000 $t
+     /tmp/cc1L9RAu.s:384    .text.RegionChanMaskSet:0000000000000000 RegionChanMaskSet
+     /tmp/cc1L9RAu.s:436    .text.RegionComputeRxWindowParameters:0000000000000000 $t
+     /tmp/cc1L9RAu.s:443    .text.RegionComputeRxWindowParameters:0000000000000000 RegionComputeRxWindowParameters
+     /tmp/cc1L9RAu.s:503    .text.RegionRxConfig:0000000000000000 $t
+     /tmp/cc1L9RAu.s:510    .text.RegionRxConfig:0000000000000000 RegionRxConfig
+     /tmp/cc1L9RAu.s:565    .text.RegionTxConfig:0000000000000000 $t
+     /tmp/cc1L9RAu.s:572    .text.RegionTxConfig:0000000000000000 RegionTxConfig
+     /tmp/cc1L9RAu.s:630    .text.RegionLinkAdrReq:0000000000000000 $t
+     /tmp/cc1L9RAu.s:637    .text.RegionLinkAdrReq:0000000000000000 RegionLinkAdrReq
+     /tmp/cc1L9RAu.s:710    .text.RegionRxParamSetupReq:0000000000000000 $t
+     /tmp/cc1L9RAu.s:717    .text.RegionRxParamSetupReq:0000000000000000 RegionRxParamSetupReq
+     /tmp/cc1L9RAu.s:769    .text.RegionNewChannelReq:0000000000000000 $t
+     /tmp/cc1L9RAu.s:776    .text.RegionNewChannelReq:0000000000000000 RegionNewChannelReq
+     /tmp/cc1L9RAu.s:828    .text.RegionTxParamSetupReq:0000000000000000 $t
+     /tmp/cc1L9RAu.s:835    .text.RegionTxParamSetupReq:0000000000000000 RegionTxParamSetupReq
+     /tmp/cc1L9RAu.s:887    .text.RegionDlChannelReq:0000000000000000 $t
+     /tmp/cc1L9RAu.s:894    .text.RegionDlChannelReq:0000000000000000 RegionDlChannelReq
+     /tmp/cc1L9RAu.s:946    .text.RegionAlternateDr:0000000000000000 $t
+     /tmp/cc1L9RAu.s:953    .text.RegionAlternateDr:0000000000000000 RegionAlternateDr
+     /tmp/cc1L9RAu.s:1008   .text.RegionNextChannel:0000000000000000 $t
+     /tmp/cc1L9RAu.s:1015   .text.RegionNextChannel:0000000000000000 RegionNextChannel
+     /tmp/cc1L9RAu.s:1075   .text.RegionChannelAdd:0000000000000000 $t
+     /tmp/cc1L9RAu.s:1082   .text.RegionChannelAdd:0000000000000000 RegionChannelAdd
+     /tmp/cc1L9RAu.s:1134   .text.RegionChannelsRemove:0000000000000000 $t
+     /tmp/cc1L9RAu.s:1141   .text.RegionChannelsRemove:0000000000000000 RegionChannelsRemove
+     /tmp/cc1L9RAu.s:1193   .text.RegionSetContinuousWave:0000000000000000 $t
+     /tmp/cc1L9RAu.s:1200   .text.RegionSetContinuousWave:0000000000000000 RegionSetContinuousWave
+     /tmp/cc1L9RAu.s:1252   .text.RegionApplyDrOffset:0000000000000000 $t
+     /tmp/cc1L9RAu.s:1259   .text.RegionApplyDrOffset:0000000000000000 RegionApplyDrOffset
+     /tmp/cc1L9RAu.s:1318   .text.RegionRxBeaconSetup:0000000000000000 $t
+     /tmp/cc1L9RAu.s:1325   .text.RegionRxBeaconSetup:0000000000000000 RegionRxBeaconSetup
+     /tmp/cc1L9RAu.s:1380   .text.RegionGetVersion:0000000000000000 $t
+     /tmp/cc1L9RAu.s:1387   .text.RegionGetVersion:0000000000000000 RegionGetVersion
+     /tmp/cc1L9RAu.s:1403   .text.RegionGetVersion:0000000000000004 $d
 
 UNDEFINED SYMBOLS
 RegionEU868GetPhyParam
@@ -2840,7 +2840,7 @@ RegionEU868SetBandTxDone
 RegionUS915SetBandTxDone
 RegionEU868InitDefaults
 RegionUS915InitDefaults
-ARM GAS  /tmp/cc9xAmwL.s 			page 49
+ARM GAS  /tmp/cc1L9RAu.s 			page 49
 
 
 RegionEU868Verify

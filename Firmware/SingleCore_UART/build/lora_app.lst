@@ -1,0 +1,348 @@
+ARM GAS  /tmp/ccWK8mea.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"lora_app.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.OnRxData,"ax",%progbits
+  16              		.align	1
+  17              		.arch armv7e-m
+  18              		.syntax unified
+  19              		.thumb
+  20              		.thumb_func
+  21              		.fpu softvfp
+  23              	OnRxData:
+  24              	.LVL0:
+  25              	.LFB985:
+  26              		.file 1 "LoRaWAN/App/lora_app.c"
+   1:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN Header */
+   2:LoRaWAN/App/lora_app.c **** /**
+   3:LoRaWAN/App/lora_app.c ****   ******************************************************************************
+   4:LoRaWAN/App/lora_app.c ****   * @file    lora_app.c
+   5:LoRaWAN/App/lora_app.c ****   * @author  MCD Application Team
+   6:LoRaWAN/App/lora_app.c ****   * @brief   Application of the LRWAN Middleware
+   7:LoRaWAN/App/lora_app.c ****   ******************************************************************************
+   8:LoRaWAN/App/lora_app.c ****   * @attention
+   9:LoRaWAN/App/lora_app.c ****   *
+  10:LoRaWAN/App/lora_app.c ****   * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
+  11:LoRaWAN/App/lora_app.c ****   * All rights reserved.</center></h2>
+  12:LoRaWAN/App/lora_app.c ****   *
+  13:LoRaWAN/App/lora_app.c ****   * This software component is licensed by ST under Ultimate Liberty license
+  14:LoRaWAN/App/lora_app.c ****   * SLA0044, the "License"; You may not use this file except in compliance with
+  15:LoRaWAN/App/lora_app.c ****   * the License. You may obtain a copy of the License at:
+  16:LoRaWAN/App/lora_app.c ****   *                             www.st.com/SLA0044
+  17:LoRaWAN/App/lora_app.c ****   *
+  18:LoRaWAN/App/lora_app.c ****   ******************************************************************************
+  19:LoRaWAN/App/lora_app.c ****   */
+  20:LoRaWAN/App/lora_app.c **** /* USER CODE END Header */
+  21:LoRaWAN/App/lora_app.c **** 
+  22:LoRaWAN/App/lora_app.c **** /* Includes ------------------------------------------------------------------*/
+  23:LoRaWAN/App/lora_app.c **** #include "platform.h"
+  24:LoRaWAN/App/lora_app.c **** #include "Region.h" /* Needed for LORAWAN_DEFAULT_DATA_RATE */
+  25:LoRaWAN/App/lora_app.c **** #include "sys_app.h"
+  26:LoRaWAN/App/lora_app.c **** #include "lora_app.h"
+  27:LoRaWAN/App/lora_app.c **** #include "stm32_seq.h"
+  28:LoRaWAN/App/lora_app.c **** #include "LmHandler.h"
+  29:LoRaWAN/App/lora_app.c **** 
+  30:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN Includes */
+  31:LoRaWAN/App/lora_app.c **** 
+  32:LoRaWAN/App/lora_app.c **** /* USER CODE END Includes */
+ARM GAS  /tmp/ccWK8mea.s 			page 2
+
+
+  33:LoRaWAN/App/lora_app.c **** 
+  34:LoRaWAN/App/lora_app.c **** /* External variables ---------------------------------------------------------*/
+  35:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN EV */
+  36:LoRaWAN/App/lora_app.c **** 
+  37:LoRaWAN/App/lora_app.c **** /* USER CODE END EV */
+  38:LoRaWAN/App/lora_app.c **** 
+  39:LoRaWAN/App/lora_app.c **** /* Private typedef -----------------------------------------------------------*/
+  40:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN PTD */
+  41:LoRaWAN/App/lora_app.c **** 
+  42:LoRaWAN/App/lora_app.c **** /* USER CODE END PTD */
+  43:LoRaWAN/App/lora_app.c **** 
+  44:LoRaWAN/App/lora_app.c **** /* Private define ------------------------------------------------------------*/
+  45:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN PD */
+  46:LoRaWAN/App/lora_app.c **** 
+  47:LoRaWAN/App/lora_app.c **** /* USER CODE END PD */
+  48:LoRaWAN/App/lora_app.c **** 
+  49:LoRaWAN/App/lora_app.c **** /* Private macro -------------------------------------------------------------*/
+  50:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN PM */
+  51:LoRaWAN/App/lora_app.c **** 
+  52:LoRaWAN/App/lora_app.c **** /* USER CODE END PM */
+  53:LoRaWAN/App/lora_app.c **** 
+  54:LoRaWAN/App/lora_app.c **** /* Private function prototypes -----------------------------------------------*/
+  55:LoRaWAN/App/lora_app.c **** /**
+  56:LoRaWAN/App/lora_app.c ****   * @brief  join event callback function
+  57:LoRaWAN/App/lora_app.c ****   * @param  joinParams status of join
+  58:LoRaWAN/App/lora_app.c ****   */
+  59:LoRaWAN/App/lora_app.c **** static void OnJoinRequest(LmHandlerJoinParams_t *joinParams);
+  60:LoRaWAN/App/lora_app.c **** 
+  61:LoRaWAN/App/lora_app.c **** /**
+  62:LoRaWAN/App/lora_app.c ****   * @brief  tx event callback function
+  63:LoRaWAN/App/lora_app.c ****   * @param  params status of last Tx
+  64:LoRaWAN/App/lora_app.c ****   */
+  65:LoRaWAN/App/lora_app.c **** static void OnTxData(LmHandlerTxParams_t *params);
+  66:LoRaWAN/App/lora_app.c **** 
+  67:LoRaWAN/App/lora_app.c **** /**
+  68:LoRaWAN/App/lora_app.c ****   * @brief callback when LoRa application has received a frame
+  69:LoRaWAN/App/lora_app.c ****   * @param appData data received in the last Rx
+  70:LoRaWAN/App/lora_app.c ****   * @param params status of last Rx
+  71:LoRaWAN/App/lora_app.c ****   */
+  72:LoRaWAN/App/lora_app.c **** static void OnRxData(LmHandlerAppData_t *appData, LmHandlerRxParams_t *params);
+  73:LoRaWAN/App/lora_app.c **** 
+  74:LoRaWAN/App/lora_app.c **** /*!
+  75:LoRaWAN/App/lora_app.c ****  * Will be called each time a Radio IRQ is handled by the MAC layer
+  76:LoRaWAN/App/lora_app.c ****  *
+  77:LoRaWAN/App/lora_app.c ****  */
+  78:LoRaWAN/App/lora_app.c **** static void OnMacProcessNotify(void);
+  79:LoRaWAN/App/lora_app.c **** 
+  80:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN PFP */
+  81:LoRaWAN/App/lora_app.c **** 
+  82:LoRaWAN/App/lora_app.c **** /* USER CODE END PFP */
+  83:LoRaWAN/App/lora_app.c **** 
+  84:LoRaWAN/App/lora_app.c **** /* Private variables ---------------------------------------------------------*/
+  85:LoRaWAN/App/lora_app.c **** /**
+  86:LoRaWAN/App/lora_app.c ****   * @brief LoRaWAN handler Callbacks
+  87:LoRaWAN/App/lora_app.c ****   */
+  88:LoRaWAN/App/lora_app.c **** static LmHandlerCallbacks_t LmHandlerCallbacks =
+  89:LoRaWAN/App/lora_app.c **** {
+ARM GAS  /tmp/ccWK8mea.s 			page 3
+
+
+  90:LoRaWAN/App/lora_app.c ****   .GetBatteryLevel =           GetBatteryLevel,
+  91:LoRaWAN/App/lora_app.c ****   .GetTemperature =            GetTemperatureLevel,
+  92:LoRaWAN/App/lora_app.c ****   .GetUniqueId =               GetUniqueId,
+  93:LoRaWAN/App/lora_app.c ****   .GetDevAddr =                GetDevAddr,
+  94:LoRaWAN/App/lora_app.c ****   .OnMacProcess =              OnMacProcessNotify,
+  95:LoRaWAN/App/lora_app.c ****   .OnJoinRequest =             OnJoinRequest,
+  96:LoRaWAN/App/lora_app.c ****   .OnTxData =                  OnTxData,
+  97:LoRaWAN/App/lora_app.c ****   .OnRxData =                  OnRxData
+  98:LoRaWAN/App/lora_app.c **** };
+  99:LoRaWAN/App/lora_app.c **** 
+ 100:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN PV */
+ 101:LoRaWAN/App/lora_app.c **** /* USER CODE END PV */
+ 102:LoRaWAN/App/lora_app.c **** 
+ 103:LoRaWAN/App/lora_app.c **** /* Exported functions ---------------------------------------------------------*/
+ 104:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN EF */
+ 105:LoRaWAN/App/lora_app.c **** 
+ 106:LoRaWAN/App/lora_app.c **** /* USER CODE END EF */
+ 107:LoRaWAN/App/lora_app.c **** 
+ 108:LoRaWAN/App/lora_app.c **** void LoRaWAN_Init(void)
+ 109:LoRaWAN/App/lora_app.c **** {
+ 110:LoRaWAN/App/lora_app.c ****   /* USER CODE BEGIN LoRaWAN_Init_1 */
+ 111:LoRaWAN/App/lora_app.c **** 
+ 112:LoRaWAN/App/lora_app.c ****   /* USER CODE END LoRaWAN_Init_1 */
+ 113:LoRaWAN/App/lora_app.c **** 
+ 114:LoRaWAN/App/lora_app.c ****   /* Init the Lora Stack*/
+ 115:LoRaWAN/App/lora_app.c ****   LmHandlerInit(&LmHandlerCallbacks);
+ 116:LoRaWAN/App/lora_app.c **** 
+ 117:LoRaWAN/App/lora_app.c ****   /* USER CODE BEGIN LoRaWAN_Init_Last */
+ 118:LoRaWAN/App/lora_app.c **** 
+ 119:LoRaWAN/App/lora_app.c ****   /* USER CODE END LoRaWAN_Init_Last */
+ 120:LoRaWAN/App/lora_app.c **** }
+ 121:LoRaWAN/App/lora_app.c **** 
+ 122:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN PB_Callbacks */
+ 123:LoRaWAN/App/lora_app.c **** 
+ 124:LoRaWAN/App/lora_app.c **** /* USER CODE END PB_Callbacks */
+ 125:LoRaWAN/App/lora_app.c **** 
+ 126:LoRaWAN/App/lora_app.c **** /* Private functions ---------------------------------------------------------*/
+ 127:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN PrFD */
+ 128:LoRaWAN/App/lora_app.c **** 
+ 129:LoRaWAN/App/lora_app.c **** /* USER CODE END PrFD */
+ 130:LoRaWAN/App/lora_app.c **** 
+ 131:LoRaWAN/App/lora_app.c **** static void OnRxData(LmHandlerAppData_t *appData, LmHandlerRxParams_t *params)
+ 132:LoRaWAN/App/lora_app.c **** {
+  27              		.loc 1 132 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+ 133:LoRaWAN/App/lora_app.c ****   /* USER CODE BEGIN OnRxData_1 */
+ 134:LoRaWAN/App/lora_app.c ****   /* USER CODE END OnRxData_1 */
+ 135:LoRaWAN/App/lora_app.c **** }
+  32              		.loc 1 135 1 view .LVU1
+  33 0000 7047     		bx	lr
+  34              		.cfi_endproc
+  35              	.LFE985:
+  37              		.section	.text.OnTxData,"ax",%progbits
+  38              		.align	1
+ARM GAS  /tmp/ccWK8mea.s 			page 4
+
+
+  39              		.syntax unified
+  40              		.thumb
+  41              		.thumb_func
+  42              		.fpu softvfp
+  44              	OnTxData:
+  45              	.LVL1:
+  46              	.LFB986:
+ 136:LoRaWAN/App/lora_app.c **** 
+ 137:LoRaWAN/App/lora_app.c **** /* USER CODE BEGIN PrFD_LedEvents */
+ 138:LoRaWAN/App/lora_app.c **** 
+ 139:LoRaWAN/App/lora_app.c **** /* USER CODE END PrFD_LedEvents */
+ 140:LoRaWAN/App/lora_app.c **** 
+ 141:LoRaWAN/App/lora_app.c **** static void OnTxData(LmHandlerTxParams_t *params)
+ 142:LoRaWAN/App/lora_app.c **** {
+  47              		.loc 1 142 1 view -0
+  48              		.cfi_startproc
+  49              		@ args = 0, pretend = 0, frame = 0
+  50              		@ frame_needed = 0, uses_anonymous_args = 0
+  51              		@ link register save eliminated.
+ 143:LoRaWAN/App/lora_app.c ****   /* USER CODE BEGIN OnTxData_1 */
+ 144:LoRaWAN/App/lora_app.c ****   /* USER CODE END OnTxData_1 */
+ 145:LoRaWAN/App/lora_app.c **** }
+  52              		.loc 1 145 1 view .LVU3
+  53 0000 7047     		bx	lr
+  54              		.cfi_endproc
+  55              	.LFE986:
+  57              		.section	.text.OnJoinRequest,"ax",%progbits
+  58              		.align	1
+  59              		.syntax unified
+  60              		.thumb
+  61              		.thumb_func
+  62              		.fpu softvfp
+  64              	OnJoinRequest:
+  65              	.LVL2:
+  66              	.LFB987:
+ 146:LoRaWAN/App/lora_app.c **** 
+ 147:LoRaWAN/App/lora_app.c **** static void OnJoinRequest(LmHandlerJoinParams_t *joinParams)
+ 148:LoRaWAN/App/lora_app.c **** {
+  67              		.loc 1 148 1 view -0
+  68              		.cfi_startproc
+  69              		@ args = 0, pretend = 0, frame = 0
+  70              		@ frame_needed = 0, uses_anonymous_args = 0
+  71              		@ link register save eliminated.
+ 149:LoRaWAN/App/lora_app.c ****   /* USER CODE BEGIN OnJoinRequest_1 */
+ 150:LoRaWAN/App/lora_app.c ****   /* USER CODE END OnJoinRequest_1 */
+ 151:LoRaWAN/App/lora_app.c **** }
+  72              		.loc 1 151 1 view .LVU5
+  73 0000 7047     		bx	lr
+  74              		.cfi_endproc
+  75              	.LFE987:
+  77              		.section	.text.OnMacProcessNotify,"ax",%progbits
+  78              		.align	1
+  79              		.syntax unified
+  80              		.thumb
+  81              		.thumb_func
+  82              		.fpu softvfp
+  84              	OnMacProcessNotify:
+ARM GAS  /tmp/ccWK8mea.s 			page 5
+
+
+  85              	.LFB988:
+ 152:LoRaWAN/App/lora_app.c **** 
+ 153:LoRaWAN/App/lora_app.c **** static void OnMacProcessNotify(void)
+ 154:LoRaWAN/App/lora_app.c **** {
+  86              		.loc 1 154 1 view -0
+  87              		.cfi_startproc
+  88              		@ args = 0, pretend = 0, frame = 0
+  89              		@ frame_needed = 0, uses_anonymous_args = 0
+  90              		@ link register save eliminated.
+ 155:LoRaWAN/App/lora_app.c ****   /* USER CODE BEGIN OnMacProcessNotify_1 */
+ 156:LoRaWAN/App/lora_app.c **** 
+ 157:LoRaWAN/App/lora_app.c ****   /* USER CODE END OnMacProcessNotify_1 */
+ 158:LoRaWAN/App/lora_app.c **** }
+  91              		.loc 1 158 1 view .LVU7
+  92 0000 7047     		bx	lr
+  93              		.cfi_endproc
+  94              	.LFE988:
+  96              		.section	.text.LoRaWAN_Init,"ax",%progbits
+  97              		.align	1
+  98              		.global	LoRaWAN_Init
+  99              		.syntax unified
+ 100              		.thumb
+ 101              		.thumb_func
+ 102              		.fpu softvfp
+ 104              	LoRaWAN_Init:
+ 105              	.LFB984:
+ 109:LoRaWAN/App/lora_app.c ****   /* USER CODE BEGIN LoRaWAN_Init_1 */
+ 106              		.loc 1 109 1 view -0
+ 107              		.cfi_startproc
+ 108              		@ args = 0, pretend = 0, frame = 0
+ 109              		@ frame_needed = 0, uses_anonymous_args = 0
+ 110 0000 08B5     		push	{r3, lr}
+ 111              	.LCFI0:
+ 112              		.cfi_def_cfa_offset 8
+ 113              		.cfi_offset 3, -8
+ 114              		.cfi_offset 14, -4
+ 115:LoRaWAN/App/lora_app.c **** 
+ 115              		.loc 1 115 3 view .LVU9
+ 116 0002 0248     		ldr	r0, .L7
+ 117 0004 FFF7FEFF 		bl	LmHandlerInit
+ 118              	.LVL3:
+ 120:LoRaWAN/App/lora_app.c **** 
+ 119              		.loc 1 120 1 is_stmt 0 view .LVU10
+ 120 0008 08BD     		pop	{r3, pc}
+ 121              	.L8:
+ 122 000a 00BF     		.align	2
+ 123              	.L7:
+ 124 000c 00000000 		.word	.LANCHOR0
+ 125              		.cfi_endproc
+ 126              	.LFE984:
+ 128              		.section	.data.LmHandlerCallbacks,"aw"
+ 129              		.align	2
+ 130              		.set	.LANCHOR0,. + 0
+ 133              	LmHandlerCallbacks:
+ 134 0000 00000000 		.word	GetBatteryLevel
+ 135 0004 00000000 		.word	GetTemperatureLevel
+ 136 0008 00000000 		.word	GetUniqueId
+ARM GAS  /tmp/ccWK8mea.s 			page 6
+
+
+ 137 000c 00000000 		.word	GetDevAddr
+ 138 0010 00000000 		.word	OnMacProcessNotify
+ 139 0014 00000000 		.space	8
+ 139      00000000 
+ 140 001c 00000000 		.word	OnJoinRequest
+ 141 0020 00000000 		.word	OnTxData
+ 142 0024 00000000 		.word	OnRxData
+ 143 0028 00000000 		.space	12
+ 143      00000000 
+ 143      00000000 
+ 144              		.text
+ 145              	.Letext0:
+ 146              		.file 2 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 147              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 148              		.file 4 "Utilities/misc/stm32_systime.h"
+ 149              		.file 5 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacTypes.h"
+ 150              		.file 6 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h"
+ 151              		.file 7 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
+ 152              		.file 8 "Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandlerTypes.h"
+ 153              		.file 9 "Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.h"
+ARM GAS  /tmp/ccWK8mea.s 			page 7
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 lora_app.c
+     /tmp/ccWK8mea.s:16     .text.OnRxData:0000000000000000 $t
+     /tmp/ccWK8mea.s:23     .text.OnRxData:0000000000000000 OnRxData
+     /tmp/ccWK8mea.s:38     .text.OnTxData:0000000000000000 $t
+     /tmp/ccWK8mea.s:44     .text.OnTxData:0000000000000000 OnTxData
+     /tmp/ccWK8mea.s:58     .text.OnJoinRequest:0000000000000000 $t
+     /tmp/ccWK8mea.s:64     .text.OnJoinRequest:0000000000000000 OnJoinRequest
+     /tmp/ccWK8mea.s:78     .text.OnMacProcessNotify:0000000000000000 $t
+     /tmp/ccWK8mea.s:84     .text.OnMacProcessNotify:0000000000000000 OnMacProcessNotify
+     /tmp/ccWK8mea.s:97     .text.LoRaWAN_Init:0000000000000000 $t
+     /tmp/ccWK8mea.s:104    .text.LoRaWAN_Init:0000000000000000 LoRaWAN_Init
+     /tmp/ccWK8mea.s:124    .text.LoRaWAN_Init:000000000000000c $d
+     /tmp/ccWK8mea.s:129    .data.LmHandlerCallbacks:0000000000000000 $d
+     /tmp/ccWK8mea.s:133    .data.LmHandlerCallbacks:0000000000000000 LmHandlerCallbacks
+
+UNDEFINED SYMBOLS
+LmHandlerInit
+GetBatteryLevel
+GetTemperatureLevel
+GetUniqueId
+GetDevAddr

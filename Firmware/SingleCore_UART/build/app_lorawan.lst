@@ -1,0 +1,173 @@
+ARM GAS  /tmp/cchB3gcE.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"app_lorawan.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.MX_LoRaWAN_Init,"ax",%progbits
+  16              		.align	1
+  17              		.global	MX_LoRaWAN_Init
+  18              		.arch armv7e-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	MX_LoRaWAN_Init:
+  25              	.LFB0:
+  26              		.file 1 "LoRaWAN/App/app_lorawan.c"
+   1:LoRaWAN/App/app_lorawan.c **** /* USER CODE BEGIN Header */
+   2:LoRaWAN/App/app_lorawan.c **** /**
+   3:LoRaWAN/App/app_lorawan.c ****   ******************************************************************************
+   4:LoRaWAN/App/app_lorawan.c ****   * @file    app_lorawan.c
+   5:LoRaWAN/App/app_lorawan.c ****   * @author  MCD Application Team
+   6:LoRaWAN/App/app_lorawan.c ****   * @brief   Application of the LRWAN Middleware
+   7:LoRaWAN/App/app_lorawan.c ****   ******************************************************************************
+   8:LoRaWAN/App/app_lorawan.c ****   * @attention
+   9:LoRaWAN/App/app_lorawan.c ****   *
+  10:LoRaWAN/App/app_lorawan.c ****   * <h2><center>&copy; Copyright (c) 2022 STMicroelectronics.
+  11:LoRaWAN/App/app_lorawan.c ****   * All rights reserved.</center></h2>
+  12:LoRaWAN/App/app_lorawan.c ****   *
+  13:LoRaWAN/App/app_lorawan.c ****   * This software component is licensed by ST under Ultimate Liberty license
+  14:LoRaWAN/App/app_lorawan.c ****   * SLA0044, the "License"; You may not use this file except in compliance with
+  15:LoRaWAN/App/app_lorawan.c ****   * the License. You may obtain a copy of the License at:
+  16:LoRaWAN/App/app_lorawan.c ****   *                             www.st.com/SLA0044
+  17:LoRaWAN/App/app_lorawan.c ****   *
+  18:LoRaWAN/App/app_lorawan.c ****   ******************************************************************************
+  19:LoRaWAN/App/app_lorawan.c ****   */
+  20:LoRaWAN/App/app_lorawan.c **** /* USER CODE END Header */
+  21:LoRaWAN/App/app_lorawan.c **** 
+  22:LoRaWAN/App/app_lorawan.c **** /* Includes ------------------------------------------------------------------*/
+  23:LoRaWAN/App/app_lorawan.c **** #include "app_lorawan.h"
+  24:LoRaWAN/App/app_lorawan.c **** #include "lora_app.h"
+  25:LoRaWAN/App/app_lorawan.c **** #include "sys_app.h"
+  26:LoRaWAN/App/app_lorawan.c **** #include "stm32_seq.h"
+  27:LoRaWAN/App/app_lorawan.c **** /* USER CODE BEGIN Includes */
+  28:LoRaWAN/App/app_lorawan.c **** 
+  29:LoRaWAN/App/app_lorawan.c **** /* USER CODE END Includes */
+  30:LoRaWAN/App/app_lorawan.c **** 
+  31:LoRaWAN/App/app_lorawan.c **** /* External variables ---------------------------------------------------------*/
+  32:LoRaWAN/App/app_lorawan.c **** /* USER CODE BEGIN EV */
+ARM GAS  /tmp/cchB3gcE.s 			page 2
+
+
+  33:LoRaWAN/App/app_lorawan.c **** 
+  34:LoRaWAN/App/app_lorawan.c **** /* USER CODE END EV */
+  35:LoRaWAN/App/app_lorawan.c **** 
+  36:LoRaWAN/App/app_lorawan.c **** /* Private typedef -----------------------------------------------------------*/
+  37:LoRaWAN/App/app_lorawan.c **** /* USER CODE BEGIN PTD */
+  38:LoRaWAN/App/app_lorawan.c **** 
+  39:LoRaWAN/App/app_lorawan.c **** /* USER CODE END PTD */
+  40:LoRaWAN/App/app_lorawan.c **** 
+  41:LoRaWAN/App/app_lorawan.c **** /* Private define ------------------------------------------------------------*/
+  42:LoRaWAN/App/app_lorawan.c **** /* USER CODE BEGIN PD */
+  43:LoRaWAN/App/app_lorawan.c **** 
+  44:LoRaWAN/App/app_lorawan.c **** /* USER CODE END PD */
+  45:LoRaWAN/App/app_lorawan.c **** 
+  46:LoRaWAN/App/app_lorawan.c **** /* Private macro -------------------------------------------------------------*/
+  47:LoRaWAN/App/app_lorawan.c **** /* USER CODE BEGIN PM */
+  48:LoRaWAN/App/app_lorawan.c **** 
+  49:LoRaWAN/App/app_lorawan.c **** /* USER CODE END PM */
+  50:LoRaWAN/App/app_lorawan.c **** 
+  51:LoRaWAN/App/app_lorawan.c **** /* Private variables ---------------------------------------------------------*/
+  52:LoRaWAN/App/app_lorawan.c **** 
+  53:LoRaWAN/App/app_lorawan.c **** /* USER CODE BEGIN PV */
+  54:LoRaWAN/App/app_lorawan.c **** 
+  55:LoRaWAN/App/app_lorawan.c **** /* USER CODE END PV */
+  56:LoRaWAN/App/app_lorawan.c **** 
+  57:LoRaWAN/App/app_lorawan.c **** /* Private function prototypes -----------------------------------------------*/
+  58:LoRaWAN/App/app_lorawan.c **** 
+  59:LoRaWAN/App/app_lorawan.c **** /* USER CODE BEGIN PFP */
+  60:LoRaWAN/App/app_lorawan.c **** 
+  61:LoRaWAN/App/app_lorawan.c **** /* USER CODE END PFP */
+  62:LoRaWAN/App/app_lorawan.c **** 
+  63:LoRaWAN/App/app_lorawan.c **** /* Exported functions --------------------------------------------------------*/
+  64:LoRaWAN/App/app_lorawan.c **** 
+  65:LoRaWAN/App/app_lorawan.c **** void MX_LoRaWAN_Init(void)
+  66:LoRaWAN/App/app_lorawan.c **** {
+  27              		.loc 1 66 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 08B5     		push	{r3, lr}
+  32              	.LCFI0:
+  33              		.cfi_def_cfa_offset 8
+  34              		.cfi_offset 3, -8
+  35              		.cfi_offset 14, -4
+  67:LoRaWAN/App/app_lorawan.c ****   /* USER CODE BEGIN MX_LoRaWAN_Init_1 */
+  68:LoRaWAN/App/app_lorawan.c **** 
+  69:LoRaWAN/App/app_lorawan.c ****   /* USER CODE END MX_LoRaWAN_Init_1 */
+  70:LoRaWAN/App/app_lorawan.c ****   SystemApp_Init();
+  36              		.loc 1 70 3 view .LVU1
+  37 0002 FFF7FEFF 		bl	SystemApp_Init
+  38              	.LVL0:
+  71:LoRaWAN/App/app_lorawan.c ****   /* USER CODE BEGIN MX_LoRaWAN_Init_2 */
+  72:LoRaWAN/App/app_lorawan.c **** 
+  73:LoRaWAN/App/app_lorawan.c ****   /* USER CODE END MX_LoRaWAN_Init_2 */
+  74:LoRaWAN/App/app_lorawan.c ****   LoRaWAN_Init();
+  39              		.loc 1 74 3 view .LVU2
+  40 0006 FFF7FEFF 		bl	LoRaWAN_Init
+  41              	.LVL1:
+ARM GAS  /tmp/cchB3gcE.s 			page 3
+
+
+  75:LoRaWAN/App/app_lorawan.c ****   /* USER CODE BEGIN MX_LoRaWAN_Init_3 */
+  76:LoRaWAN/App/app_lorawan.c **** 
+  77:LoRaWAN/App/app_lorawan.c ****   /* USER CODE END MX_LoRaWAN_Init_3 */
+  78:LoRaWAN/App/app_lorawan.c **** }
+  42              		.loc 1 78 1 is_stmt 0 view .LVU3
+  43 000a 08BD     		pop	{r3, pc}
+  44              		.cfi_endproc
+  45              	.LFE0:
+  47              		.section	.text.MX_LoRaWAN_Process,"ax",%progbits
+  48              		.align	1
+  49              		.global	MX_LoRaWAN_Process
+  50              		.syntax unified
+  51              		.thumb
+  52              		.thumb_func
+  53              		.fpu softvfp
+  55              	MX_LoRaWAN_Process:
+  56              	.LFB1:
+  79:LoRaWAN/App/app_lorawan.c **** 
+  80:LoRaWAN/App/app_lorawan.c **** void MX_LoRaWAN_Process(void)
+  81:LoRaWAN/App/app_lorawan.c **** {
+  57              		.loc 1 81 1 is_stmt 1 view -0
+  58              		.cfi_startproc
+  59              		@ args = 0, pretend = 0, frame = 0
+  60              		@ frame_needed = 0, uses_anonymous_args = 0
+  61              		@ link register save eliminated.
+  82:LoRaWAN/App/app_lorawan.c ****   /* USER CODE BEGIN MX_LoRaWAN_Process_1 */
+  83:LoRaWAN/App/app_lorawan.c **** 
+  84:LoRaWAN/App/app_lorawan.c ****   /* USER CODE END MX_LoRaWAN_Process_1 */
+  85:LoRaWAN/App/app_lorawan.c **** }
+  62              		.loc 1 85 1 view .LVU5
+  63 0000 7047     		bx	lr
+  64              		.cfi_endproc
+  65              	.LFE1:
+  67              		.text
+  68              	.Letext0:
+  69              		.file 2 "Core/Inc/sys_app.h"
+  70              		.file 3 "LoRaWAN/App/lora_app.h"
+ARM GAS  /tmp/cchB3gcE.s 			page 4
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 app_lorawan.c
+     /tmp/cchB3gcE.s:16     .text.MX_LoRaWAN_Init:0000000000000000 $t
+     /tmp/cchB3gcE.s:24     .text.MX_LoRaWAN_Init:0000000000000000 MX_LoRaWAN_Init
+     /tmp/cchB3gcE.s:48     .text.MX_LoRaWAN_Process:0000000000000000 $t
+     /tmp/cchB3gcE.s:55     .text.MX_LoRaWAN_Process:0000000000000000 MX_LoRaWAN_Process
+
+UNDEFINED SYMBOLS
+SystemApp_Init
+LoRaWAN_Init

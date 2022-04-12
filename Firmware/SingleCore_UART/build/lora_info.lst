@@ -1,0 +1,276 @@
+ARM GAS  /tmp/cczVjXoW.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"lora_info.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.LoraInfo_Init,"ax",%progbits
+  16              		.align	1
+  17              		.global	LoraInfo_Init
+  18              		.arch armv7e-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	LoraInfo_Init:
+  25              	.LFB104:
+  26              		.file 1 "LoRaWAN/App/lora_info.c"
+   1:LoRaWAN/App/lora_info.c **** /* USER CODE BEGIN Header */
+   2:LoRaWAN/App/lora_info.c **** /**
+   3:LoRaWAN/App/lora_info.c ****   ******************************************************************************
+   4:LoRaWAN/App/lora_info.c ****   * @file    lora_info.c
+   5:LoRaWAN/App/lora_info.c ****   * @author  MCD Application Team
+   6:LoRaWAN/App/lora_info.c ****   * @brief   To give info to the application about LoRaWAN configuration
+   7:LoRaWAN/App/lora_info.c ****   ******************************************************************************
+   8:LoRaWAN/App/lora_info.c ****   * @attention
+   9:LoRaWAN/App/lora_info.c ****   *
+  10:LoRaWAN/App/lora_info.c ****   * <h2><center>&copy; Copyright (c) 2020 STMicroelectronics.
+  11:LoRaWAN/App/lora_info.c ****   * All rights reserved.</center></h2>
+  12:LoRaWAN/App/lora_info.c ****   *
+  13:LoRaWAN/App/lora_info.c ****   * This software component is licensed by ST under BSD 3-Clause license,
+  14:LoRaWAN/App/lora_info.c ****   * the "License"; You may not use this file except in compliance with the
+  15:LoRaWAN/App/lora_info.c ****   * License. You may obtain a copy of the License at:
+  16:LoRaWAN/App/lora_info.c ****   *                        opensource.org/licenses/BSD-3-Clause
+  17:LoRaWAN/App/lora_info.c ****   *
+  18:LoRaWAN/App/lora_info.c ****   ******************************************************************************
+  19:LoRaWAN/App/lora_info.c ****   */
+  20:LoRaWAN/App/lora_info.c **** /* USER CODE END Header */
+  21:LoRaWAN/App/lora_info.c **** 
+  22:LoRaWAN/App/lora_info.c **** /* Includes ------------------------------------------------------------------*/
+  23:LoRaWAN/App/lora_info.c **** #include "LoRaMac.h"
+  24:LoRaWAN/App/lora_info.c **** #include "lora_info.h"
+  25:LoRaWAN/App/lora_info.c **** #include "sys_app.h" /* APP_PRINTF */
+  26:LoRaWAN/App/lora_info.c **** 
+  27:LoRaWAN/App/lora_info.c **** /* USER CODE BEGIN Includes */
+  28:LoRaWAN/App/lora_info.c **** 
+  29:LoRaWAN/App/lora_info.c **** /* USER CODE END Includes */
+  30:LoRaWAN/App/lora_info.c **** 
+  31:LoRaWAN/App/lora_info.c **** /* Private typedef -----------------------------------------------------------*/
+  32:LoRaWAN/App/lora_info.c **** 
+ARM GAS  /tmp/cczVjXoW.s 			page 2
+
+
+  33:LoRaWAN/App/lora_info.c **** /* USER CODE BEGIN PTD */
+  34:LoRaWAN/App/lora_info.c **** 
+  35:LoRaWAN/App/lora_info.c **** /* USER CODE END PTD */
+  36:LoRaWAN/App/lora_info.c **** 
+  37:LoRaWAN/App/lora_info.c **** /* Private define ------------------------------------------------------------*/
+  38:LoRaWAN/App/lora_info.c **** 
+  39:LoRaWAN/App/lora_info.c **** /* USER CODE BEGIN PD */
+  40:LoRaWAN/App/lora_info.c **** 
+  41:LoRaWAN/App/lora_info.c **** /* USER CODE END PD */
+  42:LoRaWAN/App/lora_info.c **** 
+  43:LoRaWAN/App/lora_info.c **** /* Private macro -------------------------------------------------------------*/
+  44:LoRaWAN/App/lora_info.c **** 
+  45:LoRaWAN/App/lora_info.c **** /* USER CODE BEGIN PM */
+  46:LoRaWAN/App/lora_info.c **** 
+  47:LoRaWAN/App/lora_info.c **** /* USER CODE END PM */
+  48:LoRaWAN/App/lora_info.c **** 
+  49:LoRaWAN/App/lora_info.c **** /* Private variables ---------------------------------------------------------*/
+  50:LoRaWAN/App/lora_info.c **** static LoraInfo_t loraInfo = {0, 0};
+  51:LoRaWAN/App/lora_info.c **** 
+  52:LoRaWAN/App/lora_info.c **** /* USER CODE BEGIN PV */
+  53:LoRaWAN/App/lora_info.c **** 
+  54:LoRaWAN/App/lora_info.c **** /* USER CODE END PV */
+  55:LoRaWAN/App/lora_info.c **** 
+  56:LoRaWAN/App/lora_info.c **** /* Private function prototypes -----------------------------------------------*/
+  57:LoRaWAN/App/lora_info.c **** 
+  58:LoRaWAN/App/lora_info.c **** /* USER CODE BEGIN PFP */
+  59:LoRaWAN/App/lora_info.c **** 
+  60:LoRaWAN/App/lora_info.c **** /* USER CODE END PFP */
+  61:LoRaWAN/App/lora_info.c **** 
+  62:LoRaWAN/App/lora_info.c **** /* Exported variables --------------------------------------------------------*/
+  63:LoRaWAN/App/lora_info.c **** 
+  64:LoRaWAN/App/lora_info.c **** /* USER CODE BEGIN EV */
+  65:LoRaWAN/App/lora_info.c **** 
+  66:LoRaWAN/App/lora_info.c **** /* USER CODE END EV */
+  67:LoRaWAN/App/lora_info.c **** 
+  68:LoRaWAN/App/lora_info.c **** /* Exported functions --------------------------------------------------------*/
+  69:LoRaWAN/App/lora_info.c **** void LoraInfo_Init(void)
+  70:LoRaWAN/App/lora_info.c **** {
+  27              		.loc 1 70 1 view -0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31              		@ link register save eliminated.
+  71:LoRaWAN/App/lora_info.c ****   loraInfo.ActivationMode = 0;
+  32              		.loc 1 71 3 view .LVU1
+  33              		.loc 1 71 27 is_stmt 0 view .LVU2
+  34 0000 064B     		ldr	r3, .L2
+  35 0002 0022     		movs	r2, #0
+  36 0004 1A60     		str	r2, [r3]
+  72:LoRaWAN/App/lora_info.c ****   loraInfo.Region = 0;
+  37              		.loc 1 72 3 is_stmt 1 view .LVU3
+  38              		.loc 1 72 19 is_stmt 0 view .LVU4
+  39 0006 5A60     		str	r2, [r3, #4]
+  73:LoRaWAN/App/lora_info.c ****   loraInfo.ClassB = 0;
+  40              		.loc 1 73 3 is_stmt 1 view .LVU5
+  41              		.loc 1 73 19 is_stmt 0 view .LVU6
+  42 0008 9A60     		str	r2, [r3, #8]
+ARM GAS  /tmp/cczVjXoW.s 			page 3
+
+
+  74:LoRaWAN/App/lora_info.c ****   loraInfo.Kms = 0;
+  43              		.loc 1 74 3 is_stmt 1 view .LVU7
+  44              		.loc 1 74 16 is_stmt 0 view .LVU8
+  45 000a DA60     		str	r2, [r3, #12]
+  75:LoRaWAN/App/lora_info.c ****   /* USER CODE BEGIN LoraInfo_Init_1 */
+  76:LoRaWAN/App/lora_info.c **** 
+  77:LoRaWAN/App/lora_info.c ****   /* USER CODE END LoraInfo_Init_1 */
+  78:LoRaWAN/App/lora_info.c **** 
+  79:LoRaWAN/App/lora_info.c **** #ifdef  REGION_AS923
+  80:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_AS923) ;
+  81:LoRaWAN/App/lora_info.c **** #endif /* REGION_AS923 */
+  82:LoRaWAN/App/lora_info.c **** #ifdef  REGION_AU915
+  83:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_AU915) ;
+  84:LoRaWAN/App/lora_info.c **** #endif /* REGION_AU915 */
+  85:LoRaWAN/App/lora_info.c **** #ifdef  REGION_CN470
+  86:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_CN470) ;
+  87:LoRaWAN/App/lora_info.c **** #endif /* REGION_CN470 */
+  88:LoRaWAN/App/lora_info.c **** #ifdef  REGION_CN779
+  89:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_CN779) ;
+  90:LoRaWAN/App/lora_info.c **** #endif /* REGION_CN779 */
+  91:LoRaWAN/App/lora_info.c **** #ifdef  REGION_EU433
+  92:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_EU433) ;
+  93:LoRaWAN/App/lora_info.c **** #endif /* REGION_EU433 */
+  94:LoRaWAN/App/lora_info.c **** #ifdef  REGION_EU868
+  95:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_EU868) ;
+  46              		.loc 1 95 3 is_stmt 1 view .LVU9
+  47              		.loc 1 95 19 is_stmt 0 view .LVU10
+  48 000c 2022     		movs	r2, #32
+  49 000e 5A60     		str	r2, [r3, #4]
+  96:LoRaWAN/App/lora_info.c **** #endif /* REGION_EU868 */
+  97:LoRaWAN/App/lora_info.c **** #ifdef  REGION_KR920
+  98:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_KR920) ;
+  99:LoRaWAN/App/lora_info.c **** #endif /* REGION_KR920 */
+ 100:LoRaWAN/App/lora_info.c **** #ifdef  REGION_IN865
+ 101:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_IN865) ;
+ 102:LoRaWAN/App/lora_info.c **** #endif /* REGION_IN865 */
+ 103:LoRaWAN/App/lora_info.c **** #ifdef  REGION_US915
+ 104:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_US915) ;
+  50              		.loc 1 104 3 is_stmt 1 view .LVU11
+  51              		.loc 1 104 19 is_stmt 0 view .LVU12
+  52 0010 4FF49072 		mov	r2, #288
+  53 0014 5A60     		str	r2, [r3, #4]
+ 105:LoRaWAN/App/lora_info.c **** #endif /* REGION_US915 */
+ 106:LoRaWAN/App/lora_info.c **** #ifdef  REGION_RU864
+ 107:LoRaWAN/App/lora_info.c ****   loraInfo.Region |= (1 << LORAMAC_REGION_RU864) ;
+ 108:LoRaWAN/App/lora_info.c **** #endif /* REGION_RU864 */
+ 109:LoRaWAN/App/lora_info.c **** 
+ 110:LoRaWAN/App/lora_info.c ****   if (loraInfo.Region == 0)
+  54              		.loc 1 110 3 is_stmt 1 view .LVU13
+ 111:LoRaWAN/App/lora_info.c ****   {
+ 112:LoRaWAN/App/lora_info.c ****   /* USER CODE BEGIN LoraInfo_Init_NO_REGION */
+ 113:LoRaWAN/App/lora_info.c **** 
+ 114:LoRaWAN/App/lora_info.c ****   /* USER CODE END LoraInfo_Init_NO_REGION */
+ 115:LoRaWAN/App/lora_info.c ****     while (1) {} /* At least one region shall be defined */
+ 116:LoRaWAN/App/lora_info.c ****   }
+ 117:LoRaWAN/App/lora_info.c **** 
+ 118:LoRaWAN/App/lora_info.c **** #if ( LORAMAC_CLASSB_ENABLED == 1 )
+ARM GAS  /tmp/cczVjXoW.s 			page 4
+
+
+ 119:LoRaWAN/App/lora_info.c ****   loraInfo.ClassB = 1;
+ 120:LoRaWAN/App/lora_info.c **** #elif !defined (LORAMAC_CLASSB_ENABLED)
+ 121:LoRaWAN/App/lora_info.c **** #error LORAMAC_CLASSB_ENABLED not defined ( shall be <0 or 1> )
+ 122:LoRaWAN/App/lora_info.c **** #endif /* LORAMAC_CLASSB_ENABLED */
+ 123:LoRaWAN/App/lora_info.c **** 
+ 124:LoRaWAN/App/lora_info.c **** #if (!defined (LORAWAN_KMS) || (LORAWAN_KMS == 0))
+ 125:LoRaWAN/App/lora_info.c ****   loraInfo.Kms = 0;
+  55              		.loc 1 125 3 view .LVU14
+ 126:LoRaWAN/App/lora_info.c ****   loraInfo.ActivationMode = 3;
+  56              		.loc 1 126 3 view .LVU15
+  57              		.loc 1 126 27 is_stmt 0 view .LVU16
+  58 0016 0322     		movs	r2, #3
+  59 0018 1A60     		str	r2, [r3]
+ 127:LoRaWAN/App/lora_info.c **** #else /* LORAWAN_KMS == 1 */
+ 128:LoRaWAN/App/lora_info.c ****   loraInfo.Kms = 1;
+ 129:LoRaWAN/App/lora_info.c ****   loraInfo.ActivationMode = ACTIVATION_BY_PERSONALIZATION + (OVER_THE_AIR_ACTIVATION << 1);
+ 130:LoRaWAN/App/lora_info.c **** #endif /* LORAWAN_KMS */
+ 131:LoRaWAN/App/lora_info.c ****   /* USER CODE BEGIN LoraInfo_Init_2 */
+ 132:LoRaWAN/App/lora_info.c **** 
+ 133:LoRaWAN/App/lora_info.c ****   /* USER CODE END LoraInfo_Init_2 */
+ 134:LoRaWAN/App/lora_info.c **** }
+  60              		.loc 1 134 1 view .LVU17
+  61 001a 7047     		bx	lr
+  62              	.L3:
+  63              		.align	2
+  64              	.L2:
+  65 001c 00000000 		.word	.LANCHOR0
+  66              		.cfi_endproc
+  67              	.LFE104:
+  69              		.section	.text.LoraInfo_GetPtr,"ax",%progbits
+  70              		.align	1
+  71              		.global	LoraInfo_GetPtr
+  72              		.syntax unified
+  73              		.thumb
+  74              		.thumb_func
+  75              		.fpu softvfp
+  77              	LoraInfo_GetPtr:
+  78              	.LFB105:
+ 135:LoRaWAN/App/lora_info.c **** 
+ 136:LoRaWAN/App/lora_info.c **** LoraInfo_t *LoraInfo_GetPtr(void)
+ 137:LoRaWAN/App/lora_info.c **** {
+  79              		.loc 1 137 1 is_stmt 1 view -0
+  80              		.cfi_startproc
+  81              		@ args = 0, pretend = 0, frame = 0
+  82              		@ frame_needed = 0, uses_anonymous_args = 0
+  83              		@ link register save eliminated.
+ 138:LoRaWAN/App/lora_info.c ****   /* USER CODE BEGIN LoraInfo_GetPtr */
+ 139:LoRaWAN/App/lora_info.c **** 
+ 140:LoRaWAN/App/lora_info.c ****   /* USER CODE END LoraInfo_GetPtr */
+ 141:LoRaWAN/App/lora_info.c ****   return &loraInfo;
+  84              		.loc 1 141 3 view .LVU19
+ 142:LoRaWAN/App/lora_info.c **** }
+  85              		.loc 1 142 1 is_stmt 0 view .LVU20
+  86 0000 0048     		ldr	r0, .L5
+  87 0002 7047     		bx	lr
+  88              	.L6:
+  89              		.align	2
+ARM GAS  /tmp/cczVjXoW.s 			page 5
+
+
+  90              	.L5:
+  91 0004 00000000 		.word	.LANCHOR0
+  92              		.cfi_endproc
+  93              	.LFE105:
+  95              		.section	.bss.loraInfo,"aw",%nobits
+  96              		.align	2
+  97              		.set	.LANCHOR0,. + 0
+ 100              	loraInfo:
+ 101 0000 00000000 		.space	16
+ 101      00000000 
+ 101      00000000 
+ 101      00000000 
+ 102              		.text
+ 103              	.Letext0:
+ 104              		.file 2 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 105              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 106              		.file 4 "LoRaWAN/App/lora_info.h"
+ 107              		.file 5 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h"
+ARM GAS  /tmp/cczVjXoW.s 			page 6
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 lora_info.c
+     /tmp/cczVjXoW.s:16     .text.LoraInfo_Init:0000000000000000 $t
+     /tmp/cczVjXoW.s:24     .text.LoraInfo_Init:0000000000000000 LoraInfo_Init
+     /tmp/cczVjXoW.s:65     .text.LoraInfo_Init:000000000000001c $d
+     /tmp/cczVjXoW.s:70     .text.LoraInfo_GetPtr:0000000000000000 $t
+     /tmp/cczVjXoW.s:77     .text.LoraInfo_GetPtr:0000000000000000 LoraInfo_GetPtr
+     /tmp/cczVjXoW.s:91     .text.LoraInfo_GetPtr:0000000000000004 $d
+     /tmp/cczVjXoW.s:96     .bss.loraInfo:0000000000000000 $d
+     /tmp/cczVjXoW.s:100    .bss.loraInfo:0000000000000000 loraInfo
+
+NO UNDEFINED SYMBOLS

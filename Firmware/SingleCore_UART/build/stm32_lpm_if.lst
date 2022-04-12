@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc3B5BNE.s 			page 1
+ARM GAS  /tmp/ccSxVXEu.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc3B5BNE.s 			page 1
   30:Core/Src/stm32_lpm_if.c **** /* External variables ---------------------------------------------------------*/
   31:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN EV */
   32:Core/Src/stm32_lpm_if.c **** 
-ARM GAS  /tmp/cc3B5BNE.s 			page 2
+ARM GAS  /tmp/ccSxVXEu.s 			page 2
 
 
   33:Core/Src/stm32_lpm_if.c **** /* USER CODE END EV */
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc3B5BNE.s 			page 1
   82:Core/Src/stm32_lpm_if.c **** }
   32              		.loc 1 82 1 view .LVU1
   33 0000 7047     		bx	lr
-ARM GAS  /tmp/cc3B5BNE.s 			page 3
+ARM GAS  /tmp/ccSxVXEu.s 			page 3
 
 
   34              		.cfi_endproc
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc3B5BNE.s 			page 1
   79              		.global	PWR_ExitStopMode
   80              		.syntax unified
   81              		.thumb
-ARM GAS  /tmp/cc3B5BNE.s 			page 4
+ARM GAS  /tmp/ccSxVXEu.s 			page 4
 
 
   82              		.thumb_func
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc3B5BNE.s 			page 1
  111:Core/Src/stm32_lpm_if.c **** 
  112:Core/Src/stm32_lpm_if.c **** void PWR_ExitSleepMode(void)
  113:Core/Src/stm32_lpm_if.c **** {
-ARM GAS  /tmp/cc3B5BNE.s 			page 5
+ARM GAS  /tmp/ccSxVXEu.s 			page 5
 
 
  127              		.loc 1 113 1 view -0
@@ -267,24 +267,24 @@ ARM GAS  /tmp/cc3B5BNE.s 			page 1
  149              		.text
  150              	.Letext0:
  151              		.file 2 "Utilities/lpm/tiny_lpm/stm32_lpm.h"
-ARM GAS  /tmp/cc3B5BNE.s 			page 6
+ARM GAS  /tmp/ccSxVXEu.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_lpm_if.c
-     /tmp/cc3B5BNE.s:16     .text.PWR_EnterOffMode:0000000000000000 $t
-     /tmp/cc3B5BNE.s:24     .text.PWR_EnterOffMode:0000000000000000 PWR_EnterOffMode
-     /tmp/cc3B5BNE.s:38     .text.PWR_ExitOffMode:0000000000000000 $t
-     /tmp/cc3B5BNE.s:45     .text.PWR_ExitOffMode:0000000000000000 PWR_ExitOffMode
-     /tmp/cc3B5BNE.s:58     .text.PWR_EnterStopMode:0000000000000000 $t
-     /tmp/cc3B5BNE.s:65     .text.PWR_EnterStopMode:0000000000000000 PWR_EnterStopMode
-     /tmp/cc3B5BNE.s:78     .text.PWR_ExitStopMode:0000000000000000 $t
-     /tmp/cc3B5BNE.s:85     .text.PWR_ExitStopMode:0000000000000000 PWR_ExitStopMode
-     /tmp/cc3B5BNE.s:98     .text.PWR_EnterSleepMode:0000000000000000 $t
-     /tmp/cc3B5BNE.s:105    .text.PWR_EnterSleepMode:0000000000000000 PWR_EnterSleepMode
-     /tmp/cc3B5BNE.s:118    .text.PWR_ExitSleepMode:0000000000000000 $t
-     /tmp/cc3B5BNE.s:125    .text.PWR_ExitSleepMode:0000000000000000 PWR_ExitSleepMode
-     /tmp/cc3B5BNE.s:142    .rodata.UTIL_PowerDriver:0000000000000000 UTIL_PowerDriver
-     /tmp/cc3B5BNE.s:139    .rodata.UTIL_PowerDriver:0000000000000000 $d
+     /tmp/ccSxVXEu.s:16     .text.PWR_EnterOffMode:0000000000000000 $t
+     /tmp/ccSxVXEu.s:24     .text.PWR_EnterOffMode:0000000000000000 PWR_EnterOffMode
+     /tmp/ccSxVXEu.s:38     .text.PWR_ExitOffMode:0000000000000000 $t
+     /tmp/ccSxVXEu.s:45     .text.PWR_ExitOffMode:0000000000000000 PWR_ExitOffMode
+     /tmp/ccSxVXEu.s:58     .text.PWR_EnterStopMode:0000000000000000 $t
+     /tmp/ccSxVXEu.s:65     .text.PWR_EnterStopMode:0000000000000000 PWR_EnterStopMode
+     /tmp/ccSxVXEu.s:78     .text.PWR_ExitStopMode:0000000000000000 $t
+     /tmp/ccSxVXEu.s:85     .text.PWR_ExitStopMode:0000000000000000 PWR_ExitStopMode
+     /tmp/ccSxVXEu.s:98     .text.PWR_EnterSleepMode:0000000000000000 $t
+     /tmp/ccSxVXEu.s:105    .text.PWR_EnterSleepMode:0000000000000000 PWR_EnterSleepMode
+     /tmp/ccSxVXEu.s:118    .text.PWR_ExitSleepMode:0000000000000000 $t
+     /tmp/ccSxVXEu.s:125    .text.PWR_ExitSleepMode:0000000000000000 PWR_ExitSleepMode
+     /tmp/ccSxVXEu.s:142    .rodata.UTIL_PowerDriver:0000000000000000 UTIL_PowerDriver
+     /tmp/ccSxVXEu.s:139    .rodata.UTIL_PowerDriver:0000000000000000 $d
 
 NO UNDEFINED SYMBOLS

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccJNGAHD.s 			page 1
+ARM GAS  /tmp/cc2PFEII.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
   30:Utilities/lpm/tiny_lpm/stm32_lpm.c **** /** @defgroup TINY_LPM_Private_macros TINY LPM private macros
   31:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   * @{
   32:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   */
-ARM GAS  /tmp/ccJNGAHD.s 			page 2
+ARM GAS  /tmp/cc2PFEII.s 			page 2
 
 
   33:Utilities/lpm/tiny_lpm/stm32_lpm.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
   87:Utilities/lpm/tiny_lpm/stm32_lpm.c **** 
   88:Utilities/lpm/tiny_lpm/stm32_lpm.c **** /**
   89:Utilities/lpm/tiny_lpm/stm32_lpm.c ****  * @brief value used to reset the LPM mode
-ARM GAS  /tmp/ccJNGAHD.s 			page 3
+ARM GAS  /tmp/cc2PFEII.s 			page 3
 
 
   90:Utilities/lpm/tiny_lpm/stm32_lpm.c ****  */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
   43 000a 7047     		bx	lr
   44              	.L3:
   45              		.align	2
-ARM GAS  /tmp/ccJNGAHD.s 			page 4
+ARM GAS  /tmp/cc2PFEII.s 			page 4
 
 
   46              	.L2:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
    5:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @date     08. May 2019
    6:Drivers/CMSIS/Include/cmsis_gcc.h ****  ******************************************************************************/
    7:Drivers/CMSIS/Include/cmsis_gcc.h **** /*
-ARM GAS  /tmp/ccJNGAHD.s 			page 5
+ARM GAS  /tmp/cc2PFEII.s 			page 5
 
 
    8:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Copyright (c) 2009-2019 Arm Limited. All rights reserved.
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
   62:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED                               __attribute__((packed, aligned(1)))
   63:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   64:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_STRUCT
-ARM GAS  /tmp/ccJNGAHD.s 			page 6
+ARM GAS  /tmp/cc2PFEII.s 			page 6
 
 
   65:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_STRUCT                        struct __attribute__((packed, aligned(1)))
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  119:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  120:Drivers/CMSIS/Include/cmsis_gcc.h **** /* #########################  Startup and Lowlevel Init  ######################## */
  121:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccJNGAHD.s 			page 7
+ARM GAS  /tmp/cc2PFEII.s 			page 7
 
 
  122:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __PROGRAM_START
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  176:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  177:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE
  178:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE            __Vectors
-ARM GAS  /tmp/ccJNGAHD.s 			page 8
+ARM GAS  /tmp/cc2PFEII.s 			page 8
 
 
  179:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  233:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_CONTROL_NS(void)
  234:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  235:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  /tmp/ccJNGAHD.s 			page 9
+ARM GAS  /tmp/cc2PFEII.s 			page 9
 
 
  236:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  290:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, apsr" : "=r" (result) );
  291:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  292:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /tmp/ccJNGAHD.s 			page 10
+ARM GAS  /tmp/cc2PFEII.s 			page 10
 
 
  293:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  347:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  348:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  349:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccJNGAHD.s 			page 11
+ARM GAS  /tmp/cc2PFEII.s 			page 11
 
 
  350:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  404:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  405:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  406:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer (non-secure)
-ARM GAS  /tmp/ccJNGAHD.s 			page 12
+ARM GAS  /tmp/cc2PFEII.s 			page 12
 
 
  407:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Main Stack Pointer (MSP) when in secure state.
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
   99              	@ 0 "" 2
  100              	.LVL1:
  454:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  /tmp/ccJNGAHD.s 			page 13
+ARM GAS  /tmp/cc2PFEII.s 			page 13
 
 
  101              		.loc 2 454 3 view .LVU14
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  152:Utilities/lpm/tiny_lpm/stm32_lpm.c ****     }
  153:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   }
  154:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   
-ARM GAS  /tmp/ccJNGAHD.s 			page 14
+ARM GAS  /tmp/cc2PFEII.s 			page 14
 
 
  155:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   UTIL_LPM_EXIT_CRITICAL_SECTION( );
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  160 001a 0349     		ldr	r1, .L8
  161              	.LVL7:
  146:Utilities/lpm/tiny_lpm/stm32_lpm.c ****       break;
-ARM GAS  /tmp/ccJNGAHD.s 			page 15
+ARM GAS  /tmp/cc2PFEII.s 			page 15
 
 
  162              		.loc 1 146 23 view .LVU32
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  207              		.thumb
  208              		.syntax unified
  209              	.LBE33:
-ARM GAS  /tmp/ccJNGAHD.s 			page 16
+ARM GAS  /tmp/cc2PFEII.s 			page 16
 
 
  210              	.LBE32:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  242              	.LVL13:
  243              	.LBB36:
  244              	.LBI36:
-ARM GAS  /tmp/ccJNGAHD.s 			page 17
+ARM GAS  /tmp/cc2PFEII.s 			page 17
 
 
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  291              		.loc 1 184 1 view -0
  292              		.cfi_startproc
  293              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccJNGAHD.s 			page 18
+ARM GAS  /tmp/cc2PFEII.s 			page 18
 
 
  294              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  191:Utilities/lpm/tiny_lpm/stm32_lpm.c ****     /**
  192:Utilities/lpm/tiny_lpm/stm32_lpm.c ****      * At least one user disallows Stop Mode
  193:Utilities/lpm/tiny_lpm/stm32_lpm.c ****      */
-ARM GAS  /tmp/ccJNGAHD.s 			page 19
+ARM GAS  /tmp/cc2PFEII.s 			page 19
 
 
  194:Utilities/lpm/tiny_lpm/stm32_lpm.c ****     mode_selected = UTIL_LPM_SLEEPMODE;
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  366              		.loc 1 214 1 is_stmt 0 view .LVU85
  367 001c 7047     		bx	lr
  368              	.LVL21:
-ARM GAS  /tmp/ccJNGAHD.s 			page 20
+ARM GAS  /tmp/cc2PFEII.s 			page 20
 
 
  369              	.L18:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  415              		.loc 2 454 3 is_stmt 0 view .LVU93
  416              		.thumb
  417              		.syntax unified
-ARM GAS  /tmp/ccJNGAHD.s 			page 21
+ARM GAS  /tmp/cc2PFEII.s 			page 21
 
 
  418              	.LBE45:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  235:Utilities/lpm/tiny_lpm/stm32_lpm.c ****        * STOP mode is required
  236:Utilities/lpm/tiny_lpm/stm32_lpm.c ****        */
  237:Utilities/lpm/tiny_lpm/stm32_lpm.c ****         UTIL_PowerDriver.EnterStopMode( );
-ARM GAS  /tmp/ccJNGAHD.s 			page 22
+ARM GAS  /tmp/cc2PFEII.s 			page 22
 
 
  238:Utilities/lpm/tiny_lpm/stm32_lpm.c ****         UTIL_PowerDriver.ExitStopMode( );
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  238:Utilities/lpm/tiny_lpm/stm32_lpm.c ****     }
  487              		.loc 1 238 9 is_stmt 1 view .LVU117
  238:Utilities/lpm/tiny_lpm/stm32_lpm.c ****     }
-ARM GAS  /tmp/ccJNGAHD.s 			page 23
+ARM GAS  /tmp/cc2PFEII.s 			page 23
 
 
  488              		.loc 1 238 25 is_stmt 0 view .LVU118
@@ -1372,32 +1372,32 @@ ARM GAS  /tmp/ccJNGAHD.s 			page 1
  534              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
  535              		.file 4 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
  536              		.file 5 "Utilities/lpm/tiny_lpm/stm32_lpm.h"
-ARM GAS  /tmp/ccJNGAHD.s 			page 24
+ARM GAS  /tmp/cc2PFEII.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_lpm.c
-     /tmp/ccJNGAHD.s:16     .text.UTIL_LPM_Init:0000000000000000 $t
-     /tmp/ccJNGAHD.s:24     .text.UTIL_LPM_Init:0000000000000000 UTIL_LPM_Init
-     /tmp/ccJNGAHD.s:47     .text.UTIL_LPM_Init:000000000000000c $d
-     /tmp/ccJNGAHD.s:53     .text.UTIL_LPM_DeInit:0000000000000000 $t
-     /tmp/ccJNGAHD.s:60     .text.UTIL_LPM_DeInit:0000000000000000 UTIL_LPM_DeInit
-     /tmp/ccJNGAHD.s:73     .text.UTIL_LPM_SetStopMode:0000000000000000 $t
-     /tmp/ccJNGAHD.s:80     .text.UTIL_LPM_SetStopMode:0000000000000000 UTIL_LPM_SetStopMode
-     /tmp/ccJNGAHD.s:173    .text.UTIL_LPM_SetStopMode:0000000000000028 $d
-     /tmp/ccJNGAHD.s:178    .text.UTIL_LPM_SetOffMode:0000000000000000 $t
-     /tmp/ccJNGAHD.s:185    .text.UTIL_LPM_SetOffMode:0000000000000000 UTIL_LPM_SetOffMode
-     /tmp/ccJNGAHD.s:277    .text.UTIL_LPM_SetOffMode:0000000000000028 $d
-     /tmp/ccJNGAHD.s:282    .text.UTIL_LPM_GetMode:0000000000000000 $t
-     /tmp/ccJNGAHD.s:289    .text.UTIL_LPM_GetMode:0000000000000000 UTIL_LPM_GetMode
-     /tmp/ccJNGAHD.s:376    .text.UTIL_LPM_GetMode:0000000000000024 $d
-     /tmp/ccJNGAHD.s:382    .text.UTIL_LPM_EnterLowPower:0000000000000000 $t
-     /tmp/ccJNGAHD.s:389    .text.UTIL_LPM_EnterLowPower:0000000000000000 UTIL_LPM_EnterLowPower
-     /tmp/ccJNGAHD.s:512    .text.UTIL_LPM_EnterLowPower:000000000000003c $d
-     /tmp/ccJNGAHD.s:519    .bss.OffModeDisable:0000000000000000 $d
-     /tmp/ccJNGAHD.s:523    .bss.OffModeDisable:0000000000000000 OffModeDisable
-     /tmp/ccJNGAHD.s:526    .bss.StopModeDisable:0000000000000000 $d
-     /tmp/ccJNGAHD.s:530    .bss.StopModeDisable:0000000000000000 StopModeDisable
+     /tmp/cc2PFEII.s:16     .text.UTIL_LPM_Init:0000000000000000 $t
+     /tmp/cc2PFEII.s:24     .text.UTIL_LPM_Init:0000000000000000 UTIL_LPM_Init
+     /tmp/cc2PFEII.s:47     .text.UTIL_LPM_Init:000000000000000c $d
+     /tmp/cc2PFEII.s:53     .text.UTIL_LPM_DeInit:0000000000000000 $t
+     /tmp/cc2PFEII.s:60     .text.UTIL_LPM_DeInit:0000000000000000 UTIL_LPM_DeInit
+     /tmp/cc2PFEII.s:73     .text.UTIL_LPM_SetStopMode:0000000000000000 $t
+     /tmp/cc2PFEII.s:80     .text.UTIL_LPM_SetStopMode:0000000000000000 UTIL_LPM_SetStopMode
+     /tmp/cc2PFEII.s:173    .text.UTIL_LPM_SetStopMode:0000000000000028 $d
+     /tmp/cc2PFEII.s:178    .text.UTIL_LPM_SetOffMode:0000000000000000 $t
+     /tmp/cc2PFEII.s:185    .text.UTIL_LPM_SetOffMode:0000000000000000 UTIL_LPM_SetOffMode
+     /tmp/cc2PFEII.s:277    .text.UTIL_LPM_SetOffMode:0000000000000028 $d
+     /tmp/cc2PFEII.s:282    .text.UTIL_LPM_GetMode:0000000000000000 $t
+     /tmp/cc2PFEII.s:289    .text.UTIL_LPM_GetMode:0000000000000000 UTIL_LPM_GetMode
+     /tmp/cc2PFEII.s:376    .text.UTIL_LPM_GetMode:0000000000000024 $d
+     /tmp/cc2PFEII.s:382    .text.UTIL_LPM_EnterLowPower:0000000000000000 $t
+     /tmp/cc2PFEII.s:389    .text.UTIL_LPM_EnterLowPower:0000000000000000 UTIL_LPM_EnterLowPower
+     /tmp/cc2PFEII.s:512    .text.UTIL_LPM_EnterLowPower:000000000000003c $d
+     /tmp/cc2PFEII.s:519    .bss.OffModeDisable:0000000000000000 $d
+     /tmp/cc2PFEII.s:523    .bss.OffModeDisable:0000000000000000 OffModeDisable
+     /tmp/cc2PFEII.s:526    .bss.StopModeDisable:0000000000000000 $d
+     /tmp/cc2PFEII.s:530    .bss.StopModeDisable:0000000000000000 StopModeDisable
 
 UNDEFINED SYMBOLS
 UTIL_PowerDriver

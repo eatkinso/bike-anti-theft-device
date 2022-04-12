@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccjxLNWF.s 			page 1
+ARM GAS  /tmp/cc9xaKcH.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
   30:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****   */
   31:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** #include <stdlib.h>
   32:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** #include <stdint.h>
-ARM GAS  /tmp/ccjxLNWF.s 			page 2
+ARM GAS  /tmp/cc9xaKcH.s 			page 2
 
 
   33:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** #include <stdbool.h>
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
   87:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** { 
   88:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     .Initialized = false,
   89:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     .IsRunning = false,
-ARM GAS  /tmp/ccjxLNWF.s 			page 3
+ARM GAS  /tmp/cc9xaKcH.s 			page 3
 
 
   90:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     .State = 0,
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  144:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** 
  145:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** /*!
  146:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****  * Processes the MCPS Indication
-ARM GAS  /tmp/ccjxLNWF.s 			page 4
+ARM GAS  /tmp/cc9xaKcH.s 			page 4
 
 
  147:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****  *
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
   31              		@ link register save eliminated.
  197:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     if( ( params != NULL ) && ( dataBuffer != NULL ) )
   32              		.loc 1 197 5 view .LVU1
-ARM GAS  /tmp/ccjxLNWF.s 			page 5
+ARM GAS  /tmp/cc9xaKcH.s 			page 5
 
 
   33              		.loc 1 197 7 is_stmt 0 view .LVU2
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
   75              	.L5:
   76 0022 00BF     		.align	2
   77              	.L4:
-ARM GAS  /tmp/ccjxLNWF.s 			page 6
+ARM GAS  /tmp/cc9xaKcH.s 			page 6
 
 
   78 0024 00000000 		.word	.LANCHOR0
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  127              		.loc 1 218 7 view .LVU27
  128 0004 00B1     		cbz	r0, .L10
  219:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     {
-ARM GAS  /tmp/ccjxLNWF.s 			page 7
+ARM GAS  /tmp/cc9xaKcH.s 			page 7
 
 
  220:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****         return false;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  170 000c 0378     		ldrb	r3, [r0]	@ zero_extendqisi2
  233:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****         (mcpsConfirm->McpsRequest == MCPS_CONFIRMED) &&
  171              		.loc 1 233 49 discriminator 1 view .LVU39
-ARM GAS  /tmp/ccjxLNWF.s 			page 8
+ARM GAS  /tmp/cc9xaKcH.s 			page 8
 
 
  172 000e 012B     		cmp	r3, #1
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  213              		.loc 1 244 5 view .LVU47
  214              		.loc 1 244 28 is_stmt 0 view .LVU48
  215 0000 084B     		ldr	r3, .L21
-ARM GAS  /tmp/ccjxLNWF.s 			page 9
+ARM GAS  /tmp/cc9xaKcH.s 			page 9
 
 
  216 0002 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  247 001e 427A     		ldrb	r2, [r0, #9]	@ zero_extendqisi2
  258:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     }
  248              		.loc 1 258 40 view .LVU64
-ARM GAS  /tmp/ccjxLNWF.s 			page 10
+ARM GAS  /tmp/cc9xaKcH.s 			page 10
 
 
  249 0020 1A74     		strb	r2, [r3, #16]
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  299:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     {
  300:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****         .Buffer = ComplianceTestState.DataBuffer,
  301:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****         .BufferSize = ComplianceTestState.DataBufferSize,
-ARM GAS  /tmp/ccjxLNWF.s 			page 11
+ARM GAS  /tmp/cc9xaKcH.s 			page 11
 
 
  302:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****         .Port = COMPLIANCE_PORT
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  356:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** 
  357:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             // Enable ADR while in compliance test mode
  358:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             mibReq.Type = MIB_ADR;
-ARM GAS  /tmp/ccjxLNWF.s 			page 12
+ARM GAS  /tmp/cc9xaKcH.s 			page 12
 
 
  359:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             mibReq.Param.AdrEnable = true;
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  413:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****         case 2: // Enable confirmed messages (v)
  414:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             ComplianceTestState.IsTxConfirmed = true;
  415:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             ComplianceTestState.State = 1;
-ARM GAS  /tmp/ccjxLNWF.s 			page 13
+ARM GAS  /tmp/cc9xaKcH.s 			page 13
 
 
  416:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             break;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  470:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****                 if( mcpsIndication->BufferSize == 3 )
  471:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****                 {
  472:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****                     mlmeReq.Type = MLME_TXCW;
-ARM GAS  /tmp/ccjxLNWF.s 			page 14
+ARM GAS  /tmp/cc9xaKcH.s 			page 14
 
 
  473:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****                     mlmeReq.Req.TxCw.Timeout = ( uint16_t )( ( mcpsIndication->Buffer[1] << 8 ) | m
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  271              		@ link register save eliminated.
  523:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     /* Nothing to process */
  524:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** }
-ARM GAS  /tmp/ccjxLNWF.s 			page 15
+ARM GAS  /tmp/cc9xaKcH.s 			page 15
 
 
  272              		.loc 1 524 1 view .LVU66
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  274:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     {
  318              		.loc 1 274 7 view .LVU77
  319 0018 13B3     		cbz	r3, .L26
-ARM GAS  /tmp/ccjxLNWF.s 			page 16
+ARM GAS  /tmp/cc9xaKcH.s 			page 16
 
 
  276:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****         ComplianceTestState.DataBufferSize = 3;
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  356 003e A379     		ldrb	r3, [r4, #6]	@ zero_extendqisi2
  298:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     {
  357              		.loc 1 298 24 view .LVU96
-ARM GAS  /tmp/ccjxLNWF.s 			page 17
+ARM GAS  /tmp/cc9xaKcH.s 			page 17
 
 
  358 0040 8DF80130 		strb	r3, [sp, #1]
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  399              		.loc 1 288 13 is_stmt 1 view .LVU109
  288:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             break;
  400              		.loc 1 288 39 is_stmt 0 view .LVU110
-ARM GAS  /tmp/ccjxLNWF.s 			page 18
+ARM GAS  /tmp/cc9xaKcH.s 			page 18
 
 
  401 006c 084B     		ldr	r3, .L35
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  442 0090 00000000 		.word	.LANCHOR1
  443 0094 00000000 		.word	.LANCHOR2
  444 0098 00000000 		.word	.LANCHOR3
-ARM GAS  /tmp/ccjxLNWF.s 			page 19
+ARM GAS  /tmp/cc9xaKcH.s 			page 19
 
 
  445              		.cfi_endproc
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  487 001c 8649     		ldr	r1, .L67
  488 001e 8A89     		ldrh	r2, [r1, #12]
  327:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     }
-ARM GAS  /tmp/ccjxLNWF.s 			page 20
+ARM GAS  /tmp/cc9xaKcH.s 			page 20
 
 
  489              		.loc 1 327 44 view .LVU138
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  532 003e 8368     		ldr	r3, [r0, #8]
  339:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             ( mcpsIndication->Buffer[1] == 0x01 ) &&
  533              		.loc 1 339 37 discriminator 1 view .LVU150
-ARM GAS  /tmp/ccjxLNWF.s 			page 21
+ARM GAS  /tmp/cc9xaKcH.s 			page 21
 
 
  534 0040 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  571              		.loc 1 351 13 is_stmt 1 view .LVU167
  351:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             ComplianceTestState.DemodMargin = 0;
  572              		.loc 1 351 43 is_stmt 0 view .LVU168
-ARM GAS  /tmp/ccjxLNWF.s 			page 22
+ARM GAS  /tmp/cc9xaKcH.s 			page 22
 
 
  573 0068 9C73     		strb	r4, [r3, #14]
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  609              		.loc 1 366 15 view .LVU186
  610 0090 03B1     		cbz	r3, .L41
  368:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             }
-ARM GAS  /tmp/ccjxLNWF.s 			page 23
+ARM GAS  /tmp/cc9xaKcH.s 			page 23
 
 
  611              		.loc 1 368 17 is_stmt 1 view .LVU187
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  652 00c2 DFE803F0 		tbb	[pc, r3]
  653              	.L43:
  654 00c6 06       		.byte	(.L53-.L43)/2
-ARM GAS  /tmp/ccjxLNWF.s 			page 24
+ARM GAS  /tmp/cc9xaKcH.s 			page 24
 
 
  655 00c7 22       		.byte	(.L52-.L43)/2
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  695 00ec 8DF81030 		strb	r3, [sp, #16]
  398:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** 
  696              		.loc 1 398 17 is_stmt 1 view .LVU215
-ARM GAS  /tmp/ccjxLNWF.s 			page 25
+ARM GAS  /tmp/cc9xaKcH.s 			page 25
 
 
  697 00f0 03A8     		add	r0, sp, #12
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  736              		.loc 1 415 39 is_stmt 0 view .LVU230
  737 0118 9A70     		strb	r2, [r3, #2]
  416:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****         case 3:  // Disable confirmed messages (vi)
-ARM GAS  /tmp/ccjxLNWF.s 			page 26
+ARM GAS  /tmp/cc9xaKcH.s 			page 26
 
 
  738              		.loc 1 416 13 is_stmt 1 view .LVU231
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  776 0138 5279     		ldrb	r2, [r2, #5]	@ zero_extendqisi2
  777 013a 8A42     		cmp	r2, r1
  778 013c 28BF     		it	cs
-ARM GAS  /tmp/ccjxLNWF.s 			page 27
+ARM GAS  /tmp/cc9xaKcH.s 			page 27
 
 
  779 013e 0A46     		movcs	r2, r1
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  817              	.LBE5:
  438:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****         case 6: // (ix)
  818              		.loc 1 438 13 is_stmt 1 discriminator 5 view .LVU264
-ARM GAS  /tmp/ccjxLNWF.s 			page 28
+ARM GAS  /tmp/cc9xaKcH.s 			page 28
 
 
  819 0160 6BE7     		b	.L37
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  856              		.loc 1 456 64 is_stmt 0 view .LVU281
  857 0186 2368     		ldr	r3, [r4]
  456:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** 
-ARM GAS  /tmp/ccjxLNWF.s 			page 29
+ARM GAS  /tmp/cc9xaKcH.s 			page 29
 
 
  858              		.loc 1 456 17 view .LVU282
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  482:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****                 ComplianceTestState.State = 1;
  898              		.loc 1 482 17 is_stmt 1 discriminator 7 view .LVU297
  899 01aa 03A8     		add	r0, sp, #12
-ARM GAS  /tmp/ccjxLNWF.s 			page 30
+ARM GAS  /tmp/cc9xaKcH.s 			page 30
 
 
  900              	.LVL42:
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  938 01d4 9378     		ldrb	r3, [r2, #2]	@ zero_extendqisi2
  478:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****                     mlmeReq.Req.TxCw.Frequency = ( uint32_t )( ( mcpsIndication->Buffer[3] << 16 ) 
  939              		.loc 1 478 48 view .LVU314
-ARM GAS  /tmp/ccjxLNWF.s 			page 31
+ARM GAS  /tmp/cc9xaKcH.s 			page 31
 
 
  940 01d6 43EA0123 		orr	r3, r3, r1, lsl #8
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  976 0200 0A23     		movs	r3, #10
  977 0202 8DF80C30 		strb	r3, [sp, #12]
  492:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****             }
-ARM GAS  /tmp/ccjxLNWF.s 			page 32
+ARM GAS  /tmp/cc9xaKcH.s 			page 32
 
 
  978              		.loc 1 492 17 is_stmt 1 discriminator 8 view .LVU333
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  1017 0224 8DF80C30 		strb	r3, [sp, #12]
  510:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** 
  1018              		.loc 1 510 17 is_stmt 1 discriminator 10 view .LVU349
-ARM GAS  /tmp/ccjxLNWF.s 			page 33
+ARM GAS  /tmp/cc9xaKcH.s 			page 33
 
 
  510:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c **** 
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  1067              		.cfi_def_cfa_offset 8
  1068              		.cfi_offset 3, -8
  1069              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccjxLNWF.s 			page 34
+ARM GAS  /tmp/cc9xaKcH.s 			page 34
 
 
  528:Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.c ****     LmhpComplianceTxProcess( );
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  1118              		.section	.bss.LmhpComplianceParams,"aw",%nobits
  1119              		.align	2
  1120              		.set	.LANCHOR0,. + 0
-ARM GAS  /tmp/ccjxLNWF.s 			page 35
+ARM GAS  /tmp/cc9xaKcH.s 			page 35
 
 
  1123              	LmhpComplianceParams:
@@ -2078,50 +2078,50 @@ ARM GAS  /tmp/ccjxLNWF.s 			page 1
  1159              		.file 14 "Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhPackage.h"
  1160              		.file 15 "Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.h"
  1161              		.file 16 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacTest.h"
-ARM GAS  /tmp/ccjxLNWF.s 			page 36
+ARM GAS  /tmp/cc9xaKcH.s 			page 36
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 LmhpCompliance.c
-     /tmp/ccjxLNWF.s:16     .text.LmhpComplianceInit:0000000000000000 $t
-     /tmp/ccjxLNWF.s:23     .text.LmhpComplianceInit:0000000000000000 LmhpComplianceInit
-     /tmp/ccjxLNWF.s:78     .text.LmhpComplianceInit:0000000000000024 $d
-     /tmp/ccjxLNWF.s:84     .text.LmhpComplianceIsInitialized:0000000000000000 $t
-     /tmp/ccjxLNWF.s:90     .text.LmhpComplianceIsInitialized:0000000000000000 LmhpComplianceIsInitialized
-     /tmp/ccjxLNWF.s:105    .text.LmhpComplianceIsInitialized:0000000000000008 $d
-     /tmp/ccjxLNWF.s:110    .text.LmhpComplianceIsRunning:0000000000000000 $t
-     /tmp/ccjxLNWF.s:116    .text.LmhpComplianceIsRunning:0000000000000000 LmhpComplianceIsRunning
-     /tmp/ccjxLNWF.s:138    .text.LmhpComplianceIsRunning:000000000000000c $d
-     /tmp/ccjxLNWF.s:143    .text.LmhpComplianceOnMcpsConfirm:0000000000000000 $t
-     /tmp/ccjxLNWF.s:149    .text.LmhpComplianceOnMcpsConfirm:0000000000000000 LmhpComplianceOnMcpsConfirm
-     /tmp/ccjxLNWF.s:194    .text.LmhpComplianceOnMcpsConfirm:0000000000000024 $d
-     /tmp/ccjxLNWF.s:199    .text.LmhpComplianceOnMlmeConfirm:0000000000000000 $t
-     /tmp/ccjxLNWF.s:205    .text.LmhpComplianceOnMlmeConfirm:0000000000000000 LmhpComplianceOnMlmeConfirm
-     /tmp/ccjxLNWF.s:254    .text.LmhpComplianceOnMlmeConfirm:0000000000000024 $d
-     /tmp/ccjxLNWF.s:259    .text.LmhpComplianceProcess:0000000000000000 $t
-     /tmp/ccjxLNWF.s:265    .text.LmhpComplianceProcess:0000000000000000 LmhpComplianceProcess
-     /tmp/ccjxLNWF.s:278    .text.LmhpComplianceTxProcess:0000000000000000 $t
-     /tmp/ccjxLNWF.s:284    .text.LmhpComplianceTxProcess:0000000000000000 LmhpComplianceTxProcess
-     /tmp/ccjxLNWF.s:442    .text.LmhpComplianceTxProcess:0000000000000090 $d
-     /tmp/ccjxLNWF.s:449    .text.LmhpComplianceOnMcpsIndication:0000000000000000 $t
-     /tmp/ccjxLNWF.s:455    .text.LmhpComplianceOnMcpsIndication:0000000000000000 LmhpComplianceOnMcpsIndication
-     /tmp/ccjxLNWF.s:654    .text.LmhpComplianceOnMcpsIndication:00000000000000c6 $d
-     /tmp/ccjxLNWF.s:1042   .text.LmhpComplianceOnMcpsIndication:0000000000000238 $d
-     /tmp/ccjxLNWF.s:1057   .text.OnComplianceTxNextPacketTimerEvent:0000000000000000 OnComplianceTxNextPacketTimerEvent
-     /tmp/ccjxLNWF.s:1051   .text.OnComplianceTxNextPacketTimerEvent:0000000000000000 $t
-     /tmp/ccjxLNWF.s:1079   .text.LmhpCompliancePackageFactory:0000000000000000 $t
-     /tmp/ccjxLNWF.s:1086   .text.LmhpCompliancePackageFactory:0000000000000000 LmhpCompliancePackageFactory
-     /tmp/ccjxLNWF.s:1100   .text.LmhpCompliancePackageFactory:0000000000000004 $d
-     /tmp/ccjxLNWF.s:1105   .bss.ComplianceTestState:0000000000000000 $d
-     /tmp/ccjxLNWF.s:1109   .bss.ComplianceTestState:0000000000000000 ComplianceTestState
-     /tmp/ccjxLNWF.s:1112   .bss.ComplianceTxNextPacketTimer:0000000000000000 $d
-     /tmp/ccjxLNWF.s:1116   .bss.ComplianceTxNextPacketTimer:0000000000000000 ComplianceTxNextPacketTimer
-     /tmp/ccjxLNWF.s:1119   .bss.LmhpComplianceParams:0000000000000000 $d
-     /tmp/ccjxLNWF.s:1123   .bss.LmhpComplianceParams:0000000000000000 LmhpComplianceParams
-     /tmp/ccjxLNWF.s:1126   .data.LmhpCompliancePackage:0000000000000000 $d
-     /tmp/ccjxLNWF.s:1130   .data.LmhpCompliancePackage:0000000000000000 LmhpCompliancePackage
-     /tmp/ccjxLNWF.s:665    .text.LmhpComplianceOnMcpsIndication:00000000000000d1 $d
-     /tmp/ccjxLNWF.s:665    .text.LmhpComplianceOnMcpsIndication:00000000000000d2 $t
+     /tmp/cc9xaKcH.s:16     .text.LmhpComplianceInit:0000000000000000 $t
+     /tmp/cc9xaKcH.s:23     .text.LmhpComplianceInit:0000000000000000 LmhpComplianceInit
+     /tmp/cc9xaKcH.s:78     .text.LmhpComplianceInit:0000000000000024 $d
+     /tmp/cc9xaKcH.s:84     .text.LmhpComplianceIsInitialized:0000000000000000 $t
+     /tmp/cc9xaKcH.s:90     .text.LmhpComplianceIsInitialized:0000000000000000 LmhpComplianceIsInitialized
+     /tmp/cc9xaKcH.s:105    .text.LmhpComplianceIsInitialized:0000000000000008 $d
+     /tmp/cc9xaKcH.s:110    .text.LmhpComplianceIsRunning:0000000000000000 $t
+     /tmp/cc9xaKcH.s:116    .text.LmhpComplianceIsRunning:0000000000000000 LmhpComplianceIsRunning
+     /tmp/cc9xaKcH.s:138    .text.LmhpComplianceIsRunning:000000000000000c $d
+     /tmp/cc9xaKcH.s:143    .text.LmhpComplianceOnMcpsConfirm:0000000000000000 $t
+     /tmp/cc9xaKcH.s:149    .text.LmhpComplianceOnMcpsConfirm:0000000000000000 LmhpComplianceOnMcpsConfirm
+     /tmp/cc9xaKcH.s:194    .text.LmhpComplianceOnMcpsConfirm:0000000000000024 $d
+     /tmp/cc9xaKcH.s:199    .text.LmhpComplianceOnMlmeConfirm:0000000000000000 $t
+     /tmp/cc9xaKcH.s:205    .text.LmhpComplianceOnMlmeConfirm:0000000000000000 LmhpComplianceOnMlmeConfirm
+     /tmp/cc9xaKcH.s:254    .text.LmhpComplianceOnMlmeConfirm:0000000000000024 $d
+     /tmp/cc9xaKcH.s:259    .text.LmhpComplianceProcess:0000000000000000 $t
+     /tmp/cc9xaKcH.s:265    .text.LmhpComplianceProcess:0000000000000000 LmhpComplianceProcess
+     /tmp/cc9xaKcH.s:278    .text.LmhpComplianceTxProcess:0000000000000000 $t
+     /tmp/cc9xaKcH.s:284    .text.LmhpComplianceTxProcess:0000000000000000 LmhpComplianceTxProcess
+     /tmp/cc9xaKcH.s:442    .text.LmhpComplianceTxProcess:0000000000000090 $d
+     /tmp/cc9xaKcH.s:449    .text.LmhpComplianceOnMcpsIndication:0000000000000000 $t
+     /tmp/cc9xaKcH.s:455    .text.LmhpComplianceOnMcpsIndication:0000000000000000 LmhpComplianceOnMcpsIndication
+     /tmp/cc9xaKcH.s:654    .text.LmhpComplianceOnMcpsIndication:00000000000000c6 $d
+     /tmp/cc9xaKcH.s:1042   .text.LmhpComplianceOnMcpsIndication:0000000000000238 $d
+     /tmp/cc9xaKcH.s:1057   .text.OnComplianceTxNextPacketTimerEvent:0000000000000000 OnComplianceTxNextPacketTimerEvent
+     /tmp/cc9xaKcH.s:1051   .text.OnComplianceTxNextPacketTimerEvent:0000000000000000 $t
+     /tmp/cc9xaKcH.s:1079   .text.LmhpCompliancePackageFactory:0000000000000000 $t
+     /tmp/cc9xaKcH.s:1086   .text.LmhpCompliancePackageFactory:0000000000000000 LmhpCompliancePackageFactory
+     /tmp/cc9xaKcH.s:1100   .text.LmhpCompliancePackageFactory:0000000000000004 $d
+     /tmp/cc9xaKcH.s:1105   .bss.ComplianceTestState:0000000000000000 $d
+     /tmp/cc9xaKcH.s:1109   .bss.ComplianceTestState:0000000000000000 ComplianceTestState
+     /tmp/cc9xaKcH.s:1112   .bss.ComplianceTxNextPacketTimer:0000000000000000 $d
+     /tmp/cc9xaKcH.s:1116   .bss.ComplianceTxNextPacketTimer:0000000000000000 ComplianceTxNextPacketTimer
+     /tmp/cc9xaKcH.s:1119   .bss.LmhpComplianceParams:0000000000000000 $d
+     /tmp/cc9xaKcH.s:1123   .bss.LmhpComplianceParams:0000000000000000 LmhpComplianceParams
+     /tmp/cc9xaKcH.s:1126   .data.LmhpCompliancePackage:0000000000000000 $d
+     /tmp/cc9xaKcH.s:1130   .data.LmhpCompliancePackage:0000000000000000 LmhpCompliancePackage
+     /tmp/cc9xaKcH.s:665    .text.LmhpComplianceOnMcpsIndication:00000000000000d1 $d
+     /tmp/cc9xaKcH.s:665    .text.LmhpComplianceOnMcpsIndication:00000000000000d2 $t
 
 UNDEFINED SYMBOLS
 UTIL_TIMER_Start

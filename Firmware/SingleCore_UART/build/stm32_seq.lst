@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccWH52jJ.s 			page 1
+ARM GAS  /tmp/ccJIoKF5.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
   30:Utilities/sequencer/stm32_seq.c **** /** @defgroup SEQUENCER_Private_type SEQUENCER private type
   31:Utilities/sequencer/stm32_seq.c ****  *  @{
   32:Utilities/sequencer/stm32_seq.c ****  */
-ARM GAS  /tmp/ccWH52jJ.s 			page 2
+ARM GAS  /tmp/ccJIoKF5.s 			page 2
 
 
   33:Utilities/sequencer/stm32_seq.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
   87:Utilities/sequencer/stm32_seq.c **** 
   88:Utilities/sequencer/stm32_seq.c **** /**
   89:Utilities/sequencer/stm32_seq.c ****  * @brief default number of task is default 32 (maximum), can be reduced by redefining in utilities
-ARM GAS  /tmp/ccWH52jJ.s 			page 3
+ARM GAS  /tmp/ccJIoKF5.s 			page 3
 
 
   90:Utilities/sequencer/stm32_seq.c ****  */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  144:Utilities/sequencer/stm32_seq.c ****  * @brief evt expected mask.
  145:Utilities/sequencer/stm32_seq.c ****  */
  146:Utilities/sequencer/stm32_seq.c **** static UTIL_SEQ_bm_t EvtWaited = UTIL_SEQ_NO_BIT_SET;
-ARM GAS  /tmp/ccWH52jJ.s 			page 4
+ARM GAS  /tmp/ccJIoKF5.s 			page 4
 
 
  147:Utilities/sequencer/stm32_seq.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
   42              		.loc 1 185 12 is_stmt 0 view .LVU4
   43 0008 4FF0FF33 		mov	r3, #-1
   44 000c 0B4A     		ldr	r2, .L3+4
-ARM GAS  /tmp/ccWH52jJ.s 			page 5
+ARM GAS  /tmp/ccJIoKF5.s 			page 5
 
 
   45 000e 1360     		str	r3, [r2]
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
   92              		.align	1
   93              		.global	UTIL_SEQ_DeInit
   94              		.syntax unified
-ARM GAS  /tmp/ccWH52jJ.s 			page 6
+ARM GAS  /tmp/ccJIoKF5.s 			page 6
 
 
   95              		.thumb
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  224:Utilities/sequencer/stm32_seq.c ****    */
  225:Utilities/sequencer/stm32_seq.c ****   while(((TaskSet & TaskMask & SuperMask) != 0U) && ((EvtSet & EvtWaited)==0U))
  226:Utilities/sequencer/stm32_seq.c ****   {
-ARM GAS  /tmp/ccWH52jJ.s 			page 7
+ARM GAS  /tmp/ccJIoKF5.s 			page 7
 
 
  227:Utilities/sequencer/stm32_seq.c ****     counter = 0U;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  281:Utilities/sequencer/stm32_seq.c ****   
  282:Utilities/sequencer/stm32_seq.c ****   UTIL_SEQ_ENTER_CRITICAL_SECTION_IDLE( );
  283:Utilities/sequencer/stm32_seq.c ****   if (!(((TaskSet & TaskMask & SuperMask) != 0U) || ((EvtSet & EvtWaited)!= 0U))) 
-ARM GAS  /tmp/ccWH52jJ.s 			page 8
+ARM GAS  /tmp/ccJIoKF5.s 			page 8
 
 
  284:Utilities/sequencer/stm32_seq.c ****   {
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
   19:Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
   20:Drivers/CMSIS/Include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   21:Drivers/CMSIS/Include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
-ARM GAS  /tmp/ccWH52jJ.s 			page 9
+ARM GAS  /tmp/ccJIoKF5.s 			page 9
 
 
   22:Drivers/CMSIS/Include/cmsis_gcc.h ****  * limitations under the License.
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
   76:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
   77:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   78:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
-ARM GAS  /tmp/ccWH52jJ.s 			page 10
+ARM GAS  /tmp/ccJIoKF5.s 			page 10
 
 
   79:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  133:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern void _start(void) __NO_RETURN;
  134:Drivers/CMSIS/Include/cmsis_gcc.h ****   
  135:Drivers/CMSIS/Include/cmsis_gcc.h ****   typedef struct {
-ARM GAS  /tmp/ccWH52jJ.s 			page 11
+ARM GAS  /tmp/ccJIoKF5.s 			page 11
 
 
  136:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t const* src;
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  190:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  191:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  192:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Enable IRQ Interrupts
-ARM GAS  /tmp/ccWH52jJ.s 			page 12
+ARM GAS  /tmp/ccJIoKF5.s 			page 12
 
 
  193:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  247:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  248:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_CONTROL(uint32_t control)
  249:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /tmp/ccWH52jJ.s 			page 13
+ARM GAS  /tmp/ccJIoKF5.s 			page 13
 
 
  250:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR control, %0" : : "r" (control) : "memory");
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  304:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, xpsr" : "=r" (result) );
  305:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  306:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /tmp/ccWH52jJ.s 			page 14
+ARM GAS  /tmp/ccJIoKF5.s 			page 14
 
 
  307:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  361:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  362:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  363:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /tmp/ccWH52jJ.s 			page 15
+ARM GAS  /tmp/ccJIoKF5.s 			page 15
 
 
  364:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Main Stack Pointer
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  418:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  419:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Stack Pointer (non-secure)
  420:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Stack Pointer (SP) when in secure state.
-ARM GAS  /tmp/ccWH52jJ.s 			page 16
+ARM GAS  /tmp/ccJIoKF5.s 			page 16
 
 
  421:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               SP Register value
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  150              	.LBB66:
  209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  151              		.loc 2 209 3 view .LVU28
-ARM GAS  /tmp/ccWH52jJ.s 			page 17
+ARM GAS  /tmp/ccJIoKF5.s 			page 17
 
 
  152              		.syntax unified
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  478:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_PRIMASK(uint32_t priMask)
  178              		.loc 2 479 27 view .LVU35
-ARM GAS  /tmp/ccWH52jJ.s 			page 18
+ARM GAS  /tmp/ccJIoKF5.s 			page 18
 
 
  179              	.LBB68:
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  224              		.loc 2 451 3 view .LVU44
  453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  /tmp/ccWH52jJ.s 			page 19
+ARM GAS  /tmp/ccJIoKF5.s 			page 19
 
 
  225              		.loc 2 453 3 view .LVU45
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  271              		.loc 2 479 27 discriminator 4 view .LVU56
  272              	.LBB74:
-ARM GAS  /tmp/ccWH52jJ.s 			page 20
+ARM GAS  /tmp/ccJIoKF5.s 			page 20
 
 
  273              		.loc 2 481 3 discriminator 4 view .LVU57
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  321              	.LBI75:
  449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  322              		.loc 2 449 31 view .LVU65
-ARM GAS  /tmp/ccWH52jJ.s 			page 21
+ARM GAS  /tmp/ccJIoKF5.s 			page 21
 
 
  323              	.LBB76:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  366 0010 81F31088 		MSR primask, r1
  367              	@ 0 "" 2
  368              	.LVL16:
-ARM GAS  /tmp/ccWH52jJ.s 			page 22
+ARM GAS  /tmp/ccJIoKF5.s 			page 22
 
 
  369              		.loc 2 481 3 is_stmt 0 view .LVU78
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  413              		.loc 2 454 3 view .LVU87
  454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  414              		.loc 2 454 3 is_stmt 0 view .LVU88
-ARM GAS  /tmp/ccWH52jJ.s 			page 23
+ARM GAS  /tmp/ccJIoKF5.s 			page 23
 
 
  415              		.thumb
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  461              		.loc 1 350 3 is_stmt 1 view .LVU100
  351:Utilities/sequencer/stm32_seq.c **** }
  462              		.loc 1 351 1 is_stmt 0 view .LVU101
-ARM GAS  /tmp/ccWH52jJ.s 			page 24
+ARM GAS  /tmp/ccJIoKF5.s 			page 24
 
 
  463 0018 7047     		bx	lr
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  509              	.LBB90:
  209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  510              		.loc 2 209 3 view .LVU111
-ARM GAS  /tmp/ccWH52jJ.s 			page 25
+ARM GAS  /tmp/ccJIoKF5.s 			page 25
 
 
  511              		.syntax unified
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  558              		.fpu softvfp
  560              	UTIL_SEQ_SetEvt:
  561              	.LVL26:
-ARM GAS  /tmp/ccWH52jJ.s 			page 26
+ARM GAS  /tmp/ccJIoKF5.s 			page 26
 
 
  562              	.LFB113:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  603 0008 1368     		ldr	r3, [r2]
  604 000a 0343     		orrs	r3, r3, r0
  605 000c 1360     		str	r3, [r2]
-ARM GAS  /tmp/ccWH52jJ.s 			page 27
+ARM GAS  /tmp/ccJIoKF5.s 			page 27
 
 
  369:Utilities/sequencer/stm32_seq.c **** 
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  652              		.loc 2 449 31 view .LVU140
  653              	.LBB100:
-ARM GAS  /tmp/ccWH52jJ.s 			page 28
+ARM GAS  /tmp/ccJIoKF5.s 			page 28
 
 
  451:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  697              	@ 0 "" 2
  698              	.LVL33:
  699              		.loc 2 481 3 is_stmt 0 view .LVU153
-ARM GAS  /tmp/ccWH52jJ.s 			page 29
+ARM GAS  /tmp/ccJIoKF5.s 			page 29
 
 
  700              		.thumb
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  414:Utilities/sequencer/stm32_seq.c ****    */
  415:Utilities/sequencer/stm32_seq.c ****   while ((EvtSet & EvtWaited) == 0U)
  416:Utilities/sequencer/stm32_seq.c ****   {
-ARM GAS  /tmp/ccWH52jJ.s 			page 30
+ARM GAS  /tmp/ccJIoKF5.s 			page 30
 
 
  417:Utilities/sequencer/stm32_seq.c ****     UTIL_SEQ_EvtIdle(wait_task_idx, EvtWaited);
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  441:Utilities/sequencer/stm32_seq.c ****   return;
  442:Utilities/sequencer/stm32_seq.c **** }
  443:Utilities/sequencer/stm32_seq.c **** 
-ARM GAS  /tmp/ccWH52jJ.s 			page 31
+ARM GAS  /tmp/ccJIoKF5.s 			page 31
 
 
  444:Utilities/sequencer/stm32_seq.c **** __WEAK void UTIL_SEQ_Idle( void )
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  799              		.cfi_startproc
  800              		@ args = 0, pretend = 0, frame = 0
  801              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccWH52jJ.s 			page 32
+ARM GAS  /tmp/ccJIoKF5.s 			page 32
 
 
  802              		@ link register save eliminated.
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  832              		.loc 1 484 39 is_stmt 1 discriminator 1 view .LVU174
  833              	.LVL35:
  834              		.loc 1 484 49 discriminator 1 view .LVU175
-ARM GAS  /tmp/ccWH52jJ.s 			page 33
+ARM GAS  /tmp/ccJIoKF5.s 			page 33
 
 
  835              		.loc 1 484 55 is_stmt 0 discriminator 1 view .LVU176
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  489:Utilities/sequencer/stm32_seq.c **** 
  490:Utilities/sequencer/stm32_seq.c ****   return (uint8_t)(31U-n);
  885              		.loc 1 490 3 is_stmt 1 view .LVU196
-ARM GAS  /tmp/ccWH52jJ.s 			page 34
+ARM GAS  /tmp/ccJIoKF5.s 			page 34
 
 
  886              		.loc 1 490 10 is_stmt 0 view .LVU197
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  933 0004 1C68     		ldr	r4, [r3]
  934              	.LVL49:
  216:Utilities/sequencer/stm32_seq.c **** 
-ARM GAS  /tmp/ccWH52jJ.s 			page 35
+ARM GAS  /tmp/ccJIoKF5.s 			page 35
 
 
  935              		.loc 1 216 3 is_stmt 1 view .LVU207
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  973 0026 334A     		ldr	r2, .L54+4
  974 0028 02EBC302 		add	r2, r2, r3, lsl #3
  975 002c 4FF0FF31 		mov	r1, #-1
-ARM GAS  /tmp/ccWH52jJ.s 			page 36
+ARM GAS  /tmp/ccJIoKF5.s 			page 36
 
 
  976 0030 5160     		str	r1, [r2, #4]
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  1016              	.LBE106:
  265:Utilities/sequencer/stm32_seq.c ****     /** remove from the list or pending task the one that has been selected to be executed */
  1017              		.loc 1 265 5 is_stmt 1 view .LVU238
-ARM GAS  /tmp/ccWH52jJ.s 			page 37
+ARM GAS  /tmp/ccJIoKF5.s 			page 37
 
 
  1018              	.LBB108:
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  1059              		.loc 1 269 59 is_stmt 1 discriminator 3 view .LVU251
  1060              	.LVL60:
  1061              	.L47:
-ARM GAS  /tmp/ccWH52jJ.s 			page 38
+ARM GAS  /tmp/ccJIoKF5.s 			page 38
 
 
  269:Utilities/sequencer/stm32_seq.c ****     {
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  1104              		.loc 1 225 30 view .LVU265
  1105 0096 164A     		ldr	r2, .L54
  1106 0098 1268     		ldr	r2, [r2]
-ARM GAS  /tmp/ccWH52jJ.s 			page 39
+ARM GAS  /tmp/ccJIoKF5.s 			page 39
 
 
  225:Utilities/sequencer/stm32_seq.c ****   {
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  207:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  1148              		.loc 2 207 27 view .LVU279
  1149              	.LBB115:
-ARM GAS  /tmp/ccWH52jJ.s 			page 40
+ARM GAS  /tmp/ccJIoKF5.s 			page 40
 
 
  209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  1195              		.syntax unified
  1196              	.LBE117:
  1197              	.LBE116:
-ARM GAS  /tmp/ccWH52jJ.s 			page 41
+ARM GAS  /tmp/ccJIoKF5.s 			page 41
 
 
  289:Utilities/sequencer/stm32_seq.c **** 
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  1246              		.cfi_def_cfa_offset 8
  1247              		.cfi_offset 3, -8
  1248              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccWH52jJ.s 			page 42
+ARM GAS  /tmp/ccJIoKF5.s 			page 42
 
 
  440:Utilities/sequencer/stm32_seq.c ****   return;
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  395:Utilities/sequencer/stm32_seq.c ****   {
  1293              		.loc 1 395 5 is_stmt 0 view .LVU311
  1294 0006 B6F1FF3F 		cmp	r6, #-1
-ARM GAS  /tmp/ccWH52jJ.s 			page 43
+ARM GAS  /tmp/ccJIoKF5.s 			page 43
 
 
  1295 000a 05D0     		beq	.L62
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  425:Utilities/sequencer/stm32_seq.c **** 
  1335              		.loc 1 425 18 is_stmt 0 view .LVU326
  1336 002e 044A     		ldr	r2, .L64
-ARM GAS  /tmp/ccWH52jJ.s 			page 44
+ARM GAS  /tmp/ccJIoKF5.s 			page 44
 
 
  1337 0030 1660     		str	r6, [r2]
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  1384 0002 1446     		mov	r4, r2
  299:Utilities/sequencer/stm32_seq.c **** 
  1385              		.loc 1 299 3 is_stmt 1 view .LVU336
-ARM GAS  /tmp/ccWH52jJ.s 			page 45
+ARM GAS  /tmp/ccJIoKF5.s 			page 45
 
 
  1386              	.LBB118:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  1428              		.loc 2 479 27 view .LVU349
  1429              	.LBB123:
-ARM GAS  /tmp/ccWH52jJ.s 			page 46
+ARM GAS  /tmp/ccJIoKF5.s 			page 46
 
 
  1430              		.loc 2 481 3 view .LVU350
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  1487      00000000 
  1487      00000000 
  1487      00000000 
-ARM GAS  /tmp/ccWH52jJ.s 			page 47
+ARM GAS  /tmp/ccJIoKF5.s 			page 47
 
 
  1488              		.section	.bss.TaskSet,"aw",%nobits
@@ -2791,81 +2791,81 @@ ARM GAS  /tmp/ccWH52jJ.s 			page 1
  1520              		.file 4 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
  1521              		.file 5 "Utilities/sequencer/stm32_seq.h"
  1522              		.file 6 "Utilities/misc/stm32_mem.h"
-ARM GAS  /tmp/ccWH52jJ.s 			page 48
+ARM GAS  /tmp/ccJIoKF5.s 			page 48
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_seq.c
-     /tmp/ccWH52jJ.s:16     .text.UTIL_SEQ_Init:0000000000000000 $t
-     /tmp/ccWH52jJ.s:24     .text.UTIL_SEQ_Init:0000000000000000 UTIL_SEQ_Init
-     /tmp/ccWH52jJ.s:80     .text.UTIL_SEQ_Init:0000000000000038 $d
-     /tmp/ccWH52jJ.s:92     .text.UTIL_SEQ_DeInit:0000000000000000 $t
-     /tmp/ccWH52jJ.s:99     .text.UTIL_SEQ_DeInit:0000000000000000 UTIL_SEQ_DeInit
-     /tmp/ccWH52jJ.s:112    .text.UTIL_SEQ_SetTask:0000000000000000 $t
-     /tmp/ccWH52jJ.s:119    .text.UTIL_SEQ_SetTask:0000000000000000 UTIL_SEQ_SetTask
-     /tmp/ccWH52jJ.s:197    .text.UTIL_SEQ_SetTask:0000000000000020 $d
-     /tmp/ccWH52jJ.s:203    .text.UTIL_SEQ_IsSchedulableTask:0000000000000000 $t
-     /tmp/ccWH52jJ.s:210    .text.UTIL_SEQ_IsSchedulableTask:0000000000000000 UTIL_SEQ_IsSchedulableTask
-     /tmp/ccWH52jJ.s:297    .text.UTIL_SEQ_IsSchedulableTask:0000000000000028 $d
-     /tmp/ccWH52jJ.s:304    .text.UTIL_SEQ_PauseTask:0000000000000000 $t
-     /tmp/ccWH52jJ.s:311    .text.UTIL_SEQ_PauseTask:0000000000000000 UTIL_SEQ_PauseTask
-     /tmp/ccWH52jJ.s:380    .text.UTIL_SEQ_PauseTask:0000000000000018 $d
-     /tmp/ccWH52jJ.s:385    .text.UTIL_SEQ_IsPauseTask:0000000000000000 $t
-     /tmp/ccWH52jJ.s:392    .text.UTIL_SEQ_IsPauseTask:0000000000000000 UTIL_SEQ_IsPauseTask
-     /tmp/ccWH52jJ.s:467    .text.UTIL_SEQ_IsPauseTask:000000000000001c $d
-     /tmp/ccWH52jJ.s:472    .text.UTIL_SEQ_ResumeTask:0000000000000000 $t
-     /tmp/ccWH52jJ.s:479    .text.UTIL_SEQ_ResumeTask:0000000000000000 UTIL_SEQ_ResumeTask
-     /tmp/ccWH52jJ.s:548    .text.UTIL_SEQ_ResumeTask:0000000000000014 $d
-     /tmp/ccWH52jJ.s:553    .text.UTIL_SEQ_SetEvt:0000000000000000 $t
-     /tmp/ccWH52jJ.s:560    .text.UTIL_SEQ_SetEvt:0000000000000000 UTIL_SEQ_SetEvt
-     /tmp/ccWH52jJ.s:629    .text.UTIL_SEQ_SetEvt:0000000000000014 $d
-     /tmp/ccWH52jJ.s:634    .text.UTIL_SEQ_ClrEvt:0000000000000000 $t
-     /tmp/ccWH52jJ.s:641    .text.UTIL_SEQ_ClrEvt:0000000000000000 UTIL_SEQ_ClrEvt
-     /tmp/ccWH52jJ.s:710    .text.UTIL_SEQ_ClrEvt:0000000000000018 $d
-     /tmp/ccWH52jJ.s:715    .text.UTIL_SEQ_IsEvtPend:0000000000000000 $t
-     /tmp/ccWH52jJ.s:722    .text.UTIL_SEQ_IsEvtPend:0000000000000000 UTIL_SEQ_IsEvtPend
-     /tmp/ccWH52jJ.s:741    .text.UTIL_SEQ_IsEvtPend:000000000000000c $d
-     /tmp/ccWH52jJ.s:747    .text.UTIL_SEQ_Idle:0000000000000000 $t
-     /tmp/ccWH52jJ.s:754    .text.UTIL_SEQ_Idle:0000000000000000 UTIL_SEQ_Idle
-     /tmp/ccWH52jJ.s:768    .text.UTIL_SEQ_PreIdle:0000000000000000 $t
-     /tmp/ccWH52jJ.s:775    .text.UTIL_SEQ_PreIdle:0000000000000000 UTIL_SEQ_PreIdle
-     /tmp/ccWH52jJ.s:789    .text.UTIL_SEQ_PostIdle:0000000000000000 $t
-     /tmp/ccWH52jJ.s:796    .text.UTIL_SEQ_PostIdle:0000000000000000 UTIL_SEQ_PostIdle
-     /tmp/ccWH52jJ.s:810    .text.SEQ_BitPosition:0000000000000000 $t
-     /tmp/ccWH52jJ.s:817    .text.SEQ_BitPosition:0000000000000000 SEQ_BitPosition
-     /tmp/ccWH52jJ.s:900    .text.SEQ_BitPosition:0000000000000038 $d
-     /tmp/ccWH52jJ.s:905    .text.UTIL_SEQ_Run:0000000000000000 $t
-     /tmp/ccWH52jJ.s:912    .text.UTIL_SEQ_Run:0000000000000000 UTIL_SEQ_Run
-     /tmp/ccWH52jJ.s:1217   .text.UTIL_SEQ_Run:00000000000000f0 $d
-     /tmp/ccWH52jJ.s:1229   .text.UTIL_SEQ_EvtIdle:0000000000000000 $t
-     /tmp/ccWH52jJ.s:1236   .text.UTIL_SEQ_EvtIdle:0000000000000000 UTIL_SEQ_EvtIdle
-     /tmp/ccWH52jJ.s:1262   .text.UTIL_SEQ_WaitEvt:0000000000000000 $t
-     /tmp/ccWH52jJ.s:1269   .text.UTIL_SEQ_WaitEvt:0000000000000000 UTIL_SEQ_WaitEvt
-     /tmp/ccWH52jJ.s:1355   .text.UTIL_SEQ_WaitEvt:0000000000000040 $d
-     /tmp/ccWH52jJ.s:1362   .text.UTIL_SEQ_RegTask:0000000000000000 $t
-     /tmp/ccWH52jJ.s:1369   .text.UTIL_SEQ_RegTask:0000000000000000 UTIL_SEQ_RegTask
-     /tmp/ccWH52jJ.s:1449   .text.UTIL_SEQ_RegTask:000000000000001c $d
-     /tmp/ccWH52jJ.s:1454   .bss.CurrentTaskIdx:0000000000000000 $d
-     /tmp/ccWH52jJ.s:1458   .bss.CurrentTaskIdx:0000000000000000 CurrentTaskIdx
-     /tmp/ccWH52jJ.s:1461   .bss.EvtSet:0000000000000000 $d
-     /tmp/ccWH52jJ.s:1465   .bss.EvtSet:0000000000000000 EvtSet
-     /tmp/ccWH52jJ.s:1468   .bss.EvtWaited:0000000000000000 $d
-     /tmp/ccWH52jJ.s:1472   .bss.EvtWaited:0000000000000000 EvtWaited
-ARM GAS  /tmp/ccWH52jJ.s 			page 49
+     /tmp/ccJIoKF5.s:16     .text.UTIL_SEQ_Init:0000000000000000 $t
+     /tmp/ccJIoKF5.s:24     .text.UTIL_SEQ_Init:0000000000000000 UTIL_SEQ_Init
+     /tmp/ccJIoKF5.s:80     .text.UTIL_SEQ_Init:0000000000000038 $d
+     /tmp/ccJIoKF5.s:92     .text.UTIL_SEQ_DeInit:0000000000000000 $t
+     /tmp/ccJIoKF5.s:99     .text.UTIL_SEQ_DeInit:0000000000000000 UTIL_SEQ_DeInit
+     /tmp/ccJIoKF5.s:112    .text.UTIL_SEQ_SetTask:0000000000000000 $t
+     /tmp/ccJIoKF5.s:119    .text.UTIL_SEQ_SetTask:0000000000000000 UTIL_SEQ_SetTask
+     /tmp/ccJIoKF5.s:197    .text.UTIL_SEQ_SetTask:0000000000000020 $d
+     /tmp/ccJIoKF5.s:203    .text.UTIL_SEQ_IsSchedulableTask:0000000000000000 $t
+     /tmp/ccJIoKF5.s:210    .text.UTIL_SEQ_IsSchedulableTask:0000000000000000 UTIL_SEQ_IsSchedulableTask
+     /tmp/ccJIoKF5.s:297    .text.UTIL_SEQ_IsSchedulableTask:0000000000000028 $d
+     /tmp/ccJIoKF5.s:304    .text.UTIL_SEQ_PauseTask:0000000000000000 $t
+     /tmp/ccJIoKF5.s:311    .text.UTIL_SEQ_PauseTask:0000000000000000 UTIL_SEQ_PauseTask
+     /tmp/ccJIoKF5.s:380    .text.UTIL_SEQ_PauseTask:0000000000000018 $d
+     /tmp/ccJIoKF5.s:385    .text.UTIL_SEQ_IsPauseTask:0000000000000000 $t
+     /tmp/ccJIoKF5.s:392    .text.UTIL_SEQ_IsPauseTask:0000000000000000 UTIL_SEQ_IsPauseTask
+     /tmp/ccJIoKF5.s:467    .text.UTIL_SEQ_IsPauseTask:000000000000001c $d
+     /tmp/ccJIoKF5.s:472    .text.UTIL_SEQ_ResumeTask:0000000000000000 $t
+     /tmp/ccJIoKF5.s:479    .text.UTIL_SEQ_ResumeTask:0000000000000000 UTIL_SEQ_ResumeTask
+     /tmp/ccJIoKF5.s:548    .text.UTIL_SEQ_ResumeTask:0000000000000014 $d
+     /tmp/ccJIoKF5.s:553    .text.UTIL_SEQ_SetEvt:0000000000000000 $t
+     /tmp/ccJIoKF5.s:560    .text.UTIL_SEQ_SetEvt:0000000000000000 UTIL_SEQ_SetEvt
+     /tmp/ccJIoKF5.s:629    .text.UTIL_SEQ_SetEvt:0000000000000014 $d
+     /tmp/ccJIoKF5.s:634    .text.UTIL_SEQ_ClrEvt:0000000000000000 $t
+     /tmp/ccJIoKF5.s:641    .text.UTIL_SEQ_ClrEvt:0000000000000000 UTIL_SEQ_ClrEvt
+     /tmp/ccJIoKF5.s:710    .text.UTIL_SEQ_ClrEvt:0000000000000018 $d
+     /tmp/ccJIoKF5.s:715    .text.UTIL_SEQ_IsEvtPend:0000000000000000 $t
+     /tmp/ccJIoKF5.s:722    .text.UTIL_SEQ_IsEvtPend:0000000000000000 UTIL_SEQ_IsEvtPend
+     /tmp/ccJIoKF5.s:741    .text.UTIL_SEQ_IsEvtPend:000000000000000c $d
+     /tmp/ccJIoKF5.s:747    .text.UTIL_SEQ_Idle:0000000000000000 $t
+     /tmp/ccJIoKF5.s:754    .text.UTIL_SEQ_Idle:0000000000000000 UTIL_SEQ_Idle
+     /tmp/ccJIoKF5.s:768    .text.UTIL_SEQ_PreIdle:0000000000000000 $t
+     /tmp/ccJIoKF5.s:775    .text.UTIL_SEQ_PreIdle:0000000000000000 UTIL_SEQ_PreIdle
+     /tmp/ccJIoKF5.s:789    .text.UTIL_SEQ_PostIdle:0000000000000000 $t
+     /tmp/ccJIoKF5.s:796    .text.UTIL_SEQ_PostIdle:0000000000000000 UTIL_SEQ_PostIdle
+     /tmp/ccJIoKF5.s:810    .text.SEQ_BitPosition:0000000000000000 $t
+     /tmp/ccJIoKF5.s:817    .text.SEQ_BitPosition:0000000000000000 SEQ_BitPosition
+     /tmp/ccJIoKF5.s:900    .text.SEQ_BitPosition:0000000000000038 $d
+     /tmp/ccJIoKF5.s:905    .text.UTIL_SEQ_Run:0000000000000000 $t
+     /tmp/ccJIoKF5.s:912    .text.UTIL_SEQ_Run:0000000000000000 UTIL_SEQ_Run
+     /tmp/ccJIoKF5.s:1217   .text.UTIL_SEQ_Run:00000000000000f0 $d
+     /tmp/ccJIoKF5.s:1229   .text.UTIL_SEQ_EvtIdle:0000000000000000 $t
+     /tmp/ccJIoKF5.s:1236   .text.UTIL_SEQ_EvtIdle:0000000000000000 UTIL_SEQ_EvtIdle
+     /tmp/ccJIoKF5.s:1262   .text.UTIL_SEQ_WaitEvt:0000000000000000 $t
+     /tmp/ccJIoKF5.s:1269   .text.UTIL_SEQ_WaitEvt:0000000000000000 UTIL_SEQ_WaitEvt
+     /tmp/ccJIoKF5.s:1355   .text.UTIL_SEQ_WaitEvt:0000000000000040 $d
+     /tmp/ccJIoKF5.s:1362   .text.UTIL_SEQ_RegTask:0000000000000000 $t
+     /tmp/ccJIoKF5.s:1369   .text.UTIL_SEQ_RegTask:0000000000000000 UTIL_SEQ_RegTask
+     /tmp/ccJIoKF5.s:1449   .text.UTIL_SEQ_RegTask:000000000000001c $d
+     /tmp/ccJIoKF5.s:1454   .bss.CurrentTaskIdx:0000000000000000 $d
+     /tmp/ccJIoKF5.s:1458   .bss.CurrentTaskIdx:0000000000000000 CurrentTaskIdx
+     /tmp/ccJIoKF5.s:1461   .bss.EvtSet:0000000000000000 $d
+     /tmp/ccJIoKF5.s:1465   .bss.EvtSet:0000000000000000 EvtSet
+     /tmp/ccJIoKF5.s:1468   .bss.EvtWaited:0000000000000000 $d
+     /tmp/ccJIoKF5.s:1472   .bss.EvtWaited:0000000000000000 EvtWaited
+ARM GAS  /tmp/ccJIoKF5.s 			page 49
 
 
-     /tmp/ccWH52jJ.s:1475   .bss.TaskCb:0000000000000000 $d
-     /tmp/ccWH52jJ.s:1479   .bss.TaskCb:0000000000000000 TaskCb
-     /tmp/ccWH52jJ.s:1482   .bss.TaskPrio:0000000000000000 $d
-     /tmp/ccWH52jJ.s:1486   .bss.TaskPrio:0000000000000000 TaskPrio
-     /tmp/ccWH52jJ.s:1489   .bss.TaskSet:0000000000000000 $d
-     /tmp/ccWH52jJ.s:1493   .bss.TaskSet:0000000000000000 TaskSet
-     /tmp/ccWH52jJ.s:1496   .data.SuperMask:0000000000000000 $d
-     /tmp/ccWH52jJ.s:1500   .data.SuperMask:0000000000000000 SuperMask
-     /tmp/ccWH52jJ.s:1503   .data.TaskMask:0000000000000000 $d
-     /tmp/ccWH52jJ.s:1507   .data.TaskMask:0000000000000000 TaskMask
-     /tmp/ccWH52jJ.s:1510   .rodata.SEQ_clz_table_4bit:0000000000000000 $d
-     /tmp/ccWH52jJ.s:1514   .rodata.SEQ_clz_table_4bit:0000000000000000 SEQ_clz_table_4bit
+     /tmp/ccJIoKF5.s:1475   .bss.TaskCb:0000000000000000 $d
+     /tmp/ccJIoKF5.s:1479   .bss.TaskCb:0000000000000000 TaskCb
+     /tmp/ccJIoKF5.s:1482   .bss.TaskPrio:0000000000000000 $d
+     /tmp/ccJIoKF5.s:1486   .bss.TaskPrio:0000000000000000 TaskPrio
+     /tmp/ccJIoKF5.s:1489   .bss.TaskSet:0000000000000000 $d
+     /tmp/ccJIoKF5.s:1493   .bss.TaskSet:0000000000000000 TaskSet
+     /tmp/ccJIoKF5.s:1496   .data.SuperMask:0000000000000000 $d
+     /tmp/ccJIoKF5.s:1500   .data.SuperMask:0000000000000000 SuperMask
+     /tmp/ccJIoKF5.s:1503   .data.TaskMask:0000000000000000 $d
+     /tmp/ccJIoKF5.s:1507   .data.TaskMask:0000000000000000 TaskMask
+     /tmp/ccJIoKF5.s:1510   .rodata.SEQ_clz_table_4bit:0000000000000000 $d
+     /tmp/ccJIoKF5.s:1514   .rodata.SEQ_clz_table_4bit:0000000000000000 SEQ_clz_table_4bit
 
 UNDEFINED SYMBOLS
 UTIL_MEM_set_8

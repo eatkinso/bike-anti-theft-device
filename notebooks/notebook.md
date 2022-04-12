@@ -263,3 +263,14 @@ Idle HIGH
 same bits 
 AGHH!!!
 
+
+Tried with arduino -- works fine. Bizarre. Thought: timing might be *slightly* off, and Arduino is fine with it bc it has a lower clock speed, but the STM32 is pickier. Next step: fiddle with STM32 UART oversampling rate and/or baud rate to see if that fixes it. 
+
+# 4/11/2022 More Debugging -- Elizabeth 
+
+
+Switched to SWO instead of JTAG in CubeMx.. probably not going to help but worth a try. 
+
+Try: 
+-audo baud rate on falling edge + single sample
+

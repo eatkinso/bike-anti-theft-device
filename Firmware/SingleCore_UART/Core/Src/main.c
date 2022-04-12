@@ -90,10 +90,10 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  // MX_SUBGHZ_Init();
+  MX_SUBGHZ_Init();
   MX_GPIO_Init();
   MX_USART1_UART_Init();
-  // MX_LoRaWAN_Init();
+  MX_LoRaWAN_Init();
   /* USER CODE BEGIN 2 */
 
   uint8_t txdata[75] = {
@@ -135,14 +135,14 @@ int main(void)
   uint8_t rxdata1;
  
   uint8_t rxdata75[75]={
-    0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0,0,0,0,0,0,
-    0,0,0,0,0};
+    7,7,7,7,7,7,7,7,7,7,
+    7,7,7,7,7,7,7,7,7,7,
+    7,7,7,7,7,7,7,7,7,7,
+    7,7,7,7,7,7,7,7,7,7,
+    7,7,7,7,7,7,7,7,7,7,
+    7,7,7,7,7,7,7,7,7,7,
+    7,7,7,7,7,7,7,7,7,7,
+    7,7,7,7,7};
 
 
   uint8_t nrxdata75[75]={
@@ -172,9 +172,9 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-    volatile HAL_StatusTypeDef rx_stat;
+    //volatile HAL_StatusTypeDef rx_stat;
     HAL_UART_Receive_IT(&huart1, rxdata75, 75);
-    //HAL_UART_Transmit(&huart1, txdata, 75, 10);
+    // HAL_UART_Transmit(&huart1, txdata, 75, 10);
     /* for (int j =0; j<75; j=j+1){
       rx_stat=HAL_UART_Receive(&huart1, rxdata75[j], 1,100000);
     } */
@@ -186,7 +186,7 @@ int main(void)
       nrxdata75[i] = ~rxdata75[i];
     } */
     /* USER CODE END WHILE */
-   //  MX_LoRaWAN_Process();
+    MX_LoRaWAN_Process();
 
     /* USER CODE BEGIN 3 */
   }
@@ -281,12 +281,10 @@ static void MX_USART1_UART_Init(void)
   huart1.Init.Parity = UART_PARITY_NONE;
   huart1.Init.Mode = UART_MODE_TX_RX;
   huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
-  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
-  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_8;
+  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_ENABLE;
   huart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
-  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_AUTOBAUDRATE_INIT;
-  huart1.AdvancedInit.AutoBaudRateEnable = UART_ADVFEATURE_AUTOBAUDRATE_ENABLE;
-  huart1.AdvancedInit.AutoBaudRateMode = UART_ADVFEATURE_AUTOBAUDRATE_ONSTARTBIT;
+  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
   if (HAL_UART_Init(&huart1) != HAL_OK)
   {
     Error_Handler();

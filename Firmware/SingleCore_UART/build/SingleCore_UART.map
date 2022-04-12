@@ -3470,12 +3470,12 @@ LOAD /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-1
                 0x000000000800053c        0x4 build/main.o
                 0x000000000800053c                Error_Handler
  .text.MX_USART1_UART_Init
-                0x0000000008000540       0x6c build/main.o
+                0x0000000008000540       0x68 build/main.o
  .text.SystemClock_Config
-                0x00000000080005ac       0x78 build/main.o
-                0x00000000080005ac                SystemClock_Config
- .text.main     0x0000000008000624       0x74 build/main.o
-                0x0000000008000624                main
+                0x00000000080005a8       0x78 build/main.o
+                0x00000000080005a8                SystemClock_Config
+ .text.main     0x0000000008000620       0x78 build/main.o
+                0x0000000008000620                main
  .text.HAL_GetTick
                 0x0000000008000698        0x8 build/sys_app.o
                 0x0000000008000698                HAL_GetTick
@@ -3761,7 +3761,7 @@ LOAD /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-1
 .iplt           0x0000000008002ae8        0x0
  .iplt          0x0000000008002ae8        0x0 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x0000000008002ae8      0x180
+.rodata         0x0000000008002ae8      0x1c8
                 0x0000000008002ae8                . = ALIGN (0x8)
  *(.rodata)
  .rodata        0x0000000008002ae8       0x4b build/main.o
@@ -3769,71 +3769,70 @@ LOAD /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-1
  .rodata        0x0000000008002b34       0x1c build/stm32wlxx_hal_rcc.o
  *(.rodata*)
  .rodata.main.str1.4
-                0x0000000008002b50       0x4c build/main.o
+                0x0000000008002b50       0x98 build/main.o
  .rodata.UARTPrescTable
-                0x0000000008002b9c       0x18 build/stm32wlxx_hal_uart.o
-                0x0000000008002b9c                UARTPrescTable
+                0x0000000008002be8       0x18 build/stm32wlxx_hal_uart.o
+                0x0000000008002be8                UARTPrescTable
  .rodata.denominator.0
-                0x0000000008002bb4        0x8 build/stm32wlxx_hal_uart_ex.o
+                0x0000000008002c00        0x8 build/stm32wlxx_hal_uart_ex.o
  .rodata.numerator.1
-                0x0000000008002bbc        0x8 build/stm32wlxx_hal_uart_ex.o
+                0x0000000008002c08        0x8 build/stm32wlxx_hal_uart_ex.o
  .rodata.AHBPrescTable
-                0x0000000008002bc4       0x40 build/system_stm32wlxx.o
-                0x0000000008002bc4                AHBPrescTable
+                0x0000000008002c10       0x40 build/system_stm32wlxx.o
+                0x0000000008002c10                AHBPrescTable
  .rodata.APBPrescTable
-                0x0000000008002c04       0x20 build/system_stm32wlxx.o
-                0x0000000008002c04                APBPrescTable
+                0x0000000008002c50       0x20 build/system_stm32wlxx.o
+                0x0000000008002c50                APBPrescTable
  .rodata.MSIRangeTable
-                0x0000000008002c24       0x40 build/system_stm32wlxx.o
-                0x0000000008002c24                MSIRangeTable
-                0x0000000008002c68                . = ALIGN (0x8)
- *fill*         0x0000000008002c64        0x4 
+                0x0000000008002c70       0x40 build/system_stm32wlxx.o
+                0x0000000008002c70                MSIRangeTable
+                0x0000000008002cb0                . = ALIGN (0x8)
 
-.ARM.extab      0x0000000008002c68        0x0
-                0x0000000008002c68                . = ALIGN (0x8)
+.ARM.extab      0x0000000008002cb0        0x0
+                0x0000000008002cb0                . = ALIGN (0x8)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008002c68                . = ALIGN (0x8)
+                0x0000000008002cb0                . = ALIGN (0x8)
 
-.ARM            0x0000000008002c68        0x8
-                0x0000000008002c68                . = ALIGN (0x8)
-                0x0000000008002c68                __exidx_start = .
+.ARM            0x0000000008002cb0        0x8
+                0x0000000008002cb0                . = ALIGN (0x8)
+                0x0000000008002cb0                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0000000008002c68        0x8 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
-                0x0000000008002c70                __exidx_end = .
-                0x0000000008002c70                . = ALIGN (0x8)
+ .ARM.exidx     0x0000000008002cb0        0x8 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x0000000008002cb8                __exidx_end = .
+                0x0000000008002cb8                . = ALIGN (0x8)
 
-.rel.dyn        0x0000000008002c70        0x0
- .rel.iplt      0x0000000008002c70        0x0 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008002cb8        0x0
+ .rel.iplt      0x0000000008002cb8        0x0 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.preinit_array  0x0000000008002c70        0x0
-                0x0000000008002c70                . = ALIGN (0x8)
-                0x0000000008002c70                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008002cb8        0x0
+                0x0000000008002cb8                . = ALIGN (0x8)
+                0x0000000008002cb8                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008002c70                PROVIDE (__preinit_array_end = .)
-                0x0000000008002c70                . = ALIGN (0x8)
+                0x0000000008002cb8                PROVIDE (__preinit_array_end = .)
+                0x0000000008002cb8                . = ALIGN (0x8)
 
-.init_array     0x0000000008002c70        0x8
-                0x0000000008002c70                . = ALIGN (0x8)
-                0x0000000008002c70                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008002cb8        0x8
+                0x0000000008002cb8                . = ALIGN (0x8)
+                0x0000000008002cb8                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0000000008002c70        0x4 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x0000000008002c74                PROVIDE (__init_array_end = .)
-                0x0000000008002c78                . = ALIGN (0x8)
- *fill*         0x0000000008002c74        0x4 
+ .init_array    0x0000000008002cb8        0x4 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0000000008002cbc                PROVIDE (__init_array_end = .)
+                0x0000000008002cc0                . = ALIGN (0x8)
+ *fill*         0x0000000008002cbc        0x4 
 
-.fini_array     0x0000000008002c78        0x8
-                0x0000000008002c78                . = ALIGN (0x8)
+.fini_array     0x0000000008002cc0        0x8
+                0x0000000008002cc0                . = ALIGN (0x8)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008002c78        0x4 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .fini_array    0x0000000008002cc0        0x4 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x0000000008002c80                . = ALIGN (0x8)
- *fill*         0x0000000008002c7c        0x4 
-                0x0000000008002c80                _sidata = LOADADDR (.data)
+                0x0000000008002cc8                . = ALIGN (0x8)
+ *fill*         0x0000000008002cc4        0x4 
+                0x0000000008002cc8                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000       0x10 load address 0x0000000008002c80
+.data           0x0000000020000000       0x10 load address 0x0000000008002cc8
                 0x0000000020000000                . = ALIGN (0x8)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -3852,11 +3851,11 @@ LOAD /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-1
  *fill*         0x000000002000000c        0x4 
                 0x0000000020000010                _edata = .
 
-.igot.plt       0x0000000020000010        0x0 load address 0x0000000008002c90
+.igot.plt       0x0000000020000010        0x0 load address 0x0000000008002cd8
  .igot.plt      0x0000000020000010        0x0 /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
                 0x0000000020000010                . = ALIGN (0x8)
 
-.bss            0x0000000020000010       0xb0 load address 0x0000000008002c90
+.bss            0x0000000020000010       0xb0 load address 0x0000000008002cd8
                 0x0000000020000010                _sbss = .
                 0x0000000020000010                __bss_start__ = _sbss
  *(.bss)
@@ -3872,7 +3871,7 @@ LOAD /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-1
                 0x00000000200000c0                __bss_end__ = _ebss
                 0x00000000200000c0                . = ALIGN (0x8)
 
-RAM1_region     0x00000000200000c0        0x0 load address 0x0000000008002c90
+RAM1_region     0x00000000200000c0        0x0 load address 0x0000000008002cd8
                 0x00000000200000c0                _sRAM1_region = .
  *(.RAM1_region)
                 0x00000000200000c0                . = ALIGN (0x8)
@@ -3962,24 +3961,24 @@ LOAD /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-1
 LOAD /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a
 LOAD /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a
 
-.debug_info     0x0000000000000000    0x15ed5
- .debug_info    0x0000000000000000     0x17cb build/main.o
- .debug_info    0x00000000000017cb      0x37c build/sys_app.o
- .debug_info    0x0000000000001b47      0x5aa build/timer_if.o
- .debug_info    0x00000000000020f1      0x997 build/stm32wlxx_it.o
- .debug_info    0x0000000000002a88     0x151e build/stm32wlxx_hal_msp.o
- .debug_info    0x0000000000003fa6     0x22df build/stm32wlxx_hal_rcc.o
- .debug_info    0x0000000000006285     0x238f build/stm32wlxx_hal_rcc_ex.o
- .debug_info    0x0000000000008614      0x817 build/stm32wlxx_hal_gpio.o
- .debug_info    0x0000000000008e2b      0xbbe build/stm32wlxx_hal_dma.o
- .debug_info    0x00000000000099e9      0xaec build/stm32wlxx_hal_pwr.o
- .debug_info    0x000000000000a4d5     0x1202 build/stm32wlxx_hal_pwr_ex.o
- .debug_info    0x000000000000b6d7     0x1120 build/stm32wlxx_hal_cortex.o
- .debug_info    0x000000000000c7f7     0x1763 build/stm32wlxx_hal.o
- .debug_info    0x000000000000df5a     0x65ce build/stm32wlxx_hal_uart.o
- .debug_info    0x0000000000014528     0x137c build/stm32wlxx_hal_uart_ex.o
- .debug_info    0x00000000000158a4      0x60f build/system_stm32wlxx.o
- .debug_info    0x0000000000015eb3       0x22 build/startup_stm32wl55xx_cm4.o
+.debug_info     0x0000000000000000    0x15eb1
+ .debug_info    0x0000000000000000     0x17a7 build/main.o
+ .debug_info    0x00000000000017a7      0x37c build/sys_app.o
+ .debug_info    0x0000000000001b23      0x5aa build/timer_if.o
+ .debug_info    0x00000000000020cd      0x997 build/stm32wlxx_it.o
+ .debug_info    0x0000000000002a64     0x151e build/stm32wlxx_hal_msp.o
+ .debug_info    0x0000000000003f82     0x22df build/stm32wlxx_hal_rcc.o
+ .debug_info    0x0000000000006261     0x238f build/stm32wlxx_hal_rcc_ex.o
+ .debug_info    0x00000000000085f0      0x817 build/stm32wlxx_hal_gpio.o
+ .debug_info    0x0000000000008e07      0xbbe build/stm32wlxx_hal_dma.o
+ .debug_info    0x00000000000099c5      0xaec build/stm32wlxx_hal_pwr.o
+ .debug_info    0x000000000000a4b1     0x1202 build/stm32wlxx_hal_pwr_ex.o
+ .debug_info    0x000000000000b6b3     0x1120 build/stm32wlxx_hal_cortex.o
+ .debug_info    0x000000000000c7d3     0x1763 build/stm32wlxx_hal.o
+ .debug_info    0x000000000000df36     0x65ce build/stm32wlxx_hal_uart.o
+ .debug_info    0x0000000000014504     0x137c build/stm32wlxx_hal_uart_ex.o
+ .debug_info    0x0000000000015880      0x60f build/system_stm32wlxx.o
+ .debug_info    0x0000000000015e8f       0x22 build/startup_stm32wl55xx_cm4.o
 
 .debug_abbrev   0x0000000000000000     0x2a0a
  .debug_abbrev  0x0000000000000000      0x30f build/main.o
@@ -4073,59 +4072,59 @@ LOAD /home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-1
  .debug_ranges  0x0000000000000a78       0x18 build/system_stm32wlxx.o
  .debug_ranges  0x0000000000000a90       0x20 build/startup_stm32wl55xx_cm4.o
 
-.debug_line     0x0000000000000000     0xed1d
- .debug_line    0x0000000000000000      0x5dd build/main.o
- .debug_line    0x00000000000005dd      0x3b7 build/sys_app.o
- .debug_line    0x0000000000000994      0x30b build/timer_if.o
- .debug_line    0x0000000000000c9f      0x32e build/stm32wlxx_it.o
- .debug_line    0x0000000000000fcd      0x478 build/stm32wlxx_hal_msp.o
- .debug_line    0x0000000000001445     0x18da build/stm32wlxx_hal_rcc.o
- .debug_line    0x0000000000002d1f     0x16ca build/stm32wlxx_hal_rcc_ex.o
- .debug_line    0x00000000000043e9      0x6b8 build/stm32wlxx_hal_gpio.o
- .debug_line    0x0000000000004aa1      0xd5b build/stm32wlxx_hal_dma.o
- .debug_line    0x00000000000057fc      0x4f2 build/stm32wlxx_hal_pwr.o
- .debug_line    0x0000000000005cee      0xac0 build/stm32wlxx_hal_pwr_ex.o
- .debug_line    0x00000000000067ae      0x7bc build/stm32wlxx_hal_cortex.o
- .debug_line    0x0000000000006f6a      0x9ca build/stm32wlxx_hal.o
- .debug_line    0x0000000000007934     0x632b build/stm32wlxx_hal_uart.o
- .debug_line    0x000000000000dc5f      0xd59 build/stm32wlxx_hal_uart_ex.o
- .debug_line    0x000000000000e9b8      0x2ea build/system_stm32wlxx.o
- .debug_line    0x000000000000eca2       0x7b build/startup_stm32wl55xx_cm4.o
+.debug_line     0x0000000000000000     0xed08
+ .debug_line    0x0000000000000000      0x5c8 build/main.o
+ .debug_line    0x00000000000005c8      0x3b7 build/sys_app.o
+ .debug_line    0x000000000000097f      0x30b build/timer_if.o
+ .debug_line    0x0000000000000c8a      0x32e build/stm32wlxx_it.o
+ .debug_line    0x0000000000000fb8      0x478 build/stm32wlxx_hal_msp.o
+ .debug_line    0x0000000000001430     0x18da build/stm32wlxx_hal_rcc.o
+ .debug_line    0x0000000000002d0a     0x16ca build/stm32wlxx_hal_rcc_ex.o
+ .debug_line    0x00000000000043d4      0x6b8 build/stm32wlxx_hal_gpio.o
+ .debug_line    0x0000000000004a8c      0xd5b build/stm32wlxx_hal_dma.o
+ .debug_line    0x00000000000057e7      0x4f2 build/stm32wlxx_hal_pwr.o
+ .debug_line    0x0000000000005cd9      0xac0 build/stm32wlxx_hal_pwr_ex.o
+ .debug_line    0x0000000000006799      0x7bc build/stm32wlxx_hal_cortex.o
+ .debug_line    0x0000000000006f55      0x9ca build/stm32wlxx_hal.o
+ .debug_line    0x000000000000791f     0x632b build/stm32wlxx_hal_uart.o
+ .debug_line    0x000000000000dc4a      0xd59 build/stm32wlxx_hal_uart_ex.o
+ .debug_line    0x000000000000e9a3      0x2ea build/system_stm32wlxx.o
+ .debug_line    0x000000000000ec8d       0x7b build/startup_stm32wl55xx_cm4.o
 
-.debug_str      0x0000000000000000     0x4a77
- .debug_str     0x0000000000000000      0xca1 build/main.o
-                                        0xde5 (size before relaxing)
- .debug_str     0x0000000000000ca1      0x131 build/sys_app.o
+.debug_str      0x0000000000000000     0x4a6f
+ .debug_str     0x0000000000000000      0xc87 build/main.o
+                                        0xdcb (size before relaxing)
+ .debug_str     0x0000000000000c87      0x131 build/sys_app.o
                                         0x2e8 (size before relaxing)
- .debug_str     0x0000000000000dd2      0x2e8 build/timer_if.o
+ .debug_str     0x0000000000000db8      0x2e8 build/timer_if.o
                                         0x524 (size before relaxing)
- .debug_str     0x00000000000010ba       0xda build/stm32wlxx_it.o
+ .debug_str     0x00000000000010a0       0xda build/stm32wlxx_it.o
                                         0x7aa (size before relaxing)
- .debug_str     0x0000000000001194      0x67a build/stm32wlxx_hal_msp.o
+ .debug_str     0x000000000000117a      0x67a build/stm32wlxx_hal_msp.o
                                        0x10f0 (size before relaxing)
- .debug_str     0x000000000000180e      0x84f build/stm32wlxx_hal_rcc.o
+ .debug_str     0x00000000000017f4      0x861 build/stm32wlxx_hal_rcc.o
                                         0xf26 (size before relaxing)
- .debug_str     0x000000000000205d      0x58a build/stm32wlxx_hal_rcc_ex.o
+ .debug_str     0x0000000000002055      0x58a build/stm32wlxx_hal_rcc_ex.o
                                         0xe19 (size before relaxing)
- .debug_str     0x00000000000025e7      0x10e build/stm32wlxx_hal_gpio.o
+ .debug_str     0x00000000000025df      0x10e build/stm32wlxx_hal_gpio.o
                                         0x45c (size before relaxing)
- .debug_str     0x00000000000026f5      0x2fe build/stm32wlxx_hal_dma.o
+ .debug_str     0x00000000000026ed      0x2fe build/stm32wlxx_hal_dma.o
                                         0x7f9 (size before relaxing)
- .debug_str     0x00000000000029f3      0x325 build/stm32wlxx_hal_pwr.o
+ .debug_str     0x00000000000029eb      0x325 build/stm32wlxx_hal_pwr.o
                                         0x66a (size before relaxing)
- .debug_str     0x0000000000002d18      0x690 build/stm32wlxx_hal_pwr_ex.o
+ .debug_str     0x0000000000002d10      0x690 build/stm32wlxx_hal_pwr_ex.o
                                         0xaed (size before relaxing)
- .debug_str     0x00000000000033a8      0x471 build/stm32wlxx_hal_cortex.o
+ .debug_str     0x00000000000033a0      0x471 build/stm32wlxx_hal_cortex.o
                                         0xb2a (size before relaxing)
- .debug_str     0x0000000000003819      0x74a build/stm32wlxx_hal.o
+ .debug_str     0x0000000000003811      0x74a build/stm32wlxx_hal.o
                                        0x10ca (size before relaxing)
- .debug_str     0x0000000000003f63      0x869 build/stm32wlxx_hal_uart.o
+ .debug_str     0x0000000000003f5b      0x869 build/stm32wlxx_hal_uart.o
                                        0x1302 (size before relaxing)
- .debug_str     0x00000000000047cc      0x22c build/stm32wlxx_hal_uart_ex.o
+ .debug_str     0x00000000000047c4      0x22c build/stm32wlxx_hal_uart_ex.o
                                         0xb0c (size before relaxing)
- .debug_str     0x00000000000049f8       0x57 build/system_stm32wlxx.o
+ .debug_str     0x00000000000049f0       0x57 build/system_stm32wlxx.o
                                         0x444 (size before relaxing)
- .debug_str     0x0000000000004a4f       0x28 build/startup_stm32wl55xx_cm4.o
+ .debug_str     0x0000000000004a47       0x28 build/startup_stm32wl55xx_cm4.o
                                          0x67 (size before relaxing)
 
 .comment        0x0000000000000000       0x49

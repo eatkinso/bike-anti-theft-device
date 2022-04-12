@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccIEh1dP.s 			page 1
+ARM GAS  /tmp/ccmMFNdI.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
   30:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****   * @file    LmHandler.c
   31:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****   * @author  MCD Application Team
   32:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****   * @brief   LoRaMAC Layer handling definition
-ARM GAS  /tmp/ccIEh1dP.s 			page 2
+ARM GAS  /tmp/ccmMFNdI.s 			page 2
 
 
   33:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****   ******************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
   87:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****  * Hex 16 split buffer
   88:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****  */
   89:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** #define HEX16(X)  HEX8(X), X[8], X[9], X[10], X[11], X[12], X[13], X[14], X[15]
-ARM GAS  /tmp/ccIEh1dP.s 			page 3
+ARM GAS  /tmp/ccmMFNdI.s 			page 3
 
 
   90:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  144:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     .Datarate = DR_0,
  145:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     .UplinkCounter = 0,
  146:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     .AppData =
-ARM GAS  /tmp/ccIEh1dP.s 			page 4
+ARM GAS  /tmp/ccmMFNdI.s 			page 4
 
 
  147:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  201:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** static bool IsClassBSwitchPending = false;
  202:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** #endif /* LORAMAC_CLASSB_ENABLED == 1 */
  203:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
-ARM GAS  /tmp/ccIEh1dP.s 			page 5
+ARM GAS  /tmp/ccmMFNdI.s 			page 5
 
 
  204:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** static bool CtxRestoreDone = false;
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  258:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** #endif /* LORAMAC_CLASSB_ENABLED == 1 */
  259:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
  260:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** /*!
-ARM GAS  /tmp/ccIEh1dP.s 			page 6
+ARM GAS  /tmp/ccmMFNdI.s 			page 6
 
 
  261:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****  * Notifies the package to process the LoRaMac callbacks.
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  315:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
  316:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     /*The LoRa-Alliance Compliance protocol package should always be initialized and activated.*/
  317:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if (LmHandlerPackageRegister(PACKAGE_ID_COMPLIANCE, &LmhpComplianceParams) != LORAMAC_HANDLER_S
-ARM GAS  /tmp/ccIEh1dP.s 			page 7
+ARM GAS  /tmp/ccmMFNdI.s 			page 7
 
 
  318:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  372:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     mibReq.Type = MIB_DEV_EUI;
  373:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     LoRaMacMibGetRequestConfirm( &mibReq );
  374:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     memcpy1( CommissioningParams.DevEui, mibReq.Param.DevEui, 8 );
-ARM GAS  /tmp/ccIEh1dP.s 			page 8
+ARM GAS  /tmp/ccmMFNdI.s 			page 8
 
 
  375:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  429:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     return LORAMAC_HANDLER_SUCCESS;
  430:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** }
  431:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
-ARM GAS  /tmp/ccIEh1dP.s 			page 9
+ARM GAS  /tmp/ccmMFNdI.s 			page 9
 
 
  432:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** bool LmHandlerIsBusy( void )
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  486:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
  487:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if ( mode == ACTIVATION_TYPE_OTAA )
  488:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
-ARM GAS  /tmp/ccIEh1dP.s 			page 10
+ARM GAS  /tmp/ccmMFNdI.s 			page 10
 
 
  489:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         MlmeReq_t mlmeReq;
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  543:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
  544:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if( status == LORAMAC_STATUS_OK )
  545:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
-ARM GAS  /tmp/ccIEh1dP.s 			page 11
+ARM GAS  /tmp/ccmMFNdI.s 			page 11
 
 
  546:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         if( mibReq.Param.NetworkActivation == ACTIVATION_TYPE_NONE )
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  600:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
  601:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         // Send empty frame in order to flush MAC commands
  602:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         TxParams.MsgType = LORAMAC_HANDLER_UNCONFIRMED_MSG;
-ARM GAS  /tmp/ccIEh1dP.s 			page 12
+ARM GAS  /tmp/ccmMFNdI.s 			page 12
 
 
  603:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         mcpsReq.Type = MCPS_UNCONFIRMED;
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  657:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         case LORAMAC_STATUS_REGION_NOT_SUPPORTED:
  658:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         case LORAMAC_STATUS_NO_FREE_CHANNEL_FOUND:
  659:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         case LORAMAC_STATUS_NO_CHANNEL_FOUND:
-ARM GAS  /tmp/ccIEh1dP.s 			page 13
+ARM GAS  /tmp/ccmMFNdI.s 			page 13
 
 
  660:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         case LORAMAC_STATUS_LENGTH_ERROR:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  714:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
  715:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     status = LoRaMacMlmeRequest( &mlmeReq );
  716:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
-ARM GAS  /tmp/ccIEh1dP.s 			page 14
+ARM GAS  /tmp/ccmMFNdI.s 			page 14
 
 
  717:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if( status == LORAMAC_STATUS_OK )
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  771:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
  772:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
  773:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     mibReq.Type = MIB_DEVICE_CLASS;
-ARM GAS  /tmp/ccIEh1dP.s 			page 15
+ARM GAS  /tmp/ccmMFNdI.s 			page 15
 
 
  774:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if ( LoRaMacMibGetRequestConfirm( &mibReq ) != LORAMAC_STATUS_OK )
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  828:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****                     errorStatus = LORAMAC_HANDLER_ERROR;
  829:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****                 }
  830:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****                 else
-ARM GAS  /tmp/ccIEh1dP.s 			page 16
+ARM GAS  /tmp/ccmMFNdI.s 			page 16
 
 
  831:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****                 {
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  885:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         return LORAMAC_HANDLER_ERROR;
  886:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
  887:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
-ARM GAS  /tmp/ccIEh1dP.s 			page 17
+ARM GAS  /tmp/ccmMFNdI.s 			page 17
 
 
  888:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     *txDatarate = mibGet.Param.ChannelsDatarate;
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  942:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     RxParams.IsMcpsIndication = 1;
  943:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     RxParams.Status = mcpsIndication->Status;
  944:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
-ARM GAS  /tmp/ccIEh1dP.s 			page 18
+ARM GAS  /tmp/ccmMFNdI.s 			page 18
 
 
  945:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if( RxParams.Status != LORAMAC_EVENT_INFO_STATUS_OK )
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  999:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****             MibRequestConfirm_t mibReq;
 1000:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****             mibReq.Type = MIB_DEV_ADDR;
 1001:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****             LoRaMacMibGetRequestConfirm( &mibReq );
-ARM GAS  /tmp/ccIEh1dP.s 			page 19
+ARM GAS  /tmp/ccmMFNdI.s 			page 19
 
 
 1002:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****             CommissioningParams.DevAddr = mibReq.Param.DevAddr;
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1056:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****             if( mlmeConfirm->Status == LORAMAC_EVENT_INFO_STATUS_OK )
 1057:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****             {
 1058:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****                 MibRequestConfirm_t mibReq;
-ARM GAS  /tmp/ccIEh1dP.s 			page 20
+ARM GAS  /tmp/ccmMFNdI.s 			page 20
 
 
 1059:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1113:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         break;
 1114:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** #if ( LORAMAC_CLASSB_ENABLED == 1 )
 1115:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     case MLME_BEACON_LOST:
-ARM GAS  /tmp/ccIEh1dP.s 			page 21
+ARM GAS  /tmp/ccmMFNdI.s 			page 21
 
 
 1116:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         {
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1170:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     LmhPackage_t *package = NULL;
 1171:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     switch( id )
 1172:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
-ARM GAS  /tmp/ccIEh1dP.s 			page 22
+ARM GAS  /tmp/ccmMFNdI.s 			page 22
 
 
 1173:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         case PACKAGE_ID_COMPLIANCE:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
   46              		.loc 1 1206 33 discriminator 1 view .LVU6
   47 000e 1BB1     		cbz	r3, .L4
 1207:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
-ARM GAS  /tmp/ccIEh1dP.s 			page 23
+ARM GAS  /tmp/ccmMFNdI.s 			page 23
 
 
 1208:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         return LmHandlerPackages[id]->IsInitialized( );
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1215:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
 1216:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** static void LmHandlerPackagesNotify( PackageNotifyTypes_t notifyType, void *params )
 1217:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** {
-ARM GAS  /tmp/ccIEh1dP.s 			page 24
+ARM GAS  /tmp/ccmMFNdI.s 			page 24
 
 
   94              		.loc 1 1217 1 is_stmt 1 view -0
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  129              		.loc 1 1234 83 discriminator 1 view .LVU25
  130 0012 9A42     		cmp	r2, r3
  131 0014 05D0     		beq	.L16
-ARM GAS  /tmp/ccIEh1dP.s 			page 25
+ARM GAS  /tmp/ccmMFNdI.s 			page 25
 
 
  132              		.loc 1 1235 96 view .LVU26
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  172 003a 64B2     		sxtb	r4, r4
  173              	.LVL13:
  174              	.L12:
-ARM GAS  /tmp/ccIEh1dP.s 			page 26
+ARM GAS  /tmp/ccmMFNdI.s 			page 26
 
 
 1218:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1257:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** }
  208              		.loc 1 1257 1 view .LVU53
  209 0064 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
-ARM GAS  /tmp/ccIEh1dP.s 			page 27
+ARM GAS  /tmp/ccmMFNdI.s 			page 27
 
 
  210              	.LVL15:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  255              		.loc 1 927 23 view .LVU65
  256 0012 0371     		strb	r3, [r0, #4]
  928:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     TxParams.TxPower = mcpsConfirm->TxPower;
-ARM GAS  /tmp/ccIEh1dP.s 			page 28
+ARM GAS  /tmp/ccmMFNdI.s 			page 28
 
 
  257              		.loc 1 928 5 is_stmt 1 view .LVU66
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  294              		.loc 1 936 1 view .LVU83
  295              		.align	2
  296              	.L24:
-ARM GAS  /tmp/ccIEh1dP.s 			page 29
+ARM GAS  /tmp/ccmMFNdI.s 			page 29
 
 
  297 0038 00000000 		.word	.LANCHOR1
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  347 0010 53F82430 		ldr	r3, [r3, r4, lsl #2]
  348              		.loc 1 1263 11 view .LVU96
  349 0014 002B     		cmp	r3, #0
-ARM GAS  /tmp/ccIEh1dP.s 			page 30
+ARM GAS  /tmp/ccmMFNdI.s 			page 30
 
 
  350 0016 F6D0     		beq	.L28
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  396              		.loc 1 905 1 is_stmt 1 view -0
  397              		.cfi_startproc
  398              		@ args = 0, pretend = 0, frame = 40
-ARM GAS  /tmp/ccIEh1dP.s 			page 31
+ARM GAS  /tmp/ccmMFNdI.s 			page 31
 
 
  399              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  442              		.section	.text.LmHandlerDeviceTimeReq,"ax",%progbits
  443              		.align	1
  444              		.global	LmHandlerDeviceTimeReq
-ARM GAS  /tmp/ccIEh1dP.s 			page 32
+ARM GAS  /tmp/ccmMFNdI.s 			page 32
 
 
  445              		.syntax unified
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  703:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
  490              		.loc 1 703 16 view .LVU130
  491 0018 4FF0FF30 		mov	r0, #-1
-ARM GAS  /tmp/ccIEh1dP.s 			page 33
+ARM GAS  /tmp/ccmMFNdI.s 			page 33
 
 
  492              	.LVL34:
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  538              		.loc 1 343 16 is_stmt 0 view .LVU140
  539 0010 FFF7FEFF 		bl	LoraInfo_GetPtr
  540              	.LVL39:
-ARM GAS  /tmp/ccIEh1dP.s 			page 34
+ARM GAS  /tmp/ccmMFNdI.s 			page 34
 
 
  345:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  364:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
  578              		.loc 1 364 9 is_stmt 1 view .LVU158
  364:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
-ARM GAS  /tmp/ccIEh1dP.s 			page 35
+ARM GAS  /tmp/ccmMFNdI.s 			page 35
 
 
  579              		.loc 1 364 24 is_stmt 0 view .LVU159
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  621 0070 9847     		blx	r3
  622              	.LVL48:
  381:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** #endif /* STATIC_DEVICE_ADDRESS != 1 */
-ARM GAS  /tmp/ccIEh1dP.s 			page 36
+ARM GAS  /tmp/ccmMFNdI.s 			page 36
 
 
  623              		.loc 1 381 33 view .LVU172
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  659              		.loc 1 408 5 is_stmt 1 view .LVU190
  660 009e 03A8     		add	r0, sp, #12
  661 00a0 FFF7FEFF 		bl	LoRaMacMibSetRequestConfirm
-ARM GAS  /tmp/ccIEh1dP.s 			page 37
+ARM GAS  /tmp/ccmMFNdI.s 			page 37
 
 
  662              	.LVL51:
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  699 00d4 0090     		str	r0, [sp]
  422:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
  700              		.loc 1 422 5 is_stmt 1 view .LVU208
-ARM GAS  /tmp/ccIEh1dP.s 			page 38
+ARM GAS  /tmp/ccmMFNdI.s 			page 38
 
 
  422:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  745 0104 00000000 		.word	.LANCHOR4
  746 0108 00000000 		.word	.LANCHOR5
  747 010c 00000000 		.word	.LANCHOR6
-ARM GAS  /tmp/ccIEh1dP.s 			page 39
+ARM GAS  /tmp/ccmMFNdI.s 			page 39
 
 
  748 0110 00000000 		.word	.LANCHOR7
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  800 0000 00B5     		push	{lr}
  801              	.LCFI19:
  802              		.cfi_def_cfa_offset 4
-ARM GAS  /tmp/ccIEh1dP.s 			page 40
+ARM GAS  /tmp/ccmMFNdI.s 			page 40
 
 
  803              		.cfi_offset 14, -4
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  843              	.LFE109:
  845              		.section	.text.LmHandlerStop,"ax",%progbits
  846              		.align	1
-ARM GAS  /tmp/ccIEh1dP.s 			page 41
+ARM GAS  /tmp/ccmMFNdI.s 			page 41
 
 
  847              		.global	LmHandlerStop
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  897              		.cfi_offset 14, -4
  898 0002 87B0     		sub	sp, sp, #28
  899              	.LCFI24:
-ARM GAS  /tmp/ccIEh1dP.s 			page 42
+ARM GAS  /tmp/ccmMFNdI.s 			page 42
 
 
  900              		.cfi_def_cfa_offset 32
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  945              	.LVL71:
  946              	.LFB114:
  758:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     MibRequestConfirm_t mibReq;
-ARM GAS  /tmp/ccIEh1dP.s 			page 43
+ARM GAS  /tmp/ccmMFNdI.s 			page 43
 
 
  947              		.loc 1 758 1 is_stmt 1 view -0
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  987              	.LVL75:
  774:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
  988              		.loc 1 774 8 view .LVU272
-ARM GAS  /tmp/ccIEh1dP.s 			page 44
+ARM GAS  /tmp/ccmMFNdI.s 			page 44
 
 
  989 0022 88BB     		cbnz	r0, .L79
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1030 0046 01A8     		add	r0, sp, #4
  1031 0048 FFF7FEFF 		bl	LoRaMacMibSetRequestConfirm
  1032              	.LVL79:
-ARM GAS  /tmp/ccIEh1dP.s 			page 45
+ARM GAS  /tmp/ccmMFNdI.s 			page 45
 
 
  790:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****                     {
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1070 0070 9B6A     		ldr	r3, [r3, #40]
  837:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****                         {
  1071              		.loc 1 837 28 view .LVU303
-ARM GAS  /tmp/ccIEh1dP.s 			page 46
+ARM GAS  /tmp/ccmMFNdI.s 			page 46
 
 
  1072 0072 E3B1     		cbz	r3, .L88
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1116              	.L87:
  844:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****                     }
  1117              		.loc 1 844 37 view .LVU314
-ARM GAS  /tmp/ccIEh1dP.s 			page 47
+ARM GAS  /tmp/ccmMFNdI.s 			page 47
 
 
  1118 00a8 4FF0FF30 		mov	r0, #-1
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  503:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         JoinParams.Status = LORAMAC_HANDLER_SUCCESS;
  1165              		.loc 1 503 46 is_stmt 0 view .LVU324
  1166 000e 1D4A     		ldr	r2, .L101+4
-ARM GAS  /tmp/ccIEh1dP.s 			page 48
+ARM GAS  /tmp/ccmMFNdI.s 			page 48
 
 
  1167 0010 92F90320 		ldrsb	r2, [r2, #3]
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1205              		.loc 1 532 9 is_stmt 1 view .LVU340
  1206 003e 114B     		ldr	r3, .L101+4
  1207 0040 5878     		ldrb	r0, [r3, #1]	@ zero_extendqisi2
-ARM GAS  /tmp/ccIEh1dP.s 			page 49
+ARM GAS  /tmp/ccmMFNdI.s 			page 49
 
 
  1208 0042 FFF7FEFF 		bl	LmHandlerRequestClass
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1250              		.loc 1 509 13 view .LVU352
  509:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****             mibReq.Param.AbpLrWanVersion.Value = ABP_ACTIVATION_LRWAN_VERSION;
  1251              		.loc 1 509 25 is_stmt 0 view .LVU353
-ARM GAS  /tmp/ccIEh1dP.s 			page 50
+ARM GAS  /tmp/ccmMFNdI.s 			page 50
 
 
  1252 006c 2723     		movs	r3, #39
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1300 0006 00B1     		cbz	r0, .L107
  1301              	.L104:
  450:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
-ARM GAS  /tmp/ccIEh1dP.s 			page 51
+ARM GAS  /tmp/ccmMFNdI.s 			page 51
 
 
  1302              		.loc 1 450 1 view .LVU362
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1348              	LmHandlerSend:
  1349              	.LVL104:
  1350              	.LFB111:
-ARM GAS  /tmp/ccIEh1dP.s 			page 52
+ARM GAS  /tmp/ccmMFNdI.s 			page 52
 
 
  575:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     LoRaMacStatus_t status;
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1391              		.loc 1 593 28 is_stmt 0 view .LVU386
  1392 001c 394B     		ldr	r3, .L130
  1393 001e 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccIEh1dP.s 			page 53
+ARM GAS  /tmp/ccmMFNdI.s 			page 53
 
 
  593:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1432 004c 2F4B     		ldr	r3, .L130+8
  1433 004e 9A70     		strb	r2, [r3, #2]
  603:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         mcpsReq.Req.Unconfirmed.fBuffer = NULL;
-ARM GAS  /tmp/ccIEh1dP.s 			page 54
+ARM GAS  /tmp/ccmMFNdI.s 			page 54
 
 
  1434              		.loc 1 603 9 is_stmt 1 view .LVU403
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  633:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
  1471              		.loc 1 633 5 is_stmt 1 view .LVU421
  1472 007e 1128     		cmp	r0, #17
-ARM GAS  /tmp/ccIEh1dP.s 			page 55
+ARM GAS  /tmp/ccmMFNdI.s 			page 55
 
 
  1473 0080 32D8     		bhi	.L119
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1517              		.loc 1 611 54 is_stmt 0 view .LVU431
  1518 00b0 6378     		ldrb	r3, [r4, #1]	@ zero_extendqisi2
  611:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         mcpsReq.Req.Unconfirmed.fBuffer = appData->Buffer;
-ARM GAS  /tmp/ccIEh1dP.s 			page 56
+ARM GAS  /tmp/ccmMFNdI.s 			page 56
 
 
  1519              		.loc 1 611 45 view .LVU432
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1557              	.LVL116:
  646:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         case LORAMAC_STATUS_CRYPTO_ERROR:
  1558              		.loc 1 646 13 view .LVU449
-ARM GAS  /tmp/ccIEh1dP.s 			page 57
+ARM GAS  /tmp/ccmMFNdI.s 			page 57
 
 
  1559 00da 10E0     		b	.L112
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1598 00fa 6FF00100 		mvn	r0, #1
  1599              	.LVL124:
  1600              	.L112:
-ARM GAS  /tmp/ccIEh1dP.s 			page 58
+ARM GAS  /tmp/ccmMFNdI.s 			page 58
 
 
  667:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1649              		.loc 1 1087 37 is_stmt 0 view .LVU472
  1650 000c 4278     		ldrb	r2, [r0, #1]	@ zero_extendqisi2
 1087:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     RxParams.Rssi = RxStatus->Rssi;
-ARM GAS  /tmp/ccIEh1dP.s 			page 59
+ARM GAS  /tmp/ccmMFNdI.s 			page 59
 
 
  1651              		.loc 1 1087 21 view .LVU473
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1688              		.loc 1 1096 5 view .LVU490
  1689 0034 072B     		cmp	r3, #7
  1690 0036 01D0     		beq	.L137
-ARM GAS  /tmp/ccIEh1dP.s 			page 60
+ARM GAS  /tmp/ccmMFNdI.s 			page 60
 
 
  1691              	.L132:
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1734 0062 00BF     		.align	2
  1735              	.L138:
  1736 0064 00000000 		.word	.LANCHOR9
-ARM GAS  /tmp/ccIEh1dP.s 			page 61
+ARM GAS  /tmp/ccmMFNdI.s 			page 61
 
 
  1737 0068 00000000 		.word	.LANCHOR2
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1782              		.loc 1 865 8 view .LVU512
  1783 0014 38B9     		cbnz	r0, .L143
  870:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     return LORAMAC_HANDLER_SUCCESS;
-ARM GAS  /tmp/ccIEh1dP.s 			page 62
+ARM GAS  /tmp/ccmMFNdI.s 			page 62
 
 
  1784              		.loc 1 870 5 is_stmt 1 view .LVU513
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1832              		@ args = 0, pretend = 0, frame = 24
  1833              		@ frame_needed = 0, uses_anonymous_args = 0
  939:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     LmHandlerAppData_t appData;
-ARM GAS  /tmp/ccIEh1dP.s 			page 63
+ARM GAS  /tmp/ccmMFNdI.s 			page 63
 
 
  1834              		.loc 1 939 1 is_stmt 0 view .LVU522
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1872              		.loc 1 951 29 is_stmt 0 view .LVU538
  1873 0020 B3F90020 		ldrsh	r2, [r3]
  951:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     RxParams.Snr = RxStatus->Snr;
-ARM GAS  /tmp/ccIEh1dP.s 			page 64
+ARM GAS  /tmp/ccmMFNdI.s 			page 64
 
 
  1874              		.loc 1 951 19 view .LVU539
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1908              		.loc 1 960 23 is_stmt 0 view .LVU559
  1909 0046 154D     		ldr	r5, .L155+4
  1910 0048 2B68     		ldr	r3, [r5]
-ARM GAS  /tmp/ccIEh1dP.s 			page 65
+ARM GAS  /tmp/ccmMFNdI.s 			page 65
 
 
  1911 004a 5B6A     		ldr	r3, [r3, #36]
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  1951              	.LCFI50:
  1952              		.cfi_remember_state
  1953              		.cfi_def_cfa_offset 12
-ARM GAS  /tmp/ccIEh1dP.s 			page 66
+ARM GAS  /tmp/ccmMFNdI.s 			page 66
 
 
  1954              		@ sp needed
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2003              		.loc 1 876 5 view .LVU580
  877:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
  2004              		.loc 1 877 5 view .LVU581
-ARM GAS  /tmp/ccIEh1dP.s 			page 67
+ARM GAS  /tmp/ccmMFNdI.s 			page 67
 
 
  877:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2044              		.cfi_def_cfa_offset 8
  2045              		@ sp needed
  2046 0022 10BD     		pop	{r4, pc}
-ARM GAS  /tmp/ccIEh1dP.s 			page 68
+ARM GAS  /tmp/ccmMFNdI.s 			page 68
 
 
  2047              	.LVL153:
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  989:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     TxParams.Status = mlmeConfirm->Status;
  2098              		.loc 1 989 5 is_stmt 1 view .LVU602
  989:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     TxParams.Status = mlmeConfirm->Status;
-ARM GAS  /tmp/ccIEh1dP.s 			page 69
+ARM GAS  /tmp/ccmMFNdI.s 			page 69
 
 
  2099              		.loc 1 989 28 is_stmt 0 view .LVU603
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2141              	.LCFI60:
  2142              		.cfi_restore_state
  2143              	.LBB7:
-ARM GAS  /tmp/ccIEh1dP.s 			page 70
+ARM GAS  /tmp/ccmMFNdI.s 			page 70
 
 
  999:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****             mibReq.Type = MIB_DEV_ADDR;
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1019:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     case MLME_LINK_CHECK:
  2183              		.loc 1 1019 9 is_stmt 1 view .LVU631
  2184 005a E6E7     		b	.L167
-ARM GAS  /tmp/ccIEh1dP.s 			page 71
+ARM GAS  /tmp/ccmMFNdI.s 			page 71
 
 
  2185              	.L174:
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2225 0088 00000000 		.word	.LANCHOR8
  2226 008c 00000000 		.word	.LANCHOR3
  2227 0090 00000000 		.word	.LANCHOR9
-ARM GAS  /tmp/ccIEh1dP.s 			page 72
+ARM GAS  /tmp/ccmMFNdI.s 			page 72
 
 
  2228              		.cfi_endproc
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2273              		.cfi_endproc
  2274              	.LFE117:
  2276              		.section	.text.LmHandlerPackageRegister,"ax",%progbits
-ARM GAS  /tmp/ccIEh1dP.s 			page 73
+ARM GAS  /tmp/ccmMFNdI.s 			page 73
 
 
  2277              		.align	1
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2319 0016 4262     		str	r2, [r0, #36]
 1191:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         LmHandlerPackages[id]->OnDeviceTimeRequest = LmHandlerDeviceTimeReq;
  2320              		.loc 1 1191 9 is_stmt 1 view .LVU670
-ARM GAS  /tmp/ccIEh1dP.s 			page 74
+ARM GAS  /tmp/ccmMFNdI.s 			page 74
 
 
 1191:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         LmHandlerPackages[id]->OnDeviceTimeRequest = LmHandlerDeviceTimeReq;
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2360              	.LCFI62:
  2361              		.cfi_def_cfa_offset 0
  2362              		.cfi_restore 3
-ARM GAS  /tmp/ccIEh1dP.s 			page 75
+ARM GAS  /tmp/ccmMFNdI.s 			page 75
 
 
  2363              		.cfi_restore 4
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2410              		.loc 1 306 38 is_stmt 0 view .LVU694
  2411 0006 0F4B     		ldr	r3, .L197+4
  2412 0008 0F4A     		ldr	r2, .L197+8
-ARM GAS  /tmp/ccIEh1dP.s 			page 76
+ARM GAS  /tmp/ccmMFNdI.s 			page 76
 
 
  2413 000a 1A60     		str	r2, [r3]
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2448 002a 0269     		ldr	r2, [r0, #16]
  314:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
  2449              		.loc 1 314 39 view .LVU714
-ARM GAS  /tmp/ccIEh1dP.s 			page 77
+ARM GAS  /tmp/ccmMFNdI.s 			page 77
 
 
  2450 002c 1A61     		str	r2, [r3, #16]
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2497              		@ frame_needed = 0, uses_anonymous_args = 0
 1274:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     MibRequestConfirm_t mibReq;
  2498              		.loc 1 1274 5 view .LVU722
-ARM GAS  /tmp/ccIEh1dP.s 			page 78
+ARM GAS  /tmp/ccmMFNdI.s 			page 78
 
 
 1275:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if (devEUI == NULL)
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2539              		@ sp needed
  2540 0024 10BD     		pop	{r4, pc}
  2541              	.LVL183:
-ARM GAS  /tmp/ccIEh1dP.s 			page 79
+ARM GAS  /tmp/ccmMFNdI.s 			page 79
 
 
  2542              	.L201:
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1294:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     /* Not yet joined */
 1295:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if (LmHandlerJoinStatus() != LORAMAC_HANDLER_SET)
  2590              		.loc 1 1295 5 view .LVU742
-ARM GAS  /tmp/ccIEh1dP.s 			page 80
+ARM GAS  /tmp/ccmMFNdI.s 			page 80
 
 
  2591              		.loc 1 1295 9 is_stmt 0 view .LVU743
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2626 0024 4FF0FF30 		mov	r0, #-1
  2627 0028 FAE7     		b	.L208
  2628              	.L209:
-ARM GAS  /tmp/ccIEh1dP.s 			page 81
+ARM GAS  /tmp/ccmMFNdI.s 			page 81
 
 
 1308:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2671              	.LVL191:
  2672              		.loc 1 1325 9 view .LVU765
  2673 0010 FFF7FEFF 		bl	LoRaMacMibGetRequestConfirm
-ARM GAS  /tmp/ccIEh1dP.s 			page 82
+ARM GAS  /tmp/ccmMFNdI.s 			page 82
 
 
  2674              	.LVL192:
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2721              		.thumb_func
  2722              		.fpu softvfp
  2724              	LmHandlerSetAppEUI:
-ARM GAS  /tmp/ccIEh1dP.s 			page 83
+ARM GAS  /tmp/ccmMFNdI.s 			page 83
 
 
  2725              	.LVL197:
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2764 001e 0020     		movs	r0, #0
  2765              	.L222:
 1347:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
-ARM GAS  /tmp/ccIEh1dP.s 			page 84
+ARM GAS  /tmp/ccmMFNdI.s 			page 84
 
 
 1348:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     else
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2807 0002 10B5     		push	{r4, lr}
  2808              	.LCFI82:
  2809              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccIEh1dP.s 			page 85
+ARM GAS  /tmp/ccmMFNdI.s 			page 85
 
 
  2810              		.cfi_offset 4, -8
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2851              		.loc 1 1371 1 view .LVU808
  2852 0022 7047     		bx	lr
  2853              	.LVL206:
-ARM GAS  /tmp/ccIEh1dP.s 			page 86
+ARM GAS  /tmp/ccmMFNdI.s 			page 86
 
 
  2854              	.L230:
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2900 000e 0523     		movs	r3, #5
  2901 0010 8DF80430 		strb	r3, [sp, #4]
 1381:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         mibReq.Param.NetID = networkId;
-ARM GAS  /tmp/ccIEh1dP.s 			page 87
+ARM GAS  /tmp/ccmMFNdI.s 			page 87
 
 
  2902              		.loc 1 1381 9 is_stmt 1 view .LVU818
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2944              	LmHandlerGetDevAddr:
  2945              	.LVL211:
  2946              	.LFB133:
-ARM GAS  /tmp/ccIEh1dP.s 			page 88
+ARM GAS  /tmp/ccmMFNdI.s 			page 88
 
 
 1394:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  2983              		.loc 1 1410 5 is_stmt 1 view .LVU841
  2984              	.L242:
 1411:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** }
-ARM GAS  /tmp/ccIEh1dP.s 			page 89
+ARM GAS  /tmp/ccmMFNdI.s 			page 89
 
 
  2985              		.loc 1 1411 1 is_stmt 0 view .LVU842
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3036              	.LCFI97:
  3037              		.cfi_def_cfa_offset 48
  3038 0004 0446     		mov	r4, r0
-ARM GAS  /tmp/ccIEh1dP.s 			page 90
+ARM GAS  /tmp/ccmMFNdI.s 			page 90
 
 
 1415:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** #if ( STATIC_DEVICE_ADDRESS != 1 )
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3070 0022 10BD     		pop	{r4, pc}
  3071              	.LVL220:
  3072              	.L254:
-ARM GAS  /tmp/ccIEh1dP.s 			page 91
+ARM GAS  /tmp/ccmMFNdI.s 			page 91
 
 
  3073              	.LCFI99:
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3119              		.loc 1 1445 16 is_stmt 0 view .LVU871
  3120 0010 FFF7FEFF 		bl	LmHandlerConfigure
  3121              	.LVL223:
-ARM GAS  /tmp/ccIEh1dP.s 			page 92
+ARM GAS  /tmp/ccmMFNdI.s 			page 92
 
 
  3122              	.L256:
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1462:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     return LORAMAC_HANDLER_SUCCESS;
  3161              		.loc 1 1462 5 is_stmt 1 view .LVU880
  3162              		.loc 1 1462 12 is_stmt 0 view .LVU881
-ARM GAS  /tmp/ccIEh1dP.s 			page 93
+ARM GAS  /tmp/ccmMFNdI.s 			page 93
 
 
  3163 0008 0020     		movs	r0, #0
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3211              		.loc 1 1469 5 is_stmt 1 view .LVU890
  3212              		.loc 1 1469 28 is_stmt 0 view .LVU891
  3213 000c 8DF80800 		strb	r0, [sp, #8]
-ARM GAS  /tmp/ccIEh1dP.s 			page 94
+ARM GAS  /tmp/ccmMFNdI.s 			page 94
 
 
 1470:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if (LoRaMacMibSetRequestConfirm(&mibReq) != LORAMAC_STATUS_OK)
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1479:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** LmHandlerErrorStatus_t LmHandlerSetTxDatarate(int8_t txDatarate)
 1480:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** {
  3260              		.loc 1 1480 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccIEh1dP.s 			page 95
+ARM GAS  /tmp/ccmMFNdI.s 			page 95
 
 
  3261              		.cfi_startproc
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3300 0020 DC70     		strb	r4, [r3, #3]
 1495:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
 1496:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     return LORAMAC_HANDLER_SUCCESS;
-ARM GAS  /tmp/ccIEh1dP.s 			page 96
+ARM GAS  /tmp/ccmMFNdI.s 			page 96
 
 
  3301              		.loc 1 1496 5 is_stmt 1 view .LVU917
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1501:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if (dutyCycleEnable == NULL)
  3351              		.loc 1 1501 5 view .LVU923
  3352              		.loc 1 1501 8 is_stmt 0 view .LVU924
-ARM GAS  /tmp/ccIEh1dP.s 			page 97
+ARM GAS  /tmp/ccmMFNdI.s 			page 97
 
 
  3353 0000 20B1     		cbz	r0, .L284
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3398              		.cfi_def_cfa_offset 8
  3399              		.cfi_offset 3, -8
  3400              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccIEh1dP.s 			page 98
+ARM GAS  /tmp/ccmMFNdI.s 			page 98
 
 
 1512:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     LmHandlerParams.DutyCycleEnabled = dutyCycleEnable;
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1521:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
 1522:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         return LORAMAC_HANDLER_ERROR;
 1523:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
-ARM GAS  /tmp/ccIEh1dP.s 			page 99
+ARM GAS  /tmp/ccmMFNdI.s 			page 99
 
 
 1524:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3487              	.LVL246:
  3488              		.loc 1 1536 1 view .LVU960
  3489 0028 7047     		bx	lr
-ARM GAS  /tmp/ccIEh1dP.s 			page 100
+ARM GAS  /tmp/ccmMFNdI.s 			page 100
 
 
  3490              	.LVL247:
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3534 000a 8DF80430 		strb	r3, [sp, #4]
 1547:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if (LoRaMacMibGetRequestConfirm(&mibReq) != LORAMAC_STATUS_OK)
  3535              		.loc 1 1547 5 is_stmt 1 view .LVU969
-ARM GAS  /tmp/ccIEh1dP.s 			page 101
+ARM GAS  /tmp/ccmMFNdI.s 			page 101
 
 
  3536              		.loc 1 1547 9 is_stmt 0 view .LVU970
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3582              		.global	LmHandlerGetRx1Delay
  3583              		.syntax unified
  3584              		.thumb
-ARM GAS  /tmp/ccIEh1dP.s 			page 102
+ARM GAS  /tmp/ccmMFNdI.s 			page 102
 
 
  3585              		.thumb_func
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3623              		.loc 1 1570 28 is_stmt 0 view .LVU993
  3624 0016 029B     		ldr	r3, [sp, #8]
  3625              		.loc 1 1570 14 view .LVU994
-ARM GAS  /tmp/ccIEh1dP.s 			page 103
+ARM GAS  /tmp/ccmMFNdI.s 			page 103
 
 
  3626 0018 2360     		str	r3, [r4]
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1577:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if (rxDelay == NULL)
  3674              		.loc 1 1577 5 view .LVU1002
  3675              		.loc 1 1577 8 is_stmt 0 view .LVU1003
-ARM GAS  /tmp/ccIEh1dP.s 			page 104
+ARM GAS  /tmp/ccmMFNdI.s 			page 104
 
 
  3676 0000 68B1     		cbz	r0, .L317
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3716              		.cfi_def_cfa_offset 0
  3717              		.cfi_restore 4
  3718              		.cfi_restore 14
-ARM GAS  /tmp/ccIEh1dP.s 			page 105
+ARM GAS  /tmp/ccmMFNdI.s 			page 105
 
 
 1579:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1598:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
 1599:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
 1600:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     mibReq.Type = MIB_JOIN_ACCEPT_DELAY_1;
-ARM GAS  /tmp/ccIEh1dP.s 			page 106
+ARM GAS  /tmp/ccmMFNdI.s 			page 106
 
 
  3765              		.loc 1 1600 5 is_stmt 1 view .LVU1024
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3809 0024 4FF0FF30 		mov	r0, #-1
  3810 0028 F7E7     		b	.L324
  3811              		.cfi_endproc
-ARM GAS  /tmp/ccIEh1dP.s 			page 107
+ARM GAS  /tmp/ccmMFNdI.s 			page 107
 
 
  3812              	.LFE145:
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1620:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
 1621:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         return LORAMAC_HANDLER_ERROR;
 1622:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
-ARM GAS  /tmp/ccIEh1dP.s 			page 108
+ARM GAS  /tmp/ccmMFNdI.s 			page 108
 
 
 1623:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3903              		.loc 1 1629 1 is_stmt 1 view -0
  3904              		.cfi_startproc
  3905              		@ args = 0, pretend = 0, frame = 40
-ARM GAS  /tmp/ccIEh1dP.s 			page 109
+ARM GAS  /tmp/ccmMFNdI.s 			page 109
 
 
  3906              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  3949              		.section	.text.LmHandlerSetRX2Params,"ax",%progbits
  3950              		.align	1
  3951              		.global	LmHandlerSetRX2Params
-ARM GAS  /tmp/ccIEh1dP.s 			page 110
+ARM GAS  /tmp/ccmMFNdI.s 			page 110
 
 
  3952              		.syntax unified
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1651:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         return LORAMAC_HANDLER_ERROR;
 1652:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
 1653:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
-ARM GAS  /tmp/ccIEh1dP.s 			page 111
+ARM GAS  /tmp/ccmMFNdI.s 			page 111
 
 
 1654:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     return LORAMAC_HANDLER_SUCCESS;
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1662:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     if (LoRaMacMibSetRequestConfirm(&mibReq) != LORAMAC_STATUS_OK)
  4044              		.loc 1 1662 5 is_stmt 1 view .LVU1094
  4045              		.loc 1 1662 9 is_stmt 0 view .LVU1095
-ARM GAS  /tmp/ccIEh1dP.s 			page 112
+ARM GAS  /tmp/ccmMFNdI.s 			page 112
 
 
  4046 000c 01A8     		add	r0, sp, #4
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4092              		.cfi_def_cfa_offset 48
 1672:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     MibRequestConfirm_t mibReq;
  4093              		.loc 1 1672 5 is_stmt 1 view .LVU1102
-ARM GAS  /tmp/ccIEh1dP.s 			page 113
+ARM GAS  /tmp/ccmMFNdI.s 			page 113
 
 
 1673:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     mibReq.Type = MIB_RECEIVE_DELAY_2;
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1684:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** {
  4138              		.loc 1 1684 1 is_stmt 1 view -0
  4139              		.cfi_startproc
-ARM GAS  /tmp/ccIEh1dP.s 			page 114
+ARM GAS  /tmp/ccmMFNdI.s 			page 114
 
 
  4140              		@ args = 0, pretend = 0, frame = 40
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4184              		.section	.text.LmHandlerSetJoinRx2Delay,"ax",%progbits
  4185              		.align	1
  4186              		.global	LmHandlerSetJoinRx2Delay
-ARM GAS  /tmp/ccIEh1dP.s 			page 115
+ARM GAS  /tmp/ccmMFNdI.s 			page 115
 
 
  4187              		.syntax unified
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4229              		.cfi_def_cfa_offset 4
  4230              		@ sp needed
  4231 0016 5DF804FB 		ldr	pc, [sp], #4
-ARM GAS  /tmp/ccIEh1dP.s 			page 116
+ARM GAS  /tmp/ccmMFNdI.s 			page 116
 
 
  4232              	.L368:
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4274              	LmHandlerSetPingPeriodicity:
  4275              	.LVL298:
  4276              	.LFB154:
-ARM GAS  /tmp/ccIEh1dP.s 			page 117
+ARM GAS  /tmp/ccmMFNdI.s 			page 117
 
 
 1723:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1749:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
 1750:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         return LORAMAC_HANDLER_ERROR;
 1751:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
-ARM GAS  /tmp/ccIEh1dP.s 			page 118
+ARM GAS  /tmp/ccmMFNdI.s 			page 118
 
 
 1752:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1769:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
 1770:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         return LORAMAC_HANDLER_ERROR;
 1771:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
-ARM GAS  /tmp/ccIEh1dP.s 			page 119
+ARM GAS  /tmp/ccmMFNdI.s 			page 119
 
 
 1772:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4389              		.loc 1 1775 16 view .LVU1166
  4390 002a 4FF0FF30 		mov	r0, #-1
  4391 002e F7E7     		b	.L373
-ARM GAS  /tmp/ccIEh1dP.s 			page 120
+ARM GAS  /tmp/ccmMFNdI.s 			page 120
 
 
  4392              		.cfi_endproc
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4438 0016 01A8     		add	r0, sp, #4
  4439 0018 FFF7FEFF 		bl	LoRaMacMibSetRequestConfirm
  4440              	.LVL311:
-ARM GAS  /tmp/ccIEh1dP.s 			page 121
+ARM GAS  /tmp/ccmMFNdI.s 			page 121
 
 
  4441              		.loc 1 1789 12 view .LVU1179
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4481              		.loc 1 1803 1 is_stmt 1 view -0
  4482              		.cfi_startproc
  4483              		@ args = 0, pretend = 0, frame = 8
-ARM GAS  /tmp/ccIEh1dP.s 			page 122
+ARM GAS  /tmp/ccmMFNdI.s 			page 122
 
 
  4484              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4524              		@ sp needed
  4525 0022 10BD     		pop	{r4, pc}
  4526              	.LVL317:
-ARM GAS  /tmp/ccIEh1dP.s 			page 123
+ARM GAS  /tmp/ccmMFNdI.s 			page 123
 
 
  4527              	.L388:
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4576 0006 FFF7FEFF 		bl	LmHandlerJoinStatus
  4577              	.LVL321:
  4578              		.loc 1 1821 7 view .LVU1204
-ARM GAS  /tmp/ccIEh1dP.s 			page 124
+ARM GAS  /tmp/ccmMFNdI.s 			page 124
 
 
  4579 000a 0128     		cmp	r0, #1
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4616              	.L397:
  4617              	.LBE12:
 1835:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
-ARM GAS  /tmp/ccIEh1dP.s 			page 125
+ARM GAS  /tmp/ccmMFNdI.s 			page 125
 
 
  4618              		.loc 1 1835 16 view .LVU1216
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1848:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
 1849:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         return LORAMAC_HANDLER_ERROR;
 1850:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     }
-ARM GAS  /tmp/ccIEh1dP.s 			page 126
+ARM GAS  /tmp/ccmMFNdI.s 			page 126
 
 
 1851:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     UTIL_MEM_cpy_8( nwkSKey, keyItem->KeyValue, 16 );
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1854:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** 
 1855:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** LmHandlerErrorStatus_t LmHandlerSetNwkSKey( uint8_t *nwkSKey )
 1856:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c **** {
-ARM GAS  /tmp/ccIEh1dP.s 			page 127
+ARM GAS  /tmp/ccmMFNdI.s 			page 127
 
 
  4714              		.loc 1 1856 1 is_stmt 1 view -0
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1870:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     else
 1871:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****     {
 1872:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         /* Cannot change Keys in running state */
-ARM GAS  /tmp/ccIEh1dP.s 			page 128
+ARM GAS  /tmp/ccmMFNdI.s 			page 128
 
 
 1873:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         return LORAMAC_HANDLER_ERROR;
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4800              		.cfi_def_cfa_offset 8
  4801              		.cfi_offset 4, -8
  4802              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccIEh1dP.s 			page 129
+ARM GAS  /tmp/ccmMFNdI.s 			page 129
 
 
  4803 0004 82B0     		sub	sp, sp, #8
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4845              	.LVL341:
  4846              	.L417:
  4847              	.LCFI196:
-ARM GAS  /tmp/ccIEh1dP.s 			page 130
+ARM GAS  /tmp/ccmMFNdI.s 			page 130
 
 
  4848              		.cfi_def_cfa_offset 16
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
 1900:Middlewares/Third_Party/LoRaWAN/LmHandler/LmHandler.c ****         mibReq.Param.AppSKey = appSKey;
  4895              		.loc 1 1900 9 is_stmt 1 view .LVU1274
  4896              		.loc 1 1900 30 is_stmt 0 view .LVU1275
-ARM GAS  /tmp/ccIEh1dP.s 			page 131
+ARM GAS  /tmp/ccmMFNdI.s 			page 131
 
 
  4897 0014 0294     		str	r4, [sp, #8]
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4938      00000000 
  4938      00000000 
  4938      00000000 
-ARM GAS  /tmp/ccIEh1dP.s 			page 132
+ARM GAS  /tmp/ccmMFNdI.s 			page 132
 
 
  4938      00000000 
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  4988              		.align	2
  4989              		.set	.LANCHOR7,. + 0
  4992              	CommissioningParams:
-ARM GAS  /tmp/ccIEh1dP.s 			page 133
+ARM GAS  /tmp/ccmMFNdI.s 			page 133
 
 
  4993 0000 0000     		.ascii	"\000\000"
@@ -7978,193 +7978,193 @@ ARM GAS  /tmp/ccIEh1dP.s 			page 1
  5051              		.file 17 "Middlewares/Third_Party/LoRaWAN/LmHandler/Packages/LmhpCompliance.h"
  5052              		.file 18 "Middlewares/Third_Party/LoRaWAN/Mac/secure-element.h"
  5053              		.file 19 "LoRaWAN/App/lora_info.h"
-ARM GAS  /tmp/ccIEh1dP.s 			page 134
+ARM GAS  /tmp/ccmMFNdI.s 			page 134
 
 
  5054              		.file 20 "Utilities/misc/stm32_mem.h"
  5055              		.file 21 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacTest.h"
  5056              		.file 22 "Middlewares/Third_Party/LoRaWAN/LmHandler/NvmDataMgmt.h"
-ARM GAS  /tmp/ccIEh1dP.s 			page 135
+ARM GAS  /tmp/ccmMFNdI.s 			page 135
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 LmHandler.c
-     /tmp/ccIEh1dP.s:16     .text.LmHandlerPackageIsInitialized:0000000000000000 $t
-     /tmp/ccIEh1dP.s:23     .text.LmHandlerPackageIsInitialized:0000000000000000 LmHandlerPackageIsInitialized
-     /tmp/ccIEh1dP.s:80     .text.LmHandlerPackageIsInitialized:000000000000001c $d
-     /tmp/ccIEh1dP.s:85     .text.LmHandlerPackagesNotify:0000000000000000 $t
-     /tmp/ccIEh1dP.s:91     .text.LmHandlerPackagesNotify:0000000000000000 LmHandlerPackagesNotify
-     /tmp/ccIEh1dP.s:215    .text.LmHandlerPackagesNotify:0000000000000068 $d
-     /tmp/ccIEh1dP.s:220    .text.McpsConfirm:0000000000000000 $t
-     /tmp/ccIEh1dP.s:226    .text.McpsConfirm:0000000000000000 McpsConfirm
-     /tmp/ccIEh1dP.s:297    .text.McpsConfirm:0000000000000038 $d
-     /tmp/ccIEh1dP.s:303    .text.LmHandlerPackagesProcess:0000000000000000 $t
-     /tmp/ccIEh1dP.s:309    .text.LmHandlerPackagesProcess:0000000000000000 LmHandlerPackagesProcess
-     /tmp/ccIEh1dP.s:382    .text.LmHandlerPackagesProcess:0000000000000038 $d
-     /tmp/ccIEh1dP.s:387    .text.LmHandlerSetSystemMaxRxError:0000000000000000 $t
-     /tmp/ccIEh1dP.s:393    .text.LmHandlerSetSystemMaxRxError:0000000000000000 LmHandlerSetSystemMaxRxError
-     /tmp/ccIEh1dP.s:443    .text.LmHandlerDeviceTimeReq:0000000000000000 $t
-     /tmp/ccIEh1dP.s:450    .text.LmHandlerDeviceTimeReq:0000000000000000 LmHandlerDeviceTimeReq
-     /tmp/ccIEh1dP.s:499    .text.LmHandlerConfigure:0000000000000000 $t
-     /tmp/ccIEh1dP.s:506    .text.LmHandlerConfigure:0000000000000000 LmHandlerConfigure
-     /tmp/ccIEh1dP.s:744    .text.LmHandlerConfigure:0000000000000100 $d
-     /tmp/ccIEh1dP.s:754    .text.LmHandlerProcess:0000000000000000 $t
-     /tmp/ccIEh1dP.s:761    .text.LmHandlerProcess:0000000000000000 LmHandlerProcess
-     /tmp/ccIEh1dP.s:787    .text.LmHandlerJoinStatus:0000000000000000 $t
-     /tmp/ccIEh1dP.s:794    .text.LmHandlerJoinStatus:0000000000000000 LmHandlerJoinStatus
-     /tmp/ccIEh1dP.s:846    .text.LmHandlerStop:0000000000000000 $t
-     /tmp/ccIEh1dP.s:853    .text.LmHandlerStop:0000000000000000 LmHandlerStop
-     /tmp/ccIEh1dP.s:881    .text.LmHandlerLinkCheckReq:0000000000000000 $t
-     /tmp/ccIEh1dP.s:888    .text.LmHandlerLinkCheckReq:0000000000000000 LmHandlerLinkCheckReq
-     /tmp/ccIEh1dP.s:937    .text.LmHandlerRequestClass:0000000000000000 $t
-     /tmp/ccIEh1dP.s:944    .text.LmHandlerRequestClass:0000000000000000 LmHandlerRequestClass
-     /tmp/ccIEh1dP.s:1127   .text.LmHandlerRequestClass:00000000000000b4 $d
-     /tmp/ccIEh1dP.s:1132   .text.LmHandlerJoin:0000000000000000 $t
-     /tmp/ccIEh1dP.s:1139   .text.LmHandlerJoin:0000000000000000 LmHandlerJoin
-     /tmp/ccIEh1dP.s:1268   .text.LmHandlerJoin:0000000000000080 $d
-     /tmp/ccIEh1dP.s:1277   .text.LmHandlerIsBusy:0000000000000000 $t
-     /tmp/ccIEh1dP.s:1284   .text.LmHandlerIsBusy:0000000000000000 LmHandlerIsBusy
-     /tmp/ccIEh1dP.s:1335   .text.LmHandlerIsBusy:0000000000000028 $d
-     /tmp/ccIEh1dP.s:1341   .text.LmHandlerSend:0000000000000000 $t
-     /tmp/ccIEh1dP.s:1348   .text.LmHandlerSend:0000000000000000 LmHandlerSend
-     /tmp/ccIEh1dP.s:1476   .text.LmHandlerSend:0000000000000086 $d
-     /tmp/ccIEh1dP.s:1495   .text.LmHandlerSend:0000000000000098 $t
-     /tmp/ccIEh1dP.s:1612   .text.LmHandlerSend:0000000000000104 $d
-     /tmp/ccIEh1dP.s:1620   .text.MlmeIndication:0000000000000000 $t
-     /tmp/ccIEh1dP.s:1626   .text.MlmeIndication:0000000000000000 MlmeIndication
-     /tmp/ccIEh1dP.s:1736   .text.MlmeIndication:0000000000000064 $d
-     /tmp/ccIEh1dP.s:1743   .text.LmHandlerGetCurrentClass:0000000000000000 $t
-     /tmp/ccIEh1dP.s:1750   .text.LmHandlerGetCurrentClass:0000000000000000 LmHandlerGetCurrentClass
-     /tmp/ccIEh1dP.s:1821   .text.McpsIndication:0000000000000000 $t
-     /tmp/ccIEh1dP.s:1827   .text.McpsIndication:0000000000000000 McpsIndication
-     /tmp/ccIEh1dP.s:1982   .text.McpsIndication:0000000000000098 $d
-     /tmp/ccIEh1dP.s:1989   .text.LmHandlerGetTxDatarate:0000000000000000 $t
-     /tmp/ccIEh1dP.s:1996   .text.LmHandlerGetTxDatarate:0000000000000000 LmHandlerGetTxDatarate
-     /tmp/ccIEh1dP.s:2070   .text.LmHandlerGetTxDatarate:0000000000000030 $d
-     /tmp/ccIEh1dP.s:2075   .text.MlmeConfirm:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2081   .text.MlmeConfirm:0000000000000000 MlmeConfirm
-     /tmp/ccIEh1dP.s:2222   .text.MlmeConfirm:000000000000007c $d
-ARM GAS  /tmp/ccIEh1dP.s 			page 136
+     /tmp/ccmMFNdI.s:16     .text.LmHandlerPackageIsInitialized:0000000000000000 $t
+     /tmp/ccmMFNdI.s:23     .text.LmHandlerPackageIsInitialized:0000000000000000 LmHandlerPackageIsInitialized
+     /tmp/ccmMFNdI.s:80     .text.LmHandlerPackageIsInitialized:000000000000001c $d
+     /tmp/ccmMFNdI.s:85     .text.LmHandlerPackagesNotify:0000000000000000 $t
+     /tmp/ccmMFNdI.s:91     .text.LmHandlerPackagesNotify:0000000000000000 LmHandlerPackagesNotify
+     /tmp/ccmMFNdI.s:215    .text.LmHandlerPackagesNotify:0000000000000068 $d
+     /tmp/ccmMFNdI.s:220    .text.McpsConfirm:0000000000000000 $t
+     /tmp/ccmMFNdI.s:226    .text.McpsConfirm:0000000000000000 McpsConfirm
+     /tmp/ccmMFNdI.s:297    .text.McpsConfirm:0000000000000038 $d
+     /tmp/ccmMFNdI.s:303    .text.LmHandlerPackagesProcess:0000000000000000 $t
+     /tmp/ccmMFNdI.s:309    .text.LmHandlerPackagesProcess:0000000000000000 LmHandlerPackagesProcess
+     /tmp/ccmMFNdI.s:382    .text.LmHandlerPackagesProcess:0000000000000038 $d
+     /tmp/ccmMFNdI.s:387    .text.LmHandlerSetSystemMaxRxError:0000000000000000 $t
+     /tmp/ccmMFNdI.s:393    .text.LmHandlerSetSystemMaxRxError:0000000000000000 LmHandlerSetSystemMaxRxError
+     /tmp/ccmMFNdI.s:443    .text.LmHandlerDeviceTimeReq:0000000000000000 $t
+     /tmp/ccmMFNdI.s:450    .text.LmHandlerDeviceTimeReq:0000000000000000 LmHandlerDeviceTimeReq
+     /tmp/ccmMFNdI.s:499    .text.LmHandlerConfigure:0000000000000000 $t
+     /tmp/ccmMFNdI.s:506    .text.LmHandlerConfigure:0000000000000000 LmHandlerConfigure
+     /tmp/ccmMFNdI.s:744    .text.LmHandlerConfigure:0000000000000100 $d
+     /tmp/ccmMFNdI.s:754    .text.LmHandlerProcess:0000000000000000 $t
+     /tmp/ccmMFNdI.s:761    .text.LmHandlerProcess:0000000000000000 LmHandlerProcess
+     /tmp/ccmMFNdI.s:787    .text.LmHandlerJoinStatus:0000000000000000 $t
+     /tmp/ccmMFNdI.s:794    .text.LmHandlerJoinStatus:0000000000000000 LmHandlerJoinStatus
+     /tmp/ccmMFNdI.s:846    .text.LmHandlerStop:0000000000000000 $t
+     /tmp/ccmMFNdI.s:853    .text.LmHandlerStop:0000000000000000 LmHandlerStop
+     /tmp/ccmMFNdI.s:881    .text.LmHandlerLinkCheckReq:0000000000000000 $t
+     /tmp/ccmMFNdI.s:888    .text.LmHandlerLinkCheckReq:0000000000000000 LmHandlerLinkCheckReq
+     /tmp/ccmMFNdI.s:937    .text.LmHandlerRequestClass:0000000000000000 $t
+     /tmp/ccmMFNdI.s:944    .text.LmHandlerRequestClass:0000000000000000 LmHandlerRequestClass
+     /tmp/ccmMFNdI.s:1127   .text.LmHandlerRequestClass:00000000000000b4 $d
+     /tmp/ccmMFNdI.s:1132   .text.LmHandlerJoin:0000000000000000 $t
+     /tmp/ccmMFNdI.s:1139   .text.LmHandlerJoin:0000000000000000 LmHandlerJoin
+     /tmp/ccmMFNdI.s:1268   .text.LmHandlerJoin:0000000000000080 $d
+     /tmp/ccmMFNdI.s:1277   .text.LmHandlerIsBusy:0000000000000000 $t
+     /tmp/ccmMFNdI.s:1284   .text.LmHandlerIsBusy:0000000000000000 LmHandlerIsBusy
+     /tmp/ccmMFNdI.s:1335   .text.LmHandlerIsBusy:0000000000000028 $d
+     /tmp/ccmMFNdI.s:1341   .text.LmHandlerSend:0000000000000000 $t
+     /tmp/ccmMFNdI.s:1348   .text.LmHandlerSend:0000000000000000 LmHandlerSend
+     /tmp/ccmMFNdI.s:1476   .text.LmHandlerSend:0000000000000086 $d
+     /tmp/ccmMFNdI.s:1495   .text.LmHandlerSend:0000000000000098 $t
+     /tmp/ccmMFNdI.s:1612   .text.LmHandlerSend:0000000000000104 $d
+     /tmp/ccmMFNdI.s:1620   .text.MlmeIndication:0000000000000000 $t
+     /tmp/ccmMFNdI.s:1626   .text.MlmeIndication:0000000000000000 MlmeIndication
+     /tmp/ccmMFNdI.s:1736   .text.MlmeIndication:0000000000000064 $d
+     /tmp/ccmMFNdI.s:1743   .text.LmHandlerGetCurrentClass:0000000000000000 $t
+     /tmp/ccmMFNdI.s:1750   .text.LmHandlerGetCurrentClass:0000000000000000 LmHandlerGetCurrentClass
+     /tmp/ccmMFNdI.s:1821   .text.McpsIndication:0000000000000000 $t
+     /tmp/ccmMFNdI.s:1827   .text.McpsIndication:0000000000000000 McpsIndication
+     /tmp/ccmMFNdI.s:1982   .text.McpsIndication:0000000000000098 $d
+     /tmp/ccmMFNdI.s:1989   .text.LmHandlerGetTxDatarate:0000000000000000 $t
+     /tmp/ccmMFNdI.s:1996   .text.LmHandlerGetTxDatarate:0000000000000000 LmHandlerGetTxDatarate
+     /tmp/ccmMFNdI.s:2070   .text.LmHandlerGetTxDatarate:0000000000000030 $d
+     /tmp/ccmMFNdI.s:2075   .text.MlmeConfirm:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2081   .text.MlmeConfirm:0000000000000000 MlmeConfirm
+     /tmp/ccmMFNdI.s:2222   .text.MlmeConfirm:000000000000007c $d
+ARM GAS  /tmp/ccmMFNdI.s 			page 136
 
 
-     /tmp/ccIEh1dP.s:2232   .text.LmHandlerGetActiveRegion:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2239   .text.LmHandlerGetActiveRegion:0000000000000000 LmHandlerGetActiveRegion
-     /tmp/ccIEh1dP.s:2272   .text.LmHandlerGetActiveRegion:0000000000000014 $d
-     /tmp/ccIEh1dP.s:2277   .text.LmHandlerPackageRegister:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2284   .text.LmHandlerPackageRegister:0000000000000000 LmHandlerPackageRegister
-     /tmp/ccIEh1dP.s:2375   .text.LmHandlerPackageRegister:0000000000000044 $d
-     /tmp/ccIEh1dP.s:2385   .text.LmHandlerInit:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2392   .text.LmHandlerInit:0000000000000000 LmHandlerInit
-     /tmp/ccIEh1dP.s:2471   .text.LmHandlerInit:0000000000000040 $d
-     /tmp/ccIEh1dP.s:2484   .text.LmHandlerGetDevEUI:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2491   .text.LmHandlerGetDevEUI:0000000000000000 LmHandlerGetDevEUI
-     /tmp/ccIEh1dP.s:2565   .text.LmHandlerSetDevEUI:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2572   .text.LmHandlerSetDevEUI:0000000000000000 LmHandlerSetDevEUI
-     /tmp/ccIEh1dP.s:2636   .text.LmHandlerGetAppEUI:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2643   .text.LmHandlerGetAppEUI:0000000000000000 LmHandlerGetAppEUI
-     /tmp/ccIEh1dP.s:2717   .text.LmHandlerSetAppEUI:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2724   .text.LmHandlerSetAppEUI:0000000000000000 LmHandlerSetAppEUI
-     /tmp/ccIEh1dP.s:2788   .text.LmHandlerGetNetworkID:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2795   .text.LmHandlerGetNetworkID:0000000000000000 LmHandlerGetNetworkID
-     /tmp/ccIEh1dP.s:2866   .text.LmHandlerSetNetworkID:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2873   .text.LmHandlerSetNetworkID:0000000000000000 LmHandlerSetNetworkID
-     /tmp/ccIEh1dP.s:2937   .text.LmHandlerGetDevAddr:0000000000000000 $t
-     /tmp/ccIEh1dP.s:2944   .text.LmHandlerGetDevAddr:0000000000000000 LmHandlerGetDevAddr
-     /tmp/ccIEh1dP.s:3015   .text.LmHandlerSetDevAddr:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3022   .text.LmHandlerSetDevAddr:0000000000000000 LmHandlerSetDevAddr
-     /tmp/ccIEh1dP.s:3086   .text.LmHandlerSetActiveRegion:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3093   .text.LmHandlerSetActiveRegion:0000000000000000 LmHandlerSetActiveRegion
-     /tmp/ccIEh1dP.s:3132   .text.LmHandlerSetActiveRegion:000000000000001c $d
-     /tmp/ccIEh1dP.s:3137   .text.LmHandlerGetAdrEnable:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3144   .text.LmHandlerGetAdrEnable:0000000000000000 LmHandlerGetAdrEnable
-     /tmp/ccIEh1dP.s:3177   .text.LmHandlerGetAdrEnable:0000000000000014 $d
-     /tmp/ccIEh1dP.s:3182   .text.LmHandlerSetAdrEnable:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3189   .text.LmHandlerSetAdrEnable:0000000000000000 LmHandlerSetAdrEnable
-     /tmp/ccIEh1dP.s:3245   .text.LmHandlerSetAdrEnable:0000000000000028 $d
-     /tmp/ccIEh1dP.s:3250   .text.LmHandlerSetTxDatarate:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3257   .text.LmHandlerSetTxDatarate:0000000000000000 LmHandlerSetTxDatarate
-     /tmp/ccIEh1dP.s:3331   .text.LmHandlerSetTxDatarate:0000000000000034 $d
-     /tmp/ccIEh1dP.s:3336   .text.LmHandlerGetDutyCycleEnable:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3343   .text.LmHandlerGetDutyCycleEnable:0000000000000000 LmHandlerGetDutyCycleEnable
-     /tmp/ccIEh1dP.s:3376   .text.LmHandlerGetDutyCycleEnable:0000000000000014 $d
-     /tmp/ccIEh1dP.s:3381   .text.LmHandlerSetDutyCycleEnable:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3388   .text.LmHandlerSetDutyCycleEnable:0000000000000000 LmHandlerSetDutyCycleEnable
-     /tmp/ccIEh1dP.s:3415   .text.LmHandlerSetDutyCycleEnable:0000000000000010 $d
-     /tmp/ccIEh1dP.s:3420   .text.LmHandlerGetRX2Params:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3427   .text.LmHandlerGetRX2Params:0000000000000000 LmHandlerGetRX2Params
-     /tmp/ccIEh1dP.s:3503   .text.LmHandlerGetTxPower:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3510   .text.LmHandlerGetTxPower:0000000000000000 LmHandlerGetTxPower
-     /tmp/ccIEh1dP.s:3581   .text.LmHandlerGetRx1Delay:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3588   .text.LmHandlerGetRx1Delay:0000000000000000 LmHandlerGetRx1Delay
-     /tmp/ccIEh1dP.s:3659   .text.LmHandlerGetRx2Delay:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3666   .text.LmHandlerGetRx2Delay:0000000000000000 LmHandlerGetRx2Delay
-     /tmp/ccIEh1dP.s:3737   .text.LmHandlerGetJoinRx1Delay:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3744   .text.LmHandlerGetJoinRx1Delay:0000000000000000 LmHandlerGetJoinRx1Delay
-     /tmp/ccIEh1dP.s:3815   .text.LmHandlerGetJoinRx2Delay:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3822   .text.LmHandlerGetJoinRx2Delay:0000000000000000 LmHandlerGetJoinRx2Delay
-     /tmp/ccIEh1dP.s:3893   .text.LmHandlerSetTxPower:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3900   .text.LmHandlerSetTxPower:0000000000000000 LmHandlerSetTxPower
-ARM GAS  /tmp/ccIEh1dP.s 			page 137
+     /tmp/ccmMFNdI.s:2232   .text.LmHandlerGetActiveRegion:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2239   .text.LmHandlerGetActiveRegion:0000000000000000 LmHandlerGetActiveRegion
+     /tmp/ccmMFNdI.s:2272   .text.LmHandlerGetActiveRegion:0000000000000014 $d
+     /tmp/ccmMFNdI.s:2277   .text.LmHandlerPackageRegister:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2284   .text.LmHandlerPackageRegister:0000000000000000 LmHandlerPackageRegister
+     /tmp/ccmMFNdI.s:2375   .text.LmHandlerPackageRegister:0000000000000044 $d
+     /tmp/ccmMFNdI.s:2385   .text.LmHandlerInit:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2392   .text.LmHandlerInit:0000000000000000 LmHandlerInit
+     /tmp/ccmMFNdI.s:2471   .text.LmHandlerInit:0000000000000040 $d
+     /tmp/ccmMFNdI.s:2484   .text.LmHandlerGetDevEUI:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2491   .text.LmHandlerGetDevEUI:0000000000000000 LmHandlerGetDevEUI
+     /tmp/ccmMFNdI.s:2565   .text.LmHandlerSetDevEUI:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2572   .text.LmHandlerSetDevEUI:0000000000000000 LmHandlerSetDevEUI
+     /tmp/ccmMFNdI.s:2636   .text.LmHandlerGetAppEUI:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2643   .text.LmHandlerGetAppEUI:0000000000000000 LmHandlerGetAppEUI
+     /tmp/ccmMFNdI.s:2717   .text.LmHandlerSetAppEUI:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2724   .text.LmHandlerSetAppEUI:0000000000000000 LmHandlerSetAppEUI
+     /tmp/ccmMFNdI.s:2788   .text.LmHandlerGetNetworkID:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2795   .text.LmHandlerGetNetworkID:0000000000000000 LmHandlerGetNetworkID
+     /tmp/ccmMFNdI.s:2866   .text.LmHandlerSetNetworkID:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2873   .text.LmHandlerSetNetworkID:0000000000000000 LmHandlerSetNetworkID
+     /tmp/ccmMFNdI.s:2937   .text.LmHandlerGetDevAddr:0000000000000000 $t
+     /tmp/ccmMFNdI.s:2944   .text.LmHandlerGetDevAddr:0000000000000000 LmHandlerGetDevAddr
+     /tmp/ccmMFNdI.s:3015   .text.LmHandlerSetDevAddr:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3022   .text.LmHandlerSetDevAddr:0000000000000000 LmHandlerSetDevAddr
+     /tmp/ccmMFNdI.s:3086   .text.LmHandlerSetActiveRegion:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3093   .text.LmHandlerSetActiveRegion:0000000000000000 LmHandlerSetActiveRegion
+     /tmp/ccmMFNdI.s:3132   .text.LmHandlerSetActiveRegion:000000000000001c $d
+     /tmp/ccmMFNdI.s:3137   .text.LmHandlerGetAdrEnable:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3144   .text.LmHandlerGetAdrEnable:0000000000000000 LmHandlerGetAdrEnable
+     /tmp/ccmMFNdI.s:3177   .text.LmHandlerGetAdrEnable:0000000000000014 $d
+     /tmp/ccmMFNdI.s:3182   .text.LmHandlerSetAdrEnable:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3189   .text.LmHandlerSetAdrEnable:0000000000000000 LmHandlerSetAdrEnable
+     /tmp/ccmMFNdI.s:3245   .text.LmHandlerSetAdrEnable:0000000000000028 $d
+     /tmp/ccmMFNdI.s:3250   .text.LmHandlerSetTxDatarate:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3257   .text.LmHandlerSetTxDatarate:0000000000000000 LmHandlerSetTxDatarate
+     /tmp/ccmMFNdI.s:3331   .text.LmHandlerSetTxDatarate:0000000000000034 $d
+     /tmp/ccmMFNdI.s:3336   .text.LmHandlerGetDutyCycleEnable:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3343   .text.LmHandlerGetDutyCycleEnable:0000000000000000 LmHandlerGetDutyCycleEnable
+     /tmp/ccmMFNdI.s:3376   .text.LmHandlerGetDutyCycleEnable:0000000000000014 $d
+     /tmp/ccmMFNdI.s:3381   .text.LmHandlerSetDutyCycleEnable:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3388   .text.LmHandlerSetDutyCycleEnable:0000000000000000 LmHandlerSetDutyCycleEnable
+     /tmp/ccmMFNdI.s:3415   .text.LmHandlerSetDutyCycleEnable:0000000000000010 $d
+     /tmp/ccmMFNdI.s:3420   .text.LmHandlerGetRX2Params:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3427   .text.LmHandlerGetRX2Params:0000000000000000 LmHandlerGetRX2Params
+     /tmp/ccmMFNdI.s:3503   .text.LmHandlerGetTxPower:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3510   .text.LmHandlerGetTxPower:0000000000000000 LmHandlerGetTxPower
+     /tmp/ccmMFNdI.s:3581   .text.LmHandlerGetRx1Delay:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3588   .text.LmHandlerGetRx1Delay:0000000000000000 LmHandlerGetRx1Delay
+     /tmp/ccmMFNdI.s:3659   .text.LmHandlerGetRx2Delay:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3666   .text.LmHandlerGetRx2Delay:0000000000000000 LmHandlerGetRx2Delay
+     /tmp/ccmMFNdI.s:3737   .text.LmHandlerGetJoinRx1Delay:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3744   .text.LmHandlerGetJoinRx1Delay:0000000000000000 LmHandlerGetJoinRx1Delay
+     /tmp/ccmMFNdI.s:3815   .text.LmHandlerGetJoinRx2Delay:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3822   .text.LmHandlerGetJoinRx2Delay:0000000000000000 LmHandlerGetJoinRx2Delay
+     /tmp/ccmMFNdI.s:3893   .text.LmHandlerSetTxPower:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3900   .text.LmHandlerSetTxPower:0000000000000000 LmHandlerSetTxPower
+ARM GAS  /tmp/ccmMFNdI.s 			page 137
 
 
-     /tmp/ccIEh1dP.s:3950   .text.LmHandlerSetRX2Params:0000000000000000 $t
-     /tmp/ccIEh1dP.s:3957   .text.LmHandlerSetRX2Params:0000000000000000 LmHandlerSetRX2Params
-     /tmp/ccIEh1dP.s:4014   .text.LmHandlerSetRx1Delay:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4021   .text.LmHandlerSetRx1Delay:0000000000000000 LmHandlerSetRx1Delay
-     /tmp/ccIEh1dP.s:4071   .text.LmHandlerSetRx2Delay:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4078   .text.LmHandlerSetRx2Delay:0000000000000000 LmHandlerSetRx2Delay
-     /tmp/ccIEh1dP.s:4128   .text.LmHandlerSetJoinRx1Delay:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4135   .text.LmHandlerSetJoinRx1Delay:0000000000000000 LmHandlerSetJoinRx1Delay
-     /tmp/ccIEh1dP.s:4185   .text.LmHandlerSetJoinRx2Delay:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4192   .text.LmHandlerSetJoinRx2Delay:0000000000000000 LmHandlerSetJoinRx2Delay
-     /tmp/ccIEh1dP.s:4242   .text.LmHandlerGetPingPeriodicity:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4249   .text.LmHandlerGetPingPeriodicity:0000000000000000 LmHandlerGetPingPeriodicity
-     /tmp/ccIEh1dP.s:4267   .text.LmHandlerSetPingPeriodicity:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4274   .text.LmHandlerSetPingPeriodicity:0000000000000000 LmHandlerSetPingPeriodicity
-     /tmp/ccIEh1dP.s:4292   .text.LmHandlerGetBeaconState:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4299   .text.LmHandlerGetBeaconState:0000000000000000 LmHandlerGetBeaconState
-     /tmp/ccIEh1dP.s:4317   .text.LmHandlerGetNwkKey:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4324   .text.LmHandlerGetNwkKey:0000000000000000 LmHandlerGetNwkKey
-     /tmp/ccIEh1dP.s:4396   .text.LmHandlerSetNwkKey:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4403   .text.LmHandlerSetNwkKey:0000000000000000 LmHandlerSetNwkKey
-     /tmp/ccIEh1dP.s:4471   .text.LmHandlerGetAppKey:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4478   .text.LmHandlerGetAppKey:0000000000000000 LmHandlerGetAppKey
-     /tmp/ccIEh1dP.s:4550   .text.LmHandlerSetAppKey:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4557   .text.LmHandlerSetAppKey:0000000000000000 LmHandlerSetAppKey
-     /tmp/ccIEh1dP.s:4625   .text.LmHandlerGetNwkSKey:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4632   .text.LmHandlerGetNwkSKey:0000000000000000 LmHandlerGetNwkSKey
-     /tmp/ccIEh1dP.s:4704   .text.LmHandlerSetNwkSKey:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4711   .text.LmHandlerSetNwkSKey:0000000000000000 LmHandlerSetNwkSKey
-     /tmp/ccIEh1dP.s:4779   .text.LmHandlerGetAppSKey:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4786   .text.LmHandlerGetAppSKey:0000000000000000 LmHandlerGetAppSKey
-     /tmp/ccIEh1dP.s:4858   .text.LmHandlerSetAppSKey:0000000000000000 $t
-     /tmp/ccIEh1dP.s:4865   .text.LmHandlerSetAppSKey:0000000000000000 LmHandlerSetAppSKey
-     /tmp/ccIEh1dP.s:4933   .bss.AppDataBuffer:0000000000000000 $d
-     /tmp/ccIEh1dP.s:4937   .bss.AppDataBuffer:0000000000000000 AppDataBuffer
-     /tmp/ccIEh1dP.s:4943   .bss.CtxRestoreDone:0000000000000000 CtxRestoreDone
-     /tmp/ccIEh1dP.s:4944   .bss.CtxRestoreDone:0000000000000000 $d
-     /tmp/ccIEh1dP.s:4946   .bss.LmHandlerCallbacks:0000000000000000 $d
-     /tmp/ccIEh1dP.s:4950   .bss.LmHandlerCallbacks:0000000000000000 LmHandlerCallbacks
-     /tmp/ccIEh1dP.s:4953   .bss.LmHandlerPackages:0000000000000000 $d
-     /tmp/ccIEh1dP.s:4957   .bss.LmHandlerPackages:0000000000000000 LmHandlerPackages
-     /tmp/ccIEh1dP.s:4960   .bss.LmHandlerParams:0000000000000000 $d
-     /tmp/ccIEh1dP.s:4964   .bss.LmHandlerParams:0000000000000000 LmHandlerParams
-     /tmp/ccIEh1dP.s:4967   .bss.LoRaMacCallbacks:0000000000000000 $d
-     /tmp/ccIEh1dP.s:4971   .bss.LoRaMacCallbacks:0000000000000000 LoRaMacCallbacks
-     /tmp/ccIEh1dP.s:4974   .bss.LoRaMacPrimitives:0000000000000000 $d
-     /tmp/ccIEh1dP.s:4978   .bss.LoRaMacPrimitives:0000000000000000 LoRaMacPrimitives
-     /tmp/ccIEh1dP.s:4981   .bss.TxParams:0000000000000000 $d
-     /tmp/ccIEh1dP.s:4985   .bss.TxParams:0000000000000000 TxParams
-     /tmp/ccIEh1dP.s:4988   .data.CommissioningParams:0000000000000000 $d
-     /tmp/ccIEh1dP.s:4992   .data.CommissioningParams:0000000000000000 CommissioningParams
-     /tmp/ccIEh1dP.s:5000   .data.JoinParams:0000000000000000 $d
-     /tmp/ccIEh1dP.s:5004   .data.JoinParams:0000000000000000 JoinParams
-     /tmp/ccIEh1dP.s:5009   .data.LmhpComplianceParams:0000000000000000 $d
-     /tmp/ccIEh1dP.s:5013   .data.LmhpComplianceParams:0000000000000000 LmhpComplianceParams
-     /tmp/ccIEh1dP.s:5020   .data.RxParams:0000000000000000 $d
-     /tmp/ccIEh1dP.s:5024   .data.RxParams:0000000000000000 RxParams
+     /tmp/ccmMFNdI.s:3950   .text.LmHandlerSetRX2Params:0000000000000000 $t
+     /tmp/ccmMFNdI.s:3957   .text.LmHandlerSetRX2Params:0000000000000000 LmHandlerSetRX2Params
+     /tmp/ccmMFNdI.s:4014   .text.LmHandlerSetRx1Delay:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4021   .text.LmHandlerSetRx1Delay:0000000000000000 LmHandlerSetRx1Delay
+     /tmp/ccmMFNdI.s:4071   .text.LmHandlerSetRx2Delay:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4078   .text.LmHandlerSetRx2Delay:0000000000000000 LmHandlerSetRx2Delay
+     /tmp/ccmMFNdI.s:4128   .text.LmHandlerSetJoinRx1Delay:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4135   .text.LmHandlerSetJoinRx1Delay:0000000000000000 LmHandlerSetJoinRx1Delay
+     /tmp/ccmMFNdI.s:4185   .text.LmHandlerSetJoinRx2Delay:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4192   .text.LmHandlerSetJoinRx2Delay:0000000000000000 LmHandlerSetJoinRx2Delay
+     /tmp/ccmMFNdI.s:4242   .text.LmHandlerGetPingPeriodicity:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4249   .text.LmHandlerGetPingPeriodicity:0000000000000000 LmHandlerGetPingPeriodicity
+     /tmp/ccmMFNdI.s:4267   .text.LmHandlerSetPingPeriodicity:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4274   .text.LmHandlerSetPingPeriodicity:0000000000000000 LmHandlerSetPingPeriodicity
+     /tmp/ccmMFNdI.s:4292   .text.LmHandlerGetBeaconState:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4299   .text.LmHandlerGetBeaconState:0000000000000000 LmHandlerGetBeaconState
+     /tmp/ccmMFNdI.s:4317   .text.LmHandlerGetNwkKey:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4324   .text.LmHandlerGetNwkKey:0000000000000000 LmHandlerGetNwkKey
+     /tmp/ccmMFNdI.s:4396   .text.LmHandlerSetNwkKey:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4403   .text.LmHandlerSetNwkKey:0000000000000000 LmHandlerSetNwkKey
+     /tmp/ccmMFNdI.s:4471   .text.LmHandlerGetAppKey:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4478   .text.LmHandlerGetAppKey:0000000000000000 LmHandlerGetAppKey
+     /tmp/ccmMFNdI.s:4550   .text.LmHandlerSetAppKey:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4557   .text.LmHandlerSetAppKey:0000000000000000 LmHandlerSetAppKey
+     /tmp/ccmMFNdI.s:4625   .text.LmHandlerGetNwkSKey:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4632   .text.LmHandlerGetNwkSKey:0000000000000000 LmHandlerGetNwkSKey
+     /tmp/ccmMFNdI.s:4704   .text.LmHandlerSetNwkSKey:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4711   .text.LmHandlerSetNwkSKey:0000000000000000 LmHandlerSetNwkSKey
+     /tmp/ccmMFNdI.s:4779   .text.LmHandlerGetAppSKey:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4786   .text.LmHandlerGetAppSKey:0000000000000000 LmHandlerGetAppSKey
+     /tmp/ccmMFNdI.s:4858   .text.LmHandlerSetAppSKey:0000000000000000 $t
+     /tmp/ccmMFNdI.s:4865   .text.LmHandlerSetAppSKey:0000000000000000 LmHandlerSetAppSKey
+     /tmp/ccmMFNdI.s:4933   .bss.AppDataBuffer:0000000000000000 $d
+     /tmp/ccmMFNdI.s:4937   .bss.AppDataBuffer:0000000000000000 AppDataBuffer
+     /tmp/ccmMFNdI.s:4943   .bss.CtxRestoreDone:0000000000000000 CtxRestoreDone
+     /tmp/ccmMFNdI.s:4944   .bss.CtxRestoreDone:0000000000000000 $d
+     /tmp/ccmMFNdI.s:4946   .bss.LmHandlerCallbacks:0000000000000000 $d
+     /tmp/ccmMFNdI.s:4950   .bss.LmHandlerCallbacks:0000000000000000 LmHandlerCallbacks
+     /tmp/ccmMFNdI.s:4953   .bss.LmHandlerPackages:0000000000000000 $d
+     /tmp/ccmMFNdI.s:4957   .bss.LmHandlerPackages:0000000000000000 LmHandlerPackages
+     /tmp/ccmMFNdI.s:4960   .bss.LmHandlerParams:0000000000000000 $d
+     /tmp/ccmMFNdI.s:4964   .bss.LmHandlerParams:0000000000000000 LmHandlerParams
+     /tmp/ccmMFNdI.s:4967   .bss.LoRaMacCallbacks:0000000000000000 $d
+     /tmp/ccmMFNdI.s:4971   .bss.LoRaMacCallbacks:0000000000000000 LoRaMacCallbacks
+     /tmp/ccmMFNdI.s:4974   .bss.LoRaMacPrimitives:0000000000000000 $d
+     /tmp/ccmMFNdI.s:4978   .bss.LoRaMacPrimitives:0000000000000000 LoRaMacPrimitives
+     /tmp/ccmMFNdI.s:4981   .bss.TxParams:0000000000000000 $d
+     /tmp/ccmMFNdI.s:4985   .bss.TxParams:0000000000000000 TxParams
+     /tmp/ccmMFNdI.s:4988   .data.CommissioningParams:0000000000000000 $d
+     /tmp/ccmMFNdI.s:4992   .data.CommissioningParams:0000000000000000 CommissioningParams
+     /tmp/ccmMFNdI.s:5000   .data.JoinParams:0000000000000000 $d
+     /tmp/ccmMFNdI.s:5004   .data.JoinParams:0000000000000000 JoinParams
+     /tmp/ccmMFNdI.s:5009   .data.LmhpComplianceParams:0000000000000000 $d
+     /tmp/ccmMFNdI.s:5013   .data.LmhpComplianceParams:0000000000000000 LmhpComplianceParams
+     /tmp/ccmMFNdI.s:5020   .data.RxParams:0000000000000000 $d
+     /tmp/ccmMFNdI.s:5024   .data.RxParams:0000000000000000 RxParams
 
-ARM GAS  /tmp/ccIEh1dP.s 			page 138
+ARM GAS  /tmp/ccmMFNdI.s 			page 138
 
 
 UNDEFINED SYMBOLS

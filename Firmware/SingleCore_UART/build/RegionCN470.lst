@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cckeb64s.s 			page 1
+ARM GAS  /tmp/ccMy6Xef.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
   29:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****  * \author    Daniel Jaeckle ( STACKFORCE )
   30:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** */
   31:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** /**
-ARM GAS  /tmp/cckeb64s.s 			page 2
+ARM GAS  /tmp/ccMy6Xef.s 			page 2
 
 
   32:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****   ******************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
   86:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** 
   87:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****     return Radio.TimeOnAir( MODEM_LORA, bandwidth, phyDr, 1, 8, false, pktLen, true );
   88:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** }
-ARM GAS  /tmp/cckeb64s.s 			page 3
+ARM GAS  /tmp/ccMy6Xef.s 			page 3
 
 
   89:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** #endif /* REGION_CN470 */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  128:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         {
  129:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             phyParam.Value = CN470_MAX_TX_POWER;
  130:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             break;
-ARM GAS  /tmp/cckeb64s.s 			page 4
+ARM GAS  /tmp/ccMy6Xef.s 			page 4
 
 
  131:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         }
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  185:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         {
  186:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             phyParam.Value = REGION_COMMON_DEFAULT_JOIN_ACCEPT_DELAY2;
  187:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             break;
-ARM GAS  /tmp/cckeb64s.s 			page 5
+ARM GAS  /tmp/ccMy6Xef.s 			page 5
 
 
  188:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         }
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  242:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             break;
  243:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         }
  244:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         case PHY_DEF_MAX_EIRP:
-ARM GAS  /tmp/cckeb64s.s 			page 6
+ARM GAS  /tmp/ccMy6Xef.s 			page 6
 
 
  245:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         {
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  299:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         }
  300:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         case PHY_BW_FROM_DR:
  301:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         {
-ARM GAS  /tmp/cckeb64s.s 			page 7
+ARM GAS  /tmp/ccMy6Xef.s 			page 7
 
 
  302:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             phyParam.Value = RegionCommonGetBandwidth( getPhy->Datarate, BandwidthsCN470 );
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
   80              		.thumb
   81              		.thumb_func
   82              		.fpu softvfp
-ARM GAS  /tmp/cckeb64s.s 			page 8
+ARM GAS  /tmp/ccMy6Xef.s 			page 8
 
 
   84              	RegionCN470InitDefaults:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  368:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             RegionNvmGroup2->ChannelsDefaultMask[3] = 0xFFFF;
  369:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             RegionNvmGroup2->ChannelsDefaultMask[4] = 0xFFFF;
  370:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             RegionNvmGroup2->ChannelsDefaultMask[5] = 0xFFFF;
-ARM GAS  /tmp/cckeb64s.s 			page 9
+ARM GAS  /tmp/ccMy6Xef.s 			page 9
 
 
  371:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** #endif /* HYBRID_ENABLED == 1 */
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  406:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         case PHY_TX_DR:
  407:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         case PHY_DEF_TX_DR:
  408:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         {
-ARM GAS  /tmp/cckeb64s.s 			page 10
+ARM GAS  /tmp/ccMy6Xef.s 			page 10
 
 
  409:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             return RegionCommonValueInRange( verify->DatarateParams.Datarate, CN470_TX_MIN_DATARATE
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  440:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****     }
  441:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** 
  442:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****     // Last byte CFListType must be 0x01 to indicate the CFList contains a series of ChMask fields
-ARM GAS  /tmp/cckeb64s.s 			page 11
+ARM GAS  /tmp/ccMy6Xef.s 			page 11
 
 
  443:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****     if( applyCFList->Payload[15] != 0x01 )
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  159              		.loc 1 477 5 view .LVU19
  478:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** #endif /* REGION_CN470 */
  479:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** }
-ARM GAS  /tmp/cckeb64s.s 			page 12
+ARM GAS  /tmp/ccMy6Xef.s 			page 12
 
 
  160              		.loc 1 479 1 is_stmt 0 view .LVU20
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  200              		.loc 1 497 1 view -0
  201              		.cfi_startproc
  202              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/cckeb64s.s 			page 13
+ARM GAS  /tmp/ccMy6Xef.s 			page 13
 
 
  203              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  211              		.cfi_endproc
  212              	.LFE111:
  214              		.section	.text.RegionCN470TxConfig,"ax",%progbits
-ARM GAS  /tmp/cckeb64s.s 			page 14
+ARM GAS  /tmp/ccMy6Xef.s 			page 14
 
 
  215              		.align	1
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  239              		.section	.text.RegionCN470LinkAdrReq,"ax",%progbits
  240              		.align	1
  241              		.global	RegionCN470LinkAdrReq
-ARM GAS  /tmp/cckeb64s.s 			page 15
+ARM GAS  /tmp/ccMy6Xef.s 			page 15
 
 
  242              		.syntax unified
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  617:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         {
  618:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****             status &= 0xFE; // Channel mask KO
  619:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         }
-ARM GAS  /tmp/cckeb64s.s 			page 16
+ARM GAS  /tmp/ccMy6Xef.s 			page 16
 
 
  620:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****         else
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  256              		.loc 1 673 5 view .LVU34
  674:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** }
  257              		.loc 1 674 1 is_stmt 0 view .LVU35
-ARM GAS  /tmp/cckeb64s.s 			page 17
+ARM GAS  /tmp/ccMy6Xef.s 			page 17
 
 
  258 0000 0720     		movs	r0, #7
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  287 0002 7047     		bx	lr
  288              		.cfi_endproc
  289              	.LFE114:
-ARM GAS  /tmp/cckeb64s.s 			page 18
+ARM GAS  /tmp/ccMy6Xef.s 			page 18
 
 
  291              		.section	.text.RegionCN470NewChannelReq,"ax",%progbits
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  336              		.loc 1 713 1 view .LVU49
  337 0004 7047     		bx	lr
  338              		.cfi_endproc
-ARM GAS  /tmp/cckeb64s.s 			page 19
+ARM GAS  /tmp/ccMy6Xef.s 			page 19
 
 
  339              	.LFE116:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  728:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** }
  383              		.loc 1 728 1 is_stmt 0 view .LVU56
  384 0000 4FF0FF30 		mov	r0, #-1
-ARM GAS  /tmp/cckeb64s.s 			page 20
+ARM GAS  /tmp/ccMy6Xef.s 			page 20
 
 
  385              	.LVL25:
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  763:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****     identifyChannelsParam.MaxBands = CN470_MAX_NB_BANDS;
  764:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** 
  765:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****     identifyChannelsParam.ElapsedTimeSinceStartUp = nextChanParams->ElapsedTimeSinceStartUp;
-ARM GAS  /tmp/cckeb64s.s 			page 21
+ARM GAS  /tmp/ccMy6Xef.s 			page 21
 
 
  766:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c ****     identifyChannelsParam.LastTxIsJoinRequest = nextChanParams->LastTxIsJoinRequest;
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  441              		.section	.text.RegionCN470ChannelsRemove,"ax",%progbits
  442              		.align	1
  443              		.global	RegionCN470ChannelsRemove
-ARM GAS  /tmp/cckeb64s.s 			page 22
+ARM GAS  /tmp/ccMy6Xef.s 			page 22
 
 
  444              		.syntax unified
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  482              		.loc 1 807 1 view .LVU71
  483 0000 7047     		bx	lr
  484              		.cfi_endproc
-ARM GAS  /tmp/cckeb64s.s 			page 23
+ARM GAS  /tmp/ccMy6Xef.s 			page 23
 
 
  485              	.LFE122:
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  525              		@ args = 0, pretend = 0, frame = 0
  526              		@ frame_needed = 0, uses_anonymous_args = 0
  527              		@ link register save eliminated.
-ARM GAS  /tmp/cckeb64s.s 			page 24
+ARM GAS  /tmp/ccMy6Xef.s 			page 24
 
 
  826:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.c **** #if defined( REGION_CN470 )
@@ -1413,52 +1413,52 @@ ARM GAS  /tmp/cckeb64s.s 			page 1
  541              		.file 8 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h"
  542              		.file 9 "Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.h"
  543              		.file 10 "Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionCN470.h"
-ARM GAS  /tmp/cckeb64s.s 			page 25
+ARM GAS  /tmp/ccMy6Xef.s 			page 25
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 RegionCN470.c
-     /tmp/cckeb64s.s:16     .text.RegionCN470GetPhyParam:0000000000000000 $t
-     /tmp/cckeb64s.s:24     .text.RegionCN470GetPhyParam:0000000000000000 RegionCN470GetPhyParam
-     /tmp/cckeb64s.s:56     .text.RegionCN470SetBandTxDone:0000000000000000 $t
-     /tmp/cckeb64s.s:63     .text.RegionCN470SetBandTxDone:0000000000000000 RegionCN470SetBandTxDone
-     /tmp/cckeb64s.s:77     .text.RegionCN470InitDefaults:0000000000000000 $t
-     /tmp/cckeb64s.s:84     .text.RegionCN470InitDefaults:0000000000000000 RegionCN470InitDefaults
-     /tmp/cckeb64s.s:98     .text.RegionCN470Verify:0000000000000000 $t
-     /tmp/cckeb64s.s:105    .text.RegionCN470Verify:0000000000000000 RegionCN470Verify
-     /tmp/cckeb64s.s:123    .text.RegionCN470ApplyCFList:0000000000000000 $t
-     /tmp/cckeb64s.s:130    .text.RegionCN470ApplyCFList:0000000000000000 RegionCN470ApplyCFList
-     /tmp/cckeb64s.s:144    .text.RegionCN470ChanMaskSet:0000000000000000 $t
-     /tmp/cckeb64s.s:151    .text.RegionCN470ChanMaskSet:0000000000000000 RegionCN470ChanMaskSet
-     /tmp/cckeb64s.s:169    .text.RegionCN470ComputeRxWindowParameters:0000000000000000 $t
-     /tmp/cckeb64s.s:176    .text.RegionCN470ComputeRxWindowParameters:0000000000000000 RegionCN470ComputeRxWindowParameters
-     /tmp/cckeb64s.s:190    .text.RegionCN470RxConfig:0000000000000000 $t
-     /tmp/cckeb64s.s:197    .text.RegionCN470RxConfig:0000000000000000 RegionCN470RxConfig
-     /tmp/cckeb64s.s:215    .text.RegionCN470TxConfig:0000000000000000 $t
-     /tmp/cckeb64s.s:222    .text.RegionCN470TxConfig:0000000000000000 RegionCN470TxConfig
-     /tmp/cckeb64s.s:240    .text.RegionCN470LinkAdrReq:0000000000000000 $t
-     /tmp/cckeb64s.s:247    .text.RegionCN470LinkAdrReq:0000000000000000 RegionCN470LinkAdrReq
-     /tmp/cckeb64s.s:266    .text.RegionCN470RxParamSetupReq:0000000000000000 $t
-     /tmp/cckeb64s.s:273    .text.RegionCN470RxParamSetupReq:0000000000000000 RegionCN470RxParamSetupReq
-     /tmp/cckeb64s.s:292    .text.RegionCN470NewChannelReq:0000000000000000 $t
-     /tmp/cckeb64s.s:299    .text.RegionCN470NewChannelReq:0000000000000000 RegionCN470NewChannelReq
-     /tmp/cckeb64s.s:317    .text.RegionCN470TxParamSetupReq:0000000000000000 $t
-     /tmp/cckeb64s.s:324    .text.RegionCN470TxParamSetupReq:0000000000000000 RegionCN470TxParamSetupReq
-     /tmp/cckeb64s.s:342    .text.RegionCN470DlChannelReq:0000000000000000 $t
-     /tmp/cckeb64s.s:349    .text.RegionCN470DlChannelReq:0000000000000000 RegionCN470DlChannelReq
-     /tmp/cckeb64s.s:367    .text.RegionCN470AlternateDr:0000000000000000 $t
-     /tmp/cckeb64s.s:374    .text.RegionCN470AlternateDr:0000000000000000 RegionCN470AlternateDr
-     /tmp/cckeb64s.s:392    .text.RegionCN470NextChannel:0000000000000000 $t
-     /tmp/cckeb64s.s:399    .text.RegionCN470NextChannel:0000000000000000 RegionCN470NextChannel
-     /tmp/cckeb64s.s:417    .text.RegionCN470ChannelAdd:0000000000000000 $t
-     /tmp/cckeb64s.s:424    .text.RegionCN470ChannelAdd:0000000000000000 RegionCN470ChannelAdd
-     /tmp/cckeb64s.s:442    .text.RegionCN470ChannelsRemove:0000000000000000 $t
-     /tmp/cckeb64s.s:449    .text.RegionCN470ChannelsRemove:0000000000000000 RegionCN470ChannelsRemove
-     /tmp/cckeb64s.s:467    .text.RegionCN470SetContinuousWave:0000000000000000 $t
-     /tmp/cckeb64s.s:474    .text.RegionCN470SetContinuousWave:0000000000000000 RegionCN470SetContinuousWave
-     /tmp/cckeb64s.s:488    .text.RegionCN470ApplyDrOffset:0000000000000000 $t
-     /tmp/cckeb64s.s:495    .text.RegionCN470ApplyDrOffset:0000000000000000 RegionCN470ApplyDrOffset
-     /tmp/cckeb64s.s:513    .text.RegionCN470RxBeaconSetup:0000000000000000 $t
-     /tmp/cckeb64s.s:520    .text.RegionCN470RxBeaconSetup:0000000000000000 RegionCN470RxBeaconSetup
+     /tmp/ccMy6Xef.s:16     .text.RegionCN470GetPhyParam:0000000000000000 $t
+     /tmp/ccMy6Xef.s:24     .text.RegionCN470GetPhyParam:0000000000000000 RegionCN470GetPhyParam
+     /tmp/ccMy6Xef.s:56     .text.RegionCN470SetBandTxDone:0000000000000000 $t
+     /tmp/ccMy6Xef.s:63     .text.RegionCN470SetBandTxDone:0000000000000000 RegionCN470SetBandTxDone
+     /tmp/ccMy6Xef.s:77     .text.RegionCN470InitDefaults:0000000000000000 $t
+     /tmp/ccMy6Xef.s:84     .text.RegionCN470InitDefaults:0000000000000000 RegionCN470InitDefaults
+     /tmp/ccMy6Xef.s:98     .text.RegionCN470Verify:0000000000000000 $t
+     /tmp/ccMy6Xef.s:105    .text.RegionCN470Verify:0000000000000000 RegionCN470Verify
+     /tmp/ccMy6Xef.s:123    .text.RegionCN470ApplyCFList:0000000000000000 $t
+     /tmp/ccMy6Xef.s:130    .text.RegionCN470ApplyCFList:0000000000000000 RegionCN470ApplyCFList
+     /tmp/ccMy6Xef.s:144    .text.RegionCN470ChanMaskSet:0000000000000000 $t
+     /tmp/ccMy6Xef.s:151    .text.RegionCN470ChanMaskSet:0000000000000000 RegionCN470ChanMaskSet
+     /tmp/ccMy6Xef.s:169    .text.RegionCN470ComputeRxWindowParameters:0000000000000000 $t
+     /tmp/ccMy6Xef.s:176    .text.RegionCN470ComputeRxWindowParameters:0000000000000000 RegionCN470ComputeRxWindowParameters
+     /tmp/ccMy6Xef.s:190    .text.RegionCN470RxConfig:0000000000000000 $t
+     /tmp/ccMy6Xef.s:197    .text.RegionCN470RxConfig:0000000000000000 RegionCN470RxConfig
+     /tmp/ccMy6Xef.s:215    .text.RegionCN470TxConfig:0000000000000000 $t
+     /tmp/ccMy6Xef.s:222    .text.RegionCN470TxConfig:0000000000000000 RegionCN470TxConfig
+     /tmp/ccMy6Xef.s:240    .text.RegionCN470LinkAdrReq:0000000000000000 $t
+     /tmp/ccMy6Xef.s:247    .text.RegionCN470LinkAdrReq:0000000000000000 RegionCN470LinkAdrReq
+     /tmp/ccMy6Xef.s:266    .text.RegionCN470RxParamSetupReq:0000000000000000 $t
+     /tmp/ccMy6Xef.s:273    .text.RegionCN470RxParamSetupReq:0000000000000000 RegionCN470RxParamSetupReq
+     /tmp/ccMy6Xef.s:292    .text.RegionCN470NewChannelReq:0000000000000000 $t
+     /tmp/ccMy6Xef.s:299    .text.RegionCN470NewChannelReq:0000000000000000 RegionCN470NewChannelReq
+     /tmp/ccMy6Xef.s:317    .text.RegionCN470TxParamSetupReq:0000000000000000 $t
+     /tmp/ccMy6Xef.s:324    .text.RegionCN470TxParamSetupReq:0000000000000000 RegionCN470TxParamSetupReq
+     /tmp/ccMy6Xef.s:342    .text.RegionCN470DlChannelReq:0000000000000000 $t
+     /tmp/ccMy6Xef.s:349    .text.RegionCN470DlChannelReq:0000000000000000 RegionCN470DlChannelReq
+     /tmp/ccMy6Xef.s:367    .text.RegionCN470AlternateDr:0000000000000000 $t
+     /tmp/ccMy6Xef.s:374    .text.RegionCN470AlternateDr:0000000000000000 RegionCN470AlternateDr
+     /tmp/ccMy6Xef.s:392    .text.RegionCN470NextChannel:0000000000000000 $t
+     /tmp/ccMy6Xef.s:399    .text.RegionCN470NextChannel:0000000000000000 RegionCN470NextChannel
+     /tmp/ccMy6Xef.s:417    .text.RegionCN470ChannelAdd:0000000000000000 $t
+     /tmp/ccMy6Xef.s:424    .text.RegionCN470ChannelAdd:0000000000000000 RegionCN470ChannelAdd
+     /tmp/ccMy6Xef.s:442    .text.RegionCN470ChannelsRemove:0000000000000000 $t
+     /tmp/ccMy6Xef.s:449    .text.RegionCN470ChannelsRemove:0000000000000000 RegionCN470ChannelsRemove
+     /tmp/ccMy6Xef.s:467    .text.RegionCN470SetContinuousWave:0000000000000000 $t
+     /tmp/ccMy6Xef.s:474    .text.RegionCN470SetContinuousWave:0000000000000000 RegionCN470SetContinuousWave
+     /tmp/ccMy6Xef.s:488    .text.RegionCN470ApplyDrOffset:0000000000000000 $t
+     /tmp/ccMy6Xef.s:495    .text.RegionCN470ApplyDrOffset:0000000000000000 RegionCN470ApplyDrOffset
+     /tmp/ccMy6Xef.s:513    .text.RegionCN470RxBeaconSetup:0000000000000000 $t
+     /tmp/ccMy6Xef.s:520    .text.RegionCN470RxBeaconSetup:0000000000000000 RegionCN470RxBeaconSetup
 
 NO UNDEFINED SYMBOLS

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccW96c9N.s 			page 1
+ARM GAS  /tmp/ccaaQFqR.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
   29:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****  * \author    Daniel Jaeckle ( STACKFORCE )
   30:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** */
   31:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** /**
-ARM GAS  /tmp/ccW96c9N.s 			page 2
+ARM GAS  /tmp/ccaaQFqR.s 			page 2
 
 
   32:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****   ******************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
   86:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     {
   87:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         // Range ok, check for specific value
   88:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         tmpFreq -= 920900000;
-ARM GAS  /tmp/ccW96c9N.s 			page 3
+ARM GAS  /tmp/ccaaQFqR.s 			page 3
 
 
   89:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         if( ( tmpFreq % 200000 ) == 0 )
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  128:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         case PHY_NEXT_LOWER_TX_DR:
  129:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         {
  130:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             RegionCommonGetNextLowerTxDrParams_t nextLowerTxDrParams =
-ARM GAS  /tmp/ccW96c9N.s 			page 4
+ARM GAS  /tmp/ccaaQFqR.s 			page 4
 
 
  131:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             {
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  185:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         {
  186:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             phyParam.Value = REGION_COMMON_DEFAULT_RECEIVE_DELAY1;
  187:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             break;
-ARM GAS  /tmp/ccW96c9N.s 			page 5
+ARM GAS  /tmp/ccaaQFqR.s 			page 5
 
 
  188:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         }
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  242:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             break;
  243:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         }
  244:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         case PHY_CHANNELS:
-ARM GAS  /tmp/ccW96c9N.s 			page 6
+ARM GAS  /tmp/ccaaQFqR.s 			page 6
 
 
  245:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         {
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  299:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         }
  300:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         case PHY_SF_FROM_DR:
  301:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         {
-ARM GAS  /tmp/ccW96c9N.s 			page 7
+ARM GAS  /tmp/ccaaQFqR.s 			page 7
 
 
  302:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             phyParam.Value = DataratesKR920[getPhy->Datarate];
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
   74              	.LFE105:
   76              		.section	.text.RegionKR920InitDefaults,"ax",%progbits
   77              		.align	1
-ARM GAS  /tmp/ccW96c9N.s 			page 8
+ARM GAS  /tmp/ccaaQFqR.s 			page 8
 
 
   78              		.global	RegionKR920InitDefaults
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  368:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             RegionNvmGroup2->Channels[2].Rx1Frequency = 0;
  369:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             // Update the channels mask
  370:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             RegionCommonChanMaskCopy( RegionNvmGroup2->ChannelsMask, RegionNvmGroup2->ChannelsDefau
-ARM GAS  /tmp/ccW96c9N.s 			page 9
+ARM GAS  /tmp/ccaaQFqR.s 			page 9
 
 
  371:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             break;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  406:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             return RegionCommonValueInRange( verify->DatarateParams.Datarate, KR920_RX_MIN_DATARATE
  407:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         }
  408:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         case PHY_DEF_TX_POWER:
-ARM GAS  /tmp/ccW96c9N.s 			page 10
+ARM GAS  /tmp/ccaaQFqR.s 			page 10
 
 
  409:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         case PHY_TX_POWER:
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  440:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     }
  441:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** 
  442:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     // Last byte CFListType must be 0 to indicate the CFList contains a list of frequencies
-ARM GAS  /tmp/ccW96c9N.s 			page 11
+ARM GAS  /tmp/ccaaQFqR.s 			page 11
 
 
  443:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     if( applyCFList->Payload[15] != 0 )
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  151              	RegionKR920ChanMaskSet:
  152              	.LVL7:
  153              	.LFB109:
-ARM GAS  /tmp/ccW96c9N.s 			page 12
+ARM GAS  /tmp/ccaaQFqR.s 			page 12
 
 
  486:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  183              		@ link register save eliminated.
  513:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** #if defined( REGION_KR920 )
  514:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     uint32_t tSymbolInUs = 0;
-ARM GAS  /tmp/ccW96c9N.s 			page 13
+ARM GAS  /tmp/ccaaQFqR.s 			page 13
 
 
  515:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  550:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     // Read the physical datarate from the datarates table
  551:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     phyDr = DataratesKR920[dr];
  552:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** 
-ARM GAS  /tmp/ccW96c9N.s 			page 14
+ARM GAS  /tmp/ccaaQFqR.s 			page 14
 
 
  553:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     Radio.SetChannel( frequency );
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  584:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** #if defined( REGION_KR920 )
  585:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     int8_t phyDr = DataratesKR920[txConfig->Datarate];
  586:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     int8_t txPowerLimited = RegionCommonLimitTxPower( txConfig->TxPower, RegionNvmGroup1->Bands[Reg
-ARM GAS  /tmp/ccW96c9N.s 			page 15
+ARM GAS  /tmp/ccaaQFqR.s 			page 15
 
 
  587:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     uint32_t bandwidth = RegionCommonGetBandwidth( txConfig->Datarate, BandwidthsKR920 );
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  253              		@ frame_needed = 0, uses_anonymous_args = 0
  254              		@ link register save eliminated.
  620:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     uint8_t status = 0x07;
-ARM GAS  /tmp/ccW96c9N.s 			page 16
+ARM GAS  /tmp/ccaaQFqR.s 			page 16
 
 
  255              		.loc 1 620 5 view .LVU33
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  674:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****                         status &= 0xFE; // Channel mask KO
  675:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****                     }
  676:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****                 }
-ARM GAS  /tmp/ccW96c9N.s 			page 17
+ARM GAS  /tmp/ccaaQFqR.s 			page 17
 
 
  677:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             }
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  263              	.LFE113:
  265              		.section	.text.RegionKR920RxParamSetupReq,"ax",%progbits
  266              		.align	1
-ARM GAS  /tmp/ccW96c9N.s 			page 18
+ARM GAS  /tmp/ccaaQFqR.s 			page 18
 
 
  267              		.global	RegionKR920RxParamSetupReq
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  296              		.thumb_func
  297              		.fpu softvfp
  299              	RegionKR920TxParamSetupReq:
-ARM GAS  /tmp/ccW96c9N.s 			page 19
+ARM GAS  /tmp/ccaaQFqR.s 			page 19
 
 
  300              	.LVL18:
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  803:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** }
  804:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** 
  805:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** int8_t RegionKR920TxParamSetupReq( TxParamSetupReqParams_t* txParamSetupReq )
-ARM GAS  /tmp/ccW96c9N.s 			page 20
+ARM GAS  /tmp/ccaaQFqR.s 			page 20
 
 
  806:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** {
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  831:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         RegionNvmGroup2->Channels[dlChannelReq->ChannelId].Rx1Frequency = dlChannelReq->Rx1Frequenc
  832:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     }
  833:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** 
-ARM GAS  /tmp/ccW96c9N.s 			page 21
+ARM GAS  /tmp/ccaaQFqR.s 			page 21
 
 
  834:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** #endif /* REGION_KR920 */
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  847:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** LoRaMacStatus_t RegionKR920NextChannel( NextChanParams_t* nextChanParams, uint8_t* channel, TimerTi
  848:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** {
  378              		.loc 1 848 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccW96c9N.s 			page 22
+ARM GAS  /tmp/ccaaQFqR.s 			page 22
 
 
  379              		.cfi_startproc
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  899:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****                 *channel = channelNext;
  900:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****                 return LORAMAC_STATUS_OK;
  901:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             }
-ARM GAS  /tmp/ccW96c9N.s 			page 23
+ARM GAS  /tmp/ccaaQFqR.s 			page 23
 
 
  902:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****         }
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  933:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     }
  934:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** 
  935:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     // Validate the datarate range
-ARM GAS  /tmp/ccW96c9N.s 			page 24
+ARM GAS  /tmp/ccaaQFqR.s 			page 24
 
 
  936:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     if( RegionCommonValueInRange( channelAdd->NewChannel->DrRange.Fields.Min, KR920_TX_MIN_DATARATE
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  419              		.global	RegionKR920ChannelsRemove
  420              		.syntax unified
  421              		.thumb
-ARM GAS  /tmp/ccW96c9N.s 			page 25
+ARM GAS  /tmp/ccaaQFqR.s 			page 25
 
 
  422              		.thumb_func
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  458 0000 00B5     		push	{lr}
  459              	.LCFI2:
  460              		.cfi_def_cfa_offset 4
-ARM GAS  /tmp/ccW96c9N.s 			page 26
+ARM GAS  /tmp/ccaaQFqR.s 			page 26
 
 
  461              		.cfi_offset 14, -4
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  498              		.cfi_remember_state
  499              		.cfi_def_cfa_offset 4
  500              		@ sp needed
-ARM GAS  /tmp/ccW96c9N.s 			page 27
+ARM GAS  /tmp/ccaaQFqR.s 			page 27
 
 
  501 001c 5DF804FB 		ldr	pc, [sp], #4
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  787:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****             }
  543              		.loc 1 787 17 view .LVU98
  544 0044 E9E7     		b	.L21
-ARM GAS  /tmp/ccW96c9N.s 			page 28
+ARM GAS  /tmp/ccaaQFqR.s 			page 28
 
 
  545              	.LVL39:
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  588              		@ link register save eliminated.
 1002:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c **** #if defined( REGION_KR920 )
 1003:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     int8_t txPowerLimited = RegionCommonLimitTxPower( continuousWave->TxPower, RegionNvmGroup1->Ban
-ARM GAS  /tmp/ccW96c9N.s 			page 29
+ARM GAS  /tmp/ccaaQFqR.s 			page 29
 
 
 1004:Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.c ****     float maxEIRP = GetMaxEIRP( RegionNvmGroup2->Channels[continuousWave->Channel].Frequency );
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  616              		.cfi_endproc
  617              	.LFE123:
  619              		.section	.text.RegionKR920RxBeaconSetup,"ax",%progbits
-ARM GAS  /tmp/ccW96c9N.s 			page 30
+ARM GAS  /tmp/ccaaQFqR.s 			page 30
 
 
  620              		.align	1
@@ -1790,55 +1790,55 @@ ARM GAS  /tmp/ccW96c9N.s 			page 1
  648              		.file 8 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h"
  649              		.file 9 "Middlewares/Third_Party/LoRaWAN/Mac/Region/Region.h"
  650              		.file 10 "Middlewares/Third_Party/LoRaWAN/Mac/Region/RegionKR920.h"
-ARM GAS  /tmp/ccW96c9N.s 			page 31
+ARM GAS  /tmp/ccaaQFqR.s 			page 31
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 RegionKR920.c
-     /tmp/ccW96c9N.s:16     .text.RegionKR920GetPhyParam:0000000000000000 $t
-     /tmp/ccW96c9N.s:24     .text.RegionKR920GetPhyParam:0000000000000000 RegionKR920GetPhyParam
-     /tmp/ccW96c9N.s:56     .text.RegionKR920SetBandTxDone:0000000000000000 $t
-     /tmp/ccW96c9N.s:63     .text.RegionKR920SetBandTxDone:0000000000000000 RegionKR920SetBandTxDone
-     /tmp/ccW96c9N.s:77     .text.RegionKR920InitDefaults:0000000000000000 $t
-     /tmp/ccW96c9N.s:84     .text.RegionKR920InitDefaults:0000000000000000 RegionKR920InitDefaults
-     /tmp/ccW96c9N.s:98     .text.RegionKR920Verify:0000000000000000 $t
-     /tmp/ccW96c9N.s:105    .text.RegionKR920Verify:0000000000000000 RegionKR920Verify
-     /tmp/ccW96c9N.s:123    .text.RegionKR920ApplyCFList:0000000000000000 $t
-     /tmp/ccW96c9N.s:130    .text.RegionKR920ApplyCFList:0000000000000000 RegionKR920ApplyCFList
-     /tmp/ccW96c9N.s:144    .text.RegionKR920ChanMaskSet:0000000000000000 $t
-     /tmp/ccW96c9N.s:151    .text.RegionKR920ChanMaskSet:0000000000000000 RegionKR920ChanMaskSet
-     /tmp/ccW96c9N.s:169    .text.RegionKR920ComputeRxWindowParameters:0000000000000000 $t
-     /tmp/ccW96c9N.s:176    .text.RegionKR920ComputeRxWindowParameters:0000000000000000 RegionKR920ComputeRxWindowParameters
-     /tmp/ccW96c9N.s:190    .text.RegionKR920RxConfig:0000000000000000 $t
-     /tmp/ccW96c9N.s:197    .text.RegionKR920RxConfig:0000000000000000 RegionKR920RxConfig
-     /tmp/ccW96c9N.s:215    .text.RegionKR920TxConfig:0000000000000000 $t
-     /tmp/ccW96c9N.s:222    .text.RegionKR920TxConfig:0000000000000000 RegionKR920TxConfig
-     /tmp/ccW96c9N.s:240    .text.RegionKR920LinkAdrReq:0000000000000000 $t
-     /tmp/ccW96c9N.s:247    .text.RegionKR920LinkAdrReq:0000000000000000 RegionKR920LinkAdrReq
-     /tmp/ccW96c9N.s:266    .text.RegionKR920RxParamSetupReq:0000000000000000 $t
-     /tmp/ccW96c9N.s:273    .text.RegionKR920RxParamSetupReq:0000000000000000 RegionKR920RxParamSetupReq
-     /tmp/ccW96c9N.s:292    .text.RegionKR920TxParamSetupReq:0000000000000000 $t
-     /tmp/ccW96c9N.s:299    .text.RegionKR920TxParamSetupReq:0000000000000000 RegionKR920TxParamSetupReq
-     /tmp/ccW96c9N.s:317    .text.RegionKR920DlChannelReq:0000000000000000 $t
-     /tmp/ccW96c9N.s:324    .text.RegionKR920DlChannelReq:0000000000000000 RegionKR920DlChannelReq
-     /tmp/ccW96c9N.s:343    .text.RegionKR920AlternateDr:0000000000000000 $t
-     /tmp/ccW96c9N.s:350    .text.RegionKR920AlternateDr:0000000000000000 RegionKR920AlternateDr
-     /tmp/ccW96c9N.s:368    .text.RegionKR920NextChannel:0000000000000000 $t
-     /tmp/ccW96c9N.s:375    .text.RegionKR920NextChannel:0000000000000000 RegionKR920NextChannel
-     /tmp/ccW96c9N.s:393    .text.RegionKR920ChannelAdd:0000000000000000 $t
-     /tmp/ccW96c9N.s:400    .text.RegionKR920ChannelAdd:0000000000000000 RegionKR920ChannelAdd
-     /tmp/ccW96c9N.s:418    .text.RegionKR920ChannelsRemove:0000000000000000 $t
-     /tmp/ccW96c9N.s:425    .text.RegionKR920ChannelsRemove:0000000000000000 RegionKR920ChannelsRemove
-     /tmp/ccW96c9N.s:443    .text.RegionKR920NewChannelReq:0000000000000000 $t
-     /tmp/ccW96c9N.s:450    .text.RegionKR920NewChannelReq:0000000000000000 RegionKR920NewChannelReq
-     /tmp/ccW96c9N.s:526    .text.RegionKR920NewChannelReq:0000000000000036 $d
-     /tmp/ccW96c9N.s:574    .text.RegionKR920SetContinuousWave:0000000000000000 $t
-     /tmp/ccW96c9N.s:581    .text.RegionKR920SetContinuousWave:0000000000000000 RegionKR920SetContinuousWave
-     /tmp/ccW96c9N.s:595    .text.RegionKR920ApplyDrOffset:0000000000000000 $t
-     /tmp/ccW96c9N.s:602    .text.RegionKR920ApplyDrOffset:0000000000000000 RegionKR920ApplyDrOffset
-     /tmp/ccW96c9N.s:620    .text.RegionKR920RxBeaconSetup:0000000000000000 $t
-     /tmp/ccW96c9N.s:627    .text.RegionKR920RxBeaconSetup:0000000000000000 RegionKR920RxBeaconSetup
-     /tmp/ccW96c9N.s:533    .text.RegionKR920NewChannelReq:000000000000003d $d
-     /tmp/ccW96c9N.s:533    .text.RegionKR920NewChannelReq:000000000000003e $t
+     /tmp/ccaaQFqR.s:16     .text.RegionKR920GetPhyParam:0000000000000000 $t
+     /tmp/ccaaQFqR.s:24     .text.RegionKR920GetPhyParam:0000000000000000 RegionKR920GetPhyParam
+     /tmp/ccaaQFqR.s:56     .text.RegionKR920SetBandTxDone:0000000000000000 $t
+     /tmp/ccaaQFqR.s:63     .text.RegionKR920SetBandTxDone:0000000000000000 RegionKR920SetBandTxDone
+     /tmp/ccaaQFqR.s:77     .text.RegionKR920InitDefaults:0000000000000000 $t
+     /tmp/ccaaQFqR.s:84     .text.RegionKR920InitDefaults:0000000000000000 RegionKR920InitDefaults
+     /tmp/ccaaQFqR.s:98     .text.RegionKR920Verify:0000000000000000 $t
+     /tmp/ccaaQFqR.s:105    .text.RegionKR920Verify:0000000000000000 RegionKR920Verify
+     /tmp/ccaaQFqR.s:123    .text.RegionKR920ApplyCFList:0000000000000000 $t
+     /tmp/ccaaQFqR.s:130    .text.RegionKR920ApplyCFList:0000000000000000 RegionKR920ApplyCFList
+     /tmp/ccaaQFqR.s:144    .text.RegionKR920ChanMaskSet:0000000000000000 $t
+     /tmp/ccaaQFqR.s:151    .text.RegionKR920ChanMaskSet:0000000000000000 RegionKR920ChanMaskSet
+     /tmp/ccaaQFqR.s:169    .text.RegionKR920ComputeRxWindowParameters:0000000000000000 $t
+     /tmp/ccaaQFqR.s:176    .text.RegionKR920ComputeRxWindowParameters:0000000000000000 RegionKR920ComputeRxWindowParameters
+     /tmp/ccaaQFqR.s:190    .text.RegionKR920RxConfig:0000000000000000 $t
+     /tmp/ccaaQFqR.s:197    .text.RegionKR920RxConfig:0000000000000000 RegionKR920RxConfig
+     /tmp/ccaaQFqR.s:215    .text.RegionKR920TxConfig:0000000000000000 $t
+     /tmp/ccaaQFqR.s:222    .text.RegionKR920TxConfig:0000000000000000 RegionKR920TxConfig
+     /tmp/ccaaQFqR.s:240    .text.RegionKR920LinkAdrReq:0000000000000000 $t
+     /tmp/ccaaQFqR.s:247    .text.RegionKR920LinkAdrReq:0000000000000000 RegionKR920LinkAdrReq
+     /tmp/ccaaQFqR.s:266    .text.RegionKR920RxParamSetupReq:0000000000000000 $t
+     /tmp/ccaaQFqR.s:273    .text.RegionKR920RxParamSetupReq:0000000000000000 RegionKR920RxParamSetupReq
+     /tmp/ccaaQFqR.s:292    .text.RegionKR920TxParamSetupReq:0000000000000000 $t
+     /tmp/ccaaQFqR.s:299    .text.RegionKR920TxParamSetupReq:0000000000000000 RegionKR920TxParamSetupReq
+     /tmp/ccaaQFqR.s:317    .text.RegionKR920DlChannelReq:0000000000000000 $t
+     /tmp/ccaaQFqR.s:324    .text.RegionKR920DlChannelReq:0000000000000000 RegionKR920DlChannelReq
+     /tmp/ccaaQFqR.s:343    .text.RegionKR920AlternateDr:0000000000000000 $t
+     /tmp/ccaaQFqR.s:350    .text.RegionKR920AlternateDr:0000000000000000 RegionKR920AlternateDr
+     /tmp/ccaaQFqR.s:368    .text.RegionKR920NextChannel:0000000000000000 $t
+     /tmp/ccaaQFqR.s:375    .text.RegionKR920NextChannel:0000000000000000 RegionKR920NextChannel
+     /tmp/ccaaQFqR.s:393    .text.RegionKR920ChannelAdd:0000000000000000 $t
+     /tmp/ccaaQFqR.s:400    .text.RegionKR920ChannelAdd:0000000000000000 RegionKR920ChannelAdd
+     /tmp/ccaaQFqR.s:418    .text.RegionKR920ChannelsRemove:0000000000000000 $t
+     /tmp/ccaaQFqR.s:425    .text.RegionKR920ChannelsRemove:0000000000000000 RegionKR920ChannelsRemove
+     /tmp/ccaaQFqR.s:443    .text.RegionKR920NewChannelReq:0000000000000000 $t
+     /tmp/ccaaQFqR.s:450    .text.RegionKR920NewChannelReq:0000000000000000 RegionKR920NewChannelReq
+     /tmp/ccaaQFqR.s:526    .text.RegionKR920NewChannelReq:0000000000000036 $d
+     /tmp/ccaaQFqR.s:574    .text.RegionKR920SetContinuousWave:0000000000000000 $t
+     /tmp/ccaaQFqR.s:581    .text.RegionKR920SetContinuousWave:0000000000000000 RegionKR920SetContinuousWave
+     /tmp/ccaaQFqR.s:595    .text.RegionKR920ApplyDrOffset:0000000000000000 $t
+     /tmp/ccaaQFqR.s:602    .text.RegionKR920ApplyDrOffset:0000000000000000 RegionKR920ApplyDrOffset
+     /tmp/ccaaQFqR.s:620    .text.RegionKR920RxBeaconSetup:0000000000000000 $t
+     /tmp/ccaaQFqR.s:627    .text.RegionKR920RxBeaconSetup:0000000000000000 RegionKR920RxBeaconSetup
+     /tmp/ccaaQFqR.s:533    .text.RegionKR920NewChannelReq:000000000000003d $d
+     /tmp/ccaaQFqR.s:533    .text.RegionKR920NewChannelReq:000000000000003e $t
 
 NO UNDEFINED SYMBOLS

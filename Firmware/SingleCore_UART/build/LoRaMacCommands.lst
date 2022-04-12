@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccRiSXCa.s 			page 1
+ARM GAS  /tmp/ccUhecCA.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
   30:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****  */
   31:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** #include <stddef.h>
   32:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** 
-ARM GAS  /tmp/ccRiSXCa.s 			page 2
+ARM GAS  /tmp/ccUhecCA.s 			page 2
 
 
   33:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** #include "utilities.h"
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
   87:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** 
   88:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** /*!
   89:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****  * \brief Determines if a MAC command slot is free
-ARM GAS  /tmp/ccRiSXCa.s 			page 3
+ARM GAS  /tmp/ccUhecCA.s 			page 3
 
 
   90:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****  *
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  105:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     return true;
   61              		.loc 1 105 12 view .LVU15
   62 0010 0120     		movs	r0, #1
-ARM GAS  /tmp/ccRiSXCa.s 			page 4
+ARM GAS  /tmp/ccUhecCA.s 			page 4
 
 
   63              	.LVL4:
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  104              	.LVL8:
  105              	.L8:
  106              		.loc 1 117 10 is_stmt 1 view .LVU24
-ARM GAS  /tmp/ccRiSXCa.s 			page 5
+ARM GAS  /tmp/ccUhecCA.s 			page 5
 
 
  107              		.loc 1 117 47 is_stmt 0 view .LVU25
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  153              	.LFB107:
  128:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** 
  129:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** /*!
-ARM GAS  /tmp/ccRiSXCa.s 			page 6
+ARM GAS  /tmp/ccUhecCA.s 			page 6
 
 
  130:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****  * \brief Free memory slot
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  171 0008 0120     		movs	r0, #1
  172              	.LVL14:
  173              		.loc 1 166 12 view .LVU45
-ARM GAS  /tmp/ccRiSXCa.s 			page 7
+ARM GAS  /tmp/ccUhecCA.s 			page 7
 
 
  174 000a 7047     		bx	lr
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  211              	.L20:
  185:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     {
  186:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****         list->First = element;
-ARM GAS  /tmp/ccRiSXCa.s 			page 8
+ARM GAS  /tmp/ccUhecCA.s 			page 8
 
 
  187:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     }
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  247              	.L23:
  180:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     }
  248              		.loc 1 180 16 view .LVU71
-ARM GAS  /tmp/ccRiSXCa.s 			page 9
+ARM GAS  /tmp/ccUhecCA.s 			page 9
 
 
  249 0022 0020     		movs	r0, #0
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  282              		.loc 1 224 7 is_stmt 0 view .LVU81
  283 0006 8142     		cmp	r1, r0
  284 0008 02D1     		bne	.L27
-ARM GAS  /tmp/ccRiSXCa.s 			page 10
+ARM GAS  /tmp/ccUhecCA.s 			page 10
 
 
  225:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     {
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  319              		.section	.text.LinkedListRemove,"ax",%progbits
  320              		.align	1
  321              		.syntax unified
-ARM GAS  /tmp/ccRiSXCa.s 			page 11
+ARM GAS  /tmp/ccUhecCA.s 			page 11
 
 
  322              		.thumb
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  358              	.L34:
  257:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     {
  258:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****         list->First = element->Next;
-ARM GAS  /tmp/ccRiSXCa.s 			page 12
+ARM GAS  /tmp/ccUhecCA.s 			page 12
 
 
  259:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     }
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  394              	.L44:
  263:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     }
  395              		.loc 1 263 9 is_stmt 1 view .LVU117
-ARM GAS  /tmp/ccRiSXCa.s 			page 13
+ARM GAS  /tmp/ccUhecCA.s 			page 13
 
 
  263:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     }
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  438              		.loc 1 284 1 is_stmt 1 view -0
  439              		.cfi_startproc
  440              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccRiSXCa.s 			page 14
+ARM GAS  /tmp/ccUhecCA.s 			page 14
 
 
  441              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  482              		.thumb_func
  483              		.fpu softvfp
  485              	FreeMacCommandSlot:
-ARM GAS  /tmp/ccRiSXCa.s 			page 15
+ARM GAS  /tmp/ccUhecCA.s 			page 15
 
 
  486              	.LVL44:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  531              		.fpu softvfp
  533              	LoRaMacCommandsInit:
  534              	.LFB112:
-ARM GAS  /tmp/ccRiSXCa.s 			page 16
+ARM GAS  /tmp/ccUhecCA.s 			page 16
 
 
  296:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** 
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  578              		.cfi_startproc
  579              		@ args = 0, pretend = 0, frame = 0
  580              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccRiSXCa.s 			page 17
+ARM GAS  /tmp/ccUhecCA.s 			page 17
 
 
  309:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     if( payload == NULL )
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  327:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     }
  328:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** 
  329:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     // Set Values
-ARM GAS  /tmp/ccRiSXCa.s 			page 18
+ARM GAS  /tmp/ccUhecCA.s 			page 18
 
 
  330:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     newCmd->CID = cid;
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  660              		.loc 1 311 16 view .LVU175
  661 0044 0120     		movs	r0, #1
  662              	.LVL58:
-ARM GAS  /tmp/ccRiSXCa.s 			page 19
+ARM GAS  /tmp/ccUhecCA.s 			page 19
 
 
  663              		.loc 1 338 1 view .LVU176
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  711              	.LCFI10:
  712              		.cfi_def_cfa_offset 8
  713              		.cfi_offset 4, -8
-ARM GAS  /tmp/ccRiSXCa.s 			page 20
+ARM GAS  /tmp/ccUhecCA.s 			page 20
 
 
  714              		.cfi_offset 14, -4
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  748              	.L74:
  749              	.LCFI11:
  750              		.cfi_def_cfa_offset 0
-ARM GAS  /tmp/ccRiSXCa.s 			page 21
+ARM GAS  /tmp/ccUhecCA.s 			page 21
 
 
  751              		.cfi_restore 4
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  797 0000 064B     		ldr	r3, .L89
  798 0002 1B68     		ldr	r3, [r3]
  799              	.LVL69:
-ARM GAS  /tmp/ccRiSXCa.s 			page 22
+ARM GAS  /tmp/ccUhecCA.s 			page 22
 
 
  370:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** 
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  833              		.loc 1 386 1 view .LVU218
  834 001a 7047     		bx	lr
  835              	.L90:
-ARM GAS  /tmp/ccRiSXCa.s 			page 23
+ARM GAS  /tmp/ccUhecCA.s 			page 23
 
 
  836              		.align	2
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  407:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****             curElement = curElement->Next;
  872              		.loc 1 407 13 is_stmt 1 view .LVU229
  873              		.loc 1 407 24 is_stmt 0 view .LVU230
-ARM GAS  /tmp/ccRiSXCa.s 			page 24
+ARM GAS  /tmp/ccUhecCA.s 			page 24
 
 
  874 000a 0068     		ldr	r0, [r0]
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  916 001c 0028     		cmp	r0, #0
  917 001e F6D0     		beq	.L104
  399:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****         {
-ARM GAS  /tmp/ccRiSXCa.s 			page 25
+ARM GAS  /tmp/ccUhecCA.s 			page 25
 
 
  918              		.loc 1 399 9 view .LVU242
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  961              		.loc 1 420 16 is_stmt 0 view .LVU252
  962 0002 084B     		ldr	r3, .L113
  963 0004 1C68     		ldr	r4, [r3]
-ARM GAS  /tmp/ccRiSXCa.s 			page 26
+ARM GAS  /tmp/ccUhecCA.s 			page 26
 
 
  964              	.LVL82:
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1003              	.L113:
  1004 0024 00000000 		.word	.LANCHOR0
  1005              		.cfi_endproc
-ARM GAS  /tmp/ccRiSXCa.s 			page 27
+ARM GAS  /tmp/ccUhecCA.s 			page 27
 
 
  1006              	.LFE117:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1051              	.LFE118:
  1053              		.section	.text.LoRaMacCommandsSerializeCmds,"ax",%progbits
  1054              		.align	1
-ARM GAS  /tmp/ccRiSXCa.s 			page 28
+ARM GAS  /tmp/ccUhecCA.s 			page 28
 
 
  1055              		.global	LoRaMacCommandsSerializeCmds
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  457:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     // Loop through all elements which fits into the buffer
  458:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     while( curElement != NULL )
  1097              		.loc 1 458 10 is_stmt 1 view .LVU287
-ARM GAS  /tmp/ccRiSXCa.s 			page 29
+ARM GAS  /tmp/ccUhecCA.s 			page 29
 
 
  1098 0014 94B1     		cbz	r4, .L125
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1139              	.LVL102:
  1140              	.L125:
  472:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     }
-ARM GAS  /tmp/ccRiSXCa.s 			page 30
+ARM GAS  /tmp/ccUhecCA.s 			page 30
 
 
  473:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c **** 
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1177              		.loc 1 454 16 view .LVU317
  1178 005a 0120     		movs	r0, #1
  1179              	.LVL111:
-ARM GAS  /tmp/ccRiSXCa.s 			page 31
+ARM GAS  /tmp/ccUhecCA.s 			page 31
 
 
  454:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     }
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1221              		.loc 1 501 10 view .LVU328
  1222 000c 3BB1     		cbz	r3, .L139
  502:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****     {
-ARM GAS  /tmp/ccRiSXCa.s 			page 32
+ARM GAS  /tmp/ccUhecCA.s 			page 32
 
 
  503:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****         if( curElement->IsSticky == true )
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1259              		.loc 1 513 1 view .LVU344
  1260 0024 7047     		bx	lr
  1261              	.L142:
-ARM GAS  /tmp/ccRiSXCa.s 			page 33
+ARM GAS  /tmp/ccUhecCA.s 			page 33
 
 
  1262 0026 00BF     		.align	2
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1311 001c 0020     		movs	r0, #0
  1312              	.LVL122:
  1313              		.loc 1 520 5 is_stmt 0 view .LVU348
-ARM GAS  /tmp/ccRiSXCa.s 			page 34
+ARM GAS  /tmp/ccUhecCA.s 			page 34
 
 
  1314 001e 7047     		bx	lr
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1336              		.loc 1 550 13 view .LVU358
  549:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****             break;
  1337              		.loc 1 549 21 is_stmt 0 view .LVU359
-ARM GAS  /tmp/ccRiSXCa.s 			page 35
+ARM GAS  /tmp/ccUhecCA.s 			page 35
 
 
  1338 0028 0120     		movs	r0, #1
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  569:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****         }
  570:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****         case SRV_MAC_DL_CHANNEL_REQ:
  571:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****         {
-ARM GAS  /tmp/ccRiSXCa.s 			page 36
+ARM GAS  /tmp/ccUhecCA.s 			page 36
 
 
  572:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.c ****             // cid + ChIndex + Frequency (3)
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1400              		.loc 1 591 21 is_stmt 0 view .LVU387
  1401 0044 0520     		movs	r0, #5
  1402              	.LVL142:
-ARM GAS  /tmp/ccRiSXCa.s 			page 37
+ARM GAS  /tmp/ccUhecCA.s 			page 37
 
 
  1403              		.loc 1 592 13 view .LVU388
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1433              	.LFE121:
  1435              		.section	.bss.CommandsCtx,"aw",%nobits
  1436              		.align	2
-ARM GAS  /tmp/ccRiSXCa.s 			page 38
+ARM GAS  /tmp/ccUhecCA.s 			page 38
 
 
  1437              		.set	.LANCHOR0,. + 0
@@ -2237,61 +2237,61 @@ ARM GAS  /tmp/ccRiSXCa.s 			page 1
  1448              		.file 6 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacCommands.h"
  1449              		.file 7 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h"
  1450              		.file 8 "Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h"
-ARM GAS  /tmp/ccRiSXCa.s 			page 39
+ARM GAS  /tmp/ccUhecCA.s 			page 39
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 LoRaMacCommands.c
-     /tmp/ccRiSXCa.s:16     .text.IsSlotFree:0000000000000000 $t
-     /tmp/ccRiSXCa.s:23     .text.IsSlotFree:0000000000000000 IsSlotFree
-     /tmp/ccRiSXCa.s:80     .text.MallocNewMacCommandSlot:0000000000000000 $t
-     /tmp/ccRiSXCa.s:86     .text.MallocNewMacCommandSlot:0000000000000000 MallocNewMacCommandSlot
-     /tmp/ccRiSXCa.s:140    .text.MallocNewMacCommandSlot:0000000000000024 $d
-     /tmp/ccRiSXCa.s:145    .text.LinkedListInit:0000000000000000 $t
-     /tmp/ccRiSXCa.s:151    .text.LinkedListInit:0000000000000000 LinkedListInit
-     /tmp/ccRiSXCa.s:186    .text.LinkedListAdd:0000000000000000 $t
-     /tmp/ccRiSXCa.s:192    .text.LinkedListAdd:0000000000000000 LinkedListAdd
-     /tmp/ccRiSXCa.s:257    .text.LinkedListGetPrevious:0000000000000000 $t
-     /tmp/ccRiSXCa.s:263    .text.LinkedListGetPrevious:0000000000000000 LinkedListGetPrevious
-     /tmp/ccRiSXCa.s:320    .text.LinkedListRemove:0000000000000000 $t
-     /tmp/ccRiSXCa.s:326    .text.LinkedListRemove:0000000000000000 LinkedListRemove
-     /tmp/ccRiSXCa.s:429    .text.IsSticky:0000000000000000 $t
-     /tmp/ccRiSXCa.s:435    .text.IsSticky:0000000000000000 IsSticky
-     /tmp/ccRiSXCa.s:479    .text.FreeMacCommandSlot:0000000000000000 $t
-     /tmp/ccRiSXCa.s:485    .text.FreeMacCommandSlot:0000000000000000 FreeMacCommandSlot
-     /tmp/ccRiSXCa.s:526    .text.LoRaMacCommandsInit:0000000000000000 $t
-     /tmp/ccRiSXCa.s:533    .text.LoRaMacCommandsInit:0000000000000000 LoRaMacCommandsInit
-     /tmp/ccRiSXCa.s:562    .text.LoRaMacCommandsInit:0000000000000018 $d
-     /tmp/ccRiSXCa.s:567    .text.LoRaMacCommandsAddCmd:0000000000000000 $t
-     /tmp/ccRiSXCa.s:574    .text.LoRaMacCommandsAddCmd:0000000000000000 LoRaMacCommandsAddCmd
-     /tmp/ccRiSXCa.s:687    .text.LoRaMacCommandsAddCmd:0000000000000050 $d
-     /tmp/ccRiSXCa.s:692    .text.LoRaMacCommandsRemoveCmd:0000000000000000 $t
-     /tmp/ccRiSXCa.s:699    .text.LoRaMacCommandsRemoveCmd:0000000000000000 LoRaMacCommandsRemoveCmd
-     /tmp/ccRiSXCa.s:774    .text.LoRaMacCommandsRemoveCmd:0000000000000038 $d
-     /tmp/ccRiSXCa.s:779    .text.LoRaMacCommandsGetCmd:0000000000000000 $t
-     /tmp/ccRiSXCa.s:786    .text.LoRaMacCommandsGetCmd:0000000000000000 LoRaMacCommandsGetCmd
-     /tmp/ccRiSXCa.s:838    .text.LoRaMacCommandsGetCmd:000000000000001c $d
-     /tmp/ccRiSXCa.s:843    .text.LoRaMacCommandsRemoveNoneStickyCmds:0000000000000000 $t
-     /tmp/ccRiSXCa.s:850    .text.LoRaMacCommandsRemoveNoneStickyCmds:0000000000000000 LoRaMacCommandsRemoveNoneStickyCmds
-     /tmp/ccRiSXCa.s:933    .text.LoRaMacCommandsRemoveNoneStickyCmds:000000000000002c $d
-     /tmp/ccRiSXCa.s:938    .text.LoRaMacCommandsRemoveStickyAnsCmds:0000000000000000 $t
-     /tmp/ccRiSXCa.s:945    .text.LoRaMacCommandsRemoveStickyAnsCmds:0000000000000000 LoRaMacCommandsRemoveStickyAnsCmds
-     /tmp/ccRiSXCa.s:1004   .text.LoRaMacCommandsRemoveStickyAnsCmds:0000000000000024 $d
-     /tmp/ccRiSXCa.s:1009   .text.LoRaMacCommandsGetSizeSerializedCmds:0000000000000000 $t
-     /tmp/ccRiSXCa.s:1016   .text.LoRaMacCommandsGetSizeSerializedCmds:0000000000000000 LoRaMacCommandsGetSizeSerializedCmds
-     /tmp/ccRiSXCa.s:1049   .text.LoRaMacCommandsGetSizeSerializedCmds:0000000000000014 $d
-     /tmp/ccRiSXCa.s:1054   .text.LoRaMacCommandsSerializeCmds:0000000000000000 $t
-     /tmp/ccRiSXCa.s:1061   .text.LoRaMacCommandsSerializeCmds:0000000000000000 LoRaMacCommandsSerializeCmds
-     /tmp/ccRiSXCa.s:1185   .text.LoRaMacCommandsSerializeCmds:0000000000000060 $d
-     /tmp/ccRiSXCa.s:1190   .text.LoRaMacCommandsStickyCmdsPending:0000000000000000 $t
-     /tmp/ccRiSXCa.s:1197   .text.LoRaMacCommandsStickyCmdsPending:0000000000000000 LoRaMacCommandsStickyCmdsPending
-     /tmp/ccRiSXCa.s:1264   .text.LoRaMacCommandsStickyCmdsPending:0000000000000028 $d
-     /tmp/ccRiSXCa.s:1269   .text.LoRaMacCommandsGetCmdSize:0000000000000000 $t
-     /tmp/ccRiSXCa.s:1276   .text.LoRaMacCommandsGetCmdSize:0000000000000000 LoRaMacCommandsGetCmdSize
-     /tmp/ccRiSXCa.s:1291   .text.LoRaMacCommandsGetCmdSize:000000000000000a $d
-     /tmp/ccRiSXCa.s:1309   .text.LoRaMacCommandsGetCmdSize:000000000000001c $t
-     /tmp/ccRiSXCa.s:1436   .bss.CommandsCtx:0000000000000000 $d
-     /tmp/ccRiSXCa.s:1440   .bss.CommandsCtx:0000000000000000 CommandsCtx
+     /tmp/ccUhecCA.s:16     .text.IsSlotFree:0000000000000000 $t
+     /tmp/ccUhecCA.s:23     .text.IsSlotFree:0000000000000000 IsSlotFree
+     /tmp/ccUhecCA.s:80     .text.MallocNewMacCommandSlot:0000000000000000 $t
+     /tmp/ccUhecCA.s:86     .text.MallocNewMacCommandSlot:0000000000000000 MallocNewMacCommandSlot
+     /tmp/ccUhecCA.s:140    .text.MallocNewMacCommandSlot:0000000000000024 $d
+     /tmp/ccUhecCA.s:145    .text.LinkedListInit:0000000000000000 $t
+     /tmp/ccUhecCA.s:151    .text.LinkedListInit:0000000000000000 LinkedListInit
+     /tmp/ccUhecCA.s:186    .text.LinkedListAdd:0000000000000000 $t
+     /tmp/ccUhecCA.s:192    .text.LinkedListAdd:0000000000000000 LinkedListAdd
+     /tmp/ccUhecCA.s:257    .text.LinkedListGetPrevious:0000000000000000 $t
+     /tmp/ccUhecCA.s:263    .text.LinkedListGetPrevious:0000000000000000 LinkedListGetPrevious
+     /tmp/ccUhecCA.s:320    .text.LinkedListRemove:0000000000000000 $t
+     /tmp/ccUhecCA.s:326    .text.LinkedListRemove:0000000000000000 LinkedListRemove
+     /tmp/ccUhecCA.s:429    .text.IsSticky:0000000000000000 $t
+     /tmp/ccUhecCA.s:435    .text.IsSticky:0000000000000000 IsSticky
+     /tmp/ccUhecCA.s:479    .text.FreeMacCommandSlot:0000000000000000 $t
+     /tmp/ccUhecCA.s:485    .text.FreeMacCommandSlot:0000000000000000 FreeMacCommandSlot
+     /tmp/ccUhecCA.s:526    .text.LoRaMacCommandsInit:0000000000000000 $t
+     /tmp/ccUhecCA.s:533    .text.LoRaMacCommandsInit:0000000000000000 LoRaMacCommandsInit
+     /tmp/ccUhecCA.s:562    .text.LoRaMacCommandsInit:0000000000000018 $d
+     /tmp/ccUhecCA.s:567    .text.LoRaMacCommandsAddCmd:0000000000000000 $t
+     /tmp/ccUhecCA.s:574    .text.LoRaMacCommandsAddCmd:0000000000000000 LoRaMacCommandsAddCmd
+     /tmp/ccUhecCA.s:687    .text.LoRaMacCommandsAddCmd:0000000000000050 $d
+     /tmp/ccUhecCA.s:692    .text.LoRaMacCommandsRemoveCmd:0000000000000000 $t
+     /tmp/ccUhecCA.s:699    .text.LoRaMacCommandsRemoveCmd:0000000000000000 LoRaMacCommandsRemoveCmd
+     /tmp/ccUhecCA.s:774    .text.LoRaMacCommandsRemoveCmd:0000000000000038 $d
+     /tmp/ccUhecCA.s:779    .text.LoRaMacCommandsGetCmd:0000000000000000 $t
+     /tmp/ccUhecCA.s:786    .text.LoRaMacCommandsGetCmd:0000000000000000 LoRaMacCommandsGetCmd
+     /tmp/ccUhecCA.s:838    .text.LoRaMacCommandsGetCmd:000000000000001c $d
+     /tmp/ccUhecCA.s:843    .text.LoRaMacCommandsRemoveNoneStickyCmds:0000000000000000 $t
+     /tmp/ccUhecCA.s:850    .text.LoRaMacCommandsRemoveNoneStickyCmds:0000000000000000 LoRaMacCommandsRemoveNoneStickyCmds
+     /tmp/ccUhecCA.s:933    .text.LoRaMacCommandsRemoveNoneStickyCmds:000000000000002c $d
+     /tmp/ccUhecCA.s:938    .text.LoRaMacCommandsRemoveStickyAnsCmds:0000000000000000 $t
+     /tmp/ccUhecCA.s:945    .text.LoRaMacCommandsRemoveStickyAnsCmds:0000000000000000 LoRaMacCommandsRemoveStickyAnsCmds
+     /tmp/ccUhecCA.s:1004   .text.LoRaMacCommandsRemoveStickyAnsCmds:0000000000000024 $d
+     /tmp/ccUhecCA.s:1009   .text.LoRaMacCommandsGetSizeSerializedCmds:0000000000000000 $t
+     /tmp/ccUhecCA.s:1016   .text.LoRaMacCommandsGetSizeSerializedCmds:0000000000000000 LoRaMacCommandsGetSizeSerializedCmds
+     /tmp/ccUhecCA.s:1049   .text.LoRaMacCommandsGetSizeSerializedCmds:0000000000000014 $d
+     /tmp/ccUhecCA.s:1054   .text.LoRaMacCommandsSerializeCmds:0000000000000000 $t
+     /tmp/ccUhecCA.s:1061   .text.LoRaMacCommandsSerializeCmds:0000000000000000 LoRaMacCommandsSerializeCmds
+     /tmp/ccUhecCA.s:1185   .text.LoRaMacCommandsSerializeCmds:0000000000000060 $d
+     /tmp/ccUhecCA.s:1190   .text.LoRaMacCommandsStickyCmdsPending:0000000000000000 $t
+     /tmp/ccUhecCA.s:1197   .text.LoRaMacCommandsStickyCmdsPending:0000000000000000 LoRaMacCommandsStickyCmdsPending
+     /tmp/ccUhecCA.s:1264   .text.LoRaMacCommandsStickyCmdsPending:0000000000000028 $d
+     /tmp/ccUhecCA.s:1269   .text.LoRaMacCommandsGetCmdSize:0000000000000000 $t
+     /tmp/ccUhecCA.s:1276   .text.LoRaMacCommandsGetCmdSize:0000000000000000 LoRaMacCommandsGetCmdSize
+     /tmp/ccUhecCA.s:1291   .text.LoRaMacCommandsGetCmdSize:000000000000000a $d
+     /tmp/ccUhecCA.s:1309   .text.LoRaMacCommandsGetCmdSize:000000000000001c $t
+     /tmp/ccUhecCA.s:1436   .bss.CommandsCtx:0000000000000000 $d
+     /tmp/ccUhecCA.s:1440   .bss.CommandsCtx:0000000000000000 CommandsCtx
 
 UNDEFINED SYMBOLS
 memset1

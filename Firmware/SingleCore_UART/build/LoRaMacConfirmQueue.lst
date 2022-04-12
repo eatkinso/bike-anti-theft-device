@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc1FTp6u.s 			page 1
+ARM GAS  /tmp/ccFnUu1t.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
   30:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****  */
   31:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** #include <stdint.h>
   32:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** #include <stdbool.h>
-ARM GAS  /tmp/cc1FTp6u.s 			page 2
+ARM GAS  /tmp/ccFnUu1t.s 			page 2
 
 
   33:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** #include <stddef.h>
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
   87:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** 
   88:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** static MlmeConfirmQueue_t* IncreaseBufferPointer( MlmeConfirmQueue_t* bufferPointer )
   89:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** {
-ARM GAS  /tmp/cc1FTp6u.s 			page 3
+ARM GAS  /tmp/ccFnUu1t.s 			page 3
 
 
   27              		.loc 1 89 1 view -0
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  104:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** {
   68              		.loc 1 104 1 is_stmt 1 view -0
   69              		.cfi_startproc
-ARM GAS  /tmp/cc1FTp6u.s 			page 4
+ARM GAS  /tmp/ccFnUu1t.s 			page 4
 
 
   70              		@ args = 0, pretend = 0, frame = 0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  111              		@ args = 0, pretend = 0, frame = 0
  112              		@ frame_needed = 0, uses_anonymous_args = 0
  113              		@ link register save eliminated.
-ARM GAS  /tmp/cc1FTp6u.s 			page 5
+ARM GAS  /tmp/ccFnUu1t.s 			page 5
 
 
  119:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     if( count == 0 )
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  155 0006 7047     		bx	lr
  156              	.LVL12:
  157              	.L16:
-ARM GAS  /tmp/cc1FTp6u.s 			page 6
+ARM GAS  /tmp/ccFnUu1t.s 			page 6
 
 
  130:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     }
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  140:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     {
  141:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****         return NULL;
  142:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     }
-ARM GAS  /tmp/cc1FTp6u.s 			page 7
+ARM GAS  /tmp/ccFnUu1t.s 			page 7
 
 
  143:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  243              	.L17:
  155:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** }
  244              		.loc 1 155 1 view .LVU53
-ARM GAS  /tmp/cc1FTp6u.s 			page 8
+ARM GAS  /tmp/ccFnUu1t.s 			page 8
 
 
  245 0030 F8BD     		pop	{r3, r4, r5, r6, r7, pc}
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  292 0006 0023     		movs	r3, #0
  293 0008 84F82030 		strb	r3, [r4, #32]
  163:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** 
-ARM GAS  /tmp/cc1FTp6u.s 			page 9
+ARM GAS  /tmp/ccFnUu1t.s 			page 9
 
 
  164:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     // Init buffer
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  338              	.LCFI2:
  339              		.cfi_def_cfa_offset 16
  340              		.cfi_offset 3, -16
-ARM GAS  /tmp/cc1FTp6u.s 			page 10
+ARM GAS  /tmp/ccFnUu1t.s 			page 10
 
 
  341              		.cfi_offset 4, -12
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  188:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     ConfirmQueueCtx.Nvm.MlmeConfirmQueueCnt++;
  383              		.loc 1 188 5 is_stmt 1 view .LVU92
  384              		.loc 1 188 24 is_stmt 0 view .LVU93
-ARM GAS  /tmp/cc1FTp6u.s 			page 11
+ARM GAS  /tmp/ccFnUu1t.s 			page 11
 
 
  385 002a 94F82030 		ldrb	r3, [r4, #32]	@ zero_extendqisi2
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  432              		.cfi_offset 4, -12
  433              		.cfi_offset 5, -8
  434              		.cfi_offset 14, -4
-ARM GAS  /tmp/cc1FTp6u.s 			page 12
+ARM GAS  /tmp/ccFnUu1t.s 			page 12
 
 
  197:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     if( IsListEmpty( ConfirmQueueCtx.Nvm.MlmeConfirmQueueCnt ) == true )
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  477              		.thumb
  478              		.thumb_func
  479              		.fpu softvfp
-ARM GAS  /tmp/cc1FTp6u.s 			page 13
+ARM GAS  /tmp/ccFnUu1t.s 			page 13
 
 
  481              	LoRaMacConfirmQueueRemoveFirst:
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  520 0022 38BD     		pop	{r3, r4, r5, pc}
  521              	.L45:
  214:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     }
-ARM GAS  /tmp/cc1FTp6u.s 			page 14
+ARM GAS  /tmp/ccFnUu1t.s 			page 14
 
 
  522              		.loc 1 214 16 view .LVU127
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  570              		.loc 1 231 19 is_stmt 0 view .LVU136
  571 0012 054B     		ldr	r3, .L52
  572 0014 9A68     		ldr	r2, [r3, #8]
-ARM GAS  /tmp/cc1FTp6u.s 			page 15
+ARM GAS  /tmp/ccFnUu1t.s 			page 15
 
 
  573 0016 5968     		ldr	r1, [r3, #4]
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  619 0002 0446     		mov	r4, r0
  242:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     MlmeConfirmQueue_t* element = NULL;
  620              		.loc 1 242 5 is_stmt 1 view .LVU146
-ARM GAS  /tmp/cc1FTp6u.s 			page 16
+ARM GAS  /tmp/ccFnUu1t.s 			page 16
 
 
  621              	.LVL46:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  662              		.loc 1 252 12 view .LVU161
  663 0028 FCE7     		b	.L55
  664              	.L60:
-ARM GAS  /tmp/cc1FTp6u.s 			page 17
+ARM GAS  /tmp/ccFnUu1t.s 			page 17
 
 
  665 002a 00BF     		.align	2
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  262:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****     {
  263:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****         do
  264:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****         {
-ARM GAS  /tmp/cc1FTp6u.s 			page 18
+ARM GAS  /tmp/ccFnUu1t.s 			page 18
 
 
  265:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****             element->Status = status;
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  744 002e E378     		ldrb	r3, [r4, #3]	@ zero_extendqisi2
  268:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c ****             {
  745              		.loc 1 268 15 view .LVU185
-ARM GAS  /tmp/cc1FTp6u.s 			page 19
+ARM GAS  /tmp/ccFnUu1t.s 			page 19
 
 
  746 0030 002B     		cmp	r3, #0
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  795              		.loc 1 283 1 is_stmt 1 view -0
  796              		.cfi_startproc
  797              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/cc1FTp6u.s 			page 20
+ARM GAS  /tmp/ccFnUu1t.s 			page 20
 
 
  798              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  845              		.cfi_offset 4, -20
  846              		.cfi_offset 5, -16
  847              		.cfi_offset 6, -12
-ARM GAS  /tmp/cc1FTp6u.s 			page 21
+ARM GAS  /tmp/ccFnUu1t.s 			page 21
 
 
  848              		.cfi_offset 7, -8
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  882 001c DB78     		ldrb	r3, [r3, #3]	@ zero_extendqisi2
  883              		.loc 1 312 60 view .LVU215
  884 001e 8DF80730 		strb	r3, [sp, #7]
-ARM GAS  /tmp/cc1FTp6u.s 			page 22
+ARM GAS  /tmp/ccFnUu1t.s 			page 22
 
 
  885              	.L81:
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  301:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** 
  920              		.loc 1 301 9 is_stmt 1 view .LVU232
  301:Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.c **** 
-ARM GAS  /tmp/cc1FTp6u.s 			page 23
+ARM GAS  /tmp/ccFnUu1t.s 			page 23
 
 
  921              		.loc 1 301 40 is_stmt 0 view .LVU233
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  962 0060 00000000 		.word	.LANCHOR0
  963              		.cfi_endproc
  964              	.LFE118:
-ARM GAS  /tmp/cc1FTp6u.s 			page 24
+ARM GAS  /tmp/ccFnUu1t.s 			page 24
 
 
  966              		.section	.text.LoRaMacConfirmQueueGetCnt,"ax",%progbits
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  1014 0002 034B     		ldr	r3, .L94
  1015 0004 93F82000 		ldrb	r0, [r3, #32]	@ zero_extendqisi2
  1016 0008 FFF7FEFF 		bl	IsListFull
-ARM GAS  /tmp/cc1FTp6u.s 			page 25
+ARM GAS  /tmp/ccFnUu1t.s 			page 25
 
 
  1017              	.LVL76:
@@ -1476,62 +1476,62 @@ ARM GAS  /tmp/cc1FTp6u.s 			page 1
  1040              		.file 6 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMac.h"
  1041              		.file 7 "Middlewares/Third_Party/LoRaWAN/Mac/LoRaMacConfirmQueue.h"
  1042              		.file 8 "Middlewares/Third_Party/LoRaWAN/Utilities/utilities.h"
-ARM GAS  /tmp/cc1FTp6u.s 			page 26
+ARM GAS  /tmp/ccFnUu1t.s 			page 26
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 LoRaMacConfirmQueue.c
-     /tmp/cc1FTp6u.s:16     .text.IncreaseBufferPointer:0000000000000000 $t
-     /tmp/cc1FTp6u.s:23     .text.IncreaseBufferPointer:0000000000000000 IncreaseBufferPointer
-     /tmp/cc1FTp6u.s:53     .text.IncreaseBufferPointer:0000000000000010 $d
-     /tmp/cc1FTp6u.s:59     .text.DecreaseBufferPointer:0000000000000000 $t
-     /tmp/cc1FTp6u.s:65     .text.DecreaseBufferPointer:0000000000000000 DecreaseBufferPointer
-     /tmp/cc1FTp6u.s:94     .text.DecreaseBufferPointer:0000000000000010 $d
-     /tmp/cc1FTp6u.s:100    .text.IsListEmpty:0000000000000000 $t
-     /tmp/cc1FTp6u.s:106    .text.IsListEmpty:0000000000000000 IsListEmpty
-     /tmp/cc1FTp6u.s:133    .text.IsListFull:0000000000000000 $t
-     /tmp/cc1FTp6u.s:139    .text.IsListFull:0000000000000000 IsListFull
-     /tmp/cc1FTp6u.s:167    .text.GetElement:0000000000000000 $t
-     /tmp/cc1FTp6u.s:173    .text.GetElement:0000000000000000 GetElement
-     /tmp/cc1FTp6u.s:260    .text.GetElement:000000000000003c $d
-     /tmp/cc1FTp6u.s:266    .text.LoRaMacConfirmQueueInit:0000000000000000 $t
-     /tmp/cc1FTp6u.s:273    .text.LoRaMacConfirmQueueInit:0000000000000000 LoRaMacConfirmQueueInit
-     /tmp/cc1FTp6u.s:317    .text.LoRaMacConfirmQueueInit:0000000000000024 $d
-     /tmp/cc1FTp6u.s:322    .text.LoRaMacConfirmQueueAdd:0000000000000000 $t
-     /tmp/cc1FTp6u.s:329    .text.LoRaMacConfirmQueueAdd:0000000000000000 LoRaMacConfirmQueueAdd
-     /tmp/cc1FTp6u.s:410    .text.LoRaMacConfirmQueueAdd:0000000000000044 $d
-     /tmp/cc1FTp6u.s:415    .text.LoRaMacConfirmQueueRemoveLast:0000000000000000 $t
-     /tmp/cc1FTp6u.s:422    .text.LoRaMacConfirmQueueRemoveLast:0000000000000000 LoRaMacConfirmQueueRemoveLast
-     /tmp/cc1FTp6u.s:469    .text.LoRaMacConfirmQueueRemoveLast:0000000000000028 $d
-     /tmp/cc1FTp6u.s:474    .text.LoRaMacConfirmQueueRemoveFirst:0000000000000000 $t
-     /tmp/cc1FTp6u.s:481    .text.LoRaMacConfirmQueueRemoveFirst:0000000000000000 LoRaMacConfirmQueueRemoveFirst
-     /tmp/cc1FTp6u.s:528    .text.LoRaMacConfirmQueueRemoveFirst:0000000000000028 $d
-     /tmp/cc1FTp6u.s:533    .text.LoRaMacConfirmQueueSetStatus:0000000000000000 $t
-     /tmp/cc1FTp6u.s:540    .text.LoRaMacConfirmQueueSetStatus:0000000000000000 LoRaMacConfirmQueueSetStatus
-     /tmp/cc1FTp6u.s:594    .text.LoRaMacConfirmQueueSetStatus:0000000000000028 $d
-     /tmp/cc1FTp6u.s:599    .text.LoRaMacConfirmQueueGetStatus:0000000000000000 $t
-     /tmp/cc1FTp6u.s:606    .text.LoRaMacConfirmQueueGetStatus:0000000000000000 LoRaMacConfirmQueueGetStatus
-     /tmp/cc1FTp6u.s:667    .text.LoRaMacConfirmQueueGetStatus:000000000000002c $d
-     /tmp/cc1FTp6u.s:672    .text.LoRaMacConfirmQueueSetStatusCmn:0000000000000000 $t
-     /tmp/cc1FTp6u.s:679    .text.LoRaMacConfirmQueueSetStatusCmn:0000000000000000 LoRaMacConfirmQueueSetStatusCmn
-     /tmp/cc1FTp6u.s:753    .text.LoRaMacConfirmQueueSetStatusCmn:0000000000000038 $d
-     /tmp/cc1FTp6u.s:758    .text.LoRaMacConfirmQueueGetStatusCmn:0000000000000000 $t
-     /tmp/cc1FTp6u.s:765    .text.LoRaMacConfirmQueueGetStatusCmn:0000000000000000 LoRaMacConfirmQueueGetStatusCmn
-     /tmp/cc1FTp6u.s:780    .text.LoRaMacConfirmQueueGetStatusCmn:0000000000000008 $d
-     /tmp/cc1FTp6u.s:785    .text.LoRaMacConfirmQueueIsCmdActive:0000000000000000 $t
-     /tmp/cc1FTp6u.s:792    .text.LoRaMacConfirmQueueIsCmdActive:0000000000000000 LoRaMacConfirmQueueIsCmdActive
-     /tmp/cc1FTp6u.s:822    .text.LoRaMacConfirmQueueIsCmdActive:0000000000000014 $d
-     /tmp/cc1FTp6u.s:827    .text.LoRaMacConfirmQueueHandleCb:0000000000000000 $t
-     /tmp/cc1FTp6u.s:834    .text.LoRaMacConfirmQueueHandleCb:0000000000000000 LoRaMacConfirmQueueHandleCb
-     /tmp/cc1FTp6u.s:962    .text.LoRaMacConfirmQueueHandleCb:0000000000000060 $d
-     /tmp/cc1FTp6u.s:967    .text.LoRaMacConfirmQueueGetCnt:0000000000000000 $t
-     /tmp/cc1FTp6u.s:974    .text.LoRaMacConfirmQueueGetCnt:0000000000000000 LoRaMacConfirmQueueGetCnt
-     /tmp/cc1FTp6u.s:989    .text.LoRaMacConfirmQueueGetCnt:0000000000000008 $d
-     /tmp/cc1FTp6u.s:994    .text.LoRaMacConfirmQueueIsFull:0000000000000000 $t
-     /tmp/cc1FTp6u.s:1001   .text.LoRaMacConfirmQueueIsFull:0000000000000000 LoRaMacConfirmQueueIsFull
-     /tmp/cc1FTp6u.s:1023   .text.LoRaMacConfirmQueueIsFull:0000000000000010 $d
-     /tmp/cc1FTp6u.s:1028   .bss.ConfirmQueueCtx:0000000000000000 $d
-     /tmp/cc1FTp6u.s:1032   .bss.ConfirmQueueCtx:0000000000000000 ConfirmQueueCtx
+     /tmp/ccFnUu1t.s:16     .text.IncreaseBufferPointer:0000000000000000 $t
+     /tmp/ccFnUu1t.s:23     .text.IncreaseBufferPointer:0000000000000000 IncreaseBufferPointer
+     /tmp/ccFnUu1t.s:53     .text.IncreaseBufferPointer:0000000000000010 $d
+     /tmp/ccFnUu1t.s:59     .text.DecreaseBufferPointer:0000000000000000 $t
+     /tmp/ccFnUu1t.s:65     .text.DecreaseBufferPointer:0000000000000000 DecreaseBufferPointer
+     /tmp/ccFnUu1t.s:94     .text.DecreaseBufferPointer:0000000000000010 $d
+     /tmp/ccFnUu1t.s:100    .text.IsListEmpty:0000000000000000 $t
+     /tmp/ccFnUu1t.s:106    .text.IsListEmpty:0000000000000000 IsListEmpty
+     /tmp/ccFnUu1t.s:133    .text.IsListFull:0000000000000000 $t
+     /tmp/ccFnUu1t.s:139    .text.IsListFull:0000000000000000 IsListFull
+     /tmp/ccFnUu1t.s:167    .text.GetElement:0000000000000000 $t
+     /tmp/ccFnUu1t.s:173    .text.GetElement:0000000000000000 GetElement
+     /tmp/ccFnUu1t.s:260    .text.GetElement:000000000000003c $d
+     /tmp/ccFnUu1t.s:266    .text.LoRaMacConfirmQueueInit:0000000000000000 $t
+     /tmp/ccFnUu1t.s:273    .text.LoRaMacConfirmQueueInit:0000000000000000 LoRaMacConfirmQueueInit
+     /tmp/ccFnUu1t.s:317    .text.LoRaMacConfirmQueueInit:0000000000000024 $d
+     /tmp/ccFnUu1t.s:322    .text.LoRaMacConfirmQueueAdd:0000000000000000 $t
+     /tmp/ccFnUu1t.s:329    .text.LoRaMacConfirmQueueAdd:0000000000000000 LoRaMacConfirmQueueAdd
+     /tmp/ccFnUu1t.s:410    .text.LoRaMacConfirmQueueAdd:0000000000000044 $d
+     /tmp/ccFnUu1t.s:415    .text.LoRaMacConfirmQueueRemoveLast:0000000000000000 $t
+     /tmp/ccFnUu1t.s:422    .text.LoRaMacConfirmQueueRemoveLast:0000000000000000 LoRaMacConfirmQueueRemoveLast
+     /tmp/ccFnUu1t.s:469    .text.LoRaMacConfirmQueueRemoveLast:0000000000000028 $d
+     /tmp/ccFnUu1t.s:474    .text.LoRaMacConfirmQueueRemoveFirst:0000000000000000 $t
+     /tmp/ccFnUu1t.s:481    .text.LoRaMacConfirmQueueRemoveFirst:0000000000000000 LoRaMacConfirmQueueRemoveFirst
+     /tmp/ccFnUu1t.s:528    .text.LoRaMacConfirmQueueRemoveFirst:0000000000000028 $d
+     /tmp/ccFnUu1t.s:533    .text.LoRaMacConfirmQueueSetStatus:0000000000000000 $t
+     /tmp/ccFnUu1t.s:540    .text.LoRaMacConfirmQueueSetStatus:0000000000000000 LoRaMacConfirmQueueSetStatus
+     /tmp/ccFnUu1t.s:594    .text.LoRaMacConfirmQueueSetStatus:0000000000000028 $d
+     /tmp/ccFnUu1t.s:599    .text.LoRaMacConfirmQueueGetStatus:0000000000000000 $t
+     /tmp/ccFnUu1t.s:606    .text.LoRaMacConfirmQueueGetStatus:0000000000000000 LoRaMacConfirmQueueGetStatus
+     /tmp/ccFnUu1t.s:667    .text.LoRaMacConfirmQueueGetStatus:000000000000002c $d
+     /tmp/ccFnUu1t.s:672    .text.LoRaMacConfirmQueueSetStatusCmn:0000000000000000 $t
+     /tmp/ccFnUu1t.s:679    .text.LoRaMacConfirmQueueSetStatusCmn:0000000000000000 LoRaMacConfirmQueueSetStatusCmn
+     /tmp/ccFnUu1t.s:753    .text.LoRaMacConfirmQueueSetStatusCmn:0000000000000038 $d
+     /tmp/ccFnUu1t.s:758    .text.LoRaMacConfirmQueueGetStatusCmn:0000000000000000 $t
+     /tmp/ccFnUu1t.s:765    .text.LoRaMacConfirmQueueGetStatusCmn:0000000000000000 LoRaMacConfirmQueueGetStatusCmn
+     /tmp/ccFnUu1t.s:780    .text.LoRaMacConfirmQueueGetStatusCmn:0000000000000008 $d
+     /tmp/ccFnUu1t.s:785    .text.LoRaMacConfirmQueueIsCmdActive:0000000000000000 $t
+     /tmp/ccFnUu1t.s:792    .text.LoRaMacConfirmQueueIsCmdActive:0000000000000000 LoRaMacConfirmQueueIsCmdActive
+     /tmp/ccFnUu1t.s:822    .text.LoRaMacConfirmQueueIsCmdActive:0000000000000014 $d
+     /tmp/ccFnUu1t.s:827    .text.LoRaMacConfirmQueueHandleCb:0000000000000000 $t
+     /tmp/ccFnUu1t.s:834    .text.LoRaMacConfirmQueueHandleCb:0000000000000000 LoRaMacConfirmQueueHandleCb
+     /tmp/ccFnUu1t.s:962    .text.LoRaMacConfirmQueueHandleCb:0000000000000060 $d
+     /tmp/ccFnUu1t.s:967    .text.LoRaMacConfirmQueueGetCnt:0000000000000000 $t
+     /tmp/ccFnUu1t.s:974    .text.LoRaMacConfirmQueueGetCnt:0000000000000000 LoRaMacConfirmQueueGetCnt
+     /tmp/ccFnUu1t.s:989    .text.LoRaMacConfirmQueueGetCnt:0000000000000008 $d
+     /tmp/ccFnUu1t.s:994    .text.LoRaMacConfirmQueueIsFull:0000000000000000 $t
+     /tmp/ccFnUu1t.s:1001   .text.LoRaMacConfirmQueueIsFull:0000000000000000 LoRaMacConfirmQueueIsFull
+     /tmp/ccFnUu1t.s:1023   .text.LoRaMacConfirmQueueIsFull:0000000000000010 $d
+     /tmp/ccFnUu1t.s:1028   .bss.ConfirmQueueCtx:0000000000000000 $d
+     /tmp/ccFnUu1t.s:1032   .bss.ConfirmQueueCtx:0000000000000000 ConfirmQueueCtx
 
 UNDEFINED SYMBOLS
 memset1

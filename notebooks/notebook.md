@@ -470,3 +470,13 @@ Note that the above function basically just manages the LmHandler. Note also tha
 
 5. Proceed with state machine implementation using explicit AT commands. 
 
+# 4/12/2022 More LoRa brainstorming
+
+
+After more thought, it might actually be better to go a few more layers down in the protocol and avoid the LoRa MAC entirely. Also because I don't want to deal with making a WAN. The MAC is just me uhhh... having one TX unit and one RX unit. 
+
+https://forum.digikey.com/t/using-the-low-level-sub-ghz-radio-driver-for-the-stm32wl-series/18253
+
+Ok, regenerated firmware in SubGHz firmware with just SubGHz_PHY enabled. radio_driver.c looks like it has the low-level functions to directly control the radio (literally just reading/writing registers in the hardware). 
+
+-> try and check LoRa examples for sequency of SGHZ commands, but looks like you can pretty directly just set TX params, set packet params, and go ahead and send stuff. for example `SUBGRF_SetPacketParams ` lets you just set the packet type as LoRA. 

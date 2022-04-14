@@ -66,7 +66,7 @@ void btLoRaSetup(void){
     *                          [false: single mode, true: continuous mode]
     */
 
-    RadioSetRxConfig(1, 1, 12, 4, 0, 8, 12, 1, 90, 1, 0, 0, 0, 0);
+    Radio.SetRxConfig(1, 1, 12, 4, 0, 8, 12, 1, 90, 1, 0, 0, 0, 0);
     /*!
  * \brief Sets the transmission parameters
  *
@@ -109,7 +109,7 @@ void btLoRaSetup(void){
  *  -- RF switch (SKY13370) can handle up to 40 dBm, insertion loss = 0.7dB. 
  * 
  */
-    RadioSetTxConfig(1, 17, 0, 1, 12, 4, 8, 1, 0, 0, 0, 0, 100);
+    Radio.SetTxConfig(1, 17, 0, 1, 12, 4, 8, 1, 0, 0, 0, 0, 100);
 }
 
 /*

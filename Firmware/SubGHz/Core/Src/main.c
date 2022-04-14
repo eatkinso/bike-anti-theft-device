@@ -23,6 +23,7 @@
 #include "app_subghz_phy.h"
 #include "usart.h"
 #include "gpio.h"
+#include "bt_radio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -93,7 +94,7 @@ int main(void)
   MX_ADC_Init();
   MX_SubGHz_Phy_Init();
   /* USER CODE BEGIN 2 */
-
+  btLoRaSetup();
   /* USER CODE END 2 */
 
   /* Infinite loop */

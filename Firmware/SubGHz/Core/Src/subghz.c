@@ -43,7 +43,6 @@ void MX_SUBGHZ_Init(void)
     Error_Handler();
   }
   /* USER CODE BEGIN SUBGHZ_Init 2 */
-
   /* USER CODE END SUBGHZ_Init 2 */
 
 }

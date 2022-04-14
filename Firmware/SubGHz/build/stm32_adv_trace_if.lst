@@ -1,0 +1,237 @@
+ARM GAS  /tmp/ccAbtNv9.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.eabi_attribute 20, 1
+   3              		.eabi_attribute 21, 1
+   4              		.eabi_attribute 23, 3
+   5              		.eabi_attribute 24, 1
+   6              		.eabi_attribute 25, 1
+   7              		.eabi_attribute 26, 1
+   8              		.eabi_attribute 30, 1
+   9              		.eabi_attribute 34, 1
+  10              		.eabi_attribute 18, 4
+  11              		.file	"stm32_adv_trace_if.c"
+  12              		.text
+  13              	.Ltext0:
+  14              		.cfi_sections	.debug_frame
+  15              		.section	.text.UART_Init,"ax",%progbits
+  16              		.align	1
+  17              		.global	UART_Init
+  18              		.arch armv7e-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu softvfp
+  24              	UART_Init:
+  25              	.LVL0:
+  26              	.LFB104:
+  27              		.file 1 "Core/Src/stm32_adv_trace_if.c"
+   1:Core/Src/stm32_adv_trace_if.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/stm32_adv_trace_if.c **** /**
+   3:Core/Src/stm32_adv_trace_if.c ****   ******************************************************************************
+   4:Core/Src/stm32_adv_trace_if.c ****   * @file  : stm32_adv_trace_if.c
+   5:Core/Src/stm32_adv_trace_if.c ****   * @brief : Source file for interfacing the stm32_adv_trace to hardware
+   6:Core/Src/stm32_adv_trace_if.c ****   ******************************************************************************
+   7:Core/Src/stm32_adv_trace_if.c ****   * @attention
+   8:Core/Src/stm32_adv_trace_if.c ****   *
+   9:Core/Src/stm32_adv_trace_if.c ****   * Copyright (c) 2022 STMicroelectronics.
+  10:Core/Src/stm32_adv_trace_if.c ****   * All rights reserved.
+  11:Core/Src/stm32_adv_trace_if.c ****   *
+  12:Core/Src/stm32_adv_trace_if.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  13:Core/Src/stm32_adv_trace_if.c ****   * in the root directory of this software component.
+  14:Core/Src/stm32_adv_trace_if.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  15:Core/Src/stm32_adv_trace_if.c ****   *
+  16:Core/Src/stm32_adv_trace_if.c ****   ******************************************************************************
+  17:Core/Src/stm32_adv_trace_if.c ****   */
+  18:Core/Src/stm32_adv_trace_if.c **** /* USER CODE END Header */
+  19:Core/Src/stm32_adv_trace_if.c **** 
+  20:Core/Src/stm32_adv_trace_if.c **** #include "stm32_adv_trace.h"
+  21:Core/Src/stm32_adv_trace_if.c **** #include "stm32_adv_trace_if.h"
+  22:Core/Src/stm32_adv_trace_if.c **** /* USER CODE BEGIN include */
+  23:Core/Src/stm32_adv_trace_if.c **** 
+  24:Core/Src/stm32_adv_trace_if.c **** /* USER CODE END include */
+  25:Core/Src/stm32_adv_trace_if.c **** 
+  26:Core/Src/stm32_adv_trace_if.c **** /* Exported variables --------------------------------------------------------*/
+  27:Core/Src/stm32_adv_trace_if.c **** 
+  28:Core/Src/stm32_adv_trace_if.c **** /**
+  29:Core/Src/stm32_adv_trace_if.c ****   *  @brief  trace tracer definition.
+  30:Core/Src/stm32_adv_trace_if.c ****   *
+  31:Core/Src/stm32_adv_trace_if.c ****   *  list all the driver interface used by the trace application.
+ARM GAS  /tmp/ccAbtNv9.s 			page 2
+
+
+  32:Core/Src/stm32_adv_trace_if.c ****   */
+  33:Core/Src/stm32_adv_trace_if.c **** const UTIL_ADV_TRACE_Driver_s UTIL_TraceDriver =
+  34:Core/Src/stm32_adv_trace_if.c **** {
+  35:Core/Src/stm32_adv_trace_if.c ****   UART_Init,
+  36:Core/Src/stm32_adv_trace_if.c ****   UART_DeInit,
+  37:Core/Src/stm32_adv_trace_if.c ****   UART_StartRx,
+  38:Core/Src/stm32_adv_trace_if.c ****   UART_TransmitDMA
+  39:Core/Src/stm32_adv_trace_if.c **** };
+  40:Core/Src/stm32_adv_trace_if.c **** /* USER CODE BEGIN EV */
+  41:Core/Src/stm32_adv_trace_if.c **** 
+  42:Core/Src/stm32_adv_trace_if.c **** /* USER CODE END EV */
+  43:Core/Src/stm32_adv_trace_if.c **** /* Private function prototypes -----------------------------------------------*/
+  44:Core/Src/stm32_adv_trace_if.c **** /* USER CODE BEGIN Private_Function_Prototypes */
+  45:Core/Src/stm32_adv_trace_if.c **** 
+  46:Core/Src/stm32_adv_trace_if.c **** /* USER CODE END Private_Function_Prototypes */
+  47:Core/Src/stm32_adv_trace_if.c **** /* Private typedef -----------------------------------------------------------*/
+  48:Core/Src/stm32_adv_trace_if.c **** /* USER CODE BEGIN Private_Typedef */
+  49:Core/Src/stm32_adv_trace_if.c **** 
+  50:Core/Src/stm32_adv_trace_if.c **** /* USER CODE END Private_Typedef */
+  51:Core/Src/stm32_adv_trace_if.c **** /* Private define ------------------------------------------------------------*/
+  52:Core/Src/stm32_adv_trace_if.c **** /* USER CODE BEGIN Private_Define */
+  53:Core/Src/stm32_adv_trace_if.c **** 
+  54:Core/Src/stm32_adv_trace_if.c **** /* USER CODE END Private_Define */
+  55:Core/Src/stm32_adv_trace_if.c **** /* Private macro -------------------------------------------------------------*/
+  56:Core/Src/stm32_adv_trace_if.c **** /* USER CODE BEGIN Private_Macro */
+  57:Core/Src/stm32_adv_trace_if.c **** 
+  58:Core/Src/stm32_adv_trace_if.c **** /* USER CODE END Private_Macro */
+  59:Core/Src/stm32_adv_trace_if.c **** /* Private variables ---------------------------------------------------------*/
+  60:Core/Src/stm32_adv_trace_if.c **** /* USER CODE BEGIN Private_Variables */
+  61:Core/Src/stm32_adv_trace_if.c **** 
+  62:Core/Src/stm32_adv_trace_if.c **** /* USER CODE END Private_Variables */
+  63:Core/Src/stm32_adv_trace_if.c **** 
+  64:Core/Src/stm32_adv_trace_if.c **** UTIL_ADV_TRACE_Status_t UART_Init(void (*cb)(void *))
+  65:Core/Src/stm32_adv_trace_if.c **** {
+  28              		.loc 1 65 1 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+  66:Core/Src/stm32_adv_trace_if.c ****   /* USER CODE BEGIN UART_Init */
+  67:Core/Src/stm32_adv_trace_if.c ****   return UTIL_ADV_TRACE_OK;
+  33              		.loc 1 67 3 view .LVU1
+  68:Core/Src/stm32_adv_trace_if.c ****   /* USER CODE END UART_Init */
+  69:Core/Src/stm32_adv_trace_if.c **** }
+  34              		.loc 1 69 1 is_stmt 0 view .LVU2
+  35 0000 0020     		movs	r0, #0
+  36              	.LVL1:
+  37              		.loc 1 69 1 view .LVU3
+  38 0002 7047     		bx	lr
+  39              		.cfi_endproc
+  40              	.LFE104:
+  42              		.section	.text.UART_DeInit,"ax",%progbits
+  43              		.align	1
+  44              		.global	UART_DeInit
+  45              		.syntax unified
+  46              		.thumb
+  47              		.thumb_func
+ARM GAS  /tmp/ccAbtNv9.s 			page 3
+
+
+  48              		.fpu softvfp
+  50              	UART_DeInit:
+  51              	.LFB105:
+  70:Core/Src/stm32_adv_trace_if.c **** 
+  71:Core/Src/stm32_adv_trace_if.c **** UTIL_ADV_TRACE_Status_t UART_DeInit(void)
+  72:Core/Src/stm32_adv_trace_if.c **** {
+  52              		.loc 1 72 1 is_stmt 1 view -0
+  53              		.cfi_startproc
+  54              		@ args = 0, pretend = 0, frame = 0
+  55              		@ frame_needed = 0, uses_anonymous_args = 0
+  56              		@ link register save eliminated.
+  73:Core/Src/stm32_adv_trace_if.c ****   /* USER CODE BEGIN UART_DeInit */
+  74:Core/Src/stm32_adv_trace_if.c ****   return UTIL_ADV_TRACE_OK;
+  57              		.loc 1 74 3 view .LVU5
+  75:Core/Src/stm32_adv_trace_if.c ****   /* USER CODE END UART_DeInit */
+  76:Core/Src/stm32_adv_trace_if.c **** }
+  58              		.loc 1 76 1 is_stmt 0 view .LVU6
+  59 0000 0020     		movs	r0, #0
+  60 0002 7047     		bx	lr
+  61              		.cfi_endproc
+  62              	.LFE105:
+  64              		.section	.text.UART_StartRx,"ax",%progbits
+  65              		.align	1
+  66              		.global	UART_StartRx
+  67              		.syntax unified
+  68              		.thumb
+  69              		.thumb_func
+  70              		.fpu softvfp
+  72              	UART_StartRx:
+  73              	.LVL2:
+  74              	.LFB106:
+  77:Core/Src/stm32_adv_trace_if.c **** 
+  78:Core/Src/stm32_adv_trace_if.c **** UTIL_ADV_TRACE_Status_t UART_StartRx(void (*cb)(uint8_t *pdata, uint16_t size, uint8_t error))
+  79:Core/Src/stm32_adv_trace_if.c **** {
+  75              		.loc 1 79 1 is_stmt 1 view -0
+  76              		.cfi_startproc
+  77              		@ args = 0, pretend = 0, frame = 0
+  78              		@ frame_needed = 0, uses_anonymous_args = 0
+  79              		@ link register save eliminated.
+  80:Core/Src/stm32_adv_trace_if.c ****   /* USER CODE BEGIN UART_StartRx */
+  81:Core/Src/stm32_adv_trace_if.c ****   return UTIL_ADV_TRACE_OK;
+  80              		.loc 1 81 3 view .LVU8
+  82:Core/Src/stm32_adv_trace_if.c ****   /* USER CODE END UART_StartRx */
+  83:Core/Src/stm32_adv_trace_if.c **** }
+  81              		.loc 1 83 1 is_stmt 0 view .LVU9
+  82 0000 0020     		movs	r0, #0
+  83              	.LVL3:
+  84              		.loc 1 83 1 view .LVU10
+  85 0002 7047     		bx	lr
+  86              		.cfi_endproc
+  87              	.LFE106:
+  89              		.section	.text.UART_TransmitDMA,"ax",%progbits
+  90              		.align	1
+  91              		.global	UART_TransmitDMA
+  92              		.syntax unified
+  93              		.thumb
+  94              		.thumb_func
+ARM GAS  /tmp/ccAbtNv9.s 			page 4
+
+
+  95              		.fpu softvfp
+  97              	UART_TransmitDMA:
+  98              	.LVL4:
+  99              	.LFB107:
+  84:Core/Src/stm32_adv_trace_if.c **** 
+  85:Core/Src/stm32_adv_trace_if.c **** UTIL_ADV_TRACE_Status_t UART_TransmitDMA(uint8_t *pdata, uint16_t size)
+  86:Core/Src/stm32_adv_trace_if.c **** {
+ 100              		.loc 1 86 1 is_stmt 1 view -0
+ 101              		.cfi_startproc
+ 102              		@ args = 0, pretend = 0, frame = 0
+ 103              		@ frame_needed = 0, uses_anonymous_args = 0
+ 104              		@ link register save eliminated.
+  87:Core/Src/stm32_adv_trace_if.c ****   /* USER CODE BEGIN UART_TransmitDMA */
+  88:Core/Src/stm32_adv_trace_if.c ****   return UTIL_ADV_TRACE_OK;
+ 105              		.loc 1 88 3 view .LVU12
+  89:Core/Src/stm32_adv_trace_if.c ****   /* USER CODE END UART_TransmitDMA */
+  90:Core/Src/stm32_adv_trace_if.c **** }
+ 106              		.loc 1 90 1 is_stmt 0 view .LVU13
+ 107 0000 0020     		movs	r0, #0
+ 108              	.LVL5:
+ 109              		.loc 1 90 1 view .LVU14
+ 110 0002 7047     		bx	lr
+ 111              		.cfi_endproc
+ 112              	.LFE107:
+ 114              		.global	UTIL_TraceDriver
+ 115              		.section	.rodata.UTIL_TraceDriver,"a"
+ 116              		.align	2
+ 119              	UTIL_TraceDriver:
+ 120 0000 00000000 		.word	UART_Init
+ 121 0004 00000000 		.word	UART_DeInit
+ 122 0008 00000000 		.word	UART_StartRx
+ 123 000c 00000000 		.word	UART_TransmitDMA
+ 124              		.text
+ 125              	.Letext0:
+ 126              		.file 2 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 127              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 128              		.file 4 "Utilities/trace/adv_trace/stm32_adv_trace.h"
+ARM GAS  /tmp/ccAbtNv9.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:0000000000000000 stm32_adv_trace_if.c
+     /tmp/ccAbtNv9.s:16     .text.UART_Init:0000000000000000 $t
+     /tmp/ccAbtNv9.s:24     .text.UART_Init:0000000000000000 UART_Init
+     /tmp/ccAbtNv9.s:43     .text.UART_DeInit:0000000000000000 $t
+     /tmp/ccAbtNv9.s:50     .text.UART_DeInit:0000000000000000 UART_DeInit
+     /tmp/ccAbtNv9.s:65     .text.UART_StartRx:0000000000000000 $t
+     /tmp/ccAbtNv9.s:72     .text.UART_StartRx:0000000000000000 UART_StartRx
+     /tmp/ccAbtNv9.s:90     .text.UART_TransmitDMA:0000000000000000 $t
+     /tmp/ccAbtNv9.s:97     .text.UART_TransmitDMA:0000000000000000 UART_TransmitDMA
+     /tmp/ccAbtNv9.s:119    .rodata.UTIL_TraceDriver:0000000000000000 UTIL_TraceDriver
+     /tmp/ccAbtNv9.s:116    .rodata.UTIL_TraceDriver:0000000000000000 $d
+
+NO UNDEFINED SYMBOLS

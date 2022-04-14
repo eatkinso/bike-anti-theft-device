@@ -81,7 +81,8 @@ Utilities/misc/stm32_tiny_sscanf.c \
 Utilities/misc/stm32_tiny_vsnprintf.c \
 Utilities/sequencer/stm32_seq.c \
 Utilities/timer/stm32_timer.c \
-Utilities/lpm/tiny_lpm/stm32_lpm.c  
+Utilities/lpm/tiny_lpm/stm32_lpm.c \
+Core/Src/bt_radio.c
 
 # ASM sources
 ASM_SOURCES =  \

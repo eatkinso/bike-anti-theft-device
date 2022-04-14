@@ -480,3 +480,32 @@ https://forum.digikey.com/t/using-the-low-level-sub-ghz-radio-driver-for-the-stm
 Ok, regenerated firmware in SubGHz firmware with just SubGHz_PHY enabled. radio_driver.c looks like it has the low-level functions to directly control the radio (literally just reading/writing registers in the hardware). 
 
 -> try and check LoRa examples for sequency of SGHZ commands, but looks like you can pretty directly just set TX params, set packet params, and go ahead and send stuff. for example `SUBGRF_SetPacketParams ` lets you just set the packet type as LoRA. 
+
+# 4/13/2022 Elizabeth -- Writing radio setup and test programs 
+
+ok, radio_driver.c is actually the lowest-level radio driver. radio.c is the high-level direct radio driver for the STM32WL which is easier to use. In `bt_radio.c`, getting started writing actual functions for our radio. 
+
+- `btLoRaSetup`: setting rx and tx configs
+
+
+- `btLoRaListen(timeout)`: listens for a set period of time before timing out
+
+
+- `btLoRaTx(uint8_t *data, uint8_t datasize)`; Sends a packet of data over the LoRa link 
+
+The reference manual [RF0453](https://www.st.com/en/microcontrollers-microprocessors/stm32wl-series.html#documentation) gives some useful information about LoRa modulation parametes (p.161): 
+
+
+![](lora1.png)
+
+![](sfbw_lora.png)
+
+![](fec.png)
+
+--> basically all params set to the most "conservative" option/easiest to implement (ie, highest spreading factor, disable frequency hopping, disable CRC). 
+
+The way you're "supposed" to interact with the radio is through callbacks -- the HAL provides weakly-defined callback functions for things like "preamble detected," etc. then you redefine them to do what you want. Thought -- define a volatile RX buffer, continuously read data into it on a RX callback, then output desired data the pointer to a buffer for the specific function. 
+
+Ok, read more docs, looks like you can just access the SUBGHZ rx buffer with a read operation. New plan: in the RX callback, read the databuffer.
+
+![](rxdatabuffer.png)

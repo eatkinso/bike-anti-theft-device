@@ -23,6 +23,7 @@
 /* USER CODE BEGIN Includes */
 #include "stdint.h"
 #include "vluart.h"
+#include "btgps.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -61,6 +62,12 @@ static void MX_LPUART1_UART_Init(void);
 /* USER CODE BEGIN 0 */
 uint8_t gps_buffer[100] = {0};
 uint8_t dma_buffer[100] = {0};
+uint8_t rxdata[90]= {0};
+uint8_t testrxdata[90] = {0};
+char first=0;
+int dollar;
+nmea_gpgga_t msgbuf;
+
 /* USER CODE END 0 */
 
 /**
@@ -95,30 +102,9 @@ int main(void)
   MX_DMA_Init();
   MX_LPUART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  uint8_t rxdata[90]= {
-		  0,0,0,0,0,0,0,0,0,0,
-		  0,0,0,0,0,0,0,0,0,0,
-		  0,0,0,0,0,0,0,0,0,0,
-		  0,0,0,0,0,0,0,0,0,0,
-		  0,0,0,0,0,0,0,0,0,0,
-		  0,0,0,0,0,0,0,0,0,0,
-		  0,0,0,0,0,0,0,0,0,0,
-		  0,0,0,0,0,0,0,0,0,0,
-		  0,0,0,0,0,0,0,0,0,0
-  };
-
-  uint8_t rxdata1[2]= {
-  		 0,0
-    };
-
-  uint8_t txdata[2] = {
-		  0xEC, 0xEB
-  };
-
-
-
   /* USER CODE END 2 */
-
+	// query the GGA message from the GPS.
+	char queryGGA[]= "$PSRF103,00,01,10,00,\r\n";
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -126,19 +112,15 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  /*for (int j = 0; j <40; j++){
-		  uint32_t baudrate = 9600+j;
-		  MX_USART1_UART_Init(baudrate);
-			for (int i =0; i<40; i++){
-				HAL_UART_Receive(&huart1, &testrxdata[j][i], 1, 100000);
-			//	HAL_UART_Transmit(&huart1, txdata, 2, 100);
-	  }
-	  }*/
-	  VLU_Init(&huart1, gps_buffer, dma_buffer, 100);
 
-  }
+	int res = get_gps(&huart1, &msgbuf);
+	__asm__ ("nop");
+	//  VLU_Init(&huart1, gps_buffer, dma_buffer, 100);
+
+
 
   /* USER CODE END 3 */
+}
 }
 
 /**
@@ -262,7 +244,7 @@ static void MX_USART1_UART_Init(void)
 
   /* USER CODE END USART1_Init 1 */
   huart1.Instance = USART1;
-  huart1.Init.BaudRate = 9600;
+  huart1.Init.BaudRate = 9615;
   huart1.Init.WordLength = UART_WORDLENGTH_8B;
   huart1.Init.StopBits = UART_STOPBITS_1;
   huart1.Init.Parity = UART_PARITY_NONE;

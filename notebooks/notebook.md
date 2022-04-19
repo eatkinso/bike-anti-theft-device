@@ -616,7 +616,7 @@ New approach -- try and get GPS uart working on the dev board. Hopefully this wi
 
 ## Test 1 -- Nucleo USART1
 
-- USART1_TX: PB6n
+- USART1_TX: PB6
 - USART1_RX: PB7
 
 +5V/GND connected to +5V/GND on the board. Setup below: 
@@ -634,3 +634,32 @@ Ok, I just forgot to enable the interupt, but after doing that it was fine. Now,
 Next step: seeing if a minor frequency error could be causing the problem. 
 
 Using the logic analyzer to get the exact pulse length: almost exactly 104 uS, which corresponds to a frequency of 9615 baud. 
+
+Attempting to sweep the baud rate: 
+
+
+![](uartcode_baudsweep.png)
+
+(redefined uart init as below, re-initialized to switch baud rate each time)
+![](uart_init.png)
+
+This kinda worked, and now it seems like just receiving 1 byte at a time usually works. 
+
+Now, trying to query the GPGGA message, and immediately receive after that. 
+
+
+Code: 
+
+    // query the GGA message from the GPS.
+      char queryGGA[]= "$PSRF103,00,01,10,00,\r\n";
+
+    HAL_UART_Transmit(&huart1, (uint8_t *)queryGGA, 25, 100);
+      for (int i =0; i<90; i++){
+        HAL_UART_Receive(&huart1, &testrxdata[i], 1, 1000);
+          //	HAL_UART_Transmit(&huart1, txdata, 2, 100);
+        }
+
+Result: 
+![](gpgga_test1.png)
+
+so this basically looks like there's garbage on either side, but it consistently receives the data in the middle. 

@@ -1,0 +1,2 @@
+../Application/User/Core/vluart.c:27:6:VLU_Init	24	static
+../Application/User/Core/vluart.c:47:6:VLU_IdleLineHandler	32	static

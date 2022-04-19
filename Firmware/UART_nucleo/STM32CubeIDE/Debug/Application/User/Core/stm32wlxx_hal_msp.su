@@ -1,0 +1,8 @@
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:449:22:LL_AHB2_GRP1_EnableClock	24	static
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:935:22:LL_APB1_GRP2_EnableClock	24	static
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:1034:22:LL_APB1_GRP2_DisableClock	16	static
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:1303:22:LL_APB2_GRP1_EnableClock	24	static
+../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:1351:22:LL_APB2_GRP1_DisableClock	16	static
+/home/eatkinso/bike-anti-theft-device/Firmware/UART_nucleo/Core/Src/stm32wlxx_hal_msp.c:64:6:HAL_MspInit	4	static
+/home/eatkinso/bike-anti-theft-device/Firmware/UART_nucleo/Core/Src/stm32wlxx_hal_msp.c:83:6:HAL_UART_MspInit	96	static
+/home/eatkinso/bike-anti-theft-device/Firmware/UART_nucleo/Core/Src/stm32wlxx_hal_msp.c:193:6:HAL_UART_MspDeInit	16	static

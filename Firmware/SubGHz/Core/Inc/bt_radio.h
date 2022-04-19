@@ -20,14 +20,16 @@
 // includes 
 
 #include "main.h"
-
+#include "radio.h"
+#include "radio_fw.h"
+#include "timer.h"
 
 
 void btLoRaSetup(void);
 
 
 
-void btLoRaListen(uint8_t ltimeout);
+void btLoRaListen(uint32_t ltimeout);
 
 
 

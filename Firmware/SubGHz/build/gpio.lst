@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccBSRmV1.s 			page 1
+ARM GAS  /tmp/ccnq2mWK.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
   30:Core/Src/gpio.c **** /*----------------------------------------------------------------------------*/
   31:Core/Src/gpio.c **** /* USER CODE BEGIN 1 */
   32:Core/Src/gpio.c **** 
-ARM GAS  /tmp/ccBSRmV1.s 			page 2
+ARM GAS  /tmp/ccnq2mWK.s 			page 2
 
 
   33:Core/Src/gpio.c **** /* USER CODE END 1 */
@@ -71,41 +71,44 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
   40:Core/Src/gpio.c ****         * EXTI
   41:Core/Src/gpio.c ****      PB7   ------> I2C1_SDA
   42:Core/Src/gpio.c ****      PB8   ------> I2C1_SCL
-  43:Core/Src/gpio.c **** */
-  44:Core/Src/gpio.c **** void MX_GPIO_Init(void)
-  45:Core/Src/gpio.c **** {
-  27              		.loc 1 45 1 view -0
+  43:Core/Src/gpio.c ****      PA8   ------> RCC_MCO
+  44:Core/Src/gpio.c **** */
+  45:Core/Src/gpio.c **** void MX_GPIO_Init(void)
+  46:Core/Src/gpio.c **** {
+  27              		.loc 1 46 1 view -0
   28              		.cfi_startproc
   29              		@ args = 0, pretend = 0, frame = 32
   30              		@ frame_needed = 0, uses_anonymous_args = 0
-  31 0000 70B5     		push	{r4, r5, r6, lr}
+  31 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
   32              	.LCFI0:
-  33              		.cfi_def_cfa_offset 16
-  34              		.cfi_offset 4, -16
-  35              		.cfi_offset 5, -12
-  36              		.cfi_offset 6, -8
-  37              		.cfi_offset 14, -4
-  38 0002 88B0     		sub	sp, sp, #32
-  39              	.LCFI1:
-  40              		.cfi_def_cfa_offset 48
-  46:Core/Src/gpio.c **** 
-  47:Core/Src/gpio.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  41              		.loc 1 47 3 view .LVU1
-  42              		.loc 1 47 20 is_stmt 0 view .LVU2
-  43 0004 0024     		movs	r4, #0
-  44 0006 0394     		str	r4, [sp, #12]
-  45 0008 0494     		str	r4, [sp, #16]
-  46 000a 0594     		str	r4, [sp, #20]
-  47 000c 0694     		str	r4, [sp, #24]
-  48 000e 0794     		str	r4, [sp, #28]
-  48:Core/Src/gpio.c **** 
-  49:Core/Src/gpio.c ****   /* GPIO Ports Clock Enable */
-  50:Core/Src/gpio.c ****   __HAL_RCC_GPIOB_CLK_ENABLE();
-  49              		.loc 1 50 3 is_stmt 1 view .LVU3
-  50              	.LVL0:
-  51              	.LBB6:
-  52              	.LBI6:
-  53              		.file 2 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h"
+  33              		.cfi_def_cfa_offset 24
+  34              		.cfi_offset 4, -24
+  35              		.cfi_offset 5, -20
+  36              		.cfi_offset 6, -16
+  37              		.cfi_offset 7, -12
+  38              		.cfi_offset 8, -8
+  39              		.cfi_offset 14, -4
+  40 0004 88B0     		sub	sp, sp, #32
+  41              	.LCFI1:
+  42              		.cfi_def_cfa_offset 56
+  47:Core/Src/gpio.c **** 
+  48:Core/Src/gpio.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
+  43              		.loc 1 48 3 view .LVU1
+  44              		.loc 1 48 20 is_stmt 0 view .LVU2
+  45 0006 0024     		movs	r4, #0
+  46 0008 0394     		str	r4, [sp, #12]
+  47 000a 0494     		str	r4, [sp, #16]
+  48 000c 0594     		str	r4, [sp, #20]
+  49 000e 0694     		str	r4, [sp, #24]
+  50 0010 0794     		str	r4, [sp, #28]
+  49:Core/Src/gpio.c **** 
+  50:Core/Src/gpio.c ****   /* GPIO Ports Clock Enable */
+  51:Core/Src/gpio.c ****   __HAL_RCC_GPIOB_CLK_ENABLE();
+  51              		.loc 1 51 3 is_stmt 1 view .LVU3
+  52              	.LVL0:
+  53              	.LBB6:
+  54              	.LBI6:
+  55              		.file 2 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h"
    1:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
    2:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   ******************************************************************************
    3:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @file    stm32wlxx_ll_bus.h
@@ -115,12 +118,12 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
    7:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @attention
    8:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *
    9:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * Copyright (c) 2020 STMicroelectronics.
+ARM GAS  /tmp/ccnq2mWK.s 			page 3
+
+
   10:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * All rights reserved.
   11:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *
   12:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * This software is licensed under terms that can be found in the LICENSE file
-ARM GAS  /tmp/ccBSRmV1.s 			page 3
-
-
   13:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * in the root directory of this software component.
   14:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * If no LICENSE file comes with this software, it is provided AS-IS.
   15:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *
@@ -175,12 +178,12 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
   64:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /* Exported types ------------------------------------------------------------*/
   65:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
   66:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /* Exported constants --------------------------------------------------------*/
+ARM GAS  /tmp/ccnq2mWK.s 			page 4
+
+
   67:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /** @defgroup BUS_LL_Exported_Constants BUS Exported Constants
   68:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @{
   69:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
-ARM GAS  /tmp/ccBSRmV1.s 			page 4
-
-
   70:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
   71:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /** @defgroup BUS_LL_EC_AHB1_GRP1_PERIPH  AHB1 GRP1 PERIPH
   72:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @{
@@ -235,12 +238,12 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
  121:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_USART2         RCC_APB1ENR1_USART2EN
  122:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_I2C1           RCC_APB1ENR1_I2C1EN
  123:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_I2C2           RCC_APB1ENR1_I2C2EN
+ARM GAS  /tmp/ccnq2mWK.s 			page 5
+
+
  124:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_I2C3           RCC_APB1ENR1_I2C3EN
  125:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_DAC            RCC_APB1ENR1_DACEN
  126:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB1_GRP1_PERIPH_LPTIM1         RCC_APB1ENR1_LPTIM1EN
-ARM GAS  /tmp/ccBSRmV1.s 			page 5
-
-
  127:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
  128:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @}
  129:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
@@ -295,12 +298,12 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
  178:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
  179:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /** @defgroup BUS_LL_EC_C2_AHB2_GRP1_PERIPH  C2 AHB2 GRP1 PERIPH
  180:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @{
+ARM GAS  /tmp/ccnq2mWK.s 			page 6
+
+
  181:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
  182:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_AHB2_GRP1_PERIPH_GPIOA        RCC_C2AHB2ENR_GPIOAEN
  183:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_AHB2_GRP1_PERIPH_GPIOB        RCC_C2AHB2ENR_GPIOBEN
-ARM GAS  /tmp/ccBSRmV1.s 			page 6
-
-
  184:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_AHB2_GRP1_PERIPH_GPIOC        RCC_C2AHB2ENR_GPIOCEN
  185:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_AHB2_GRP1_PERIPH_GPIOH        RCC_C2AHB2ENR_GPIOHEN
  186:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
@@ -355,12 +358,12 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
  235:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /** @defgroup BUS_LL_EC_C2_APB2_GRP1_PERIPH  C2 APB2 GRP1 PERIPH
  236:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @{
  237:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
+ARM GAS  /tmp/ccnq2mWK.s 			page 7
+
+
  238:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_ADC          RCC_C2APB2ENR_ADCEN
  239:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_TIM1         RCC_C2APB2ENR_TIM1EN
  240:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_SPI1         RCC_C2APB2ENR_SPI1EN
-ARM GAS  /tmp/ccBSRmV1.s 			page 7
-
-
  241:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_USART1       RCC_C2APB2ENR_USART1EN
  242:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_TIM16        RCC_C2APB2ENR_TIM16EN
  243:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_C2_APB2_GRP1_PERIPH_TIM17        RCC_C2APB2ENR_TIM17EN
@@ -415,12 +418,12 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
  292:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   tmpreg = READ_BIT(RCC->AHB1ENR, Periphs);
  293:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
  294:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** }
+ARM GAS  /tmp/ccnq2mWK.s 			page 8
+
+
  295:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
  296:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
  297:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @brief  Check if AHB1 peripheral clock is enabled or not
-ARM GAS  /tmp/ccBSRmV1.s 			page 8
-
-
  298:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @rmtoll AHB1ENR      DMA1EN        LL_AHB1_GRP1_IsEnabledClock\n
  299:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1ENR      DMA2EN        LL_AHB1_GRP1_IsEnabledClock\n
  300:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1ENR      DMAMUX1EN     LL_AHB1_GRP1_IsEnabledClock\n
@@ -475,12 +478,12 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
  349:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** }
  350:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
  351:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
+ARM GAS  /tmp/ccnq2mWK.s 			page 9
+
+
  352:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @brief  Release AHB1 peripherals reset.
  353:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @rmtoll AHB1RSTR     DMA1RST       LL_AHB1_GRP1_ReleaseReset\n
  354:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1RSTR     DMA2RST       LL_AHB1_GRP1_ReleaseReset\n
-ARM GAS  /tmp/ccBSRmV1.s 			page 9
-
-
  355:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1RSTR     DMAMUX1RST     LL_AHB1_GRP1_ReleaseReset\n
  356:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1RSTR     CRCRST        LL_AHB1_GRP1_ReleaseReset\n
  357:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
@@ -535,12 +538,12 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
  406:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** {
  407:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   return ((READ_BIT(RCC->AHB1SMENR, Periphs) == (Periphs)) ? 1UL : 0UL);
  408:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** }
+ARM GAS  /tmp/ccnq2mWK.s 			page 10
+
+
  409:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
  410:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
  411:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @brief  Disable AHB1 peripherals clock during Low Power (Sleep) mode.
-ARM GAS  /tmp/ccBSRmV1.s 			page 10
-
-
  412:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @rmtoll AHB1SMENR    DMA1SMEN      LL_AHB1_GRP1_DisableClockSleep\n
  413:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1SMENR    DMA2SMEN      LL_AHB1_GRP1_DisableClockSleep\n
  414:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1SMENR    DMAMUX1SMEN   LL_AHB1_GRP1_DisableClockSleep\n
@@ -579,245 +582,349 @@ ARM GAS  /tmp/ccBSRmV1.s 			page 1
  447:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @retval None
  448:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
  449:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** __STATIC_INLINE void LL_AHB2_GRP1_EnableClock(uint32_t Periphs)
-  54              		.loc 2 449 22 view .LVU4
-  55              	.LBB7:
+  56              		.loc 2 449 22 view .LVU4
+  57              	.LBB7:
  450:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** {
  451:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   __IO uint32_t tmpreg;
-  56              		.loc 2 451 3 view .LVU5
+  58              		.loc 2 451 3 view .LVU5
  452:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   SET_BIT(RCC->AHB2ENR, Periphs);
-  57              		.loc 2 452 3 view .LVU6
-  58 0010 4FF0B043 		mov	r3, #1476395008
-  59 0014 DA6C     		ldr	r2, [r3, #76]
-  60 0016 42F00202 		orr	r2, r2, #2
-  61 001a DA64     		str	r2, [r3, #76]
+  59              		.loc 2 452 3 view .LVU6
+  60 0012 4FF0B043 		mov	r3, #1476395008
+  61 0016 DA6C     		ldr	r2, [r3, #76]
+  62 0018 42F00202 		orr	r2, r2, #2
+  63 001c DA64     		str	r2, [r3, #76]
  453:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   /* Delay after an RCC peripheral clock enabling */
  454:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   tmpreg = READ_BIT(RCC->AHB2ENR, Periphs);
-  62              		.loc 2 454 3 view .LVU7
-  63              		.loc 2 454 12 is_stmt 0 view .LVU8
-  64 001c DA6C     		ldr	r2, [r3, #76]
-  65 001e 02F00202 		and	r2, r2, #2
-  66              		.loc 2 454 10 view .LVU9
-  67 0022 0292     		str	r2, [sp, #8]
-ARM GAS  /tmp/ccBSRmV1.s 			page 11
+  64              		.loc 2 454 3 view .LVU7
+  65              		.loc 2 454 12 is_stmt 0 view .LVU8
+  66 001e DA6C     		ldr	r2, [r3, #76]
+ARM GAS  /tmp/ccnq2mWK.s 			page 11
 
 
+  67 0020 02F00202 		and	r2, r2, #2
+  68              		.loc 2 454 10 view .LVU9
+  69 0024 0292     		str	r2, [sp, #8]
  455:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
-  68              		.loc 2 455 3 is_stmt 1 view .LVU10
-  69 0024 029A     		ldr	r2, [sp, #8]
-  70              	.LVL1:
-  71              		.loc 2 455 3 is_stmt 0 view .LVU11
-  72              	.LBE7:
-  73              	.LBE6:
-  51:Core/Src/gpio.c ****   __HAL_RCC_GPIOA_CLK_ENABLE();
-  74              		.loc 1 51 3 is_stmt 1 view .LVU12
-  75              	.LBB8:
-  76              	.LBI8:
+  70              		.loc 2 455 3 is_stmt 1 view .LVU10
+  71 0026 029A     		ldr	r2, [sp, #8]
+  72              	.LVL1:
+  73              		.loc 2 455 3 is_stmt 0 view .LVU11
+  74              	.LBE7:
+  75              	.LBE6:
+  52:Core/Src/gpio.c ****   __HAL_RCC_GPIOA_CLK_ENABLE();
+  76              		.loc 1 52 3 is_stmt 1 view .LVU12
+  77              	.LBB8:
+  78              	.LBI8:
  449:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** {
-  77              		.loc 2 449 22 view .LVU13
-  78              	.LBB9:
+  79              		.loc 2 449 22 view .LVU13
+  80              	.LBB9:
  451:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   SET_BIT(RCC->AHB2ENR, Periphs);
-  79              		.loc 2 451 3 view .LVU14
+  81              		.loc 2 451 3 view .LVU14
  452:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   /* Delay after an RCC peripheral clock enabling */
-  80              		.loc 2 452 3 view .LVU15
-  81 0026 DA6C     		ldr	r2, [r3, #76]
-  82 0028 42F00102 		orr	r2, r2, #1
-  83 002c DA64     		str	r2, [r3, #76]
+  82              		.loc 2 452 3 view .LVU15
+  83 0028 DA6C     		ldr	r2, [r3, #76]
+  84 002a 42F00102 		orr	r2, r2, #1
+  85 002e DA64     		str	r2, [r3, #76]
  454:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
-  84              		.loc 2 454 3 view .LVU16
+  86              		.loc 2 454 3 view .LVU16
  454:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
-  85              		.loc 2 454 12 is_stmt 0 view .LVU17
-  86 002e DB6C     		ldr	r3, [r3, #76]
-  87 0030 03F00103 		and	r3, r3, #1
+  87              		.loc 2 454 12 is_stmt 0 view .LVU17
+  88 0030 DB6C     		ldr	r3, [r3, #76]
+  89 0032 03F00103 		and	r3, r3, #1
  454:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
-  88              		.loc 2 454 10 view .LVU18
-  89 0034 0193     		str	r3, [sp, #4]
-  90              		.loc 2 455 3 is_stmt 1 view .LVU19
-  91 0036 019B     		ldr	r3, [sp, #4]
-  92              	.LVL2:
-  93              		.loc 2 455 3 is_stmt 0 view .LVU20
-  94              	.LBE9:
-  95              	.LBE8:
-  52:Core/Src/gpio.c **** 
-  53:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
-  54:Core/Src/gpio.c ****   HAL_GPIO_WritePin(GPIOB, RFID_NRST_Pin|RFSW_VC2_Pin, GPIO_PIN_RESET);
-  96              		.loc 1 54 3 is_stmt 1 view .LVU21
-  97 0038 204D     		ldr	r5, .L3
-  98 003a 2246     		mov	r2, r4
-  99 003c 2421     		movs	r1, #36
- 100 003e 2846     		mov	r0, r5
- 101 0040 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 102              	.LVL3:
-  55:Core/Src/gpio.c **** 
-  56:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
-  57:Core/Src/gpio.c ****   HAL_GPIO_WritePin(GPIOA, ALARM_ON_Pin|RFSW_VC1_Pin|GPS_NPWR_Pin|RFiD_NPWR_Pin, GPIO_PIN_RESET);
- 103              		.loc 1 57 3 view .LVU22
- 104 0044 2246     		mov	r2, r4
- 105 0046 6C21     		movs	r1, #108
- 106 0048 4FF09040 		mov	r0, #1207959552
- 107 004c FFF7FEFF 		bl	HAL_GPIO_WritePin
- 108              	.LVL4:
-  58:Core/Src/gpio.c **** 
-  59:Core/Src/gpio.c ****   /*Configure GPIO pins : PBPin PBPin */
-ARM GAS  /tmp/ccBSRmV1.s 			page 12
+  90              		.loc 2 454 10 view .LVU18
+  91 0036 0193     		str	r3, [sp, #4]
+  92              		.loc 2 455 3 is_stmt 1 view .LVU19
+  93 0038 019B     		ldr	r3, [sp, #4]
+  94              	.LVL2:
+  95              		.loc 2 455 3 is_stmt 0 view .LVU20
+  96              	.LBE9:
+  97              	.LBE8:
+  53:Core/Src/gpio.c **** 
+  54:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
+  55:Core/Src/gpio.c ****   HAL_GPIO_WritePin(RFID_NRST_GPIO_Port, RFID_NRST_Pin, GPIO_PIN_RESET);
+  98              		.loc 1 55 3 is_stmt 1 view .LVU21
+  99 003a 384D     		ldr	r5, .L3
+ 100 003c 2246     		mov	r2, r4
+ 101 003e 2021     		movs	r1, #32
+ 102 0040 2846     		mov	r0, r5
+ 103 0042 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 104              	.LVL3:
+  56:Core/Src/gpio.c **** 
+  57:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
+  58:Core/Src/gpio.c ****   HAL_GPIO_WritePin(GPIOA, ALARM_ON_Pin|GPS_NPWR_Pin|RFiD_NPWR_Pin, GPIO_PIN_RESET);
+ 105              		.loc 1 58 3 view .LVU22
+ 106 0046 2246     		mov	r2, r4
+ 107 0048 6421     		movs	r1, #100
+ 108 004a 4FF09040 		mov	r0, #1207959552
+ 109 004e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ARM GAS  /tmp/ccnq2mWK.s 			page 12
 
 
-  60:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = RFID_NRST_Pin|RFSW_VC2_Pin;
- 109              		.loc 1 60 3 view .LVU23
- 110              		.loc 1 60 23 is_stmt 0 view .LVU24
- 111 0050 2423     		movs	r3, #36
- 112 0052 0393     		str	r3, [sp, #12]
-  61:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
- 113              		.loc 1 61 3 is_stmt 1 view .LVU25
- 114              		.loc 1 61 24 is_stmt 0 view .LVU26
- 115 0054 0126     		movs	r6, #1
- 116 0056 0496     		str	r6, [sp, #16]
-  62:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
- 117              		.loc 1 62 3 is_stmt 1 view .LVU27
- 118              		.loc 1 62 24 is_stmt 0 view .LVU28
- 119 0058 0594     		str	r4, [sp, #20]
-  63:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
- 120              		.loc 1 63 3 is_stmt 1 view .LVU29
- 121              		.loc 1 63 25 is_stmt 0 view .LVU30
- 122 005a 0694     		str	r4, [sp, #24]
-  64:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
- 123              		.loc 1 64 3 is_stmt 1 view .LVU31
- 124 005c 03A9     		add	r1, sp, #12
- 125 005e 2846     		mov	r0, r5
- 126 0060 FFF7FEFF 		bl	HAL_GPIO_Init
- 127              	.LVL5:
+ 110              	.LVL4:
+  59:Core/Src/gpio.c **** 
+  60:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
+  61:Core/Src/gpio.c ****   HAL_GPIO_WritePin(RFSW_VC1_GPIO_Port, RFSW_VC1_Pin, GPIO_PIN_SET);
+ 111              		.loc 1 61 3 view .LVU23
+ 112 0052 0122     		movs	r2, #1
+ 113 0054 0821     		movs	r1, #8
+ 114 0056 4FF09040 		mov	r0, #1207959552
+ 115 005a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 116              	.LVL5:
+  62:Core/Src/gpio.c **** 
+  63:Core/Src/gpio.c ****   /*Configure GPIO pin Output Level */
+  64:Core/Src/gpio.c ****   HAL_GPIO_WritePin(RFSW_VC2_GPIO_Port, RFSW_VC2_Pin, GPIO_PIN_SET);
+ 117              		.loc 1 64 3 view .LVU24
+ 118 005e 0122     		movs	r2, #1
+ 119 0060 0421     		movs	r1, #4
+ 120 0062 2846     		mov	r0, r5
+ 121 0064 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 122              	.LVL6:
   65:Core/Src/gpio.c **** 
-  66:Core/Src/gpio.c ****   /*Configure GPIO pins : PB7 PB8 */
-  67:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = GPIO_PIN_7|GPIO_PIN_8;
- 128              		.loc 1 67 3 view .LVU32
- 129              		.loc 1 67 23 is_stmt 0 view .LVU33
- 130 0064 4FF4C073 		mov	r3, #384
- 131 0068 0393     		str	r3, [sp, #12]
-  68:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
- 132              		.loc 1 68 3 is_stmt 1 view .LVU34
- 133              		.loc 1 68 24 is_stmt 0 view .LVU35
- 134 006a 1223     		movs	r3, #18
- 135 006c 0493     		str	r3, [sp, #16]
+  66:Core/Src/gpio.c ****   /*Configure GPIO pin : PtPin */
+  67:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = RFID_NRST_Pin;
+ 123              		.loc 1 67 3 view .LVU25
+ 124              		.loc 1 67 23 is_stmt 0 view .LVU26
+ 125 0068 2023     		movs	r3, #32
+ 126 006a 0393     		str	r3, [sp, #12]
+  68:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+ 127              		.loc 1 68 3 is_stmt 1 view .LVU27
+ 128              		.loc 1 68 24 is_stmt 0 view .LVU28
+ 129 006c 0126     		movs	r6, #1
+ 130 006e 0496     		str	r6, [sp, #16]
   69:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
- 136              		.loc 1 69 3 is_stmt 1 view .LVU36
- 137              		.loc 1 69 24 is_stmt 0 view .LVU37
- 138 006e 0594     		str	r4, [sp, #20]
+ 131              		.loc 1 69 3 is_stmt 1 view .LVU29
+ 132              		.loc 1 69 24 is_stmt 0 view .LVU30
+ 133 0070 0594     		str	r4, [sp, #20]
   70:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
- 139              		.loc 1 70 3 is_stmt 1 view .LVU38
- 140              		.loc 1 70 25 is_stmt 0 view .LVU39
- 141 0070 0694     		str	r4, [sp, #24]
-  71:Core/Src/gpio.c ****   GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
- 142              		.loc 1 71 3 is_stmt 1 view .LVU40
- 143              		.loc 1 71 29 is_stmt 0 view .LVU41
- 144 0072 0423     		movs	r3, #4
- 145 0074 0793     		str	r3, [sp, #28]
-  72:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
- 146              		.loc 1 72 3 is_stmt 1 view .LVU42
- 147 0076 03A9     		add	r1, sp, #12
- 148 0078 2846     		mov	r0, r5
- 149 007a FFF7FEFF 		bl	HAL_GPIO_Init
- 150              	.LVL6:
-  73:Core/Src/gpio.c **** 
-  74:Core/Src/gpio.c ****   /*Configure GPIO pins : PAPin PAPin PAPin */
-ARM GAS  /tmp/ccBSRmV1.s 			page 13
+ 134              		.loc 1 70 3 is_stmt 1 view .LVU31
+ 135              		.loc 1 70 25 is_stmt 0 view .LVU32
+ 136 0072 0694     		str	r4, [sp, #24]
+  71:Core/Src/gpio.c ****   HAL_GPIO_Init(RFID_NRST_GPIO_Port, &GPIO_InitStruct);
+ 137              		.loc 1 71 3 is_stmt 1 view .LVU33
+ 138 0074 03A9     		add	r1, sp, #12
+ 139 0076 2846     		mov	r0, r5
+ 140 0078 FFF7FEFF 		bl	HAL_GPIO_Init
+ 141              	.LVL7:
+  72:Core/Src/gpio.c **** 
+  73:Core/Src/gpio.c ****   /*Configure GPIO pins : PB7 PB8 */
+  74:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = GPIO_PIN_7|GPIO_PIN_8;
+ 142              		.loc 1 74 3 view .LVU34
+ 143              		.loc 1 74 23 is_stmt 0 view .LVU35
+ 144 007c 4FF4C073 		mov	r3, #384
+ 145 0080 0393     		str	r3, [sp, #12]
+  75:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_AF_OD;
+ 146              		.loc 1 75 3 is_stmt 1 view .LVU36
+ 147              		.loc 1 75 24 is_stmt 0 view .LVU37
+ 148 0082 1223     		movs	r3, #18
+ 149 0084 0493     		str	r3, [sp, #16]
+ARM GAS  /tmp/ccnq2mWK.s 			page 13
 
 
-  75:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = RFID_DATA1_Pin|RFID_TAG_IN_RANGE_Pin|GPS_STATE_Pin;
- 151              		.loc 1 75 3 view .LVU43
- 152              		.loc 1 75 23 is_stmt 0 view .LVU44
- 153 007e 40F68203 		movw	r3, #2178
- 154 0082 0393     		str	r3, [sp, #12]
-  76:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
- 155              		.loc 1 76 3 is_stmt 1 view .LVU45
- 156              		.loc 1 76 24 is_stmt 0 view .LVU46
- 157 0084 0494     		str	r4, [sp, #16]
-  77:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
- 158              		.loc 1 77 3 is_stmt 1 view .LVU47
- 159              		.loc 1 77 24 is_stmt 0 view .LVU48
- 160 0086 0594     		str	r4, [sp, #20]
-  78:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
- 161              		.loc 1 78 3 is_stmt 1 view .LVU49
- 162 0088 03A9     		add	r1, sp, #12
- 163 008a 4FF09040 		mov	r0, #1207959552
- 164 008e FFF7FEFF 		bl	HAL_GPIO_Init
- 165              	.LVL7:
-  79:Core/Src/gpio.c **** 
-  80:Core/Src/gpio.c ****   /*Configure GPIO pins : PAPin PAPin PAPin PAPin */
-  81:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = ALARM_ON_Pin|RFSW_VC1_Pin|GPS_NPWR_Pin|RFiD_NPWR_Pin;
- 166              		.loc 1 81 3 view .LVU50
- 167              		.loc 1 81 23 is_stmt 0 view .LVU51
- 168 0092 6C23     		movs	r3, #108
- 169 0094 0393     		str	r3, [sp, #12]
-  82:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
- 170              		.loc 1 82 3 is_stmt 1 view .LVU52
- 171              		.loc 1 82 24 is_stmt 0 view .LVU53
- 172 0096 0496     		str	r6, [sp, #16]
-  83:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
- 173              		.loc 1 83 3 is_stmt 1 view .LVU54
- 174              		.loc 1 83 24 is_stmt 0 view .LVU55
- 175 0098 0594     		str	r4, [sp, #20]
-  84:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
- 176              		.loc 1 84 3 is_stmt 1 view .LVU56
- 177              		.loc 1 84 25 is_stmt 0 view .LVU57
- 178 009a 0694     		str	r4, [sp, #24]
+  76:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 150              		.loc 1 76 3 is_stmt 1 view .LVU38
+ 151              		.loc 1 76 24 is_stmt 0 view .LVU39
+ 152 0086 0594     		str	r4, [sp, #20]
+  77:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 153              		.loc 1 77 3 is_stmt 1 view .LVU40
+ 154              		.loc 1 77 25 is_stmt 0 view .LVU41
+ 155 0088 0694     		str	r4, [sp, #24]
+  78:Core/Src/gpio.c ****   GPIO_InitStruct.Alternate = GPIO_AF4_I2C1;
+ 156              		.loc 1 78 3 is_stmt 1 view .LVU42
+ 157              		.loc 1 78 29 is_stmt 0 view .LVU43
+ 158 008a 4FF00408 		mov	r8, #4
+ 159 008e CDF81C80 		str	r8, [sp, #28]
+  79:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+ 160              		.loc 1 79 3 is_stmt 1 view .LVU44
+ 161 0092 03A9     		add	r1, sp, #12
+ 162 0094 2846     		mov	r0, r5
+ 163 0096 FFF7FEFF 		bl	HAL_GPIO_Init
+ 164              	.LVL8:
+  80:Core/Src/gpio.c **** 
+  81:Core/Src/gpio.c ****   /*Configure GPIO pins : PAPin PAPin PAPin */
+  82:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = RFID_DATA1_Pin|RFID_TAG_IN_RANGE_Pin|GPS_STATE_Pin;
+ 165              		.loc 1 82 3 view .LVU45
+ 166              		.loc 1 82 23 is_stmt 0 view .LVU46
+ 167 009a 40F68203 		movw	r3, #2178
+ 168 009e 0393     		str	r3, [sp, #12]
+  83:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+ 169              		.loc 1 83 3 is_stmt 1 view .LVU47
+ 170              		.loc 1 83 24 is_stmt 0 view .LVU48
+ 171 00a0 0494     		str	r4, [sp, #16]
+  84:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 172              		.loc 1 84 3 is_stmt 1 view .LVU49
+ 173              		.loc 1 84 24 is_stmt 0 view .LVU50
+ 174 00a2 0594     		str	r4, [sp, #20]
   85:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
- 179              		.loc 1 85 3 is_stmt 1 view .LVU58
- 180 009c 03A9     		add	r1, sp, #12
- 181 009e 4FF09040 		mov	r0, #1207959552
- 182 00a2 FFF7FEFF 		bl	HAL_GPIO_Init
- 183              	.LVL8:
+ 175              		.loc 1 85 3 is_stmt 1 view .LVU51
+ 176 00a4 03A9     		add	r1, sp, #12
+ 177 00a6 4FF09040 		mov	r0, #1207959552
+ 178 00aa FFF7FEFF 		bl	HAL_GPIO_Init
+ 179              	.LVL9:
   86:Core/Src/gpio.c **** 
-  87:Core/Src/gpio.c ****   /*Configure GPIO pin : PtPin */
-  88:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = RFID_DATA0_Pin;
- 184              		.loc 1 88 3 view .LVU59
- 185              		.loc 1 88 23 is_stmt 0 view .LVU60
- 186 00a6 4FF48053 		mov	r3, #4096
- 187 00aa 0393     		str	r3, [sp, #12]
-  89:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
- 188              		.loc 1 89 3 is_stmt 1 view .LVU61
- 189              		.loc 1 89 24 is_stmt 0 view .LVU62
- 190 00ac 0494     		str	r4, [sp, #16]
+  87:Core/Src/gpio.c ****   /*Configure GPIO pins : PAPin PAPin PAPin */
+  88:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = ALARM_ON_Pin|GPS_NPWR_Pin|RFiD_NPWR_Pin;
+ 180              		.loc 1 88 3 view .LVU52
+ 181              		.loc 1 88 23 is_stmt 0 view .LVU53
+ 182 00ae 6423     		movs	r3, #100
+ 183 00b0 0393     		str	r3, [sp, #12]
+  89:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+ 184              		.loc 1 89 3 is_stmt 1 view .LVU54
+ 185              		.loc 1 89 24 is_stmt 0 view .LVU55
+ 186 00b2 0496     		str	r6, [sp, #16]
   90:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
- 191              		.loc 1 90 3 is_stmt 1 view .LVU63
-ARM GAS  /tmp/ccBSRmV1.s 			page 14
+ 187              		.loc 1 90 3 is_stmt 1 view .LVU56
+ 188              		.loc 1 90 24 is_stmt 0 view .LVU57
+ 189 00b4 0594     		str	r4, [sp, #20]
+  91:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 190              		.loc 1 91 3 is_stmt 1 view .LVU58
+ARM GAS  /tmp/ccnq2mWK.s 			page 14
 
 
- 192              		.loc 1 90 24 is_stmt 0 view .LVU64
- 193 00ae 0594     		str	r4, [sp, #20]
-  91:Core/Src/gpio.c ****   HAL_GPIO_Init(RFID_DATA0_GPIO_Port, &GPIO_InitStruct);
- 194              		.loc 1 91 3 is_stmt 1 view .LVU65
- 195 00b0 03A9     		add	r1, sp, #12
- 196 00b2 2846     		mov	r0, r5
- 197 00b4 FFF7FEFF 		bl	HAL_GPIO_Init
- 198              	.LVL9:
-  92:Core/Src/gpio.c **** 
-  93:Core/Src/gpio.c **** }
- 199              		.loc 1 93 1 is_stmt 0 view .LVU66
- 200 00b8 08B0     		add	sp, sp, #32
- 201              	.LCFI2:
- 202              		.cfi_def_cfa_offset 16
- 203              		@ sp needed
- 204 00ba 70BD     		pop	{r4, r5, r6, pc}
- 205              	.L4:
- 206              		.align	2
- 207              	.L3:
- 208 00bc 00040048 		.word	1207960576
- 209              		.cfi_endproc
- 210              	.LFE1093:
- 212              		.text
- 213              	.Letext0:
- 214              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
- 215              		.file 4 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
- 216              		.file 5 "Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h"
- 217              		.file 6 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_gpio.h"
- 218              		.file 7 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
-ARM GAS  /tmp/ccBSRmV1.s 			page 15
+ 191              		.loc 1 91 25 is_stmt 0 view .LVU59
+ 192 00b6 0694     		str	r4, [sp, #24]
+  92:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+ 193              		.loc 1 92 3 is_stmt 1 view .LVU60
+ 194 00b8 03A9     		add	r1, sp, #12
+ 195 00ba 4FF09040 		mov	r0, #1207959552
+ 196 00be FFF7FEFF 		bl	HAL_GPIO_Init
+ 197              	.LVL10:
+  93:Core/Src/gpio.c **** 
+  94:Core/Src/gpio.c ****   /*Configure GPIO pin : PtPin */
+  95:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = RFSW_VC1_Pin;
+ 198              		.loc 1 95 3 view .LVU61
+ 199              		.loc 1 95 23 is_stmt 0 view .LVU62
+ 200 00c2 0823     		movs	r3, #8
+ 201 00c4 0393     		str	r3, [sp, #12]
+  96:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+ 202              		.loc 1 96 3 is_stmt 1 view .LVU63
+ 203              		.loc 1 96 24 is_stmt 0 view .LVU64
+ 204 00c6 0496     		str	r6, [sp, #16]
+  97:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+ 205              		.loc 1 97 3 is_stmt 1 view .LVU65
+ 206              		.loc 1 97 24 is_stmt 0 view .LVU66
+ 207 00c8 0227     		movs	r7, #2
+ 208 00ca 0597     		str	r7, [sp, #20]
+  98:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 209              		.loc 1 98 3 is_stmt 1 view .LVU67
+ 210              		.loc 1 98 25 is_stmt 0 view .LVU68
+ 211 00cc 0694     		str	r4, [sp, #24]
+  99:Core/Src/gpio.c ****   HAL_GPIO_Init(RFSW_VC1_GPIO_Port, &GPIO_InitStruct);
+ 212              		.loc 1 99 3 is_stmt 1 view .LVU69
+ 213 00ce 03A9     		add	r1, sp, #12
+ 214 00d0 4FF09040 		mov	r0, #1207959552
+ 215 00d4 FFF7FEFF 		bl	HAL_GPIO_Init
+ 216              	.LVL11:
+ 100:Core/Src/gpio.c **** 
+ 101:Core/Src/gpio.c ****   /*Configure GPIO pin : PA8 */
+ 102:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = GPIO_PIN_8;
+ 217              		.loc 1 102 3 view .LVU70
+ 218              		.loc 1 102 23 is_stmt 0 view .LVU71
+ 219 00d8 4FF48073 		mov	r3, #256
+ 220 00dc 0393     		str	r3, [sp, #12]
+ 103:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 221              		.loc 1 103 3 is_stmt 1 view .LVU72
+ 222              		.loc 1 103 24 is_stmt 0 view .LVU73
+ 223 00de 0497     		str	r7, [sp, #16]
+ 104:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 224              		.loc 1 104 3 is_stmt 1 view .LVU74
+ 225              		.loc 1 104 24 is_stmt 0 view .LVU75
+ 226 00e0 0594     		str	r4, [sp, #20]
+ 105:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+ 227              		.loc 1 105 3 is_stmt 1 view .LVU76
+ 228              		.loc 1 105 25 is_stmt 0 view .LVU77
+ 229 00e2 0323     		movs	r3, #3
+ 230 00e4 0693     		str	r3, [sp, #24]
+ 106:Core/Src/gpio.c ****   GPIO_InitStruct.Alternate = GPIO_AF0_MCO;
+ 231              		.loc 1 106 3 is_stmt 1 view .LVU78
+ 232              		.loc 1 106 29 is_stmt 0 view .LVU79
+ARM GAS  /tmp/ccnq2mWK.s 			page 15
+
+
+ 233 00e6 0794     		str	r4, [sp, #28]
+ 107:Core/Src/gpio.c ****   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+ 234              		.loc 1 107 3 is_stmt 1 view .LVU80
+ 235 00e8 03A9     		add	r1, sp, #12
+ 236 00ea 4FF09040 		mov	r0, #1207959552
+ 237 00ee FFF7FEFF 		bl	HAL_GPIO_Init
+ 238              	.LVL12:
+ 108:Core/Src/gpio.c **** 
+ 109:Core/Src/gpio.c ****   /*Configure GPIO pin : PtPin */
+ 110:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = RFSW_VC2_Pin;
+ 239              		.loc 1 110 3 view .LVU81
+ 240              		.loc 1 110 23 is_stmt 0 view .LVU82
+ 241 00f2 CDF80C80 		str	r8, [sp, #12]
+ 111:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+ 242              		.loc 1 111 3 is_stmt 1 view .LVU83
+ 243              		.loc 1 111 24 is_stmt 0 view .LVU84
+ 244 00f6 0496     		str	r6, [sp, #16]
+ 112:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+ 245              		.loc 1 112 3 is_stmt 1 view .LVU85
+ 246              		.loc 1 112 24 is_stmt 0 view .LVU86
+ 247 00f8 0597     		str	r7, [sp, #20]
+ 113:Core/Src/gpio.c ****   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 248              		.loc 1 113 3 is_stmt 1 view .LVU87
+ 249              		.loc 1 113 25 is_stmt 0 view .LVU88
+ 250 00fa 0694     		str	r4, [sp, #24]
+ 114:Core/Src/gpio.c ****   HAL_GPIO_Init(RFSW_VC2_GPIO_Port, &GPIO_InitStruct);
+ 251              		.loc 1 114 3 is_stmt 1 view .LVU89
+ 252 00fc 03A9     		add	r1, sp, #12
+ 253 00fe 2846     		mov	r0, r5
+ 254 0100 FFF7FEFF 		bl	HAL_GPIO_Init
+ 255              	.LVL13:
+ 115:Core/Src/gpio.c **** 
+ 116:Core/Src/gpio.c ****   /*Configure GPIO pin : PtPin */
+ 117:Core/Src/gpio.c ****   GPIO_InitStruct.Pin = RFID_DATA0_Pin;
+ 256              		.loc 1 117 3 view .LVU90
+ 257              		.loc 1 117 23 is_stmt 0 view .LVU91
+ 258 0104 4FF48053 		mov	r3, #4096
+ 259 0108 0393     		str	r3, [sp, #12]
+ 118:Core/Src/gpio.c ****   GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+ 260              		.loc 1 118 3 is_stmt 1 view .LVU92
+ 261              		.loc 1 118 24 is_stmt 0 view .LVU93
+ 262 010a 0494     		str	r4, [sp, #16]
+ 119:Core/Src/gpio.c ****   GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 263              		.loc 1 119 3 is_stmt 1 view .LVU94
+ 264              		.loc 1 119 24 is_stmt 0 view .LVU95
+ 265 010c 0594     		str	r4, [sp, #20]
+ 120:Core/Src/gpio.c ****   HAL_GPIO_Init(RFID_DATA0_GPIO_Port, &GPIO_InitStruct);
+ 266              		.loc 1 120 3 is_stmt 1 view .LVU96
+ 267 010e 03A9     		add	r1, sp, #12
+ 268 0110 2846     		mov	r0, r5
+ 269 0112 FFF7FEFF 		bl	HAL_GPIO_Init
+ 270              	.LVL14:
+ 121:Core/Src/gpio.c **** 
+ 122:Core/Src/gpio.c **** }
+ 271              		.loc 1 122 1 is_stmt 0 view .LVU97
+ 272 0116 08B0     		add	sp, sp, #32
+ 273              	.LCFI2:
+ARM GAS  /tmp/ccnq2mWK.s 			page 16
+
+
+ 274              		.cfi_def_cfa_offset 24
+ 275              		@ sp needed
+ 276 0118 BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
+ 277              	.L4:
+ 278              		.align	2
+ 279              	.L3:
+ 280 011c 00040048 		.word	1207960576
+ 281              		.cfi_endproc
+ 282              	.LFE1093:
+ 284              		.text
+ 285              	.Letext0:
+ 286              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 287              		.file 4 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 288              		.file 5 "Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wl55xx.h"
+ 289              		.file 6 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_gpio.h"
+ 290              		.file 7 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
+ARM GAS  /tmp/ccnq2mWK.s 			page 17
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 gpio.c
-     /tmp/ccBSRmV1.s:16     .text.MX_GPIO_Init:0000000000000000 $t
-     /tmp/ccBSRmV1.s:24     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
-     /tmp/ccBSRmV1.s:208    .text.MX_GPIO_Init:00000000000000bc $d
+     /tmp/ccnq2mWK.s:16     .text.MX_GPIO_Init:0000000000000000 $t
+     /tmp/ccnq2mWK.s:24     .text.MX_GPIO_Init:0000000000000000 MX_GPIO_Init
+     /tmp/ccnq2mWK.s:280    .text.MX_GPIO_Init:000000000000011c $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin

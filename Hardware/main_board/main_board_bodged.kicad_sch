@@ -3820,7 +3820,7 @@
     (effects (font (size 2 2) (thickness 0.4) bold italic) (justify left bottom))
     (uuid 6a7c20fb-1857-49ac-9e43-63d68e449b37)
   )
-  (text "VC1=1, VC2=0 -> RF1 ON --> RX\nVC1=0, VC2=0 -> RF2 ON --> TX\n"
+  (text "VC1=1, VC2=0 -> RF1 ON --> RX\nVC1=0, VC2=1 -> RF2 ON --> TX\n"
     (at 187.96 115.57 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 71a210a7-1dda-4885-8b50-c68ad5658148)
@@ -3907,6 +3907,10 @@
     (at 330.2 236.22 0)
     (effects (font (size 1.27 1.27) italic) (justify left bottom))
     (uuid ea21d259-3353-44ac-a418-f78cc982c2a3)
+  )
+  (text "PA8 (TP3): 32MHz master clock output" (at 38.1 156.21 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid ec705384-505f-4603-8625-1542fd0a0c28)
   )
   (text "- This board assumes the high-power RF output configuration: \nthis means the output pin is RFO_HP, and VR_PA is tied to VCC. "
     (at 172.72 66.04 0)

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccdWolD9.s 			page 1
+ARM GAS  /tmp/ccXaDbuW.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
   30:Utilities/misc/stm32_tiny_vsnprintf.c ****   * @file    stm32_tiny_vsnprintf.c
   31:Utilities/misc/stm32_tiny_vsnprintf.c ****   * @author  MCD Application Team
   32:Utilities/misc/stm32_tiny_vsnprintf.c ****   * @brief   Tiny implementation of vsnprintf like function
-ARM GAS  /tmp/ccdWolD9.s 			page 2
+ARM GAS  /tmp/ccXaDbuW.s 			page 2
 
 
   33:Utilities/misc/stm32_tiny_vsnprintf.c ****   ******************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
   87:Utilities/misc/stm32_tiny_vsnprintf.c ****   return sc - s;
   88:Utilities/misc/stm32_tiny_vsnprintf.c **** }
   89:Utilities/misc/stm32_tiny_vsnprintf.c **** #endif
-ARM GAS  /tmp/ccdWolD9.s 			page 3
+ARM GAS  /tmp/ccXaDbuW.s 			page 3
 
 
   90:Utilities/misc/stm32_tiny_vsnprintf.c **** 
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
   74              		.section	.rodata.ee_number.str1.4,"aMS",%progbits,1
   75              		.align	2
   76              	.LC0:
-ARM GAS  /tmp/ccdWolD9.s 			page 4
+ARM GAS  /tmp/ccXaDbuW.s 			page 4
 
 
   77 0000 30313233 		.ascii	"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ\000"
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  115              		.loc 1 105 3 view .LVU22
  106:Utilities/misc/stm32_tiny_vsnprintf.c **** 
  107:Utilities/misc/stm32_tiny_vsnprintf.c ****   if (type & UPPERCASE)  dig = upper_digits;
-ARM GAS  /tmp/ccdWolD9.s 			page 5
+ARM GAS  /tmp/ccXaDbuW.s 			page 5
 
 
  116              		.loc 1 107 3 view .LVU23
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  114:Utilities/misc/stm32_tiny_vsnprintf.c ****   sign = 0;
  156              		.loc 1 114 5 view .LVU38
  157 0038 4FF0200E 		mov	lr, #32
-ARM GAS  /tmp/ccdWolD9.s 			page 6
+ARM GAS  /tmp/ccXaDbuW.s 			page 6
 
 
  158 003c F2E7     		b	.L7
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  148:Utilities/misc/stm32_tiny_vsnprintf.c **** #endif
  149:Utilities/misc/stm32_tiny_vsnprintf.c **** 
  150:Utilities/misc/stm32_tiny_vsnprintf.c ****   i = 0;
-ARM GAS  /tmp/ccdWolD9.s 			page 7
+ARM GAS  /tmp/ccXaDbuW.s 			page 7
 
 
  181              		.loc 1 150 3 is_stmt 1 view .LVU46
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  219              	.LVL23:
  220              		.loc 1 166 13 is_stmt 0 discriminator 1 view .LVU64
  221 0066 00F8017B 		strb	r7, [r0], #1
-ARM GAS  /tmp/ccdWolD9.s 			page 8
+ARM GAS  /tmp/ccXaDbuW.s 			page 8
 
 
  222              	.LVL24:
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  190:Utilities/misc/stm32_tiny_vsnprintf.c **** 
  191:Utilities/misc/stm32_tiny_vsnprintf.c ****   return str;
  192:Utilities/misc/stm32_tiny_vsnprintf.c **** }
-ARM GAS  /tmp/ccdWolD9.s 			page 9
+ARM GAS  /tmp/ccXaDbuW.s 			page 9
 
 
  253              		.loc 1 192 1 view .LVU78
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  165:Utilities/misc/stm32_tiny_vsnprintf.c ****   if (sign) ASSIGN_STR(sign);
  296              		.loc 1 165 61 is_stmt 0 discriminator 3 view .LVU90
  297 00ac 002B     		cmp	r3, #0
-ARM GAS  /tmp/ccdWolD9.s 			page 10
+ARM GAS  /tmp/ccXaDbuW.s 			page 10
 
 
  298 00ae 03F1FF33 		add	r3, r3, #-1
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  336              	.LVL46:
  187:Utilities/misc/stm32_tiny_vsnprintf.c ****   while (i-- > 0) ASSIGN_STR(tmp[i]);
  337              		.loc 1 187 27 is_stmt 0 discriminator 3 view .LVU107
-ARM GAS  /tmp/ccdWolD9.s 			page 11
+ARM GAS  /tmp/ccXaDbuW.s 			page 11
 
 
  338 00d0 F6D1     		bne	.L19
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  377              		.loc 1 189 9 discriminator 2 view .LVU122
  378 00f8 C1DD     		ble	.L4
  189:Utilities/misc/stm32_tiny_vsnprintf.c **** 
-ARM GAS  /tmp/ccdWolD9.s 			page 12
+ARM GAS  /tmp/ccXaDbuW.s 			page 12
 
 
  379              		.loc 1 189 22 is_stmt 1 discriminator 3 view .LVU123
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  197:Utilities/misc/stm32_tiny_vsnprintf.c **** {
  198:Utilities/misc/stm32_tiny_vsnprintf.c ****   char tmp[24];
  199:Utilities/misc/stm32_tiny_vsnprintf.c ****   char *dig = lower_digits;
-ARM GAS  /tmp/ccdWolD9.s 			page 13
+ARM GAS  /tmp/ccXaDbuW.s 			page 13
 
 
  200:Utilities/misc/stm32_tiny_vsnprintf.c ****   int i, len;
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  254:Utilities/misc/stm32_tiny_vsnprintf.c ****   return str;
  255:Utilities/misc/stm32_tiny_vsnprintf.c **** }
  256:Utilities/misc/stm32_tiny_vsnprintf.c **** #endif
-ARM GAS  /tmp/ccdWolD9.s 			page 14
+ARM GAS  /tmp/ccXaDbuW.s 			page 14
 
 
  257:Utilities/misc/stm32_tiny_vsnprintf.c **** 
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  311:Utilities/misc/stm32_tiny_vsnprintf.c ****     if (decpt == 0)
  312:Utilities/misc/stm32_tiny_vsnprintf.c ****     {
  313:Utilities/misc/stm32_tiny_vsnprintf.c ****       if (value == 0.0)
-ARM GAS  /tmp/ccdWolD9.s 			page 15
+ARM GAS  /tmp/ccXaDbuW.s 			page 15
 
 
  314:Utilities/misc/stm32_tiny_vsnprintf.c ****         exp = 0;
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  368:Utilities/misc/stm32_tiny_vsnprintf.c ****   }
  369:Utilities/misc/stm32_tiny_vsnprintf.c **** 
  370:Utilities/misc/stm32_tiny_vsnprintf.c ****   *buffer = '\0';
-ARM GAS  /tmp/ccdWolD9.s 			page 16
+ARM GAS  /tmp/ccXaDbuW.s 			page 16
 
 
  371:Utilities/misc/stm32_tiny_vsnprintf.c **** }
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  425:Utilities/misc/stm32_tiny_vsnprintf.c ****   if (flags & LEFT) flags &= ~ZEROPAD;
  426:Utilities/misc/stm32_tiny_vsnprintf.c **** #endif
  427:Utilities/misc/stm32_tiny_vsnprintf.c **** 
-ARM GAS  /tmp/ccdWolD9.s 			page 17
+ARM GAS  /tmp/ccXaDbuW.s 			page 17
 
 
  428:Utilities/misc/stm32_tiny_vsnprintf.c ****   // Determine padding and sign char
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  482:Utilities/misc/stm32_tiny_vsnprintf.c **** #define CHECK_STR_SIZE(_buf, _str, _size) \
  483:Utilities/misc/stm32_tiny_vsnprintf.c ****   if ((((_str) - (_buf)) >= ((_size)-1))) { break; }
  484:Utilities/misc/stm32_tiny_vsnprintf.c **** 
-ARM GAS  /tmp/ccdWolD9.s 			page 18
+ARM GAS  /tmp/ccXaDbuW.s 			page 18
 
 
  485:Utilities/misc/stm32_tiny_vsnprintf.c **** int tiny_vsnprintf_like(char *buf, const int size, const char *fmt, va_list args)
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  504:Utilities/misc/stm32_tiny_vsnprintf.c **** 
  505:Utilities/misc/stm32_tiny_vsnprintf.c ****   for (str = buf; *fmt || ((str - buf) >= size-1); fmt++)
  458              		.loc 1 505 12 view .LVU145
-ARM GAS  /tmp/ccdWolD9.s 			page 19
+ARM GAS  /tmp/ccXaDbuW.s 			page 19
 
 
  459 0012 0446     		mov	r4, r0
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  509:Utilities/misc/stm32_tiny_vsnprintf.c ****     {
  496              		.loc 1 509 8 is_stmt 0 discriminator 1 view .LVU159
  497 003c 252A     		cmp	r2, #37
-ARM GAS  /tmp/ccdWolD9.s 			page 20
+ARM GAS  /tmp/ccXaDbuW.s 			page 20
 
 
  498 003e EAD1     		bne	.L72
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  523              		.loc 1 538 17 view .LVU171
  524 0056 4FF0FF35 		mov	r5, #-1
  525              	.LVL66:
-ARM GAS  /tmp/ccdWolD9.s 			page 21
+ARM GAS  /tmp/ccXaDbuW.s 			page 21
 
 
  526              	.L43:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  590:Utilities/misc/stm32_tiny_vsnprintf.c ****     switch (*fmt)
  530              		.loc 1 590 5 view .LVU175
  531              		.loc 1 590 13 is_stmt 0 view .LVU176
-ARM GAS  /tmp/ccdWolD9.s 			page 22
+ARM GAS  /tmp/ccXaDbuW.s 			page 22
 
 
  532 005a 059B     		ldr	r3, [sp, #20]
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  583 0092 05A8     		add	r0, sp, #20
  584 0094 FFF7FEFF 		bl	ee_skip_atoi
  585              	.LVL69:
-ARM GAS  /tmp/ccdWolD9.s 			page 23
+ARM GAS  /tmp/ccXaDbuW.s 			page 23
 
 
  586 0098 0546     		mov	r5, r0
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  623              		.loc 1 606 9 view .LVU192
  624              		.loc 1 606 11 is_stmt 0 view .LVU193
  625 00ba 049B     		ldr	r3, [sp, #16]
-ARM GAS  /tmp/ccdWolD9.s 			page 24
+ARM GAS  /tmp/ccXaDbuW.s 			page 24
 
 
  626 00bc 1A1D     		adds	r2, r3, #4
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  670              	.L57:
  671              		.loc 1 615 35 is_stmt 1 discriminator 3 view .LVU208
  672              		.loc 1 615 46 is_stmt 0 discriminator 3 view .LVU209
-ARM GAS  /tmp/ccdWolD9.s 			page 25
+ARM GAS  /tmp/ccXaDbuW.s 			page 25
 
 
  673 00ea 4346     		mov	r3, r8
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  647:Utilities/misc/stm32_tiny_vsnprintf.c ****         break;
  648:Utilities/misc/stm32_tiny_vsnprintf.c **** #endif
  649:Utilities/misc/stm32_tiny_vsnprintf.c **** 
-ARM GAS  /tmp/ccdWolD9.s 			page 26
+ARM GAS  /tmp/ccXaDbuW.s 			page 26
 
 
  650:Utilities/misc/stm32_tiny_vsnprintf.c ****       case 'X':
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  713 010e 0491     		str	r1, [sp, #16]
  714 0110 1268     		ldr	r2, [r2]
  715              	.LVL93:
-ARM GAS  /tmp/ccdWolD9.s 			page 27
+ARM GAS  /tmp/ccXaDbuW.s 			page 27
 
 
  716              	.L62:
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  758 0144 0FDD     		ble	.L70
  674:Utilities/misc/stm32_tiny_vsnprintf.c ****         if (*fmt)
  759              		.loc 1 674 39 discriminator 1 view .LVU238
-ARM GAS  /tmp/ccdWolD9.s 			page 28
+ARM GAS  /tmp/ccXaDbuW.s 			page 28
 
 
  675:Utilities/misc/stm32_tiny_vsnprintf.c ****           *str++ = *fmt;
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  801 0172 CEE7     		b	.L62
  802              	.LVL103:
  803              	.L39:
-ARM GAS  /tmp/ccdWolD9.s 			page 29
+ARM GAS  /tmp/ccXaDbuW.s 			page 29
 
 
  691:Utilities/misc/stm32_tiny_vsnprintf.c ****   }
@@ -1724,24 +1724,24 @@ ARM GAS  /tmp/ccdWolD9.s 			page 1
  838              		.file 2 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/li
  839              		.file 3 "<built-in>"
  840              		.file 4 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
-ARM GAS  /tmp/ccdWolD9.s 			page 30
+ARM GAS  /tmp/ccXaDbuW.s 			page 30
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_tiny_vsnprintf.c
-     /tmp/ccdWolD9.s:16     .text.ee_skip_atoi:0000000000000000 $t
-     /tmp/ccdWolD9.s:23     .text.ee_skip_atoi:0000000000000000 ee_skip_atoi
-     /tmp/ccdWolD9.s:75     .rodata.ee_number.str1.4:0000000000000000 $d
-     /tmp/ccdWolD9.s:82     .text.ee_number:0000000000000000 $t
-     /tmp/ccdWolD9.s:88     .text.ee_number:0000000000000000 ee_number
-     /tmp/ccdWolD9.s:403    .text.ee_number:000000000000010c $d
-     /tmp/ccdWolD9.s:409    .rodata.tiny_vsnprintf_like.str1.4:0000000000000000 $d
-     /tmp/ccdWolD9.s:413    .text.tiny_vsnprintf_like:0000000000000000 $t
-     /tmp/ccdWolD9.s:420    .text.tiny_vsnprintf_like:0000000000000000 tiny_vsnprintf_like
-     /tmp/ccdWolD9.s:540    .text.tiny_vsnprintf_like:000000000000006a $d
-     /tmp/ccdWolD9.s:832    .text.tiny_vsnprintf_like:0000000000000184 $d
-     /tmp/ccdWolD9.s:574    .text.tiny_vsnprintf_like:000000000000008b $d
-     /tmp/ccdWolD9.s:574    .text.tiny_vsnprintf_like:000000000000008c $t
+     /tmp/ccXaDbuW.s:16     .text.ee_skip_atoi:0000000000000000 $t
+     /tmp/ccXaDbuW.s:23     .text.ee_skip_atoi:0000000000000000 ee_skip_atoi
+     /tmp/ccXaDbuW.s:75     .rodata.ee_number.str1.4:0000000000000000 $d
+     /tmp/ccXaDbuW.s:82     .text.ee_number:0000000000000000 $t
+     /tmp/ccXaDbuW.s:88     .text.ee_number:0000000000000000 ee_number
+     /tmp/ccXaDbuW.s:403    .text.ee_number:000000000000010c $d
+     /tmp/ccXaDbuW.s:409    .rodata.tiny_vsnprintf_like.str1.4:0000000000000000 $d
+     /tmp/ccXaDbuW.s:413    .text.tiny_vsnprintf_like:0000000000000000 $t
+     /tmp/ccXaDbuW.s:420    .text.tiny_vsnprintf_like:0000000000000000 tiny_vsnprintf_like
+     /tmp/ccXaDbuW.s:540    .text.tiny_vsnprintf_like:000000000000006a $d
+     /tmp/ccXaDbuW.s:832    .text.tiny_vsnprintf_like:0000000000000184 $d
+     /tmp/ccXaDbuW.s:574    .text.tiny_vsnprintf_like:000000000000008b $d
+     /tmp/ccXaDbuW.s:574    .text.tiny_vsnprintf_like:000000000000008c $t
 
 UNDEFINED SYMBOLS
 strlen

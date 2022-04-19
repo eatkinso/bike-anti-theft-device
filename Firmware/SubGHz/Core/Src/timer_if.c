@@ -23,7 +23,7 @@
 #include "timer_if.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "timer.h"
 /* USER CODE END Includes */
 
 /* External variables ---------------------------------------------------------*/

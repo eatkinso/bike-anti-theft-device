@@ -25,6 +25,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
+#include "timer.h"
 /* Exported types ------------------------------------------------------------*/
 
 /*reserved for SubGHz_Phy internal MW communication*/

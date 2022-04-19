@@ -1277,7 +1277,7 @@ static void RadioSend( uint8_t *buffer, uint8_t size )
     DBG_GPIO_RADIO_TX( SET );
 
     /* Set RF switch */
-    SUBGRF_SetSwitch( SubgRf.AntSwitchPaSelect, RFSWITCH_TX );
+   // SUBGRF_SetSwitch( SubgRf.AntSwitchPaSelect, RFSWITCH_TX );
     /* WORKAROUND - Modulation Quality with 500 kHz LoRaTM Bandwidth*/
     /* RegTxModulation = @address 0x0889 */
     if( ( SubgRf.Modem == MODEM_LORA ) && ( SubgRf.ModulationParams.Params.LoRa.Bandwidth == LORA_BW_500 ) )
@@ -1412,7 +1412,7 @@ static void RadioRx( uint32_t timeout )
     /* Set DBG pin */
     DBG_GPIO_RADIO_RX( SET );
     /* RF switch configuration */
-    SUBGRF_SetSwitch( SubgRf.AntSwitchPaSelect, RFSWITCH_RX );
+  //  SUBGRF_SetSwitch( SubgRf.AntSwitchPaSelect, RFSWITCH_RX );
     /* ST_WORKAROUND_END */
 
     if( SubgRf.RxContinuous == true )
@@ -1794,7 +1794,7 @@ static void RadioTxPrbs( void )
 static void RadioTxCw( int8_t power )
 {
     uint8_t paselect = SUBGRF_SetRfTxPower( power );
-    SUBGRF_SetSwitch( paselect, RFSWITCH_TX );
+ //   SUBGRF_SetSwitch( paselect, RFSWITCH_TX );
     SUBGRF_SetTxContinuousWave( );
 }
 

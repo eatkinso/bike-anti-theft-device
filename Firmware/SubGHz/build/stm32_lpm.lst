@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccBIafDX.s 			page 1
+ARM GAS  /tmp/ccdcoxmG.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
   30:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   * @{
   31:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   */
   32:Utilities/lpm/tiny_lpm/stm32_lpm.c **** 
-ARM GAS  /tmp/ccBIafDX.s 			page 2
+ARM GAS  /tmp/ccdcoxmG.s 			page 2
 
 
   33:Utilities/lpm/tiny_lpm/stm32_lpm.c **** /**
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
   87:Utilities/lpm/tiny_lpm/stm32_lpm.c **** /**
   88:Utilities/lpm/tiny_lpm/stm32_lpm.c ****  * @brief value used to reset the LPM mode
   89:Utilities/lpm/tiny_lpm/stm32_lpm.c ****  */
-ARM GAS  /tmp/ccBIafDX.s 			page 3
+ARM GAS  /tmp/ccdcoxmG.s 			page 3
 
 
   90:Utilities/lpm/tiny_lpm/stm32_lpm.c **** #define UTIL_LPM_NO_BIT_SET   (0UL)
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
   44              	.L3:
   45              		.align	2
   46              	.L2:
-ARM GAS  /tmp/ccBIafDX.s 			page 4
+ARM GAS  /tmp/ccdcoxmG.s 			page 4
 
 
   47 000c 00000000 		.word	.LANCHOR0
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
    6:Drivers/CMSIS/Include/cmsis_gcc.h ****  ******************************************************************************/
    7:Drivers/CMSIS/Include/cmsis_gcc.h **** /*
    8:Drivers/CMSIS/Include/cmsis_gcc.h ****  * Copyright (c) 2009-2019 Arm Limited. All rights reserved.
-ARM GAS  /tmp/ccBIafDX.s 			page 5
+ARM GAS  /tmp/ccdcoxmG.s 			page 5
 
 
    9:Drivers/CMSIS/Include/cmsis_gcc.h ****  *
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
   63:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   64:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED_STRUCT
   65:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __PACKED_STRUCT                        struct __attribute__((packed, aligned(1)))
-ARM GAS  /tmp/ccBIafDX.s 			page 6
+ARM GAS  /tmp/ccdcoxmG.s 			page 6
 
 
   66:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  120:Drivers/CMSIS/Include/cmsis_gcc.h **** /* #########################  Startup and Lowlevel Init  ######################## */
  121:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  122:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __PROGRAM_START
-ARM GAS  /tmp/ccBIafDX.s 			page 7
+ARM GAS  /tmp/ccdcoxmG.s 			page 7
 
 
  123:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  177:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef __VECTOR_TABLE
  178:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __VECTOR_TABLE            __Vectors
  179:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/ccBIafDX.s 			page 8
+ARM GAS  /tmp/ccdcoxmG.s 			page 8
 
 
  180:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  234:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  235:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  236:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccBIafDX.s 			page 9
+ARM GAS  /tmp/ccdcoxmG.s 			page 9
 
 
  237:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, control_ns" : "=r" (result) );
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  291:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  292:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  293:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  /tmp/ccBIafDX.s 			page 10
+ARM GAS  /tmp/ccdcoxmG.s 			page 10
 
 
  294:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  348:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  349:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  350:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
-ARM GAS  /tmp/ccBIafDX.s 			page 11
+ARM GAS  /tmp/ccdcoxmG.s 			page 11
 
 
  351:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  405:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  406:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Main Stack Pointer (non-secure)
  407:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Main Stack Pointer (MSP) when in secure state.
-ARM GAS  /tmp/ccBIafDX.s 			page 12
+ARM GAS  /tmp/ccdcoxmG.s 			page 12
 
 
  408:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfMainStack  Main Stack Pointer value to set
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  100              	.LVL1:
  454:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  101              		.loc 2 454 3 view .LVU14
-ARM GAS  /tmp/ccBIafDX.s 			page 13
+ARM GAS  /tmp/ccdcoxmG.s 			page 13
 
 
  102              		.loc 2 454 3 is_stmt 0 view .LVU15
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  152:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   }
  153:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   
  154:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   UTIL_LPM_EXIT_CRITICAL_SECTION( );
-ARM GAS  /tmp/ccBIafDX.s 			page 14
+ARM GAS  /tmp/ccdcoxmG.s 			page 14
 
 
  137              		.loc 1 154 3 view .LVU25
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  161              	.LVL7:
  145:Utilities/lpm/tiny_lpm/stm32_lpm.c ****       break;
  162              		.loc 1 145 23 view .LVU32
-ARM GAS  /tmp/ccBIafDX.s 			page 15
+ARM GAS  /tmp/ccdcoxmG.s 			page 15
 
 
  163 001c 0A68     		ldr	r2, [r1]
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  208              		.syntax unified
  209              	.LBE33:
  210              	.LBE32:
-ARM GAS  /tmp/ccBIafDX.s 			page 16
+ARM GAS  /tmp/ccdcoxmG.s 			page 16
 
 
  211              		.loc 1 159 3 is_stmt 1 view .LVU42
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  243              	.LBB36:
  244              	.LBI36:
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /tmp/ccBIafDX.s 			page 17
+ARM GAS  /tmp/ccdcoxmG.s 			page 17
 
 
  245              		.loc 2 479 27 view .LVU52
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  292              		.cfi_startproc
  293              		@ args = 0, pretend = 0, frame = 0
  294              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/ccBIafDX.s 			page 18
+ARM GAS  /tmp/ccdcoxmG.s 			page 18
 
 
  295              		@ link register save eliminated.
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  191:Utilities/lpm/tiny_lpm/stm32_lpm.c ****      * At least one user disallows Stop Mode
  192:Utilities/lpm/tiny_lpm/stm32_lpm.c ****      */
  193:Utilities/lpm/tiny_lpm/stm32_lpm.c ****     mode_selected = UTIL_LPM_SLEEPMODE;
-ARM GAS  /tmp/ccBIafDX.s 			page 19
+ARM GAS  /tmp/ccdcoxmG.s 			page 19
 
 
  194:Utilities/lpm/tiny_lpm/stm32_lpm.c ****   }
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  367 001c 7047     		bx	lr
  368              	.LVL21:
  369              	.L18:
-ARM GAS  /tmp/ccBIafDX.s 			page 20
+ARM GAS  /tmp/ccdcoxmG.s 			page 20
 
 
  206:Utilities/lpm/tiny_lpm/stm32_lpm.c ****     }
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  416              		.thumb
  417              		.syntax unified
  418              	.LBE45:
-ARM GAS  /tmp/ccBIafDX.s 			page 21
+ARM GAS  /tmp/ccdcoxmG.s 			page 21
 
 
  419              	.LBE44:
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  235:Utilities/lpm/tiny_lpm/stm32_lpm.c ****        */
  236:Utilities/lpm/tiny_lpm/stm32_lpm.c ****         UTIL_PowerDriver.EnterStopMode( );
  237:Utilities/lpm/tiny_lpm/stm32_lpm.c ****         UTIL_PowerDriver.ExitStopMode( );
-ARM GAS  /tmp/ccBIafDX.s 			page 22
+ARM GAS  /tmp/ccdcoxmG.s 			page 22
 
 
  238:Utilities/lpm/tiny_lpm/stm32_lpm.c ****     }
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  487              		.loc 1 237 9 is_stmt 1 view .LVU117
  237:Utilities/lpm/tiny_lpm/stm32_lpm.c ****     }
  488              		.loc 1 237 25 is_stmt 0 view .LVU118
-ARM GAS  /tmp/ccBIafDX.s 			page 23
+ARM GAS  /tmp/ccdcoxmG.s 			page 23
 
 
  489 002a EB68     		ldr	r3, [r5, #12]
@@ -1371,32 +1371,32 @@ ARM GAS  /tmp/ccBIafDX.s 			page 1
  534              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
  535              		.file 4 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
  536              		.file 5 "Utilities/lpm/tiny_lpm/stm32_lpm.h"
-ARM GAS  /tmp/ccBIafDX.s 			page 24
+ARM GAS  /tmp/ccdcoxmG.s 			page 24
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_lpm.c
-     /tmp/ccBIafDX.s:16     .text.UTIL_LPM_Init:0000000000000000 $t
-     /tmp/ccBIafDX.s:24     .text.UTIL_LPM_Init:0000000000000000 UTIL_LPM_Init
-     /tmp/ccBIafDX.s:47     .text.UTIL_LPM_Init:000000000000000c $d
-     /tmp/ccBIafDX.s:53     .text.UTIL_LPM_DeInit:0000000000000000 $t
-     /tmp/ccBIafDX.s:60     .text.UTIL_LPM_DeInit:0000000000000000 UTIL_LPM_DeInit
-     /tmp/ccBIafDX.s:73     .text.UTIL_LPM_SetStopMode:0000000000000000 $t
-     /tmp/ccBIafDX.s:80     .text.UTIL_LPM_SetStopMode:0000000000000000 UTIL_LPM_SetStopMode
-     /tmp/ccBIafDX.s:173    .text.UTIL_LPM_SetStopMode:0000000000000028 $d
-     /tmp/ccBIafDX.s:178    .text.UTIL_LPM_SetOffMode:0000000000000000 $t
-     /tmp/ccBIafDX.s:185    .text.UTIL_LPM_SetOffMode:0000000000000000 UTIL_LPM_SetOffMode
-     /tmp/ccBIafDX.s:277    .text.UTIL_LPM_SetOffMode:0000000000000028 $d
-     /tmp/ccBIafDX.s:282    .text.UTIL_LPM_GetMode:0000000000000000 $t
-     /tmp/ccBIafDX.s:289    .text.UTIL_LPM_GetMode:0000000000000000 UTIL_LPM_GetMode
-     /tmp/ccBIafDX.s:376    .text.UTIL_LPM_GetMode:0000000000000024 $d
-     /tmp/ccBIafDX.s:382    .text.UTIL_LPM_EnterLowPower:0000000000000000 $t
-     /tmp/ccBIafDX.s:389    .text.UTIL_LPM_EnterLowPower:0000000000000000 UTIL_LPM_EnterLowPower
-     /tmp/ccBIafDX.s:512    .text.UTIL_LPM_EnterLowPower:000000000000003c $d
-     /tmp/ccBIafDX.s:519    .bss.OffModeDisable:0000000000000000 $d
-     /tmp/ccBIafDX.s:523    .bss.OffModeDisable:0000000000000000 OffModeDisable
-     /tmp/ccBIafDX.s:526    .bss.StopModeDisable:0000000000000000 $d
-     /tmp/ccBIafDX.s:530    .bss.StopModeDisable:0000000000000000 StopModeDisable
+     /tmp/ccdcoxmG.s:16     .text.UTIL_LPM_Init:0000000000000000 $t
+     /tmp/ccdcoxmG.s:24     .text.UTIL_LPM_Init:0000000000000000 UTIL_LPM_Init
+     /tmp/ccdcoxmG.s:47     .text.UTIL_LPM_Init:000000000000000c $d
+     /tmp/ccdcoxmG.s:53     .text.UTIL_LPM_DeInit:0000000000000000 $t
+     /tmp/ccdcoxmG.s:60     .text.UTIL_LPM_DeInit:0000000000000000 UTIL_LPM_DeInit
+     /tmp/ccdcoxmG.s:73     .text.UTIL_LPM_SetStopMode:0000000000000000 $t
+     /tmp/ccdcoxmG.s:80     .text.UTIL_LPM_SetStopMode:0000000000000000 UTIL_LPM_SetStopMode
+     /tmp/ccdcoxmG.s:173    .text.UTIL_LPM_SetStopMode:0000000000000028 $d
+     /tmp/ccdcoxmG.s:178    .text.UTIL_LPM_SetOffMode:0000000000000000 $t
+     /tmp/ccdcoxmG.s:185    .text.UTIL_LPM_SetOffMode:0000000000000000 UTIL_LPM_SetOffMode
+     /tmp/ccdcoxmG.s:277    .text.UTIL_LPM_SetOffMode:0000000000000028 $d
+     /tmp/ccdcoxmG.s:282    .text.UTIL_LPM_GetMode:0000000000000000 $t
+     /tmp/ccdcoxmG.s:289    .text.UTIL_LPM_GetMode:0000000000000000 UTIL_LPM_GetMode
+     /tmp/ccdcoxmG.s:376    .text.UTIL_LPM_GetMode:0000000000000024 $d
+     /tmp/ccdcoxmG.s:382    .text.UTIL_LPM_EnterLowPower:0000000000000000 $t
+     /tmp/ccdcoxmG.s:389    .text.UTIL_LPM_EnterLowPower:0000000000000000 UTIL_LPM_EnterLowPower
+     /tmp/ccdcoxmG.s:512    .text.UTIL_LPM_EnterLowPower:000000000000003c $d
+     /tmp/ccdcoxmG.s:519    .bss.OffModeDisable:0000000000000000 $d
+     /tmp/ccdcoxmG.s:523    .bss.OffModeDisable:0000000000000000 OffModeDisable
+     /tmp/ccdcoxmG.s:526    .bss.StopModeDisable:0000000000000000 $d
+     /tmp/ccdcoxmG.s:530    .bss.StopModeDisable:0000000000000000 StopModeDisable
 
 UNDEFINED SYMBOLS
 UTIL_PowerDriver

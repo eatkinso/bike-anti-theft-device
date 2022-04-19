@@ -31,12 +31,14 @@ build/radio_board_if.o: SubGHz_Phy/Target/radio_board_if.c \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rcc_ex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
+ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rtc.h \
+ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rtc_ex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h Core/Inc/main.h \
- Core/Inc/bt_radio.h Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_gpio.h
+ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_gpio.h
 SubGHz_Phy/Target/radio_board_if.h:
 Core/Inc/platform.h:
 Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h:
@@ -72,11 +74,12 @@ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_rcc.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rcc_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:
+Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rtc.h:
+Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rtc_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
 Core/Inc/main.h:
-Core/Inc/bt_radio.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_gpio.h:

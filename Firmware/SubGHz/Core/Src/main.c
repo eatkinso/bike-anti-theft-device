@@ -19,14 +19,18 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
+#include "rtc.h"
 #include "subghz.h"
 #include "app_subghz_phy.h"
 #include "usart.h"
 #include "gpio.h"
-#include "bt_radio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "bt_radio.h"
+#include "radio.h"
+#include "timer.h"
+#include "radio_driver.h"
 
 /* USER CODE END Includes */
 
@@ -93,8 +97,31 @@ int main(void)
   MX_USART1_UART_Init();
   MX_ADC_Init();
   MX_SubGHz_Phy_Init();
+  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
-  btLoRaSetup();
+  // btLoRaSetup();
+  uint8_t dummydata[180] = {
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+    0, 1, 2, 3, 4, 5, 6, 7, 8, 9,};
+  
+  volatile RadioStatus_t radio_state;
+  volatile RadioError_t radio_errors;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -105,6 +132,14 @@ int main(void)
     MX_SubGHz_Phy_Process();
 
     /* USER CODE BEGIN 3 */
+  //  HAL_GPIO_WritePin(RFSW_VC1_GPIO_Port, RFSW_VC1_Pin, GPIO_PIN_RESET);
+  //  HAL_GPIO_WritePin(RFSW_VC2_GPIO_Port, RFSW_VC2_Pin, GPIO_PIN_SET);
+    SUBGRF_SetRfFrequency(904600000);
+    SUBGRF_SetRfTxPower(17);
+    SUBGRF_SetTxContinuousWave();
+    radio_state = SUBGRF_GetStatus();
+    radio_errors = SUBGRF_GetDeviceErrors();
+
   }
   /* USER CODE END 3 */
 }
@@ -124,10 +159,12 @@ void SystemClock_Config(void)
 
   /** Initializes the CPU, AHB and APB busses clocks
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSI|RCC_OSCILLATORTYPE_MSI;
   RCC_OscInitStruct.MSIState = RCC_MSI_ON;
   RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_11;
+  RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_10;
+  RCC_OscInitStruct.LSIDiv = RCC_LSI_DIV1;
+  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -145,10 +182,11 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.AHBCLK3Divider = RCC_SYSCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }
+  HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_MSI, RCC_MCODIV_1);
 }
 
 /* USER CODE BEGIN 4 */

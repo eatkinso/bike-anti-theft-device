@@ -63,13 +63,13 @@ extern "C" {
 /* USER CODE END Exported Parameters */
 /* Indicates the type of switch between the ones proposed by CONFIG Constants
  */
-#define RBI_CONF_RFO                        RBI_CONF_RFO_LP_HP
+#define RBI_CONF_RFO                        RBI_CONF_RFO_HP
 
 /* Indicates whether or not TCXO is supported by the board
  * 0: TCXO not supported
  * 1: TCXO supported
  */
-#define IS_TCXO_SUPPORTED                   0U
+#define IS_TCXO_SUPPORTED                   1U
 
 /* Indicates whether or not DCDC is supported by the board
  * 0: DCDC not supported

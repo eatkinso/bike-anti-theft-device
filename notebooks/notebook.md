@@ -509,3 +509,128 @@ The way you're "supposed" to interact with the radio is through callbacks -- the
 Ok, read more docs, looks like you can just access the SUBGHZ rx buffer with a read operation. New plan: in the RX callback, read the databuffer.
 
 ![](rxdatabuffer.png)
+
+
+# 4/16/2022 Elizabeth - Attempting TX/RX 
+
+- https://www.3glteinfo.com/lora/lorawan-frequency-bands/
+
+- https://www.rfwireless-world.com/Tutorials/LoRa-frequency-bands.html
+
+
+LoRa channel info ^ 
+
+Added channel select into `btLoRaSetup()` (904.6 MHz = 904 600 000)
+
+ugh. keep getting BMP (debugger) errors. Tried depopulating C8 as a hail mary... 0.1u cap might be too much for a short reset pulse. Maybe. 
+
+Depopulating C8 did not help. Intermittent BMP errors keep happening but occasionally go away, so I'm ignoring that for now I guess. 
+
+Attempted TX (`Radio.TxCw(len)`)..... no output on spectrum analyzer. Attempting to debug.... 
+
+rudimentary check with scope (literally probed the microstrip trace) shows *something* before the RF switch, nothing afterwards... another hail mary but tried depopulating the RF switch?
+
+Ok, pretty sure that was unnecessary and I'm just an idiot, I forgot to include the GPIO set/reset to set the rf switch properly. Oh well. hopefully the bodge is relatively fine since it's 900 MHz and the bodge is like 2 mm. 
+
+found the culprit, or at least part of it: 
+
+![](bad_sma.png)
+
+
+Which means I just spent 5 hours debugging a broken SMA connector and probably fried the STM32 because it was transmitting 17 dBm into a hard open. Great. 
+
+
+# 4/17/22 Elizabeth - Still More Radio Debugging
+
+Trying again to see if I can transmit with the spectrum analyzer. 
+
+First: grabbed STLINK debugger from 395 to try and do a full hard reset to solve the swdp_scan/vFlashErase errors. This unfortunately involved booting into windows and updating the firmware on the stlink to support STM32WLs, but it did seem to solve the issue. 
+
+omg... I forgot to power the PA LMFAO. 
+
+![](rfpajumper.png)
+
+JP1 supplies power to the RFO_HP pin (high-power PA), I left them as jumpers in case i wanted to use the SMPS but never soldered JP1. Time to try that and see if powering the PA helps it transmit. 
+
+Ok, still doesn't work. Looking at the datasheet to check if there could be a clock issue. 
+
+Ok, seems like the SubGHz radio actually *always* requires the HSE, regardless of whether or not it is initialized in firmware. 
+
+
+![](hse32.png)
+
+Goal: somehow get a 32 MHz clock onto the OSC_IN pin because the radio apparently autonomously turns on the HSE and presumably doesn't work if there is no HSE. 
+
+![](hse_config.png)
+
+Attempting to bludgeon the STM32 into using it's own internal clock -- route MSI (medium-speed internal) onto Master clock output (MCO) pin, wire that to the OSC_IN external source. 
+
+![](sussyclock.jpeg)
+
+First try had weird clock with DC offset... seems the GPIO must be explicitly set to "fast" for the output here. It does look like 32 MHz tho which is promising. Setting that, regenerating and flashing again. 
+
+![](goodclock.jpeg)
+
+Success -- relatively normal-looking clock waveform. It does go up to about 3.8V.... presumably an inductive spike somewhere (probably my badly routed long trace). absolute max voltage is 3.9/-0.3 on all pins so hopefully it's fine. Trying to transmit again.
+
+No dice. Yay. Trying to use the low-level driver now. Attempting to just set to CW (RFSW select commented out bc I'm using the bodged board with no RF switch): 
+
+    while (1)
+      {
+        /* USER CODE END WHILE */
+        MX_SubGHz_Phy_Process();
+
+        /* USER CODE BEGIN 3 */
+      //  HAL_GPIO_WritePin(RFSW_VC1_GPIO_Port, RFSW_VC1_Pin, GPIO_PIN_RESET);
+      //  HAL_GPIO_WritePin(RFSW_VC2_GPIO_Port, RFSW_VC2_Pin, GPIO_PIN_SET);
+        SUBGRF_SetRfFrequency(904600000);
+        SUBGRF_SetRfTxPower(17);
+        SUBGRF_SetTxContinuousWave();
+        radio_state = SUBGRF_GetStatus();
+        radio_errors = SUBGRF_GetDeviceErrors();
+
+      }
+      /* USER CODE END 3 */
+    }
+
+  And also hopefully get any errors (struct below): 
+
+  ![](errort.png)
+
+
+GDB results below (radio_state and radio_error were queried right after attempting to run `SUBGRF_SetTxContinuousWave()` as shown above):
+
+
+![](gdb_error_val.png)
+
+
+![](statusbyte.png)
+
+Ok, honestly this is not surprising, but at least it's a solid answer -- radio is in HSE32 standby mode, command execution failure. Presumably the failure was because the PLL cannot lock. Ordered a couple 32 MHz crystals (and appropriate load caps) on Digikey to try and see if I can solder them onto the pads and fix the issue. 
+
+# 4/18/2022 Elizabeth -- Back to UART
+
+The radio issue is pretty much an unsolvable problem at this point ... we will wait for the oscillators to come in and then try again. In the mean time, decided to take another look at the UART peripherals (GPS and RFID). RFID antenna also came in today, so hopefully I can use that. 
+
+New approach -- try and get GPS uart working on the dev board. Hopefully this will prevent issues with the debugger from derailing my progress for hours again. 
+
+## Test 1 -- Nucleo USART1
+
+- USART1_TX: PB6n
+- USART1_RX: PB7
+
++5V/GND connected to +5V/GND on the board. Setup below: 
+
+![](uart_test1.jpeg)
+
+No dice... unsurprising. 
+
+Sanity checking with a loopback test again. Setup below (both LPUART1 and USART1, since both the RFID and the GPS will need it eventually): 
+
+![](loopback2.jpeg)
+
+Ok, I just forgot to enable the interupt, but after doing that it was fine. Now, trying with the GPS module again... no dice. 
+
+Next step: seeing if a minor frequency error could be causing the problem. 
+
+Using the logic analyzer to get the exact pulse length: almost exactly 104 uS, which corresponds to a frequency of 9615 baud. 

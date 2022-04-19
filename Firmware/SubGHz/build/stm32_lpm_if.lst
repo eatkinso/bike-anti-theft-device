@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccbSqjLa.s 			page 1
+ARM GAS  /tmp/cc9kPpHQ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -24,7 +24,7 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
   21              		.thumb_func
   22              		.fpu softvfp
   24              	PWR_EnterOffMode:
-  25              	.LFB0:
+  25              	.LFB1093:
   26              		.file 1 "Core/Src/stm32_lpm_if.c"
    1:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN Header */
    2:Core/Src/stm32_lpm_if.c **** /**
@@ -51,14 +51,14 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
   23:Core/Src/stm32_lpm_if.c **** #include "stm32_lpm_if.h"
   24:Core/Src/stm32_lpm_if.c **** 
   25:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN Includes */
-  26:Core/Src/stm32_lpm_if.c **** 
+  26:Core/Src/stm32_lpm_if.c **** #include "usart.h"
   27:Core/Src/stm32_lpm_if.c **** /* USER CODE END Includes */
   28:Core/Src/stm32_lpm_if.c **** 
   29:Core/Src/stm32_lpm_if.c **** /* External variables ---------------------------------------------------------*/
   30:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN EV */
   31:Core/Src/stm32_lpm_if.c **** 
   32:Core/Src/stm32_lpm_if.c **** /* USER CODE END EV */
-ARM GAS  /tmp/ccbSqjLa.s 			page 2
+ARM GAS  /tmp/cc9kPpHQ.s 			page 2
 
 
   33:Core/Src/stm32_lpm_if.c **** 
@@ -118,10 +118,10 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
   32              		.loc 1 81 1 view .LVU1
   33 0000 7047     		bx	lr
   34              		.cfi_endproc
-ARM GAS  /tmp/ccbSqjLa.s 			page 3
+ARM GAS  /tmp/cc9kPpHQ.s 			page 3
 
 
-  35              	.LFE0:
+  35              	.LFE1093:
   37              		.section	.text.PWR_ExitOffMode,"ax",%progbits
   38              		.align	1
   39              		.global	PWR_ExitOffMode
@@ -130,7 +130,7 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
   42              		.thumb_func
   43              		.fpu softvfp
   45              	PWR_ExitOffMode:
-  46              	.LFB1:
+  46              	.LFB1094:
   82:Core/Src/stm32_lpm_if.c **** 
   83:Core/Src/stm32_lpm_if.c **** void PWR_ExitOffMode(void)
   84:Core/Src/stm32_lpm_if.c **** {
@@ -146,7 +146,7 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
   52              		.loc 1 88 1 view .LVU3
   53 0000 7047     		bx	lr
   54              		.cfi_endproc
-  55              	.LFE1:
+  55              	.LFE1094:
   57              		.section	.text.PWR_EnterStopMode,"ax",%progbits
   58              		.align	1
   59              		.global	PWR_EnterStopMode
@@ -155,7 +155,7 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
   62              		.thumb_func
   63              		.fpu softvfp
   65              	PWR_EnterStopMode:
-  66              	.LFB2:
+  66              	.LFB1095:
   89:Core/Src/stm32_lpm_if.c **** 
   90:Core/Src/stm32_lpm_if.c **** void PWR_EnterStopMode(void)
   91:Core/Src/stm32_lpm_if.c **** {
@@ -171,19 +171,19 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
   72              		.loc 1 95 1 view .LVU5
   73 0000 7047     		bx	lr
   74              		.cfi_endproc
-  75              	.LFE2:
+  75              	.LFE1095:
   77              		.section	.text.PWR_ExitStopMode,"ax",%progbits
   78              		.align	1
   79              		.global	PWR_ExitStopMode
   80              		.syntax unified
   81              		.thumb
   82              		.thumb_func
-ARM GAS  /tmp/ccbSqjLa.s 			page 4
+ARM GAS  /tmp/cc9kPpHQ.s 			page 4
 
 
   83              		.fpu softvfp
   85              	PWR_ExitStopMode:
-  86              	.LFB3:
+  86              	.LFB1096:
   96:Core/Src/stm32_lpm_if.c **** 
   97:Core/Src/stm32_lpm_if.c **** void PWR_ExitStopMode(void)
   98:Core/Src/stm32_lpm_if.c **** {
@@ -199,7 +199,7 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
   92              		.loc 1 102 1 view .LVU7
   93 0000 7047     		bx	lr
   94              		.cfi_endproc
-  95              	.LFE3:
+  95              	.LFE1096:
   97              		.section	.text.PWR_EnterSleepMode,"ax",%progbits
   98              		.align	1
   99              		.global	PWR_EnterSleepMode
@@ -208,7 +208,7 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
  102              		.thumb_func
  103              		.fpu softvfp
  105              	PWR_EnterSleepMode:
- 106              	.LFB4:
+ 106              	.LFB1097:
  103:Core/Src/stm32_lpm_if.c **** 
  104:Core/Src/stm32_lpm_if.c **** void PWR_EnterSleepMode(void)
  105:Core/Src/stm32_lpm_if.c **** {
@@ -224,7 +224,7 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
  112              		.loc 1 109 1 view .LVU9
  113 0000 7047     		bx	lr
  114              		.cfi_endproc
- 115              	.LFE4:
+ 115              	.LFE1097:
  117              		.section	.text.PWR_ExitSleepMode,"ax",%progbits
  118              		.align	1
  119              		.global	PWR_ExitSleepMode
@@ -233,12 +233,12 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
  122              		.thumb_func
  123              		.fpu softvfp
  125              	PWR_ExitSleepMode:
- 126              	.LFB5:
+ 126              	.LFB1098:
  110:Core/Src/stm32_lpm_if.c **** 
  111:Core/Src/stm32_lpm_if.c **** void PWR_ExitSleepMode(void)
  112:Core/Src/stm32_lpm_if.c **** {
  127              		.loc 1 112 1 view -0
-ARM GAS  /tmp/ccbSqjLa.s 			page 5
+ARM GAS  /tmp/cc9kPpHQ.s 			page 5
 
 
  128              		.cfi_startproc
@@ -252,7 +252,7 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
  132              		.loc 1 116 1 view .LVU11
  133 0000 7047     		bx	lr
  134              		.cfi_endproc
- 135              	.LFE5:
+ 135              	.LFE1098:
  137              		.global	UTIL_PowerDriver
  138              		.section	.rodata.UTIL_PowerDriver,"a"
  139              		.align	2
@@ -265,25 +265,28 @@ ARM GAS  /tmp/ccbSqjLa.s 			page 1
  148 0014 00000000 		.word	PWR_ExitOffMode
  149              		.text
  150              	.Letext0:
- 151              		.file 2 "Utilities/lpm/tiny_lpm/stm32_lpm.h"
-ARM GAS  /tmp/ccbSqjLa.s 			page 6
+ 151              		.file 2 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 152              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
+ 153              		.file 4 "Utilities/lpm/tiny_lpm/stm32_lpm.h"
+ 154              		.file 5 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
+ARM GAS  /tmp/cc9kPpHQ.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_lpm_if.c
-     /tmp/ccbSqjLa.s:16     .text.PWR_EnterOffMode:0000000000000000 $t
-     /tmp/ccbSqjLa.s:24     .text.PWR_EnterOffMode:0000000000000000 PWR_EnterOffMode
-     /tmp/ccbSqjLa.s:38     .text.PWR_ExitOffMode:0000000000000000 $t
-     /tmp/ccbSqjLa.s:45     .text.PWR_ExitOffMode:0000000000000000 PWR_ExitOffMode
-     /tmp/ccbSqjLa.s:58     .text.PWR_EnterStopMode:0000000000000000 $t
-     /tmp/ccbSqjLa.s:65     .text.PWR_EnterStopMode:0000000000000000 PWR_EnterStopMode
-     /tmp/ccbSqjLa.s:78     .text.PWR_ExitStopMode:0000000000000000 $t
-     /tmp/ccbSqjLa.s:85     .text.PWR_ExitStopMode:0000000000000000 PWR_ExitStopMode
-     /tmp/ccbSqjLa.s:98     .text.PWR_EnterSleepMode:0000000000000000 $t
-     /tmp/ccbSqjLa.s:105    .text.PWR_EnterSleepMode:0000000000000000 PWR_EnterSleepMode
-     /tmp/ccbSqjLa.s:118    .text.PWR_ExitSleepMode:0000000000000000 $t
-     /tmp/ccbSqjLa.s:125    .text.PWR_ExitSleepMode:0000000000000000 PWR_ExitSleepMode
-     /tmp/ccbSqjLa.s:142    .rodata.UTIL_PowerDriver:0000000000000000 UTIL_PowerDriver
-     /tmp/ccbSqjLa.s:139    .rodata.UTIL_PowerDriver:0000000000000000 $d
+     /tmp/cc9kPpHQ.s:16     .text.PWR_EnterOffMode:0000000000000000 $t
+     /tmp/cc9kPpHQ.s:24     .text.PWR_EnterOffMode:0000000000000000 PWR_EnterOffMode
+     /tmp/cc9kPpHQ.s:38     .text.PWR_ExitOffMode:0000000000000000 $t
+     /tmp/cc9kPpHQ.s:45     .text.PWR_ExitOffMode:0000000000000000 PWR_ExitOffMode
+     /tmp/cc9kPpHQ.s:58     .text.PWR_EnterStopMode:0000000000000000 $t
+     /tmp/cc9kPpHQ.s:65     .text.PWR_EnterStopMode:0000000000000000 PWR_EnterStopMode
+     /tmp/cc9kPpHQ.s:78     .text.PWR_ExitStopMode:0000000000000000 $t
+     /tmp/cc9kPpHQ.s:85     .text.PWR_ExitStopMode:0000000000000000 PWR_ExitStopMode
+     /tmp/cc9kPpHQ.s:98     .text.PWR_EnterSleepMode:0000000000000000 $t
+     /tmp/cc9kPpHQ.s:105    .text.PWR_EnterSleepMode:0000000000000000 PWR_EnterSleepMode
+     /tmp/cc9kPpHQ.s:118    .text.PWR_ExitSleepMode:0000000000000000 $t
+     /tmp/cc9kPpHQ.s:125    .text.PWR_ExitSleepMode:0000000000000000 PWR_ExitSleepMode
+     /tmp/cc9kPpHQ.s:142    .rodata.UTIL_PowerDriver:0000000000000000 UTIL_PowerDriver
+     /tmp/cc9kPpHQ.s:139    .rodata.UTIL_PowerDriver:0000000000000000 $d
 
 NO UNDEFINED SYMBOLS

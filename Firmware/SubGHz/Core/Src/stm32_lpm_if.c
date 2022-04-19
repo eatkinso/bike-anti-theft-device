@@ -23,7 +23,7 @@
 #include "stm32_lpm_if.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "usart.h"
 /* USER CODE END Includes */
 
 /* External variables ---------------------------------------------------------*/

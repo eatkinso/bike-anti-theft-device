@@ -724,6 +724,51 @@ Also pyserial seems like the best choice for interfacing with python. Source [he
 
 Message in this example is from the GPS module since I tested it with that instead of the STM32. 
 
-# 4/21/2022 Late Night -- RFID Board
+# 4/21/2022 Late Night -- RFID Board [Elizabeth]
 
-Now that we have put out the USB/serial converter fire, I'm finally getting around to testing the RFID board. First kinda bad mistake was that I used an SMA connector footprint for the antenna...... I later realized that most 125kHz RFID antennas are actually just coils, so they aren't attached to any RF connector at all and instead just have footprints on the board you have to use. 
+Now that we have put out the USB/serial converter fire, I'm finally getting around to testing the RFID board. First kinda bad mistake was that I used an SMA connector footprint for the antenna...... I later realized that most 125kHz RFID antennas are actually just coils, so they aren't attached to any RF connector at all and instead just have footprints on the board you have to use. So our RFID antenna is somewhat.... bodgy, but hopefully the frequency is low enough that it's fine. 
+
+![](id3la_board.jpeg)
+
+Notably, we have also not populated the BJT, but nothing on the board is actually important except the ID-3LA for basic functionality. The filter caps are important-ish but they're already populated. RFID board schematic below for reference. 
+
+![](rfidboard.png)
+
+From the datasheet, the pinout is: 
+
+![](id3lapinout.png)
+
+So we need to connect the format selector (pin 7, JP1) to GND because we want ASCII (UART) data output. PCB pinout also shown below. 
+
+![](rfidpcbpinout.png)
+
+We originally left RST unconnected for flexibility but I'm soldering it to VCC now because we realistically have no use for it. Images below show the board after the jumper and budge wire on back were soldered. 
+
+
+![](rfidbackbodge.jpeg)
+![](rfidfrontjumper.jpeg)
+
+
+## RFID Antenna and Tuning Capacitors 
+
+So, reading the datasheet, it looks like I'll need a tuning cap for the antenna. Relevant section screenshot below: 
+
+![](tuningcap1.png)
+
+Since this antenna is 1 mH, I'm going to assume we can treat it *approximately* like the old ID-2 antenna as identified above, and use a 220pF cap across pins 1 and 4 (C3 in the schematic). The cap is only rated to 50V but hopefully it's fine. 
+
+Ok, tried the RFID board, and there's no data output. Attempting to see if the antenna setup is adequate. Relevant section below: 
+
+![](rfidtuning.png)
+
+Looks like it works!! Pic of setup below: 
+![](rfidbrdwiring.jpeg)
+![](rfid_nano_wiring.jpeg)
+
+
+Use pico com to talk over serial, command to set settings is `picocom --imap 8bithex,nrmhex -b 9600 /dev/ttyUSB0`
+
+pic below of letter code from one RFID card: 
+
+
+![](rfidcode1.png)

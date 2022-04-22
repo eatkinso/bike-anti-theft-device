@@ -34,7 +34,8 @@ Application/User/Core/main.o: \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
- ../../Core/Inc/vluart.h ../../Core/Inc/btgps.h ../../Core/Inc/main.h
+ ../../Core/Inc/btrfid.h ../../Core/Inc/vluart.h ../../Core/Inc/btgps.h \
+ ../../Core/Inc/main.h ../../Core/Inc/btrfid.h
 ../../Core/Inc/main.h:
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h:
 ../../Core/Inc/stm32wlxx_hal_conf.h:
@@ -69,6 +70,8 @@ Application/User/Core/main.o: \
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h:
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
+../../Core/Inc/btrfid.h:
 ../../Core/Inc/vluart.h:
 ../../Core/Inc/btgps.h:
 ../../Core/Inc/main.h:
+../../Core/Inc/btrfid.h:

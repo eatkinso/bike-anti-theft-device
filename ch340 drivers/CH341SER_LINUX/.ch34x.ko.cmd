@@ -1,0 +1,1 @@
+cmd_/media/li/DATA/CH341SER_LINUX/ch34x.ko := ld -r -m elf_x86_64 -z max-page-size=0x200000 -T ./scripts/module-common.lds --build-id  -o /media/li/DATA/CH341SER_LINUX/ch34x.ko /media/li/DATA/CH341SER_LINUX/ch34x.o /media/li/DATA/CH341SER_LINUX/ch34x.mod.o ;  true

@@ -1,5 +1,5 @@
 /*
- * gps.h
+ * btgps.h
  *
  *  Created on: Apr 19, 2022
  *      Author: eatkinso

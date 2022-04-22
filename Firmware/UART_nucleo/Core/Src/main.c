@@ -24,6 +24,7 @@
 #include "stdint.h"
 #include "vluart.h"
 #include "btgps.h"
+#include "btrfid.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -103,8 +104,7 @@ int main(void)
   MX_LPUART1_UART_Init();
   /* USER CODE BEGIN 2 */
   /* USER CODE END 2 */
-	// query the GGA message from the GPS.
-	char queryGGA[]= "$PSRF103,00,01,10,00,\r\n";
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -117,10 +117,9 @@ int main(void)
 	__asm__ ("nop");
 	//  VLU_Init(&huart1, gps_buffer, dma_buffer, 100);
 
-
+  }
 
   /* USER CODE END 3 */
-}
 }
 
 /**

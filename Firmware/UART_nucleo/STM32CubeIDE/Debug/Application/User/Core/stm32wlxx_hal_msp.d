@@ -33,7 +33,8 @@ Application/User/Core/stm32wlxx_hal_msp.o: \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
- ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
+ ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
+ ../../Core/Inc/btrfid.h
 ../../Core/Inc/main.h:
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h:
 ../../Core/Inc/stm32wlxx_hal_conf.h:
@@ -68,3 +69,4 @@ Application/User/Core/stm32wlxx_hal_msp.o: \
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h:
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
+../../Core/Inc/btrfid.h:

@@ -6,8 +6,6 @@
  * @version 0.1
  * @date 2022-04-19
  *
- * @copyright (c) 2022 Elizabeth Atkinson
- * @license Released under the terms of the University of Illinois/NCSA License.
  */
 
 #include "btgps.h"
@@ -15,7 +13,7 @@
 
 /**
   * @brief Query the GPS for a GPGGA packet (UTC time, lat, long).
-  * @param huart UART handle for the GPS
+  * @param h.uart UART handle for the GPS
   * @param msgbuf pointer to the struct to store the final message
   * @retval 0 on success, 1 on failure
   */
@@ -29,6 +27,7 @@ int get_gps(UART_HandleTypeDef * huart, nmea_gpgga_t * msgbuf){
 		lontd,
 		ew,
 		pfix,
+		sat,
 		nomsg,
 		msgdone
 	} nmea_field_t;
@@ -102,11 +101,17 @@ int get_gps(UART_HandleTypeDef * huart, nmea_gpgga_t * msgbuf){
 				break;
 			case pfix	:
 				if (raw[i] == ','){
+					next_field=sat; // finished message
+					break;
+				}
+				msgbuf->pos_fix=raw[i];
+				break;
+			case sat	:
+				if (raw[i] == ','){
 					next_field=msgdone; // finished message
 					break;
 				}
-				msgbuf->pos_fix=ralw[i];
-				break;
+				msgbuf->sat_used=raw[i];
 			case msgdone:
 				break;
 			}

@@ -663,3 +663,41 @@ Result:
 ![](gpgga_test1.png)
 
 so this basically looks like there's garbage on either side, but it consistently receives the data in the middle. 
+
+Ok, we now have GPS data: btgps.c has the gps parser, just committed it at commit hash `cca477bb`. 
+struct below shows the fields and the data.. currently just a meaningless UTC time but that's because I'm inside right now so I can't get a lock. 
+![](msgbuf1.png)
+Tested outside and the GPS does lock! Results below: (this was at 9:18 PM)
+![](gpscoord.png)
+
+
+# 4/19/2022 Elizabeth -- Writing State Machine
+
+Now, writing the state machine. See diagram below. 
+![](state.png)
+
+    typedef enum states{
+      IDLE,
+      UNLOCKED,
+      TRANSIT,
+      ALARM,
+      FAULT
+    } statemachine_state_t;
+
+
+
+# 4/21/2022 (Elizabeth) USB/Serial Hacky Stupidity
+
+Ok, I'm mega-stupid and forgot to buy the FTDI I2C-Serial chip we need for one of the boards. So we need to find some idiotic way to convert USB-serial for Alex's GUI to work. Current plan: using the CH340 chip on the elegoo arduino nanos I have as an intermediary. 
+
+First: UART dummy code on the STM32 nucleo board. Using a normal Arduino as the usb/serial intermediary to verify that it works there. Wiring diagram below (shown for pic16 -- for nucleo, just wire TX->TX and RX->RX. No need to connect 5V since the arduino is already powered through USB.). 
+
+![](arduinousbserial.png)
+
+
+IMPORTANT!!!!!!!!!!: ARDUINO LOGIC IS 5V
+
+ok, got my arduino nano is working as a USB/Serial converter. Setup below (GPS module used as the generic UART device) -- simply connect RST->GND, TX/TX, power the device from the arduino.)
+
+
+![](nanousbserial.jpeg)

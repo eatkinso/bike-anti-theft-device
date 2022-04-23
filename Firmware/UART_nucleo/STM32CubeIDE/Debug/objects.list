@@ -1,7 +1,6 @@
 "./Application/User/Core/btgps.o"
 "./Application/User/Core/btrfid.o"
 "./Application/User/Core/main.o"
-"./Application/User/Core/statemachine.o"
 "./Application/User/Core/stm32wlxx_hal_msp.o"
 "./Application/User/Core/stm32wlxx_it.o"
 "./Application/User/Core/syscalls.o"

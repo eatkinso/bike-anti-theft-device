@@ -1,1 +1,1 @@
-../Application/User/Core/btrfid.c:12:5:get_rfid	16	static
+../Application/User/Core/btrfid.c:12:5:get_rfid_msg	32	static

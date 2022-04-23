@@ -10,7 +10,7 @@
 
 #include "main.h"
 
-int get_rfid(UART_HandleTypeDef * huart, char * msgbuf);
+int get_rfid_msg(uint8_t * msgbuf, uint8_t * rawmsgbuf);
 
 
 #endif

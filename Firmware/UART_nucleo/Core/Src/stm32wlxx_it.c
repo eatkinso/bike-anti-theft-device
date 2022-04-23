@@ -22,8 +22,9 @@
 #include "stm32wlxx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "vluart.h"
+#include "btrfid.h"
 /* USER CODE END Includes */
+
 
 /* Private typedef -----------------------------------------------------------*/
 /* USER CODE BEGIN TD */
@@ -37,7 +38,10 @@
 
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
-
+extern statemachine_state_t mystate;
+extern uint8_t irqtestbuf[13];
+extern uint8_t rfidrawbuf[50];
+extern uint8_t rfidmsgbuf[15];
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -47,9 +51,6 @@
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
-void gps_parser(uint8_t * gpsbuffer){
-	return;
-}
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -58,6 +59,7 @@ void gps_parser(uint8_t * gpsbuffer){
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern DMA_HandleTypeDef hdma_lpuart1_rx;
 extern DMA_HandleTypeDef hdma_usart1_rx;
 extern UART_HandleTypeDef hlpuart1;
 extern UART_HandleTypeDef huart1;
@@ -212,10 +214,24 @@ void DMA1_Channel1_IRQHandler(void)
   /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
 
   /* USER CODE END DMA1_Channel1_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_usart1_rx);
+  HAL_DMA_IRQHandler(&hdma_lpuart1_rx);
   /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
 
   /* USER CODE END DMA1_Channel1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles DMA1 Channel 2 Interrupt.
+  */
+void DMA1_Channel2_IRQHandler(void)
+{
+  /* USER CODE BEGIN DMA1_Channel2_IRQn 0 */
+
+  /* USER CODE END DMA1_Channel2_IRQn 0 */
+  HAL_DMA_IRQHandler(&hdma_usart1_rx);
+  /* USER CODE BEGIN DMA1_Channel2_IRQn 1 */
+
+  /* USER CODE END DMA1_Channel2_IRQn 1 */
 }
 
 /**
@@ -224,9 +240,7 @@ void DMA1_Channel1_IRQHandler(void)
 void USART1_IRQHandler(void)
 {
   /* USER CODE BEGIN USART1_IRQn 0 */
-	extern uint8_t gps_buffer[100];
-	extern uint8_t dma_buffer[100];
-	VLU_IdleLineHandler(&huart1, &hdma_usart1_rx, gps_buffer, dma_buffer, &gps_parser);
+
   /* USER CODE END USART1_IRQn 0 */
   HAL_UART_IRQHandler(&huart1);
   /* USER CODE BEGIN USART1_IRQn 1 */
@@ -240,10 +254,20 @@ void USART1_IRQHandler(void)
 void LPUART1_IRQHandler(void)
 {
   /* USER CODE BEGIN LPUART1_IRQn 0 */
+	HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET);
 
   /* USER CODE END LPUART1_IRQn 0 */
   HAL_UART_IRQHandler(&hlpuart1);
   /* USER CODE BEGIN LPUART1_IRQn 1 */
+  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET);
+  get_rfid_msg(rfidmsgbuf,rfidrawbuf);
+  if (rfidmsgbuf[0] == 0x3F){
+	  mystate=BT_UNLOCKED;
+  }
+
+
+  // __HAL_UNLOCK(&hlpuart1);
+
 
   /* USER CODE END LPUART1_IRQn 1 */
 }

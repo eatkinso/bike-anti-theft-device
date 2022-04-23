@@ -33,7 +33,7 @@ Application/User/Core/btgps.o: ../Application/User/Core/btgps.c \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
- ../../Core/Inc/btrfid.h
+ ../../Core/Inc/btrfid.h ../../Core/Inc/main.h
 ../Application/User/Core/btgps.h:
 ../../Core/Inc/main.h:
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h:
@@ -70,3 +70,4 @@ Application/User/Core/btgps.o: ../Application/User/Core/btgps.c \
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 ../../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
 ../../Core/Inc/btrfid.h:
+../../Core/Inc/main.h:

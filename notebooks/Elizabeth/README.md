@@ -546,7 +546,7 @@ Trying again to see if I can transmit with the spectrum analyzer.
 
 First: grabbed STLINK debugger from 395 to try and do a full hard reset to solve the swdp_scan/vFlashErase errors. This unfortunately involved booting into windows and updating the firmware on the stlink to support STM32WLs, but it did seem to solve the issue. 
 
-omg... I forgot to power the PA LMFAO. 
+LOL. I forgot to power the PA. 
 
 ![](rfpajumper.png)
 
@@ -761,14 +761,141 @@ Ok, tried the RFID board, and there's no data output. Attempting to see if the a
 
 ![](rfidtuning.png)
 
+Based on this it looks fine? trying again to see if it works better. 
+
 Looks like it works!! Pic of setup below: 
 ![](rfidbrdwiring.jpeg)
 ![](rfid_nano_wiring.jpeg)
 
 
-Use pico com to talk over serial, command to set settings is `picocom --imap 8bithex,nrmhex -b 9600 /dev/ttyUSB0`
+Use pico com to talk over serial, command to set settings is `picocom --imap 8bithex,nrmhex -b 9600 /dev/ttyUSB0`. This just sets picocom to display the data as hex numbers instead of assuming ascii and also sets 8N1 uart at 9600 baud.
 
 pic below of letter code from one RFID card: 
 
 
 ![](rfidcode1.png)
+
+# 4/22/22 RFID on the STM32 [Elizabeth]
+
+Now that we have basic proof-of-concept RFID working, time to try and talk to it on the STM32. 
+
+For reference, the three RFID card codes are :
+- Card A: `[3f][a6][e6][e6][e6][26][26][a6][cc][b9][79][26][f2]`
+- Card B: `[3f][a6][e6][e6][e6][26][26][a9][f9][2e][ca][d6][f2]`
+- Card C: `[3f][a6][e6][e6][e6][66][26][a6][a6][cc][99][d9][ca][d6][f2]`
+
+It does kinda take a while to read the card.. It would be better to use a larger antenna for the RFID module. However, it does work for now. 
+
+Ok, trying to figure out how to use the UART callbacks, since polling will not work with the RFID module. 
+
+Interesting [source](https://st.force.com/community/s/article/faq-stm32-hal-driver-api-and-callbacks) here. Diagram below of the callback structure: 
+![](uartirq_diagram.png)
+
+For this purpose DMA might be best since there's a known amount of data every time: 
+
+![](dma_irq.png)
+![](dma_explanation.png)
+
+## attempt 1 -- code below
+
+![](uartdma1.png)
+
+DMA initialization settings below: 
+
+![](dmasettings1.png)
+
+First try: DMA tx/rx from the nucleo. 
+
+Ok, DMA loopback test is successful. Code below: 
+![](dmaloopback1.png)
+![](dmaloopback2.png)
+
+Now trying DMA with the real device. 
+
+Ok, very strange behavior. Using the interrupt receive function, the function never actually returns.... it returns HAL_BUSY forever. 
+
+tried disabling overrun and the DMA error to try and just use the interrupt function. 
+
+Ok, the interrupt does read the card, but it always returns HAL_BUSY. Ignoring that for now I guess because I have no clue how to fix it. 
+
+# 4/22/22 Afternoon -- Working on State Machine
+
+ugh, we are once again in the situation where the UART message doesn't work correctly because the STM32 RX IRQ doesn't correctly identify the start/stop of the message. Trying to workaround this by defining my own IRQ that sorts the message using the start byte (0x3F for the RFID ID numbers).
+
+Other problem: the UART IRQ randomly gets called even when the device is obviously not receiving any data. 
+
+Attempting to identify *why* that IRQ is getting called.. there is a register that tells why the IRQ was called, so I'm trying to step through the code and see what caused it. 
+
+![](lpuartirqtable.png)
+
+Ok, i am now just going to try and straight up read the LPUART control registers to see what's going on. 
+
+Ok, actually nvm, just writing a parser and crossing my fingers it works. And, for the most part it seems like it does.  Parser below:
+
+![](rfidparser.png)
+
+Which is just inserted into the LPUART IRQ as shown: 
+
+![](lpuartirq1.png)
+
+and `rfidrawbuf`, `rfidmsgbuf` are `extern` so everyone can access them. 
+
+Now, trying to do both RFID (LPUART1) and GPS (USART1) UART interfaces. 
+
+Ok, looks fine. Next step: calculating distances from GPS data. 
+
+Since the points are very close to each other, we will use the flat surface approximation. From [wikipedia](https://en.wikipedia.org/wiki/Geographical_distance#Flat-surface_formulae):
+
+$$
+D = R \sqrt{(\Delta \phi)^2+(\cos(\phi_m)\Delta\lambda)^2}
+$$
+
+Where $\Delta \phi$ and $\Delta \lambda$ are in radians. Note that $\phi$ conventionally denotes latitude and $\lambda$ conventionally denotes longitude. $R=6371.009$ kilometers is the radius of the earth. $\phi_m$ is "mean latitude" and calculated as $\phi_m = \frac{\phi_1 + \phi_2}{2}$
+
+To convert latitude or longitude to radians: 
+
+$$
+1\degree = (\pi/180) \text{ radians}
+$$
+
+![](nmea_struct_t.png)
+char first=0;
+int dollar;
+Note that our lattitude is of the form ddmm.mmm
+
+![](gpscoord.png)  
+
+# 4/23/2022 Elizabeth -- GPS calculations cont. 
+
+Two examples from outside: 
+
+![](gps1.png)
+![](gps2.png)
+
+
+Checking with Mathematica, the calculation should look something like this: 
+![](mathematicagpscalc.png)
+
+And the distance of 42m roughly checks out (first measurement was right outside of ECEB on the bench in front, next measurement was across the little hill thing near beckman.)
+
+Finished code: 
+
+
+![](char2rad.png)
+
+![](calc.png)
+
+![](gps_distancecalc_full.png)
+
+Taking a break and then going to attempt radio stuff with the new oscillators. 
+
+# 4/23/2022 -- Working on Radio stuff yet again... this time with oscillators though
+
+Oscillators finally arrived, working on populating them and then attempting transmission. 
+Caps -- 30 pF. 
+
+Soldered on oscillator -- pic of board below: 
+
+the other one is a little more sus..... but we'll cros that bridge when we come to it. Worst case scenario I might just make a new board. 
+
+![](boardwithosc.jpeg)

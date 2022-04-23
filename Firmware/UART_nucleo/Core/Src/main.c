@@ -22,9 +22,10 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "stdint.h"
-#include "vluart.h"
 #include "btgps.h"
+#include "stm32wlxx_it.h"
 #include "btrfid.h"
+#include "stm32wlxx_hal_uart.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -44,6 +45,7 @@
 /* Private variables ---------------------------------------------------------*/
  UART_HandleTypeDef hlpuart1;
 UART_HandleTypeDef huart1;
+DMA_HandleTypeDef hdma_lpuart1_rx;
 DMA_HandleTypeDef hdma_usart1_rx;
 
 /* USER CODE BEGIN PV */
@@ -56,7 +58,9 @@ static void MX_GPIO_Init(void);
 static void MX_USART1_UART_Init(void);
 static void MX_DMA_Init(void);
 static void MX_LPUART1_UART_Init(void);
+static void MX_NVIC_Init(void);
 /* USER CODE BEGIN PFP */
+
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -65,10 +69,16 @@ uint8_t gps_buffer[100] = {0};
 uint8_t dma_buffer[100] = {0};
 uint8_t rxdata[90]= {0};
 uint8_t testrxdata[90] = {0};
-char first=0;
-int dollar;
-nmea_gpgga_t msgbuf;
-
+nmea_gpgga_t cur_gpsmsgbuf;
+nmea_gpgga_t prev_gpsmgsbuf;
+uint8_t rawbuf[24]={0};
+uint8_t rfidbuf[13]={0};
+uint8_t rfiddummydata[13]={0x3f,0xa6,0xe6,0xe6,0xe6,0x26,0x26,0xa9,0xf9,0x2e,0xca,0xd6,0xf2
+};
+statemachine_state_t mystate;
+//IRQ test buffer
+volatile uint8_t rfidrawbuf[50]={0};
+volatile uint8_t rfidmsgbuf[15]={0};
 /* USER CODE END 0 */
 
 /**
@@ -78,7 +88,7 @@ nmea_gpgga_t msgbuf;
 int main(void)
 {
   /* USER CODE BEGIN 1 */
-
+	mystate=BT_IDLE;
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -102,19 +112,71 @@ int main(void)
   MX_USART1_UART_Init();
   MX_DMA_Init();
   MX_LPUART1_UART_Init();
+
+  /* Initialize interrupts */
+  MX_NVIC_Init();
   /* USER CODE BEGIN 2 */
+  /// Enabling interrupts???
+  //__HAL_UART_ENABLE_IT(&huart1, UART_IT_RXNE); // flag receive
+  //__HAL_UART_ENABLE_IT(&huart1, UART_IT_TC); // flat Tx_IT
+
+
+  HAL_GPIO_WritePin(IDLE_GPIO_Port, IDLE_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(IDLE_GPIO_Port, IDLE_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(UNLOCKED_GPIO_Port, UNLOCKED_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(UNLOCKED_GPIO_Port, UNLOCKED_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
+  /// State Machine Setup
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+	 // prev_gpsmsgbuf = cur_gpsmsgbuf;
+ 	  get_gps(&huart1,&cur_gpsmsgbuf);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  //HAL_StatusTypeDef HAL_UART_Receive_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size)
+	  //HAL_StatusTypeDef res = HAL_UART_Receive_DMA(&hlpuart1, rfidbuf, 13);
 
-	int res = get_gps(&huart1, &msgbuf);
-	__asm__ ("nop");
+ //	  HAL_UART_Transmit(&hlpuart1, rfiddummydata, 13, 100);
+	//int res = get_gps(&huart1, &msgbuf);
+	  switch (mystate){
+	  case BT_IDLE	:
+		  /*** Indicator LEDS ****/
+		  HAL_GPIO_WritePin(IDLE_GPIO_Port, IDLE_Pin, GPIO_PIN_SET);
+		  HAL_GPIO_WritePin(UNLOCKED_GPIO_Port, UNLOCKED_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
+		  /*** Read RFID ***/
+		  HAL_StatusTypeDef res = HAL_UART_Receive_IT(&hlpuart1,rfidrawbuf,40);
+		  /*** Read GPS ***/
+		  break;
+	  case BT_UNLOCKED	:
+		  HAL_GPIO_WritePin(IDLE_GPIO_Port, IDLE_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(UNLOCKED_GPIO_Port, UNLOCKED_Pin, GPIO_PIN_SET);
+		  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
+		  get_gps(&huart1,&cur_gpsmsgbuf);
+		  break;
+	  case BT_TRANSIT	:
+		  HAL_GPIO_WritePin(IDLE_GPIO_Port, IDLE_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(UNLOCKED_GPIO_Port, UNLOCKED_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_SET);
+		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
+		  break;
+	  case BT_ALARM:
+		  HAL_GPIO_WritePin(IDLE_GPIO_Port, IDLE_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(UNLOCKED_GPIO_Port, UNLOCKED_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_RESET);
+		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_SET);
+	  }
 	//  VLU_Init(&huart1, gps_buffer, dma_buffer, 100);
 
   }
@@ -180,6 +242,23 @@ void SystemClock_Config(void)
 }
 
 /**
+  * @brief NVIC Configuration.
+  * @retval None
+  */
+static void MX_NVIC_Init(void)
+{
+  /* DMA1_Channel1_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+  /* USART1_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(USART1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(USART1_IRQn);
+  /* LPUART1_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(LPUART1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(LPUART1_IRQn);
+}
+
+/**
   * @brief LPUART1 Initialization Function
   * @param None
   * @retval None
@@ -203,7 +282,9 @@ static void MX_LPUART1_UART_Init(void)
   hlpuart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
   hlpuart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_ENABLE;
   hlpuart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
-  hlpuart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  hlpuart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_RXOVERRUNDISABLE_INIT|UART_ADVFEATURE_DMADISABLEONERROR_INIT;
+  hlpuart1.AdvancedInit.OverrunDisable = UART_ADVFEATURE_OVERRUN_DISABLE;
+  hlpuart1.AdvancedInit.DMADisableonRxError = UART_ADVFEATURE_DMA_DISABLEONRXERROR;
   hlpuart1.FifoMode = UART_FIFOMODE_ENABLE;
   if (HAL_UART_Init(&hlpuart1) != HAL_OK)
   {
@@ -286,9 +367,9 @@ static void MX_DMA_Init(void)
   __HAL_RCC_DMA1_CLK_ENABLE();
 
   /* DMA interrupt init */
-  /* DMA1_Channel1_IRQn interrupt configuration */
-  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+  /* DMA1_Channel2_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel2_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel2_IRQn);
 
 }
 
@@ -310,6 +391,12 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_WritePin(GPIOB, LED1_Pin|LED2_Pin|LED3_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOA, TRANSIT_Pin|ALARM_Pin, GPIO_PIN_SET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(GPIOB, IDLE_Pin|UNLOCKED_Pin, GPIO_PIN_SET);
+
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOC, FE_CTRL3_Pin|FE_CTRL2_Pin|FE_CTRL1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : LED1_Pin LED2_Pin LED3_Pin */
@@ -317,6 +404,20 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : TRANSIT_Pin ALARM_Pin */
+  GPIO_InitStruct.Pin = TRANSIT_Pin|ALARM_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pins : IDLE_Pin UNLOCKED_Pin */
+  GPIO_InitStruct.Pin = IDLE_Pin|UNLOCKED_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : FE_CTRL3_Pin FE_CTRL2_Pin FE_CTRL1_Pin */

@@ -36,7 +36,13 @@ extern "C" {
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+typedef enum states{
+	BT_IDLE,
+	BT_UNLOCKED,
+	BT_TRANSIT,
+	BT_ALARM,
+	BT_SFAULT
+} statemachine_state_t;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -59,14 +65,22 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define LED1_Pin GPIO_PIN_15
 #define LED1_GPIO_Port GPIOB
+#define TRANSIT_Pin GPIO_PIN_11
+#define TRANSIT_GPIO_Port GPIOA
+#define IDLE_Pin GPIO_PIN_4
+#define IDLE_GPIO_Port GPIOB
 #define LED2_Pin GPIO_PIN_9
 #define LED2_GPIO_Port GPIOB
+#define UNLOCKED_Pin GPIO_PIN_5
+#define UNLOCKED_GPIO_Port GPIOB
 #define FE_CTRL3_Pin GPIO_PIN_3
 #define FE_CTRL3_GPIO_Port GPIOC
 #define B1_Pin GPIO_PIN_0
 #define B1_GPIO_Port GPIOA
 #define FE_CTRL2_Pin GPIO_PIN_5
 #define FE_CTRL2_GPIO_Port GPIOC
+#define ALARM_Pin GPIO_PIN_9
+#define ALARM_GPIO_Port GPIOA
 #define FE_CTRL1_Pin GPIO_PIN_4
 #define FE_CTRL1_GPIO_Port GPIOC
 #define B3_Pin GPIO_PIN_6

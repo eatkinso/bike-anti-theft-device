@@ -9,6 +9,8 @@
 #define APPLICATION_USER_CORE_GPS_H_
 
 #include "main.h"
+#include <stdint.h>
+#include <math.h>
 
 typedef struct {
 	uint8_t UTC_Time[10]; // hhmmss.sss
@@ -24,7 +26,8 @@ typedef struct {
 
 
 int get_gps(UART_HandleTypeDef * huart, nmea_gpgga_t * msgbuf);
-
+double char2rad(char * sourcearray, int len, int expo_start);
+double getdistance(char* lat1, char* long1, char * lat2, char * long2);
 
 #endif /* APPLICATION_USER_CORE_GPS_H_ */
 

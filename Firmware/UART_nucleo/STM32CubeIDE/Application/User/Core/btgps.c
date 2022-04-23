@@ -10,6 +10,7 @@
 
 #include "btgps.h"
 #include "main.h"
+#include <math.h>
 
 /**
   * @brief Query the GPS for a GPGGA packet (UTC time, lat, long).
@@ -118,3 +119,38 @@ int get_gps(UART_HandleTypeDef * huart, nmea_gpgga_t * msgbuf){
 	}
 	return 0;
 }
+
+
+double char2rad(char * sourcearray, int len, int expo_start){
+    double sum = 0;
+//    double expo = 1;
+    int expo = expo_start;
+    for (int i=0; i<len;i++){
+        if (sourcearray[i]!='.'){
+        expo = expo - 1; // exponent of the digit
+        double digit = sourcearray[i] - '0';
+        double tenp = pow(10,expo);
+        double val = digit*tenp;
+        sum = sum + val;
+        }
+    }
+    double rad = sum*(3.14159/180);
+    return rad;
+}
+
+
+double getdistance(char* lat1, char* long1, char * lat2, char * long2){
+	double latrad1 = char2rad(lat1, 9, 2);
+	double longrad1 = char2rad(long1, 10, 3);
+	double latrad2 = char2rad(lat2, 9, 2);
+	double longrad2 = char2rad(long2, 10, 3);
+	double dphi = latrad1-latrad2;
+	double dlambda = longrad1-longrad2;
+	double phi_m = (latrad1+latrad2)/2;
+	double R = 6371009; // earth radius
+	double term2 = pow(cos(phi_m)*dlambda, 2);
+	double d = R*(sqrt((dphi*dphi)+term2));
+	return d;
+}
+
+

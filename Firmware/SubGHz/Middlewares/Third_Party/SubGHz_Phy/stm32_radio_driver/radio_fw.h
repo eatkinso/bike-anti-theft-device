@@ -23,9 +23,8 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
-
-/* Includes ------------------------------------------------------------------*/
 #include "timer.h"
+/* Includes ------------------------------------------------------------------*/
 /* Exported types ------------------------------------------------------------*/
 
 /*reserved for SubGHz_Phy internal MW communication*/

@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccgOLg1R.s 			page 1
+ARM GAS  /tmp/ccwFGlAj.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
   30:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****   * @brief   radio driver implementation
   31:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****   ******************************************************************************
   32:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****   */
-ARM GAS  /tmp/ccgOLg1R.s 			page 2
+ARM GAS  /tmp/ccwFGlAj.s 			page 2
 
 
   33:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** /* Includes ------------------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
   87:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** #endif /* XTAL_DEFAULT_CAP_VALUE */
   88:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
   89:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** /**
-ARM GAS  /tmp/ccgOLg1R.s 			page 3
+ARM GAS  /tmp/ccwFGlAj.s 			page 3
 
 
   90:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****   * @brief voltage of vdd tcxo.
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  144:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****  * \brief Hold the status of the Image calibration
  145:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****  */
  146:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** static bool ImageCalibrated = false;
-ARM GAS  /tmp/ccgOLg1R.s 			page 4
+ARM GAS  /tmp/ccwFGlAj.s 			page 4
 
 
  147:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  201:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****  * \brief Read command to the radio
  202:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****  *
  203:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****  * \param [in]  Command       The Read Command
-ARM GAS  /tmp/ccgOLg1R.s 			page 5
+ARM GAS  /tmp/ccwFGlAj.s 			page 5
 
 
  204:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****  * \param [out] pBuffer       A pointer command buffer
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  258:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
  259:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** uint8_t SUBGRF_GetPayload( uint8_t *buffer, uint8_t *size,  uint8_t maxSize )
  260:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** {
-ARM GAS  /tmp/ccgOLg1R.s 			page 6
+ARM GAS  /tmp/ccwFGlAj.s 			page 6
 
 
  261:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     uint8_t offset = 0;
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  315:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
  316:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         default:
  317:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             break;
-ARM GAS  /tmp/ccgOLg1R.s 			page 7
+ARM GAS  /tmp/ccwFGlAj.s 			page 7
 
 
  318:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     }
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  372:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****                       ( ( uint8_t )sleepConfig.Fields.Reset << 1 ) |
  373:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****                       ( ( uint8_t )sleepConfig.Fields.WakeUpRTC ) );
  374:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     SUBGRF_WriteCommand( RADIO_SET_SLEEP, &value, 1 );
-ARM GAS  /tmp/ccgOLg1R.s 			page 8
+ARM GAS  /tmp/ccwFGlAj.s 			page 8
 
 
  375:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     OperatingMode = MODE_SLEEP;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  429:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     /* ST_WORKAROUND_END */
  430:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
  431:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[0] = ( uint8_t )( ( timeout >> 16 ) & 0xFF );
-ARM GAS  /tmp/ccgOLg1R.s 			page 9
+ARM GAS  /tmp/ccwFGlAj.s 			page 9
 
 
  432:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[1] = ( uint8_t )( ( timeout >> 8 ) & 0xFF );
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  486:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         }
  487:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
  488:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         reg = exp + ( mant << 3 );
-ARM GAS  /tmp/ccgOLg1R.s 			page 10
+ARM GAS  /tmp/ccwFGlAj.s 			page 10
 
 
  489:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         SUBGRF_WriteRegister( REG_LR_SYNCH_TIMEOUT, reg );
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  543:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     {
  544:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         calFreq[0] = 0x75;
  545:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         calFreq[1] = 0x81;
-ARM GAS  /tmp/ccgOLg1R.s 			page 11
+ARM GAS  /tmp/ccwFGlAj.s 			page 11
 
 
  546:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     }
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  600:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[2] = ( uint8_t )( ( timeout >> 8 ) & 0xFF );
  601:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[3] = ( uint8_t )( timeout & 0xFF );
  602:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
-ARM GAS  /tmp/ccgOLg1R.s 			page 12
+ARM GAS  /tmp/ccwFGlAj.s 			page 12
 
 
  603:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     SUBGRF_WriteCommand( RADIO_SET_TCXOMODE, buf, 4 );
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  657:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             SUBGRF_SetPaConfig(0x04, 0x00, 0x01, 0x01);
  658:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             power = 0x0E - (max_power - power);
  659:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         }
-ARM GAS  /tmp/ccgOLg1R.s 			page 13
+ARM GAS  /tmp/ccwFGlAj.s 			page 13
 
 
  660:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         else if (max_power == 10)
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  714:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     SUBGRF_WriteCommand(RADIO_SET_TXPARAMS, buf, 2);
  715:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** }
  716:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
-ARM GAS  /tmp/ccgOLg1R.s 			page 14
+ARM GAS  /tmp/ccwFGlAj.s 			page 14
 
 
  717:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** void SUBGRF_SetModulationParams( ModulationParams_t *modulationParams )
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  771:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[1] = ( tempVal >> 8 ) & 0xFF;
  772:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[2] = tempVal & 0xFF;
  773:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[3] = modulationParams->Params.Gfsk.ModulationShaping;
-ARM GAS  /tmp/ccgOLg1R.s 			page 15
+ARM GAS  /tmp/ccwFGlAj.s 			page 15
 
 
  774:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[4] = modulationParams->Params.Gfsk.Bandwidth;
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  828:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         n = 1;
  829:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[0] = packetParams->Params.Bpsk.PayloadLength;
  830:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         break;
-ARM GAS  /tmp/ccgOLg1R.s 			page 16
+ARM GAS  /tmp/ccwFGlAj.s 			page 16
 
 
  831:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     case PACKET_TYPE_LORA:
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  885:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** {
  886:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     uint8_t buf[1];
  887:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     int8_t rssi = 0;
-ARM GAS  /tmp/ccgOLg1R.s 			page 17
+ARM GAS  /tmp/ccwFGlAj.s 			page 17
 
 
  888:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  942:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             pktStatus->packetType = PACKET_TYPE_NONE;
  943:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             break;
  944:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     }
-ARM GAS  /tmp/ccgOLg1R.s 			page 18
+ARM GAS  /tmp/ccwFGlAj.s 			page 18
 
 
  945:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** }
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  999:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** {
 1000:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     CRITICAL_SECTION_BEGIN();
 1001:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     HAL_SUBGHZ_ReadRegisters( &hsubghz, address, buffer, size );
-ARM GAS  /tmp/ccgOLg1R.s 			page 19
+ARM GAS  /tmp/ccwFGlAj.s 			page 19
 
 
 1002:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     CRITICAL_SECTION_END();
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
   19:Drivers/CMSIS/Include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
   20:Drivers/CMSIS/Include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   21:Drivers/CMSIS/Include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
-ARM GAS  /tmp/ccgOLg1R.s 			page 20
+ARM GAS  /tmp/ccwFGlAj.s 			page 20
 
 
   22:Drivers/CMSIS/Include/cmsis_gcc.h ****  * limitations under the License.
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
   76:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)                  (((struct T_UINT32 *)(x))->v)
   77:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
   78:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_WRITE
-ARM GAS  /tmp/ccgOLg1R.s 			page 21
+ARM GAS  /tmp/ccwFGlAj.s 			page 21
 
 
   79:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  133:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern void _start(void) __NO_RETURN;
  134:Drivers/CMSIS/Include/cmsis_gcc.h ****   
  135:Drivers/CMSIS/Include/cmsis_gcc.h ****   typedef struct {
-ARM GAS  /tmp/ccgOLg1R.s 			page 22
+ARM GAS  /tmp/ccwFGlAj.s 			page 22
 
 
  136:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t const* src;
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  190:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  191:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  192:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Enable IRQ Interrupts
-ARM GAS  /tmp/ccgOLg1R.s 			page 23
+ARM GAS  /tmp/ccwFGlAj.s 			page 23
 
 
  193:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  247:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  248:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_CONTROL(uint32_t control)
  249:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /tmp/ccgOLg1R.s 			page 24
+ARM GAS  /tmp/ccwFGlAj.s 			page 24
 
 
  250:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR control, %0" : : "r" (control) : "memory");
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  304:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, xpsr" : "=r" (result) );
  305:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  306:Drivers/CMSIS/Include/cmsis_gcc.h **** }
-ARM GAS  /tmp/ccgOLg1R.s 			page 25
+ARM GAS  /tmp/ccwFGlAj.s 			page 25
 
 
  307:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  361:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  362:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  363:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  /tmp/ccgOLg1R.s 			page 26
+ARM GAS  /tmp/ccwFGlAj.s 			page 26
 
 
  364:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Main Stack Pointer
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  418:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  419:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Stack Pointer (non-secure)
  420:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the non-secure Stack Pointer (SP) when in secure state.
-ARM GAS  /tmp/ccgOLg1R.s 			page 27
+ARM GAS  /tmp/ccwFGlAj.s 			page 27
 
 
  421:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               SP Register value
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
   61              	.LBB41:
  209:Drivers/CMSIS/Include/cmsis_gcc.h **** }
   62              		.loc 2 209 3 view .LVU10
-ARM GAS  /tmp/ccgOLg1R.s 			page 28
+ARM GAS  /tmp/ccwFGlAj.s 			page 28
 
 
   63              		.syntax unified
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
   88              		.loc 2 481 3 view .LVU17
   89              		.syntax unified
   90              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
-ARM GAS  /tmp/ccgOLg1R.s 			page 29
+ARM GAS  /tmp/ccwFGlAj.s 			page 29
 
 
   91 0014 84F31088 		MSR primask, r4
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  138              		.syntax unified
  139              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  140 0004 EFF31084 		MRS r4, primask
-ARM GAS  /tmp/ccgOLg1R.s 			page 30
+ARM GAS  /tmp/ccwFGlAj.s 			page 30
 
 
  141              	@ 0 "" 2
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  188              		.syntax unified
  189              	.LBE49:
  190              	.LBE48:
-ARM GAS  /tmp/ccgOLg1R.s 			page 31
+ARM GAS  /tmp/ccwFGlAj.s 			page 31
 
 
 1033:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** }
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  379:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     SUBGRF_WriteCommand( RADIO_SET_STANDBY, ( uint8_t* )&standbyConfig, 1 );
  244              		.loc 1 379 1 is_stmt 0 view .LVU46
  245 0000 00B5     		push	{lr}
-ARM GAS  /tmp/ccgOLg1R.s 			page 32
+ARM GAS  /tmp/ccwFGlAj.s 			page 32
 
 
  246              	.LCFI2:
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  289              	.L17:
  290 002e 00BF     		.align	2
  291              	.L16:
-ARM GAS  /tmp/ccgOLg1R.s 			page 33
+ARM GAS  /tmp/ccwFGlAj.s 			page 33
 
 
  292 0030 00000000 		.word	.LANCHOR0
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  345              	.LFB1129:
  398:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     uint8_t buf[3];
  346              		.loc 1 398 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccgOLg1R.s 			page 34
+ARM GAS  /tmp/ccwFGlAj.s 			page 34
 
 
  347              		.cfi_startproc
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  386 0028 03B0     		add	sp, sp, #12
  387              	.LCFI9:
  388              		.cfi_def_cfa_offset 4
-ARM GAS  /tmp/ccgOLg1R.s 			page 35
+ARM GAS  /tmp/ccwFGlAj.s 			page 35
 
 
  389              		@ sp needed
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  416:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[2] = ( uint8_t )( timeout & 0xFF );
  435              		.loc 1 416 12 view .LVU89
  436 0016 8DF80530 		strb	r3, [sp, #5]
-ARM GAS  /tmp/ccgOLg1R.s 			page 36
+ARM GAS  /tmp/ccwFGlAj.s 			page 36
 
 
  417:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     SUBGRF_WriteCommand( RADIO_SET_RX, buf, 3 );
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  441:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[1] = ( uint8_t )( ( rxTime >> 8 ) & 0xFF );
  485              		.loc 1 441 5 view .LVU98
  441:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[1] = ( uint8_t )( ( rxTime >> 8 ) & 0xFF );
-ARM GAS  /tmp/ccgOLg1R.s 			page 37
+ARM GAS  /tmp/ccwFGlAj.s 			page 37
 
 
  486              		.loc 1 441 14 is_stmt 0 view .LVU99
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  448:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** }
  522              		.loc 1 448 19 is_stmt 0 view .LVU118
  523 0036 034B     		ldr	r3, .L32
-ARM GAS  /tmp/ccgOLg1R.s 			page 38
+ARM GAS  /tmp/ccwFGlAj.s 			page 38
 
 
  524 0038 0622     		movs	r2, #6
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  574 0014 00000000 		.word	.LANCHOR0
  575              		.cfi_endproc
  576              	.LFE1133:
-ARM GAS  /tmp/ccgOLg1R.s 			page 39
+ARM GAS  /tmp/ccwFGlAj.s 			page 39
 
 
  578              		.section	.text.SUBGRF_SetTxContinuousWave,"ax",%progbits
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  630 0006 D220     		movs	r0, #210
  631 0008 FFF7FEFF 		bl	SUBGRF_WriteCommand
  632              	.LVL32:
-ARM GAS  /tmp/ccgOLg1R.s 			page 40
+ARM GAS  /tmp/ccwFGlAj.s 			page 40
 
 
  465:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  684              		.thumb_func
  685              		.fpu softvfp
  687              	SUBGRF_SetRegulatorMode:
-ARM GAS  /tmp/ccgOLg1R.s 			page 41
+ARM GAS  /tmp/ccwFGlAj.s 			page 41
 
 
  688              	.LFB1138:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  731 0024 0123     		movs	r3, #1
  732 0026 8DF80730 		strb	r3, [sp, #7]
  733 002a F2E7     		b	.L46
-ARM GAS  /tmp/ccgOLg1R.s 			page 42
+ARM GAS  /tmp/ccwFGlAj.s 			page 42
 
 
  734              		.cfi_endproc
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  778 001e 1343     		orrs	r3, r3, r2
  517:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****                       ( ( uint8_t )calibParam.Fields.RC64KEnable ) );
  779              		.loc 1 517 66 view .LVU159
-ARM GAS  /tmp/ccgOLg1R.s 			page 43
+ARM GAS  /tmp/ccwFGlAj.s 			page 43
 
 
  780 0020 00F00202 		and	r2, r0, #2
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  525:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
  828              		.loc 1 525 5 is_stmt 1 view .LVU168
  527:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     {
-ARM GAS  /tmp/ccgOLg1R.s 			page 44
+ARM GAS  /tmp/ccwFGlAj.s 			page 44
 
 
  829              		.loc 1 527 5 view .LVU169
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  535:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     }
  871              		.loc 1 535 9 is_stmt 1 view .LVU182
  535:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     }
-ARM GAS  /tmp/ccgOLg1R.s 			page 45
+ARM GAS  /tmp/ccwFGlAj.s 			page 45
 
 
  872              		.loc 1 535 20 is_stmt 0 view .LVU183
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  549:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         calFreq[1] = 0x6F;
  912              		.loc 1 549 9 is_stmt 1 view .LVU198
  549:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         calFreq[1] = 0x6F;
-ARM GAS  /tmp/ccgOLg1R.s 			page 46
+ARM GAS  /tmp/ccwFGlAj.s 			page 46
 
 
  913              		.loc 1 549 20 is_stmt 0 view .LVU199
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  960              		.loc 1 560 12 is_stmt 0 view .LVU208
  961 0008 8DF80510 		strb	r1, [sp, #5]
  561:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[3] = paLut;
-ARM GAS  /tmp/ccgOLg1R.s 			page 47
+ARM GAS  /tmp/ccwFGlAj.s 			page 47
 
 
  962              		.loc 1 561 5 is_stmt 1 view .LVU209
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1008              		.cfi_offset 14, -4
  1009 0002 83B0     		sub	sp, sp, #12
  1010              	.LCFI37:
-ARM GAS  /tmp/ccgOLg1R.s 			page 48
+ARM GAS  /tmp/ccwFGlAj.s 			page 48
 
 
  1011              		.cfi_def_cfa_offset 16
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1058 0008 8DF800C0 		strb	ip, [sp]
  576:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[2] = ( uint8_t )( ( dio1Mask >> 8 ) & 0x00FF );
  1059              		.loc 1 576 5 is_stmt 1 view .LVU229
-ARM GAS  /tmp/ccgOLg1R.s 			page 49
+ARM GAS  /tmp/ccwFGlAj.s 			page 49
 
 
  576:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[2] = ( uint8_t )( ( dio1Mask >> 8 ) & 0x00FF );
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1096 0038 03B0     		add	sp, sp, #12
  1097              	.LCFI41:
  1098              		.cfi_def_cfa_offset 4
-ARM GAS  /tmp/ccgOLg1R.s 			page 50
+ARM GAS  /tmp/ccwFGlAj.s 			page 50
 
 
  1099              		@ sp needed
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1149              		.global	SUBGRF_SetTcxoMode
  1150              		.syntax unified
  1151              		.thumb
-ARM GAS  /tmp/ccgOLg1R.s 			page 51
+ARM GAS  /tmp/ccwFGlAj.s 			page 51
 
 
  1152              		.thumb_func
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1192 0022 0DEB0201 		add	r1, sp, r2
  1193              	.LVL61:
  603:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** }
-ARM GAS  /tmp/ccgOLg1R.s 			page 52
+ARM GAS  /tmp/ccwFGlAj.s 			page 52
 
 
  1194              		.loc 1 603 5 is_stmt 0 view .LVU270
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1242              	.LVL65:
  1243              	.L71:
  617:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     /* ST_WORKAROUND_END */
-ARM GAS  /tmp/ccgOLg1R.s 			page 53
+ARM GAS  /tmp/ccwFGlAj.s 			page 53
 
 
  1244              		.loc 1 617 5 is_stmt 1 view .LVU279
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1282              		.cfi_remember_state
  1283              		.cfi_def_cfa_offset 8
  1284              		@ sp needed
-ARM GAS  /tmp/ccgOLg1R.s 			page 54
+ARM GAS  /tmp/ccwFGlAj.s 			page 54
 
 
  1285 0040 10BD     		pop	{r4, pc}
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1336              		.global	SUBGRF_SetCadParams
  1337              		.syntax unified
  1338              		.thumb
-ARM GAS  /tmp/ccgOLg1R.s 			page 55
+ARM GAS  /tmp/ccwFGlAj.s 			page 55
 
 
  1339              		.thumb_func
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  856:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[6] = ( uint8_t )( cadTimeout & 0xFF );
  1379              		.loc 1 856 14 is_stmt 0 view .LVU317
  1380 001e C4F30723 		ubfx	r3, r4, #8, #8
-ARM GAS  /tmp/ccgOLg1R.s 			page 56
+ARM GAS  /tmp/ccwFGlAj.s 			page 56
 
 
  856:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[6] = ( uint8_t )( cadTimeout & 0xFF );
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1426              	SUBGRF_SetBufferBaseAddress:
  1427              	.LVL78:
  1428              	.LFB1153:
-ARM GAS  /tmp/ccgOLg1R.s 			page 57
+ARM GAS  /tmp/ccwFGlAj.s 			page 57
 
 
  863:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     uint8_t buf[2];
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1473              		.fpu softvfp
  1475              	SUBGRF_GetStatus:
  1476              	.LFB1154:
-ARM GAS  /tmp/ccgOLg1R.s 			page 58
+ARM GAS  /tmp/ccwFGlAj.s 			page 58
 
 
  872:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     uint8_t stat = 0;
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1518              		@ sp needed
  1519 002e 10BD     		pop	{r4, pc}
  882:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
-ARM GAS  /tmp/ccgOLg1R.s 			page 59
+ARM GAS  /tmp/ccwFGlAj.s 			page 59
 
 
  1520              		.loc 1 882 1 view .LVU353
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1566              	.LCFI63:
  1567              		.cfi_def_cfa_offset 4
  1568              		@ sp needed
-ARM GAS  /tmp/ccgOLg1R.s 			page 60
+ARM GAS  /tmp/ccwFGlAj.s 			page 60
 
 
  1569 0018 5DF804FB 		ldr	pc, [sp], #4
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1615 0016 48B1     		cbz	r0, .L90
  1616 0018 0128     		cmp	r0, #1
  1617 001a 18D0     		beq	.L91
-ARM GAS  /tmp/ccgOLg1R.s 			page 61
+ARM GAS  /tmp/ccwFGlAj.s 			page 61
 
 
  941:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             pktStatus->packetType = PACKET_TYPE_NONE;
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1654 0044 6371     		strb	r3, [r4, #5]
  926:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             break;
  1655              		.loc 1 926 13 is_stmt 1 view .LVU392
-ARM GAS  /tmp/ccgOLg1R.s 			page 62
+ARM GAS  /tmp/ccwFGlAj.s 			page 62
 
 
  926:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             break;
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1694 0066 5B42     		rsbs	r3, r3, #0
  933:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             pktStatus->Params.LoRa.FreqError = FrequencyError;
  1695              		.loc 1 933 63 view .LVU409
-ARM GAS  /tmp/ccgOLg1R.s 			page 63
+ARM GAS  /tmp/ccwFGlAj.s 			page 63
 
 
  1696 0068 5B10     		asrs	r3, r3, #1
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1743 000e 1720     		movs	r0, #23
  1744 0010 FFF7FEFF 		bl	SUBGRF_ReadCommand
  1745              	.LVL94:
-ARM GAS  /tmp/ccgOLg1R.s 			page 64
+ARM GAS  /tmp/ccwFGlAj.s 			page 64
 
 
  953:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     error.Fields.PllLock    = ( err[1] & ( 1 << 6 ) ) >> 6;
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  959:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     error.Fields.Rc64kCalib = ( err[1] & ( 1 << 0 ) ) >> 0;
  1780              		.loc 1 959 55 is_stmt 0 view .LVU439
  1781 0048 C3F34002 		ubfx	r2, r3, #1, #1
-ARM GAS  /tmp/ccgOLg1R.s 			page 65
+ARM GAS  /tmp/ccwFGlAj.s 			page 65
 
 
  959:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     error.Fields.Rc64kCalib = ( err[1] & ( 1 << 0 ) ) >> 0;
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1828 0010 FFF7FEFF 		bl	SUBGRF_WriteCommand
  1829              	.LVL96:
  968:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
-ARM GAS  /tmp/ccgOLg1R.s 			page 66
+ARM GAS  /tmp/ccwFGlAj.s 			page 66
 
 
  1830              		.loc 1 968 1 is_stmt 0 view .LVU450
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1876              		.loc 1 976 5 is_stmt 0 view .LVU460
  1877 0014 FFF7FEFF 		bl	SUBGRF_WriteCommand
  1878              	.LVL99:
-ARM GAS  /tmp/ccgOLg1R.s 			page 67
+ARM GAS  /tmp/ccwFGlAj.s 			page 67
 
 
  977:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1928 0018 5DF804FB 		ldr	pc, [sp], #4
  1929              	.L107:
  1930              		.align	2
-ARM GAS  /tmp/ccgOLg1R.s 			page 68
+ARM GAS  /tmp/ccwFGlAj.s 			page 68
 
 
  1931              	.L106:
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  1977              		.loc 1 431 12 view .LVU477
  1978 001a 8DF80430 		strb	r3, [sp, #4]
  432:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     buf[2] = ( uint8_t )( timeout & 0xFF );
-ARM GAS  /tmp/ccgOLg1R.s 			page 69
+ARM GAS  /tmp/ccwFGlAj.s 			page 69
 
 
  1979              		.loc 1 432 5 is_stmt 1 view .LVU478
@@ -4138,7 +4138,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2026              		.cfi_def_cfa_offset 4
  2027              		.cfi_offset 14, -4
  2028 0002 83B0     		sub	sp, sp, #12
-ARM GAS  /tmp/ccgOLg1R.s 			page 70
+ARM GAS  /tmp/ccwFGlAj.s 			page 70
 
 
  2029              	.LCFI84:
@@ -4198,7 +4198,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2067 0026 CAB2     		uxtb	r2, r1
  2068              	.LVL115:
  2069              	.L114:
-ARM GAS  /tmp/ccgOLg1R.s 			page 71
+ARM GAS  /tmp/ccwFGlAj.s 			page 71
 
 
  482:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         {
@@ -4258,7 +4258,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2116              		.cfi_def_cfa_offset 4
  2117              		.cfi_offset 14, -4
  2118 0002 83B0     		sub	sp, sp, #12
-ARM GAS  /tmp/ccgOLg1R.s 			page 72
+ARM GAS  /tmp/ccwFGlAj.s 			page 72
 
 
  2119              	.LCFI87:
@@ -4318,7 +4318,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2165              		.section	.text.SUBGRF_SetModulationParams,"ax",%progbits
  2166              		.align	1
  2167              		.global	SUBGRF_SetModulationParams
-ARM GAS  /tmp/ccgOLg1R.s 			page 73
+ARM GAS  /tmp/ccwFGlAj.s 			page 73
 
 
  2168              		.syntax unified
@@ -4378,7 +4378,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2211              		.loc 1 730 5 is_stmt 1 view .LVU534
  730:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     {
  2212              		.loc 1 730 29 is_stmt 0 view .LVU535
-ARM GAS  /tmp/ccgOLg1R.s 			page 74
+ARM GAS  /tmp/ccwFGlAj.s 			page 74
 
 
  2213 001c 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
@@ -4438,7 +4438,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2252              		.loc 1 738 9 is_stmt 1 view .LVU550
  738:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[4] = modulationParams->Params.Gfsk.Bandwidth;
  2253              		.loc 1 738 47 is_stmt 0 view .LVU551
-ARM GAS  /tmp/ccgOLg1R.s 			page 75
+ARM GAS  /tmp/ccwFGlAj.s 			page 75
 
 
  2254 0048 237B     		ldrb	r3, [r4, #12]	@ zero_extendqisi2
@@ -4498,7 +4498,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  746:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         break;
  2292              		.loc 1 746 9 is_stmt 0 view .LVU568
  2293 0078 FFF7FEFF 		bl	SUBGRF_WriteCommand
-ARM GAS  /tmp/ccgOLg1R.s 			page 76
+ARM GAS  /tmp/ccwFGlAj.s 			page 76
 
 
  2294              	.LVL134:
@@ -4558,7 +4558,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2332              	.LVL137:
  754:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         SUBGRF_WriteCommand( RADIO_SET_MODULATIONPARAMS, buf, n );
  2333              		.loc 1 754 16 view .LVU585
-ARM GAS  /tmp/ccgOLg1R.s 			page 77
+ARM GAS  /tmp/ccwFGlAj.s 			page 77
 
 
  2334 009a 8DF80330 		strb	r3, [sp, #3]
@@ -4618,7 +4618,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  766:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     case PACKET_TYPE_GMSK:
  2372              		.loc 1 766 9 view .LVU602
  2373 00cc D6E7     		b	.L123
-ARM GAS  /tmp/ccgOLg1R.s 			page 78
+ARM GAS  /tmp/ccwFGlAj.s 			page 78
 
 
  2374              	.LVL141:
@@ -4678,7 +4678,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2409              		.loc 1 775 9 is_stmt 1 view .LVU621
  2410 00f2 0522     		movs	r2, #5
  2411 00f4 6946     		mov	r1, sp
-ARM GAS  /tmp/ccgOLg1R.s 			page 79
+ARM GAS  /tmp/ccwFGlAj.s 			page 79
 
 
  2412 00f6 8B20     		movs	r0, #139
@@ -4738,7 +4738,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  988:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** }
  2461              		.loc 1 988 5 is_stmt 1 view .LVU629
  989:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
-ARM GAS  /tmp/ccgOLg1R.s 			page 80
+ARM GAS  /tmp/ccwFGlAj.s 			page 80
 
 
  2462              		.loc 1 989 1 is_stmt 0 view .LVU630
@@ -4798,7 +4798,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
 1066:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
 1067:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     switch (TxConfig)
 1068:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     {
-ARM GAS  /tmp/ccgOLg1R.s 			page 81
+ARM GAS  /tmp/ccwFGlAj.s 			page 81
 
 
 1069:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         case RBI_CONF_RFO_LP_HP:
@@ -4858,7 +4858,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
 1123:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     switch (cadstatus)
 1124:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     {
 1125:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         case HAL_SUBGHZ_CAD_CLEAR:
-ARM GAS  /tmp/ccgOLg1R.s 			page 82
+ARM GAS  /tmp/ccwFGlAj.s 			page 82
 
 
 1126:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             RadioOnDioIrqCb( IRQ_CAD_CLEAR);
@@ -4918,7 +4918,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2502 0008 0128     		cmp	r0, #1
  2503 000a 00D0     		beq	.L142
  2504              	.L139:
-ARM GAS  /tmp/ccgOLg1R.s 			page 83
+ARM GAS  /tmp/ccwFGlAj.s 			page 83
 
 
 1164:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****   {
@@ -4978,7 +4978,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2545              		.loc 1 212 1 is_stmt 1 view -0
  2546              		.cfi_startproc
  2547              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  /tmp/ccgOLg1R.s 			page 84
+ARM GAS  /tmp/ccwFGlAj.s 			page 84
 
 
  2548              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -5038,7 +5038,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2588 002a FFF7FEFF 		bl	SUBGRF_WriteRegister
  2589              	.LVL161:
  241:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     }
-ARM GAS  /tmp/ccgOLg1R.s 			page 85
+ARM GAS  /tmp/ccwFGlAj.s 			page 85
 
 
  2590              		.loc 1 241 9 view .LVU661
@@ -5098,7 +5098,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2636              		.global	SUBGRF_SetSleep
  2637              		.syntax unified
  2638              		.thumb
-ARM GAS  /tmp/ccgOLg1R.s 			page 86
+ARM GAS  /tmp/ccwFGlAj.s 			page 86
 
 
  2639              		.thumb_func
@@ -5158,7 +5158,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2682              		.loc 1 374 5 is_stmt 1 view .LVU682
  2683 0026 0122     		movs	r2, #1
  2684 0028 0DF10701 		add	r1, sp, #7
-ARM GAS  /tmp/ccgOLg1R.s 			page 87
+ARM GAS  /tmp/ccwFGlAj.s 			page 87
 
 
  2685 002c 8420     		movs	r0, #132
@@ -5218,7 +5218,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2733              	.LVL175:
  325:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     {
  2734              		.loc 1 325 5 view .LVU691
-ARM GAS  /tmp/ccgOLg1R.s 			page 88
+ARM GAS  /tmp/ccwFGlAj.s 			page 88
 
 
  2735 0008 00B1     		cbz	r0, .L158
@@ -5278,7 +5278,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2780              	SUBGRF_SetTxParams:
  2781              	.LVL184:
  2782              	.LFB1149:
-ARM GAS  /tmp/ccgOLg1R.s 			page 89
+ARM GAS  /tmp/ccwFGlAj.s 			page 89
 
 
  644:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     uint8_t buf[2];
@@ -5338,7 +5338,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2825              	.LVL189:
  682:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         {
  2826              		.loc 1 682 9 is_stmt 1 view .LVU715
-ARM GAS  /tmp/ccgOLg1R.s 			page 90
+ARM GAS  /tmp/ccwFGlAj.s 			page 90
 
 
  682:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         {
@@ -5398,7 +5398,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  706:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         {
  2866              		.loc 1 706 9 is_stmt 1 view .LVU731
  706:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         {
-ARM GAS  /tmp/ccgOLg1R.s 			page 91
+ARM GAS  /tmp/ccwFGlAj.s 			page 91
 
 
  2867              		.loc 1 706 12 is_stmt 0 view .LVU732
@@ -5458,7 +5458,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  650:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         if (power >  max_power)
  2910              		.loc 1 650 21 view .LVU744
  2911 007e 0546     		mov	r5, r0
-ARM GAS  /tmp/ccgOLg1R.s 			page 92
+ARM GAS  /tmp/ccwFGlAj.s 			page 92
 
 
  2912              	.LVL201:
@@ -5518,7 +5518,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  2950              		.loc 1 670 12 is_stmt 0 view .LVU760
  2951 00a0 14F1110F 		cmn	r4, #17
  2952 00a4 01DA     		bge	.L165
-ARM GAS  /tmp/ccgOLg1R.s 			page 93
+ARM GAS  /tmp/ccwFGlAj.s 			page 93
 
 
  672:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         }
@@ -5578,7 +5578,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  663:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         }
  2996              		.loc 1 663 13 is_stmt 1 view .LVU772
  663:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         }
-ARM GAS  /tmp/ccgOLg1R.s 			page 94
+ARM GAS  /tmp/ccwFGlAj.s 			page 94
 
 
  2997              		.loc 1 663 26 is_stmt 0 view .LVU773
@@ -5638,7 +5638,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3039              	.LVL226:
  694:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         }
  3040              		.loc 1 694 13 is_stmt 1 view .LVU786
-ARM GAS  /tmp/ccgOLg1R.s 			page 95
+ARM GAS  /tmp/ccwFGlAj.s 			page 95
 
 
  694:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         }
@@ -5698,7 +5698,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3086              	.LFB1156:
  895:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     uint8_t status[2];
  3087              		.loc 1 895 1 is_stmt 1 view -0
-ARM GAS  /tmp/ccgOLg1R.s 			page 96
+ARM GAS  /tmp/ccwFGlAj.s 			page 96
 
 
  3088              		.cfi_startproc
@@ -5758,7 +5758,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3129              		.loc 1 910 35 is_stmt 0 view .LVU811
  3130 0020 9DF80530 		ldrb	r3, [sp, #5]	@ zero_extendqisi2
  910:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** }
-ARM GAS  /tmp/ccgOLg1R.s 			page 97
+ARM GAS  /tmp/ccwFGlAj.s 			page 97
 
 
  3131              		.loc 1 910 27 view .LVU812
@@ -5818,7 +5818,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3180              		@ frame_needed = 0, uses_anonymous_args = 0
  992:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     CRITICAL_SECTION_BEGIN();
  3181              		.loc 1 992 1 is_stmt 0 view .LVU820
-ARM GAS  /tmp/ccgOLg1R.s 			page 98
+ARM GAS  /tmp/ccwFGlAj.s 			page 98
 
 
  3182 0000 10B5     		push	{r4, lr}
@@ -5878,7 +5878,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3225              	.LVL244:
  994:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     CRITICAL_SECTION_END();
  3226              		.loc 1 994 5 view .LVU832
-ARM GAS  /tmp/ccgOLg1R.s 			page 99
+ARM GAS  /tmp/ccwFGlAj.s 			page 99
 
 
  3227 000e 0348     		ldr	r0, .L191
@@ -5938,7 +5938,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3276              	.LCFI112:
  3277              		.cfi_def_cfa_offset 8
  3278              		.cfi_offset 3, -8
-ARM GAS  /tmp/ccgOLg1R.s 			page 100
+ARM GAS  /tmp/ccwFGlAj.s 			page 100
 
 
  3279              		.cfi_offset 14, -4
@@ -5998,7 +5998,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3324              		.loc 1 290 5 is_stmt 1 view .LVU852
  290:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
  3325              		.loc 1 290 12 is_stmt 0 view .LVU853
-ARM GAS  /tmp/ccgOLg1R.s 			page 101
+ARM GAS  /tmp/ccwFGlAj.s 			page 101
 
 
  3326 000a 8DF80500 		strb	r0, [sp, #5]
@@ -6058,7 +6058,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3373              	.LCFI117:
  3374              		.cfi_def_cfa_offset 4
  3375              		.cfi_offset 14, -4
-ARM GAS  /tmp/ccgOLg1R.s 			page 102
+ARM GAS  /tmp/ccwFGlAj.s 			page 102
 
 
  3376 0002 83B0     		sub	sp, sp, #12
@@ -6118,7 +6118,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3418              		.align	1
  3419              		.global	SUBGRF_SetPacketParams
  3420              		.syntax unified
-ARM GAS  /tmp/ccgOLg1R.s 			page 103
+ARM GAS  /tmp/ccwFGlAj.s 			page 103
 
 
  3421              		.thumb
@@ -6178,7 +6178,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3464              		.loc 1 796 5 is_stmt 1 view .LVU887
  796:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     {
  3465              		.loc 1 796 25 is_stmt 0 view .LVU888
-ARM GAS  /tmp/ccgOLg1R.s 			page 104
+ARM GAS  /tmp/ccwFGlAj.s 			page 104
 
 
  3466 001a 2378     		ldrb	r3, [r4]	@ zero_extendqisi2
@@ -6238,7 +6238,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  819:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[3] = ( packetParams->Params.Gfsk.SyncWordLength /*<< 3*/ ); // convert from byte to bit
  3506              		.loc 1 819 43 is_stmt 0 view .LVU903
  3507 0044 2279     		ldrb	r2, [r4, #4]	@ zero_extendqisi2
-ARM GAS  /tmp/ccgOLg1R.s 			page 105
+ARM GAS  /tmp/ccwFGlAj.s 			page 105
 
 
  819:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[3] = ( packetParams->Params.Gfsk.SyncWordLength /*<< 3*/ ); // convert from byte to bit
@@ -6298,7 +6298,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3542              	.LVL264:
  3543              	.L212:
  844:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** }
-ARM GAS  /tmp/ccgOLg1R.s 			page 106
+ARM GAS  /tmp/ccwFGlAj.s 			page 106
 
 
  3544              		.loc 1 844 5 is_stmt 1 view .LVU924
@@ -6358,7 +6358,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  828:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[0] = packetParams->Params.Bpsk.PayloadLength;
  3589              		.loc 1 828 9 is_stmt 1 view .LVU934
  829:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         break;
-ARM GAS  /tmp/ccgOLg1R.s 			page 107
+ARM GAS  /tmp/ccwFGlAj.s 			page 107
 
 
  3590              		.loc 1 829 9 view .LVU935
@@ -6418,7 +6418,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3625              		.loc 1 837 9 is_stmt 1 view .LVU954
  837:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         buf[5] = packetParams->Params.LoRa.InvertIQ;
  3626              		.loc 1 837 43 is_stmt 0 view .LVU955
-ARM GAS  /tmp/ccgOLg1R.s 			page 108
+ARM GAS  /tmp/ccwFGlAj.s 			page 108
 
 
  3627 00c8 A37C     		ldrb	r3, [r4, #18]	@ zero_extendqisi2
@@ -6478,7 +6478,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3673              	.LBI59:
  449:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  3674              		.loc 2 449 31 view .LVU966
-ARM GAS  /tmp/ccgOLg1R.s 			page 109
+ARM GAS  /tmp/ccwFGlAj.s 			page 109
 
 
  3675              	.LBB60:
@@ -6538,7 +6538,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3717              	.LBI63:
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  3718              		.loc 2 479 27 view .LVU979
-ARM GAS  /tmp/ccgOLg1R.s 			page 110
+ARM GAS  /tmp/ccwFGlAj.s 			page 110
 
 
  3719              	.LBB64:
@@ -6598,7 +6598,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  342:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     uint8_t regAnaMixer = 0;
  3770              		.loc 1 342 5 is_stmt 1 view .LVU987
  3771              	.LVL282:
-ARM GAS  /tmp/ccgOLg1R.s 			page 111
+ARM GAS  /tmp/ccwFGlAj.s 			page 111
 
 
  343:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
@@ -6658,7 +6658,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3814              	.LVL293:
  358:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     SUBGRF_WriteRegister( REG_ANA_MIXER, regAnaMixer );
  3815              		.loc 1 358 5 view .LVU1000
-ARM GAS  /tmp/ccgOLg1R.s 			page 112
+ARM GAS  /tmp/ccwFGlAj.s 			page 112
 
 
  3816 0050 2946     		mov	r1, r5
@@ -6718,7 +6718,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  453:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  3864              		.loc 2 453 3 view .LVU1009
  3865              		.syntax unified
-ARM GAS  /tmp/ccgOLg1R.s 			page 113
+ARM GAS  /tmp/ccwFGlAj.s 			page 113
 
 
  3866              	@ 453 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
@@ -6778,7 +6778,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3909              	@ 481 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  3910 0014 84F31088 		MSR primask, r4
  3911              	@ 0 "" 2
-ARM GAS  /tmp/ccgOLg1R.s 			page 114
+ARM GAS  /tmp/ccwFGlAj.s 			page 114
 
 
  3912              	.LVL302:
@@ -6838,7 +6838,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  3960              		.loc 1 257 1 view .LVU1030
  3961 000c 08BD     		pop	{r3, pc}
  3962              		.cfi_endproc
-ARM GAS  /tmp/ccgOLg1R.s 			page 115
+ARM GAS  /tmp/ccwFGlAj.s 			page 115
 
 
  3963              	.LFE1118:
@@ -6898,7 +6898,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4014              		@ frame_needed = 0, uses_anonymous_args = 0
 1013:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     CRITICAL_SECTION_BEGIN();
  4015              		.loc 1 1013 1 is_stmt 0 view .LVU1038
-ARM GAS  /tmp/ccgOLg1R.s 			page 116
+ARM GAS  /tmp/ccwFGlAj.s 			page 116
 
 
  4016 0000 10B5     		push	{r4, lr}
@@ -6958,7 +6958,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4059              	.LVL314:
 1015:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     CRITICAL_SECTION_END();
  4060              		.loc 1 1015 5 view .LVU1050
-ARM GAS  /tmp/ccgOLg1R.s 			page 117
+ARM GAS  /tmp/ccwFGlAj.s 			page 117
 
 
  4061 000e 0348     		ldr	r0, .L236
@@ -7018,7 +7018,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4110              	.LCFI133:
  4111              		.cfi_def_cfa_offset 16
  4112              		.cfi_offset 4, -16
-ARM GAS  /tmp/ccgOLg1R.s 			page 118
+ARM GAS  /tmp/ccwFGlAj.s 			page 118
 
 
  4113              		.cfi_offset 5, -12
@@ -7078,7 +7078,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4156 0026 3146     		mov	r1, r6
  4157 0028 9DF80700 		ldrb	r0, [sp, #7]	@ zero_extendqisi2
  4158 002c FFF7FEFF 		bl	SUBGRF_ReadBuffer
-ARM GAS  /tmp/ccgOLg1R.s 			page 119
+ARM GAS  /tmp/ccwFGlAj.s 			page 119
 
 
  4159              	.LVL324:
@@ -7138,7 +7138,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
 1059:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c **** 
  4205              		.loc 1 1059 1 view .LVU1081
  4206 000e 0446     		mov	r4, r0
-ARM GAS  /tmp/ccgOLg1R.s 			page 120
+ARM GAS  /tmp/ccwFGlAj.s 			page 120
 
 
  4207 0010 0846     		mov	r0, r1
@@ -7198,7 +7198,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4252              		.loc 1 1062 1 is_stmt 0 view .LVU1092
  4253 0000 38B5     		push	{r3, r4, r5, lr}
  4254              	.LCFI138:
-ARM GAS  /tmp/ccgOLg1R.s 			page 121
+ARM GAS  /tmp/ccwFGlAj.s 			page 121
 
 
  4255              		.cfi_def_cfa_offset 16
@@ -7258,7 +7258,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
 1073:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****             }
  4297              		.loc 1 1073 26 view .LVU1105
  4298 0026 0225     		movs	r5, #2
-ARM GAS  /tmp/ccgOLg1R.s 			page 122
+ARM GAS  /tmp/ccwFGlAj.s 			page 122
 
 
  4299 0028 F2E7     		b	.L253
@@ -7318,7 +7318,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4350              		.loc 1 1108 5 is_stmt 1 view .LVU1112
  4351 0002 024B     		ldr	r3, .L261
  4352 0004 1B68     		ldr	r3, [r3]
-ARM GAS  /tmp/ccgOLg1R.s 			page 123
+ARM GAS  /tmp/ccwFGlAj.s 			page 123
 
 
  4353 0006 0120     		movs	r0, #1
@@ -7378,7 +7378,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4402              		.cfi_endproc
  4403              	.LFE1173:
  4405              		.section	.text.HAL_SUBGHZ_CRCErrorCallback,"ax",%progbits
-ARM GAS  /tmp/ccgOLg1R.s 			page 124
+ARM GAS  /tmp/ccwFGlAj.s 			page 124
 
 
  4406              		.align	1
@@ -7438,7 +7438,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4457              		@ frame_needed = 0, uses_anonymous_args = 0
 1122:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     switch (cadstatus)
  4458              		.loc 1 1122 1 is_stmt 0 view .LVU1126
-ARM GAS  /tmp/ccgOLg1R.s 			page 125
+ARM GAS  /tmp/ccwFGlAj.s 			page 125
 
 
  4459 0000 08B5     		push	{r3, lr}
@@ -7498,7 +7498,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4505              		.align	1
  4506              		.global	HAL_SUBGHZ_RxTxTimeoutCallback
  4507              		.syntax unified
-ARM GAS  /tmp/ccgOLg1R.s 			page 126
+ARM GAS  /tmp/ccwFGlAj.s 			page 126
 
 
  4508              		.thumb
@@ -7558,7 +7558,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4558 0000 08B5     		push	{r3, lr}
  4559              	.LCFI144:
  4560              		.cfi_def_cfa_offset 8
-ARM GAS  /tmp/ccgOLg1R.s 			page 127
+ARM GAS  /tmp/ccwFGlAj.s 			page 127
 
 
  4561              		.cfi_offset 3, -8
@@ -7618,7 +7618,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4609              		.loc 1 1149 1 view .LVU1150
  4610 000a 08BD     		pop	{r3, pc}
  4611              	.L289:
-ARM GAS  /tmp/ccgOLg1R.s 			page 128
+ARM GAS  /tmp/ccwFGlAj.s 			page 128
 
 
  4612              		.align	2
@@ -7678,7 +7678,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4665              	.LVL371:
  4666              	.LFB1180:
 1157:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     RadioOnDioIrqCb( IRQ_HEADER_VALID );
-ARM GAS  /tmp/ccgOLg1R.s 			page 129
+ARM GAS  /tmp/ccwFGlAj.s 			page 129
 
 
  4667              		.loc 1 1157 1 is_stmt 1 view -0
@@ -7738,7 +7738,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4713 0000 0146     		mov	r1, r0
  4714 0002 88B1     		cbz	r0, .L304
 1177:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****     {
-ARM GAS  /tmp/ccgOLg1R.s 			page 130
+ARM GAS  /tmp/ccwFGlAj.s 			page 130
 
 
 1178:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****         return( 0x1F );
@@ -7798,7 +7798,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4751              		.loc 1 1191 5 is_stmt 1 discriminator 1 view .LVU1178
  4752              		.loc 1 1191 15 discriminator 1 view .LVU1179
  4753              		.loc 1 1191 10 discriminator 1 view .LVU1180
-ARM GAS  /tmp/ccgOLg1R.s 			page 131
+ARM GAS  /tmp/ccwFGlAj.s 			page 131
 
 
  4754 0026 FEE7     		b	.L303
@@ -7858,7 +7858,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4803 000c 40F60700 		movw	r0, #2055
  4804              	.LVL383:
  4805              		.loc 1 1197 18 view .LVU1189
-ARM GAS  /tmp/ccgOLg1R.s 			page 132
+ARM GAS  /tmp/ccwFGlAj.s 			page 132
 
 
  4806 0010 FFF7FEFF 		bl	SUBGRF_ReadRegister
@@ -7918,7 +7918,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4848 003a 00FB02F2 		mul	r2, r0, r2
  4849              	.LVL393:
  4850              		.loc 1 1208 6 view .LVU1208
-ARM GAS  /tmp/ccgOLg1R.s 			page 133
+ARM GAS  /tmp/ccwFGlAj.s 			page 133
 
 
  4851 003e 032A     		cmp	r2, #3
@@ -7978,7 +7978,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
 1221:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****   }
 1222:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****   /* calculate cfo in Hz */
 1223:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****   /* shift by 5 first to not saturate, cfo_bin on 12bits */
-ARM GAS  /tmp/ccgOLg1R.s 			page 134
+ARM GAS  /tmp/ccwFGlAj.s 			page 134
 
 
 1224:Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c ****   *cfo = ((int32_t)( cfo_bin * ( fs >> 5 ))) >> ( 12 - 5 );
@@ -8038,7 +8038,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  4943              		.section	.bss.ImageCalibrated,"aw",%nobits
  4944              		.set	.LANCHOR1,. + 0
  4947              	ImageCalibrated:
-ARM GAS  /tmp/ccgOLg1R.s 			page 135
+ARM GAS  /tmp/ccwFGlAj.s 			page 135
 
 
  4948 0000 00       		.space	1
@@ -8098,7 +8098,7 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  5012 0055 000000   		.space	3
  5013 0058 E8E40000 		.word	58600
  5014 005c 0C       		.byte	12
-ARM GAS  /tmp/ccgOLg1R.s 			page 136
+ARM GAS  /tmp/ccwFGlAj.s 			page 136
 
 
  5015 005d 000000   		.space	3
@@ -8143,213 +8143,213 @@ ARM GAS  /tmp/ccgOLg1R.s 			page 1
  5054              		.file 9 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
  5055              		.file 10 "Core/Inc/subghz.h"
  5056              		.file 11 "Utilities/misc/stm32_mem.h"
-ARM GAS  /tmp/ccgOLg1R.s 			page 137
+ARM GAS  /tmp/ccwFGlAj.s 			page 137
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 radio_driver.c
-     /tmp/ccgOLg1R.s:16     .text.SUBGRF_WriteCommand:0000000000000000 $t
-     /tmp/ccgOLg1R.s:23     .text.SUBGRF_WriteCommand:0000000000000000 SUBGRF_WriteCommand
-     /tmp/ccgOLg1R.s:106    .text.SUBGRF_WriteCommand:000000000000001c $d
-     /tmp/ccgOLg1R.s:111    .text.SUBGRF_ReadCommand:0000000000000000 $t
-     /tmp/ccgOLg1R.s:117    .text.SUBGRF_ReadCommand:0000000000000000 SUBGRF_ReadCommand
-     /tmp/ccgOLg1R.s:198    .text.SUBGRF_ReadCommand:000000000000001c $d
-     /tmp/ccgOLg1R.s:203    .text.SUBGRF_GetOperatingMode:0000000000000000 $t
-     /tmp/ccgOLg1R.s:210    .text.SUBGRF_GetOperatingMode:0000000000000000 SUBGRF_GetOperatingMode
-     /tmp/ccgOLg1R.s:225    .text.SUBGRF_GetOperatingMode:0000000000000008 $d
-     /tmp/ccgOLg1R.s:230    .text.SUBGRF_SetStandby:0000000000000000 $t
-     /tmp/ccgOLg1R.s:237    .text.SUBGRF_SetStandby:0000000000000000 SUBGRF_SetStandby
-     /tmp/ccgOLg1R.s:292    .text.SUBGRF_SetStandby:0000000000000030 $d
-     /tmp/ccgOLg1R.s:297    .text.SUBGRF_SetFs:0000000000000000 $t
-     /tmp/ccgOLg1R.s:304    .text.SUBGRF_SetFs:0000000000000000 SUBGRF_SetFs
-     /tmp/ccgOLg1R.s:331    .text.SUBGRF_SetFs:0000000000000014 $d
-     /tmp/ccgOLg1R.s:336    .text.SUBGRF_SetTx:0000000000000000 $t
-     /tmp/ccgOLg1R.s:343    .text.SUBGRF_SetTx:0000000000000000 SUBGRF_SetTx
-     /tmp/ccgOLg1R.s:394    .text.SUBGRF_SetTx:0000000000000030 $d
-     /tmp/ccgOLg1R.s:399    .text.SUBGRF_SetRx:0000000000000000 $t
-     /tmp/ccgOLg1R.s:406    .text.SUBGRF_SetRx:0000000000000000 SUBGRF_SetRx
-     /tmp/ccgOLg1R.s:457    .text.SUBGRF_SetRx:0000000000000030 $d
-     /tmp/ccgOLg1R.s:462    .text.SUBGRF_SetRxDutyCycle:0000000000000000 $t
-     /tmp/ccgOLg1R.s:469    .text.SUBGRF_SetRxDutyCycle:0000000000000000 SUBGRF_SetRxDutyCycle
-     /tmp/ccgOLg1R.s:535    .text.SUBGRF_SetRxDutyCycle:0000000000000044 $d
-     /tmp/ccgOLg1R.s:540    .text.SUBGRF_SetCad:0000000000000000 $t
-     /tmp/ccgOLg1R.s:547    .text.SUBGRF_SetCad:0000000000000000 SUBGRF_SetCad
-     /tmp/ccgOLg1R.s:574    .text.SUBGRF_SetCad:0000000000000014 $d
-     /tmp/ccgOLg1R.s:579    .text.SUBGRF_SetTxContinuousWave:0000000000000000 $t
-     /tmp/ccgOLg1R.s:586    .text.SUBGRF_SetTxContinuousWave:0000000000000000 SUBGRF_SetTxContinuousWave
-     /tmp/ccgOLg1R.s:609    .text.SUBGRF_SetTxInfinitePreamble:0000000000000000 $t
-     /tmp/ccgOLg1R.s:616    .text.SUBGRF_SetTxInfinitePreamble:0000000000000000 SUBGRF_SetTxInfinitePreamble
-     /tmp/ccgOLg1R.s:639    .text.SUBGRF_SetStopRxTimerOnPreambleDetect:0000000000000000 $t
-     /tmp/ccgOLg1R.s:646    .text.SUBGRF_SetStopRxTimerOnPreambleDetect:0000000000000000 SUBGRF_SetStopRxTimerOnPreambleDetect
-     /tmp/ccgOLg1R.s:680    .text.SUBGRF_SetRegulatorMode:0000000000000000 $t
-     /tmp/ccgOLg1R.s:687    .text.SUBGRF_SetRegulatorMode:0000000000000000 SUBGRF_SetRegulatorMode
-     /tmp/ccgOLg1R.s:738    .text.SUBGRF_Calibrate:0000000000000000 $t
-     /tmp/ccgOLg1R.s:745    .text.SUBGRF_Calibrate:0000000000000000 SUBGRF_Calibrate
-     /tmp/ccgOLg1R.s:806    .text.SUBGRF_CalibrateImage:0000000000000000 $t
-     /tmp/ccgOLg1R.s:813    .text.SUBGRF_CalibrateImage:0000000000000000 SUBGRF_CalibrateImage
-     /tmp/ccgOLg1R.s:924    .text.SUBGRF_CalibrateImage:0000000000000078 $d
-     /tmp/ccgOLg1R.s:933    .text.SUBGRF_SetPaConfig:0000000000000000 $t
-     /tmp/ccgOLg1R.s:940    .text.SUBGRF_SetPaConfig:0000000000000000 SUBGRF_SetPaConfig
-     /tmp/ccgOLg1R.s:990    .text.SUBGRF_SetRxTxFallbackMode:0000000000000000 $t
-     /tmp/ccgOLg1R.s:997    .text.SUBGRF_SetRxTxFallbackMode:0000000000000000 SUBGRF_SetRxTxFallbackMode
-     /tmp/ccgOLg1R.s:1031   .text.SUBGRF_SetDioIrqParams:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1038   .text.SUBGRF_SetDioIrqParams:0000000000000000 SUBGRF_SetDioIrqParams
-     /tmp/ccgOLg1R.s:1105   .text.SUBGRF_GetIrqStatus:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1112   .text.SUBGRF_GetIrqStatus:0000000000000000 SUBGRF_GetIrqStatus
-     /tmp/ccgOLg1R.s:1148   .text.SUBGRF_SetTcxoMode:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1155   .text.SUBGRF_SetTcxoMode:0000000000000000 SUBGRF_SetTcxoMode
-     /tmp/ccgOLg1R.s:1209   .text.SUBGRF_SetRfFrequency:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1216   .text.SUBGRF_SetRfFrequency:0000000000000000 SUBGRF_SetRfFrequency
-     /tmp/ccgOLg1R.s:1302   .text.SUBGRF_SetRfFrequency:0000000000000050 $d
-     /tmp/ccgOLg1R.s:1308   .text.SUBGRF_GetPacketType:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1315   .text.SUBGRF_GetPacketType:0000000000000000 SUBGRF_GetPacketType
-ARM GAS  /tmp/ccgOLg1R.s 			page 138
+     /tmp/ccwFGlAj.s:16     .text.SUBGRF_WriteCommand:0000000000000000 $t
+     /tmp/ccwFGlAj.s:23     .text.SUBGRF_WriteCommand:0000000000000000 SUBGRF_WriteCommand
+     /tmp/ccwFGlAj.s:106    .text.SUBGRF_WriteCommand:000000000000001c $d
+     /tmp/ccwFGlAj.s:111    .text.SUBGRF_ReadCommand:0000000000000000 $t
+     /tmp/ccwFGlAj.s:117    .text.SUBGRF_ReadCommand:0000000000000000 SUBGRF_ReadCommand
+     /tmp/ccwFGlAj.s:198    .text.SUBGRF_ReadCommand:000000000000001c $d
+     /tmp/ccwFGlAj.s:203    .text.SUBGRF_GetOperatingMode:0000000000000000 $t
+     /tmp/ccwFGlAj.s:210    .text.SUBGRF_GetOperatingMode:0000000000000000 SUBGRF_GetOperatingMode
+     /tmp/ccwFGlAj.s:225    .text.SUBGRF_GetOperatingMode:0000000000000008 $d
+     /tmp/ccwFGlAj.s:230    .text.SUBGRF_SetStandby:0000000000000000 $t
+     /tmp/ccwFGlAj.s:237    .text.SUBGRF_SetStandby:0000000000000000 SUBGRF_SetStandby
+     /tmp/ccwFGlAj.s:292    .text.SUBGRF_SetStandby:0000000000000030 $d
+     /tmp/ccwFGlAj.s:297    .text.SUBGRF_SetFs:0000000000000000 $t
+     /tmp/ccwFGlAj.s:304    .text.SUBGRF_SetFs:0000000000000000 SUBGRF_SetFs
+     /tmp/ccwFGlAj.s:331    .text.SUBGRF_SetFs:0000000000000014 $d
+     /tmp/ccwFGlAj.s:336    .text.SUBGRF_SetTx:0000000000000000 $t
+     /tmp/ccwFGlAj.s:343    .text.SUBGRF_SetTx:0000000000000000 SUBGRF_SetTx
+     /tmp/ccwFGlAj.s:394    .text.SUBGRF_SetTx:0000000000000030 $d
+     /tmp/ccwFGlAj.s:399    .text.SUBGRF_SetRx:0000000000000000 $t
+     /tmp/ccwFGlAj.s:406    .text.SUBGRF_SetRx:0000000000000000 SUBGRF_SetRx
+     /tmp/ccwFGlAj.s:457    .text.SUBGRF_SetRx:0000000000000030 $d
+     /tmp/ccwFGlAj.s:462    .text.SUBGRF_SetRxDutyCycle:0000000000000000 $t
+     /tmp/ccwFGlAj.s:469    .text.SUBGRF_SetRxDutyCycle:0000000000000000 SUBGRF_SetRxDutyCycle
+     /tmp/ccwFGlAj.s:535    .text.SUBGRF_SetRxDutyCycle:0000000000000044 $d
+     /tmp/ccwFGlAj.s:540    .text.SUBGRF_SetCad:0000000000000000 $t
+     /tmp/ccwFGlAj.s:547    .text.SUBGRF_SetCad:0000000000000000 SUBGRF_SetCad
+     /tmp/ccwFGlAj.s:574    .text.SUBGRF_SetCad:0000000000000014 $d
+     /tmp/ccwFGlAj.s:579    .text.SUBGRF_SetTxContinuousWave:0000000000000000 $t
+     /tmp/ccwFGlAj.s:586    .text.SUBGRF_SetTxContinuousWave:0000000000000000 SUBGRF_SetTxContinuousWave
+     /tmp/ccwFGlAj.s:609    .text.SUBGRF_SetTxInfinitePreamble:0000000000000000 $t
+     /tmp/ccwFGlAj.s:616    .text.SUBGRF_SetTxInfinitePreamble:0000000000000000 SUBGRF_SetTxInfinitePreamble
+     /tmp/ccwFGlAj.s:639    .text.SUBGRF_SetStopRxTimerOnPreambleDetect:0000000000000000 $t
+     /tmp/ccwFGlAj.s:646    .text.SUBGRF_SetStopRxTimerOnPreambleDetect:0000000000000000 SUBGRF_SetStopRxTimerOnPreambleDetect
+     /tmp/ccwFGlAj.s:680    .text.SUBGRF_SetRegulatorMode:0000000000000000 $t
+     /tmp/ccwFGlAj.s:687    .text.SUBGRF_SetRegulatorMode:0000000000000000 SUBGRF_SetRegulatorMode
+     /tmp/ccwFGlAj.s:738    .text.SUBGRF_Calibrate:0000000000000000 $t
+     /tmp/ccwFGlAj.s:745    .text.SUBGRF_Calibrate:0000000000000000 SUBGRF_Calibrate
+     /tmp/ccwFGlAj.s:806    .text.SUBGRF_CalibrateImage:0000000000000000 $t
+     /tmp/ccwFGlAj.s:813    .text.SUBGRF_CalibrateImage:0000000000000000 SUBGRF_CalibrateImage
+     /tmp/ccwFGlAj.s:924    .text.SUBGRF_CalibrateImage:0000000000000078 $d
+     /tmp/ccwFGlAj.s:933    .text.SUBGRF_SetPaConfig:0000000000000000 $t
+     /tmp/ccwFGlAj.s:940    .text.SUBGRF_SetPaConfig:0000000000000000 SUBGRF_SetPaConfig
+     /tmp/ccwFGlAj.s:990    .text.SUBGRF_SetRxTxFallbackMode:0000000000000000 $t
+     /tmp/ccwFGlAj.s:997    .text.SUBGRF_SetRxTxFallbackMode:0000000000000000 SUBGRF_SetRxTxFallbackMode
+     /tmp/ccwFGlAj.s:1031   .text.SUBGRF_SetDioIrqParams:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1038   .text.SUBGRF_SetDioIrqParams:0000000000000000 SUBGRF_SetDioIrqParams
+     /tmp/ccwFGlAj.s:1105   .text.SUBGRF_GetIrqStatus:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1112   .text.SUBGRF_GetIrqStatus:0000000000000000 SUBGRF_GetIrqStatus
+     /tmp/ccwFGlAj.s:1148   .text.SUBGRF_SetTcxoMode:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1155   .text.SUBGRF_SetTcxoMode:0000000000000000 SUBGRF_SetTcxoMode
+     /tmp/ccwFGlAj.s:1209   .text.SUBGRF_SetRfFrequency:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1216   .text.SUBGRF_SetRfFrequency:0000000000000000 SUBGRF_SetRfFrequency
+     /tmp/ccwFGlAj.s:1302   .text.SUBGRF_SetRfFrequency:0000000000000050 $d
+     /tmp/ccwFGlAj.s:1308   .text.SUBGRF_GetPacketType:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1315   .text.SUBGRF_GetPacketType:0000000000000000 SUBGRF_GetPacketType
+ARM GAS  /tmp/ccwFGlAj.s 			page 138
 
 
-     /tmp/ccgOLg1R.s:1330   .text.SUBGRF_GetPacketType:0000000000000008 $d
-     /tmp/ccgOLg1R.s:1335   .text.SUBGRF_SetCadParams:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1342   .text.SUBGRF_SetCadParams:0000000000000000 SUBGRF_SetCadParams
-     /tmp/ccgOLg1R.s:1414   .text.SUBGRF_SetCadParams:0000000000000040 $d
-     /tmp/ccgOLg1R.s:1419   .text.SUBGRF_SetBufferBaseAddress:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1426   .text.SUBGRF_SetBufferBaseAddress:0000000000000000 SUBGRF_SetBufferBaseAddress
-     /tmp/ccgOLg1R.s:1468   .text.SUBGRF_GetStatus:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1475   .text.SUBGRF_GetStatus:0000000000000000 SUBGRF_GetStatus
-     /tmp/ccgOLg1R.s:1525   .text.SUBGRF_GetRssiInst:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1532   .text.SUBGRF_GetRssiInst:0000000000000000 SUBGRF_GetRssiInst
-     /tmp/ccgOLg1R.s:1575   .text.SUBGRF_GetPacketStatus:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1582   .text.SUBGRF_GetPacketStatus:0000000000000000 SUBGRF_GetPacketStatus
-     /tmp/ccgOLg1R.s:1709   .text.SUBGRF_GetPacketStatus:0000000000000074 $d
-     /tmp/ccgOLg1R.s:1714   .text.SUBGRF_GetDeviceErrors:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1721   .text.SUBGRF_GetDeviceErrors:0000000000000000 SUBGRF_GetDeviceErrors
-     /tmp/ccgOLg1R.s:1800   .text.SUBGRF_ClearDeviceErrors:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1807   .text.SUBGRF_ClearDeviceErrors:0000000000000000 SUBGRF_ClearDeviceErrors
-     /tmp/ccgOLg1R.s:1840   .text.SUBGRF_ClearIrqStatus:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1847   .text.SUBGRF_ClearIrqStatus:0000000000000000 SUBGRF_ClearIrqStatus
-     /tmp/ccgOLg1R.s:1889   .text.SUBGRF_WriteRegister:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1896   .text.SUBGRF_WriteRegister:0000000000000000 SUBGRF_WriteRegister
-     /tmp/ccgOLg1R.s:1932   .text.SUBGRF_WriteRegister:000000000000001c $d
-     /tmp/ccgOLg1R.s:1937   .text.SUBGRF_SetRxBoosted:0000000000000000 $t
-     /tmp/ccgOLg1R.s:1944   .text.SUBGRF_SetRxBoosted:0000000000000000 SUBGRF_SetRxBoosted
-     /tmp/ccgOLg1R.s:2004   .text.SUBGRF_SetRxBoosted:0000000000000038 $d
-     /tmp/ccgOLg1R.s:2009   .text.SUBGRF_SetLoRaSymbNumTimeout:0000000000000000 $t
-     /tmp/ccgOLg1R.s:2016   .text.SUBGRF_SetLoRaSymbNumTimeout:0000000000000000 SUBGRF_SetLoRaSymbNumTimeout
-     /tmp/ccgOLg1R.s:2099   .text.SUBGRF_SetPacketType:0000000000000000 $t
-     /tmp/ccgOLg1R.s:2106   .text.SUBGRF_SetPacketType:0000000000000000 SUBGRF_SetPacketType
-     /tmp/ccgOLg1R.s:2161   .text.SUBGRF_SetPacketType:0000000000000030 $d
-     /tmp/ccgOLg1R.s:2166   .text.SUBGRF_SetModulationParams:0000000000000000 $t
-     /tmp/ccgOLg1R.s:2173   .text.SUBGRF_SetModulationParams:0000000000000000 SUBGRF_SetModulationParams
-     /tmp/ccgOLg1R.s:2219   .text.SUBGRF_SetModulationParams:0000000000000026 $d
-     /tmp/ccgOLg1R.s:2223   .text.SUBGRF_SetModulationParams:000000000000002a $t
-     /tmp/ccgOLg1R.s:2421   .text.SUBGRF_SetModulationParams:0000000000000100 $d
-     /tmp/ccgOLg1R.s:2429   .text.SUBGRF_ReadRegister:0000000000000000 $t
-     /tmp/ccgOLg1R.s:2436   .text.SUBGRF_ReadRegister:0000000000000000 SUBGRF_ReadRegister
-     /tmp/ccgOLg1R.s:2472   .text.SUBGRF_ReadRegister:000000000000001c $d
-     /tmp/ccgOLg1R.s:2477   .text.Radio_SMPS_Set:0000000000000000 $t
-     /tmp/ccgOLg1R.s:2483   .text.Radio_SMPS_Set:0000000000000000 Radio_SMPS_Set
-     /tmp/ccgOLg1R.s:2535   .text.SUBGRF_Init:0000000000000000 $t
-     /tmp/ccgOLg1R.s:2542   .text.SUBGRF_Init:0000000000000000 SUBGRF_Init
-     /tmp/ccgOLg1R.s:2628   .text.SUBGRF_Init:0000000000000060 $d
-     /tmp/ccgOLg1R.s:2635   .text.SUBGRF_SetSleep:0000000000000000 $t
-     /tmp/ccgOLg1R.s:2642   .text.SUBGRF_SetSleep:0000000000000000 SUBGRF_SetSleep
-     /tmp/ccgOLg1R.s:2702   .text.SUBGRF_SetSleep:000000000000003c $d
-     /tmp/ccgOLg1R.s:2707   .text.SUBGRF_SetWhiteningSeed:0000000000000000 $t
-     /tmp/ccgOLg1R.s:2714   .text.SUBGRF_SetWhiteningSeed:0000000000000000 SUBGRF_SetWhiteningSeed
-     /tmp/ccgOLg1R.s:2773   .text.SUBGRF_SetTxParams:0000000000000000 $t
-     /tmp/ccgOLg1R.s:2780   .text.SUBGRF_SetTxParams:0000000000000000 SUBGRF_SetTxParams
-     /tmp/ccgOLg1R.s:3077   .text.SUBGRF_GetRxBufferStatus:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3084   .text.SUBGRF_GetRxBufferStatus:0000000000000000 SUBGRF_GetRxBufferStatus
-     /tmp/ccgOLg1R.s:3162   .text.SUBGRF_GetRxBufferStatus:0000000000000040 $d
-     /tmp/ccgOLg1R.s:3167   .text.SUBGRF_WriteRegisters:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3174   .text.SUBGRF_WriteRegisters:0000000000000000 SUBGRF_WriteRegisters
-     /tmp/ccgOLg1R.s:3255   .text.SUBGRF_WriteRegisters:000000000000001c $d
-     /tmp/ccgOLg1R.s:3260   .text.SUBGRF_SetSyncWord:0000000000000000 $t
-ARM GAS  /tmp/ccgOLg1R.s 			page 139
+     /tmp/ccwFGlAj.s:1330   .text.SUBGRF_GetPacketType:0000000000000008 $d
+     /tmp/ccwFGlAj.s:1335   .text.SUBGRF_SetCadParams:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1342   .text.SUBGRF_SetCadParams:0000000000000000 SUBGRF_SetCadParams
+     /tmp/ccwFGlAj.s:1414   .text.SUBGRF_SetCadParams:0000000000000040 $d
+     /tmp/ccwFGlAj.s:1419   .text.SUBGRF_SetBufferBaseAddress:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1426   .text.SUBGRF_SetBufferBaseAddress:0000000000000000 SUBGRF_SetBufferBaseAddress
+     /tmp/ccwFGlAj.s:1468   .text.SUBGRF_GetStatus:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1475   .text.SUBGRF_GetStatus:0000000000000000 SUBGRF_GetStatus
+     /tmp/ccwFGlAj.s:1525   .text.SUBGRF_GetRssiInst:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1532   .text.SUBGRF_GetRssiInst:0000000000000000 SUBGRF_GetRssiInst
+     /tmp/ccwFGlAj.s:1575   .text.SUBGRF_GetPacketStatus:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1582   .text.SUBGRF_GetPacketStatus:0000000000000000 SUBGRF_GetPacketStatus
+     /tmp/ccwFGlAj.s:1709   .text.SUBGRF_GetPacketStatus:0000000000000074 $d
+     /tmp/ccwFGlAj.s:1714   .text.SUBGRF_GetDeviceErrors:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1721   .text.SUBGRF_GetDeviceErrors:0000000000000000 SUBGRF_GetDeviceErrors
+     /tmp/ccwFGlAj.s:1800   .text.SUBGRF_ClearDeviceErrors:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1807   .text.SUBGRF_ClearDeviceErrors:0000000000000000 SUBGRF_ClearDeviceErrors
+     /tmp/ccwFGlAj.s:1840   .text.SUBGRF_ClearIrqStatus:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1847   .text.SUBGRF_ClearIrqStatus:0000000000000000 SUBGRF_ClearIrqStatus
+     /tmp/ccwFGlAj.s:1889   .text.SUBGRF_WriteRegister:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1896   .text.SUBGRF_WriteRegister:0000000000000000 SUBGRF_WriteRegister
+     /tmp/ccwFGlAj.s:1932   .text.SUBGRF_WriteRegister:000000000000001c $d
+     /tmp/ccwFGlAj.s:1937   .text.SUBGRF_SetRxBoosted:0000000000000000 $t
+     /tmp/ccwFGlAj.s:1944   .text.SUBGRF_SetRxBoosted:0000000000000000 SUBGRF_SetRxBoosted
+     /tmp/ccwFGlAj.s:2004   .text.SUBGRF_SetRxBoosted:0000000000000038 $d
+     /tmp/ccwFGlAj.s:2009   .text.SUBGRF_SetLoRaSymbNumTimeout:0000000000000000 $t
+     /tmp/ccwFGlAj.s:2016   .text.SUBGRF_SetLoRaSymbNumTimeout:0000000000000000 SUBGRF_SetLoRaSymbNumTimeout
+     /tmp/ccwFGlAj.s:2099   .text.SUBGRF_SetPacketType:0000000000000000 $t
+     /tmp/ccwFGlAj.s:2106   .text.SUBGRF_SetPacketType:0000000000000000 SUBGRF_SetPacketType
+     /tmp/ccwFGlAj.s:2161   .text.SUBGRF_SetPacketType:0000000000000030 $d
+     /tmp/ccwFGlAj.s:2166   .text.SUBGRF_SetModulationParams:0000000000000000 $t
+     /tmp/ccwFGlAj.s:2173   .text.SUBGRF_SetModulationParams:0000000000000000 SUBGRF_SetModulationParams
+     /tmp/ccwFGlAj.s:2219   .text.SUBGRF_SetModulationParams:0000000000000026 $d
+     /tmp/ccwFGlAj.s:2223   .text.SUBGRF_SetModulationParams:000000000000002a $t
+     /tmp/ccwFGlAj.s:2421   .text.SUBGRF_SetModulationParams:0000000000000100 $d
+     /tmp/ccwFGlAj.s:2429   .text.SUBGRF_ReadRegister:0000000000000000 $t
+     /tmp/ccwFGlAj.s:2436   .text.SUBGRF_ReadRegister:0000000000000000 SUBGRF_ReadRegister
+     /tmp/ccwFGlAj.s:2472   .text.SUBGRF_ReadRegister:000000000000001c $d
+     /tmp/ccwFGlAj.s:2477   .text.Radio_SMPS_Set:0000000000000000 $t
+     /tmp/ccwFGlAj.s:2483   .text.Radio_SMPS_Set:0000000000000000 Radio_SMPS_Set
+     /tmp/ccwFGlAj.s:2535   .text.SUBGRF_Init:0000000000000000 $t
+     /tmp/ccwFGlAj.s:2542   .text.SUBGRF_Init:0000000000000000 SUBGRF_Init
+     /tmp/ccwFGlAj.s:2628   .text.SUBGRF_Init:0000000000000060 $d
+     /tmp/ccwFGlAj.s:2635   .text.SUBGRF_SetSleep:0000000000000000 $t
+     /tmp/ccwFGlAj.s:2642   .text.SUBGRF_SetSleep:0000000000000000 SUBGRF_SetSleep
+     /tmp/ccwFGlAj.s:2702   .text.SUBGRF_SetSleep:000000000000003c $d
+     /tmp/ccwFGlAj.s:2707   .text.SUBGRF_SetWhiteningSeed:0000000000000000 $t
+     /tmp/ccwFGlAj.s:2714   .text.SUBGRF_SetWhiteningSeed:0000000000000000 SUBGRF_SetWhiteningSeed
+     /tmp/ccwFGlAj.s:2773   .text.SUBGRF_SetTxParams:0000000000000000 $t
+     /tmp/ccwFGlAj.s:2780   .text.SUBGRF_SetTxParams:0000000000000000 SUBGRF_SetTxParams
+     /tmp/ccwFGlAj.s:3077   .text.SUBGRF_GetRxBufferStatus:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3084   .text.SUBGRF_GetRxBufferStatus:0000000000000000 SUBGRF_GetRxBufferStatus
+     /tmp/ccwFGlAj.s:3162   .text.SUBGRF_GetRxBufferStatus:0000000000000040 $d
+     /tmp/ccwFGlAj.s:3167   .text.SUBGRF_WriteRegisters:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3174   .text.SUBGRF_WriteRegisters:0000000000000000 SUBGRF_WriteRegisters
+     /tmp/ccwFGlAj.s:3255   .text.SUBGRF_WriteRegisters:000000000000001c $d
+     /tmp/ccwFGlAj.s:3260   .text.SUBGRF_SetSyncWord:0000000000000000 $t
+ARM GAS  /tmp/ccwFGlAj.s 			page 139
 
 
-     /tmp/ccgOLg1R.s:3267   .text.SUBGRF_SetSyncWord:0000000000000000 SUBGRF_SetSyncWord
-     /tmp/ccgOLg1R.s:3296   .text.SUBGRF_SetCrcSeed:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3303   .text.SUBGRF_SetCrcSeed:0000000000000000 SUBGRF_SetCrcSeed
-     /tmp/ccgOLg1R.s:3357   .text.SUBGRF_SetCrcPolynomial:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3364   .text.SUBGRF_SetCrcPolynomial:0000000000000000 SUBGRF_SetCrcPolynomial
-     /tmp/ccgOLg1R.s:3418   .text.SUBGRF_SetPacketParams:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3425   .text.SUBGRF_SetPacketParams:0000000000000000 SUBGRF_SetPacketParams
-     /tmp/ccgOLg1R.s:3472   .text.SUBGRF_SetPacketParams:0000000000000024 $d
-     /tmp/ccgOLg1R.s:3476   .text.SUBGRF_SetPacketParams:0000000000000028 $t
-     /tmp/ccgOLg1R.s:3643   .text.SUBGRF_SetPacketParams:00000000000000d8 $d
-     /tmp/ccgOLg1R.s:3650   .text.SUBGRF_ReadRegisters:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3657   .text.SUBGRF_ReadRegisters:0000000000000000 SUBGRF_ReadRegisters
-     /tmp/ccgOLg1R.s:3738   .text.SUBGRF_ReadRegisters:000000000000001c $d
-     /tmp/ccgOLg1R.s:3743   .text.SUBGRF_GetRandom:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3750   .text.SUBGRF_GetRandom:0000000000000000 SUBGRF_GetRandom
-     /tmp/ccgOLg1R.s:3837   .text.SUBGRF_WriteBuffer:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3844   .text.SUBGRF_WriteBuffer:0000000000000000 SUBGRF_WriteBuffer
-     /tmp/ccgOLg1R.s:3925   .text.SUBGRF_WriteBuffer:000000000000001c $d
-     /tmp/ccgOLg1R.s:3930   .text.SUBGRF_SetPayload:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3937   .text.SUBGRF_SetPayload:0000000000000000 SUBGRF_SetPayload
-     /tmp/ccgOLg1R.s:3966   .text.SUBGRF_SendPayload:0000000000000000 $t
-     /tmp/ccgOLg1R.s:3973   .text.SUBGRF_SendPayload:0000000000000000 SUBGRF_SendPayload
-     /tmp/ccgOLg1R.s:4001   .text.SUBGRF_ReadBuffer:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4008   .text.SUBGRF_ReadBuffer:0000000000000000 SUBGRF_ReadBuffer
-     /tmp/ccgOLg1R.s:4089   .text.SUBGRF_ReadBuffer:000000000000001c $d
-     /tmp/ccgOLg1R.s:4094   .text.SUBGRF_GetPayload:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4101   .text.SUBGRF_GetPayload:0000000000000000 SUBGRF_GetPayload
-     /tmp/ccgOLg1R.s:4168   .text.SUBGRF_SetSwitch:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4175   .text.SUBGRF_SetSwitch:0000000000000000 SUBGRF_SetSwitch
-     /tmp/ccgOLg1R.s:4238   .text.SUBGRF_SetRfTxPower:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4245   .text.SUBGRF_SetRfTxPower:0000000000000000 SUBGRF_SetRfTxPower
-     /tmp/ccgOLg1R.s:4308   .text.SUBGRF_GetRadioWakeUpTime:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4315   .text.SUBGRF_GetRadioWakeUpTime:0000000000000000 SUBGRF_GetRadioWakeUpTime
-     /tmp/ccgOLg1R.s:4330   .text.HAL_SUBGHZ_TxCpltCallback:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4337   .text.HAL_SUBGHZ_TxCpltCallback:0000000000000000 HAL_SUBGHZ_TxCpltCallback
-     /tmp/ccgOLg1R.s:4363   .text.HAL_SUBGHZ_TxCpltCallback:000000000000000c $d
-     /tmp/ccgOLg1R.s:4368   .text.HAL_SUBGHZ_RxCpltCallback:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4375   .text.HAL_SUBGHZ_RxCpltCallback:0000000000000000 HAL_SUBGHZ_RxCpltCallback
-     /tmp/ccgOLg1R.s:4401   .text.HAL_SUBGHZ_RxCpltCallback:000000000000000c $d
-     /tmp/ccgOLg1R.s:4406   .text.HAL_SUBGHZ_CRCErrorCallback:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4413   .text.HAL_SUBGHZ_CRCErrorCallback:0000000000000000 HAL_SUBGHZ_CRCErrorCallback
-     /tmp/ccgOLg1R.s:4439   .text.HAL_SUBGHZ_CRCErrorCallback:000000000000000c $d
-     /tmp/ccgOLg1R.s:4444   .text.HAL_SUBGHZ_CADStatusCallback:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4451   .text.HAL_SUBGHZ_CADStatusCallback:0000000000000000 HAL_SUBGHZ_CADStatusCallback
-     /tmp/ccgOLg1R.s:4500   .text.HAL_SUBGHZ_CADStatusCallback:0000000000000020 $d
-     /tmp/ccgOLg1R.s:4505   .text.HAL_SUBGHZ_RxTxTimeoutCallback:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4512   .text.HAL_SUBGHZ_RxTxTimeoutCallback:0000000000000000 HAL_SUBGHZ_RxTxTimeoutCallback
-     /tmp/ccgOLg1R.s:4538   .text.HAL_SUBGHZ_RxTxTimeoutCallback:0000000000000010 $d
-     /tmp/ccgOLg1R.s:4543   .text.HAL_SUBGHZ_HeaderErrorCallback:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4550   .text.HAL_SUBGHZ_HeaderErrorCallback:0000000000000000 HAL_SUBGHZ_HeaderErrorCallback
-     /tmp/ccgOLg1R.s:4576   .text.HAL_SUBGHZ_HeaderErrorCallback:000000000000000c $d
-     /tmp/ccgOLg1R.s:4581   .text.HAL_SUBGHZ_PreambleDetectedCallback:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4588   .text.HAL_SUBGHZ_PreambleDetectedCallback:0000000000000000 HAL_SUBGHZ_PreambleDetectedCallback
-     /tmp/ccgOLg1R.s:4614   .text.HAL_SUBGHZ_PreambleDetectedCallback:000000000000000c $d
-     /tmp/ccgOLg1R.s:4619   .text.HAL_SUBGHZ_SyncWordValidCallback:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4626   .text.HAL_SUBGHZ_SyncWordValidCallback:0000000000000000 HAL_SUBGHZ_SyncWordValidCallback
-     /tmp/ccgOLg1R.s:4652   .text.HAL_SUBGHZ_SyncWordValidCallback:000000000000000c $d
-ARM GAS  /tmp/ccgOLg1R.s 			page 140
+     /tmp/ccwFGlAj.s:3267   .text.SUBGRF_SetSyncWord:0000000000000000 SUBGRF_SetSyncWord
+     /tmp/ccwFGlAj.s:3296   .text.SUBGRF_SetCrcSeed:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3303   .text.SUBGRF_SetCrcSeed:0000000000000000 SUBGRF_SetCrcSeed
+     /tmp/ccwFGlAj.s:3357   .text.SUBGRF_SetCrcPolynomial:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3364   .text.SUBGRF_SetCrcPolynomial:0000000000000000 SUBGRF_SetCrcPolynomial
+     /tmp/ccwFGlAj.s:3418   .text.SUBGRF_SetPacketParams:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3425   .text.SUBGRF_SetPacketParams:0000000000000000 SUBGRF_SetPacketParams
+     /tmp/ccwFGlAj.s:3472   .text.SUBGRF_SetPacketParams:0000000000000024 $d
+     /tmp/ccwFGlAj.s:3476   .text.SUBGRF_SetPacketParams:0000000000000028 $t
+     /tmp/ccwFGlAj.s:3643   .text.SUBGRF_SetPacketParams:00000000000000d8 $d
+     /tmp/ccwFGlAj.s:3650   .text.SUBGRF_ReadRegisters:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3657   .text.SUBGRF_ReadRegisters:0000000000000000 SUBGRF_ReadRegisters
+     /tmp/ccwFGlAj.s:3738   .text.SUBGRF_ReadRegisters:000000000000001c $d
+     /tmp/ccwFGlAj.s:3743   .text.SUBGRF_GetRandom:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3750   .text.SUBGRF_GetRandom:0000000000000000 SUBGRF_GetRandom
+     /tmp/ccwFGlAj.s:3837   .text.SUBGRF_WriteBuffer:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3844   .text.SUBGRF_WriteBuffer:0000000000000000 SUBGRF_WriteBuffer
+     /tmp/ccwFGlAj.s:3925   .text.SUBGRF_WriteBuffer:000000000000001c $d
+     /tmp/ccwFGlAj.s:3930   .text.SUBGRF_SetPayload:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3937   .text.SUBGRF_SetPayload:0000000000000000 SUBGRF_SetPayload
+     /tmp/ccwFGlAj.s:3966   .text.SUBGRF_SendPayload:0000000000000000 $t
+     /tmp/ccwFGlAj.s:3973   .text.SUBGRF_SendPayload:0000000000000000 SUBGRF_SendPayload
+     /tmp/ccwFGlAj.s:4001   .text.SUBGRF_ReadBuffer:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4008   .text.SUBGRF_ReadBuffer:0000000000000000 SUBGRF_ReadBuffer
+     /tmp/ccwFGlAj.s:4089   .text.SUBGRF_ReadBuffer:000000000000001c $d
+     /tmp/ccwFGlAj.s:4094   .text.SUBGRF_GetPayload:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4101   .text.SUBGRF_GetPayload:0000000000000000 SUBGRF_GetPayload
+     /tmp/ccwFGlAj.s:4168   .text.SUBGRF_SetSwitch:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4175   .text.SUBGRF_SetSwitch:0000000000000000 SUBGRF_SetSwitch
+     /tmp/ccwFGlAj.s:4238   .text.SUBGRF_SetRfTxPower:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4245   .text.SUBGRF_SetRfTxPower:0000000000000000 SUBGRF_SetRfTxPower
+     /tmp/ccwFGlAj.s:4308   .text.SUBGRF_GetRadioWakeUpTime:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4315   .text.SUBGRF_GetRadioWakeUpTime:0000000000000000 SUBGRF_GetRadioWakeUpTime
+     /tmp/ccwFGlAj.s:4330   .text.HAL_SUBGHZ_TxCpltCallback:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4337   .text.HAL_SUBGHZ_TxCpltCallback:0000000000000000 HAL_SUBGHZ_TxCpltCallback
+     /tmp/ccwFGlAj.s:4363   .text.HAL_SUBGHZ_TxCpltCallback:000000000000000c $d
+     /tmp/ccwFGlAj.s:4368   .text.HAL_SUBGHZ_RxCpltCallback:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4375   .text.HAL_SUBGHZ_RxCpltCallback:0000000000000000 HAL_SUBGHZ_RxCpltCallback
+     /tmp/ccwFGlAj.s:4401   .text.HAL_SUBGHZ_RxCpltCallback:000000000000000c $d
+     /tmp/ccwFGlAj.s:4406   .text.HAL_SUBGHZ_CRCErrorCallback:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4413   .text.HAL_SUBGHZ_CRCErrorCallback:0000000000000000 HAL_SUBGHZ_CRCErrorCallback
+     /tmp/ccwFGlAj.s:4439   .text.HAL_SUBGHZ_CRCErrorCallback:000000000000000c $d
+     /tmp/ccwFGlAj.s:4444   .text.HAL_SUBGHZ_CADStatusCallback:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4451   .text.HAL_SUBGHZ_CADStatusCallback:0000000000000000 HAL_SUBGHZ_CADStatusCallback
+     /tmp/ccwFGlAj.s:4500   .text.HAL_SUBGHZ_CADStatusCallback:0000000000000020 $d
+     /tmp/ccwFGlAj.s:4505   .text.HAL_SUBGHZ_RxTxTimeoutCallback:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4512   .text.HAL_SUBGHZ_RxTxTimeoutCallback:0000000000000000 HAL_SUBGHZ_RxTxTimeoutCallback
+     /tmp/ccwFGlAj.s:4538   .text.HAL_SUBGHZ_RxTxTimeoutCallback:0000000000000010 $d
+     /tmp/ccwFGlAj.s:4543   .text.HAL_SUBGHZ_HeaderErrorCallback:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4550   .text.HAL_SUBGHZ_HeaderErrorCallback:0000000000000000 HAL_SUBGHZ_HeaderErrorCallback
+     /tmp/ccwFGlAj.s:4576   .text.HAL_SUBGHZ_HeaderErrorCallback:000000000000000c $d
+     /tmp/ccwFGlAj.s:4581   .text.HAL_SUBGHZ_PreambleDetectedCallback:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4588   .text.HAL_SUBGHZ_PreambleDetectedCallback:0000000000000000 HAL_SUBGHZ_PreambleDetectedCallback
+     /tmp/ccwFGlAj.s:4614   .text.HAL_SUBGHZ_PreambleDetectedCallback:000000000000000c $d
+     /tmp/ccwFGlAj.s:4619   .text.HAL_SUBGHZ_SyncWordValidCallback:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4626   .text.HAL_SUBGHZ_SyncWordValidCallback:0000000000000000 HAL_SUBGHZ_SyncWordValidCallback
+     /tmp/ccwFGlAj.s:4652   .text.HAL_SUBGHZ_SyncWordValidCallback:000000000000000c $d
+ARM GAS  /tmp/ccwFGlAj.s 			page 140
 
 
-     /tmp/ccgOLg1R.s:4657   .text.HAL_SUBGHZ_HeaderValidCallback:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4664   .text.HAL_SUBGHZ_HeaderValidCallback:0000000000000000 HAL_SUBGHZ_HeaderValidCallback
-     /tmp/ccgOLg1R.s:4690   .text.HAL_SUBGHZ_HeaderValidCallback:000000000000000c $d
-     /tmp/ccgOLg1R.s:4695   .text.SUBGRF_GetFskBandwidthRegValue:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4702   .text.SUBGRF_GetFskBandwidthRegValue:0000000000000000 SUBGRF_GetFskBandwidthRegValue
-     /tmp/ccgOLg1R.s:4765   .text.SUBGRF_GetFskBandwidthRegValue:000000000000002c $d
-     /tmp/ccgOLg1R.s:4770   .text.SUBGRF_GetCFO:0000000000000000 $t
-     /tmp/ccgOLg1R.s:4777   .text.SUBGRF_GetCFO:0000000000000000 SUBGRF_GetCFO
-     /tmp/ccgOLg1R.s:4923   .text.SUBGRF_GetCFO:0000000000000080 $d
-     /tmp/ccgOLg1R.s:4941   .bss.FrequencyError:0000000000000000 FrequencyError
-     /tmp/ccgOLg1R.s:4930   .rodata:0000000000000000 $d
-     /tmp/ccgOLg1R.s:4937   .bss.FrequencyError:0000000000000000 $d
-     /tmp/ccgOLg1R.s:4947   .bss.ImageCalibrated:0000000000000000 ImageCalibrated
-     /tmp/ccgOLg1R.s:4948   .bss.ImageCalibrated:0000000000000000 $d
-     /tmp/ccgOLg1R.s:4953   .bss.LoRaHeaderType:0000000000000000 LoRaHeaderType
-     /tmp/ccgOLg1R.s:4954   .bss.LoRaHeaderType:0000000000000000 $d
-     /tmp/ccgOLg1R.s:4959   .bss.OperatingMode:0000000000000000 OperatingMode
-     /tmp/ccgOLg1R.s:4960   .bss.OperatingMode:0000000000000000 $d
-     /tmp/ccgOLg1R.s:4965   .bss.PacketType:0000000000000000 PacketType
-     /tmp/ccgOLg1R.s:4966   .bss.PacketType:0000000000000000 $d
-     /tmp/ccgOLg1R.s:4968   .bss.RadioOnDioIrqCb:0000000000000000 $d
-     /tmp/ccgOLg1R.s:4972   .bss.RadioOnDioIrqCb:0000000000000000 RadioOnDioIrqCb
-     /tmp/ccgOLg1R.s:4975   .rodata.FskBandwidths:0000000000000000 $d
-     /tmp/ccgOLg1R.s:4979   .rodata.FskBandwidths:0000000000000000 FskBandwidths
+     /tmp/ccwFGlAj.s:4657   .text.HAL_SUBGHZ_HeaderValidCallback:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4664   .text.HAL_SUBGHZ_HeaderValidCallback:0000000000000000 HAL_SUBGHZ_HeaderValidCallback
+     /tmp/ccwFGlAj.s:4690   .text.HAL_SUBGHZ_HeaderValidCallback:000000000000000c $d
+     /tmp/ccwFGlAj.s:4695   .text.SUBGRF_GetFskBandwidthRegValue:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4702   .text.SUBGRF_GetFskBandwidthRegValue:0000000000000000 SUBGRF_GetFskBandwidthRegValue
+     /tmp/ccwFGlAj.s:4765   .text.SUBGRF_GetFskBandwidthRegValue:000000000000002c $d
+     /tmp/ccwFGlAj.s:4770   .text.SUBGRF_GetCFO:0000000000000000 $t
+     /tmp/ccwFGlAj.s:4777   .text.SUBGRF_GetCFO:0000000000000000 SUBGRF_GetCFO
+     /tmp/ccwFGlAj.s:4923   .text.SUBGRF_GetCFO:0000000000000080 $d
+     /tmp/ccwFGlAj.s:4941   .bss.FrequencyError:0000000000000000 FrequencyError
+     /tmp/ccwFGlAj.s:4930   .rodata:0000000000000000 $d
+     /tmp/ccwFGlAj.s:4937   .bss.FrequencyError:0000000000000000 $d
+     /tmp/ccwFGlAj.s:4947   .bss.ImageCalibrated:0000000000000000 ImageCalibrated
+     /tmp/ccwFGlAj.s:4948   .bss.ImageCalibrated:0000000000000000 $d
+     /tmp/ccwFGlAj.s:4953   .bss.LoRaHeaderType:0000000000000000 LoRaHeaderType
+     /tmp/ccwFGlAj.s:4954   .bss.LoRaHeaderType:0000000000000000 $d
+     /tmp/ccwFGlAj.s:4959   .bss.OperatingMode:0000000000000000 OperatingMode
+     /tmp/ccwFGlAj.s:4960   .bss.OperatingMode:0000000000000000 $d
+     /tmp/ccwFGlAj.s:4965   .bss.PacketType:0000000000000000 PacketType
+     /tmp/ccwFGlAj.s:4966   .bss.PacketType:0000000000000000 $d
+     /tmp/ccwFGlAj.s:4968   .bss.RadioOnDioIrqCb:0000000000000000 $d
+     /tmp/ccwFGlAj.s:4972   .bss.RadioOnDioIrqCb:0000000000000000 RadioOnDioIrqCb
+     /tmp/ccwFGlAj.s:4975   .rodata.FskBandwidths:0000000000000000 $d
+     /tmp/ccwFGlAj.s:4979   .rodata.FskBandwidths:0000000000000000 FskBandwidths
 
 UNDEFINED SYMBOLS
 HAL_SUBGHZ_ExecSetCmd

@@ -19,7 +19,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "adc.h"
-#include "rtc.h"
 #include "subghz.h"
 #include "app_subghz_phy.h"
 #include "usart.h"
@@ -97,7 +96,6 @@ int main(void)
   MX_USART1_UART_Init();
   MX_ADC_Init();
   MX_SubGHz_Phy_Init();
-  MX_RTC_Init();
   /* USER CODE BEGIN 2 */
   // btLoRaSetup();
   uint8_t dummydata[180] = {
@@ -134,11 +132,14 @@ int main(void)
     /* USER CODE BEGIN 3 */
   //  HAL_GPIO_WritePin(RFSW_VC1_GPIO_Port, RFSW_VC1_Pin, GPIO_PIN_RESET);
   //  HAL_GPIO_WritePin(RFSW_VC2_GPIO_Port, RFSW_VC2_Pin, GPIO_PIN_SET);
+    radio_state =SUBGRF_GetStatus();
     SUBGRF_SetRfFrequency(904600000);
     SUBGRF_SetRfTxPower(17);
     SUBGRF_SetTxContinuousWave();
     radio_state = SUBGRF_GetStatus();
+
     radio_errors = SUBGRF_GetDeviceErrors();
+    Radio.Standby();
 
   }
   /* USER CODE END 3 */
@@ -159,12 +160,12 @@ void SystemClock_Config(void)
 
   /** Initializes the CPU, AHB and APB busses clocks
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSI|RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE|RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
   RCC_OscInitStruct.MSIState = RCC_MSI_ON;
   RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_10;
-  RCC_OscInitStruct.LSIDiv = RCC_LSI_DIV1;
-  RCC_OscInitStruct.LSIState = RCC_LSI_ON;
+  RCC_OscInitStruct.HSEDiv = RCC_HSE_DIV1;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
@@ -186,7 +187,7 @@ void SystemClock_Config(void)
   {
     Error_Handler();
   }
-  HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_MSI, RCC_MCODIV_1);
+  HAL_RCC_MCOConfig(RCC_MCO1, RCC_MCO1SOURCE_HSE, RCC_MCODIV_1);
 }
 
 /* USER CODE BEGIN 4 */

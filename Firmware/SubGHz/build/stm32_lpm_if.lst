@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc9kPpHQ.s 			page 1
+ARM GAS  /tmp/ccLDT2f3.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc9kPpHQ.s 			page 1
   30:Core/Src/stm32_lpm_if.c **** /* USER CODE BEGIN EV */
   31:Core/Src/stm32_lpm_if.c **** 
   32:Core/Src/stm32_lpm_if.c **** /* USER CODE END EV */
-ARM GAS  /tmp/cc9kPpHQ.s 			page 2
+ARM GAS  /tmp/ccLDT2f3.s 			page 2
 
 
   33:Core/Src/stm32_lpm_if.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc9kPpHQ.s 			page 1
   32              		.loc 1 81 1 view .LVU1
   33 0000 7047     		bx	lr
   34              		.cfi_endproc
-ARM GAS  /tmp/cc9kPpHQ.s 			page 3
+ARM GAS  /tmp/ccLDT2f3.s 			page 3
 
 
   35              	.LFE1093:
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc9kPpHQ.s 			page 1
   80              		.syntax unified
   81              		.thumb
   82              		.thumb_func
-ARM GAS  /tmp/cc9kPpHQ.s 			page 4
+ARM GAS  /tmp/ccLDT2f3.s 			page 4
 
 
   83              		.fpu softvfp
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc9kPpHQ.s 			page 1
  111:Core/Src/stm32_lpm_if.c **** void PWR_ExitSleepMode(void)
  112:Core/Src/stm32_lpm_if.c **** {
  127              		.loc 1 112 1 view -0
-ARM GAS  /tmp/cc9kPpHQ.s 			page 5
+ARM GAS  /tmp/ccLDT2f3.s 			page 5
 
 
  128              		.cfi_startproc
@@ -269,24 +269,24 @@ ARM GAS  /tmp/cc9kPpHQ.s 			page 1
  152              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
  153              		.file 4 "Utilities/lpm/tiny_lpm/stm32_lpm.h"
  154              		.file 5 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
-ARM GAS  /tmp/cc9kPpHQ.s 			page 6
+ARM GAS  /tmp/ccLDT2f3.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_lpm_if.c
-     /tmp/cc9kPpHQ.s:16     .text.PWR_EnterOffMode:0000000000000000 $t
-     /tmp/cc9kPpHQ.s:24     .text.PWR_EnterOffMode:0000000000000000 PWR_EnterOffMode
-     /tmp/cc9kPpHQ.s:38     .text.PWR_ExitOffMode:0000000000000000 $t
-     /tmp/cc9kPpHQ.s:45     .text.PWR_ExitOffMode:0000000000000000 PWR_ExitOffMode
-     /tmp/cc9kPpHQ.s:58     .text.PWR_EnterStopMode:0000000000000000 $t
-     /tmp/cc9kPpHQ.s:65     .text.PWR_EnterStopMode:0000000000000000 PWR_EnterStopMode
-     /tmp/cc9kPpHQ.s:78     .text.PWR_ExitStopMode:0000000000000000 $t
-     /tmp/cc9kPpHQ.s:85     .text.PWR_ExitStopMode:0000000000000000 PWR_ExitStopMode
-     /tmp/cc9kPpHQ.s:98     .text.PWR_EnterSleepMode:0000000000000000 $t
-     /tmp/cc9kPpHQ.s:105    .text.PWR_EnterSleepMode:0000000000000000 PWR_EnterSleepMode
-     /tmp/cc9kPpHQ.s:118    .text.PWR_ExitSleepMode:0000000000000000 $t
-     /tmp/cc9kPpHQ.s:125    .text.PWR_ExitSleepMode:0000000000000000 PWR_ExitSleepMode
-     /tmp/cc9kPpHQ.s:142    .rodata.UTIL_PowerDriver:0000000000000000 UTIL_PowerDriver
-     /tmp/cc9kPpHQ.s:139    .rodata.UTIL_PowerDriver:0000000000000000 $d
+     /tmp/ccLDT2f3.s:16     .text.PWR_EnterOffMode:0000000000000000 $t
+     /tmp/ccLDT2f3.s:24     .text.PWR_EnterOffMode:0000000000000000 PWR_EnterOffMode
+     /tmp/ccLDT2f3.s:38     .text.PWR_ExitOffMode:0000000000000000 $t
+     /tmp/ccLDT2f3.s:45     .text.PWR_ExitOffMode:0000000000000000 PWR_ExitOffMode
+     /tmp/ccLDT2f3.s:58     .text.PWR_EnterStopMode:0000000000000000 $t
+     /tmp/ccLDT2f3.s:65     .text.PWR_EnterStopMode:0000000000000000 PWR_EnterStopMode
+     /tmp/ccLDT2f3.s:78     .text.PWR_ExitStopMode:0000000000000000 $t
+     /tmp/ccLDT2f3.s:85     .text.PWR_ExitStopMode:0000000000000000 PWR_ExitStopMode
+     /tmp/ccLDT2f3.s:98     .text.PWR_EnterSleepMode:0000000000000000 $t
+     /tmp/ccLDT2f3.s:105    .text.PWR_EnterSleepMode:0000000000000000 PWR_EnterSleepMode
+     /tmp/ccLDT2f3.s:118    .text.PWR_ExitSleepMode:0000000000000000 $t
+     /tmp/ccLDT2f3.s:125    .text.PWR_ExitSleepMode:0000000000000000 PWR_ExitSleepMode
+     /tmp/ccLDT2f3.s:142    .rodata.UTIL_PowerDriver:0000000000000000 UTIL_PowerDriver
+     /tmp/ccLDT2f3.s:139    .rodata.UTIL_PowerDriver:0000000000000000 $d
 
 NO UNDEFINED SYMBOLS

@@ -69,7 +69,7 @@ extern "C" {
  * 0: TCXO not supported
  * 1: TCXO supported
  */
-#define IS_TCXO_SUPPORTED                   1U
+#define IS_TCXO_SUPPORTED                   0U
 
 /* Indicates whether or not DCDC is supported by the board
  * 0: DCDC not supported

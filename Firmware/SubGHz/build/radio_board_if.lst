@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cceFVOdX.s 			page 1
+ARM GAS  /tmp/ccJ1HXSC.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cceFVOdX.s 			page 1
   30:SubGHz_Phy/Target/radio_board_if.c **** 
   31:SubGHz_Phy/Target/radio_board_if.c **** /* USER CODE END EV */
   32:SubGHz_Phy/Target/radio_board_if.c **** 
-ARM GAS  /tmp/cceFVOdX.s 			page 2
+ARM GAS  /tmp/ccJ1HXSC.s 			page 2
 
 
   33:SubGHz_Phy/Target/radio_board_if.c **** /* Private typedef -----------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cceFVOdX.s 			page 1
   80:SubGHz_Phy/Target/radio_board_if.c ****   /* USER CODE END RBI_Init_2 */
   81:SubGHz_Phy/Target/radio_board_if.c ****   return retcode;
   34              		.loc 1 81 3 view .LVU2
-ARM GAS  /tmp/cceFVOdX.s 			page 3
+ARM GAS  /tmp/ccJ1HXSC.s 			page 3
 
 
   82:SubGHz_Phy/Target/radio_board_if.c **** #endif  /* USE_BSP_DRIVER  */
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cceFVOdX.s 			page 1
   63              	.LFE1117:
   65              		.section	.text.RBI_ConfigRFSwitch,"ax",%progbits
   66              		.align	1
-ARM GAS  /tmp/cceFVOdX.s 			page 4
+ARM GAS  /tmp/ccJ1HXSC.s 			page 4
 
 
   67              		.global	RBI_ConfigRFSwitch
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cceFVOdX.s 			page 1
   96              		.thumb_func
   97              		.fpu softvfp
   99              	RBI_GetTxConfig:
-ARM GAS  /tmp/cceFVOdX.s 			page 5
+ARM GAS  /tmp/ccJ1HXSC.s 			page 5
 
 
  100              	.LFB1119:
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cceFVOdX.s 			page 1
  127              		@ args = 0, pretend = 0, frame = 0
  128              		@ frame_needed = 0, uses_anonymous_args = 0
  129              		@ link register save eliminated.
-ARM GAS  /tmp/cceFVOdX.s 			page 6
+ARM GAS  /tmp/ccJ1HXSC.s 			page 6
 
 
  166:SubGHz_Phy/Target/radio_board_if.c ****   /* USER CODE BEGIN RBI_IsTCXO_1 */
@@ -328,7 +328,7 @@ ARM GAS  /tmp/cceFVOdX.s 			page 1
  187:SubGHz_Phy/Target/radio_board_if.c **** #endif  /* USE_BSP_DRIVER  */
  188:SubGHz_Phy/Target/radio_board_if.c **** }
  133              		.loc 1 188 1 is_stmt 0 view .LVU20
- 134 0000 0120     		movs	r0, #1
+ 134 0000 0020     		movs	r0, #0
  135 0002 7047     		bx	lr
  136              		.cfi_endproc
  137              	.LFE1120:
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cceFVOdX.s 			page 1
  198:SubGHz_Phy/Target/radio_board_if.c ****    *       either in STM32CubeWL package under Drivers/BSP/STM32WLxx_Nucleo/
  199:SubGHz_Phy/Target/radio_board_if.c ****    *       or at https://github.com/STMicroelectronics/STM32CubeWL/tree/main/Drivers/BSP/STM32WLxx_
  200:SubGHz_Phy/Target/radio_board_if.c ****    * 1/ For User boards, the BSP/STM32WLxx_Nucleo/ directory can be copied and replaced in the proj
-ARM GAS  /tmp/cceFVOdX.s 			page 7
+ARM GAS  /tmp/ccJ1HXSC.s 			page 7
 
 
  201:SubGHz_Phy/Target/radio_board_if.c ****    *       on board RF switch configuration (pin control, number of port etc)
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cceFVOdX.s 			page 1
  232:SubGHz_Phy/Target/radio_board_if.c **** #else
  233:SubGHz_Phy/Target/radio_board_if.c ****   /* 2/ Or implement RBI_RBI_GetRFOMaxPowerConfig here */
  234:SubGHz_Phy/Target/radio_board_if.c ****   int32_t ret = 0;
-ARM GAS  /tmp/cceFVOdX.s 			page 8
+ARM GAS  /tmp/ccJ1HXSC.s 			page 8
 
 
  179              		.loc 1 234 3 view .LVU26
@@ -460,24 +460,24 @@ ARM GAS  /tmp/cceFVOdX.s 			page 1
  202              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
  203              		.file 4 "SubGHz_Phy/Target/radio_board_if.h"
  204              		.file 5 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
-ARM GAS  /tmp/cceFVOdX.s 			page 9
+ARM GAS  /tmp/ccJ1HXSC.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 radio_board_if.c
-     /tmp/cceFVOdX.s:16     .text.RBI_Init:0000000000000000 $t
-     /tmp/cceFVOdX.s:24     .text.RBI_Init:0000000000000000 RBI_Init
-     /tmp/cceFVOdX.s:42     .text.RBI_DeInit:0000000000000000 $t
-     /tmp/cceFVOdX.s:49     .text.RBI_DeInit:0000000000000000 RBI_DeInit
-     /tmp/cceFVOdX.s:66     .text.RBI_ConfigRFSwitch:0000000000000000 $t
-     /tmp/cceFVOdX.s:73     .text.RBI_ConfigRFSwitch:0000000000000000 RBI_ConfigRFSwitch
-     /tmp/cceFVOdX.s:92     .text.RBI_GetTxConfig:0000000000000000 $t
-     /tmp/cceFVOdX.s:99     .text.RBI_GetTxConfig:0000000000000000 RBI_GetTxConfig
-     /tmp/cceFVOdX.s:116    .text.RBI_IsTCXO:0000000000000000 $t
-     /tmp/cceFVOdX.s:123    .text.RBI_IsTCXO:0000000000000000 RBI_IsTCXO
-     /tmp/cceFVOdX.s:140    .text.RBI_IsDCDC:0000000000000000 $t
-     /tmp/cceFVOdX.s:147    .text.RBI_IsDCDC:0000000000000000 RBI_IsDCDC
-     /tmp/cceFVOdX.s:164    .text.RBI_GetRFOMaxPowerConfig:0000000000000000 $t
-     /tmp/cceFVOdX.s:171    .text.RBI_GetRFOMaxPowerConfig:0000000000000000 RBI_GetRFOMaxPowerConfig
+     /tmp/ccJ1HXSC.s:16     .text.RBI_Init:0000000000000000 $t
+     /tmp/ccJ1HXSC.s:24     .text.RBI_Init:0000000000000000 RBI_Init
+     /tmp/ccJ1HXSC.s:42     .text.RBI_DeInit:0000000000000000 $t
+     /tmp/ccJ1HXSC.s:49     .text.RBI_DeInit:0000000000000000 RBI_DeInit
+     /tmp/ccJ1HXSC.s:66     .text.RBI_ConfigRFSwitch:0000000000000000 $t
+     /tmp/ccJ1HXSC.s:73     .text.RBI_ConfigRFSwitch:0000000000000000 RBI_ConfigRFSwitch
+     /tmp/ccJ1HXSC.s:92     .text.RBI_GetTxConfig:0000000000000000 $t
+     /tmp/ccJ1HXSC.s:99     .text.RBI_GetTxConfig:0000000000000000 RBI_GetTxConfig
+     /tmp/ccJ1HXSC.s:116    .text.RBI_IsTCXO:0000000000000000 $t
+     /tmp/ccJ1HXSC.s:123    .text.RBI_IsTCXO:0000000000000000 RBI_IsTCXO
+     /tmp/ccJ1HXSC.s:140    .text.RBI_IsDCDC:0000000000000000 $t
+     /tmp/ccJ1HXSC.s:147    .text.RBI_IsDCDC:0000000000000000 RBI_IsDCDC
+     /tmp/ccJ1HXSC.s:164    .text.RBI_GetRFOMaxPowerConfig:0000000000000000 $t
+     /tmp/ccJ1HXSC.s:171    .text.RBI_GetRFOMaxPowerConfig:0000000000000000 RBI_GetRFOMaxPowerConfig
 
 NO UNDEFINED SYMBOLS

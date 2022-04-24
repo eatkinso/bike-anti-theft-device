@@ -33,8 +33,6 @@
 
 // LoRa Parameters
 
-#ifndef btLORA
-#define btLORA (uint8_t )
 
 
 /*!

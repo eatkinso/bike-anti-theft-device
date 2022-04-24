@@ -896,6 +896,83 @@ Caps -- 30 pF.
 
 Soldered on oscillator -- pic of board below: 
 
-the other one is a little more sus..... but we'll cros that bridge when we come to it. Worst case scenario I might just make a new board. 
+the other one is a little more sus..... but we'll cross that bridge when we come to it. Worst case scenario I might just make a new board. 
+
+Other relevant note is that I'm back to using the STLINK programmer with hosted BMP firmware, [documentation and commands here](https://github.com/blackmagic-debug/blackmagic)
+
+
+
 
 ![](boardwithosc.jpeg)
+
+I'm just using the same test program as before where I try to enter TX and then query radio status and error state. Code: 
+
+![](radiocode423.png)
+
+![](radio_error_4_23.png)
+
+![](statusbyte.png)
+
+
+Ok, now there are no errors so it seems like the oscillator is OK for the radio. But, there is also no RF output, and the radio_state suggests that the radio is not actually in TX.... Taking another look at the documentation to see what's up. 
+
+![](errors2.png) 
+
+Ok, now it looks like it has actual errors -- img calibration failed and osc failed to start. Probing the crystal to see if we're getting a clock. also probably going to try enabling the HSE in CubeMX to see if that makes a difference. 
+
+Ok, clearly there is no clock on the scope. Tried enabling in CubeMX and regenerated code to see if that helps. 
+
+![](errort.png)
+
+![](radioerror3.png)
+
+Same errors. Looks like an oscillator problem. Taking a look at the STM32 ocillator design guide to see if I can see what's up. 
+
+refs -- 
+- an5042-precise-hse-frequency-and-startup-time-tuning-for-stm32-wireless-mcus-stmicroelectronics.pdf
+- an2867-oscillator-design-guide-for-stm8afals-stm32-mcus-and-mpus-stmicroelectronics.pdf
+
+![](cleq.png)
+
+The spec for load capacitance is 16pf; cL is 30 pF which gives 15+Cs which is probably around a few pF. 
+
+![](esrmax.png)
+
+
+Enabled the HSE and increased the HSE startup timeout to 10000 ms. Also routed the HSE output directly onto MCO to verify that the CPU is getting it. Looks like there is a clock now, it is only 1V but the MCO had a 32 MHz clock so it seems like the cpu is getting it. 
+
+Oscillator:
+![](1vosc.jpeg)
+
+
+MCO output:
+![](mco32.jpeg)
+
+
+ughhhhh, polled the status byte and it says the radio is in TX, no errors, but it still isn't transmitting :cry:... I'm so lost rn
+![](noradio.png)
+
+Attempting now to straight-up send SPI commands directly to the radio... ugh.
+
+Actually i am not doing that because I can't find a list of the actual spi commands or find where they are defined :( instead i'm now trying with the nucleos to make sure I'm actually intializing the radio with SUBGRF correctly. 
+
+
+Ham band chart:
+https://www.arrl.org/files/file/Regulatory/Band%20Chart/Band%20Chart%20-%2011X17%20Color.pdf
+
+Just transmitting CW at 430 for now (into a spectrum analyzer, so i'm not breaking any laws by omitting a call sign...)
+
+*Note*:  the cubeIDE generated code had a lot of compilation errors..select "copy all library files" and "generate separate pair of .c/.h file per peripheral" to fix these. Seems like there is a bug where necessary files are not included if you only include "necessary" libary files. 
+
+Starting with the high-level driver due to my paranoia about blowing the rf switch in the dev board...
+
+![](rf_settxcwhighlevel.png)
+
+my code: 
+
+![](main1_subghznucleo.png)
+
+
+my code for the second run, trying to exactly emulate the code I tried on my other board: 
+![](txcwcode.png)
+

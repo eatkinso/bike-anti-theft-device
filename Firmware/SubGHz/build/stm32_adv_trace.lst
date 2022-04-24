@@ -1,4 +1,4 @@
-ARM GAS  /tmp/cc5yuC7x.s 			page 1
+ARM GAS  /tmp/ccF5z9TQ.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
   30:Utilities/trace/adv_trace/stm32_adv_trace.c **** /** @defgroup ADV_TRACE_Private_defines ADV_TRACE Privates defines
   31:Utilities/trace/adv_trace/stm32_adv_trace.c ****  *  @{
   32:Utilities/trace/adv_trace/stm32_adv_trace.c ****  */
-ARM GAS  /tmp/cc5yuC7x.s 			page 2
+ARM GAS  /tmp/ccF5z9TQ.s 			page 2
 
 
   33:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
   87:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
   88:Utilities/trace/adv_trace/stm32_adv_trace.c **** /**
   89:Utilities/trace/adv_trace/stm32_adv_trace.c ****  *  @brief  ADV_TRACE_Context.
-ARM GAS  /tmp/cc5yuC7x.s 			page 3
+ARM GAS  /tmp/ccF5z9TQ.s 			page 3
 
 
   90:Utilities/trace/adv_trace/stm32_adv_trace.c ****  *  this structure contains all the data to handle the trace context.
@@ -178,7 +178,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  144:Utilities/trace/adv_trace/stm32_adv_trace.c **** /** @defgroup ADV_TRACE_private_function ADV_TRACE private function
  145:Utilities/trace/adv_trace/stm32_adv_trace.c ****  *
  146:Utilities/trace/adv_trace/stm32_adv_trace.c ****  *  @{
-ARM GAS  /tmp/cc5yuC7x.s 			page 4
+ARM GAS  /tmp/ccF5z9TQ.s 			page 4
 
 
  147:Utilities/trace/adv_trace/stm32_adv_trace.c ****  */
@@ -238,7 +238,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  201:Utilities/trace/adv_trace/stm32_adv_trace.c **** #if defined(UTIL_ADV_TRACE_CONDITIONNAL)
  202:Utilities/trace/adv_trace/stm32_adv_trace.c **** UTIL_ADV_TRACE_Status_t UTIL_ADV_TRACE_COND_FSend(uint32_t VerboseLevel, uint32_t Region, uint32_t 
  203:Utilities/trace/adv_trace/stm32_adv_trace.c **** {
-ARM GAS  /tmp/cc5yuC7x.s 			page 5
+ARM GAS  /tmp/ccF5z9TQ.s 			page 5
 
 
  204:Utilities/trace/adv_trace/stm32_adv_trace.c ****   va_list vaArgs;
@@ -298,7 +298,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  258:Utilities/trace/adv_trace/stm32_adv_trace.c ****     (void)UTIL_ADV_TRACE_VSNPRINTF((char *)(&ADV_TRACE_Buffer[writepos]), UTIL_ADV_TRACE_TMP_BUF_SI
  259:Utilities/trace/adv_trace/stm32_adv_trace.c ****     va_end(vaArgs);
  260:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
-ARM GAS  /tmp/cc5yuC7x.s 			page 6
+ARM GAS  /tmp/ccF5z9TQ.s 			page 6
 
 
  261:Utilities/trace/adv_trace/stm32_adv_trace.c ****     TRACE_UnLock();
@@ -358,7 +358,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  315:Utilities/trace/adv_trace/stm32_adv_trace.c ****   /* check verbose level */
  316:Utilities/trace/adv_trace/stm32_adv_trace.c ****   if(!(ADV_TRACE_Ctx.CurrentVerboseLevel >= VerboseLevel))
  317:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
-ARM GAS  /tmp/cc5yuC7x.s 			page 7
+ARM GAS  /tmp/ccF5z9TQ.s 			page 7
 
 
  318:Utilities/trace/adv_trace/stm32_adv_trace.c ****     return UTIL_ADV_TRACE_GIVEUP;
@@ -418,7 +418,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  372:Utilities/trace/adv_trace/stm32_adv_trace.c ****     /*user fill */
  373:Utilities/trace/adv_trace/stm32_adv_trace.c ****     *pData = ADV_TRACE_Buffer;
  374:Utilities/trace/adv_trace/stm32_adv_trace.c ****     *FifoSize = UTIL_ADV_TRACE_FIFO_SIZE;
-ARM GAS  /tmp/cc5yuC7x.s 			page 8
+ARM GAS  /tmp/ccF5z9TQ.s 			page 8
 
 
  375:Utilities/trace/adv_trace/stm32_adv_trace.c ****     *WritePos = (uint16_t)writepos;
@@ -478,7 +478,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  429:Utilities/trace/adv_trace/stm32_adv_trace.c ****     for (idx = 0u; idx < Length; idx++)
  430:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
  431:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Buffer[writepos] = pData[idx];
-ARM GAS  /tmp/cc5yuC7x.s 			page 9
+ARM GAS  /tmp/ccF5z9TQ.s 			page 9
 
 
  432:Utilities/trace/adv_trace/stm32_adv_trace.c ****       writepos = (uint16_t) ((writepos + 1u) % UTIL_ADV_TRACE_FIFO_SIZE);
@@ -538,7 +538,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  486:Utilities/trace/adv_trace/stm32_adv_trace.c **** void UTIL_ADV_TRACE_RegisterTimeStampFunction(cb_timestamp *cb)
  487:Utilities/trace/adv_trace/stm32_adv_trace.c **** {
  488:Utilities/trace/adv_trace/stm32_adv_trace.c ****   ADV_TRACE_Ctx.timestamp_func = *cb;
-ARM GAS  /tmp/cc5yuC7x.s 			page 10
+ARM GAS  /tmp/ccF5z9TQ.s 			page 10
 
 
  489:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
@@ -598,7 +598,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  543:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  544:Utilities/trace/adv_trace/stm32_adv_trace.c ****   if(TRACE_IsLocked() == 0u)
  545:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
-ARM GAS  /tmp/cc5yuC7x.s 			page 11
+ARM GAS  /tmp/ccF5z9TQ.s 			page 11
 
 
  546:Utilities/trace/adv_trace/stm32_adv_trace.c ****     TRACE_Lock();
@@ -658,7 +658,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  600:Utilities/trace/adv_trace/stm32_adv_trace.c ****   return ret;
  601:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
  602:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
-ARM GAS  /tmp/cc5yuC7x.s 			page 12
+ARM GAS  /tmp/ccF5z9TQ.s 			page 12
 
 
  603:Utilities/trace/adv_trace/stm32_adv_trace.c **** /**
@@ -718,7 +718,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  657:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Ctx.unchunk_enabled = 0;
  658:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  659:Utilities/trace/adv_trace/stm32_adv_trace.c ****       UTIL_ADV_TRACE_DEBUG("\nTRACE_TxCpltCallback::unchunk start(%d,%d)\n", ADV_TRACE_Ctx.unchunk_
-ARM GAS  /tmp/cc5yuC7x.s 			page 13
+ARM GAS  /tmp/ccF5z9TQ.s 			page 13
 
 
  660:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
@@ -778,7 +778,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
   36              		.cfi_offset 14, -4
  705:Utilities/trace/adv_trace/stm32_adv_trace.c ****   uint16_t freesize;
   37              		.loc 1 705 3 is_stmt 1 view .LVU2
-ARM GAS  /tmp/cc5yuC7x.s 			page 14
+ARM GAS  /tmp/ccF5z9TQ.s 			page 14
 
 
  706:Utilities/trace/adv_trace/stm32_adv_trace.c ****   int16_t ret = -1;
@@ -838,7 +838,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
   46:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __STATIC_INLINE
   47:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __STATIC_INLINE                        static inline
   48:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/cc5yuC7x.s 			page 15
+ARM GAS  /tmp/ccF5z9TQ.s 			page 15
 
 
   49:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __STATIC_FORCEINLINE                 
@@ -898,7 +898,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  103:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
  104:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
  105:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
-ARM GAS  /tmp/cc5yuC7x.s 			page 16
+ARM GAS  /tmp/ccF5z9TQ.s 			page 16
 
 
  106:Drivers/CMSIS/Include/cmsis_gcc.h ****   __PACKED_STRUCT T_UINT32_READ { uint32_t v; };
@@ -958,7 +958,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  160:Drivers/CMSIS/Include/cmsis_gcc.h ****     }
  161:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
  162:Drivers/CMSIS/Include/cmsis_gcc.h ****  
-ARM GAS  /tmp/cc5yuC7x.s 			page 17
+ARM GAS  /tmp/ccF5z9TQ.s 			page 17
 
 
  163:Drivers/CMSIS/Include/cmsis_gcc.h ****   _start();
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  217:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  218:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_CONTROL(void)
  219:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  /tmp/cc5yuC7x.s 			page 18
+ARM GAS  /tmp/ccF5z9TQ.s 			page 18
 
 
  220:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  274:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  275:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  276:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, ipsr" : "=r" (result) );
-ARM GAS  /tmp/cc5yuC7x.s 			page 19
+ARM GAS  /tmp/ccF5z9TQ.s 			page 19
 
 
  277:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  331:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  332:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  333:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, psp_ns"  : "=r" (result) );
-ARM GAS  /tmp/cc5yuC7x.s 			page 20
+ARM GAS  /tmp/ccF5z9TQ.s 			page 20
 
 
  334:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  388:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  389:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  390:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
-ARM GAS  /tmp/cc5yuC7x.s 			page 21
+ARM GAS  /tmp/ccF5z9TQ.s 			page 21
 
 
  391:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  445:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get Priority Mask
  446:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current state of the priority mask bit from the Priority Mask Register.
  447:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Priority Mask value
-ARM GAS  /tmp/cc5yuC7x.s 			page 22
+ARM GAS  /tmp/ccF5z9TQ.s 			page 22
 
 
  448:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  716:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Ctx.unchunk_status = TRACE_UNCHUNK_DETECTED;
  717:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Ctx.unchunk_enabled = ADV_TRACE_Ctx.TraceWrPtr;
  718:Utilities/trace/adv_trace/stm32_adv_trace.c ****       freesize = ADV_TRACE_Ctx.TraceRdPtr;
-ARM GAS  /tmp/cc5yuC7x.s 			page 23
+ARM GAS  /tmp/ccF5z9TQ.s 			page 23
 
 
  719:Utilities/trace/adv_trace/stm32_adv_trace.c ****       ADV_TRACE_Ctx.TraceWrPtr = 0;
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  116 0036 14E0     		b	.L3
  117              	.LVL6:
  118              	.L8:
-ARM GAS  /tmp/cc5yuC7x.s 			page 24
+ARM GAS  /tmp/ccF5z9TQ.s 			page 24
 
 
  713:Utilities/trace/adv_trace/stm32_adv_trace.c ****     if((Size >= freesize) && (ADV_TRACE_Ctx.TraceRdPtr > Size))
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  154 005c A2EB0C03 		sub	r3, r2, ip
  155 0060 9BB2     		uxth	r3, r3
  156              	.LVL11:
-ARM GAS  /tmp/cc5yuC7x.s 			page 25
+ARM GAS  /tmp/ccF5z9TQ.s 			page 25
 
 
  157              	.L3:
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  771:Utilities/trace/adv_trace/stm32_adv_trace.c **** #else
  772:Utilities/trace/adv_trace/stm32_adv_trace.c ****     UTIL_ADV_TRACE_DEBUG("\n--TRACE_AllocateBufer(%d-%d::%d-%d)--\n",freesize - Size, Size, ADV_TRA
  773:Utilities/trace/adv_trace/stm32_adv_trace.c **** #endif
-ARM GAS  /tmp/cc5yuC7x.s 			page 26
+ARM GAS  /tmp/ccF5z9TQ.s 			page 26
 
 
  774:Utilities/trace/adv_trace/stm32_adv_trace.c ****   }
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  197              	.LBE43:
  198              	.LBE42:
  787:Utilities/trace/adv_trace/stm32_adv_trace.c ****   return ret;
-ARM GAS  /tmp/cc5yuC7x.s 			page 27
+ARM GAS  /tmp/ccF5z9TQ.s 			page 27
 
 
  199              		.loc 1 787 3 is_stmt 1 view .LVU65
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  241              	.LVL18:
  454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  242              		.loc 2 454 3 view .LVU74
-ARM GAS  /tmp/cc5yuC7x.s 			page 28
+ARM GAS  /tmp/ccF5z9TQ.s 			page 28
 
 
  454:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  290              	.L12:
  291 0014 00000000 		.word	.LANCHOR0
  292              		.cfi_endproc
-ARM GAS  /tmp/cc5yuC7x.s 			page 29
+ARM GAS  /tmp/ccF5z9TQ.s 			page 29
 
 
  293              	.LFE130:
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  334              	@ 209 "Drivers/CMSIS/Include/cmsis_gcc.h" 1
  335 0004 72B6     		cpsid i
  336              	@ 0 "" 2
-ARM GAS  /tmp/cc5yuC7x.s 			page 30
+ARM GAS  /tmp/ccF5z9TQ.s 			page 30
 
 
  337              		.thumb
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  817:Utilities/trace/adv_trace/stm32_adv_trace.c **** {
  383              		.loc 1 817 1 is_stmt 1 view -0
  384              		.cfi_startproc
-ARM GAS  /tmp/cc5yuC7x.s 			page 31
+ARM GAS  /tmp/ccF5z9TQ.s 			page 31
 
 
  385              		@ args = 0, pretend = 0, frame = 0
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  435              		.loc 1 172 43 view .LVU112
  175:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  436              		.loc 1 175 41 view .LVU113
-ARM GAS  /tmp/cc5yuC7x.s 			page 32
+ARM GAS  /tmp/ccF5z9TQ.s 			page 32
 
 
  178:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  484 0008 08BD     		pop	{r3, pc}
  485              	.L27:
  486 000a 00BF     		.align	2
-ARM GAS  /tmp/cc5yuC7x.s 			page 33
+ARM GAS  /tmp/ccF5z9TQ.s 			page 33
 
 
  487              	.L26:
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  536              		.thumb_func
  537              		.fpu softvfp
  539              	UTIL_ADV_TRACE_StartRxProcess:
-ARM GAS  /tmp/cc5yuC7x.s 			page 34
+ARM GAS  /tmp/ccF5z9TQ.s 			page 34
 
 
  540              	.LVL28:
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  588              		.cfi_offset 5, -8
  589              		.cfi_offset 14, -4
  590 0002 87B0     		sub	sp, sp, #28
-ARM GAS  /tmp/cc5yuC7x.s 			page 35
+ARM GAS  /tmp/ccF5z9TQ.s 			page 35
 
 
  591              	.LCFI5:
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  628              	.LVL33:
  328:Utilities/trace/adv_trace/stm32_adv_trace.c ****   }
  629              		.loc 1 328 5 is_stmt 0 view .LVU156
-ARM GAS  /tmp/cc5yuC7x.s 			page 36
+ARM GAS  /tmp/ccF5z9TQ.s 			page 36
 
 
  630 002a 01A8     		add	r0, sp, #4
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  671 0064 ADF81630 		strh	r3, [sp, #22]	@ movhi
  337:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
  672              		.loc 1 337 55 is_stmt 1 discriminator 3 view .LVU170
-ARM GAS  /tmp/cc5yuC7x.s 			page 37
+ARM GAS  /tmp/ccF5z9TQ.s 			page 37
 
 
  337:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
@@ -2218,7 +2218,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  713              		@ sp needed
  714 008e 30BD     		pop	{r4, r5, pc}
  715              	.LVL43:
-ARM GAS  /tmp/cc5yuC7x.s 			page 38
+ARM GAS  /tmp/ccF5z9TQ.s 			page 38
 
 
  716              	.L48:
@@ -2278,7 +2278,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  763              		.loc 1 363 1 is_stmt 0 view .LVU193
  764 0000 F0B5     		push	{r4, r5, r6, r7, lr}
  765              	.LCFI8:
-ARM GAS  /tmp/cc5yuC7x.s 			page 39
+ARM GAS  /tmp/ccF5z9TQ.s 			page 39
 
 
  766              		.cfi_def_cfa_offset 20
@@ -2338,7 +2338,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  807 0030 0020     		movs	r0, #0
  808              	.LVL53:
  809              	.L53:
-ARM GAS  /tmp/cc5yuC7x.s 			page 40
+ARM GAS  /tmp/ccF5z9TQ.s 			page 40
 
 
  383:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
@@ -2398,7 +2398,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  857 0004 7047     		bx	lr
  858              	.L59:
  859 0006 00BF     		.align	2
-ARM GAS  /tmp/cc5yuC7x.s 			page 41
+ARM GAS  /tmp/ccF5z9TQ.s 			page 41
 
 
  860              	.L58:
@@ -2458,7 +2458,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  911 0000 014B     		ldr	r3, .L64
  912 0002 187A     		ldrb	r0, [r3, #8]	@ zero_extendqisi2
  913 0004 7047     		bx	lr
-ARM GAS  /tmp/cc5yuC7x.s 			page 42
+ARM GAS  /tmp/ccF5z9TQ.s 			page 42
 
 
  914              	.L65:
@@ -2518,7 +2518,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  508:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
  967              		.loc 1 508 3 view .LVU228
  509:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
-ARM GAS  /tmp/cc5yuC7x.s 			page 43
+ARM GAS  /tmp/ccF5z9TQ.s 			page 43
 
 
  968              		.loc 1 509 1 is_stmt 0 view .LVU229
@@ -2578,7 +2578,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1021              		.cfi_startproc
  1022              		@ args = 0, pretend = 0, frame = 0
  1023              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  /tmp/cc5yuC7x.s 			page 44
+ARM GAS  /tmp/ccF5z9TQ.s 			page 44
 
 
  1024              		@ link register save eliminated.
@@ -2638,7 +2638,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1070              	.LBE57:
  542:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  1071              		.loc 1 542 3 is_stmt 1 view .LVU245
-ARM GAS  /tmp/cc5yuC7x.s 			page 45
+ARM GAS  /tmp/ccF5z9TQ.s 			page 45
 
 
  1072              	.LBB59:
@@ -2698,7 +2698,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1115              		.loc 1 546 5 is_stmt 1 view .LVU257
  1116 0016 FFF7FEFF 		bl	TRACE_Lock
  1117              	.LVL66:
-ARM GAS  /tmp/cc5yuC7x.s 			page 46
+ARM GAS  /tmp/ccF5z9TQ.s 			page 46
 
 
  548:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
@@ -2758,7 +2758,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1155              		.loc 1 581 7 is_stmt 1 view .LVU274
  581:Utilities/trace/adv_trace/stm32_adv_trace.c **** 
  1156              		.loc 1 581 44 is_stmt 0 view .LVU275
-ARM GAS  /tmp/cc5yuC7x.s 			page 47
+ARM GAS  /tmp/ccF5z9TQ.s 			page 47
 
 
  1157 0040 134E     		ldr	r6, .L86
@@ -2818,7 +2818,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  553:Utilities/trace/adv_trace/stm32_adv_trace.c ****         ADV_TRACE_Ctx.unchunk_status = TRACE_UNCHUNK_TRANSFER;
  1200              		.loc 1 553 39 view .LVU289
  1201 0060 8A1A     		subs	r2, r1, r2
-ARM GAS  /tmp/cc5yuC7x.s 			page 48
+ARM GAS  /tmp/ccF5z9TQ.s 			page 48
 
 
  1202 0062 92B2     		uxth	r2, r2
@@ -2878,7 +2878,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1239              	.LBI65:
  479:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  1240              		.loc 2 479 27 view .LVU307
-ARM GAS  /tmp/cc5yuC7x.s 			page 49
+ARM GAS  /tmp/ccF5z9TQ.s 			page 49
 
 
  1241              	.LBB66:
@@ -2938,7 +2938,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1293              		.cfi_offset 14, -8
  1294 0004 86B0     		sub	sp, sp, #24
  1295              	.LCFI15:
-ARM GAS  /tmp/cc5yuC7x.s 			page 50
+ARM GAS  /tmp/ccF5z9TQ.s 			page 50
 
 
  1296              		.cfi_def_cfa_offset 40
@@ -2998,7 +2998,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1332 002c 01A8     		add	r0, sp, #4
  1333 002e 9847     		blx	r3
  1334              	.LVL75:
-ARM GAS  /tmp/cc5yuC7x.s 			page 51
+ARM GAS  /tmp/ccF5z9TQ.s 			page 51
 
 
  1335              	.L90:
@@ -3058,7 +3058,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1376 006c 1649     		ldr	r1, .L100+8
  1377 006e 8854     		strb	r0, [r1, r2]
  254:Utilities/trace/adv_trace/stm32_adv_trace.c ****     }
-ARM GAS  /tmp/cc5yuC7x.s 			page 52
+ARM GAS  /tmp/ccF5z9TQ.s 			page 52
 
 
  1378              		.loc 1 254 7 is_stmt 1 discriminator 3 view .LVU344
@@ -3118,7 +3118,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1417              	.L89:
  292:Utilities/trace/adv_trace/stm32_adv_trace.c **** #endif
  1418              		.loc 1 292 1 view .LVU360
-ARM GAS  /tmp/cc5yuC7x.s 			page 53
+ARM GAS  /tmp/ccF5z9TQ.s 			page 53
 
 
  1419 009e 06B0     		add	sp, sp, #24
@@ -3178,7 +3178,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1465 00c4 00000000 		.word	.LANCHOR2
  1466 00c8 00000000 		.word	.LANCHOR1
  1467              		.cfi_endproc
-ARM GAS  /tmp/cc5yuC7x.s 			page 54
+ARM GAS  /tmp/ccF5z9TQ.s 			page 54
 
 
  1468              	.LFE111:
@@ -3238,7 +3238,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  358:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
  1520              		.loc 1 358 3 view .LVU375
  358:Utilities/trace/adv_trace/stm32_adv_trace.c **** }
-ARM GAS  /tmp/cc5yuC7x.s 			page 55
+ARM GAS  /tmp/ccF5z9TQ.s 			page 55
 
 
  1521              		.loc 1 358 10 is_stmt 0 view .LVU376
@@ -3298,7 +3298,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1566              		.loc 1 402 3 is_stmt 1 view .LVU387
  402:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
  1567              		.loc 1 402 21 is_stmt 0 view .LVU388
-ARM GAS  /tmp/cc5yuC7x.s 			page 56
+ARM GAS  /tmp/ccF5z9TQ.s 			page 56
 
 
  1568 0010 294B     		ldr	r3, .L120
@@ -3358,7 +3358,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1608              	.LVL102:
  420:Utilities/trace/adv_trace/stm32_adv_trace.c ****   {
  1609              		.loc 1 420 6 view .LVU403
-ARM GAS  /tmp/cc5yuC7x.s 			page 57
+ARM GAS  /tmp/ccF5z9TQ.s 			page 57
 
 
  1610 0046 B0F1FF3F 		cmp	r0, #-1
@@ -3418,7 +3418,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1649              	.LVL106:
  1650              	.L113:
  431:Utilities/trace/adv_trace/stm32_adv_trace.c ****       writepos = (uint16_t) ((writepos + 1u) % UTIL_ADV_TRACE_FIFO_SIZE);
-ARM GAS  /tmp/cc5yuC7x.s 			page 58
+ARM GAS  /tmp/ccF5z9TQ.s 			page 58
 
 
  1651              		.loc 1 431 7 is_stmt 1 discriminator 3 view .LVU419
@@ -3478,7 +3478,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1691              	.LCFI25:
  1692              		.cfi_restore_state
  440:Utilities/trace/adv_trace/stm32_adv_trace.c ****     ret = UTIL_ADV_TRACE_MEM_FULL;
-ARM GAS  /tmp/cc5yuC7x.s 			page 59
+ARM GAS  /tmp/ccF5z9TQ.s 			page 59
 
 
  1693              		.loc 1 440 5 is_stmt 1 view .LVU434
@@ -3538,7 +3538,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1741              		.cfi_offset 4, -16
  1742              		.cfi_offset 5, -12
  1743              		.cfi_offset 6, -8
-ARM GAS  /tmp/cc5yuC7x.s 			page 60
+ARM GAS  /tmp/ccF5z9TQ.s 			page 60
 
 
  1744              		.cfi_offset 14, -4
@@ -3598,7 +3598,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1783 0034 ADF80630 		strh	r3, [sp, #6]	@ movhi
  460:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
  1784              		.loc 1 460 34 is_stmt 1 discriminator 3 view .LVU458
-ARM GAS  /tmp/cc5yuC7x.s 			page 61
+ARM GAS  /tmp/ccF5z9TQ.s 			page 61
 
 
  460:Utilities/trace/adv_trace/stm32_adv_trace.c ****     {
@@ -3658,7 +3658,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1829              		.global	UTIL_ADV_TRACE_FSend
  1830              		.syntax unified
  1831              		.thumb
-ARM GAS  /tmp/cc5yuC7x.s 			page 62
+ARM GAS  /tmp/ccF5z9TQ.s 			page 62
 
 
  1832              		.thumb_func
@@ -3718,7 +3718,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1876              		.loc 1 305 1 view .LVU480
  1877 0020 43B0     		add	sp, sp, #268
  1878              	.LCFI33:
-ARM GAS  /tmp/cc5yuC7x.s 			page 63
+ARM GAS  /tmp/ccF5z9TQ.s 			page 63
 
 
  1879              		.cfi_def_cfa_offset 20
@@ -3778,7 +3778,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  1933              		.cfi_def_cfa_offset 8
  1934              		.cfi_offset 4, -8
  1935              		.cfi_offset 14, -4
-ARM GAS  /tmp/cc5yuC7x.s 			page 64
+ARM GAS  /tmp/ccF5z9TQ.s 			page 64
 
 
  610:Utilities/trace/adv_trace/stm32_adv_trace.c ****   UTIL_ADV_TRACE_ENTER_CRITICAL_SECTION();
@@ -3838,7 +3838,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  631:Utilities/trace/adv_trace/stm32_adv_trace.c ****   }
  1977              		.loc 1 631 5 is_stmt 1 view .LVU498
  631:Utilities/trace/adv_trace/stm32_adv_trace.c ****   }
-ARM GAS  /tmp/cc5yuC7x.s 			page 65
+ARM GAS  /tmp/ccF5z9TQ.s 			page 65
 
 
  1978              		.loc 1 631 46 is_stmt 0 view .LVU499
@@ -3898,7 +3898,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  481:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  2019              		.loc 2 481 3 is_stmt 0 view .LVU513
  2020              		.thumb
-ARM GAS  /tmp/cc5yuC7x.s 			page 66
+ARM GAS  /tmp/ccF5z9TQ.s 			page 66
 
 
  2021              		.syntax unified
@@ -3958,7 +3958,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  673:Utilities/trace/adv_trace/stm32_adv_trace.c ****       {
  2061              		.loc 1 673 7 is_stmt 1 view .LVU528
  673:Utilities/trace/adv_trace/stm32_adv_trace.c ****       {
-ARM GAS  /tmp/cc5yuC7x.s 			page 67
+ARM GAS  /tmp/ccF5z9TQ.s 			page 67
 
 
  2062              		.loc 1 673 50 is_stmt 0 view .LVU529
@@ -4018,7 +4018,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  2102 0070 0D4A     		ldr	r2, .L148+8
  2103 0072 D268     		ldr	r2, [r2, #12]
  687:Utilities/trace/adv_trace/stm32_adv_trace.c ****   }
-ARM GAS  /tmp/cc5yuC7x.s 			page 68
+ARM GAS  /tmp/ccF5z9TQ.s 			page 68
 
 
  2104              		.loc 1 687 5 view .LVU544
@@ -4078,7 +4078,7 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  2141 0092 2082     		strh	r0, [r4, #16]	@ movhi
  2142 0094 DCE7     		b	.L140
  2143              	.L142:
-ARM GAS  /tmp/cc5yuC7x.s 			page 69
+ARM GAS  /tmp/ccF5z9TQ.s 			page 69
 
 
  679:Utilities/trace/adv_trace/stm32_adv_trace.c ****       }
@@ -4135,93 +4135,93 @@ ARM GAS  /tmp/cc5yuC7x.s 			page 1
  2187              		.file 7 "Utilities/misc/stm32_tiny_vsnprintf.h"
  2188              		.file 8 "Utilities/misc/stm32_mem.h"
  2189              		.file 9 "<built-in>"
-ARM GAS  /tmp/cc5yuC7x.s 			page 70
+ARM GAS  /tmp/ccF5z9TQ.s 			page 70
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_adv_trace.c
-     /tmp/cc5yuC7x.s:16     .text.TRACE_AllocateBufer:0000000000000000 $t
-     /tmp/cc5yuC7x.s:23     .text.TRACE_AllocateBufer:0000000000000000 TRACE_AllocateBufer
-     /tmp/cc5yuC7x.s:212    .text.TRACE_AllocateBufer:0000000000000084 $d
-     /tmp/cc5yuC7x.s:217    .text.TRACE_Lock:0000000000000000 $t
-     /tmp/cc5yuC7x.s:223    .text.TRACE_Lock:0000000000000000 TRACE_Lock
-     /tmp/cc5yuC7x.s:291    .text.TRACE_Lock:0000000000000014 $d
-     /tmp/cc5yuC7x.s:296    .text.TRACE_UnLock:0000000000000000 $t
-     /tmp/cc5yuC7x.s:302    .text.TRACE_UnLock:0000000000000000 TRACE_UnLock
-     /tmp/cc5yuC7x.s:370    .text.TRACE_UnLock:0000000000000014 $d
-     /tmp/cc5yuC7x.s:375    .text.TRACE_IsLocked:0000000000000000 $t
-     /tmp/cc5yuC7x.s:381    .text.TRACE_IsLocked:0000000000000000 TRACE_IsLocked
-     /tmp/cc5yuC7x.s:400    .text.TRACE_IsLocked:000000000000000c $d
-     /tmp/cc5yuC7x.s:405    .text.UTIL_ADV_TRACE_Init:0000000000000000 $t
-     /tmp/cc5yuC7x.s:412    .text.UTIL_ADV_TRACE_Init:0000000000000000 UTIL_ADV_TRACE_Init
-     /tmp/cc5yuC7x.s:450    .text.UTIL_ADV_TRACE_Init:0000000000000024 $d
-     /tmp/cc5yuC7x.s:1923   .text.TRACE_TxCpltCallback:0000000000000000 TRACE_TxCpltCallback
-     /tmp/cc5yuC7x.s:458    .text.UTIL_ADV_TRACE_DeInit:0000000000000000 $t
-     /tmp/cc5yuC7x.s:465    .text.UTIL_ADV_TRACE_DeInit:0000000000000000 UTIL_ADV_TRACE_DeInit
-     /tmp/cc5yuC7x.s:488    .text.UTIL_ADV_TRACE_DeInit:000000000000000c $d
-     /tmp/cc5yuC7x.s:493    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000000 $t
-     /tmp/cc5yuC7x.s:500    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000000 UTIL_ADV_TRACE_IsBufferEmpty
-     /tmp/cc5yuC7x.s:527    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000014 $d
-     /tmp/cc5yuC7x.s:532    .text.UTIL_ADV_TRACE_StartRxProcess:0000000000000000 $t
-     /tmp/cc5yuC7x.s:539    .text.UTIL_ADV_TRACE_StartRxProcess:0000000000000000 UTIL_ADV_TRACE_StartRxProcess
-     /tmp/cc5yuC7x.s:564    .text.UTIL_ADV_TRACE_StartRxProcess:000000000000000c $d
-     /tmp/cc5yuC7x.s:569    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:0000000000000000 $t
-     /tmp/cc5yuC7x.s:576    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:0000000000000000 UTIL_ADV_TRACE_COND_ZCSend_Allocation
-     /tmp/cc5yuC7x.s:743    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:00000000000000a8 $d
-     /tmp/cc5yuC7x.s:749    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000000 $t
-     /tmp/cc5yuC7x.s:756    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000000 UTIL_ADV_TRACE_ZCSend_Allocation
-     /tmp/cc5yuC7x.s:832    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000040 $d
-     /tmp/cc5yuC7x.s:837    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000000 $t
-     /tmp/cc5yuC7x.s:844    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000000 UTIL_ADV_TRACE_RegisterTimeStampFunction
-     /tmp/cc5yuC7x.s:861    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000008 $d
-     /tmp/cc5yuC7x.s:866    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000000 $t
-     /tmp/cc5yuC7x.s:873    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000000 UTIL_ADV_TRACE_SetVerboseLevel
-     /tmp/cc5yuC7x.s:890    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000008 $d
-     /tmp/cc5yuC7x.s:895    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000000 $t
-     /tmp/cc5yuC7x.s:902    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000000 UTIL_ADV_TRACE_GetVerboseLevel
-     /tmp/cc5yuC7x.s:917    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000008 $d
-     /tmp/cc5yuC7x.s:922    .text.UTIL_ADV_TRACE_SetRegion:0000000000000000 $t
-     /tmp/cc5yuC7x.s:929    .text.UTIL_ADV_TRACE_SetRegion:0000000000000000 UTIL_ADV_TRACE_SetRegion
-     /tmp/cc5yuC7x.s:948    .text.UTIL_ADV_TRACE_SetRegion:000000000000000c $d
-     /tmp/cc5yuC7x.s:953    .text.UTIL_ADV_TRACE_GetRegion:0000000000000000 $t
-     /tmp/cc5yuC7x.s:960    .text.UTIL_ADV_TRACE_GetRegion:0000000000000000 UTIL_ADV_TRACE_GetRegion
-     /tmp/cc5yuC7x.s:975    .text.UTIL_ADV_TRACE_GetRegion:0000000000000008 $d
-     /tmp/cc5yuC7x.s:980    .text.UTIL_ADV_TRACE_ResetRegion:0000000000000000 $t
-     /tmp/cc5yuC7x.s:987    .text.UTIL_ADV_TRACE_ResetRegion:0000000000000000 UTIL_ADV_TRACE_ResetRegion
-     /tmp/cc5yuC7x.s:1006   .text.UTIL_ADV_TRACE_ResetRegion:000000000000000c $d
-     /tmp/cc5yuC7x.s:1011   .text.UTIL_ADV_TRACE_PreSendHook:0000000000000000 $t
-     /tmp/cc5yuC7x.s:1018   .text.UTIL_ADV_TRACE_PreSendHook:0000000000000000 UTIL_ADV_TRACE_PreSendHook
-     /tmp/cc5yuC7x.s:1031   .text.TRACE_Send:0000000000000000 $t
-     /tmp/cc5yuC7x.s:1037   .text.TRACE_Send:0000000000000000 TRACE_Send
-     /tmp/cc5yuC7x.s:1260   .text.TRACE_Send:0000000000000090 $d
-     /tmp/cc5yuC7x.s:1269   .text.UTIL_ADV_TRACE_COND_FSend:0000000000000000 $t
-ARM GAS  /tmp/cc5yuC7x.s 			page 71
+     /tmp/ccF5z9TQ.s:16     .text.TRACE_AllocateBufer:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:23     .text.TRACE_AllocateBufer:0000000000000000 TRACE_AllocateBufer
+     /tmp/ccF5z9TQ.s:212    .text.TRACE_AllocateBufer:0000000000000084 $d
+     /tmp/ccF5z9TQ.s:217    .text.TRACE_Lock:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:223    .text.TRACE_Lock:0000000000000000 TRACE_Lock
+     /tmp/ccF5z9TQ.s:291    .text.TRACE_Lock:0000000000000014 $d
+     /tmp/ccF5z9TQ.s:296    .text.TRACE_UnLock:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:302    .text.TRACE_UnLock:0000000000000000 TRACE_UnLock
+     /tmp/ccF5z9TQ.s:370    .text.TRACE_UnLock:0000000000000014 $d
+     /tmp/ccF5z9TQ.s:375    .text.TRACE_IsLocked:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:381    .text.TRACE_IsLocked:0000000000000000 TRACE_IsLocked
+     /tmp/ccF5z9TQ.s:400    .text.TRACE_IsLocked:000000000000000c $d
+     /tmp/ccF5z9TQ.s:405    .text.UTIL_ADV_TRACE_Init:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:412    .text.UTIL_ADV_TRACE_Init:0000000000000000 UTIL_ADV_TRACE_Init
+     /tmp/ccF5z9TQ.s:450    .text.UTIL_ADV_TRACE_Init:0000000000000024 $d
+     /tmp/ccF5z9TQ.s:1923   .text.TRACE_TxCpltCallback:0000000000000000 TRACE_TxCpltCallback
+     /tmp/ccF5z9TQ.s:458    .text.UTIL_ADV_TRACE_DeInit:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:465    .text.UTIL_ADV_TRACE_DeInit:0000000000000000 UTIL_ADV_TRACE_DeInit
+     /tmp/ccF5z9TQ.s:488    .text.UTIL_ADV_TRACE_DeInit:000000000000000c $d
+     /tmp/ccF5z9TQ.s:493    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:500    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000000 UTIL_ADV_TRACE_IsBufferEmpty
+     /tmp/ccF5z9TQ.s:527    .text.UTIL_ADV_TRACE_IsBufferEmpty:0000000000000014 $d
+     /tmp/ccF5z9TQ.s:532    .text.UTIL_ADV_TRACE_StartRxProcess:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:539    .text.UTIL_ADV_TRACE_StartRxProcess:0000000000000000 UTIL_ADV_TRACE_StartRxProcess
+     /tmp/ccF5z9TQ.s:564    .text.UTIL_ADV_TRACE_StartRxProcess:000000000000000c $d
+     /tmp/ccF5z9TQ.s:569    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:576    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:0000000000000000 UTIL_ADV_TRACE_COND_ZCSend_Allocation
+     /tmp/ccF5z9TQ.s:743    .text.UTIL_ADV_TRACE_COND_ZCSend_Allocation:00000000000000a8 $d
+     /tmp/ccF5z9TQ.s:749    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:756    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000000 UTIL_ADV_TRACE_ZCSend_Allocation
+     /tmp/ccF5z9TQ.s:832    .text.UTIL_ADV_TRACE_ZCSend_Allocation:0000000000000040 $d
+     /tmp/ccF5z9TQ.s:837    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:844    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000000 UTIL_ADV_TRACE_RegisterTimeStampFunction
+     /tmp/ccF5z9TQ.s:861    .text.UTIL_ADV_TRACE_RegisterTimeStampFunction:0000000000000008 $d
+     /tmp/ccF5z9TQ.s:866    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:873    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000000 UTIL_ADV_TRACE_SetVerboseLevel
+     /tmp/ccF5z9TQ.s:890    .text.UTIL_ADV_TRACE_SetVerboseLevel:0000000000000008 $d
+     /tmp/ccF5z9TQ.s:895    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:902    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000000 UTIL_ADV_TRACE_GetVerboseLevel
+     /tmp/ccF5z9TQ.s:917    .text.UTIL_ADV_TRACE_GetVerboseLevel:0000000000000008 $d
+     /tmp/ccF5z9TQ.s:922    .text.UTIL_ADV_TRACE_SetRegion:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:929    .text.UTIL_ADV_TRACE_SetRegion:0000000000000000 UTIL_ADV_TRACE_SetRegion
+     /tmp/ccF5z9TQ.s:948    .text.UTIL_ADV_TRACE_SetRegion:000000000000000c $d
+     /tmp/ccF5z9TQ.s:953    .text.UTIL_ADV_TRACE_GetRegion:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:960    .text.UTIL_ADV_TRACE_GetRegion:0000000000000000 UTIL_ADV_TRACE_GetRegion
+     /tmp/ccF5z9TQ.s:975    .text.UTIL_ADV_TRACE_GetRegion:0000000000000008 $d
+     /tmp/ccF5z9TQ.s:980    .text.UTIL_ADV_TRACE_ResetRegion:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:987    .text.UTIL_ADV_TRACE_ResetRegion:0000000000000000 UTIL_ADV_TRACE_ResetRegion
+     /tmp/ccF5z9TQ.s:1006   .text.UTIL_ADV_TRACE_ResetRegion:000000000000000c $d
+     /tmp/ccF5z9TQ.s:1011   .text.UTIL_ADV_TRACE_PreSendHook:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:1018   .text.UTIL_ADV_TRACE_PreSendHook:0000000000000000 UTIL_ADV_TRACE_PreSendHook
+     /tmp/ccF5z9TQ.s:1031   .text.TRACE_Send:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:1037   .text.TRACE_Send:0000000000000000 TRACE_Send
+     /tmp/ccF5z9TQ.s:1260   .text.TRACE_Send:0000000000000090 $d
+     /tmp/ccF5z9TQ.s:1269   .text.UTIL_ADV_TRACE_COND_FSend:0000000000000000 $t
+ARM GAS  /tmp/ccF5z9TQ.s 			page 71
 
 
-     /tmp/cc5yuC7x.s:1276   .text.UTIL_ADV_TRACE_COND_FSend:0000000000000000 UTIL_ADV_TRACE_COND_FSend
-     /tmp/cc5yuC7x.s:1464   .text.UTIL_ADV_TRACE_COND_FSend:00000000000000c0 $d
-     /tmp/cc5yuC7x.s:1471   .text.UTIL_ADV_TRACE_ZCSend_Finalize:0000000000000000 $t
-     /tmp/cc5yuC7x.s:1478   .text.UTIL_ADV_TRACE_ZCSend_Finalize:0000000000000000 UTIL_ADV_TRACE_ZCSend_Finalize
-     /tmp/cc5yuC7x.s:1502   .text.UTIL_ADV_TRACE_COND_ZCSend_Finalize:0000000000000000 $t
-     /tmp/cc5yuC7x.s:1509   .text.UTIL_ADV_TRACE_COND_ZCSend_Finalize:0000000000000000 UTIL_ADV_TRACE_COND_ZCSend_Finalize
-     /tmp/cc5yuC7x.s:1530   .text.UTIL_ADV_TRACE_COND_Send:0000000000000000 $t
-     /tmp/cc5yuC7x.s:1537   .text.UTIL_ADV_TRACE_COND_Send:0000000000000000 UTIL_ADV_TRACE_COND_Send
-     /tmp/cc5yuC7x.s:1717   .text.UTIL_ADV_TRACE_COND_Send:00000000000000b8 $d
-     /tmp/cc5yuC7x.s:1723   .text.UTIL_ADV_TRACE_Send:0000000000000000 $t
-     /tmp/cc5yuC7x.s:1730   .text.UTIL_ADV_TRACE_Send:0000000000000000 UTIL_ADV_TRACE_Send
-     /tmp/cc5yuC7x.s:1823   .text.UTIL_ADV_TRACE_Send:0000000000000054 $d
-     /tmp/cc5yuC7x.s:1828   .text.UTIL_ADV_TRACE_FSend:0000000000000000 $t
-     /tmp/cc5yuC7x.s:1835   .text.UTIL_ADV_TRACE_FSend:0000000000000000 UTIL_ADV_TRACE_FSend
-     /tmp/cc5yuC7x.s:1897   .text.UTIL_ADV_TRACE_PostSendHook:0000000000000000 $t
-     /tmp/cc5yuC7x.s:1904   .text.UTIL_ADV_TRACE_PostSendHook:0000000000000000 UTIL_ADV_TRACE_PostSendHook
-     /tmp/cc5yuC7x.s:1917   .text.TRACE_TxCpltCallback:0000000000000000 $t
-     /tmp/cc5yuC7x.s:2154   .text.TRACE_TxCpltCallback:00000000000000a0 $d
-     /tmp/cc5yuC7x.s:2161   .bss.ADV_TRACE_Buffer:0000000000000000 $d
-     /tmp/cc5yuC7x.s:2165   .bss.ADV_TRACE_Buffer:0000000000000000 ADV_TRACE_Buffer
-     /tmp/cc5yuC7x.s:2168   .bss.ADV_TRACE_Ctx:0000000000000000 $d
-     /tmp/cc5yuC7x.s:2172   .bss.ADV_TRACE_Ctx:0000000000000000 ADV_TRACE_Ctx
-     /tmp/cc5yuC7x.s:2175   .bss.sztmp:0000000000000000 $d
-     /tmp/cc5yuC7x.s:2179   .bss.sztmp:0000000000000000 sztmp
+     /tmp/ccF5z9TQ.s:1276   .text.UTIL_ADV_TRACE_COND_FSend:0000000000000000 UTIL_ADV_TRACE_COND_FSend
+     /tmp/ccF5z9TQ.s:1464   .text.UTIL_ADV_TRACE_COND_FSend:00000000000000c0 $d
+     /tmp/ccF5z9TQ.s:1471   .text.UTIL_ADV_TRACE_ZCSend_Finalize:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:1478   .text.UTIL_ADV_TRACE_ZCSend_Finalize:0000000000000000 UTIL_ADV_TRACE_ZCSend_Finalize
+     /tmp/ccF5z9TQ.s:1502   .text.UTIL_ADV_TRACE_COND_ZCSend_Finalize:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:1509   .text.UTIL_ADV_TRACE_COND_ZCSend_Finalize:0000000000000000 UTIL_ADV_TRACE_COND_ZCSend_Finalize
+     /tmp/ccF5z9TQ.s:1530   .text.UTIL_ADV_TRACE_COND_Send:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:1537   .text.UTIL_ADV_TRACE_COND_Send:0000000000000000 UTIL_ADV_TRACE_COND_Send
+     /tmp/ccF5z9TQ.s:1717   .text.UTIL_ADV_TRACE_COND_Send:00000000000000b8 $d
+     /tmp/ccF5z9TQ.s:1723   .text.UTIL_ADV_TRACE_Send:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:1730   .text.UTIL_ADV_TRACE_Send:0000000000000000 UTIL_ADV_TRACE_Send
+     /tmp/ccF5z9TQ.s:1823   .text.UTIL_ADV_TRACE_Send:0000000000000054 $d
+     /tmp/ccF5z9TQ.s:1828   .text.UTIL_ADV_TRACE_FSend:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:1835   .text.UTIL_ADV_TRACE_FSend:0000000000000000 UTIL_ADV_TRACE_FSend
+     /tmp/ccF5z9TQ.s:1897   .text.UTIL_ADV_TRACE_PostSendHook:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:1904   .text.UTIL_ADV_TRACE_PostSendHook:0000000000000000 UTIL_ADV_TRACE_PostSendHook
+     /tmp/ccF5z9TQ.s:1917   .text.TRACE_TxCpltCallback:0000000000000000 $t
+     /tmp/ccF5z9TQ.s:2154   .text.TRACE_TxCpltCallback:00000000000000a0 $d
+     /tmp/ccF5z9TQ.s:2161   .bss.ADV_TRACE_Buffer:0000000000000000 $d
+     /tmp/ccF5z9TQ.s:2165   .bss.ADV_TRACE_Buffer:0000000000000000 ADV_TRACE_Buffer
+     /tmp/ccF5z9TQ.s:2168   .bss.ADV_TRACE_Ctx:0000000000000000 $d
+     /tmp/ccF5z9TQ.s:2172   .bss.ADV_TRACE_Ctx:0000000000000000 ADV_TRACE_Ctx
+     /tmp/ccF5z9TQ.s:2175   .bss.sztmp:0000000000000000 $d
+     /tmp/ccF5z9TQ.s:2179   .bss.sztmp:0000000000000000 sztmp
 
 UNDEFINED SYMBOLS
 UTIL_MEM_set_8

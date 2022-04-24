@@ -1,0 +1,4 @@
+/home/eatkinso/STM32Cube/Repository/STM32Cube_FW_WL_V1.2.0/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_rcc.h:1257:22:LL_RCC_LSE_SetDriveCapability	16	static
+../Core/Src/main.c:68:5:main	16	static
+../Core/Src/main.c:127:6:SystemClock_Config	112	static
+../Core/Src/main.c:179:6:Error_Handler	4	static,ignoring_inline_asm

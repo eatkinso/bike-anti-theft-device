@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccDK75xu.s 			page 1
+ARM GAS  /tmp/ccSUeQm0.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
   30:Utilities/misc/stm32_systime.c ****   ******************************************************************************
   31:Utilities/misc/stm32_systime.c ****   * @attention
   32:Utilities/misc/stm32_systime.c ****   *
-ARM GAS  /tmp/ccDK75xu.s 			page 2
+ARM GAS  /tmp/ccSUeQm0.s 			page 2
 
 
   33:Utilities/misc/stm32_systime.c ****   * Copyright (c) 2019 STMicroelectronics.
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
   87:Utilities/misc/stm32_systime.c **** #define CALC_REF_YEAR                  68
   88:Utilities/misc/stm32_systime.c **** 
   89:Utilities/misc/stm32_systime.c **** /**
-ARM GAS  /tmp/ccDK75xu.s 			page 3
+ARM GAS  /tmp/ccSUeQm0.s 			page 3
 
 
   90:Utilities/misc/stm32_systime.c ****   * @brief delta is referenced to Unix time
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  144:Utilities/misc/stm32_systime.c ****   *
  145:Utilities/misc/stm32_systime.c ****   */
  146:Utilities/misc/stm32_systime.c **** #define MODULO_7( X )                 ( ( X ) -( ( ( ( ( X ) + 1 ) * 299593 ) >> 21 ) * 7 ) )
-ARM GAS  /tmp/ccDK75xu.s 			page 4
+ARM GAS  /tmp/ccSUeQm0.s 			page 4
 
 
  147:Utilities/misc/stm32_systime.c **** 
@@ -238,7 +238,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  201:Utilities/misc/stm32_systime.c ****   SysTime_t c =  { .Seconds = 0, .SubSeconds = 0 };
  202:Utilities/misc/stm32_systime.c **** 
  203:Utilities/misc/stm32_systime.c ****   c.Seconds = a.Seconds + b.Seconds;
-ARM GAS  /tmp/ccDK75xu.s 			page 5
+ARM GAS  /tmp/ccSUeQm0.s 			page 5
 
 
  204:Utilities/misc/stm32_systime.c ****   c.SubSeconds = a.SubSeconds + b.SubSeconds;
@@ -298,7 +298,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  258:Utilities/misc/stm32_systime.c **** 
  259:Utilities/misc/stm32_systime.c **** SysTime_t SysTimeGetMcuTime( void )
  260:Utilities/misc/stm32_systime.c **** {
-ARM GAS  /tmp/ccDK75xu.s 			page 6
+ARM GAS  /tmp/ccSUeQm0.s 			page 6
 
 
  261:Utilities/misc/stm32_systime.c ****   SysTime_t calendarTime = { .Seconds = 0, .SubSeconds = 0 };
@@ -358,7 +358,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  315:Utilities/misc/stm32_systime.c ****   return nbsecs - CALC_REF_YEAR_TO_UNIX_REF_YEAR_COMPENSATION_IN_SECONDS;
  316:Utilities/misc/stm32_systime.c **** }
  317:Utilities/misc/stm32_systime.c **** 
-ARM GAS  /tmp/ccDK75xu.s 			page 7
+ARM GAS  /tmp/ccSUeQm0.s 			page 7
 
 
  318:Utilities/misc/stm32_systime.c **** void SysTimeLocalTime( const uint32_t timestamp, struct tm *localtime )
@@ -418,7 +418,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  372:Utilities/misc/stm32_systime.c ****   */
  373:Utilities/misc/stm32_systime.c **** 
  374:Utilities/misc/stm32_systime.c **** /**************************** Private functions *******************************/
-ARM GAS  /tmp/ccDK75xu.s 			page 8
+ARM GAS  /tmp/ccSUeQm0.s 			page 8
 
 
  375:Utilities/misc/stm32_systime.c **** 
@@ -478,7 +478,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
   36              		.cfi_offset 4, -8
   37              		.cfi_offset 5, -4
  420:Utilities/misc/stm32_systime.c **** #if 0
-ARM GAS  /tmp/ccDK75xu.s 			page 9
+ARM GAS  /tmp/ccSUeQm0.s 			page 9
 
 
  421:Utilities/misc/stm32_systime.c ****   *remainder = in % SECONDS_IN_1DAY;
@@ -538,7 +538,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
   77              		.loc 1 433 5 view .LVU19
   78 0020 9842     		cmp	r0, r3
   79 0022 04D9     		bls	.L4
-ARM GAS  /tmp/ccDK75xu.s 			page 10
+ARM GAS  /tmp/ccSUeQm0.s 			page 10
 
 
  434:Utilities/misc/stm32_systime.c ****   {
@@ -598,7 +598,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  445:Utilities/misc/stm32_systime.c **** {
  125              		.loc 1 445 1 is_stmt 1 view -0
  126              		.cfi_startproc
-ARM GAS  /tmp/ccDK75xu.s 			page 11
+ARM GAS  /tmp/ccSUeQm0.s 			page 11
 
 
  127              		@ args = 0, pretend = 0, frame = 0
@@ -658,7 +658,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  169              		.loc 1 451 8 is_stmt 1 view .LVU48
  170 0022 002B     		cmp	r3, #0
  171 0024 F3D1     		bne	.L10
-ARM GAS  /tmp/ccDK75xu.s 			page 12
+ARM GAS  /tmp/ccSUeQm0.s 			page 12
 
 
  456:Utilities/misc/stm32_systime.c ****   }
@@ -718,7 +718,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  214              		.loc 1 384 5 is_stmt 0 view .LVU60
  215 0002 11F0030F 		tst	r1, #3
  216 0006 13D1     		bne	.L15
-ARM GAS  /tmp/ccDK75xu.s 			page 13
+ARM GAS  /tmp/ccSUeQm0.s 			page 13
 
 
  386:Utilities/misc/stm32_systime.c ****     {   // January or February
@@ -778,7 +778,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  255              		.loc 1 397 37 is_stmt 0 view .LVU76
  256 0024 D538     		subs	r0, r0, #213
  257              	.LVL32:
-ARM GAS  /tmp/ccDK75xu.s 			page 14
+ARM GAS  /tmp/ccSUeQm0.s 			page 14
 
 
  397:Utilities/misc/stm32_systime.c ****     }
@@ -838,7 +838,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  404:Utilities/misc/stm32_systime.c ****     }
  297              		.loc 1 404 15 is_stmt 0 view .LVU92
  298 0044 4000     		lsls	r0, r0, #1
-ARM GAS  /tmp/ccDK75xu.s 			page 15
+ARM GAS  /tmp/ccSUeQm0.s 			page 15
 
 
  299              	.LVL42:
@@ -898,7 +898,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  343              	.LCFI3:
  344              		.cfi_def_cfa_offset 4
  345              		.cfi_offset 4, -4
-ARM GAS  /tmp/ccDK75xu.s 			page 16
+ARM GAS  /tmp/ccSUeQm0.s 			page 16
 
 
  468:Utilities/misc/stm32_systime.c **** #if 0
@@ -958,7 +958,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  384              		.loc 1 481 3 view .LVU120
  385              		.loc 1 481 5 is_stmt 0 view .LVU121
  386 0028 3B28     		cmp	r0, #59
-ARM GAS  /tmp/ccDK75xu.s 			page 17
+ARM GAS  /tmp/ccSUeQm0.s 			page 17
 
 
  387 002a 01D9     		bls	.L27
@@ -1018,7 +1018,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  433              		.cfi_def_cfa_offset 8
  434 0002 82B0     		sub	sp, sp, #8
  435              	.LCFI6:
-ARM GAS  /tmp/ccDK75xu.s 			page 18
+ARM GAS  /tmp/ccSUeQm0.s 			page 18
 
 
  436              		.cfi_def_cfa_offset 16
@@ -1078,7 +1078,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  473              		.loc 1 210 3 is_stmt 1 view .LVU150
  474              	.L29:
  211:Utilities/misc/stm32_systime.c **** 
-ARM GAS  /tmp/ccDK75xu.s 			page 19
+ARM GAS  /tmp/ccSUeQm0.s 			page 19
 
 
  475              		.loc 1 211 1 is_stmt 0 view .LVU151
@@ -1138,7 +1138,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  523              		.loc 1 218 3 is_stmt 1 view .LVU159
  218:Utilities/misc/stm32_systime.c ****   if( c.SubSeconds < 0 )
  524              		.loc 1 218 19 is_stmt 0 view .LVU160
-ARM GAS  /tmp/ccDK75xu.s 			page 20
+ARM GAS  /tmp/ccSUeQm0.s 			page 20
 
 
  525 0018 BDF80420 		ldrh	r2, [sp, #4]
@@ -1198,7 +1198,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  568              		.global	SysTimeSet
  569              		.syntax unified
  570              		.thumb
-ARM GAS  /tmp/ccDK75xu.s 			page 21
+ARM GAS  /tmp/ccSUeQm0.s 			page 21
 
 
  571              		.thumb_func
@@ -1258,7 +1258,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  238:Utilities/misc/stm32_systime.c ****   UTIL_SYSTIMDriver.BKUPWrite_SubSeconds( ( uint32_t ) DeltaTime.SubSeconds );
  616              		.loc 1 238 3 is_stmt 1 view .LVU183
  238:Utilities/misc/stm32_systime.c ****   UTIL_SYSTIMDriver.BKUPWrite_SubSeconds( ( uint32_t ) DeltaTime.SubSeconds );
-ARM GAS  /tmp/ccDK75xu.s 			page 22
+ARM GAS  /tmp/ccSUeQm0.s 			page 22
 
 
  617              		.loc 1 238 20 is_stmt 0 view .LVU184
@@ -1318,7 +1318,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  666              	.LCFI18:
  667              		.cfi_def_cfa_offset 40
  668 0004 0446     		mov	r4, r0
-ARM GAS  /tmp/ccDK75xu.s 			page 23
+ARM GAS  /tmp/ccSUeQm0.s 			page 23
 
 
  244:Utilities/misc/stm32_systime.c ****   SysTime_t sysTime = { .Seconds = 0, .SubSeconds = 0 };
@@ -1378,7 +1378,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  705              		.loc 1 251 21 view .LVU209
  706 0028 0290     		str	r0, [sp, #8]
  253:Utilities/misc/stm32_systime.c **** 
-ARM GAS  /tmp/ccDK75xu.s 			page 24
+ARM GAS  /tmp/ccSUeQm0.s 			page 24
 
 
  707              		.loc 1 253 3 is_stmt 1 view .LVU210
@@ -1438,7 +1438,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  757              	.LCFI21:
  758              		.cfi_def_cfa_offset 24
  759 0004 0446     		mov	r4, r0
-ARM GAS  /tmp/ccDK75xu.s 			page 25
+ARM GAS  /tmp/ccSUeQm0.s 			page 25
 
 
  261:Utilities/misc/stm32_systime.c **** 
@@ -1498,7 +1498,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  804              		.fpu softvfp
  806              	SysTimeToMs:
  807              	.LFB8:
-ARM GAS  /tmp/ccDK75xu.s 			page 26
+ARM GAS  /tmp/ccSUeQm0.s 			page 26
 
 
  269:Utilities/misc/stm32_systime.c ****   SysTime_t DeltaTime;
@@ -1558,7 +1558,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  275:Utilities/misc/stm32_systime.c **** }
  850              		.loc 1 275 3 is_stmt 1 view .LVU240
  275:Utilities/misc/stm32_systime.c **** }
-ARM GAS  /tmp/ccDK75xu.s 			page 27
+ARM GAS  /tmp/ccSUeQm0.s 			page 27
 
 
  851              		.loc 1 275 52 is_stmt 0 view .LVU241
@@ -1618,7 +1618,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  901              		.loc 1 281 3 is_stmt 1 view .LVU247
  281:Utilities/misc/stm32_systime.c ****   SysTime_t DeltaTime = { 0 };
  902              		.loc 1 281 13 is_stmt 0 view .LVU248
-ARM GAS  /tmp/ccDK75xu.s 			page 28
+ARM GAS  /tmp/ccSUeQm0.s 			page 28
 
 
  903 000e 0493     		str	r3, [sp, #16]
@@ -1678,7 +1678,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  942 0044 FFF7FEFF 		bl	SysTimeAdd
  943              	.LVL85:
  287:Utilities/misc/stm32_systime.c **** 
-ARM GAS  /tmp/ccDK75xu.s 			page 29
+ARM GAS  /tmp/ccSUeQm0.s 			page 29
 
 
  944              		.loc 1 287 1 view .LVU264
@@ -1738,7 +1738,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  992 0008 A3F1440E 		sub	lr, r3, #68
  993              	.LVL88:
  294:Utilities/misc/stm32_systime.c ****   {
-ARM GAS  /tmp/ccDK75xu.s 			page 30
+ARM GAS  /tmp/ccSUeQm0.s 			page 30
 
 
  994              		.loc 1 294 3 is_stmt 1 view .LVU273
@@ -1798,7 +1798,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  1033 004a DCF80C20 		ldr	r2, [ip, #12]
  307:Utilities/misc/stm32_systime.c **** 
  1034              		.loc 1 307 10 view .LVU289
-ARM GAS  /tmp/ccDK75xu.s 			page 31
+ARM GAS  /tmp/ccSUeQm0.s 			page 31
 
 
  1035 004e 1344     		add	r3, r3, r2
@@ -1858,7 +1858,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  1077              	.LFE10:
  1079              		.section	.text.SysTimeLocalTime,"ax",%progbits
  1080              		.align	1
-ARM GAS  /tmp/ccDK75xu.s 			page 32
+ARM GAS  /tmp/ccSUeQm0.s 			page 32
 
 
  1081              		.global	SysTimeLocalTime
@@ -1918,7 +1918,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  1124 0014 03A9     		add	r1, sp, #12
  1125 0016 2F48     		ldr	r0, .L62+4
  1126 0018 2044     		add	r0, r0, r4
-ARM GAS  /tmp/ccDK75xu.s 			page 33
+ARM GAS  /tmp/ccSUeQm0.s 			page 33
 
 
  1127 001a FFF7FEFF 		bl	CalendarDiv86400
@@ -1978,7 +1978,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  1166 0052 6C61     		str	r4, [r5, #20]
  347:Utilities/misc/stm32_systime.c **** 
  1167              		.loc 1 347 3 is_stmt 1 view .LVU329
-ARM GAS  /tmp/ccDK75xu.s 			page 34
+ARM GAS  /tmp/ccSUeQm0.s 			page 34
 
 
  347:Utilities/misc/stm32_systime.c **** 
@@ -2038,7 +2038,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  1207 008a AB61     		str	r3, [r5, #24]
  359:Utilities/misc/stm32_systime.c ****         ( ( ( correctionMonth[localtime->tm_year % 4] >> ( ( localtime->tm_mon ) * 2 ) ) & 0x03 ) )
  1208              		.loc 1 359 3 is_stmt 1 view .LVU345
-ARM GAS  /tmp/ccDK75xu.s 			page 35
+ARM GAS  /tmp/ccSUeQm0.s 			page 35
 
 
  360:Utilities/misc/stm32_systime.c **** 
@@ -2098,7 +2098,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  368:Utilities/misc/stm32_systime.c **** 
  1248              		.loc 1 368 1 view .LVU361
  1249 00cc 0AB0     		add	sp, sp, #40
-ARM GAS  /tmp/ccDK75xu.s 			page 36
+ARM GAS  /tmp/ccSUeQm0.s 			page 36
 
 
  1250              	.LCFI34:
@@ -2158,7 +2158,7 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  1306 0010 10000000 		.word	.LC5
  1307 0014 14000000 		.word	.LC6
  1308 0018 18000000 		.word	.LC7
-ARM GAS  /tmp/ccDK75xu.s 			page 37
+ARM GAS  /tmp/ccSUeQm0.s 			page 37
 
 
  1309              		.text
@@ -2167,50 +2167,50 @@ ARM GAS  /tmp/ccDK75xu.s 			page 1
  1312              		.file 3 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
  1313              		.file 4 "/home/eatkinso/Downloads/gcc-arm-none-eabi-10.3-2021.07/gcc-arm-none-eabi-10.3-2021.07/ar
  1314              		.file 5 "Utilities/misc/stm32_systime.h"
-ARM GAS  /tmp/ccDK75xu.s 			page 38
+ARM GAS  /tmp/ccSUeQm0.s 			page 38
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 stm32_systime.c
-     /tmp/ccDK75xu.s:16     .text.CalendarDiv86400:0000000000000000 $t
-     /tmp/ccDK75xu.s:23     .text.CalendarDiv86400:0000000000000000 CalendarDiv86400
-     /tmp/ccDK75xu.s:110    .text.CalendarDiv86400:0000000000000038 $d
-     /tmp/ccDK75xu.s:116    .text.CalendarDiv61:0000000000000000 $t
-     /tmp/ccDK75xu.s:122    .text.CalendarDiv61:0000000000000000 CalendarDiv61
-     /tmp/ccDK75xu.s:188    .text.CalendarDiv61:0000000000000030 $d
-     /tmp/ccDK75xu.s:193    .text.CalendarGetMonth:0000000000000000 $t
-     /tmp/ccDK75xu.s:199    .text.CalendarGetMonth:0000000000000000 CalendarGetMonth
-     /tmp/ccDK75xu.s:327    .text.CalendarDiv60:0000000000000000 $t
-     /tmp/ccDK75xu.s:333    .text.CalendarDiv60:0000000000000000 CalendarDiv60
-     /tmp/ccDK75xu.s:415    .text.SysTimeAdd:0000000000000000 $t
-     /tmp/ccDK75xu.s:422    .text.SysTimeAdd:0000000000000000 SysTimeAdd
-     /tmp/ccDK75xu.s:488    .text.SysTimeSub:0000000000000000 $t
-     /tmp/ccDK75xu.s:495    .text.SysTimeSub:0000000000000000 SysTimeSub
-     /tmp/ccDK75xu.s:567    .text.SysTimeSet:0000000000000000 $t
-     /tmp/ccDK75xu.s:574    .text.SysTimeSet:0000000000000000 SysTimeSet
-     /tmp/ccDK75xu.s:639    .text.SysTimeSet:0000000000000040 $d
-     /tmp/ccDK75xu.s:644    .text.SysTimeGet:0000000000000000 $t
-     /tmp/ccDK75xu.s:651    .text.SysTimeGet:0000000000000000 SysTimeGet
-     /tmp/ccDK75xu.s:730    .text.SysTimeGet:0000000000000040 $d
-     /tmp/ccDK75xu.s:735    .text.SysTimeGetMcuTime:0000000000000000 $t
-     /tmp/ccDK75xu.s:742    .text.SysTimeGetMcuTime:0000000000000000 SysTimeGetMcuTime
-     /tmp/ccDK75xu.s:794    .text.SysTimeGetMcuTime:0000000000000028 $d
-     /tmp/ccDK75xu.s:799    .text.SysTimeToMs:0000000000000000 $t
-     /tmp/ccDK75xu.s:806    .text.SysTimeToMs:0000000000000000 SysTimeToMs
-     /tmp/ccDK75xu.s:865    .text.SysTimeToMs:000000000000003c $d
-     /tmp/ccDK75xu.s:870    .text.SysTimeFromMs:0000000000000000 $t
-     /tmp/ccDK75xu.s:877    .text.SysTimeFromMs:0000000000000000 SysTimeFromMs
-     /tmp/ccDK75xu.s:956    .text.SysTimeFromMs:0000000000000050 $d
-     /tmp/ccDK75xu.s:962    .text.SysTimeMkTime:0000000000000000 $t
-     /tmp/ccDK75xu.s:969    .text.SysTimeMkTime:0000000000000000 SysTimeMkTime
-     /tmp/ccDK75xu.s:1073   .text.SysTimeMkTime:000000000000007c $d
-     /tmp/ccDK75xu.s:1080   .text.SysTimeLocalTime:0000000000000000 $t
-     /tmp/ccDK75xu.s:1087   .text.SysTimeLocalTime:0000000000000000 SysTimeLocalTime
-     /tmp/ccDK75xu.s:1259   .text.SysTimeLocalTime:00000000000000d0 $d
-     /tmp/ccDK75xu.s:1301   .data.WeekDayString:0000000000000000 WeekDayString
-     /tmp/ccDK75xu.s:1268   .rodata.str1.4:0000000000000000 $d
-     /tmp/ccDK75xu.s:1290   .rodata:0000000000000000 $d
-     /tmp/ccDK75xu.s:1298   .data.WeekDayString:0000000000000000 $d
+     /tmp/ccSUeQm0.s:16     .text.CalendarDiv86400:0000000000000000 $t
+     /tmp/ccSUeQm0.s:23     .text.CalendarDiv86400:0000000000000000 CalendarDiv86400
+     /tmp/ccSUeQm0.s:110    .text.CalendarDiv86400:0000000000000038 $d
+     /tmp/ccSUeQm0.s:116    .text.CalendarDiv61:0000000000000000 $t
+     /tmp/ccSUeQm0.s:122    .text.CalendarDiv61:0000000000000000 CalendarDiv61
+     /tmp/ccSUeQm0.s:188    .text.CalendarDiv61:0000000000000030 $d
+     /tmp/ccSUeQm0.s:193    .text.CalendarGetMonth:0000000000000000 $t
+     /tmp/ccSUeQm0.s:199    .text.CalendarGetMonth:0000000000000000 CalendarGetMonth
+     /tmp/ccSUeQm0.s:327    .text.CalendarDiv60:0000000000000000 $t
+     /tmp/ccSUeQm0.s:333    .text.CalendarDiv60:0000000000000000 CalendarDiv60
+     /tmp/ccSUeQm0.s:415    .text.SysTimeAdd:0000000000000000 $t
+     /tmp/ccSUeQm0.s:422    .text.SysTimeAdd:0000000000000000 SysTimeAdd
+     /tmp/ccSUeQm0.s:488    .text.SysTimeSub:0000000000000000 $t
+     /tmp/ccSUeQm0.s:495    .text.SysTimeSub:0000000000000000 SysTimeSub
+     /tmp/ccSUeQm0.s:567    .text.SysTimeSet:0000000000000000 $t
+     /tmp/ccSUeQm0.s:574    .text.SysTimeSet:0000000000000000 SysTimeSet
+     /tmp/ccSUeQm0.s:639    .text.SysTimeSet:0000000000000040 $d
+     /tmp/ccSUeQm0.s:644    .text.SysTimeGet:0000000000000000 $t
+     /tmp/ccSUeQm0.s:651    .text.SysTimeGet:0000000000000000 SysTimeGet
+     /tmp/ccSUeQm0.s:730    .text.SysTimeGet:0000000000000040 $d
+     /tmp/ccSUeQm0.s:735    .text.SysTimeGetMcuTime:0000000000000000 $t
+     /tmp/ccSUeQm0.s:742    .text.SysTimeGetMcuTime:0000000000000000 SysTimeGetMcuTime
+     /tmp/ccSUeQm0.s:794    .text.SysTimeGetMcuTime:0000000000000028 $d
+     /tmp/ccSUeQm0.s:799    .text.SysTimeToMs:0000000000000000 $t
+     /tmp/ccSUeQm0.s:806    .text.SysTimeToMs:0000000000000000 SysTimeToMs
+     /tmp/ccSUeQm0.s:865    .text.SysTimeToMs:000000000000003c $d
+     /tmp/ccSUeQm0.s:870    .text.SysTimeFromMs:0000000000000000 $t
+     /tmp/ccSUeQm0.s:877    .text.SysTimeFromMs:0000000000000000 SysTimeFromMs
+     /tmp/ccSUeQm0.s:956    .text.SysTimeFromMs:0000000000000050 $d
+     /tmp/ccSUeQm0.s:962    .text.SysTimeMkTime:0000000000000000 $t
+     /tmp/ccSUeQm0.s:969    .text.SysTimeMkTime:0000000000000000 SysTimeMkTime
+     /tmp/ccSUeQm0.s:1073   .text.SysTimeMkTime:000000000000007c $d
+     /tmp/ccSUeQm0.s:1080   .text.SysTimeLocalTime:0000000000000000 $t
+     /tmp/ccSUeQm0.s:1087   .text.SysTimeLocalTime:0000000000000000 SysTimeLocalTime
+     /tmp/ccSUeQm0.s:1259   .text.SysTimeLocalTime:00000000000000d0 $d
+     /tmp/ccSUeQm0.s:1301   .data.WeekDayString:0000000000000000 WeekDayString
+     /tmp/ccSUeQm0.s:1268   .rodata.str1.4:0000000000000000 $d
+     /tmp/ccSUeQm0.s:1290   .rodata:0000000000000000 $d
+     /tmp/ccSUeQm0.s:1298   .data.WeekDayString:0000000000000000 $d
 
 UNDEFINED SYMBOLS
 UTIL_SYSTIMDriver

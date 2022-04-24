@@ -30,16 +30,14 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rcc_ex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
- Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rtc.h \
- Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rtc_ex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h Core/Inc/adc.h \
- Core/Inc/main.h Core/Inc/rtc.h Core/Inc/subghz.h \
- SubGHz_Phy/App/app_subghz_phy.h Core/Inc/usart.h Core/Inc/gpio.h \
- Core/Inc/bt_radio.h Middlewares/Third_Party/SubGHz_Phy/radio.h \
+ Core/Inc/main.h Core/Inc/subghz.h SubGHz_Phy/App/app_subghz_phy.h \
+ Core/Inc/usart.h Core/Inc/gpio.h Core/Inc/bt_radio.h \
+ Middlewares/Third_Party/SubGHz_Phy/radio.h \
  Middlewares/Third_Party/SubGHz_Phy/radio_ex.h \
  Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_fw.h \
  SubGHz_Phy/Target/timer.h Utilities/timer/stm32_timer.h \
@@ -81,8 +79,6 @@ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_rcc.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rcc_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:
-Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rtc.h:
-Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rtc_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h:
@@ -90,7 +86,6 @@ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
 Core/Inc/adc.h:
 Core/Inc/main.h:
-Core/Inc/rtc.h:
 Core/Inc/subghz.h:
 SubGHz_Phy/App/app_subghz_phy.h:
 Core/Inc/usart.h:

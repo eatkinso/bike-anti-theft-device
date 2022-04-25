@@ -278,7 +278,7 @@ Ok, abandoning UART for now. Current plan... use Arduino as intermediary between
 
 # 4/11/2022 Late night -- LoRa Work
 
-Now onto the actually difficult part... getting them to talk to each other. Unfortunately the osc screwup is mostly un-bodgeable, so we are relying on the internal oscillator for now. Not great but oh well. 
+Now onto the actually difficult part... getting them to talk to each other. Unfortunately the osc screwup is mostly un-bodgeable, so I am relying on the internal oscillator for now. Not great but oh well. 
 
 
 ## Notes about LoRa application structure: 
@@ -466,7 +466,7 @@ Note that the above function basically just manages the LmHandler. Note also tha
 
 4. Write test program that explicitly calls RF tests at the LoRa frequency; DO NOT FORGET RF SWITCH EXPLICIT CONTROL
 
-4. Write test program that explicitly calls AT_Send with dummy data to see if we can send something 
+4. Write test program that explicitly calls AT_Send with dummy data to see if I can send something 
 
 5. Proceed with state machine implementation using explicit AT commands. 
 
@@ -610,7 +610,7 @@ Ok, honestly this is not surprising, but at least it's a solid answer -- radio i
 
 # 4/18/2022 Elizabeth -- Back to UART
 
-The radio issue is pretty much an unsolvable problem at this point ... we will wait for the oscillators to come in and then try again. In the mean time, decided to take another look at the UART peripherals (GPS and RFID). RFID antenna also came in today, so hopefully I can use that. 
+The radio issue is pretty much an unsolvable problem at this point ... I will wait for the oscillators to come in and then try again. In the mean time, decided to take another look at the UART peripherals (GPS and RFID). RFID antenna also came in today, so hopefully I can use that. 
 
 New approach -- try and get GPS uart working on the dev board. Hopefully this will prevent issues with the debugger from derailing my progress for hours again. 
 
@@ -688,7 +688,7 @@ Now, writing the state machine. See diagram below.
 
 # 4/21/2022 (Elizabeth) USB/Serial Hacky Weird Stuff
 
-Ok, I'm mega-stupid and forgot to buy the FTDI I2C-Serial chip we need for one of the boards. So we need to find some other way to convert USB-serial for Alex's GUI to work. Current plan: using the CH340 chip on the elegoo arduino nanos I have as an intermediary. 
+Ok, I'm mega-stupid and forgot to buy the FTDI I2C-Serial chip we need for one of the boards. So I need to find some other way to convert USB-serial for Alex's GUI to work. Current plan: using the CH340 chip on the elegoo arduino nanos I have as an intermediary. 
 
 First: UART dummy code on the STM32 nucleo board. Using a normal Arduino as the usb/serial intermediary to verify that it works there. Wiring diagram below (shown for pic16 -- for nucleo, just wire TX->TX and RX->RX. No need to connect 5V since the arduino is already powered through USB.). 
 
@@ -726,7 +726,7 @@ Message in this example is from the GPS module since I tested it with that inste
 
 # 4/21/2022 Late Night -- RFID Board [Elizabeth]
 
-Now that we have put out the USB/serial converter fire, I'm finally getting around to testing the RFID board. First kinda bad mistake was that I used an SMA connector footprint for the antenna...... I later realized that most 125kHz RFID antennas are actually just coils, so they aren't attached to any RF connector at all and instead just have footprints on the board you have to use. So our RFID antenna is somewhat.... bodgy, but hopefully the frequency is low enough that it's fine. 
+Now that I have put out the USB/serial converter fire, I'm finally getting around to testing the RFID board. First kinda bad mistake was that I used an SMA connector footprint for the antenna...... I later realized that most 125kHz RFID antennas are actually just coils, so they aren't attached to any RF connector at all and instead just have footprints on the board you have to use. So our RFID antenna is somewhat.... bodgy, but hopefully the frequency is low enough that it's fine. 
 
 ![](id3la_board.jpeg)
 
@@ -738,7 +738,7 @@ From the datasheet, the pinout is:
 
 ![](id3lapinout.png)
 
-So we need to connect the format selector (pin 7, JP1) to GND because we want ASCII (UART) data output. PCB pinout also shown below. 
+So I need to connect the format selector (pin 7, JP1) to GND because we want ASCII (UART) data output. PCB pinout also shown below. 
 
 ![](rfidpcbpinout.png)
 
@@ -777,7 +777,7 @@ pic below of letter code from one RFID card:
 
 # 4/22/22 RFID on the STM32 [Elizabeth]
 
-Now that we have basic proof-of-concept RFID working, time to try and talk to it on the STM32. 
+Now that I have basic proof-of-concept RFID working, time to try and talk to it on the STM32. 
 
 For reference, the three RFID card codes are :
 - Card A: `[3f][a6][e6][e6][e6][26][26][a6][cc][b9][79][26][f2]`
@@ -820,7 +820,7 @@ Ok, the interrupt does read the card, but it always returns HAL_BUSY. Ignoring t
 
 # 4/22/22 Afternoon -- Working on State Machine
 
-ugh, we are once again in the situation where the UART message doesn't work correctly because the STM32 RX IRQ doesn't correctly identify the start/stop of the message. Trying to workaround this by defining my own IRQ that sorts the message using the start byte (0x3F for the RFID ID numbers).
+ugh, I am once again in the situation where the UART message doesn't work correctly because the STM32 RX IRQ doesn't correctly identify the start/stop of the message. Trying to workaround this by defining my own IRQ that sorts the message using the start byte (0x3F for the RFID ID numbers).
 
 Other problem: the UART IRQ randomly gets called even when the device is obviously not receiving any data. 
 
@@ -976,3 +976,22 @@ my code:
 my code for the second run, trying to exactly emulate the code I tried on my other board: 
 ![](txcwcode.png)
 
+Ok, I'm giving up on the radio at this point. I guess my matching network is just really screwed up or something and it probably doesnt help that I replaced the RF switch with a piece of wire, but I can't fix it at this point so I guess there isn't going to be a radio. 
+
+
+# 4/24/2022 Final Integration
+
+I have acquired the water bottle so now I am trying to put the entire thing together. 
+
+
+Also, the speaker -- using one of the STM32 timer channels. 
+![](stm32pwm.png)
+
+We want a 5 kHz sound, so set the prescaler to 2*9600 (48 MHz base clock), reload counter to 2, pulse counter to 1.
+
+
+Timeout for the "unlocked" state: 
+
+5 sec timeout .. 5000 * 1 kHz clock
+
+![](unlocktimeout.png)

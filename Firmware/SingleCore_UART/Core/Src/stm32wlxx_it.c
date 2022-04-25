@@ -23,6 +23,8 @@
 #include "stm32wlxx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "btrfid.h"
+#include "btgps.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,9 +58,14 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+extern UART_HandleTypeDef hlpuart1;
 extern UART_HandleTypeDef huart1;
 /* USER CODE BEGIN EV */
-
+extern statemachine_state_t mystate;
+extern uint8_t irqtestbuf[13];
+extern uint8_t rfidrawbuf[50];
+extern uint8_t rfidmsgbuf[15];
+extern uint32_t rfidstarttime;
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -213,7 +220,25 @@ void USART1_IRQHandler(void)
   /* USER CODE END USART1_IRQn 1 */
 }
 
+/**
+  * @brief This function handles LPUART1 Interrupt.
+  */
+void LPUART1_IRQHandler(void)
+{
+  /* USER CODE BEGIN LPUART1_IRQn 0 */
+  /* USER CODE END LPUART1_IRQn 0 */
+  HAL_UART_IRQHandler(&hlpuart1);
+  /* USER CODE BEGIN LPUART1_IRQn 1 */
+  rfidstarttime = __HAL_TIM_GET_COUNTER(&htim2);
+  get_rfid_msg(rfidmsgbuf,rfidrawbuf);
+  if ((rfidmsgbuf[8] == 0xcc)&(rfidmsgbuf[9]==0xb9)){
+	  mystate=BT_UNLOCKED;
+    memset(rfidrawbuf, 0, 50);
+    memset(rfidmsgbuf, 0, 15);
+  }
+  /* USER CODE END LPUART1_IRQn 1 */
+}
+
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -13,6 +13,9 @@ build/stm32wlxx_it.o: Core/Src/stm32wlxx_it.c Core/Inc/main.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dmamux.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma_ex.h \
+ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_adc.h \
+ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h \
+ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_adc_ex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_cortex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_exti.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_flash.h \
@@ -27,12 +30,13 @@ build/stm32wlxx_it.o: Core/Src/stm32wlxx_it.c Core/Inc/main.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rcc_ex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
- Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h \
- Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h \
+ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
  Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
- Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
- Core/Inc/stm32wlxx_it.h
+ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h Core/Inc/btrfid.h \
+ Core/Inc/main.h Core/Inc/btgps.h Core/Inc/stm32wlxx_it.h \
+ Core/Inc/btrfid.h Core/Inc/btgps.h
 Core/Inc/main.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h:
 Core/Inc/stm32wlxx_hal_conf.h:
@@ -50,6 +54,9 @@ Drivers/STM32WLxx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dmamux.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma_ex.h:
+Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_adc.h:
+Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h:
+Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_adc_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_cortex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_exti.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_flash.h:
@@ -64,9 +71,14 @@ Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_rcc.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rcc_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:
-Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_subghz.h:
-Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_spi.h:
+Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h:
+Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h:
+Core/Inc/btrfid.h:
+Core/Inc/main.h:
+Core/Inc/btgps.h:
 Core/Inc/stm32wlxx_it.h:
+Core/Inc/btrfid.h:
+Core/Inc/btgps.h:

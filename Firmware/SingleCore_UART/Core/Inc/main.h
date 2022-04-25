@@ -32,12 +32,19 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "btrfid.h"
+#include "btgps.h"
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/
 /* USER CODE BEGIN ET */
-
+typedef enum states{
+	BT_IDLE,
+	BT_UNLOCKED,
+	BT_TRANSIT,
+	BT_ALARM,
+	BT_SFAULT
+} statemachine_state_t;
 /* USER CODE END ET */
 
 /* Exported constants --------------------------------------------------------*/
@@ -50,6 +57,8 @@ extern "C" {
 
 /* USER CODE END EM */
 
+void HAL_TIM_MspPostInit(TIM_HandleTypeDef *htim);
+
 /* Exported functions prototypes ---------------------------------------------*/
 void Error_Handler(void);
 
@@ -58,14 +67,14 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define RFID_NRST_Pin GPIO_PIN_5
-#define RFID_NRST_GPIO_Port GPIOB
-#define RFID_DATA1_Pin GPIO_PIN_1
-#define RFID_DATA1_GPIO_Port GPIOA
-#define ALARM_ON_Pin GPIO_PIN_2
-#define ALARM_ON_GPIO_Port GPIOA
-#define RFSW_VC1_Pin GPIO_PIN_3
-#define RFSW_VC1_GPIO_Port GPIOA
+#define ALARM_Pin GPIO_PIN_5
+#define ALARM_GPIO_Port GPIOB
+#define IDLE_Pin GPIO_PIN_8
+#define IDLE_GPIO_Port GPIOB
+#define TRANSIT_Pin GPIO_PIN_0
+#define TRANSIT_GPIO_Port GPIOA
+#define UNLOCKED_Pin GPIO_PIN_1
+#define UNLOCKED_GPIO_Port GPIOA
 #define GPS_NPWR_Pin GPIO_PIN_5
 #define GPS_NPWR_GPIO_Port GPIOA
 #define RFiD_NPWR_Pin GPIO_PIN_6
@@ -74,10 +83,8 @@ void Error_Handler(void);
 #define RFID_TAG_IN_RANGE_GPIO_Port GPIOA
 #define RFSW_VC2_Pin GPIO_PIN_2
 #define RFSW_VC2_GPIO_Port GPIOB
-#define RFID_DATA0_Pin GPIO_PIN_12
-#define RFID_DATA0_GPIO_Port GPIOB
-#define GPS_STATE_Pin GPIO_PIN_11
-#define GPS_STATE_GPIO_Port GPIOA
+#define GET_GPS_Pin GPIO_PIN_12
+#define GET_GPS_GPIO_Port GPIOA
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
@@ -87,5 +94,3 @@ void Error_Handler(void);
 #endif
 
 #endif /* __MAIN_H */
-
-/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

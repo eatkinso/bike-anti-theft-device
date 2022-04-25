@@ -140,7 +140,7 @@ int main(void)
   uint32_t full_dist=0;
   while (1)
   {
-    /*getgpstime = __HAL_TIM_GET_COUNTER(&htim2);
+    getgpstime = __HAL_TIM_GET_COUNTER(&htim2);
     if ((getgpstime - prevgetgpstime)>30000){
       HAL_GPIO_WritePin(GET_GPS_GPIO_Port, GET_GPS_Pin, GPIO_PIN_SET);
       prev_gpsmgsbuf = cur_gpsmsgbuf;
@@ -155,10 +155,10 @@ int main(void)
       full_dist = full_dist + distbuffer[i];
     }
     distbuffer[0] = latest_dist;
-    full_dist = full_dist+latest_dist;*/
+    full_dist = full_dist+latest_dist; 
 
     // test GPS stuff: 
-    uint32_t full_dist = getdistance(&testgps1.latitude, &testgps1.longitude, &testgps2.latitude, &testgps2.longitude);
+    //uint32_t full_dist = getdistance(&testgps1.latitude, &testgps1.longitude, &testgps2.latitude, &testgps2.longitude);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -170,7 +170,9 @@ int main(void)
 		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
       // state transition for idle->unlocked is in the LPUART IRQ
 		  HAL_StatusTypeDef res = HAL_UART_Receive_IT(&hlpuart1,rfidrawbuf,40);
-		  
+		  if (full_dist>5){
+        mystate=BT_ALARM;
+      }
 
 		  break;
 	  case BT_UNLOCKED	:
@@ -202,7 +204,7 @@ int main(void)
 		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_SET);
       HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
       HAL_Delay(5000);
-      HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_4);
+     HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_4);
       mystate=BT_IDLE;
 	  }
   }

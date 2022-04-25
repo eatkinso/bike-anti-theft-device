@@ -25,6 +25,7 @@
 /* USER CODE BEGIN Includes */
 #include "btrfid.h"
 #include "btgps.h"
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -66,6 +67,7 @@ extern uint8_t irqtestbuf[13];
 extern uint8_t rfidrawbuf[50];
 extern uint8_t rfidmsgbuf[15];
 extern uint32_t rfidstarttime;
+extern TIM_HandleTypeDef htim2;
 /* USER CODE END EV */
 
 /******************************************************************************/

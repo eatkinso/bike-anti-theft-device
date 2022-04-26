@@ -125,6 +125,8 @@ int main(void)
   HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GET_GPS_GPIO_Port, GET_GPS_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GET_GPS_GPIO_Port, GET_GPS_Pin, GPIO_PIN_RESET);
   HAL_TIM_Base_Start(&htim2);
   /* USER CODE END 2 */
 
@@ -133,30 +135,35 @@ int main(void)
   nmea_gpgga_t testgps1 = {"170921.000","4006.9306",'N',"08813.6236",'W','1','7'};
   nmea_gpgga_t testgps2 = {"170921.000","4006.9135",'N',"08813.6236",'W','1','7'};
   // GPS counter -- poll GPS once every 30 seconds 
-  int prevgetgpstime=0;
-  int getgpstime=0;
-  uint32_t distbuffer[10] = {0};
-  uint32_t latest_dist=0;
-  uint32_t full_dist=0;
+  volatile int prevgetgpstime=0;
+  volatile int getgpstime=0;
+  nmea_gpgga_t gpsbuf1={0};
+  nmea_gpgga_t gpsbuf2={0};
+ // volatile uint32_t distbuffer[10] = {0};
+  volatile uint32_t latest_dist=0;
+  volatile uint32_t full_dist=0;
+  int threshold = 8;
+  volatile int tcounter;
   while (1)
-  {
+  { 
     getgpstime = __HAL_TIM_GET_COUNTER(&htim2);
-    if ((getgpstime - prevgetgpstime)>30000){
+    if ((getgpstime - prevgetgpstime)>10000){
       HAL_GPIO_WritePin(GET_GPS_GPIO_Port, GET_GPS_Pin, GPIO_PIN_SET);
       prev_gpsmgsbuf = cur_gpsmsgbuf;
       get_gps(&huart1, &cur_gpsmsgbuf);
       latest_dist = getdistance(&prev_gpsmgsbuf.latitude, &prev_gpsmgsbuf.longitude, &cur_gpsmsgbuf.latitude, &cur_gpsmsgbuf.longitude);
       prevgetgpstime=getgpstime;
+      HAL_Delay(1000);
       HAL_GPIO_WritePin(GET_GPS_GPIO_Port, GET_GPS_Pin, GPIO_PIN_RESET);
     }
-    full_dist = 0;
+    
+   /*
     for (int i = 0; i <10; i ++){
-      distbuffer[10-i]=distbuffer[10-(i+1)];
-      full_dist = full_dist + distbuffer[i];
-    }
-    distbuffer[0] = latest_dist;
-    full_dist = full_dist+latest_dist; 
-
+      get_gps(&huart1, &gpsbuf1);
+      get_gps(&huart1, &gpsbuf2);
+      latest_dist=getdistance(&gpsbuf1.latitude, &gpsbuf1.longitude, &gpsbuf2.latitude, &gpsbuf2.longitude);
+    }*/
+    
     // test GPS stuff: 
     //uint32_t full_dist = getdistance(&testgps1.latitude, &testgps1.longitude, &testgps2.latitude, &testgps2.longitude);
     /* USER CODE END WHILE */
@@ -170,7 +177,7 @@ int main(void)
 		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
       // state transition for idle->unlocked is in the LPUART IRQ
 		  HAL_StatusTypeDef res = HAL_UART_Receive_IT(&hlpuart1,rfidrawbuf,40);
-		  if (full_dist>5){
+		  if (latest_dist>threshold){
         mystate=BT_ALARM;
       }
 
@@ -181,11 +188,12 @@ int main(void)
 		  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_RESET);
 		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
       int unlocked_time = __HAL_TIM_GET_COUNTER(&htim2);
-      if ((unlocked_time - rfidstarttime) > 5000){
+      /* if (((unlocked_time - rfidstarttime) > 5000)&(latest_dist<5)){
         mystate=BT_IDLE;
-      }
-      if (full_dist>5){
+      } */
+      if (latest_dist>5){
         mystate=BT_TRANSIT;
+        tcounter = 0;
       }
 		  break;
 	  case BT_TRANSIT	:
@@ -193,8 +201,13 @@ int main(void)
 		  HAL_GPIO_WritePin(UNLOCKED_GPIO_Port, UNLOCKED_Pin, GPIO_PIN_RESET);
 		  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_SET);
 		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
-      if (full_dist<5){
+      if (latest_dist<5){
+        tcounter = tcounter +1;
+        if (tcounter > 4){
         mystate=BT_IDLE;
+        tcounter =0;
+        latest_dist=0;
+        }
       }
 		  break;
 	  case BT_ALARM:
@@ -203,8 +216,9 @@ int main(void)
 		  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_RESET);
 		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_SET);
       HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
-      HAL_Delay(5000);
-     HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_4);
+      HAL_Delay(1000);
+      HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_4);
+      latest_dist=0;
       mystate=BT_IDLE;
 	  }
   }

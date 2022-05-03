@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  27 MAR 2022 22:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/TeX Live for SUSE Linux) (preloaded format=pdflatex 2022.1.6)  25 APR 2022 21:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -959,7 +959,7 @@ Package rerunfilecheck Info: File `design_document.out' has not changed.
 Here is how much of TeX's memory you used:
  30067 strings out of 480031
  689914 string characters out of 5884517
- 1076476 words of memory out of 5000000
+ 1077476 words of memory out of 5000000
  46699 multiletter control sequences out of 15000+600000
  421491 words of font info for 69 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
@@ -981,7 +981,7 @@ onts/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm
 -super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
 </usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fo
 nts/type1/public/cm-super/sfti1000.pfb>
-Output written on design_document.pdf (19 pages, 2785222 bytes).
+Output written on design_document.pdf (19 pages, 2785240 bytes).
 PDF statistics:
  523 PDF objects out of 1000 (max. 8388607)
  465 compressed objects within 5 object streams

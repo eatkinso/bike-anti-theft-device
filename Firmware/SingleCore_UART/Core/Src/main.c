@@ -188,9 +188,9 @@ int main(void)
 		  HAL_GPIO_WritePin(TRANSIT_GPIO_Port, TRANSIT_Pin, GPIO_PIN_RESET);
 		  HAL_GPIO_WritePin(ALARM_GPIO_Port, ALARM_Pin, GPIO_PIN_RESET);
       int unlocked_time = __HAL_TIM_GET_COUNTER(&htim2);
-      /* if (((unlocked_time - rfidstarttime) > 5000)&(latest_dist<5)){
+      if (((unlocked_time - rfidstarttime) > 5000)){
         mystate=BT_IDLE;
-      } */
+      }
       if (latest_dist>5){
         mystate=BT_TRANSIT;
         tcounter = 0;

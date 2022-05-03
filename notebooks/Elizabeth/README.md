@@ -984,10 +984,13 @@ Ok, I'm giving up on the radio at this point. I guess my matching network is jus
 I have acquired the water bottle so now I am trying to put the entire thing together. 
 
 
-Also, the speaker -- using one of the STM32 timer channels. 
+Also, the speaker -- using one of the STM32 timer channels. [source](https://deepbluembedded.com/stm32-pwm-example-timer-pwm-mode-tutorial/)
 ![](stm32pwm.png)
 
 We want a 5 kHz sound, so set the prescaler to 2*9600 (48 MHz base clock), reload counter to 2, pulse counter to 1.
+
+The driver is just a BJT used as a switch -- Image below, hopefully this is self-explanatory (BJT turned on by the PWM output, small base resistor just to be safe). 
+
 
 
 Timeout for the "unlocked" state: 
@@ -995,3 +998,12 @@ Timeout for the "unlocked" state:
 5 sec timeout .. 5000 * 1 kHz clock
 
 ![](unlocktimeout.png)
+
+
+
+# 4/25/2022 Final Touches before Demo
+
+- packaged the device on water bottle
+- Finished last state machine transitions 
+- Fine-tuned the GPS distance thresholds for demo
+- made a slightly nicer-looking perfboard thing for the state LEDs and the speaker. 

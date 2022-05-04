@@ -26,6 +26,7 @@ A portable, concealed device to prevent bike theft and facilitate tracking, cent
 - TEXstudio is convenient to write and render LaTEX documents for reports, etc. Always save the .tex source to git, not the generated PDF. 
 - Always commit the ENTIRE kicad project directory for PCBs. This prevents issues with footprint and symbol libraries 
 since the entire project directory includes the backup and symbol rescue files.
+- STM32CubeMX is used to generate peripheral initialization code and makefiles. We used an STLINK-V3 with [Black Magic Probe](https://github.com/blackmagic-debug/blackmagic) firmware running in PC-hosted mode for debugging. 
 
 
 
